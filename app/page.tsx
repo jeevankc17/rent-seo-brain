@@ -10,7 +10,7 @@ export default function Home() {
       </div>
       <div className="relative w-full h-screen">
         <GridBackgroundView />
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        {/* <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <svg width={100} height={100} viewBox="0 0 100 100">
             <path
               d="M 20 20 L 20 80 L 80 80"
@@ -19,7 +19,7 @@ export default function Home() {
               fill="none"
             />
           </svg>
-        </div>
+        </div> */}
       </div>
     </div>
   );
