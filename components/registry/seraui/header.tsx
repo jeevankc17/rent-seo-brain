@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useTheme } from "next-themes";
 import Button from "./button";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 // Icons from lucide-react, commonly used with shadcn/ui
 const MenuIcon = ({ className }: { className?: string }) => (
@@ -108,10 +108,10 @@ const Header = () => {
 
   // Navigation links data
   const navLinks = [
-    { href: "#", label: "Features" },
-    { href: "#", label: "Pricing" },
+    { href: "#", label: "Home" },
     { href: "#", label: "About" },
-    { href: "#", label: "Contact" },
+    { href: "#", label: "Services" },
+    { href: "#", label: "Blog" },
   ];
 
   const toggleTheme = () => {
@@ -119,16 +119,20 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-black/80 dark:bg-black/80 backdrop-blur-sm sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-700">
+    <header className="bg-[#071f36] dark:bg-black/80 backdrop-blur-sm sticky top-0 z-50 w-full ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo Section */}
           <div className="flex-shrink-0 px-32">
             <a href="#" className="flex items-center gap-2">
-              <MountainIcon className="h-6 w-6 text-gray-900 dark:text-white" />
-              <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              {/* <span className="text-lg font-semibold text-white dark:text-white">
                 Acme Inc
-              </span>
+              </span> */}
+              <img
+                src="/logo.png"
+                alt="Logo"
+                className="h-[63px] w-[112px] "
+              />
             </a>
           </div>
 
@@ -138,9 +142,12 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
+                className="flex items-center text-[16px] font-600 text-gray-200 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
               >
                 {link.label}
+                {link.label === "Services" && (
+                  <ChevronDown className="ml-1 h-4 w-4" />
+                )}
               </a>
             ))}
           </nav>
@@ -151,10 +158,13 @@ const Header = () => {
                 Book An Appointment 
              </a> */}
             <Button
-              className="hidden sm:inline-flex border rounded-[24px] text-md font-medium h-10 px-8 py-2 transition-colors duration-300"
+              className="hidden sm:inline-flex border rounded-[24px] text-md font-medium h-10 px-8 py-2 transition-colors duration-300 text-[#] bg-white"
               variant="outline"
             >
-              <span>Book An Appointment</span><span className="ml-2 text-sm"><ArrowRight /></span>
+              <span className="text-[16px] font-500">Book An Appointment</span>
+              <span className="ml-2 text-sm">
+                <ArrowRight />
+              </span>
             </Button>
 
             {/* Theme Toggle Button */}
@@ -200,9 +210,12 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+                className="text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 flex items-center"
               >
                 {link.label}
+                {link.label === "Services" && (
+                  <ChevronDown className="ml-1 h-4 w-4" />
+                )}
               </a>
             ))}
             <a
