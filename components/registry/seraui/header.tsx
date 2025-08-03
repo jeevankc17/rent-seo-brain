@@ -119,7 +119,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#071f36] dark:bg-black/80 backdrop-blur-sm sticky top-0 z-50 w-full ">
+    <header className="bg-[#0d0f13] dark:bg-black/80 backdrop-blur-sm sticky top-0 z-50 w-full h-[119px] p-[27px]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo Section */}
@@ -210,7 +210,7 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 flex items-center"
+                className="text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white  px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 flex items-center"
               >
                 {link.label}
                 {link.label === "Services" && (

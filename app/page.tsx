@@ -4,8 +4,8 @@ import GridBackgroundView from "@components/registry/seraui/grid";
 
 export default function Home() {
   return (
-    <div className="w-full bg-neutral-900">
-      <div className="p-[27px] w-full">
+    <div className="w-full bg-[#0d0f13]">
+      <div className="w-full ">
         <Header />
       </div>
       <div className="relative w-full h-screen">
