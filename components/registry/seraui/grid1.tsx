@@ -23,7 +23,7 @@ const GridBackground = () => {
       {/* Keyframes for the animation */}
       <style>
         {`
-          @keyframes moveGrid { 
+          @keyframes moveGrid {
             0% { background-position: 0 0; }
             100% { background-position: 80px 80px; }
           }
@@ -47,15 +47,9 @@ export default function GridBackgroundView() {
     <div className="relative w-full h-full bg-neutral-900 overflow-hidden">
       <GridBackground />
 
-      {/* Central Graphic Circle */}
-
-      <div
-        className="absolute top-[95%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10
-                      w-[320px] h-[320px] md:w-[526px] md:h-[526px]
-                      bg-black/80 rounded-full flex items-center justify-center
-                      border border-blue-400 shadow-xl"
-      >
-        <div className="relative w-full h-[80%] flex flex-col items-center justify-center text-white text-sm">
+        {/* Central Graphic Circle */}
+        <div className="absolute top-[95%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[320px] h-[320px] md:w-[526px] md:h-[526px] bg-black/80 rounded-full flex items-center justify-center border border-blue-400 shadow-xl">
+        <div className="relative w-[80%] h-[80%] flex flex-col items-center justify-center text-white text-sm">
           <div className="absolute top-2 left-1/2 -translate-x-1/2 text-center">
             <div className="bg-lime-400 p-2 rounded-full mb-1" />
             Keywords
@@ -69,12 +63,7 @@ export default function GridBackgroundView() {
             Content
           </div>
           <div className="absolute top-1/2 right-2 -translate-y-1/2 text-center">
-            {/* <div className="bg-blue-500 p-2 rounded-full mb-1" /> */}
-            <img
-              src="image5.jpg"
-              className="absolute top-1/2 right-2 -translate-y-1/2 text-center"
-              alt="center"
-            />
+            <div className="bg-blue-500 p-2 rounded-full mb-1" />
             Tools
           </div>
           <img

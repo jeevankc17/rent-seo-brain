@@ -4,7 +4,7 @@ import Button from "./button";
 import { ArrowRight } from "lucide-react";
 
 // Grid Background Component
-const GridBackground = () => {
+const AboutGridBackground = () => {
   return (
     <div
       className="absolute inset-0 w-full h-full overflow-hidden transition-transform duration-300 ease-out opacity-50"
@@ -23,7 +23,7 @@ const GridBackground = () => {
       {/* Keyframes for the animation */}
       <style>
         {`
-          @keyframes moveGrid { 
+          @keyframes moveGrid {
             0% { background-position: 0 0; }
             100% { background-position: 80px 80px; }
           }
@@ -34,7 +34,7 @@ const GridBackground = () => {
 };
 
 // Main App Component
-export default function GridBackgroundView() {
+export default function AboutGridBackgroundView() {
   const avatars = [
     "image1.jpg",
     "image2.jpg",
@@ -44,49 +44,11 @@ export default function GridBackgroundView() {
     "image6.jpg",
   ];
   return (
-    <div className="relative w-full h-full bg-neutral-900 overflow-hidden">
-      <GridBackground />
-
-      {/* Central Graphic Circle */}
-
-      <div
-        className="absolute top-[95%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10
-                      w-[320px] h-[320px] md:w-[526px] md:h-[526px]
-                      bg-black/80 rounded-full flex items-center justify-center
-                      border border-blue-400 shadow-xl"
-      >
-        <div className="relative w-full h-[80%] flex flex-col items-center justify-center text-white text-sm">
-          <div className="absolute top-2 left-1/2 -translate-x-1/2 text-center">
-            <div className="bg-lime-400 p-2 rounded-full mb-1" />
-            Keywords
-          </div>
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
-            <div className="bg-orange-400 p-2 rounded-full mb-1" />
-            Analytics
-          </div>
-          <div className="absolute top-1/2 left-2 -translate-y-1/2 text-center">
-            <div className="bg-white p-2 rounded-full mb-1" />
-            Content
-          </div>
-          <div className="absolute top-1/2 right-2 -translate-y-1/2 text-center">
-            {/* <div className="bg-blue-500 p-2 rounded-full mb-1" /> */}
-            <img
-              src="image5.jpg"
-              className="absolute top-1/2 right-2 -translate-y-1/2 text-center"
-              alt="center"
-            />
-            Tools
-          </div>
-          <img
-            src="image5.jpg"
-            className="w-[260px] h-[260px] rounded-full object-cover border border-white mt-4"
-            alt="center"
-          />
-        </div>
-      </div>
+    <main className="relative w-full h-full bg-neutral-900 overflow-hidden">
+      <AboutGridBackground />
 
       {/* Main Content */}
-      <div className="relative z-10 position-absolute top-[119px]">
+      <section className="relative z-10 position-absolute top-[119px]">
         {/* Hero Section */}
         <div className="flex items-center justify-between w-[385px] h-[33px] p-[5px] border border-[#A2D1FF] rounded-full absolute top-[87px] left-1/2 transform -translate-x-1/2">
           <div className="flex items-center justify-start ">
@@ -156,7 +118,7 @@ export default function GridBackgroundView() {
             </Button>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
