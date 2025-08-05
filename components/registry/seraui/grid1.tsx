@@ -23,7 +23,7 @@ const GridBackground = () => {
       {/* Keyframes for the animation */}
       <style>
         {`
-          @keyframes moveGrid {
+          @keyframes moveGrid { 
             0% { background-position: 0 0; }
             100% { background-position: 80px 80px; }
           }
@@ -44,12 +44,18 @@ export default function GridBackgroundView() {
     "image6.jpg",
   ];
   return (
-    <div className="relative w-full h-full bg-neutral-900 overflow-hidden">
+    <main className="relative w-full h-full bg-neutral-900 overflow-hidden">
       <GridBackground />
 
-        {/* Central Graphic Circle */}
-        <div className="absolute top-[95%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[320px] h-[320px] md:w-[526px] md:h-[526px] bg-black/80 rounded-full flex items-center justify-center border border-blue-400 shadow-xl">
-        <div className="relative w-[80%] h-[80%] flex flex-col items-center justify-center text-white text-sm">
+      {/* Central Graphic Circle */}
+
+      <section
+        className="absolute top-[91%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10
+                      w-[320px] h-[320px] md:w-[526px] md:h-[526px]
+                      bg-black/80 rounded-full flex items-center justify-center
+                      border border-blue-400 shadow-xl"
+      >
+        <div className="relative w-full h-[80%] flex flex-col items-center justify-center text-white text-sm">
           <div className="absolute top-2 left-1/2 -translate-x-1/2 text-center">
             <div className="bg-lime-400 p-2 rounded-full mb-1" />
             Keywords
@@ -63,7 +69,12 @@ export default function GridBackgroundView() {
             Content
           </div>
           <div className="absolute top-1/2 right-2 -translate-y-1/2 text-center">
-            <div className="bg-blue-500 p-2 rounded-full mb-1" />
+            {/* <div className="bg-blue-500 p-2 rounded-full mb-1" /> */}
+            <img
+              src="image5.jpg"
+              className="absolute top-1/2 right-2 -translate-y-1/2 text-center"
+              alt="center"
+            />
             Tools
           </div>
           <img
@@ -72,12 +83,23 @@ export default function GridBackgroundView() {
             alt="center"
           />
         </div>
-      </div>
+      </section>
+
+      {/* left part */}
+      <section className="ml-[112px] w-[443.5px] h-[275px] absolute top-[699px] border text-red-800 border-[#A2D1FF]  bg-[#0B0B0B]">
+        Hello
+      </section>
+
+      {/* right part */}
+
+      <section className="ml-[112px] w-[422px] h-[240px] absolute top-[736px] text-red-800 right-0 border border-[#A2D1FF]  bg-[#0B0B0B]">
+        Hello
+      </section>
 
       {/* Main Content */}
-      <div className="relative z-10 position-absolute top-[119px]">
+      <section className="relative m-0 pt-[78px] z-10 position-absolute w-[766px] h-[323px] ml-[337px] mr-[316.46px]  ">
         {/* Hero Section */}
-        <div className="flex items-center justify-between w-[385px] h-[33px] p-[5px] border border-[#A2D1FF] rounded-full absolute top-[87px] left-1/2 transform -translate-x-1/2">
+        <div className="flex items-center justify-between w-[385px] h-[33px] p-[5px] border border-[#A2D1FF] rounded-full absolute left-1/2 transform -translate-x-1/2">
           <div className="flex items-center justify-start ">
             {avatars.map((src, idx) => (
               <span
@@ -96,7 +118,7 @@ export default function GridBackgroundView() {
             We Grow Brands with SEO, Ads & Design{" "}
           </span>
         </div>
-        <div className="text-center px-8 pt-[120px] mb-20 max-w-4xl mx-auto">
+        <div className=" absolute text-center px-8  max-w-4xl mx-auto">
           <h1 className="text-5xl font-bold mb-6 leading-tight font-urbanist">
             <span className="text-white">
               Custom SEO That Powers Your Rise to{" "}
@@ -145,7 +167,7 @@ export default function GridBackgroundView() {
             </Button>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
