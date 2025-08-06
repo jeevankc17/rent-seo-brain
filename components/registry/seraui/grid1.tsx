@@ -96,76 +96,81 @@ export default function GridBackgroundView() {
         Hello
       </section>
 
-      {/* Main Content */}
-      <section className="relative m-0 pt-[78px] z-10 position-absolute w-[766px] h-[323px] ml-[337px] mr-[316.46px]  ">
-        {/* Hero Section */}
-        <div className="flex items-center justify-between w-[385px] h-[33px] p-[5px] border border-[#A2D1FF] rounded-full absolute left-1/2 transform -translate-x-1/2">
-          <div className="flex items-center justify-start ">
-            {avatars.map((src, idx) => (
-              <span
-                key={idx}
-                className="h-[22px] w-[22px] rounded-full overflow-hidden flex-shrink-0 ml-[-3px]"
-              >
-                <img
-                  src={src}
-                  alt={`avatar-${idx + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </span>
-            ))}
-          </div>
-          <span className="text-white font-urbanist font-medium text-[12px] leading-[23px] tracking-[0.5%] uppercase ml-2 w-[252px] h-[23px]">
-            We Grow Brands with SEO, Ads & Design{" "}
-          </span>
-        </div>
-        <div className=" absolute text-center px-8  max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold mb-6 leading-tight font-urbanist">
-            <span className="text-white">
-              Custom SEO That Powers Your Rise to{" "}
+      {/* Hero Section */}
+      <section className="absolute top-[78px] ml-[337px] mr-[316.46px] border border-red-700 w-[766px] h-[323px] z-10">
+        <div className="w-[702px] h-[229px] mx-[32px] border border-blue-500">
+          <div className="flex items-center justify-start w-[365px] h-[33px] p-[5px] border border-[#A2D1FF] rounded-[45px] absolute left-1/2 transform -translate-x-1/2 gap-[9px]">
+            <div className="flex items-center justify-start pl-[5px] w-[94px] h-[21.4px]">
+              {avatars.map((src, idx) => (
+                <span
+                  key={idx}
+                  className="h-[21.4px] w-[21.4px] rounded-full overflow-hidden flex-shrink-0 ml-[-6.87px]"
+                >
+                  <img
+                    src={src}
+                    alt={`avatar-${idx + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </span>
+              ))}
+            </div>
+            <span className="text-white font-urbanist font-medium text-[12px] leading-[23px] tracking-[0.5%] uppercase w-[256px] h-[23px]">
+              We Grow Brands with SEO, Ads & Design{"  "}
             </span>
-            <span style={{ color: "#1D8FFF" }}>#1 </span>
-            <span className="text-white">Online</span>
-          </h1>
-          <p className="text-[#D2D2D2] text-base mb-11 max-w-2xl mx-auto font-urbanist">
-            Our data-driven SEO approach combines in-depth keyword research,
-            technical optimization, and content strategy.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-            <Button
-              className=" px-[3px] py-3 gap-[10px] h-[50px] rounded-full font-urbanist relative overflow-hidden "
-              style={{
-                background: "#1D8FFF",
-                boxShadow: "0 1px 8.7px rgba(47, 152, 255, 0.63)",
-              }}
-            >
-              <span className="text-white w-[190px] h-[23px]">
-                Launch my SEO campaign
-              </span>
-              <div className="ml-3 p-3 h-[44px] w-[44px]  rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF] flex items-center justify-center">
-                <ArrowRight
-                  className="h-4 w-4 text-[#1D8FFF]"
-                  strokeWidth={2}
-                />
-              </div>
-            </Button>
-            <Button
-              className="py-3 h-[50px] rounded-full font-urbanist relative overflow-hidden flex items-center justify-center gap-2"
-              style={{
-                background: "#ffffff",
-                boxShadow: "0 1px 8.7px rgba(255, 255, 255, 0.63)",
-              }}
-            >
-              <span className="inline-flex items-center gap-[9px] text-neutral-900 w-[190px] h-[23px]">
-                <span>Meet Our Experts</span>
-                <ArrowRight
-                  className="h-4 w-4 text-[#091E42]"
-                  strokeWidth={1.75}
-                />
-              </span>
-            </Button>
           </div>
+
+          <div className="w-[630px] h-[176px] ml-[36px] mr-[36px] border border-green-600 gap-[16px] mt-[53px] flex flex-col items-center justify-center">
+            <span className="w-[630px] h-[114px] text-white text-[50px] font-bold leading-[57px] text-center">
+              Custom SEO That Powers Your Rise to{" "}
+              <span style={{ color: "#1D8FFF" }}>#1 </span> Online
+            </span>
+            <span
+              className="
+                block
+                w-[640px] h-[46px]
+                text-[16px] font-medium
+                leading-[23px]
+                text-grey-300
+                text-center
+                align-center
+              "
+            >
+              Our data-driven SEO approach combines in-depth keyword research,
+              technical optimization, and content strategy.
+            </span>
+          </div>
+        </div>
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-[13px] justify-center items-center pt-[44px] mx-[130px]">
+          <Button
+            className=" px-[3px] py-3 gap-[10px] h-[50px] rounded-full font-urbanist relative overflow-hidden "
+            style={{
+              background: "#1D8FFF",
+              boxShadow: "0 1px 8.7px rgba(47, 152, 255, 0.63)",
+            }}
+          >
+            <span className="text-white w-[190px] h-[23px]">
+              Launch my SEO campaign
+            </span>
+            <div className="ml-3 p-3 h-[44px] w-[44px]  rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF] flex items-center justify-center">
+              <ArrowRight className="h-4 w-4 text-[#1D8FFF]" strokeWidth={2} />
+            </div>
+          </Button>
+          <Button
+            className="py-3 h-[50px] rounded-full font-urbanist relative overflow-hidden flex items-center justify-center gap-2"
+            style={{
+              background: "#ffffff",
+              boxShadow: "0 1px 8.7px rgba(255, 255, 255, 0.63)",
+            }}
+          >
+            <span className="inline-flex items-center gap-[9px] text-neutral-900 w-[190px] h-[23px]">
+              <span>Meet Our Experts</span>
+              <ArrowRight
+                className="h-4 w-4 text-[#091E42]"
+                strokeWidth={1.75}
+              />
+            </span>
+          </Button>
         </div>
       </section>
     </main>
