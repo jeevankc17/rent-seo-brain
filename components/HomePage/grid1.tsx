@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Button from "./button";
+import Button from "../registry/seraui/button";
 import { ArrowRight } from "lucide-react";
 
 // Grid Background Component

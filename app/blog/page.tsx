@@ -1,6 +1,6 @@
 import { Grid } from "lucide-react";
 import Header from "../../components/registry/seraui/header";
-import GridBackgroundView from "@components/registry/seraui/grid";
+import GridBackgroundView from "@components/HomePage/Hero-Section";
 
 export default function Home() {
   return (
