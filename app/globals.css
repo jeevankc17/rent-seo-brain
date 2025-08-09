@@ -1,4 +1,5 @@
 @tailwind utilities;
+@import "tailwindcss/preflight";
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -19,6 +20,8 @@
   --color-primary-300: var(--primary-300);
   --color-primary-400: var(--primary-400);
   --color-primary-500: var(--primary-500);
+
+  --color-G-200: var(--Foundation-Grey-Scale-G200);
 
   /* Secondary Scale - Custom Orange/Yellow */
   --color-secondary-50: var(--secondary-50);
@@ -54,7 +57,7 @@
   --color-grey-50: var(--grey-50);
   --color-grey-75: var(--grey-75);
   --color-grey-100: var(--grey-100);
-  --color-G200: var(--G200);
+  --color-gs-200: var(--gs-200);
   --color-grey-300: var(--grey-300);
   --color-grey-400: var(--grey-400);
   --color-grey-500: var(--grey-500);
@@ -134,16 +137,18 @@
   --primary-75: #fcd097;
   --primary-100: #fabc6c;
   --primary-200: #f8a02c;
-  --primary-300: #f78c01;
+  --primary-300: #1d8fff;
   --primary-400: #ad6201;
   --primary-500: #975701;
+
+  --Foundation-Grey-Scale-G200: #ac1b1b;
 
   /* Secondary Scale */
   --secondary-50: #fff8e1;
   --secondary-75: #ffecb3;
   --secondary-100: #ffe082;
   --secondary-200: #ffca28;
-  --secondary-300: #ffa000;
+  --secondary-300: #d8fd5f;
   --secondary-400: #ef6c00;
   --secondary-500: #bf360c;
 
@@ -172,7 +177,7 @@
   --grey-50: #fafafa;
   --grey-75: #f5f5f5;
   --grey-100: #eeeeee;
-  --G200: #d2d2d2;
+  --gs-200: #bf360c;
   --grey-300: #c6c6c6;
   --grey-400: #9e9e9e;
   --grey-500: #7b7b7b;

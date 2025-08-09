@@ -1,18 +1,18 @@
 import { Grid } from "lucide-react";
 import Header from "../components/registry/seraui/header";
-import GridBackgroundView from "@components/HomePage/Hero-Section";
-import NewGrid from "@components/HomePage/NewGrid";
-import NewGrid1 from "@components/HomePage/NewGrid1";
-import NewGrid2 from "@components/HomePage/NewGrid2";
-import NewGrid3 from "@components/HomePage/NewGrid3";
-import NewGrid4 from "@components/HomePage/NewGrid4";
-import NewGrid5 from "@components/HomePage/NewGrid5";
-import NewGrid6 from "@components/HomePage/NewGrid6";
-import NewGrid7 from "@components/HomePage/NewGrid7";
-import NewGrid8 from "@components/HomePage/NewGrid8";
-import SEOBlogSection from "@components/HomePage/NewGrid10";
-import CaseStudiesSection from "@components/HomePage/NewGrid11";
-import TestimonialsSection from "@components/components/NewGrid12";
+import GridBackgroundView from "@components/Home-Page/Hero-Section";
+import NewGrid from "@components/Home-Page/NewGrid";
+import NewGrid1 from "@components/Home-Page/NewGrid1";
+import NewGrid2 from "@components/Home-Page/NewGrid2";
+import NewGrid3 from "@components/Home-Page/NewGrid3";
+import NewGrid4 from "@components/Home-Page/NewGrid4";
+import NewGrid5 from "@components/Home-Page/NewGrid5";
+import NewGrid6 from "@components/Home-Page/NewGrid6";
+import NewGrid7 from "@components/Home-Page/NewGrid7";
+import NewGrid8 from "@components/Home-Page/NewGrid8";
+import SEOBlogSection from "@components/Home-Page/NewGrid10";
+import CaseStudiesSection from "@components/Home-Page/NewGrid11";
+import TestimonialsSection from "@components/Home-Page/NewGrid12";
 
 export default function Home() {
   return (
