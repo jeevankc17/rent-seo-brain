@@ -36,12 +36,12 @@ const GridBackground = () => {
 // Main App Component
 export default function GridBackgroundView() {
   const avatars = [
-    "image1.jpg",
-    "image2.jpg",
-    "image3.jpg",
-    "image4.jpg",
-    "image5.jpg",
-    "image6.jpg",
+    "/Home-Page/Hero-Section/image1.jpg",
+    "/Home-Page/Hero-Section/image2.jpg",
+    "/Home-Page/Hero-Section/image3.jpg",
+    "/Home-Page/Hero-Section/image4.jpg",
+    "/Home-Page/Hero-Section/image5.jpg",
+    "/Home-Page/Hero-Section/image6.jpg",
   ];
   return (
     <main className="relative w-full h-full bg-neutral-900 overflow-hidden">

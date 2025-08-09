@@ -4,14 +4,14 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          "Fills-Secondary": "rgba(120, 120, 128, 0.16)",
-          "Foundation-Grey-Scale-G200": "#d2d2d2",
-          "Foundation-Primary-Scale-P300": "#1d8fff",
-          "Foundation-Neutral-Scale-N0": "#fff",
-          "Foundation-Grey-Scale-G50": "#fafafa",
-          "Foundation-Neutral-Scale-N900": "#071f36",
-          "Foundation-Grey-Scale-G500": "#7b7b7b",
-          "Foundation-Neutral-Scale-N1000": "#0d0e12",
+          "fills-secondary": "rgba(120, 120, 128, 0.16)",
+          "foundation-grey-scale-g200": "#d2d2d2",
+          "foundation-primary-scale-p300": "var(--primary-300)",
+          "foundation-neutral-scale-n0": "#fff",
+          "foundation-grey-scale-g50": "#fafafa",
+          "foundation-neutral-scale-n900": "#071f36",
+          "foundation-grey-scale-g500": "#7b7b7b",
+          "foundation-neutral-scale-n1000": "#0d0e12",
           gray: {
             100: "#091e42",
             200: "rgba(255, 255, 255, 0.7)",
