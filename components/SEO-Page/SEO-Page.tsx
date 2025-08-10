@@ -1,5 +1,12 @@
 "use client";
 import React from "react";
+import Image from "next/image";
+
+// Near the top of your file, import the SVGs
+import SendIcon from "@/public/SEO/SEOPage/Send.svg"; // Adjust the path as necessary
+import DollarIcon from "@/public/SEO/SEOPage/Dollar.svg"; // Adjust the path as necessary/Dollar sign.svg";
+import SearchIcon from "@/public/SEO/SEOPage/Search.svg";
+import GlobeIcon from "@/public/SEO/SEOPage/Globe.svg";
 
 const GridBackground = () => {
   return (
@@ -21,7 +28,7 @@ const GridBackground = () => {
   );
 };
 
-export default function Features() {
+export default function SEOPage() {
   return (
     <div className="relative w-full min-h-screen bg-neutral-900 overflow-hidden">
       {/* Replace the old grid with new GridBackground */}
@@ -40,12 +47,12 @@ export default function Features() {
       `}</style>
 
       {/* Background Blur Effects */}
-      <div className="absolute left-0 top-[722px] lg:top-[722px] md:top-[500px] sm:top-[400px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
+      {/* <div className="absolute left-0 top-[722px] lg:top-[722px] md:top-[500px] sm:top-[400px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
       <div className="absolute left-[150px] lg:left-[303px] top-[260px] lg:top-[260px] md:top-[200px] sm:top-[150px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
-      <div className="absolute right-[50px] lg:right-[125px] top-0 w-[150px] lg:w-[244px] h-[130px] lg:h-[226px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
+      <div className="absolute right-[50px] lg:right-[125px] top-0 w-[150px] lg:w-[244px] h-[130px] lg:h-[226px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" /> */}
 
       {/* Large background blur circle */}
-      <div className="absolute right-[20px] lg:right-[135px] top-[100px] lg:top-[131px] w-[400px] lg:w-[790px] h-[400px] lg:h-[790px] rounded-full bg-blue-500/[0.02] blur-[15px] lg:blur-[25px]" />
+      {/* <div className="absolute right-[20px] lg:right-[135px] top-[100px] lg:top-[131px] w-[400px] lg:w-[790px] h-[400px] lg:h-[790px] rounded-full bg-blue-500/[0.02] blur-[15px] lg:blur-[25px]" /> */}
 
       {/* Main Content Container */}
       <div className="relative flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-3 px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[107px] pb-12 lg:pb-[304px] min-h-screen">
@@ -148,15 +155,32 @@ export default function Features() {
             {/* Review Section */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 lg:gap-3">
               <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
-                {[1, 2, 3, 4, 5, 6].map((i) => (
+                {[
+                  "/Home-Page/Hero-Section/image1.jpg",
+                  "/Home-Page/Hero-Section/image2.jpg",
+                  "/Home-Page/Hero-Section/image3.jpg",
+                  "/Home-Page/Hero-Section/image4.jpg",
+                  "/Home-Page/Hero-Section/image5.jpg",
+                  "/Home-Page/Hero-Section/image6.jpg",
+                ].map((imagePath, index) => (
                   <div
-                    key={i}
-                    className={`w-[28px] lg:w-[33.231px] h-[28px] lg:h-[33.231px] rounded-full bg-primary-300 ${
-                      i > 1
-                        ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"
-                        : ""
-                    }`}
-                  />
+                    key={imagePath}
+                    className={`relative w-[28px] lg:w-[33.231px] h-[28px] lg:h-[33.231px] rounded-full overflow-hidden
+        ${
+          index > 0
+            ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"
+            : ""
+        }`}
+                  >
+                    <Image
+                      src={imagePath}
+                      alt={`Review avatar ${index + 1}`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 28px, 33.231px"
+                      priority={index < 2} // Load first two images immediately
+                    />
+                  </div>
                 ))}
               </div>
               <div className="flex flex-col items-start gap-1 lg:gap-2">
@@ -229,7 +253,7 @@ export default function Features() {
                 height="100%"
               >
                 <image
-                  href="/Home-Page/Hero-Section/image1.jpg" // Replace with your image path
+                  href="frame.png" // Replace with your image path
                   width="458"
                   height="667"
                   preserveAspectRatio="xMidYMid slice"
@@ -246,111 +270,49 @@ export default function Features() {
           </svg>
 
           {/* Search Icon - Bottom Left */}
-          <div className="absolute left-[30px] lg:left-[77px] top-[200px] lg:top-[385px] w-[45px] lg:w-[73px] h-[45px] lg:h-[73px] rotate-[-8.637deg] rounded-[12px] lg:rounded-[17.033px] bg-linear-primary shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
-            <svg
-              width="28"
-              height="28"
+          <div className="absolute left-[30px] lg:left-[77px] top-[200px] lg:top-[385px] w-[45px] lg:w-[73px] h-[45px] lg:h-[73px] rotate-[-8.637deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
+            <Image
+              src={SearchIcon}
+              alt="Search icon"
+              width={28}
+              height={28}
               className="lg:w-[43px] lg:h-[43px]"
-              viewBox="0 0 50 50"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M24.9576 37.5099C32.7839 36.3207 38.1642 29.0122 36.9751 21.186C35.7859 13.3597 28.4774 7.97935 20.6511 9.16854C12.8249 10.3577 7.4445 17.6662 8.6337 25.4925C9.8229 33.3187 17.1314 38.6991 24.9576 37.5099Z"
-                stroke="white"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M43.2043 38.3616L34.3281 31.8271"
-                stroke="white"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            />
           </div>
 
           {/* Globe Icon - Top Right */}
-          <div className="absolute right-[10px] lg:right-[4px] top-[60px] lg:top-[121px] w-[45px] lg:w-[72px] h-[45px] lg:h-[72px] rotate-[21.087deg] rounded-[12px] lg:rounded-[17.033px] bg-linear-primary shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
-            <svg
-              width="28"
-              height="28"
+          <div className="absolute right-[10px] lg:right-[4px] top-[60px] lg:top-[121px] w-[45px] lg:w-[72px] h-[45px] lg:h-[72px] rotate-[21.087deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
+            <Image
+              src={GlobeIcon}
+              alt="Globe icon"
+              width={28}
+              height={28}
               className="lg:w-[42px] lg:h-[42px]"
-              viewBox="0 0 55 55"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clipPath="url(#clip0_1266_22672)">
-                <path
-                  d="M44.1827 34.15C40.7049 43.1676 30.5754 47.6585 21.5578 44.1807M44.1827 34.15C47.6605 25.1324 43.1696 15.0029 34.152 11.5251M44.1827 34.15L11.5271 21.5558M21.5578 44.1807C12.5402 40.7029 8.04933 30.5734 11.5271 21.5558M21.5578 44.1807C27.3662 41.2847 31.925 36.3774 34.386 30.3717C36.5948 24.2688 36.5117 17.5713 34.152 11.5251M21.5578 44.1807C19.1981 38.1345 19.115 31.437 21.3238 25.3341C23.7849 19.3284 28.3436 14.4212 34.152 11.5251M11.5271 21.5558C15.0049 12.5382 25.1344 8.04733 34.152 11.5251"
-                  stroke="white"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_1266_22672">
-                  <rect
-                    width="28"
-                    height="28"
-                    fill="white"
-                    transform="translate(10.8164 0.703125) rotate(21.09)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
+            />
           </div>
 
           {/* Top Blue Bubble with Icons */}
-          <div className="absolute left-[120px] lg:left-[251px] top-0 w-[120px] lg:w-[181px] h-[60px] lg:h-[92px] rounded-full border border-black bg-linear-blue flex items-center justify-between px-[5px] lg:px-[7px]">
-            <svg
-              className="ml-[8px] lg:ml-[18px]"
-              width="32"
-              height="32"
-              viewBox="0 0 49 49"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M44.5195 4.23975L22.5195 26.2397M44.5195 4.23975L30.5195 44.2397L22.5195 26.2397M44.5195 4.23975L4.51953 18.2397L22.5195 26.2397"
-                stroke="white"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+          <div className="absolute left-[120px] lg:left-[251px] top-0 w-[120px] lg:w-[181px] h-[60px] lg:h-[92px] rounded-full border border-black bg-primary-200 flex items-center justify-between px-[5px] lg:px-[7px]">
+            {/* Send Icon */}
+            <div className="ml-[8px] lg:ml-[18px]">
+              <Image
+                src={SendIcon}
+                alt="Send icon"
+                width={32}
+                height={32}
+                className="w-8 h-8"
               />
-            </svg>
+            </div>
+
+            {/* Dollar Sign Circle */}
             <div className="w-[50px] lg:w-[78px] h-[50px] lg:h-[78px] rounded-full bg-white shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
-              <svg
-                width="32"
-                height="32"
+              <Image
+                src={DollarIcon}
+                alt="Dollar sign"
+                width={32}
+                height={32}
                 className="lg:w-[48px] lg:h-[48px]"
-                viewBox="0 0 49 49"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_1266_22677)">
-                  <path
-                    d="M24.7578 2.23999V46.24M34.7578 10.24H19.7578C17.9013 10.24 16.1208 10.9775 14.8081 12.2902C13.4953 13.603 12.7578 15.3835 12.7578 17.24C12.7578 19.0965 13.4953 20.877 14.8081 22.1897C16.1208 23.5025 17.9013 24.24 19.7578 24.24H29.7578C31.6143 24.24 33.3948 24.9775 34.7076 26.2902C36.0203 27.603 36.7578 29.3835 36.7578 31.24C36.7578 33.0965 36.0203 34.877 34.7076 36.1897C33.3948 37.5025 31.6143 38.24 29.7578 38.24H12.7578"
-                    stroke="#1D8FFF"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1266_22677">
-                    <rect
-                      width="32"
-                      height="32"
-                      fill="white"
-                      transform="translate(0.757812 0.23999)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
+              />
             </div>
           </div>
 
