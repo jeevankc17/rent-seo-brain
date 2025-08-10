@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NewGrid() {
+export default function Features() {
   return (
     <section className="w-full flex justify-center py-8 bg-gradient-to-br from-blue-50/30 to-purple-50/30">
       <div className="w-[1128px] flex flex-col justify-start items-center gap-12">

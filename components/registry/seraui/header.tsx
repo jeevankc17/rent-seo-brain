@@ -4,109 +4,13 @@ import { useTheme } from "next-themes";
 import Button from "./button";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
-// Icons from lucide-react, commonly used with shadcn/ui
-const MenuIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <line x1="4" x2="20" y1="12" y2="12" />
-    <line x1="4" x2="20" y1="6" y2="6" />
-    <line x1="4" x2="20" y1="18" y2="18" />
-  </svg>
-);
-
-const XIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M18 6 6 18" />
-    <path d="m6 6 12 12" />
-  </svg>
-);
-
-const MountainIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-  </svg>
-);
-
-const SunIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <circle cx="12" cy="12" r="4" />
-    <path d="M12 2v2" />
-    <path d="M12 20v2" />
-    <path d="m4.93 4.93 1.41 1.41" />
-    <path d="m17.66 17.66 1.41 1.41" />
-    <path d="M2 12h2" />
-    <path d="M20 12h2" />
-    <path d="m6.34 17.66-1.41 1.41" />
-    <path d="m19.07 4.93-1.41 1.41" />
-  </svg>
-);
-
-const MoonIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-  </svg>
-);
+// ...existing icon components (MenuIcon, XIcon, etc.)...
+import { Menu as MenuIcon, X as XIcon } from "lucide-react";
 
 const Header = () => {
-  // State to manage the visibility of the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  // Navigation links data
   const navLinks = [
     { href: "#", label: "Home" },
     { href: "#", label: "About" },
@@ -119,19 +23,17 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-neutral-900 dark:bg-black/80 backdrop-blur-sm sticky top-0 z-50 w-full h-[119px] p-[27px]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo Section */}
-          <div className="flex-shrink-0 px-32">
+    <header className="sticky top-0 z-50 w-full bg-neutral-900 dark:bg-black/80 backdrop-blur-sm">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Main Header Content */}
+        <div className="flex h-[80px] md:h-[119px] items-center justify-between py-4 md:py-[27px]">
+          {/* Logo */}
+          <div className="flex shrink-0 items-center">
             <a href="#" className="flex items-center gap-2">
-              {/* <span className="text-lg font-semibold text-white dark:text-white">
-                Acme Inc
-              </span> */}
               <img
                 src="/logo.png"
                 alt="Logo"
-                className="h-[63px] w-[112px] "
+                className="h-[40px] w-[71px] md:h-[63px] md:w-[112px]"
               />
             </a>
           </div>
@@ -142,75 +44,62 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="flex items-center text-[16px] font-600 text-gray-200 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
+                className="group relative flex items-center text-[16px] font-medium text-gray-200 hover:text-white transition-colors"
               >
                 {link.label}
                 {link.label === "Services" && (
-                  <ChevronDown className="ml-1 h-4 w-4" />
+                  <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />
                 )}
               </a>
             ))}
           </nav>
 
-          {/* CTA Button, Theme Toggle and Mobile Menu Toggle */}
-          <div className="flex items-center gap-4">
-            {/* <a href="#" className="hidden sm:inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors duration-300">
-                Book An Appointment 
-             </a> */}
+          {/* Right Side Actions */}
+          <div className="flex items-center gap-2 sm:gap-4">
+            {/* CTA Button - Hidden on mobile */}
             <Button
-              className="hidden sm:inline-flex border rounded-[24px] text-md font-medium h-10 px-8 py-2 transition-colors duration-300 text-[#] bg-white"
+              className="hidden sm:inline-flex items-center gap-2 rounded-[24px] px-4 sm:px-8 py-2 
+                       text-sm sm:text-[16px] font-medium bg-white text-black hover:bg-gray-100 
+                       transition-colors duration-300"
               variant="outline"
             >
-              <span className="text-[16px] font-500">Book An Appointment</span>
-              <span className="ml-2 text-sm">
-                <ArrowRight />
-              </span>
+              <span>Book An Appointment</span>
+              <ArrowRight className="h-4 w-4" />
             </Button>
 
-            {/* Theme Toggle Button */}
-            {/* <button
-              onClick={toggleTheme}
-              className="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 dark:focus:ring-gray-400 transition-colors duration-300"
-              aria-label="Toggle theme"
-            >
-              {theme === "dark" ? (
-                <SunIcon className="h-5 w-5" />
-              ) : (
-                <MoonIcon className="h-5 w-5" />
-              )}
-            </button> */}
-
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 dark:focus:ring-gray-400 transition-colors duration-300"
-                aria-expanded={isMenuOpen}
-              >
-                <span className="sr-only">Open main menu</span>
-                {isMenuOpen ? (
-                  <XIcon className="h-6 w-6" />
-                ) : (
-                  <MenuIcon className="h-6 w-6" />
-                )}
-              </button>
-            </div>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="inline-flex md:hidden items-center justify-center p-2 rounded-md 
+                       text-gray-200 hover:text-white hover:bg-gray-800 
+                       focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-400"
+              aria-expanded={isMenuOpen}
+            >
+              <span className="sr-only">Toggle menu</span>
+              {isMenuOpen ? (
+                <XIcon className="h-6 w-6" />
+              ) : (
+                <MenuIcon className="h-6 w-6" />
+              )}
+            </button>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Menu Dropdown (Sheet) */}
-      {isMenuOpen && (
+        {/* Mobile Menu Dropdown */}
         <div
-          className="md:hidden border-t border-gray-200 dark:border-gray-700"
-          id="mobile-menu"
+          className={`md:hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+          }`}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="space-y-2 px-4 pb-4 pt-2">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white  px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 flex items-center"
+                className="flex items-center justify-between rounded-lg px-4 py-3
+                         text-base font-medium text-gray-200 hover:bg-gray-800 hover:text-white
+                         transition-colors"
+                onClick={() => link.label === "Services" && setIsMenuOpen(false)}
               >
                 {link.label}
                 {link.label === "Services" && (
@@ -218,15 +107,22 @@ const Header = () => {
                 )}
               </a>
             ))}
-            <a
-              href="#"
-              className="w-full mt-2 text-center items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 block transition-colors duration-300"
-            >
-              Get Started
-            </a>
+            
+            {/* Mobile CTA Button */}
+            <div className="mt-4 px-4">
+              <Button
+                className="w-full flex items-center justify-center gap-2 rounded-[24px] 
+                         bg-white text-black px-4 py-3 text-base font-medium
+                         hover:bg-gray-100 transition-colors"
+                variant="outline"
+              >
+                <span>Book An Appointment</span>
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 };

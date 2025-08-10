@@ -152,7 +152,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             <b className="w-[618px] relative leading-[57px] inline-block text-white">
               High-Converting Landing Pages That Sell
             </b>
-            <div className="w-[640px] relative text-base text-G-200 leading-[23px] font-normal inline-block">
+            <div className="w-[640px] relative text-base text-grey-200 leading-[23px] font-normal inline-block">
               Our SEO-focused design team creates landing pages that convert
               visitors into customers. Proven designs that drive results for
               your business.

@@ -1,8 +1,7 @@
 import { Grid } from "lucide-react";
 import Header from "../components/registry/seraui/header";
-import GridBackgroundView from "@components/Home-Page/Hero-Section";
-import NewGrid from "@components/Home-Page/NewGrid";
-import NewGrid1 from "@components/Home-Page/NewGrid1";
+import HeroSection from "@components/Home-Page/Hero-Section";
+import Proposition from "@components/Home-Page/Proposition";
 import NewGrid2 from "@components/Home-Page/NewGrid2";
 import NewGrid3 from "@components/Home-Page/NewGrid3";
 import NewGrid4 from "@components/Home-Page/NewGrid4";
@@ -13,18 +12,19 @@ import NewGrid8 from "@components/Home-Page/NewGrid8";
 import SEOBlogSection from "@components/Home-Page/NewGrid10";
 import CaseStudiesSection from "@components/Home-Page/NewGrid11";
 import TestimonialsSection from "@components/Home-Page/NewGrid12";
+import Features from "@components/Home-Page/Features";
 
 export default function Home() {
   return (
     <main className="w-full bg-neutral-900">
       <section className="relative w-full h-[922px]">
-        <GridBackgroundView />
+        <HeroSection />
       </section>
       <section className="relative bg-grey-100 pt-[132px]">
-        <NewGrid />
+        <Features />
       </section>
       <section className="relative  bg-grey-100 pt-[132px]">
-        <NewGrid1 />
+        <Proposition />
       </section>
       <section className="relative bg-grey-100 pt-[132px]">
         <NewGrid2 />
@@ -56,6 +56,7 @@ export default function Home() {
       <section className="relative bg-grey-100 pt-[132px] px-[156px]">
         <TestimonialsSection />
       </section>
+    
     </main>
   );
 }

@@ -34,7 +34,7 @@ const GridBackground = () => {
 };
 
 // Main App Component
-export default function GridBackgroundView() {
+export default function HeroSection() {
   const avatars = [
     "/Home-Page/Hero-Section/image1.jpg",
     "/Home-Page/Hero-Section/image2.jpg",

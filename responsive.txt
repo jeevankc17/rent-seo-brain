@@ -1,0 +1,29 @@
+Please help make this component responsive following these requirements:
+
+1. Breakpoints needed:
+- Mobile (default): < 640px
+- Tablet (sm): 640px+
+- Laptop (md): 768px+
+- Desktop (lg): 1024px+
+- XL Desktop (xl): 1280px+
+
+2. Component should:
+- Stack vertically on mobile
+- Have proper spacing/padding across breakpoints
+- Hide/show elements based on screen size
+- Use fluid typography
+- Handle interactive elements properly
+- Include loading states
+- Consider accessibility
+
+3. Follow these Tailwind patterns:
+- Use mobile-first approach
+- Container constraints: max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+- Spacing scale: gap-2 sm:gap-4 md:gap-6 lg:gap-8
+- Responsive padding: p-4 sm:p-6 lg:p-8
+- Flexible layouts: flex-col md:flex-row
+- Conditional visibility: hidden md:block
+- Font sizes: text-sm sm:text-base lg:text-lg
+- Dynamic heights: h-[80px] md:h-[119px]
+
+Please show the full responsive implementation maintaining existing functionality.
