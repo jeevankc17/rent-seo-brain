@@ -1,8 +1,8 @@
+// app/layout.tsx (Server Component)
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
-import Header from "../components/registry/seraui/header";
-import Footer from "@components/components/Footer";
+import ClientLayout from "./Client-Layout";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
@@ -24,13 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${urbanist.variable}`}>
       <body className={`${urbanist.variable} antialiased`}>
-        <section className="w-full ">
-          <Header />
-        </section>
-        {children}
-        <section className="w-full">
-          <Footer />
-        </section>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

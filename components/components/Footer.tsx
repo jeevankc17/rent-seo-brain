@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <div className="relative px-4 sm:px-6 md:px-8 lg:px-40 py-8 md:py-16 bg-neutral-950 flex flex-col items-start gap-2.5">
+    <div className="relative px-4 sm:px-6 md:px-8 lg:px-40 py-8 md:py-16 bg-neutral-900 flex flex-col items-start gap-2.5">
       {/* Main Content */}
       <div className="w-full max-w-[1128px] mx-auto flex flex-col items-start gap-6 md:gap-9">
         {/* Newsletter Section */}
