@@ -1,6 +1,11 @@
 "use client";
 import React from "react";
+import type { NextPage } from "next";
+
 import Image from "next/image";
+export type Frame2121458408Type = {
+  className?: string;
+};
 
 // Grid Background Component (from Hero Section)
 const GridBackground = () => {
@@ -9,9 +14,9 @@ const GridBackground = () => {
       className="absolute inset-0 w-full h-full overflow-hidden transition-transform duration-300 ease-out opacity-50"
       style={{
         backgroundImage: `
-          linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px)
-        `,
+            linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px)
+          `,
         backgroundSize: "80px 80px",
         animation: "moveGrid 20s linear infinite",
         transform: "none",
@@ -35,7 +40,7 @@ const GridBackground = () => {
   );
 };
 
-export default function BlogHero() {
+const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
   return (
     <div className="relative w-full min-h-screen bg-neutral-900 overflow-hidden">
       {/* Replace static grid with animated GridBackground */}
@@ -54,6 +59,13 @@ export default function BlogHero() {
         {/* Header Section */}
         <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-8 lg:gap-11 mb-8 lg:mb-16">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
+            {/* Brand Badge */}
+            {/* <div className="flex p-[5px] items-center gap-2 lg:gap-[9px] rounded-[45px] border border-primary-75"> */}
+            {/* {/* <div className="flex items-start gap-[-5px] lg:gap-[-6.874px]"> */}
+            {/* {[1, 2, 3, 4, 5, 6].map((i) => (
+             <div key={i} className={`w-[18px] lg:w-[21.395px] h-[18px] lg:h-[21.395px] rounded-full bg-primary-300 ${i > 1 ? 'border border-grey-50 -ml-[5px] lg:-ml-[6.874px]' : ''}`} />
+            ))} */}
+            {/* </div>  */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 lg:gap-3">
               <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
                 {[
@@ -67,11 +79,11 @@ export default function BlogHero() {
                   <div
                     key={imagePath}
                     className={`relative w-[28px] lg:w-[33.231px] h-[28px] lg:h-[33.231px] rounded-full overflow-hidden
-               ${
-                 index > 0
-                   ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"
-                   : ""
-               }`}
+                   ${
+                     index > 0
+                       ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"
+                       : ""
+                   }`}
                   >
                     <Image
                       src={imagePath}
@@ -92,13 +104,17 @@ export default function BlogHero() {
             {/* Main Heading and Description */}
             <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-3 lg:gap-4">
               <h1 className="w-full text-center text-[32px] sm:text-[42px] lg:text-[50px] font-bold leading-[36px] sm:leading-[46px] lg:leading-[57px] font-sans">
-                <span className="text-white">Rank Smarter with </span>
-                <span className="text-primary-300">SEO Tips</span>
-                <span className="text-white"> That Work</span>
+                <span className="text-white">We </span>
+                <span className="text-primary-300">Grow Brands</span>
+                <span className="text-white">
+                  {" "}
+                  By Ranking,Designing, and Promoting
+                </span>
               </h1>
               <p className="w-full max-w-[640px] text-grey-200 text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] font-sans">
-                From keyword research to link building, get actionable advice
-                and case studies to grow your organic reach.
+                Our team is on a mission to help startups, agencies, and
+                enterprises thrive online with custom strategies that deliver
+                results.
               </p>
             </div>
           </div>
@@ -107,7 +123,7 @@ export default function BlogHero() {
           <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 lg:gap-[13px] w-full max-w-[520px]">
             <button className="flex w-full sm:w-[240px] lg:w-[273px] h-[45px] lg:h-[50px] px-[3px] py-0 justify-center lg:justify-end items-center gap-2 lg:gap-[10px] rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
               <span className="text-white text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] capitalize font-sans">
-                Boost Your SEO Knowledge
+                Meet The Team
               </span>
               <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
                 <svg
@@ -138,7 +154,7 @@ export default function BlogHero() {
 
             <button className="flex w-full sm:w-[180px] lg:w-[220px] h-[45px] lg:h-[50px] px-4 lg:px-[19px] py-[10px] justify-center items-center gap-2 lg:gap-[7px] rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
               <span className="text-[#091E42] text-sm lg:text-base font-medium leading-[100%] capitalize font-sans">
-                Read the Trending
+                Our Success Stories
               </span>
               <svg
                 width="16"
@@ -167,135 +183,44 @@ export default function BlogHero() {
           </div>
         </div>
 
-        {/* Blog Card Section */}
-        <div className="flex w-[1129px] max-w-[1129px] h-auto lg:h-[358px] p-4 lg:p-6 items-start lg:items-center gap-4 lg:gap-6 flex-col lg:flex-row rounded-[11px] bg-white shadow-[0_4px_25.6px_0_rgba(47,152,255,0.37)] mb-8 lg:mb-16">
-          {/* Blog Image */}
-          <div className="w-full lg:w-[563px] h-[200px] lg:h-[310px] flex-shrink-0 rounded-[7px] bg-cover bg-center bg-no-repeat overflow-hidden">
-            <img
-              src="/Blog/Hero-Section/Component.png"
-              alt="Local SEO workspace"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Blog Content */}
-          <div className="flex w-full lg:w-[514px] h-auto lg:h-[310px] flex-col items-start gap-6 lg:gap-[39px] flex-shrink-0 ">
-            {/* Article Header */}
-            <div className="flex h-auto lg:h-[224px] flex-col items-start gap-2 lg:gap-2 flex-shrink-0 w-full">
-              <div className="flex flex-col items-start gap-2 lg:gap-[9px] w-full">
-                {/* Tags */}
-                <div className="flex items-start gap-2 lg:gap-[9px] flex-wrap ">
-                  <div className="flex py-1 px-3 lg:py-1 lg:px-[10px] justify-center items-center gap-2 rounded-full border border-primary-300 bg-primary-50">
-                    <span className="text-primary-300 text-center text-[8px] lg:text-[10px] font-normal leading-[12px] lg:leading-[14px] font-sans">
-                      Trending
-                    </span>
-                  </div>
-                  <div className="flex py-1 px-3 lg:py-1 lg:px-[10px] justify-center items-center gap-2 rounded-full border border-green-500 bg-green-500/17">
-                    <span className="text-green-500 text-center text-[8px] lg:text-[10px] font-normal leading-[12px] lg:leading-[14px] font-sans">
-                      Local SEO
-                    </span>
-                  </div>
-                </div>
-
-                {/* Article Title */}
-                <h2 className="w-full text-primary-500 text-[16px] lg:text-[18px] font-semibold leading-[22px] lg:leading-[25px] font-sans">
-                  Local SEO Checklist: 15 Steps to Dominate Local Search
-                </h2>
-
-                {/* Article Description */}
-                <p className="w-full text-grey-400 text-[12px] lg:text-[14px] font-medium leading-[18px] lg:leading-[23px] font-sans">
-                  To improve your local search rankings and attract more
-                  customers in your area, start by optimizing your Google
-                  Business Profile (GBP). Claim and verify your listing,
-                  ensuring your business name, address, and phone number (NAP)
-                  are accurate and consistent. Choose the most relevant business
-                  categories, write a keyword-rich description, and upload
-                  high-quality images of your storefront,{" "}
-                  <span className="text-primary-300">Read More.....</span>
-                </p>
-              </div>
-
-              {/* Read Time */}
-              <div className="flex items-center gap-[6px] mt-2">
-                <svg
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.0026 15.1668C11.6845 15.1668 14.6693 12.1821 14.6693 8.50016C14.6693 4.81826 11.6845 1.8335 8.0026 1.8335C4.32071 1.8335 1.33594 4.81826 1.33594 8.50016C1.33594 12.1821 4.32071 15.1668 8.0026 15.1668Z"
-                    stroke="#8D8D8D"
-                    strokeWidth="1.61538"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M8 4.5V8.5L10.6667 9.83333"
-                    stroke="#8D8D8D"
-                    strokeWidth="1.61538"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                <span className="text-grey-400 text-[10px] lg:text-[12px] font-normal leading-[18px] lg:leading-[23px] font-sans">
-                  12 min read
-                </span>
+        {/* Image Section */}
+        <div
+          className={
+            "w-[999.1px] max-w-full h-[790px]  text-left text-[22px] text-white font-[Urbanist]"
+          }
+        >
+          <div className="absolute top-[0px] left-[calc(50%_-_394.55px)] [filter:blur(50.6px)] rounded-[50%] bg-[rgba(0,132,255,0.09)] w-[790px] h-[790px]" />
+          <div className="absolute top-[503px] left-[calc(50%_-_499.55px)] flex flex-row items-center justify-start gap-[27px]">
+            <div className="w-[349.1px] relative h-[342px] overflow-hidden  flex items-center justify-center">
+              <Image
+                className="w-full h-full object-cover absolute left-[0px] top-[0px] [transform:scale(1.044)]"
+                width={349.1}
+                height={342}
+                sizes="100vw"
+                alt=""
+                src="/About/left.png"
+              />
+            </div>
+            <div className="w-[275px] shadow-[0px_0px_12.7px_#fff] rounded-[379.5px] bg-Foundation-Neutral-Scale-N0 border-[rgba(47,152,255,0.63)] border-solid border-[12.1px] box-border flex flex-row items-center justify-center py-[30.8px] px-[33px]">
+              <div className="relative leading-[110%] capitalize font-medium">
+                Rent SEO Brain
               </div>
             </div>
-
-            {/* Author and CTA */}
-            <div className="flex items-center justify-between w-full">
-              {/* Author Info */}
-              <div className="flex items-center gap-3 lg:gap-[15px]">
-                <div className="w-[32px] lg:w-[40px] h-[32px] lg:h-[40px] rounded-full overflow-hidden">
-                  <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/058fe75754dc0d2b25c1de36019cfd2a43b57ca3?width=80"
-                    alt="Alex Thompson"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex flex-col items-start gap-1 lg:gap-[6px]">
-                  <div className="text-neutral-800 text-[12px] lg:text-[14px] font-medium leading-[12px] lg:leading-[14px] font-sans">
-                    Alex Thompson
-                  </div>
-                  <div className="text-grey-500 text-[10px] lg:text-[12px] font-normal leading-[12px] lg:leading-[14px] font-sans">
-                    Senior SEO Strategist
-                  </div>
-                </div>
-              </div>
-
-              {/* Read More Button */}
-              <div className="flex w-[32px] lg:w-[41px] h-[32px] lg:h-[41px] p-2 lg:p-[10px] justify-center items-center gap-2 rounded-full border border-grey-75 bg-grey-50">
-                <svg
-                  width="20"
-                  height="20"
-                  className="lg:w-6 lg:h-6"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 17.5L17.5 7.5"
-                    stroke="#1D8FFF"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M7.5 7.5H17.5V17.5"
-                    stroke="#1D8FFF"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
+            <div className="w-[321px] relative h-[342px] overflow-hidden  flex items-center justify-center">
+              <Image
+                className="w-full h-full object-cover absolute left-[7px] top-[0px] [transform:scale(1.047)]"
+                width={321}
+                height={342}
+                sizes="100vw"
+                alt=""
+                src="/About/right.png"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default HeroSection;
