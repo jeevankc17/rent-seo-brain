@@ -219,7 +219,7 @@ export default function SEOPage() {
             <div className="flex items-center gap-3 lg:gap-4">
               <div className="w-[50px] lg:w-[63px] h-[50px] lg:h-[63px] rounded-[10px] lg:rounded-[12.6px] bg-primary-300 flex justify-center items-center overflow-hidden">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc34ab42bfc61416eb4f25f673bee072f%2F9cf36ca517bc4e5c8a6a0433d5bf7ea4?format=webp&width=126"
+                  src="/SEO/SEOPage/franklyn.png" // Replace with your image path
                   alt="Franklyn C."
                   className="w-full h-full object-cover"
                 />
@@ -240,7 +240,7 @@ export default function SEOPage() {
         <div className="w-full lg:w-[456px] h-[400px] lg:h-[665px]  shrink-0 relative hidden sm:block">
           {/* Main Phone SVG */}
           <svg
-            className="absolute left-[50px] lg:left-[108px]  lg:top-[-62px] w-[250px] lg:w-[456px] h-[350px] lg:h-[665px]"
+            className="absolute left-[50px] lg:left-[108px] lg:top-[20px] w-[250px] lg:w-[456px] h-[350px] lg:h-[665px]"
             viewBox="0 0 458 667"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@ export default function SEOPage() {
           </svg>
 
           {/* Search Icon - Bottom Left */}
-          <div className="absolute left-[30px] lg:left-[77px] top-[200px] lg:top-[385px] w-[45px] lg:w-[73px] h-[45px] lg:h-[73px] rotate-[-8.637deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
+          <div className="absolute left-[30px] lg:left-[77px] top-[282px] lg:top-[467px] w-[45px] lg:w-[73px] h-[45px] lg:h-[73px] rotate-[-8.637deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
             <Image
               src={SearchIcon}
               alt="Search icon"
@@ -281,7 +281,7 @@ export default function SEOPage() {
           </div>
 
           {/* Globe Icon - Top Right */}
-          <div className="absolute right-[10px] lg:right-[4px] top-[60px] lg:top-[121px] w-[45px] lg:w-[72px] h-[45px] lg:h-[72px] rotate-[21.087deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
+          <div className="absolute right-[10px] lg:right-[4px] top-[142px] lg:top-[203px] w-[45px] lg:w-[72px] h-[45px] lg:h-[72px] rotate-[21.087deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
             <Image
               src={GlobeIcon}
               alt="Globe icon"
@@ -292,7 +292,7 @@ export default function SEOPage() {
           </div>
 
           {/* Top Blue Bubble with Icons */}
-          <div className="absolute left-[120px] lg:left-[251px] top-0 w-[120px] lg:w-[181px] h-[60px] lg:h-[92px] rounded-full border border-black bg-primary-200 flex items-center justify-between px-[5px] lg:px-[7px]">
+          <div className="absolute left-[120px] lg:left-[251px] top-[82px] lg:top-[82px] w-[120px] lg:w-[181px] h-[60px] lg:h-[92px] rounded-full border border-black bg-primary-200 flex items-center justify-between px-[5px] lg:px-[7px]">
             {/* Send Icon */}
             <div className="ml-[8px] lg:ml-[18px]">
               <Image
@@ -318,7 +318,7 @@ export default function SEOPage() {
 
           {/* Dashed Line */}
           <svg
-            className="absolute left-0 top-[35px] lg:top-[55px] w-[180px] lg:w-[284px] h-[50px] lg:h-[79px]"
+            className="absolute left-0 top-[117px] lg:top-[137px] w-[180px] lg:w-[284px] h-[50px] lg:h-[79px]"
             width="286"
             height="81"
             viewBox="0 0 286 81"
