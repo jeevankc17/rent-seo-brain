@@ -55,7 +55,7 @@ export default function SEOPage() {
       {/* <div className="absolute right-[20px] lg:right-[135px] top-[100px] lg:top-[131px] w-[400px] lg:w-[790px] h-[400px] lg:h-[790px] rounded-full bg-blue-500/[0.02] blur-[15px] lg:blur-[25px]" /> */}
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-3 px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[107px] pb-12 lg:pb-[304px] min-h-screen">
+      <div className="relative flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-3 px-4 sm:px-8 lg:px-[157px]  lg:pt-[128px] lg:pb-[167px]  min-h-screen">
         <div className="flex w-full lg:w-[552px] flex-col items-start lg:items-end gap-12 lg:gap-20 shrink-0">
           {/* Header Section */}
           <div className="flex flex-col justify-center items-start gap-6 lg:gap-10 w-full">
@@ -237,10 +237,10 @@ export default function SEOPage() {
         </div>
 
         {/* Right Side - Phone Mockup with Floating Elements */}
-        <div className="w-full lg:w-[587px] h-[400px] lg:h-[603px] shrink-0 relative hidden sm:block">
+        <div className="w-full lg:w-[456px] h-[400px] lg:h-[665px]  shrink-0 relative hidden sm:block">
           {/* Main Phone SVG */}
           <svg
-            className="absolute left-[50px] lg:left-[108px] top-[-30px] lg:top-[-62px] w-[250px] lg:w-[456px] h-[350px] lg:h-[665px]"
+            className="absolute left-[50px] lg:left-[108px]  lg:top-[-62px] w-[250px] lg:w-[456px] h-[350px] lg:h-[665px]"
             viewBox="0 0 458 667"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
