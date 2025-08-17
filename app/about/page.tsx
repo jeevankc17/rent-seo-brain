@@ -1,10 +1,32 @@
 import HeroSection from "@components/About-Us/Hero-Section";
+import { Principles } from "@components/About-Us/Principles";
+import { PrinciplesSection } from "@components/About-Us/StarRating";
+import { TeamSection } from "@components/About-Us/TeamSection";
+import { Testimonial } from "@components/About-Us/Testimonial";
+import TestimonialsSection from "@components/About-Us/TestimonialsSection";
 
 export default function Home() {
   return (
-    <main className="w-full bg-neutral-900">
+    <main className="flex flex-col bg-white gap-[132px]">
       <section className="relative w-full h-[922px] bg-neutral-900">
         <HeroSection />
+      </section>
+      <section className="relative w-full h-[505px] bg-white px-[156px]">
+        <TestimonialsSection />
+      </section>
+
+      <section className="relative w-full min-h-[981px] bg-white px-[156px]">
+        <Principles />
+      </section>
+      <section className="relative w-full h-[710px] bg-white px-[156px]">
+        <TeamSection />
+      </section>
+      <section className="relative w-full h-[506px] bg-white px-[156px]">
+        <PrinciplesSection />
+      </section>
+
+      <section className="relative w-full h-[922px] bg-white px-[156px]">
+        <Testimonial />
       </section>
     </main>
   );

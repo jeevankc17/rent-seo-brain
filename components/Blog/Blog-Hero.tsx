@@ -54,7 +54,8 @@ export default function BlogHero() {
         {/* Header Section */}
         <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-8 lg:gap-11 mb-8 lg:mb-16">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 lg:gap-3">
+            {/* className="flex items-center justify-start w-[365px] h-[33px] p-[5px] border  rounded-[45px] absolute left-1/2 transform -translate-x-1/2 gap-[9px]" */}
+            <div className="flex items-center justify-start gap-[9px] h-[33px] border border-white  p-[5px] rounded-[45px]">
               <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
                 {[
                   "/Home-Page/Hero-Section/image1.jpg",
@@ -66,7 +67,7 @@ export default function BlogHero() {
                 ].map((imagePath, index) => (
                   <div
                     key={imagePath}
-                    className={`relative w-[28px] lg:w-[33.231px] h-[28px] lg:h-[33.231px] rounded-full overflow-hidden
+                    className={`relative w-[23px]  h-[23px]  rounded-full overflow-hidden
                ${
                  index > 0
                    ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"
@@ -84,7 +85,7 @@ export default function BlogHero() {
                   </div>
                 ))}
               </div>
-              <span className="text-white text-[10px] lg:text-[12px] font-medium leading-[20px] lg:leading-[23px] tracking-[0.06px] uppercase font-sans">
+              <span className="text-white font-urbanist font-medium text-[12px] leading-[23px] tracking-[0.5%] uppercase w-[256px] h-[23px]">
                 The SEO Playbook for Modern Brands.
               </span>
             </div>

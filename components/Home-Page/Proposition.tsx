@@ -1,145 +1,222 @@
 import React from "react";
+import Image from "next/image";
 
-export default function Proposition() {
+export const Proposition: React.FC = () => {
+  const features: string[] = [
+    "360 digital marketing services",
+    "100% White-Hat Techniques",
+    "5+ Years of Ranking Experience",
+    "Performance Driven Campaign Management",
+  ];
+
+  const avatars: {
+    url: string;
+    width: number;
+    height: number;
+    border: boolean;
+  }[] = [
+    {
+      url: "/Home-Page/Hero-Section/image1.jpg",
+      width: 33,
+      height: 33,
+      border: false,
+    },
+    {
+      url: "/Home-Page/Hero-Section/image2.jpg",
+      width: 36,
+      height: 36,
+      border: true,
+    },
+    {
+      url: "/Home-Page/Hero-Section/image3.jpg",
+      width: 36,
+      height: 36,
+      border: true,
+    },
+    {
+      url: "/Home-Page/Hero-Section/image4.jpg",
+      width: 33,
+      height: 33,
+      border: true,
+    },
+    {
+      url: "/Home-Page/Hero-Section/image5.jpg",
+      width: 33,
+      height: 33,
+      border: true,
+    },
+    {
+      url: "/Home-Page/Hero-Section/image6.jpg",
+      width: 33,
+      height: 33,
+      border: true,
+    },
+  ];
+
   return (
-    <section className="w-full flex justify-center py-8 bg-gradient-to-br from-blue-50/30 to-purple-50/30">
-      <div className="w-[1126px] inline-flex justify-between items-start">
-        {/* Left Column */}
-        <div className="w-96 inline-flex flex-col justify-start items-start gap-9">
-          <div className="self-stretch flex flex-col justify-start items-start gap-4">
-            <div className="self-stretch flex flex-col justify-start items-start gap-3.5">
-              <div className="self-stretch flex flex-col justify-start items-start gap-4">
-                <div className="self-stretch flex flex-col justify-start items-start gap-4">
-                  <div className="self-stretch flex flex-col justify-start items-start gap-4">
-                    <div className="w-48 px-2.5 py-[5px] bg-indigo-50 rounded-[45px] outline outline-1 outline-offset-[-1px] outline-blue-500 inline-flex justify-center items-center gap-1.5">
-                      <div className="w-3.5 h-3.5 relative">
-                        <div className="w-3 h-3 left-[1.25px] top-[1.25px] absolute bg-blue-500" />
-                      </div>
-                      <div className="justify-start text-blue-500 text-sm font-medium font-['Urbanist'] leading-snug">
-                        Our Value Proposition
-                      </div>
-                    </div>
-                    <div className="self-stretch justify-start text-sky-700 text-5xl font-bold font-['Urbanist'] leading-[57px]">
-                      Your Ultimate Digital Marketing Solutions
+    <section className="flex w-[1126px] h-[525px] items-start gap-0.5 relative">
+      <div className="flex flex-col w-[432px] items-start gap-[37px] relative mb-[-0.23px]">
+        <div className="flex flex-col items-start gap-[17px] relative self-stretch w-full flex-[0_0_auto]">
+          <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
+            <div className="flex flex-col items-start gap-[18px] relative self-stretch w-full flex-[0_0_auto]">
+              <div className="flex flex-col items-start gap-[18px] relative self-stretch w-full flex-[0_0_auto]">
+                <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
+                  <div className="flex w-[219px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
+                    <img
+                      className="ml-[-3.50px] relative w-[15px] h-[15px]"
+                      alt="Stars"
+                      src="https://c.animaapp.com/ugwxqeDI/img/stars.svg"
+                    />
+
+                    <div className="relative w-fit mt-[-1.00px] mr-[-3.50px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
+                      Our Value Proposition
                     </div>
                   </div>
+
+                  <h1 className="relative self-stretch [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] tracking-[0] leading-[57px]">
+                    Your Ultimate Digital Marketing Solutions{" "}
+                  </h1>
                 </div>
-                <div className="self-stretch flex flex-col justify-start items-start gap-2">
-                  <div className="inline-flex justify-start items-start gap-2">
-                    <div className="w-6 h-6 relative overflow-hidden">
-                      <div className="w-[0.84px] h-[0.67px] left-[12.07px] top-[23.14px] absolute" />
-                      <div className="w-5 h-4 left-[2.04px] top-[2.99px] absolute bg-amber-500" />
-                    </div>
-                    <div className="w-56 justify-start text-slate-800 text-sm font-medium font-['Urbanist'] leading-snug">
-                      360 Digital Marketing Services
-                    </div>
-                  </div>
-                  <div className="inline-flex justify-start items-start gap-2">
-                    <div className="w-6 h-6 relative overflow-hidden">
-                      <div className="w-[0.84px] h-[0.67px] left-[12.07px] top-[23.14px] absolute" />
-                      <div className="w-5 h-4 left-[2.04px] top-[2.99px] absolute bg-amber-500" />
-                    </div>
-                    <div className="w-56 justify-start text-slate-800 text-sm font-medium font-['Urbanist'] leading-snug">
-                      100% White-Hat Techniques
-                    </div>
-                  </div>
-                  <div className="inline-flex justify-start items-start gap-2">
-                    <div className="w-6 h-6 relative overflow-hidden">
-                      <div className="w-[0.84px] h-[0.67px] left-[12.07px] top-[23.14px] absolute" />
-                      <div className="w-5 h-4 left-[2.04px] top-[2.99px] absolute bg-amber-500" />
-                    </div>
-                    <div className="w-64 justify-start text-slate-800 text-sm font-medium font-['Urbanist'] leading-snug">
-                      5+ Years of Ranking Experience
-                    </div>
-                  </div>
-                  <div className="inline-flex justify-start items-start gap-2">
-                    <div className="w-6 h-6 relative overflow-hidden">
-                      <div className="w-[0.84px] h-[0.67px] left-[12.07px] top-[23.14px] absolute" />
-                      <div className="w-5 h-4 left-[2.04px] top-[2.99px] absolute bg-amber-500" />
-                    </div>
-                    <div className="w-96 justify-start text-slate-800 text-sm font-medium font-['Urbanist'] leading-snug">
-                      Performance Driven Campaign Management
-                    </div>
-                  </div>
-                </div>
+
+                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-base tracking-[0] leading-[23px]">
+                  Google Ads is a powerful online advertising platform by Google
+                  that puts your business in front of ready-to-buy customers.
+                </p>
               </div>
-            </div>
-            <div className="inline-flex justify-start items-start">
-              <img
-                className="w-8 h-8 rounded-full"
-                src="https://placehold.co/33x33"
-              />
-              <img
-                className="w-8 h-8 rounded-full outline outline-[1.60px] outline-color-border-onColor"
-                src="https://placehold.co/33x33"
-              />
-              <img
-                className="w-8 h-8 rounded-full outline outline-[1.60px] outline-color-border-onColor"
-                src="https://placehold.co/33x33"
-              />
-              <img
-                className="w-8 h-8 rounded-full border-[1.60px] border-color-border-onColor"
-                src="https://placehold.co/33x33"
-              />
-              <img
-                className="w-8 h-8 rounded-full border-[1.60px] border-color-border-onColor"
-                src="https://placehold.co/33x33"
-              />
-              <img
-                className="w-8 h-8 rounded-full border-[1.60px] border-color-border-onColor"
-                src="https://placehold.co/33x33"
-              />
+
+              <ul className="flex flex-col self-stretch w-full items-start gap-2 relative flex-[0_0_auto]">
+                {features.map((feature, index) => (
+                  <li
+                    key={index}
+                    className="inline-flex items-start gap-2 relative flex-[0_0_auto]"
+                  >
+                    <img
+                      className="relative w-6 h-6 aspect-[1]"
+                      alt="Check mark"
+                      src="/Home-Page/Hero-Section/right.svg"
+                    />
+
+                    <p className="relative mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-800 text-sm tracking-[0] leading-[23px]">
+                      {feature}
+                    </p>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
+
           <div
-            data-property-1="Frame 1261155418"
-            className="w-60 h-12 px-[3px] bg-blue-500 rounded-[45px] shadow-[0px_4px_14.699999809265137px_0px_rgba(47,152,255,0.63)] inline-flex justify-end items-center gap-2.5"
+            className="inline-flex items-start relative flex-[0_0_auto]"
+            role="group"
+            aria-label="User avatars"
           >
-            <div className="text-center justify-start text-white text-base font-medium font-['Urbanist'] capitalize leading-snug">
-              Let’s Analyze Your Site
-            </div>
-            <div className="p-3 bg-indigo-50 rounded-[34px] outline outline-1 outline-offset-[-1px] outline-blue-300 flex justify-start items-center gap-2.5">
-              <div className="w-5 h-5 relative overflow-hidden">
-                <div className="w-3 h-0 left-[4.17px] top-[10px] absolute outline outline-2 outline-offset-[-1px] outline-blue-500" />
-                <div className="w-1.5 h-3 left-[10px] top-[4.17px] absolute outline outline-2 outline-offset-[-1px] outline-blue-500" />
+            {avatars.map((avatar, index) => (
+              <div
+                key={index}
+                className={`relative ${index > 0 ? "ml-[-10.68px]" : ""} ${
+                  index === 1 || index === 2 ? "mt-[-1.60px] mb-[-1.60px]" : ""
+                } rounded-full overflow-hidden ${
+                  avatar.border
+                    ? "border-[1.6px] border-solid border-neutral-0"
+                    : ""
+                }`}
+                style={{ width: avatar.width, height: avatar.height }}
+              >
+                <Image
+                  src={avatar.url}
+                  alt={`avatar-${index}`}
+                  width={avatar.width}
+                  height={avatar.height}
+                  className="object-cover"
+                  unoptimized
+                />
               </div>
-            </div>
+            ))}
           </div>
         </div>
-        {/* Right Column */}
-        <div data-property-1="Component 51" className="w-[692px] h-[515px] relative">
-          <div className="w-[552px] h-[455px] left-[140px] top-0 absolute bg-gradient-to-b from-blue-500/20 rounded-2xl shadow-[0px_4px_6.199999809265137px_6px_rgba(47,152,255,0.63)] outline outline-[12px] outline-offset-[-12px] outline-blue-400/40 overflow-hidden">
+
+        <button className="flex w-[277px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
+          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+            Let's Analyze Your Site
+          </span>
+
+          <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
             <img
-              className="w-[772.50px] h-[515px] left-[-109.25px] top-[-24px] absolute"
-              src="https://placehold.co/772x515"
+              className="relative w-5 h-5"
+              alt="Arrow right"
+              src="https://c.animaapp.com/ugwxqeDI/img/arrow-right.svg"
             />
-            <div className="w-64 px-3.5 py-5 left-[265px] top-[324px] absolute bg-white rounded-xl shadow-[0px_4px_17.899999618530273px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-3.5">
-              <div className="w-7 h-7 bg-assest rounded-[109.14px] flex justify-center items-center gap-2.5">
-                <div className="w-5 h-5 relative overflow-hidden">
-                  <div className="w-4 h-2.5 left-[2.73px] top-[5.46px] absolute bg-slate-900" />
-                </div>
+          </div>
+        </button>
+      </div>
+
+      <div
+        className="relative w-[692px] h-[515px]"
+        role="img"
+        aria-label="Google Ads dashboard visualization"
+      >
+        <div className="relative w-[673px] h-[516px] -top-2 left-[31px]">
+          <img
+            className="absolute w-[576px] h-[479px] top-0 left-[97px]"
+            alt="Dashboard frame"
+            src="https://c.animaapp.com/ugwxqeDI/img/frame-2121457614.svg"
+          />
+
+          <div className="flex w-[221px] items-center gap-[11.94px] px-[12.61px] py-[16.66px] absolute top-[197px] left-0 bg-white rounded-[9.95px] border-[0.88px] border-solid border-primary-400 shadow-[0px_3.51px_11.05px_#2e97ffa1]">
+            <img
+              className="relative w-6 h-6 aspect-[1]"
+              alt="Location targeting icon"
+              src="https://c.animaapp.com/ugwxqeDI/img/component-2-variant3.svg"
+            />
+
+            <div className="flex flex-col w-[149.31px] items-start gap-[7.89px] relative">
+              <p className="relative w-[149.09px] mt-[-0.66px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-800 text-[12.3px] tracking-[-0.06px] leading-[13.5px]">
+                Reach Users Locally Or Globally
+              </p>
+
+              <p className="relative w-[149.09px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-70 text-[10.5px] tracking-[-0.05px] leading-[11.6px]">
+                Get A Free Strategy Call Now !
+              </p>
+            </div>
+          </div>
+
+          <div className="flex w-[228px] items-center justify-center gap-[7.89px] px-[15.78px] py-[11.4px] absolute top-[443px] left-[413px] bg-white rounded-[10.52px] border-[0.88px] border-solid border-neutral-800 shadow-[0px_5px_0px_#ff9800]">
+            <img
+              className="relative w-[56.12px] h-[49.98px]"
+              alt="Users statistics chart"
+              src="https://c.animaapp.com/ugwxqeDI/img/frame-2121457616.svg"
+            />
+
+            <div className="flex flex-col w-[131.54px] items-start gap-[6.14px] relative">
+              <div className="self-stretch mt-[-0.88px] font-semibold text-neutral-800 text-[15.8px] tracking-[-0.08px] leading-[17.4px] relative [font-family:'Urbanist',Helvetica]">
+                Total Users
               </div>
-              <div className="w-44 inline-flex flex-col justify-start items-start gap-5">
-                <div className="w-44 h-0 outline outline-8 outline-offset-[-4.16px] outline-stone-300" />
-                <div className="w-24 h-0 outline outline-8 outline-offset-[-4.16px] outline-stone-300" />
+
+              <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-[12.3px] tracking-[-0.06px] leading-[13.5px]">
+                100k+ Satisfied Clinets
               </div>
             </div>
           </div>
-          <div className="w-44 px-2.5 py-1.5 left-[101px] top-[382px] absolute bg-white rounded-lg shadow-[0px_2.6036365032196045px_6.248727798461914px_0px_rgba(0,0,0,0.25)] outline outline-[0.65px] outline-offset-[-0.65px] outline-blue-500/60 inline-flex flex-col justify-start items-start gap-1.5">
-            <div className="self-stretch h-24 relative">
-              <div className="w-40 h-24 left-0 top-0 absolute bg-black rounded-md" />
-              <div className="w-40 h-16 left-0 top-[34.56px] absolute opacity-50 bg-gradient-to-l from-white/5 to-sky-500/50" />
-              <div className="w-40 h-7 left-0 top-[34.56px] absolute mix-blend-multiply outline outline-2 outline-offset-[-0.98px] outline-sky-500" />
-              <div className="w-40 h-14 left-0 top-[40.50px] absolute opacity-50 bg-gradient-to-l from-white/5 to-blue-600/50" />
-              <div className="w-40 h-9 left-0 top-[40.50px] absolute mix-blend-multiply outline outline-2 outline-offset-[-0.98px] outline-blue-600" />
-              <div className="w-2 h-1.5 left-[128.62px] top-[32.76px] absolute bg-white" />
-              <div className="w-1 h-1 left-[129.79px] top-[33.85px] absolute bg-sky-500" />
-              <div className="w-4 h-2.5 left-[124.62px] top-[16.93px] absolute text-center justify-start text-gray-700 text-[7.81px] font-medium font-['Roboto'] uppercase leading-3 tracking-tight">
-                62
+
+          <div className="flex flex-col w-[179px] items-start gap-[6.51px] px-[9.11px] py-[6.51px] absolute top-[390px] left-[70px] bg-white rounded-[9.11px] border-[0.65px] border-solid border-[#2e97ffa1] shadow-[0px_2.6px_6.25px_#00000040]">
+            <div className="relative self-stretch w-full h-[98.29px] bg-[url(https://c.animaapp.com/ugwxqeDI/img/charts@2x.png)] bg-[100%_100%]">
+              <img
+                className="absolute w-[7px] h-[7px] top-[33px] left-[129px]"
+                alt="Status indicator"
+                src="https://c.animaapp.com/ugwxqeDI/img/ui-status@2x.png"
+              />
+
+              <div className="absolute w-5 h-[13px] top-4 left-[124px]">
+                <div className="relative w-[39px] h-[33px] top-[-9px] -left-2.5 bg-[url(https://c.animaapp.com/ugwxqeDI/img/combined-shape.svg)] bg-[100%_100%]">
+                  <div className="w-[15px] top-2.5 left-[11px] text-[7.8px] tracking-[0.33px] leading-[13.0px] absolute [font-family:'Roboto',Helvetica] font-medium text-[#414d55] text-center whitespace-nowrap">
+                    62
+                  </div>
+                </div>
               </div>
-              <div className="w-16 px-1.5 py-[1.62px] left-[-0.20px] top-[2.57px] absolute bg-emerald-600 rounded-[19.53px] inline-flex justify-center items-center gap-1.5">
-                <div className="text-center justify-start text-white text-[4px] font-semibold font-['Urbanist'] uppercase leading-3">
-                  Grow your traffic
+
+              <div className="flex w-[66px] items-center justify-center gap-[6.51px] px-[6.51px] py-[1.62px] absolute top-[3px] left-0 bg-[#00b45c] rounded-[19.53px]">
+                <div className="relative w-fit mt-[-0.65px] [font-family:'Urbanist',Helvetica] font-semibold text-neutral-0 text-[4px] text-center tracking-[0] leading-[13.0px] whitespace-nowrap">
+                  GROW YOUR TRAFFIC
                 </div>
               </div>
             </div>
@@ -148,4 +225,4 @@ export default function Proposition() {
       </div>
     </section>
   );
-}
+};

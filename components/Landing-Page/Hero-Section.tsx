@@ -8,7 +8,7 @@ export type HomePageType = {
 const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
   return (
     <div
-      className={`w-[1440px] bg-neutral-900 max-w-full h-[1041px] overflow-hidden text-center text-base text-Foundation-Grey-Scale-G200 font-urbanist ${className}`}
+      className={`relative w-full max-w-[1440px] mx-auto bg-neutral-900 h-[1041px] overflow-hidden text-center text-base text-gray-200 font-urbanist ${className}`}
     >
       <Image
         className="absolute top-[3519px] left-[-630px] w-[969.2px] h-[965.3px] object-contain"
@@ -126,7 +126,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
         alt=""
         src="/image-128@2x.png"
       />
-      <div className="absolute top-[0px] left-[calc(50%_-_720px)] bg-Foundation-Neutral-Scale-N1000 w-[1440px] h-[1041px] overflow-hidden">
+      <div className="absolute top-[0px] left-1/2 transform -translate-x-1/2 bg-Foundation-Neutral-Scale-N1000 w-full max-w-[1440px] h-[1041px] overflow-hidden">
         <div className="absolute top-[0px] left-[0px] w-[1419.5px] h-[1041px] overflow-hidden flex items-center justify-center">
           <Image
             className="w-full h-full object-cover absolute left-[10px] top-[0px] [transform:scale(1)]"
@@ -147,7 +147,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             src="/frame-2121458209.svg"
           />
         </div>
-        <div className="absolute top-[172px] left-[calc(50%_-_315px)] w-[630px] flex flex-col items-center justify-start gap-11 text-[50px]">
+        <div className="absolute top-[172px] left-1/2 transform -translate-x-1/2 w-[630px] flex flex-col items-center justify-start gap-11 text-[50px]">
           <div className="self-stretch flex flex-col items-center justify-center gap-4">
             <b className="w-[618px] relative leading-[57px] inline-block text-white">
               High-Converting Landing Pages That Sell
@@ -187,7 +187,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <div className="absolute top-[119px] left-[calc(50%_-_720px)] w-[1437px] h-[922px] text-left text-black">
+        <div className="absolute top-[119px] left-1/2 transform -translate-x-1/2 w-full max-w-[1437px] h-[922px] text-left text-black">
           <Image
             className="absolute top-[535px] left-[calc(50%_-_184.5px)] rounded-[10.7px] w-[408px] h-[261px]"
             width={408}
@@ -251,46 +251,42 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
               Conversion Rate
             </div>
             <div className="self-stretch flex flex-col items-start justify-center gap-2.5 text-red">
-              <div className="self-stretch border-gray-400 border-solid border-b-[1px] flex flex-row items-center justify-center p-4 gap-[13px]">
-                <div className="flex flex-row items-center justify-start gap-[7px]">
-                  <div className="w-[26px] text-red-600 relative leading-[23px] font-semibold inline-block shrink-0">
+              <div className="flex p-4 justify-center items-center gap-[13px] border-b border-[rgba(123,123,123,0.22)]">
+                <div className="flex items-center gap-[7px]">
+                  <span className="text-[#E51A1A] text-base font-semibold leading-[23px] font-[Urbanist]">
                     12%
-                  </div>
-                  <div className="w-[115px] flex flex-col items-start justify-start gap-1.5 text-xs text-Foundation-Neutral-Scale-N900">
-                    <div className="w-[139px] relative leading-[23px] font-normal inline-block pl-2">{`Without RentSEOBrain `}</div>
-                    <Image
-                      className="w-[50px] relative rounded-[9px] max-h-full ml-2"
-                      width={50}
-                      height={7}
-                      sizes="100vw"
-                      alt=""
-                      src="/vector-2542.svg"
-                    />
+                  </span>
+                  <div className="flex flex-col gap-[6px]">
+                    <span className="text-[#071F36] text-xs font-medium leading-[23px] font-[Urbanist]">
+                      Without RentSEOBrain
+                    </span>
+                    <div className="w-[50px] h-[7px] bg-[#ECEEF1] rounded-[3.5px]" />
                   </div>
                 </div>
-                <div className="w-[35px] relative rounded-[68.6px] bg-Fills-Secondary h-[21.3px] overflow-hidden shrink-0">
-                  <div className="absolute h-[86.85%] top-[6.57%] bottom-[6.57%] left-[1.4px] shadow-[0px_0px_0px_0.69px_rgba(0,_0,_0,_0.04),_0px_2.1px_5.5px_rgba(0,_0,_0,_0.15),_0px_2.1px_0.7px_rgba(0,_0,_0,_0.06)] rounded-[68.6px] bg-Foundation-Neutral-Scale-N0 w-[18.5px]" />
+                {/* Toggle Off */}
+                <div className="w-[35px] h-[21px] rounded-[69px] bg-[rgba(120,120,128,0.16)] p-[1px] flex items-center">
+                  <div className="w-[19px] h-[19px] bg-white rounded-full shadow-[0_0_0_0.7px_rgba(0,0,0,0.04),_0_2px_5px_0_rgba(0,0,0,0.15),_0_2px_1px_0_rgba(0,0,0,0.06)]" />
                 </div>
               </div>
               <div className="self-stretch border-gray-400 border-solid border-b-[1px] flex flex-row items-center justify-center p-4 gap-[26px] text-Foundation-Primary-Scale-P300">
-                <div className="flex flex-row items-center justify-start gap-[7px]">
-                  <div className="w-[30px] relative leading-[23px] text-blue-300 font-semibold inline-block shrink-0 pl-2">
-                    75%
+                <div className="flex p-4 justify-center items-center gap-[26px] border-b border-[rgba(123,123,123,0.22)]">
+                  <div className="flex items-center gap-[7px] ml-[60px]">
+                    <span className="text-[#1D8FFF] text-base font-semibold leading-[23px] font-[Urbanist]">
+                      75%
+                    </span>
+                    <div className="flex flex-col gap-[6px]">
+                      <span className="text-[#071F36] text-xs font-medium leading-[23px] font-[Urbanist]">
+                        With RentSEOBrain
+                      </span>
+                      <div className="w-[50px] h-[7px] bg-[#ECEEF1] rounded-[3.5px]" />
+                    </div>
                   </div>
-                 
-                   <div className="w-[115px] flex flex-col items-start justify-start gap-1.5 text-xs text-Foundation-Neutral-Scale-N900">
-                    <div className="w-[139px] relative leading-[23px] font-normal inline-block pl-2">{`With RentSEOBrain `}</div>
-                    <Image
-                      className="w-[50px] relative rounded-[9px] max-h-full ml-2"
-                      width={50}
-                      height={7}
-                      sizes="100vw"
-                      alt=""
-                      src="/vector-2542.svg"
-                    />
+                  {/* Toggle On */}
+                  <div className="w-[35px] h-[21px] rounded-[69px] bg-[#00B45C] p-[1px] flex items-center justify-end">
+                    <div className="w-[19px] h-[19px] bg-white rounded-full shadow-[0_0_0_0.7px_rgba(0,0,0,0.04),_0_2px_5px_0_rgba(0,0,0,0.15),_0_2px_1px_0_rgba(0,0,0,0.06)]" />
                   </div>
                 </div>
-               
+
                 <div className="w-[35px] relative rounded-[68.6px] bg-mediumseagreen h-[21.3px] overflow-hidden shrink-0">
                   <div className="absolute top-[calc(50%_-_9.25px)] right-[1.4px] shadow-[0px_0px_0px_0.69px_rgba(0,_0,_0,_0.04),_0px_2.1px_5.5px_rgba(0,_0,_0,_0.15),_0px_2.1px_0.7px_rgba(0,_0,_0,_0.06)] rounded-[68.6px] bg-Foundation-Neutral-Scale-N0 w-[18.5px] h-[18.5px]" />
                 </div>
@@ -562,7 +558,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
               </div>
             </div>
           </div>
-          <div className="absolute top-[642px] left-[688px] shadow-[0px_4px_64.8px_#43a2ff,_0px_0px_0px_7px_#43a2ff] rounded-[50%] bg-Foundation-Neutral-Scale-N0 border-Foundation-Primary-Scale-P300 border-solid border-[1px] box-border w-10 h-10" />
+          <div className="absolute top-[642px] left-[688px] shadow-[0px_4px_64.8px_#43a2ff,_0px_0px_0px_7px_#43a2ff] rounded-[50%] bg-white border-primary-300 border-solid border-[1px] box-border w-10 h-10" />
           <div className="absolute top-[547px] left-[563px] w-[70px] flex flex-col items-start justify-start gap-[11px] text-center text-[10px] text-Foundation-Grey-Scale-G500">
             <div className="w-[70px] flex flex-col items-center justify-center gap-2.5">
               <div className="w-12 rounded-[4875px] h-12 overflow-hidden relative flex items-center justify-center">
@@ -575,7 +571,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
                   src="/fluentemojitesttube3.svg"
                 />
               </div>
-              <div className="self-stretch relative leading-[10px]">
+              <div className="self-stretch relative leading-[10px] text-white">
                 SEO Research
               </div>
             </div>
@@ -590,7 +586,9 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
                   src="/fluentemojitesttube.svg"
                 />
               </div>
-              <div className="self-stretch relative leading-[10px]">UI</div>
+              <div className="self-stretch relative leading-[10px] text-white">
+                UI
+              </div>
             </div>
             <div className="w-[70px] flex flex-col items-center justify-center gap-2.5">
               <div className="w-12 rounded-[4875px] h-12 overflow-hidden relative flex items-center justify-center">
@@ -603,14 +601,14 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
                   src="/fluentemojitesttube2.svg"
                 />
               </div>
-              <div className="self-stretch relative leading-[10px]">
+              <div className="self-stretch relative leading-[10px] text-white">
                 Wireframe
               </div>
             </div>
           </div>
           <div className="absolute top-[628px] left-[761px] flex flex-row items-center justify-start gap-[22px] text-center text-[10px] text-Foundation-Grey-Scale-G500">
             <div className="w-[70px] flex flex-col items-center justify-center gap-2.5">
-              <div className="w-[44.7px] rounded-[4875px] h-[44.7px] overflow-hidden relative flex items-center justify-center">
+              <div className="w-[44.7px] rounded-[4875px] h-[44.7px] overflow-hidden relative flex items-center justify-center ">
                 <Image
                   className="w-full h-full object-cover absolute left-[0px] top-[4px] [transform:scale(1.573)]"
                   width={44.7}
@@ -620,7 +618,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
                   src="/fluentemojitesttube4.svg"
                 />
               </div>
-              <div className="self-stretch relative leading-[10px]">
+              <div className="self-stretch relative leading-[10px] text-white">
                 Prototype
               </div>
             </div>
@@ -635,7 +633,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
                   src="/fluentemojitesttube5.svg"
                 />
               </div>
-              <div className="self-stretch relative leading-[10px]">
+              <div className="self-stretch relative leading-[10px] text-white">
                 Dev Handoff
               </div>
             </div>
@@ -651,76 +649,6 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             />
           </div>
         </div>
-        {/* <div className="absolute top-[0px] left-[calc(50%_-_720px)] bg-Foundation-Neutral-Scale-N1000 w-[1440px] h-[119px] overflow-hidden text-gray-200">
-          <Image
-            className="absolute top-[0px] left-[0px] w-[1440px] h-[1041px] object-cover"
-            width={1440}
-            height={1041}
-            sizes="100vw"
-            alt=""
-            src="/bg@2x.png"
-          />
-          <div className="absolute top-[0px] left-[0px] w-[1440px] h-[119px] flex flex-row items-center justify-center py-8 px-[156px] box-border gap-[115px]">
-            <div className="w-[791px] flex flex-row items-center justify-start gap-[227px]">
-              <Image
-                className="w-[112.3px] relative max-h-full object-cover"
-                width={112.3}
-                height={63}
-                sizes="100vw"
-                alt=""
-                src="/logo@2x.png"
-              />
-              <div className="flex flex-row items-center justify-center gap-[34px]">
-                <div className="w-[43px] relative h-[23px]">
-                  <div className="absolute top-[0%] left-[0%] tracking-[0.01em] leading-[23px] font-semibold">
-                    Home
-                  </div>
-                </div>
-                <div className="w-11 relative h-[23px]">
-                  <div className="absolute top-[0%] left-[0%] tracking-[0.01em] leading-nav font-semibold">
-                    About
-                  </div>
-                </div>
-                <div className="flex flex-row items-center justify-start gap-1">
-                  <div className="relative tracking-[0.01em] leading-nav font-semibold">
-                    Services
-                  </div>
-                  <Image
-                    className="w-5 relative h-5 overflow-hidden shrink-0"
-                    width={20}
-                    height={20}
-                    sizes="100vw"
-                    alt=""
-                    src="/chevrondown.svg"
-                  />
-                </div>
-                <div className="w-8 relative h-[23px]">
-                  <div className="absolute top-[0%] left-[0%] tracking-[0.01em] leading-nav font-semibold">
-                    Blog
-                  </div>
-                </div>
-                <div className="w-[58px] relative h-[23px]">
-                  <div className="absolute top-[0%] left-[0%] tracking-[0.01em] leading-nav font-semibold">
-                    Contact
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-[220px] rounded-[33px] bg-Foundation-Grey-Scale-G50 border-Foundation-Grey-Scale-G200 border-solid border-[1px] box-border h-[50px] flex flex-row items-center justify-center py-2.5 px-[19px] gap-[7px] text-left text-gray-100">
-              <div className="relative leading-[100%] capitalize font-medium">
-                Book an appointment
-              </div>
-              <Image
-                className="w-5 relative h-5 overflow-hidden shrink-0"
-                width={20}
-                height={20}
-                sizes="100vw"
-                alt=""
-                src="/arrowright.svg"
-              />
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

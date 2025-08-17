@@ -42,7 +42,7 @@ const GridBackground = () => {
 
 const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
   return (
-    <div className="relative w-full min-h-screen bg-neutral-900 overflow-hidden">
+    <div className="relative w-full h-[922px] bg-neutral-900 overflow-hidden">
       {/* Replace static grid with animated GridBackground */}
       <GridBackground />
 
@@ -66,7 +66,7 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
              <div key={i} className={`w-[18px] lg:w-[21.395px] h-[18px] lg:h-[21.395px] rounded-full bg-primary-300 ${i > 1 ? 'border border-grey-50 -ml-[5px] lg:-ml-[6.874px]' : ''}`} />
             ))} */}
             {/* </div>  */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 lg:gap-3">
+            <div className="flex items-center justify-start gap-[9px] h-[33px] border border-white  p-[5px] rounded-[45px]">
               <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
                 {[
                   "/Home-Page/Hero-Section/image1.jpg",
@@ -78,7 +78,7 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
                 ].map((imagePath, index) => (
                   <div
                     key={imagePath}
-                    className={`relative w-[28px] lg:w-[33.231px] h-[28px] lg:h-[33.231px] rounded-full overflow-hidden
+                    className={`relative w-[25px] h-[25px] rounded-full overflow-hidden
                    ${
                      index > 0
                        ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"

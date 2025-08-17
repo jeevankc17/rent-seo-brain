@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { Star } from 'lucide-react';
+import Image from "next/image";
+import { Star } from "lucide-react";
 
 interface Testimonial {
   id: string;
@@ -15,38 +15,41 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    id: '1',
+    id: "1",
     rating: 5,
-    quote: "Our Google Ads conversion rate jumped from 2.8% to 7.4% after launching a page designed by Rent SEO Brain. The ROI was immediate and substantial.",
+    quote:
+      "Our Google Ads conversion rate jumped from 2.8% to 7.4% after launching a page designed by Rent SEO Brain. The ROI was immediate and substantial.",
     author: {
-      name: 'Ramesh D.',
-      title: 'Co-founder',
-      company: 'SaaS Growlytics',
-      avatar: 'https://placehold.co/60x60'
-    }
+      name: "Ramesh D.",
+      title: "Co-founder",
+      company: "SaaS Growlytics",
+      avatar: "/Home-Page/Hero-Section/RD.jpg",
+    },
   },
   {
-    id: '2',
+    id: "2",
     rating: 5,
-    quote: "The team understood our audience perfectly. Our lead quality improved dramatically and we're now closing enterprise deals consistently.",
+    quote:
+      "The team understood our audience perfectly. Our lead quality improved dramatically and we're now closing enterprise deals consistently.",
     author: {
-      name: 'Michelle K.',
-      title: 'Marketing Director',
-      company: 'TechFlow',
-      avatar: 'https://placehold.co/60x60'
-    }
+      name: "Michelle K.",
+      title: "Marketing Director",
+      company: "TechFlow",
+      avatar: "/Home-Page/Hero-Section/MK.jpg",
+    },
   },
   {
-    id: '3',
+    id: "3",
     rating: 5,
-    quote: "We saw our revenue double in the first month. The attention to detail and strategic thinking was exceptional with clean and intuitive UI designs amazing.",
+    quote:
+      "We saw our revenue double in the first month. The attention to detail and strategic thinking was exceptional with clean and intuitive UI designs amazing.",
     author: {
-      name: 'David Chen',
-      title: 'Founder',
-      company: 'EcoStore',
-      avatar: 'https://placehold.co/60x60'
-    }
-  }
+      name: "David Chen",
+      title: "Founder",
+      company: "EcoStore",
+      avatar: "/Home-Page/Hero-Section/DC.jpg",
+    },
+  },
 ];
 
 const StarRating = ({ rating }: { rating: number }) => {
@@ -65,11 +68,11 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
     <div className="w-80 px-4 py-5 bg-white rounded-3xl shadow-[0px_4px_19.299999237060547px_0px_rgba(47,152,255,0.16)] outline outline-1 outline-offset-[-1px] outline-indigo-50 inline-flex flex-col justify-start items-start gap-3.5 hover:shadow-lg transition-shadow duration-300">
       <StarRating rating={testimonial.rating} />
-      
+
       <blockquote className="self-stretch text-gray-500 text-sm font-normal font-['Urbanist'] leading-relaxed">
         "{testimonial.quote}"
       </blockquote>
-      
+
       <div className="inline-flex justify-start items-center gap-3.5">
         <div className="w-14 h-14 rounded-full overflow-hidden relative">
           <Image
@@ -105,13 +108,14 @@ export default function TestimonialsSection() {
             Client Success Stories
           </div>
         </div>
-        
+
         <div className="w-full max-w-[629px] h-28 flex flex-col justify-start items-center gap-4">
           <h2 className="w-full max-w-[641px] text-center text-sky-700 text-5xl font-bold font-['Urbanist'] leading-[57px]">
             Trusted by Industry Leaders
           </h2>
           <p className="w-full max-w-[565px] text-center text-slate-500 text-base font-normal font-['Urbanist'] leading-snug">
-            Don't just take our word for it. See what our clients have to say about the results we've delivered.
+            Don't just take our word for it. See what our clients have to say
+            about the results we've delivered.
           </p>
         </div>
       </header>
