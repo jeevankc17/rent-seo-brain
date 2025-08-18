@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { Check, Star, ArrowRight } from "lucide-react";
 import Button from "@components/registry/seraui/button";
+import { IndustryLeadersSection } from "./IndustryLeaderSection";
 
 const GridBackground = () => {
   return (
@@ -186,6 +187,10 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
         </div>
       </div>
 
+      {/* Insert IndustryLeadersSection below the Hero content with 95px gap */}
+      <div className=" flex justify-center">
+        <IndustryLeadersSection />
+      </div>
     </div>
   );
 };

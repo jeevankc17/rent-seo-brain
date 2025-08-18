@@ -45,12 +45,12 @@ export default function Home() {
       <section className="relative w-full h-[1117px] px-[156px] ">
         <StatisticsSection />
       </section>
-      <section className="relative w-full h-[1117px] px-[156px] ">
+      <section className="relative w-full h-[506px] px-[156px] ">
         <ToolsIntegrationSection />
       </section>
-      <section className="relative w-full h-[733px] px-[156px] ">
+      {/* <section className="relative w-full h-[733px] px-[156px] ">
         <TestimonialsSection />
-      </section>
+      </section> */}
       <section className="relative w-full h-[1117px] px-[156px] ">
         <StatsSection />
       </section>

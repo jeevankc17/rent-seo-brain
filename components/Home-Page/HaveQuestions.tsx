@@ -25,27 +25,27 @@ export default function HaveQuestions() {
               >
                 <img
                   className="w-8 h-8 rounded-full"
-                  src="https://placehold.co/33x33"
+                  src="/Home-Page/Hero-Section/image1.jpg"
                 />
                 <img
-                  className="w-8 h-8 rounded-full outline outline-[1.60px] outline-color-border-onColor"
-                  src="https://placehold.co/33x33"
+                  className="w-8 h-8 rounded-full outline-[1.60px] outline-color-border-onColor"
+                  src="/Home-Page/Hero-Section/image2.jpg"
                 />
                 <img
-                  className="w-8 h-8 rounded-full outline outline-[1.60px] outline-color-border-onColor"
-                  src="https://placehold.co/33x33"
-                />
-                <img
-                  className="w-8 h-8 rounded-full border-[1.60px] border-color-border-onColor"
-                  src="https://placehold.co/33x33"
+                  className="w-8 h-8 rounded-full outline-[1.60px] outline-color-border-onColor"
+                  src="/Home-Page/Hero-Section/image3.jpg"
                 />
                 <img
                   className="w-8 h-8 rounded-full border-[1.60px] border-color-border-onColor"
-                  src="https://placehold.co/33x33"
+                  src="/Home-Page/Hero-Section/image4.jpg"
                 />
                 <img
                   className="w-8 h-8 rounded-full border-[1.60px] border-color-border-onColor"
-                  src="https://placehold.co/33x33"
+                  src="/Home-Page/Hero-Section/image5.jpg"
+                />
+                <img
+                  className="w-8 h-8 rounded-full border-[1.60px] border-color-border-onColor"
+                  src="/Home-Page/Hero-Section/image6.jpg"
                 />
               </div>
               <div className="w-52 h-5 text-center justify-start text-zinc-200 text-sm font-medium font-['Urbanist'] leading-tight">
@@ -61,24 +61,24 @@ export default function HaveQuestions() {
                   <div className="text-center justify-start text-white text-base font-medium font-['Urbanist'] capitalize leading-snug">
                     Schedule A consultaion
                   </div>
-                  <div className="p-3 bg-indigo-50 rounded-[34px] outline outline-1 outline-offset-[-1px] outline-blue-300-lex justify-start items-center gap-2.5">
+                  <div className="p-3 bg-indigo-50 rounded-[34px]  outline-1 outline-offset-[-1px] outline-blue-300-lex justify-start items-center gap-2.5">
                     <div className="w-5 h-5 relative overflow-hidden">
-                      <div className="w-3 h-0 left-[4.17px] top-[10px] absolute outline outline-2 outline-offset-[-1px] outline-blue-500" />
-                      <div className="w-1.5 h-3 left-[10px] top-[4.17px] absolute outline outline-2 outline-offset-[-1px] outline-blue-500" />
+                      <div className="w-3 h-0 left-[4.17px] top-[10px] absolute  outline-2 outline-offset-[-1px] outline-blue-500" />
+                      <div className="w-1.5 h-3 left-[10px] top-[4.17px] absolute  outline-2 outline-offset-[-1px] outline-blue-500" />
                     </div>
                   </div>
                 </div>
               </div>
               <div
                 data-property-1="default"
-                className="w-56 h-12 px-5 py-2.5 bg-neutral-50 rounded-[33px] outline outline-1 outline-offset-[-1px] outline-neutral-300 flex justify-center items-center gap-1.5"
+                className="w-56 h-12 px-5 py-2.5 bg-neutral-50 rounded-[33px]  outline-1 outline-offset-[-1px] outline-neutral-300 flex justify-center items-center gap-1.5"
               >
                 <div className="justify-start text-sky-950 text-base font-medium font-['Urbanist'] capitalize leading-none">
                   Email our Team
                 </div>
                 <div className="w-5 h-5 relative overflow-hidden">
-                  <div className="w-3 h-0 left-[4.17px] top-[10px] absolute outline outline-2 outline-offset-[-0.88px] outline-sky-950" />
-                  <div className="w-1.5 h-3 left-[10px] top-[4.17px] absolute outline outline-2 outline-offset-[-0.88px] outline-sky-950" />
+                  <div className="w-3 h-0 left-[4.17px] top-[10px] absolute  outline-2 outline-offset-[-0.88px] outline-sky-950" />
+                  <div className="w-1.5 h-3 left-[10px] top-[4.17px] absolute  outline-2 outline-offset-[-0.88px] outline-sky-950" />
                 </div>
               </div>
             </div>

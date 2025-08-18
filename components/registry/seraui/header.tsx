@@ -1,21 +1,31 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import Button from "./button";
-import { ArrowRight, ChevronDown } from "lucide-react";
-
-// ...existing icon components (MenuIcon, XIcon, etc.)...
-import { Menu as MenuIcon, X as XIcon } from "lucide-react";
+import { ArrowRight, ChevronDown, Menu as MenuIcon, X as XIcon } from "lucide-react";
+import { DropdownMenu, DropdownMenuItem } from "./Dropdown";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpenMobile, setIsServicesOpenMobile] = useState(false);
   const { theme, setTheme } = useTheme();
 
   const navLinks = [
-    { href: "#", label: "Home" },
-    { href: "#", label: "About" },
-    { href: "#", label: "Services" },
-    { href: "#", label: "Blog" },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    {
+      label: "Services",
+      children: [
+        { href: "/google", label: "Google" },
+        { href: "/landingpage", label: "Landing Page" },
+        { href: "/cms", label: "CMS" },
+        { href: "/seo", label: "SEO" },
+        { href: "/contact", label: "Contact" },
+        { href: "/blog", label: "Blog" },
+      ],
+    },
+    { href: "/blogs", label: "Blog" },
   ];
 
   const toggleTheme = () => {
@@ -40,18 +50,38 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="group relative flex items-center text-[16px] font-medium text-gray-200 hover:text-white transition-colors"
-              >
-                {link.label}
-                {link.label === "Services" && (
-                  <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />
-                )}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.children ? (
+                // use dropdown component for desktop services
+                <DropdownMenu
+                  key={link.label}
+                  trigger={
+                    <button
+                      className="inline-flex items-center text-[16px] font-medium text-gray-200 hover:text-white transition-colors"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      {link.label}
+                      <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />
+                    </button>
+                  }
+                >
+                  {link.children.map((child) => (
+                    <DropdownMenuItem key={child.label} href={child.href}>
+                      {child.label}
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenu>
+              ) : (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="group relative flex items-center text-[16px] font-medium text-gray-200 hover:text-white transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </nav>
 
           {/* Right Side Actions */}
@@ -69,18 +99,17 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+                if (isMenuOpen) setIsServicesOpenMobile(false);
+              }}
               className="inline-flex md:hidden items-center justify-center p-2 rounded-md 
                        text-gray-200 hover:text-white hover:bg-gray-800 
                        focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-400"
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Toggle menu</span>
-              {isMenuOpen ? (
-                <XIcon className="h-6 w-6" />
-              ) : (
-                <MenuIcon className="h-6 w-6" />
-              )}
+              {isMenuOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
             </button>
           </div>
         </div>
@@ -92,22 +121,59 @@ const Header = () => {
           }`}
         >
           <div className="space-y-2 px-4 pb-4 pt-2">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="flex items-center justify-between rounded-lg px-4 py-3
+            {navLinks.map((link) =>
+              link.children ? (
+                <div key={link.label} className="px-1">
+                  <button
+                    onClick={() => setIsServicesOpenMobile((s) => !s)}
+                    className="w-full flex items-center justify-between rounded-lg px-4 py-3
+                               text-base font-medium text-gray-200 hover:bg-gray-800 hover:text-white
+                               transition-colors"
+                    aria-expanded={isServicesOpenMobile}
+                  >
+                    <span>{link.label}</span>
+                    <ChevronDown
+                      className={`ml-2 h-4 w-4 transition-transform ${
+                        isServicesOpenMobile ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+
+                  {/* Mobile nested links */}
+                  <div
+                    className={`mt-1 space-y-1 overflow-hidden transition-all duration-200 px-2 ${
+                      isServicesOpenMobile ? "max-h-60" : "max-h-0"
+                    }`}
+                  >
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.label}
+                        href={child.href}
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsServicesOpenMobile(false);
+                        }}
+                        className="block rounded-md px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 hover:text-white"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="flex items-center justify-between rounded-lg px-4 py-3
                          text-base font-medium text-gray-200 hover:bg-gray-800 hover:text-white
                          transition-colors"
-                onClick={() => link.label === "Services" && setIsMenuOpen(false)}
-              >
-                {link.label}
-                {link.label === "Services" && (
-                  <ChevronDown className="ml-1 h-4 w-4" />
-                )}
-              </a>
-            ))}
-            
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+
             {/* Mobile CTA Button */}
             <div className="mt-4 px-4">
               <Button

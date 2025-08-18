@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 
 const testimonialData = {
@@ -136,12 +136,12 @@ export default function ClientSuccessStoriesSection() {
           </h1>
 
           <div className="flex flex-col items-center justify-center gap-1.5 relative self-stretch w-full flex-[0_0_auto]">
-            <blockquote className="relative self-stretch  text-white h-[45px] mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-normal text-[var(--neutral-900)] text-base text-center tracking-[0] leading-[23px]">
+            <blockquote className="relative self-stretch  text-white h-[45px] mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-normal  text-base text-center tracking-[0] leading-[23px]">
               &quot;{testimonialData.quote}&quot;
             </blockquote>
 
             <div className="flex w-[470px] items-center justify-center gap-3 relative flex-[0_0_auto]">
-              <cite className="relative w-[300px] text-white [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-900)] text-base tracking-[0] leading-[23px] not-italic">
+              <cite className="relative w-[300px] text-white [font-family:'Urbanist',Helvetica] font-semibold text-base tracking-[0] leading-[23px] not-italic">
                 -{testimonialData.author}
               </cite>
 
@@ -161,7 +161,9 @@ export default function ClientSuccessStoriesSection() {
                   {starIcons.map((starIcon, index) => (
                     <img
                       key={index}
-                      className={`relative w-[24.06px] h-[24.06px] ${index > 0 ? "ml-[-3px]" : ""}`}
+                      className={`relative w-[24.06px] h-[24.06px] ${
+                        index > 0 ? "ml-[-3px]" : ""
+                      }`}
                       alt=""
                       src={starIcon}
                     />
@@ -194,27 +196,29 @@ export default function ClientSuccessStoriesSection() {
               <div className="flex w-[265.58px] items-center justify-center gap-2.5 px-6 py-2.5 relative flex-[0_0_auto] bg-[var(--neutral-0)] rounded-[17px] overflow-hidden">
                 <div className="flex flex-col w-[210px] items-center gap-[13px] relative">
                   <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                    {(performanceCards[0]?.metrics ?? []).map((metric, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center gap-[52px] px-0 py-[5px] relative self-stretch w-full flex-[0_0_auto] border-b [border-bottom-style:solid] border-[var(--neutral-50)]"
-                      >
-                        <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-[10px] tracking-[0] leading-[10px] whitespace-nowrap">
-                          {metric.label}
-                        </div>
-                        <div className="flex w-12 items-center justify-between relative">
-                          <img
-                            className="relative w-[17.19px] h-[17.19px] mt-[-1.09px] mb-[-1.10px] ml-[-1.10px] rotate-[9.13deg]"
-                            alt="Trending up"
-                            src={metric.icon}
-                            loading="lazy"
-                          />
-                          <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-xs tracking-[0] leading-3 whitespace-nowrap">
-                            {metric.value}
+                    {(performanceCards[0]?.metrics ?? []).map(
+                      (metric, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center gap-[52px] px-0 py-[5px] relative self-stretch w-full flex-[0_0_auto] border-b [border-bottom-style:solid] border-[var(--neutral-50)]"
+                        >
+                          <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-[10px] tracking-[0] leading-[10px] whitespace-nowrap">
+                            {metric.label}
+                          </div>
+                          <div className="flex w-12 items-center justify-between relative">
+                            <img
+                              className="relative w-[17.19px] h-[17.19px] mt-[-1.09px] mb-[-1.10px] ml-[-1.10px] rotate-[9.13deg]"
+                              alt="Trending up"
+                              src={metric.icon}
+                              loading="lazy"
+                            />
+                            <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-xs tracking-[0] leading-3 whitespace-nowrap">
+                              {metric.value}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
+                      )
+                    )}
                   </div>
 
                   <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -229,23 +233,27 @@ export default function ClientSuccessStoriesSection() {
 
                     <div className="relative self-stretch w-full h-[81px]">
                       <div className="inline-flex items-end gap-[5px] absolute top-0 left-0">
-                        {(performanceCards[0]?.chartData ?? []).map((data, index) => (
+                        {(performanceCards[0]?.chartData ?? []).map(
+                          (data, index) => (
+                            <div
+                              key={index}
+                              className="bg-[#d8fd5f] relative w-[38px] rounded-[5px_5px_0px_0px]"
+                              style={{ height: data.height }}
+                            />
+                          )
+                        )}
+                      </div>
+                      {(performanceCards[0]?.chartData ?? []).map(
+                        (data, index) => (
                           <div
                             key={index}
-                            className="bg-[#d8fd5f] relative w-[38px] rounded-[5px_5px_0px_0px]"
-                            style={{ height: data.height }}
-                          />
-                        ))}
-                      </div>
-                      {(performanceCards[0]?.chartData ?? []).map((data, index) => (
-                        <div
-                          key={index}
-                          className="absolute top-[70px] [font-family:'Urbanist',Helvetica] font-normal text-[var(--neutral-200)] text-[10px] text-center tracking-[0] leading-[10px] whitespace-nowrap"
-                          style={{ left: `${9 + index * 43}px` }}
-                        >
-                          {data.month}
-                        </div>
-                      ))}
+                            className="absolute top-[70px] [font-family:'Urbanist',Helvetica] font-normal text-[var(--neutral-200)] text-[10px] text-center tracking-[0] leading-[10px] whitespace-nowrap"
+                            style={{ left: `${9 + index * 43}px` }}
+                          >
+                            {data.month}
+                          </div>
+                        )
+                      )}
                     </div>
                   </div>
                 </div>
@@ -297,27 +305,29 @@ export default function ClientSuccessStoriesSection() {
                   </div>
 
                   <div className="flex-col items-start gap-[9px] flex relative self-stretch w-full flex-[0_0_auto]">
-                    {(performanceCards[1]?.metrics ?? []).map((metric, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center gap-[156px] px-0 py-[5px] relative self-stretch w-full flex-[0_0_auto] border-b [border-bottom-style:solid] border-[var(--neutral-50)]"
-                      >
-                        <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-[10px] tracking-[0] leading-[10px] whitespace-nowrap">
-                          {metric.label}
-                        </div>
-                        <div className="flex w-12 items-center justify-between relative">
-                          <img
-                            className="relative w-[16.49px] h-[16.49px] mt-[-0.74px] mb-[-0.74px] ml-[-0.74px] rotate-[-6.00deg]"
-                            alt="Trending up"
-                            src={metric.icon}
-                            loading="lazy"
-                          />
-                          <div className="mr-[-3.00px] ml-[-0.74px] relative w-fit [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-xs tracking-[0] leading-3 whitespace-nowrap">
-                            {metric.value}
+                    {(performanceCards[1]?.metrics ?? []).map(
+                      (metric, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center gap-[156px] px-0 py-[5px] relative self-stretch w-full flex-[0_0_auto] border-b [border-bottom-style:solid] border-[var(--neutral-50)]"
+                        >
+                          <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-[10px] tracking-[0] leading-[10px] whitespace-nowrap">
+                            {metric.label}
+                          </div>
+                          <div className="flex w-12 items-center justify-between relative">
+                            <img
+                              className="relative w-[16.49px] h-[16.49px] mt-[-0.74px] mb-[-0.74px] ml-[-0.74px] rotate-[-6.00deg]"
+                              alt="Trending up"
+                              src={metric.icon}
+                              loading="lazy"
+                            />
+                            <div className="mr-[-3.00px] ml-[-0.74px] relative w-fit [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-xs tracking-[0] leading-3 whitespace-nowrap">
+                              {metric.value}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
+                      )
+                    )}
                   </div>
 
                   <img
@@ -381,23 +391,27 @@ export default function ClientSuccessStoriesSection() {
 
                     <div className="relative self-stretch w-full h-[81px]">
                       <div className="flex w-[251px] items-end gap-[5px] absolute top-0 left-0">
-                        {(performanceCards[2]?.chartData ?? []).map((data, index) => (
+                        {(performanceCards[2]?.chartData ?? []).map(
+                          (data, index) => (
+                            <div
+                              key={index}
+                              className="relative w-[38px] rounded-[5px_5px_0px_0px] bg-[linear-gradient(90deg,rgba(255,255,255,1)_0%,rgba(225,240,255,0.7)_47%,var(--primary-200)_100%)]"
+                              style={{ height: data.height }}
+                            />
+                          )
+                        )}
+                      </div>
+                      {(performanceCards[2]?.chartData ?? []).map(
+                        (data, index) => (
                           <div
                             key={index}
-                            className="relative w-[38px] rounded-[5px_5px_0px_0px] bg-[linear-gradient(90deg,rgba(255,255,255,1)_0%,rgba(225,240,255,0.7)_47%,var(--primary-200)_100%)]"
-                            style={{ height: data.height }}
-                          />
-                        ))}
-                      </div>
-                      {(performanceCards[2]?.chartData ?? []).map((data, index) => (
-                        <div
-                          key={index}
-                          className="absolute top-[70px] font-normal text-[var(--neutral-200)] text-[10px] text-center leading-[10px] whitespace-nowrap [font-family:'Urbanist',Helvetica] tracking-[0]"
-                          style={{ left: `${9 + index * 43}px` }}
-                        >
-                          {data.month}
-                        </div>
-                      ))}
+                            className="absolute top-[70px] font-normal text-[var(--neutral-200)] text-[10px] text-center leading-[10px] whitespace-nowrap [font-family:'Urbanist',Helvetica] tracking-[0]"
+                            style={{ left: `${9 + index * 43}px` }}
+                          >
+                            {data.month}
+                          </div>
+                        )
+                      )}
                     </div>
                   </div>
                 </div>
@@ -436,4 +450,4 @@ export default function ClientSuccessStoriesSection() {
       </div>
     </section>
   );
-};
+}

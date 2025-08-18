@@ -4,7 +4,7 @@ import HeroSection from "@components/Home-Page/Hero-Section";
 import { Proposition } from "@components/Home-Page/Proposition";
 import DeepDive from "@components/Home-Page/DeepDive";
 
-import TestimonialsSection from "@components/Home-Page/NewGrid12";
+import TestimonialsSection from "@components/Home-Page/TestimonialsSection";
 import IdeasToContent from "@components/CMS/IdeasToContent";
 import { SuccessStoriesSection } from "@components/Home-Page/SuccessStoriesSection";
 import { LatestBlogsSection } from "@components/Home-Page/LatestBlogsSection";
@@ -24,7 +24,6 @@ export default function Home() {
       <section className="relative w-full h-[922px]">
         <HeroSection />
       </section>
-
       <section className="relative bg-grey-100 ">
         <HomePageFeatures />
       </section>
@@ -34,7 +33,6 @@ export default function Home() {
       <section className="relative bg-grey-100 ">
         <DeepDive />
       </section>
-
       <section className="relative bg-grey-100   px-[156px]">
         <CoreServicesSection />
       </section>
@@ -47,11 +45,9 @@ export default function Home() {
       <section className="relative bg-grey-100  px-[156px]">
         <SuccessStoriesSection />
       </section>
-
       <section className="relative w-full h-[519px] ">
         <ToolsSection />
       </section>
-
       <section className="relative bg-grey-100  px-[156px]">
         <StatisticsSection />
       </section>
@@ -64,7 +60,6 @@ export default function Home() {
       <section className="relative bg-neutral-900">
         <FAQSection />
       </section>
-
       <section className="relative bg-grey-100  px-[156px]">
         <TestimonialsSection />
       </section>
