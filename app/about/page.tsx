@@ -7,7 +7,7 @@ import TestimonialsSection from "@components/About-Us/TestimonialsSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col bg-white gap-[132px]">
+    <main className="flex flex-col items-center bg-white gap-[132px]">
       <section className="relative w-full h-[922px] bg-neutral-900">
         <HeroSection />
       </section>
