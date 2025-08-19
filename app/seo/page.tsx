@@ -10,7 +10,7 @@ import ServeBusiness from "@components/SEO-Page/ServeBusiness";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col  pb-[132px] gap-[132px]">
+    <main className="w-full flex flex-col items-center pb-[132px] gap-[132px]">
       <section className="relative bg-neutral-900 w-full h-[960px]">
         <SEOPage />{" "}
       </section>

@@ -20,7 +20,7 @@ import HaveQuestions from "@components/Home-Page/HaveQuestions";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col gap-[132px] pb-[132px] bg-[#eeeeee]">
+    <main className="w-full flex flex-col items-center gap-[132px] pb-[132px] bg-[#eeeeee]">
       <section className="relative w-full h-[922px]">
         <HeroSection />
       </section>

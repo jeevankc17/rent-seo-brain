@@ -17,7 +17,7 @@ import Wireframe from "@components/Landing-Page/Wireframe";
 
 export default function Home() {
   return (
-    <main className="flex flex-col bg-white gap-[132px] pb-[132px]">
+    <main className="flex flex-col items-center bg-white gap-[132px] pb-[132px]">
       <section className="relative w-full h-[960px] bg-neutral-900">
         <HeroSection />
       </section>

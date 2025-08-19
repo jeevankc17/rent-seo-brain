@@ -1,4 +1,3 @@
-
 import React from "react";
 
 interface BlogPost {
@@ -130,7 +129,7 @@ export const BlogSuggestionsSection: React.FC = () => {
         {blogPosts.map((post) => (
           <article
             key={post.id}
-            className="flex flex-col w-[360px] h-[460px] items-start gap-[18px] px-3.5 py-[21px] relative bg-neutral-900 rounded-[11px] shadow-[0px_4px_25.6px_#2e97ff5e] hover:shadow-lg transition-shadow"
+            className="flex flex-col w-[360px] h-[460px] items-start gap-[18px] px-3.5 py-[21px] relative bg-white rounded-[11px] shadow-[0px_4px_25.6px_#2e97ff5e] hover:shadow-lg transition-shadow"
           >
             <div
               className="relative self-stretch w-full h-[136px] rounded-[7px] bg-cover bg-[50%_50%]"
