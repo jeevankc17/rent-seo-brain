@@ -8,7 +8,7 @@ export type HomePageType = {
 const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
   return (
     <div
-      className={`relative w-full max-w-[1440px] mx-auto bg-neutral-900 h-[1041px] overflow-hidden text-center text-base text-gray-200 font-urbanist ${className}`}
+      className={`relative w-full max-w-[1440px] mx-auto bg-neutral-900 h-[960px] overflow-hidden text-center text-base text-gray-200 font-urbanist ${className}`}
     >
       <Image
         className="absolute top-[3519px] left-[-630px] w-[969.2px] h-[965.3px] object-contain"

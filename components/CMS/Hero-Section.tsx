@@ -180,49 +180,67 @@ export default function CMS() {
           </div>
 
           {/* Blog Content */}
-          <div data-property-1="Component 43" className="self-stretch h-96 relative rounded-3xl overflow-hidden">
-  <div className="w-48 px-3 py-2.5 left-[19px] top-[40px] absolute bg-white rounded-[10px] shadow-[0px_4px_16.399999618530273px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-2.5">
-    <div className="p-1.5 bg-assest rounded-[58.73px] flex justify-start items-center gap-1.5">
-      <div data-size="48" className="w-3.5 h-3.5 relative overflow-hidden">
-        <div className="w-3 h-3 left-[1.20px] top-[1.20px] absolute outline outline-[1.20px] outline-offset-[-0.60px] outline-Icon-Default-Default" />
-      </div>
-    </div>
-    <div className="w-32 inline-flex flex-col justify-start items-start gap-1">
-      <div className="self-stretch justify-start text-slate-900 text-sm font-semibold font-['Urbanist'] capitalize leading-3">2.5k</div>
-      <div className="self-stretch justify-start text-gray-500 text-xs font-medium font-['Urbanist'] capitalize leading-none">Content Pieces Published this year</div>
-    </div>
-  </div>
-  <div className="w-48 px-3 py-3.5 left-[917px] top-[54px] absolute bg-blue-500 rounded-[10px] shadow-[0px_4px_46.099998474121094px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-2.5">
-    <div className="p-1.5 bg-indigo-50 rounded-[58.73px] flex justify-start items-center gap-1.5">
-      <div className="w-3.5 h-3.5 relative overflow-hidden">
-        <div className="w-2.5 h-3 left-[2.33px] top-[1.17px] absolute outline outline-1 outline-offset-[-0.58px] outline-blue-500" />
-        <div className="w-1 h-1 left-[8.17px] top-[1.17px] absolute outline outline-1 outline-offset-[-0.58px] outline-blue-500" />
-        <div className="w-1 h-0 left-[4.67px] top-[7.58px] absolute outline outline-1 outline-offset-[-0.58px] outline-blue-500" />
-        <div className="w-1 h-0 left-[4.67px] top-[9.92px] absolute outline outline-1 outline-offset-[-0.58px] outline-blue-500" />
-        <div className="w-px h-0 left-[4.67px] top-[5.25px] absolute outline outline-1 outline-offset-[-0.58px] outline-blue-500" />
-      </div>
-    </div>
-    <div className="w-32 inline-flex flex-col justify-start items-start gap-1">
-      <div className="self-stretch justify-start text-white text-sm font-semibold font-['Urbanist'] capitalize leading-3">SEO Blog Posts</div>
-      <div className="self-stretch justify-start text-neutral-300 text-xs font-medium font-['Urbanist'] capitalize leading-none">3.2% avg conversion</div>
-    </div>
-  </div>
-  <div className="w-48 px-3 py-3.5 left-[878px] top-[313px] absolute bg-white rounded-[10px] shadow-[0px_4px_20.799999237060547px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-2.5">
-    <div className="p-1.5 bg-blue-500 rounded-[58.73px] flex justify-start items-center gap-1.5">
-      <div className="w-3.5 h-3.5 relative overflow-hidden">
-        <div className="w-2.5 h-3 left-[2.33px] top-[1.17px] absolute outline outline-1 outline-offset-[-0.58px] outline-white" />
-        <div className="w-1 h-1 left-[8.17px] top-[1.17px] absolute outline outline-1 outline-offset-[-0.58px] outline-white" />
-        <div className="w-1 h-0 left-[4.67px] top-[7.58px] absolute outline outline-1 outline-offset-[-0.58px] outline-white" />
-        <div className="w-1 h-0 left-[4.67px] top-[9.92px] absolute outline outline-1 outline-offset-[-0.58px] outline-white" />
-        <div className="w-px h-0 left-[4.67px] top-[5.25px] absolute outline outline-1 outline-offset-[-0.58px] outline-white" />
-      </div>
-    </div>
-    <div className="w-32 inline-flex flex-col justify-start items-start gap-1">
-      <div className="self-stretch justify-start text-slate-900 text-sm font-semibold font-['Urbanist'] capitalize leading-3">Content Strategy</div>
-      <div className="self-stretch justify-start text-neutral-500 text-xs font-medium font-['Urbanist'] capitalize leading-none">420% avg roi</div>
-    </div>
-  </div>
-</div>
+          <div
+            data-property-1="Component 43"
+            className="self-stretch h-96 relative rounded-3xl overflow-hidden"
+          >
+            <div className="w-48 px-3 py-2.5 left-[19px] top-[40px] absolute bg-white rounded-[10px] shadow-[0px_4px_16.399999618530273px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-2.5">
+              <div className="p-1.5 bg-assest rounded-[58.73px] flex justify-start items-center gap-1.5">
+                <div
+                  data-size="48"
+                  className="w-3.5 h-3.5 relative overflow-hidden"
+                >
+                  <div className="w-3 h-3 left-[1.20px] top-[1.20px] absolute  outline-[1.20px] outline-offset-[-0.60px] outline-Icon-Default-Default" />
+                </div>
+              </div>
+              <div className="w-32 inline-flex flex-col justify-start items-start gap-1">
+                <div className="self-stretch justify-start text-slate-900 text-sm font-semibold font-['Urbanist'] capitalize leading-3">
+                  2.5k
+                </div>
+                <div className="self-stretch justify-start text-gray-500 text-xs font-medium font-['Urbanist'] capitalize leading-none">
+                  Content Pieces Published this year
+                </div>
+              </div>
+            </div>
+            <div className="w-48 px-3 py-3.5 left-[917px] top-[54px] absolute bg-blue-500 rounded-[10px] shadow-[0px_4px_46.099998474121094px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-2.5">
+              <div className="p-1.5 bg-indigo-50 rounded-[58.73px] flex justify-start items-center gap-1.5">
+                <div className="w-3.5 h-3.5 relative overflow-hidden">
+                  <div className="w-2.5 h-3 left-[2.33px] top-[1.17px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
+                  <div className="w-1 h-1 left-[8.17px] top-[1.17px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
+                  <div className="w-1 h-0 left-[4.67px] top-[7.58px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
+                  <div className="w-1 h-0 left-[4.67px] top-[9.92px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
+                  <div className="w-px h-0 left-[4.67px] top-[5.25px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
+                </div>
+              </div>
+              <div className="w-32 inline-flex flex-col justify-start items-start gap-1">
+                <div className="self-stretch justify-start text-white text-sm font-semibold font-['Urbanist'] capitalize leading-3">
+                  SEO Blog Posts
+                </div>
+                <div className="self-stretch justify-start text-neutral-300 text-xs font-medium font-['Urbanist'] capitalize leading-none">
+                  3.2% avg conversion
+                </div>
+              </div>
+            </div>
+            <div className="w-48 px-3 py-3.5 left-[878px] top-[313px] absolute bg-white rounded-[10px] shadow-[0px_4px_20.799999237060547px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-2.5">
+              <div className="p-1.5 bg-blue-500 rounded-[58.73px] flex justify-start items-center gap-1.5">
+                <div className="w-3.5 h-3.5 relative overflow-hidden">
+                  <div className="w-2.5 h-3 left-[2.33px] top-[1.17px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
+                  <div className="w-1 h-1 left-[8.17px] top-[1.17px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
+                  <div className="w-1 h-0 left-[4.67px] top-[7.58px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
+                  <div className="w-1 h-0 left-[4.67px] top-[9.92px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
+                  <div className="w-px h-0 left-[4.67px] top-[5.25px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
+                </div>
+              </div>
+              <div className="w-32 inline-flex flex-col justify-start items-start gap-1">
+                <div className="self-stretch justify-start text-slate-900 text-sm font-semibold font-['Urbanist'] capitalize leading-3">
+                  Content Strategy
+                </div>
+                <div className="self-stretch justify-start text-neutral-500 text-xs font-medium font-['Urbanist'] capitalize leading-none">
+                  420% avg roi
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

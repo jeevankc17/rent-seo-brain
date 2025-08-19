@@ -200,7 +200,7 @@ export default function ClientSuccessStoriesSection() {
                       (metric, index) => (
                         <div
                           key={index}
-                          className="flex items-center gap-[52px] px-0 py-[5px] relative self-stretch w-full flex-[0_0_auto] border-b [border-bottom-style:solid] border-[var(--neutral-50)]"
+                          className="flex items-center gap-[52px] px-0 py-[5px] relative self-stretch w-full flex-[0_0_auto] border-b border-[var(--neutral-50)]"
                         >
                           <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-[10px] tracking-[0] leading-[10px] whitespace-nowrap">
                             {metric.label}
@@ -309,7 +309,7 @@ export default function ClientSuccessStoriesSection() {
                       (metric, index) => (
                         <div
                           key={index}
-                          className="flex items-center gap-[156px] px-0 py-[5px] relative self-stretch w-full flex-[0_0_auto] border-b [border-bottom-style:solid] border-[var(--neutral-50)]"
+                          className="flex items-center gap-[156px] px-0 py-[5px] relative self-stretch w-full flex-[0_0_auto] border-b border-[var(--neutral-50)]"
                         >
                           <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-[10px] tracking-[0] leading-[10px] whitespace-nowrap">
                             {metric.label}
