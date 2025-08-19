@@ -20,11 +20,11 @@ interface TestimonialProps {
   onCtaClick?: () => void;
 }
 
-export const Testimonial: React.FC<TestimonialProps> = ({
+export const LPTestimonial: React.FC<TestimonialProps> = ({
   rating = defaultTestimonialData.rating,
   description = defaultTestimonialData.description,
   avatars = defaultTestimonialData.avatars,
-  ctaLabel = "Schedule a Call",
+  ctaLabel = "Book An Appointment",
   onCtaClick,
 }) => {
   return (
@@ -93,12 +93,13 @@ export const Testimonial: React.FC<TestimonialProps> = ({
           <div className="flex flex-col items-center gap-8 relative self-stretch w-full flex-[0_0_auto]">
             <div className="flex flex-col items-center gap-4 relative self-stretch w-full flex-[0_0_auto]">
               <h1 className="relative w-[798px] mt-[-1.00px] font-semibold text-neutral-0 text-center leading-tight text-4xl sm:text-5xl">
-                Ready to Dominate Market?
+                Ready to Grow With Google Ads?
               </h1>
 
               <p className="relative w-[598px] [font-family:'Urbanist',Helvetica] font-medium text-[#ffffffb2] text-lg text-center tracking-[0] leading-[26.1px]">
-                Join 500+ businesses that increased their revenue by an average
-                of 187% with our proven SEO + Landing Page system.
+                Join the brands that trust RENT SEO BRAIN to drive traffic,
+                leads, and real revenue through high-performing Google Ads
+                campaigns.
               </p>
             </div>
 

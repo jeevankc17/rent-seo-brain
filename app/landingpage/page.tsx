@@ -9,6 +9,11 @@ import ClientSuccessStoriesSection from "@components/Landing-Page/LP";
 import { OverviewSection } from "@components/Landing-Page/OverviewSection";
 import { PerformanceDashboardSection } from "@components/Landing-Page/PerformanceDashboardSection";
 import { ProcessSection } from "@components/Landing-Page/ProcessSection";
+import LPServices from "@components/Landing-Page/LPServices";
+import IdeasToContent from "@components/Landing-Page/IdeasToContent";
+import { ToolsIntegrationSection } from "@components/Landing-Page/ToolsIntegrationSection";
+import { StatsSection } from "@components/Landing-Page/StatsSection";
+import { LPTestimonial } from "@components/Landing-Page/LPTestimonial";
 
 export default function Home() {
   return (
@@ -22,14 +27,18 @@ export default function Home() {
       <section className="relative w-full h-[601px] px-[157px]  bg-white">
         <OverviewSection />
       </section>
-      <section className="relative w-full h-[1130px] bg-neutral-900 px-[156px] py-[109px]">
-        <ClientSuccessStoriesSection />
-      </section>
+
       {/* <section className="relative w-full h-[1870px]">
         <GoogleFeatures />
       </section> */}
+      <section className="relative w-full h-[1161px] bg-white px-[157px]">
+        <LPServices />
+      </section>
       <section className="relative w-full h-[1046px]  bg-neutral-900">
         <BenefitsSection />
+      </section>
+      <section className="relative   py-[106px] px-[266.5px]">
+        <IdeasToContent />
       </section>
       <section className="relative w-full h-[1130px]  bg-neutral-900">
         <ProcessSection />
@@ -37,8 +46,18 @@ export default function Home() {
       <section className="relative w-full h-[790px] bg-white px-[156px]">
         <PerformanceDashboardSection />
       </section>
-      <section className="relative w-full h-[1130px] bg-white px-[156px]">
-        <ClientResultsSection />
+
+      <section className="relative w-full h-[1130px]  px-[156px] py-[109px]">
+        <ClientSuccessStoriesSection />
+      </section>
+      <section className="relative w-full h-[1117px] px-[156px] ">
+        <StatsSection />
+      </section>
+      <section className="relative w-full h-[506px] px-[156px] ">
+        <ToolsIntegrationSection />
+      </section>
+      <section className="relative w-full px-[156px] ">
+        <LPTestimonial />
       </section>
     </main>
   );

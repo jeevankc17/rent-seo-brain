@@ -5,6 +5,7 @@ import { AudienceEngagementSection } from "@components/Google/AudienceEngagement
 import { FAQSection } from "@components/Google/FAQSection";
 
 import GoogleFeatures from "@components/Google/GoogleFeatures";
+import { GoogleTestimonial } from "@components/Google/GoogleTestimonial";
 import HeroSection from "@components/Google/HeroSection";
 import { ProcessSection } from "@components/Google/Process";
 import { ServicesSection } from "@components/Google/ServiceSection";
@@ -45,6 +46,9 @@ export default function Home() {
       <section className="relative w-full h-[1117px] px-[156px] ">
         <StatisticsSection />
       </section>
+      <section className="relative w-full h-[1542px] ">
+        <FAQSection />
+      </section>
       <section className="relative w-full h-[506px] px-[156px] ">
         <ToolsIntegrationSection />
       </section>
@@ -54,8 +58,8 @@ export default function Home() {
       <section className="relative w-full h-[1117px] px-[156px] ">
         <StatsSection />
       </section>
-      <section className="relative w-full h-[1542px] ">
-        <FAQSection />
+      <section className="relative w-full px-[156px] ">
+        <GoogleTestimonial />
       </section>
     </main>
   );

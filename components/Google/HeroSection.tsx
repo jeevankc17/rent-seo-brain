@@ -52,7 +52,7 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
   ];
   return (
     <div
-      className={`w-[1440px] bg-[#0d0e12] max-w-full h-[960px] overflow-hidden text-left text-[22px] text-[#0a1519] font-[Urbanist] ${className}`}
+      className={`w-[1440px] bg-neutral-900 max-w-full h-[960px] overflow-hidden text-left text-[22px] text-[#0a1519] font-[Urbanist] ${className}`}
     >
       <div>
         {/* Replace static grid with animated GridBackground */}
@@ -68,9 +68,9 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-screen">
+      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-screen mb-[-196px]">
         {/* Header Section */}
-        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-8 lg:gap-11 mb-8 lg:mb-16">
+        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-8 lg:gap-11">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
             {/* className="flex items-center justify-start w-[365px] h-[33px] p-[5px] border  rounded-[45px] absolute left-1/2 transform -translate-x-1/2 gap-[9px]" */}
             <div className="flex items-center justify-start gap-[9px] h-[33px] border border-white  p-[5px] rounded-[45px]">
@@ -187,8 +187,8 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
         </div>
       </div>
 
-      {/* Insert IndustryLeadersSection below the Hero content with 95px gap */}
-      <div className=" flex justify-center">
+      {/* Insert IndustryLeadersSection below the Hero content with 96px gap */}
+      <div className="flex justify-center">
         <IndustryLeadersSection />
       </div>
     </div>
