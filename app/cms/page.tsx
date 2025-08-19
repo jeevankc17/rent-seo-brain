@@ -7,7 +7,7 @@ import CMSResult from "@components/CMS/CMS-Result";
 
 export default function Home() {
   return (
-    <main className="w-full bg-neutral-900">
+    <main className="w-full bg-neutral-900 flex flex-col items-center gap-[132px] pb-[132px]">
       <section className="relative w-full h-[960px] bg-neutral-900">
         <CMS />
       </section>

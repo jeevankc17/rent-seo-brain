@@ -12,7 +12,7 @@ import { ProcessSection } from "@components/Landing-Page/ProcessSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col pb-[132px] bg-white gap-[132px]">
+    <main className="flex flex-col items-center pb-[132px] bg-white gap-[132px]">
       {/* <section className="relative w-full h-[960px] bg-neutral-900">
         <LandingPage />
       </section> */}

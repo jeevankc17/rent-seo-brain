@@ -3,7 +3,7 @@ import React from "react";
 
 const CMSROI = () => {
   return (
-    <div className="relative bg-neutral-900 py-16 px-4 overflow-hidden">
+    <div className="relative bg-neutral-900 px-4 overflow-hidden">
       {/* Main Container */}
       <div className="flex w-full max-w-[1173px] mx-auto flex-col items-center gap-12">
         {/* Header Section */}
