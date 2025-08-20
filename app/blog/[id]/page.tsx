@@ -33,7 +33,7 @@ interface MainContentSectionProps {
   id: string;
 }
 
-export const MainContentSection = ({ id }: MainContentSectionProps) => {
+function MainContentSection({ id }: MainContentSectionProps) {
   const article = articlesData.find((a) => String(a.id) === id);
 
   if (!article) {
@@ -167,7 +167,7 @@ export const MainContentSection = ({ id }: MainContentSectionProps) => {
       </section>
     </main>
   );
-};
+}
 
 export default function BlogArticlePage({
   params,
