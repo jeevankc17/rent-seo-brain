@@ -5,6 +5,7 @@ import { AudienceEngagementSection } from "@components/Google/AudienceEngagement
 import { FAQSection } from "@components/Google/FAQSection";
 
 import GoogleFeatures from "@components/Google/GoogleFeatures";
+import GoogleLP from "@components/Google/GoogleLP";
 import { GoogleTestimonial } from "@components/Google/GoogleTestimonial";
 import HeroSection from "@components/Google/HeroSection";
 import { ProcessSection } from "@components/Google/Process";
@@ -19,8 +20,11 @@ import Wireframe from "@components/Landing-Page/Wireframe";
 export default function Home() {
   return (
     <main className="flex flex-col items-center bg-white gap-[132px] pb-[132px]">
-      <section className="relative w-full h-[960px] bg-neutral-900">
+      {/* <section className="relative w-full h-[960px] bg-neutral-900">
         <HeroSection />
+      </section> */}
+      <section className="relative w-full h-[960px] bg-neutral-900">
+        <GoogleLP />
       </section>
       <section className="relative w-full h-[515px] px-[157px]">
         <AudienceEngagementSection />

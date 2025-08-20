@@ -14,6 +14,8 @@ import IdeasToContent from "@components/Landing-Page/IdeasToContent";
 import { ToolsIntegrationSection } from "@components/Landing-Page/ToolsIntegrationSection";
 import { StatsSection } from "@components/Landing-Page/StatsSection";
 import { LPTestimonial } from "@components/Landing-Page/LPTestimonial";
+import Banner from "@components/Landing-Page/Banner";
+import { TechnologyStackSection } from "@components/Landing-Page/TechnologyStackSection";
 
 export default function Home() {
   return (
@@ -34,10 +36,10 @@ export default function Home() {
       <section className="relative w-full h-[1161px] bg-white px-[157px]">
         <LPServices />
       </section>
-      <section className="relative w-full h-[1046px]  bg-neutral-900">
+      <section className="relative w-full h-[1046px]  bg-neutral-900 px-[156px]">
         <BenefitsSection />
       </section>
-      <section className="relative   py-[106px] px-[266.5px]">
+      <section className="relative w-full  py-[106px] px-[266.5px]">
         <IdeasToContent />
       </section>
       <section className="relative w-full h-[1130px]  bg-neutral-900">
@@ -46,11 +48,16 @@ export default function Home() {
       <section className="relative w-full h-[790px] bg-white px-[156px]">
         <PerformanceDashboardSection />
       </section>
-
+      <section className="relative w-full h-[735px] ">
+        <TechnologyStackSection />
+      </section>
+      <section className="relative w-full h-[463px] bg-white px-[156px]">
+        <Banner />
+      </section>
       <section className="relative w-full h-[1130px]  px-[156px] py-[109px]">
         <ClientSuccessStoriesSection />
       </section>
-      <section className="relative w-full h-[1117px] px-[156px] ">
+      <section className="relative w-full h-[848px] px-[156px] ">
         <StatsSection />
       </section>
       <section className="relative w-full h-[506px] px-[156px] ">

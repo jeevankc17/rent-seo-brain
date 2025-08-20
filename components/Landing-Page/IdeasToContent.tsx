@@ -2,43 +2,40 @@ import React from "react";
 
 const IdeasToContent = () => {
   return (
-    <div className="flex w-[907px] h-[1766px] flex-col items-center gap-[50px] relative">
+    <div className="flex w-[907px] h-[1766px] flex-col items-start gap-[50px] relative">
       {/* Title Section */}
-      <div className="flex w-[601px] flex-col justify-center items-center gap-4 relative">
+      <div className="flex w-[601px] flex-col justify-center items-start gap-4 relative">
         {/* Badge */}
         <div
-          className="flex w-[203px] py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] relative"
-          style={{ backgroundColor: "#12579C" }}
+          className="flex w-[270px] border border-grey-300 py-[5px]  px-[2px] justify-center items-center gap-[6px] rounded-[45px] relative bg-Secondary-300"
         >
           <svg
             width="15"
             height="15"
             viewBox="0 0 15 15"
-            fill="none"
+            fill="yellow"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-[15px] h-[15px] flex-shrink-0 relative"
+            className="w-[15px] h-[15px] flex-shrink-0 relative text-Secondary-300"
           >
             <path
               d="M5 11.25L7.5 9.34375L10 11.25L9.0625 8.15625L11.5625 6.375H8.5L7.5 3.125L6.5 6.375H3.4375L5.9375 8.15625L5 11.25ZM7.5 13.75C6.63542 13.75 5.82292 13.5859 5.0625 13.2578C4.30208 12.9297 3.64062 12.4844 3.07812 11.9219C2.51562 11.3594 2.07031 10.6979 1.74219 9.9375C1.41406 9.17708 1.25 8.36458 1.25 7.5C1.25 6.63542 1.41406 5.82292 1.74219 5.0625C2.07031 4.30208 2.51562 3.64062 3.07812 3.07812C3.64062 2.51562 4.30208 2.07031 5.0625 1.74219C5.82292 1.41406 6.63542 1.25 7.5 1.25C8.36458 1.25 9.17708 1.41406 9.9375 1.74219C10.6979 2.07031 11.3594 2.51562 11.9219 3.07812C12.4844 3.64062 12.9297 4.30208 13.2578 5.0625C13.5859 5.82292 13.75 6.63542 13.75 7.5C13.75 8.36458 13.5859 9.17708 13.2578 9.9375C12.9297 10.6979 12.4844 11.3594 11.9219 11.9219C11.3594 12.4844 10.6979 12.9297 9.9375 13.2578C9.17708 13.5859 8.36458 13.75 7.5 13.75Z"
-              fill="#E8F4FF"
+              fill="yellow"
             />
           </svg>
-          <div
-            className="font-urbanist text-[14px] font-medium leading-[23px] relative"
-            style={{ color: "#E8F4FF" }}
-          >
-            Our Proven Process
+          <div className="font-urbanist text-[14px]  w-[270px] bg-white text-secondary-300 font-medium leading-[23px] relative">
+            Not just design ,design that performs.
           </div>
         </div>
 
         {/* Title and Description */}
-        <div className="flex h-[176px] flex-col justify-center items-center gap-4 self-stretch relative">
-          <div className="w-[593px] text-center text-primary-500 font-urbanist text-[50px] font-bold leading-[57px] relative">
-            How We Turn Ideas Into ROI-Driven Content
+        <div className="flex h-[176px] flex-col justify-center items-start gap-4 self-stretch relative">
+          <div className="w-[593px] text-center text-primary-500 font-urbanist text-[48px] font-bold leading-[57px] relative">
+            From Wireframe to Wow , Here’s How We Build It
           </div>
           <div className="text-center font-urbanist text-[16px] text-neutral-900 font-normal leading-[23px] self-stretch relative">
-            From discovery to reporting, our systematic approach ensures your
-            content marketing delivers measurable results.
+            Our landing page design process focuses on results. From strategy to
+            final handoff, every step is crafted to meet your goals and drive
+            conversions.
           </div>
         </div>
       </div>
