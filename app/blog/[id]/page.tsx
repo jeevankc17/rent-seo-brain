@@ -169,10 +169,12 @@ function MainContentSection({ id }: MainContentSectionProps) {
   );
 }
 
-export default function BlogArticlePage({
+// Updated to handle async params in Next.js 15
+export default async function BlogArticlePage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  return <MainContentSection id={params.id} />;
+  const { id } = await params;
+  return <MainContentSection id={id} />;
 }
