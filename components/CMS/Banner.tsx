@@ -24,13 +24,12 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
           <div className="flex flex-col items-center gap-4 w-full">
             {/* Main heading */}
             <h1 className="w-[798px] text-white text-center font-urbanist text-[50px] font-[700] leading-[120%]">
-              Let's Design a Page That Converts
+            Let’s Transform Content Strategy
             </h1>
 
             {/* Subtitle */}
             <p className="w-[598px] text-[rgba(255,255,255,0.7)] text-center font-urbanist text-lg font-normal leading-[145%]">
-              Whether you're starting fresh or need a conversion boost, we'll
-              craft a landing page tailored to your goals, audience, and brand.
+            We create SEO-optimized, audience-first content that drives real results — from blogs and landing pages to CMS-ready assets.
             </p>
           </div>
 
@@ -102,9 +101,9 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
 
           {/* CTA Button */}
           <div className="flex items-center gap-4">
-            <button className="flex w-[248px] h-[50px] p-[0_3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:opacity-90 transition-opacity cursor-pointer">
+            <button className="flex w-[268px] h-[50px] p-[0_3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:opacity-90 transition-opacity cursor-pointer">
               <span className="text-white text-center font-urbanist text-base font-medium leading-[23px] capitalize">
-                Start My Landing Page
+              Get a Custom Content Plan
               </span>
               <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-solid border-[#A2D1FF] bg-[#E8F4FF]">
                 <svg
@@ -137,7 +136,7 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
               aria-label="Book an appointment to discuss your business growth"
             >
               <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
-                Book An Appointment{" "}
+                Book An Appointment
               </span>
 
               <img

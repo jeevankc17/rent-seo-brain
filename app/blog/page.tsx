@@ -1,5 +1,6 @@
 import BlogHero from "@components/Blog/Blog-Hero";
 import { ArticleCardsSection } from "@components/Blog/ArticleSection";
+import { BlogTestimonial } from "@components/Blog/BlogTestimonial";
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
       </section>
       <section className="relative w-full h-[1141px] px-[154px]">
         <ArticleCardsSection />
+      </section>
+      <section className="relative w-full px-[156px] ">
+        <BlogTestimonial />
       </section>
     </main>
   );

@@ -54,37 +54,39 @@ export default function CMS() {
         {/* Header Section */}
         <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-8 lg:gap-11 mb-8 lg:mb-16">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 lg:gap-3">
-              <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
-                {[
-                  "/Home-Page/Hero-Section/image1.jpg",
-                  "/Home-Page/Hero-Section/image2.jpg",
-                  "/Home-Page/Hero-Section/image3.jpg",
-                  "/Home-Page/Hero-Section/image4.jpg",
-                ].map((imagePath, index) => (
-                  <div
-                    key={imagePath}
-                    className={`relative w-[28px] lg:w-[33.231px] h-[28px] lg:h-[33.231px] rounded-full overflow-hidden
+            <div className="flex items-center justify-start gap-[9px] h-[33px] border border-white  p-[10px] rounded-[45px]">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 lg:gap-3">
+                <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
+                  {[
+                    "/Home-Page/Hero-Section/image1.jpg",
+                    "/Home-Page/Hero-Section/image2.jpg",
+                    "/Home-Page/Hero-Section/image3.jpg",
+                    "/Home-Page/Hero-Section/image4.jpg",
+                  ].map((imagePath, index) => (
+                    <div
+                      key={imagePath}
+                      className={`relative w-[25px]  h-[25px]  rounded-full overflow-hidden
                ${
                  index > 0
                    ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"
                    : ""
                }`}
-                  >
-                    <Image
-                      src={imagePath}
-                      alt={`Review avatar ${index + 1}`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 28px, 33.231px"
-                      priority={index < 2} // Load first two images immediately
-                    />
-                  </div>
-                ))}
+                    >
+                      <Image
+                        src={imagePath}
+                        alt={`Review avatar ${index + 1}`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 28px, 33.231px"
+                        priority={index < 2} // Load first two images immediately
+                      />
+                    </div>
+                  ))}
+                </div>
+                <span className="text-white text-[10px] lg:text-[12px] font-medium leading-[20px] lg:leading-[23px] tracking-[0.06px] uppercase font-sans">
+                  Trusted by 500+ Growing Clients
+                </span>
               </div>
-              <span className="text-white text-[10px] lg:text-[12px] font-medium leading-[20px] lg:leading-[23px] tracking-[0.06px] uppercase font-sans">
-                Trusted by 500+ Growing Clients
-              </span>
             </div>
 
             {/* Main Heading and Description */}
@@ -137,7 +139,7 @@ export default function CMS() {
               </div>
             </button>
 
-            <button className="flex w-full sm:w-[280px] lg:w-[228px] h-[45px] lg:h-[50px] px-4 lg:px-[19px] py-[10px] justify-center items-center gap-2 lg:gap-[7px] rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
+            <button className="flex w-full sm:w-[280px] lg:w-[280px] h-[45px] lg:h-[50px] px-4 lg:px-[19px] py-[10px] justify-center items-center gap-2 lg:gap-[7px] rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
               <span className="text-[#091E42] text-sm lg:text-base font-medium leading-[100%] capitalize font-sans">
                 Explore Our Client Wins
               </span>

@@ -17,7 +17,7 @@ export default function SEOMethod() {
       {/* Header Section */}
       <div className="absolute left-[156px] top-[72px] w-[552px] h-[225px] flex flex-col justify-center items-start gap-4">
         {/* Badge */}
-        <div className="flex w-[264px] py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] bg-[#12579C]">
+        <div className="flex w-[274px] py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] bg-[#12579C]">
           <svg 
             width="16" 
             height="15" 

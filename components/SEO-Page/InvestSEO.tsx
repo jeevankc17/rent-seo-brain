@@ -1,64 +1,74 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const InvestSEO = () => {
   return (
-    <div style={{
-      display: 'flex',
-      width: '1129px',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-      gap: '76px',
-      position: 'relative'
-    }}>
+    <div
+      style={{
+        display: "flex",
+        width: "1129px",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        gap: "76px",
+        position: "relative",
+      }}
+    >
       {/* Header Section */}
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '50px',
-        alignSelf: 'stretch',
-        position: 'relative'
-      }}>
-        <div style={{
-          display: 'flex',
-          width: '565px',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '16px',
-          position: 'relative'
-        }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "50px",
+          alignSelf: "stretch",
+          position: "relative",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            width: "565px",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "16px",
+            position: "relative",
+          }}
+        >
           {/* Tag */}
-          <div style={{
-            display: 'flex',
-            width: '275px',
-            padding: '5px 0',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: '6px',
-            borderRadius: '45px',
-            border: '1px solid #F78C01',
-            position: 'relative'
-          }}>
-            <div style={{
-              display: 'flex',
-              width: '263px',
-              padding: '2px 8px',
-              justifyContent: 'center',
-              alignItems: 'center',
-              gap: '6px',
-              flexShrink: 0,
-              borderRadius: '45px',
-              border: '0.2px solid #F8A02C',
-              background: '#FEF4E6',
-              position: 'relative'
-            }}>
+          <div
+            style={{
+              display: "flex",
+              width: "275px",
+              padding: "5px 0",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "6px",
+              borderRadius: "45px",
+              border: "1px solid #F78C01",
+              position: "relative",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                width: "263px",
+                padding: "2px 8px",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "6px",
+                flexShrink: 0,
+                borderRadius: "45px",
+                border: "0.2px solid #F8A02C",
+                background: "#FEF4E6",
+                position: "relative",
+              }}
+            >
               <svg
                 style={{
-                  width: '15px',
-                  height: '15px',
+                  width: "15px",
+                  height: "15px",
                   flexShrink: 0,
-                  position: 'relative'
+                  position: "relative",
                 }}
                 width="15"
                 height="15"
@@ -71,22 +81,27 @@ const InvestSEO = () => {
                   fill="#F78C01"
                 />
               </svg>
-              <div style={{
-                color: '#F78C01',
-                fontFamily: 'Urbanist',
-                fontSize: '14px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                lineHeight: '23px',
-                textTransform: 'capitalize',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '14px',
-                  color: 'rgba(247,140,1,1)'
-                }}>
+              <div
+                style={{
+                  color: "#F78C01",
+                  fontFamily: "Urbanist",
+                  fontSize: "14px",
+                  fontStyle: "normal",
+                  fontWeight: 500,
+                  lineHeight: "23px",
+                  textTransform: "capitalize",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    color: "rgba(247,140,1,1)",
+                  }}
+                >
                   SEO isn't a cost , it's an investment.
                 </span>
               </div>
@@ -94,166 +109,201 @@ const InvestSEO = () => {
           </div>
 
           {/* Main Heading */}
-          <div style={{
-            display: 'flex',
-            height: '176px',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '16px',
-            alignSelf: 'stretch',
-            position: 'relative'
-          }}>
-            <div style={{
-              alignSelf: 'stretch',
-              color: '#12579C',
-              textAlign: 'center',
-              fontFamily: 'Urbanist',
-              fontSize: '50px',
-              fontStyle: 'normal',
-              fontWeight: 700,
-              lineHeight: '57px',
-              position: 'relative'
-            }}>
-              <span style={{
-                fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
+          <div
+            style={{
+              display: "flex",
+              height: "176px",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "16px",
+              alignSelf: "stretch",
+              position: "relative",
+            }}
+          >
+            <div
+              style={{
+                alignSelf: "stretch",
+                color: "#12579C",
+                textAlign: "center",
+                fontFamily: "Urbanist",
+                fontSize: "50px",
+                fontStyle: "normal",
                 fontWeight: 700,
-                fontSize: '50px',
-                color: 'rgba(18,87,156,1)'
-              }}>
+                lineHeight: "57px",
+                position: "relative",
+              }}
+            >
+              <span
+                style={{
+                  fontFamily:
+                    "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                  fontWeight: 700,
+                  fontSize: "50px",
+                  color: "rgba(18,87,156,1)",
+                }}
+              >
                 What You Gain From Investing in SEO
               </span>
             </div>
-            <div style={{
-              width: '565px',
-              color: '#6A7986',
-              textAlign: 'center',
-              fontFamily: 'Urbanist',
-              fontSize: '16px',
-              fontStyle: 'normal',
-              fontWeight: 400,
-              lineHeight: '23px',
-              position: 'relative'
-            }}>
-              <span style={{
-                fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
+            <div
+              style={{
+                width: "565px",
+                color: "#6A7986",
+                textAlign: "center",
+                fontFamily: "Urbanist",
+                fontSize: "16px",
+                fontStyle: "normal",
                 fontWeight: 400,
-                fontSize: '16px',
-                color: 'rgba(106,121,134,1)'
-              }}>
-                Our SEO strategies don't just increase rankings — they unlock sustainable business growth.
+                lineHeight: "23px",
+                position: "relative",
+              }}
+            >
+              <span
+                style={{
+                  fontFamily:
+                    "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                  fontWeight: 400,
+                  fontSize: "16px",
+                  color: "rgba(106,121,134,1)",
+                }}
+              >
+                Our SEO strategies don't just increase rankings — they unlock
+                sustainable business growth.
               </span>
             </div>
           </div>
         </div>
 
         {/* Cards Section */}
-        <div style={{
-          width: '1080px',
-          height: '692px',
-          position: 'relative'
-        }}>
+        <div
+          style={{
+            width: "1080px",
+            height: "692px",
+            position: "relative",
+          }}
+        >
           {/* Better Ranking Card */}
-          <div style={{
-            display: 'flex',
-            width: '422px',
-            height: '529px',
-            padding: '26.918px 22.431px',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            gap: '34.993px',
-            flexShrink: 0,
-            borderRadius: '24.73px',
-            background: '#FFF',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
-            position: 'absolute',
-            left: '0px',
-            top: '163px',
-            zIndex: 1
-          }}>
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              gap: '7.178px',
-              alignSelf: 'stretch',
-              position: 'relative'
-            }}>
-              <div style={{
-                color: '#12579C',
-                fontFamily: 'Urbanist',
-                fontSize: '21.534px',
-                fontStyle: 'normal',
-                fontWeight: 600,
-                lineHeight: 'normal',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 700,
-                  fontSize: '22px',
-                  color: 'rgba(18,87,156,1)'
-                }}>
+          <div
+            style={{
+              display: "flex",
+              width: "422px",
+              height: "529px",
+              padding: "26.918px 22.431px",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: "34.993px",
+              flexShrink: 0,
+              borderRadius: "24.73px",
+              background: "#FFF",
+              boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)",
+              position: "absolute",
+              left: "0px",
+              top: "163px",
+              zIndex: 1,
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                gap: "7.178px",
+                alignSelf: "stretch",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  color: "#12579C",
+                  fontFamily: "Urbanist",
+                  fontSize: "21.534px",
+                  fontStyle: "normal",
+                  fontWeight: 600,
+                  lineHeight: "normal",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 700,
+                    fontSize: "22px",
+                    color: "rgba(18,87,156,1)",
+                  }}
+                >
                   Better Ranking
                 </span>
               </div>
-              <div style={{
-                alignSelf: 'stretch',
-                color: '#4F6070',
-                fontFamily: 'Urbanist',
-                fontSize: '14.356px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                lineHeight: 'normal',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '14px',
-                  color: 'rgba(79,96,112,1)'
-                }}>
+              <div
+                style={{
+                  alignSelf: "stretch",
+                  color: "#4F6070",
+                  fontFamily: "Urbanist",
+                  fontSize: "14.356px",
+                  fontStyle: "normal",
+                  fontWeight: 500,
+                  lineHeight: "normal",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    color: "rgba(79,96,112,1)",
+                  }}
+                >
                   Show up at the top when your customers are searching.
                 </span>
               </div>
             </div>
 
             {/* Rankings Content */}
-            <div style={{
-              display: 'flex',
-              padding: '13.459px 14.356px',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'flex-start',
-              gap: '18.842px',
-              alignSelf: 'stretch',
-              borderRadius: '14.356px',
-              background: 'rgba(232, 244, 255, 0.42)',
-              position: 'relative'
-            }}>
+            <div
+              style={{
+                display: "flex",
+                padding: "13.459px 14.356px",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "flex-start",
+                gap: "18.842px",
+                alignSelf: "stretch",
+                borderRadius: "14.356px",
+                background: "rgba(232, 244, 255, 0.42)",
+                position: "relative",
+              }}
+            >
               {/* Live Rankings Header */}
-              <div style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                alignSelf: 'stretch',
-                position: 'relative'
-              }}>
-                <div style={{
-                  display: 'flex',
-                  padding: '6.281px 8.973px',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  gap: '7.178px',
-                  borderRadius: '406.456px',
-                  background: 'rgba(0, 180, 92, 0.09)',
-                  position: 'relative'
-                }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  alignSelf: "stretch",
+                  position: "relative",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    padding: "6.281px 8.973px",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    gap: "7.178px",
+                    borderRadius: "406.456px",
+                    background: "rgba(0, 180, 92, 0.09)",
+                    position: "relative",
+                  }}
+                >
                   <svg
                     style={{
-                      width: '9.87px',
-                      height: '9.87px',
-                      fill: '#00B45C',
-                      position: 'relative'
+                      width: "9.87px",
+                      height: "9.87px",
+                      fill: "#00B45C",
+                      position: "relative",
                     }}
                     width="11"
                     height="11"
@@ -261,134 +311,169 @@ const InvestSEO = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="5.69271" cy="5.32845" r="4.9349" fill="#00B45C" />
+                    <circle
+                      cx="5.69271"
+                      cy="5.32845"
+                      r="4.9349"
+                      fill="#00B45C"
+                    />
                   </svg>
-                  <div style={{
-                    color: '#00B45C',
-                    fontFamily: 'Urbanist',
-                    fontSize: '14.356px',
-                    fontStyle: 'normal',
-                    fontWeight: 500,
-                    lineHeight: 'normal',
-                    position: 'relative'
-                  }}>
-                    <span style={{
-                      fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                      fontWeight: 400,
-                      fontSize: '14px',
-                      color: 'rgba(0,180,92,1)'
-                    }}>
+                  <div
+                    style={{
+                      color: "#00B45C",
+                      fontFamily: "Urbanist",
+                      fontSize: "14.356px",
+                      fontStyle: "normal",
+                      fontWeight: 500,
+                      lineHeight: "normal",
+                      position: "relative",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontFamily:
+                          "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                        fontWeight: 400,
+                        fontSize: "14px",
+                        color: "rgba(0,180,92,1)",
+                      }}
+                    >
                       Live Rankings
                     </span>
                   </div>
                 </div>
-                <div style={{
-                  color: '#5B6B7A',
-                  fontFamily: 'Urbanist',
-                  fontSize: '14.356px',
-                  fontStyle: 'normal',
-                  fontWeight: 500,
-                  lineHeight: 'normal',
-                  position: 'relative'
-                }}>
-                  <span style={{
-                    fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                    fontWeight: 400,
-                    fontSize: '14px',
-                    color: 'rgba(91,107,122,1)'
-                  }}>
+                <div
+                  style={{
+                    color: "#5B6B7A",
+                    fontFamily: "Urbanist",
+                    fontSize: "14.356px",
+                    fontStyle: "normal",
+                    fontWeight: 500,
+                    lineHeight: "normal",
+                    position: "relative",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily:
+                        "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                      fontWeight: 400,
+                      fontSize: "14px",
+                      color: "rgba(91,107,122,1)",
+                    }}
+                  >
                     12:17:19 AM
                   </span>
                 </div>
               </div>
 
               {/* Ranking Items */}
-              <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'flex-start',
-                gap: '19.74px',
-                alignSelf: 'stretch',
-                position: 'relative'
-              }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  gap: "19.74px",
+                  alignSelf: "stretch",
+                  position: "relative",
+                }}
+              >
                 {/* SEO Services Ranking */}
-                <div style={{
-                  display: 'flex',
-                  padding: '14.356px 11.664px',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  gap: '24.226px',
-                  alignSelf: 'stretch',
-                  borderRadius: '10.767px',
-                  background: 'rgba(255, 255, 255, 0.70)',
-                  boxShadow: '0 3.589px 19.291px 0 rgba(29, 143, 255, 0.20)',
-                  position: 'relative'
-                }}>
-                  <div style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    alignSelf: 'stretch',
-                    position: 'relative'
-                  }}>
-                    <div style={{
-                      display: 'flex',
-                      width: '108.568px',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      position: 'relative'
-                    }}>
-                      <div style={{
-                        color: '#34475A',
-                        fontFamily: 'Urbanist',
-                        fontSize: '14.356px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '14px',
-                          color: 'rgba(52,71,90,1)'
-                        }}>
+                <div
+                  style={{
+                    display: "flex",
+                    padding: "14.356px 11.664px",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "flex-start",
+                    gap: "24.226px",
+                    alignSelf: "stretch",
+                    borderRadius: "10.767px",
+                    background: "rgba(255, 255, 255, 0.70)",
+                    boxShadow: "0 3.589px 19.291px 0 rgba(29, 143, 255, 0.20)",
+                    position: "relative",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      alignSelf: "stretch",
+                      position: "relative",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        width: "108.568px",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        position: "relative",
+                      }}
+                    >
+                      <div
+                        style={{
+                          color: "#34475A",
+                          fontFamily: "Urbanist",
+                          fontSize: "14.356px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "14px",
+                            color: "rgba(52,71,90,1)",
+                          }}
+                        >
                           SEO Services
                         </span>
                       </div>
-                      <div style={{
-                        color: '#34475A',
-                        fontFamily: 'Urbanist',
-                        fontSize: '14.356px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '14px',
-                          color: 'rgba(52,71,90,1)'
-                        }}>
+                      <div
+                        style={{
+                          color: "#34475A",
+                          fontFamily: "Urbanist",
+                          fontSize: "14.356px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "14px",
+                            color: "rgba(52,71,90,1)",
+                          }}
+                        >
                           #3
                         </span>
                       </div>
                     </div>
-                    <div style={{
-                      display: 'flex',
-                      width: '21.534px',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      position: 'relative'
-                    }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        width: "21.534px",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        position: "relative",
+                      }}
+                    >
                       <svg
                         style={{
-                          width: '21.534px',
-                          height: '21.534px',
+                          width: "21.534px",
+                          height: "21.534px",
                           flexShrink: 0,
-                          position: 'relative'
+                          position: "relative",
                         }}
                         width="23"
                         height="22"
@@ -414,7 +499,12 @@ const InvestSEO = () => {
                         </g>
                         <defs>
                           <clipPath id="clip0_1393_6336">
-                            <rect width="21.5341" height="21.5341" fill="white" transform="translate(0.722656 0.307617)" />
+                            <rect
+                              width="21.5341"
+                              height="21.5341"
+                              fill="white"
+                              transform="translate(0.722656 0.307617)"
+                            />
                           </clipPath>
                         </defs>
                       </svg>
@@ -422,9 +512,9 @@ const InvestSEO = () => {
                   </div>
                   <svg
                     style={{
-                      height: '0.196px',
-                      alignSelf: 'stretch',
-                      position: 'relative'
+                      height: "0.196px",
+                      alignSelf: "stretch",
+                      position: "relative",
                     }}
                     width="339"
                     height="11"
@@ -462,85 +552,103 @@ const InvestSEO = () => {
                 </div>
 
                 {/* Digital Marketing Ranking */}
-                <div style={{
-                  display: 'flex',
-                  padding: '14.356px 11.664px',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  gap: '24.226px',
-                  alignSelf: 'stretch',
-                  borderRadius: '10.767px',
-                  background: 'rgba(255, 255, 255, 0.70)',
-                  boxShadow: '0 3.589px 19.291px 0 rgba(29, 143, 255, 0.20)',
-                  position: 'relative'
-                }}>
-                  <div style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    alignSelf: 'stretch',
-                    position: 'relative'
-                  }}>
-                    <div style={{
-                      display: 'flex',
-                      width: '108.568px',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      position: 'relative'
-                    }}>
-                      <div style={{
-                        width: '121.129px',
-                        flexShrink: 0,
-                        color: '#34475A',
-                        fontFamily: 'Urbanist',
-                        fontSize: '14.356px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '14px',
-                          color: 'rgba(52,71,90,1)'
-                        }}>
+                <div
+                  style={{
+                    display: "flex",
+                    padding: "14.356px 11.664px",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "flex-start",
+                    gap: "24.226px",
+                    alignSelf: "stretch",
+                    borderRadius: "10.767px",
+                    background: "rgba(255, 255, 255, 0.70)",
+                    boxShadow: "0 3.589px 19.291px 0 rgba(29, 143, 255, 0.20)",
+                    position: "relative",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      alignSelf: "stretch",
+                      position: "relative",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        width: "108.568px",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        position: "relative",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "121.129px",
+                          flexShrink: 0,
+                          color: "#34475A",
+                          fontFamily: "Urbanist",
+                          fontSize: "14.356px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "14px",
+                            color: "rgba(52,71,90,1)",
+                          }}
+                        >
                           Digital Marketing
                         </span>
                       </div>
-                      <div style={{
-                        color: '#34475A',
-                        fontFamily: 'Urbanist',
-                        fontSize: '14.356px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '14px',
-                          color: 'rgba(52,71,90,1)'
-                        }}>
+                      <div
+                        style={{
+                          color: "#34475A",
+                          fontFamily: "Urbanist",
+                          fontSize: "14.356px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "14px",
+                            color: "rgba(52,71,90,1)",
+                          }}
+                        >
                           #8
                         </span>
                       </div>
                     </div>
-                    <div style={{
-                      display: 'flex',
-                      width: '21.534px',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      position: 'relative'
-                    }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        width: "21.534px",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        position: "relative",
+                      }}
+                    >
                       <svg
                         style={{
-                          width: '21.534px',
-                          height: '21.534px',
+                          width: "21.534px",
+                          height: "21.534px",
                           flexShrink: 0,
-                          position: 'relative'
+                          position: "relative",
                         }}
                         width="23"
                         height="23"
@@ -566,7 +674,12 @@ const InvestSEO = () => {
                         </g>
                         <defs>
                           <clipPath id="clip0_1393_6348">
-                            <rect width="21.5341" height="21.5341" fill="white" transform="translate(0.722656 0.714844)" />
+                            <rect
+                              width="21.5341"
+                              height="21.5341"
+                              fill="white"
+                              transform="translate(0.722656 0.714844)"
+                            />
                           </clipPath>
                         </defs>
                       </svg>
@@ -574,9 +687,9 @@ const InvestSEO = () => {
                   </div>
                   <svg
                     style={{
-                      height: '0.196px',
-                      alignSelf: 'stretch',
-                      position: 'relative'
+                      height: "0.196px",
+                      alignSelf: "stretch",
+                      position: "relative",
                     }}
                     width="339"
                     height="11"
@@ -614,85 +727,103 @@ const InvestSEO = () => {
                 </div>
 
                 {/* Organic Traffic Ranking */}
-                <div style={{
-                  display: 'flex',
-                  padding: '14.356px 11.664px',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  gap: '24.226px',
-                  alignSelf: 'stretch',
-                  borderRadius: '10.767px',
-                  background: 'rgba(255, 255, 255, 0.70)',
-                  boxShadow: '0 3.589px 19.291px 0 rgba(29, 143, 255, 0.20)',
-                  position: 'relative'
-                }}>
-                  <div style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    alignSelf: 'stretch',
-                    position: 'relative'
-                  }}>
-                    <div style={{
-                      display: 'flex',
-                      width: '98.698px',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      position: 'relative'
-                    }}>
-                      <div style={{
-                        width: '101.39px',
-                        flexShrink: 0,
-                        color: '#34475A',
-                        fontFamily: 'Urbanist',
-                        fontSize: '14.356px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '14px',
-                          color: 'rgba(52,71,90,1)'
-                        }}>
+                <div
+                  style={{
+                    display: "flex",
+                    padding: "14.356px 11.664px",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "flex-start",
+                    gap: "24.226px",
+                    alignSelf: "stretch",
+                    borderRadius: "10.767px",
+                    background: "rgba(255, 255, 255, 0.70)",
+                    boxShadow: "0 3.589px 19.291px 0 rgba(29, 143, 255, 0.20)",
+                    position: "relative",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      alignSelf: "stretch",
+                      position: "relative",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        width: "98.698px",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        position: "relative",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "101.39px",
+                          flexShrink: 0,
+                          color: "#34475A",
+                          fontFamily: "Urbanist",
+                          fontSize: "14.356px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "14px",
+                            color: "rgba(52,71,90,1)",
+                          }}
+                        >
                           Organic Traffic
                         </span>
                       </div>
-                      <div style={{
-                        color: '#34475A',
-                        fontFamily: 'Urbanist',
-                        fontSize: '14.356px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '14px',
-                          color: 'rgba(52,71,90,1)'
-                        }}>
+                      <div
+                        style={{
+                          color: "#34475A",
+                          fontFamily: "Urbanist",
+                          fontSize: "14.356px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "14px",
+                            color: "rgba(52,71,90,1)",
+                          }}
+                        >
                           #7
                         </span>
                       </div>
                     </div>
-                    <div style={{
-                      display: 'flex',
-                      width: '21.534px',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      position: 'relative'
-                    }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        width: "21.534px",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        position: "relative",
+                      }}
+                    >
                       <svg
                         style={{
-                          width: '21.534px',
-                          height: '21.534px',
+                          width: "21.534px",
+                          height: "21.534px",
                           flexShrink: 0,
-                          position: 'relative'
+                          position: "relative",
                         }}
                         width="23"
                         height="22"
@@ -718,7 +849,12 @@ const InvestSEO = () => {
                         </g>
                         <defs>
                           <clipPath id="clip0_1393_6360">
-                            <rect width="21.5341" height="21.5341" fill="white" transform="translate(0.722656 0.123047)" />
+                            <rect
+                              width="21.5341"
+                              height="21.5341"
+                              fill="white"
+                              transform="translate(0.722656 0.123047)"
+                            />
                           </clipPath>
                         </defs>
                       </svg>
@@ -726,9 +862,9 @@ const InvestSEO = () => {
                   </div>
                   <svg
                     style={{
-                      height: '0.196px',
-                      alignSelf: 'stretch',
-                      position: 'relative'
+                      height: "0.196px",
+                      alignSelf: "stretch",
+                      position: "relative",
                     }}
                     width="339"
                     height="12"
@@ -766,30 +902,38 @@ const InvestSEO = () => {
                 </div>
               </div>
 
-              <div style={{
-                alignSelf: 'stretch',
-                color: '#F78C01',
-                fontFamily: 'Urbanist',
-                fontSize: '14.356px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                lineHeight: 'normal',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '14px',
-                  color: 'rgba(29,143,255,1)'
-                }}>
-                  3/3{' '}
+              <div
+                style={{
+                  alignSelf: "stretch",
+                  color: "#F78C01",
+                  fontFamily: "Urbanist",
+                  fontSize: "14.356px",
+                  fontStyle: "normal",
+                  fontWeight: 500,
+                  lineHeight: "normal",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    color: "rgba(29,143,255,1)",
+                  }}
+                >
+                  3/3{" "}
                 </span>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '14px',
-                  color: 'rgba(247,140,1,1)'
-                }}>
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    color: "rgba(247,140,1,1)",
+                  }}
+                >
                   Top 5 keywords
                 </span>
               </div>
@@ -797,136 +941,167 @@ const InvestSEO = () => {
           </div>
 
           {/* Increased Revenue Card */}
-          <div style={{
-            display: 'flex',
-            width: '422px',
-            height: '529px',
-            padding: '26.918px 22.431px',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            gap: '34.993px',
-            flexShrink: 0,
-            borderRadius: '24.73px',
-            background: '#FFF',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
-            position: 'absolute',
-            left: '658px',
-            top: '163px',
-            zIndex: 1
-          }}>
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              gap: '7.178px',
-              alignSelf: 'stretch',
-              position: 'relative'
-            }}>
-              <div style={{
-                color: '#12579C',
-                fontFamily: 'Urbanist',
-                fontSize: '21.534px',
-                fontStyle: 'normal',
-                fontWeight: 600,
-                lineHeight: 'normal',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 700,
-                  fontSize: '22px',
-                  color: 'rgba(18,87,156,1)'
-                }}>
+          <div
+            style={{
+              display: "flex",
+              width: "422px",
+              height: "529px",
+              padding: "26.918px 22.431px",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: "34.993px",
+              flexShrink: 0,
+              borderRadius: "24.73px",
+              background: "#FFF",
+              boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)",
+              position: "absolute",
+              left: "658px",
+              top: "163px",
+              zIndex: 1,
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                gap: "7.178px",
+                alignSelf: "stretch",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  color: "#12579C",
+                  fontFamily: "Urbanist",
+                  fontSize: "21.534px",
+                  fontStyle: "normal",
+                  fontWeight: 600,
+                  lineHeight: "normal",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 700,
+                    fontSize: "22px",
+                    color: "rgba(18,87,156,1)",
+                  }}
+                >
                   Increased Revenue
                 </span>
               </div>
-              <div style={{
-                alignSelf: 'stretch',
-                color: '#4F6070',
-                fontFamily: 'Urbanist',
-                fontSize: '14.356px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                lineHeight: 'normal',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '14px',
-                  color: 'rgba(79,96,112,1)'
-                }}>
-                  Convert more organic traffic into customers and boost your bottom line.
+              <div
+                style={{
+                  alignSelf: "stretch",
+                  color: "#4F6070",
+                  fontFamily: "Urbanist",
+                  fontSize: "14.356px",
+                  fontStyle: "normal",
+                  fontWeight: 500,
+                  lineHeight: "normal",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    color: "rgba(79,96,112,1)",
+                  }}
+                >
+                  Convert more organic traffic into customers and boost your
+                  bottom line.
                 </span>
               </div>
             </div>
 
             {/* Revenue Chart */}
-            <div style={{
-              display: 'flex',
-              width: '376.847px',
-              padding: '8.973px 11.664px',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-              gap: '34.096px',
-              borderRadius: '14.356px',
-              background: '#FFF',
-              position: 'relative'
-            }}>
-              <div style={{
-                display: 'flex',
-                width: '254.82px',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: '24.226px',
-                position: 'relative'
-              }}>
-                <div style={{
-                  display: 'flex',
-                  width: '80.753px',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  gap: '7.178px',
-                  position: 'relative'
-                }}>
-                  <div style={{
-                    alignSelf: 'stretch',
-                    color: '#1D8FFF',
-                    textAlign: 'center',
-                    fontFamily: 'Urbanist',
-                    fontSize: '17.945px',
-                    fontStyle: 'normal',
-                    fontWeight: 600,
-                    lineHeight: '14.356px',
-                    position: 'relative'
-                  }}>
-                    <span style={{
-                      fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                      fontWeight: 700,
-                      fontSize: '18px',
-                      color: 'rgba(29,143,255,1)'
-                    }}>
+            <div
+              style={{
+                display: "flex",
+                width: "376.847px",
+                padding: "8.973px 11.664px",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "34.096px",
+                borderRadius: "14.356px",
+                background: "#FFF",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  width: "254.82px",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: "24.226px",
+                  position: "relative",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    width: "80.753px",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    gap: "7.178px",
+                    position: "relative",
+                  }}
+                >
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      color: "#1D8FFF",
+                      textAlign: "center",
+                      fontFamily: "Urbanist",
+                      fontSize: "17.945px",
+                      fontStyle: "normal",
+                      fontWeight: 600,
+                      lineHeight: "14.356px",
+                      position: "relative",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontFamily:
+                          "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                        fontWeight: 700,
+                        fontSize: "18px",
+                        color: "rgba(29,143,255,1)",
+                      }}
+                    >
                       $249,489
                     </span>
                   </div>
-                  <div style={{
-                    alignSelf: 'stretch',
-                    color: '#7B7B7B',
-                    textAlign: 'center',
-                    fontFamily: 'Urbanist',
-                    fontSize: '10.767px',
-                    fontStyle: 'normal',
-                    fontWeight: 400,
-                    lineHeight: '14.356px',
-                    position: 'relative'
-                  }}>
-                    <span style={{
-                      fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      color: "#7B7B7B",
+                      textAlign: "center",
+                      fontFamily: "Urbanist",
+                      fontSize: "10.767px",
+                      fontStyle: "normal",
                       fontWeight: 400,
-                      fontSize: '11px',
-                      color: 'rgba(123,123,123,1)'
-                    }}>
+                      lineHeight: "14.356px",
+                      position: "relative",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontFamily:
+                          "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                        fontWeight: 400,
+                        fontSize: "11px",
+                        color: "rgba(123,123,123,1)",
+                      }}
+                    >
                       Monthly Revenue
                     </span>
                   </div>
@@ -935,9 +1110,9 @@ const InvestSEO = () => {
                 {/* Revenue Chart SVG */}
                 <svg
                   style={{
-                    width: '210.065px',
-                    height: '101.973px',
-                    position: 'relative'
+                    width: "210.065px",
+                    height: "101.973px",
+                    position: "relative",
                   }}
                   width="211"
                   height="103"
@@ -959,119 +1134,147 @@ const InvestSEO = () => {
                   />
                   <text
                     fill="#131313"
-                    style={{ whiteSpace: 'pre' }}
+                    style={{ whiteSpace: "pre" }}
                     fontFamily="Urbanist"
                     fontSize="31.4039"
                     fontWeight="500"
                     letterSpacing="0px"
                   >
-                    <tspan x="78.4246" y="93.4406">42%</tspan>
+                    <tspan x="78.4246" y="93.4406">
+                      42%
+                    </tspan>
                   </text>
                 </svg>
 
-                <div style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  alignSelf: 'stretch',
-                  position: 'relative'
-                }}>
-                  <div style={{
-                    display: 'flex',
-                    width: '61.911px',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    gap: '7.178px',
-                    position: 'relative'
-                  }}>
-                    <div style={{
-                      alignSelf: 'stretch',
-                      color: '#405364',
-                      textAlign: 'center',
-                      fontFamily: 'Urbanist',
-                      fontSize: '16.151px',
-                      fontStyle: 'normal',
-                      fontWeight: 500,
-                      lineHeight: '14.356px',
-                      position: 'relative'
-                    }}>
-                      <span style={{
-                        fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                        fontWeight: 400,
-                        fontSize: '16px',
-                        color: 'rgba(64,83,100,1)'
-                      }}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    alignSelf: "stretch",
+                    position: "relative",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      width: "61.911px",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      gap: "7.178px",
+                      position: "relative",
+                    }}
+                  >
+                    <div
+                      style={{
+                        alignSelf: "stretch",
+                        color: "#405364",
+                        textAlign: "center",
+                        fontFamily: "Urbanist",
+                        fontSize: "16.151px",
+                        fontStyle: "normal",
+                        fontWeight: 500,
+                        lineHeight: "14.356px",
+                        position: "relative",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontFamily:
+                            "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                          fontWeight: 400,
+                          fontSize: "16px",
+                          color: "rgba(64,83,100,1)",
+                        }}
+                      >
                         5.2%
                       </span>
                     </div>
-                    <div style={{
-                      alignSelf: 'stretch',
-                      color: '#405364',
-                      textAlign: 'center',
-                      fontFamily: 'Urbanist',
-                      fontSize: '12.562px',
-                      fontStyle: 'normal',
-                      fontWeight: 500,
-                      lineHeight: '14.356px',
-                      position: 'relative'
-                    }}>
-                      <span style={{
-                        fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                        fontWeight: 400,
-                        fontSize: '13px',
-                        color: 'rgba(64,83,100,1)'
-                      }}>
+                    <div
+                      style={{
+                        alignSelf: "stretch",
+                        color: "#405364",
+                        textAlign: "center",
+                        fontFamily: "Urbanist",
+                        fontSize: "12.562px",
+                        fontStyle: "normal",
+                        fontWeight: 500,
+                        lineHeight: "14.356px",
+                        position: "relative",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontFamily:
+                            "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                          fontWeight: 400,
+                          fontSize: "13px",
+                          color: "rgba(64,83,100,1)",
+                        }}
+                      >
                         Conversion
                       </span>
                     </div>
                   </div>
-                  <div style={{
-                    display: 'flex',
-                    width: '75.369px',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    gap: '7.178px',
-                    position: 'relative'
-                  }}>
-                    <div style={{
-                      alignSelf: 'stretch',
-                      color: '#405364',
-                      textAlign: 'center',
-                      fontFamily: 'Urbanist',
-                      fontSize: '16.151px',
-                      fontStyle: 'normal',
-                      fontWeight: 500,
-                      lineHeight: '14.356px',
-                      position: 'relative'
-                    }}>
-                      <span style={{
-                        fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                        fontWeight: 400,
-                        fontSize: '16px',
-                        color: 'rgba(64,83,100,1)'
-                      }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      width: "75.369px",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      gap: "7.178px",
+                      position: "relative",
+                    }}
+                  >
+                    <div
+                      style={{
+                        alignSelf: "stretch",
+                        color: "#405364",
+                        textAlign: "center",
+                        fontFamily: "Urbanist",
+                        fontSize: "16.151px",
+                        fontStyle: "normal",
+                        fontWeight: 500,
+                        lineHeight: "14.356px",
+                        position: "relative",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontFamily:
+                            "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                          fontWeight: 400,
+                          fontSize: "16px",
+                          color: "rgba(64,83,100,1)",
+                        }}
+                      >
                         137
                       </span>
                     </div>
-                    <div style={{
-                      width: '103.184px',
-                      color: '#405364',
-                      textAlign: 'center',
-                      fontFamily: 'Urbanist',
-                      fontSize: '12.562px',
-                      fontStyle: 'normal',
-                      fontWeight: 500,
-                      lineHeight: '14.356px',
-                      position: 'relative'
-                    }}>
-                      <span style={{
-                        fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                        fontWeight: 400,
-                        fontSize: '13px',
-                        color: 'rgba(64,83,100,1)'
-                      }}>
+                    <div
+                      style={{
+                        width: "103.184px",
+                        color: "#405364",
+                        textAlign: "center",
+                        fontFamily: "Urbanist",
+                        fontSize: "12.562px",
+                        fontStyle: "normal",
+                        fontWeight: 500,
+                        lineHeight: "14.356px",
+                        position: "relative",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontFamily:
+                            "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                          fontWeight: 400,
+                          fontSize: "13px",
+                          color: "rgba(64,83,100,1)",
+                        }}
+                      >
                         Sales Today
                       </span>
                     </div>
@@ -1080,26 +1283,28 @@ const InvestSEO = () => {
               </div>
 
               {/* Average Order Value Section */}
-              <div style={{
-                height: '96.006px',
-                alignSelf: 'stretch',
-                borderRadius: '9.87px',
-                background: '#E8F4FF',
-                position: 'relative'
-              }}>
+              <div
+                style={{
+                  height: "96.006px",
+                  alignSelf: "stretch",
+                  borderRadius: "9.87px",
+                  background: "#E8F4FF",
+                  position: "relative",
+                }}
+              >
                 <svg
                   style={{
-                    display: 'inline-flex',
-                    height: '0px',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'flex-start',
-                    gap: '-0.2px',
+                    display: "inline-flex",
+                    height: "0px",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "flex-start",
+                    gap: "-0.2px",
                     flexShrink: 0,
-                    position: 'absolute',
-                    left: '14px',
-                    top: '77px',
-                    width: '325px'
+                    position: "absolute",
+                    left: "14px",
+                    top: "77px",
+                    width: "325px",
                   }}
                   width="332"
                   height="11"
@@ -1134,44 +1339,51 @@ const InvestSEO = () => {
                   </defs>
                 </svg>
 
-                <div style={{
-                  display: 'flex',
-                  width: '319px',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  position: 'absolute',
-                  left: '20px',
-                  top: '11px',
-                  height: '24px'
-                }}>
-                  <div style={{
-                    color: '#405364',
-                    textAlign: 'center',
-                    fontFamily: 'Urbanist',
-                    fontSize: '12.562px',
-                    fontStyle: 'normal',
-                    fontWeight: 600,
-                    lineHeight: '14.356px',
-                    position: 'relative'
-                  }}>
-                    <span style={{
-                      fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                      fontWeight: 700,
-                      fontSize: '13px',
-                      color: 'rgba(64,83,100,1)'
-                    }}>
+                <div
+                  style={{
+                    display: "flex",
+                    width: "319px",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    position: "absolute",
+                    left: "20px",
+                    top: "11px",
+                    height: "24px",
+                  }}
+                >
+                  <div
+                    style={{
+                      color: "#405364",
+                      textAlign: "center",
+                      fontFamily: "Urbanist",
+                      fontSize: "12.562px",
+                      fontStyle: "normal",
+                      fontWeight: 600,
+                      lineHeight: "14.356px",
+                      position: "relative",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontFamily:
+                          "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                        fontWeight: 700,
+                        fontSize: "13px",
+                        color: "rgba(64,83,100,1)",
+                      }}
+                    >
                       Avg Order Value
                     </span>
                   </div>
                   <svg
                     style={{
-                      display: 'flex',
-                      padding: '2.692px 6.281px 2.692px 0',
-                      alignItems: 'center',
-                      gap: '8.075px',
-                      borderRadius: '785.995px',
-                      background: 'rgba(255, 255, 255, 0.41)',
-                      position: 'relative'
+                      display: "flex",
+                      padding: "2.692px 6.281px 2.692px 0",
+                      alignItems: "center",
+                      gap: "8.075px",
+                      borderRadius: "785.995px",
+                      background: "rgba(255, 255, 255, 0.41)",
+                      position: "relative",
                     }}
                     width="86"
                     height="25"
@@ -1208,13 +1420,15 @@ const InvestSEO = () => {
                     />
                     <text
                       fill="#377E36"
-                      style={{ whiteSpace: 'pre' }}
+                      style={{ whiteSpace: "pre" }}
                       fontFamily="Urbanist"
                       fontSize="10.767"
                       fontWeight="500"
                       letterSpacing="0em"
                     >
-                      <tspan x="48.9997" y="16.2649">+3.4%</tspan>
+                      <tspan x="48.9997" y="16.2649">
+                        +3.4%
+                      </tspan>
                     </text>
                     <defs>
                       <linearGradient
@@ -1232,184 +1446,224 @@ const InvestSEO = () => {
                   </svg>
                 </div>
 
-                <div style={{
-                  color: '#00B45C',
-                  textAlign: 'center',
-                  fontFamily: 'Urbanist',
-                  fontSize: '16.151px',
-                  fontStyle: 'normal',
-                  fontWeight: 600,
-                  lineHeight: '14.356px',
-                  position: 'absolute',
-                  left: '152px',
-                  top: '48px',
-                  width: '50px',
-                  height: '15px'
-                }}>
-                  <span style={{
-                    fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                    fontWeight: 700,
-                    fontSize: '16px',
-                    color: 'rgba(0,180,92,1)'
-                  }}>
+                <div
+                  style={{
+                    color: "#00B45C",
+                    textAlign: "center",
+                    fontFamily: "Urbanist",
+                    fontSize: "16.151px",
+                    fontStyle: "normal",
+                    fontWeight: 600,
+                    lineHeight: "14.356px",
+                    position: "absolute",
+                    left: "152px",
+                    top: "48px",
+                    width: "50px",
+                    height: "15px",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily:
+                        "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                      fontWeight: 700,
+                      fontSize: "16px",
+                      color: "rgba(0,180,92,1)",
+                    }}
+                  >
                     $2,256
                   </span>
                 </div>
 
                 {/* Progress Bar for $2,256 */}
-                <div style={{
-                  position: 'absolute',
-                  left: '20px',
-                  top: '70px',
-                  width: '300px',
-                  height: '4px',
-                  background: '#E8F4FF',
-                  borderRadius: '2px'
-                }}>
-                  <div style={{
-                    width: '75%',
-                    height: '100%',
-                    background: 'linear-gradient(90deg, #00B45C 0%, #43A2FF 100%)',
-                    borderRadius: '2px'
-                  }} />
+                <div
+                  style={{
+                    position: "absolute",
+                    left: "20px",
+                    top: "70px",
+                    width: "300px",
+                    height: "4px",
+                    background: "#E8F4FF",
+                    borderRadius: "2px",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "75%",
+                      height: "100%",
+                      background:
+                        "linear-gradient(90deg, #00B45C 0%, #43A2FF 100%)",
+                      borderRadius: "2px",
+                    }}
+                  />
                 </div>
               </div>
             </div>
           </div>
 
           {/* Increased Organic Traffic Card (Center, Larger) */}
-          <div style={{
-            display: 'flex',
-            width: '470px',
-            height: '590px',
-            padding: '30px 25px',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            gap: '39px',
-            flexShrink: 0,
-            borderRadius: '27.562px',
-            background: '#FFF',
-            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.12)',
-            position: 'absolute',
-            left: '305px',
-            top: '0px',
-            zIndex: 2
-          }}>
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              gap: '8px',
-              alignSelf: 'stretch',
-              position: 'relative'
-            }}>
-              <div style={{
-                color: '#12579C',
-                fontFamily: 'Urbanist',
-                fontSize: '24px',
-                fontStyle: 'normal',
-                fontWeight: 600,
-                lineHeight: 'normal',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 700,
-                  fontSize: '24px',
-                  color: 'rgba(18,87,156,1)'
-                }}>
+          <div
+            style={{
+              display: "flex",
+              width: "470px",
+              height: "590px",
+              padding: "30px 25px",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: "39px",
+              flexShrink: 0,
+              borderRadius: "27.562px",
+              background: "#FFF",
+              boxShadow: "0 10px 40px rgba(0, 0, 0, 0.12)",
+              position: "absolute",
+              left: "305px",
+              top: "0px",
+              zIndex: 2,
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                gap: "8px",
+                alignSelf: "stretch",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  color: "#12579C",
+                  fontFamily: "Urbanist",
+                  fontSize: "24px",
+                  fontStyle: "normal",
+                  fontWeight: 600,
+                  lineHeight: "normal",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 700,
+                    fontSize: "24px",
+                    color: "rgba(18,87,156,1)",
+                  }}
+                >
                   Increased Organic Traffic
                 </span>
               </div>
-              <div style={{
-                alignSelf: 'stretch',
-                color: '#4F6070',
-                fontFamily: 'Urbanist',
-                fontSize: '16px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                lineHeight: 'normal',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '16px',
-                  color: 'rgba(79,96,112,1)'
-                }}>
-                  Drive more qualified visitors to your website without paying for ads.
+              <div
+                style={{
+                  alignSelf: "stretch",
+                  color: "#4F6070",
+                  fontFamily: "Urbanist",
+                  fontSize: "16px",
+                  fontStyle: "normal",
+                  fontWeight: 500,
+                  lineHeight: "normal",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "16px",
+                    color: "rgba(79,96,112,1)",
+                  }}
+                >
+                  Drive more qualified visitors to your website without paying
+                  for ads.
                 </span>
               </div>
             </div>
 
             {/* Traffic Balance Chart */}
-            <div style={{
-              display: 'flex',
-              padding: '16px 24px',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '28px',
-              borderRadius: '12px',
-              background: '#FFF',
-              boxShadow: '0 4px 14.8px 0 rgba(0, 0, 0, 0.09)',
-              position: 'relative'
-            }}>
-              <div style={{
-                display: 'flex',
-                width: '326px',
-                flexDirection: 'column',
-                alignItems: 'flex-start',
-                gap: '20px',
-                position: 'relative'
-              }}>
-                <div style={{
-                  alignSelf: 'stretch',
-                  color: '#000',
-                  fontFamily: 'Urbanist',
-                  fontSize: '18px',
-                  fontStyle: 'normal',
-                  fontWeight: 600,
-                  lineHeight: 'normal',
-                  position: 'relative'
-                }}>
-                  <span style={{
-                    fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                    fontWeight: 700,
-                    fontSize: '18px',
-                    color: 'rgba(0,0,0,1)'
-                  }}>
+            <div
+              style={{
+                display: "flex",
+                padding: "16px 24px",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "28px",
+                borderRadius: "12px",
+                background: "#FFF",
+                boxShadow: "0 4px 14.8px 0 rgba(0, 0, 0, 0.09)",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  width: "326px",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  gap: "20px",
+                  position: "relative",
+                }}
+              >
+                <div
+                  style={{
+                    alignSelf: "stretch",
+                    color: "#000",
+                    fontFamily: "Urbanist",
+                    fontSize: "18px",
+                    fontStyle: "normal",
+                    fontWeight: 600,
+                    lineHeight: "normal",
+                    position: "relative",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily:
+                        "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                      fontWeight: 700,
+                      fontSize: "18px",
+                      color: "rgba(0,0,0,1)",
+                    }}
+                  >
                     Traffic Balance
                   </span>
                 </div>
 
-                <div style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  gap: '16px',
-                  alignSelf: 'stretch',
-                  position: 'relative'
-                }}>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '169px',
-                    alignSelf: 'stretch',
-                    position: 'relative'
-                  }}>
-                    <div style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      position: 'relative'
-                    }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "flex-start",
+                    gap: "16px",
+                    alignSelf: "stretch",
+                    position: "relative",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "169px",
+                      alignSelf: "stretch",
+                      position: "relative",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        position: "relative",
+                      }}
+                    >
                       <svg
                         style={{
-                          width: '11px',
-                          height: '11px',
-                          fill: '#A2D1FF',
-                          position: 'relative'
+                          width: "11px",
+                          height: "11px",
+                          fill: "#A2D1FF",
+                          position: "relative",
                         }}
                         width="12"
                         height="12"
@@ -1419,37 +1673,44 @@ const InvestSEO = () => {
                       >
                         <circle cx="5.91797" cy="6" r="5.5" fill="#A2D1FF" />
                       </svg>
-                      <div style={{
-                        color: '#7B7B7B',
-                        fontFamily: 'Urbanist',
-                        fontSize: '18px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '18px',
-                          color: 'rgba(123,123,123,1)'
-                        }}>
+                      <div
+                        style={{
+                          color: "#7B7B7B",
+                          fontFamily: "Urbanist",
+                          fontSize: "18px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "18px",
+                            color: "rgba(123,123,123,1)",
+                          }}
+                        >
                           Total
                         </span>
                       </div>
                     </div>
-                    <div style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      position: 'relative'
-                    }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        position: "relative",
+                      }}
+                    >
                       <svg
                         style={{
-                          width: '11px',
-                          height: '11px',
-                          fill: '#7CBEFF',
-                          position: 'relative'
+                          width: "11px",
+                          height: "11px",
+                          fill: "#7CBEFF",
+                          position: "relative",
                         }}
                         width="12"
                         height="12"
@@ -1459,46 +1720,55 @@ const InvestSEO = () => {
                       >
                         <circle cx="5.91797" cy="6" r="5.5" fill="#7CBEFF" />
                       </svg>
-                      <div style={{
-                        color: '#7B7B7B',
-                        fontFamily: 'Urbanist',
-                        fontSize: '18px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '18px',
-                          color: 'rgba(123,123,123,1)'
-                        }}>
+                      <div
+                        style={{
+                          color: "#7B7B7B",
+                          fontFamily: "Urbanist",
+                          fontSize: "18px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "18px",
+                            color: "rgba(123,123,123,1)",
+                          }}
+                        >
                           Average
                         </span>
                       </div>
                     </div>
                   </div>
 
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '105px',
-                    alignSelf: 'stretch',
-                    position: 'relative'
-                  }}>
-                    <div style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      position: 'relative'
-                    }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "105px",
+                      alignSelf: "stretch",
+                      position: "relative",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        position: "relative",
+                      }}
+                    >
                       <svg
                         style={{
-                          width: '11px',
-                          height: '11px',
-                          fill: '#43A2FF',
-                          position: 'relative'
+                          width: "11px",
+                          height: "11px",
+                          fill: "#43A2FF",
+                          position: "relative",
                         }}
                         width="12"
                         height="12"
@@ -1508,37 +1778,44 @@ const InvestSEO = () => {
                       >
                         <circle cx="5.91797" cy="6" r="5.5" fill="#43A2FF" />
                       </svg>
-                      <div style={{
-                        color: '#7B7B7B',
-                        fontFamily: 'Urbanist',
-                        fontSize: '18px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '18px',
-                          color: 'rgba(123,123,123,1)'
-                        }}>
+                      <div
+                        style={{
+                          color: "#7B7B7B",
+                          fontFamily: "Urbanist",
+                          fontSize: "18px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "18px",
+                            color: "rgba(123,123,123,1)",
+                          }}
+                        >
                           Traffic Today
                         </span>
                       </div>
                     </div>
-                    <div style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      position: 'relative'
-                    }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        position: "relative",
+                      }}
+                    >
                       <svg
                         style={{
-                          width: '11px',
-                          height: '11px',
-                          fill: '#1D8FFF',
-                          position: 'relative'
+                          width: "11px",
+                          height: "11px",
+                          fill: "#1D8FFF",
+                          position: "relative",
                         }}
                         width="12"
                         height="12"
@@ -1548,21 +1825,26 @@ const InvestSEO = () => {
                       >
                         <circle cx="5.91797" cy="6" r="5.5" fill="#1D8FFF" />
                       </svg>
-                      <div style={{
-                        color: '#7B7B7B',
-                        fontFamily: 'Urbanist',
-                        fontSize: '18px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '18px',
-                          color: 'rgba(123,123,123,1)'
-                        }}>
+                      <div
+                        style={{
+                          color: "#7B7B7B",
+                          fontFamily: "Urbanist",
+                          fontSize: "18px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "18px",
+                            color: "rgba(123,123,123,1)",
+                          }}
+                        >
                           For Week
                         </span>
                       </div>
@@ -1572,29 +1854,33 @@ const InvestSEO = () => {
               </div>
 
               {/* Main Chart */}
-              <div style={{
-                display: 'flex',
-                width: '319px',
-                justifyContent: 'center',
-                alignItems: 'center',
-                position: 'relative'
-              }}>
-                <div style={{
-                  width: '319px',
-                  height: '170px',
-                  flexShrink: 0,
-                  position: 'absolute',
-                  left: '0px',
-                  top: '0px'
-                }}>
+              <div
+                style={{
+                  display: "flex",
+                  width: "319px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  position: "relative",
+                }}
+              >
+                <div
+                  style={{
+                    width: "319px",
+                    height: "170px",
+                    flexShrink: 0,
+                    position: "absolute",
+                    left: "0px",
+                    top: "0px",
+                  }}
+                >
                   <svg
                     style={{
-                      width: '319px',
-                      height: '169px',
+                      width: "319px",
+                      height: "169px",
                       flexShrink: 0,
-                      position: 'absolute',
-                      left: '0px',
-                      top: '0px'
+                      position: "absolute",
+                      left: "0px",
+                      top: "0px",
                     }}
                     width="365"
                     height="197"
@@ -1655,120 +1941,149 @@ const InvestSEO = () => {
                         colorInterpolationFilters="sRGB"
                       >
                         <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                        <feGaussianBlur stdDeviation="39.4624" result="effect1_foregroundBlur_1393_6425" />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="39.4624"
+                          result="effect1_foregroundBlur_1393_6425"
+                        />
                       </filter>
                     </defs>
                   </svg>
 
                   {/* Center 25% Text */}
-                  <div style={{
-                    display: 'flex',
-                    width: '110px',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    gap: '7.892px',
-                    position: 'absolute',
-                    left: '105px',
-                    top: '92px',
-                    height: '60px'
-                  }}>
-                    <div style={{
-                      alignSelf: 'stretch',
-                      color: '#12579C',
-                      textAlign: 'center',
-                      fontFamily: 'Urbanist',
-                      fontSize: '31.57px',
-                      fontStyle: 'normal',
-                      fontWeight: 600,
-                      lineHeight: '25.932px',
-                      letterSpacing: '-2.255px',
-                      position: 'relative'
-                    }}>
-                      <span style={{
-                        fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                        fontWeight: 700,
-                        fontSize: '32px',
-                        color: 'rgba(18,87,156,1)'
-                      }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      width: "110px",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      gap: "7.892px",
+                      position: "absolute",
+                      left: "105px",
+                      top: "92px",
+                      height: "60px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        alignSelf: "stretch",
+                        color: "#12579C",
+                        textAlign: "center",
+                        fontFamily: "Urbanist",
+                        fontSize: "31.57px",
+                        fontStyle: "normal",
+                        fontWeight: 600,
+                        lineHeight: "25.932px",
+                        letterSpacing: "-2.255px",
+                        position: "relative",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontFamily:
+                            "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                          fontWeight: 700,
+                          fontSize: "32px",
+                          color: "rgba(18,87,156,1)",
+                        }}
+                      >
                         25%
                       </span>
                     </div>
-                    <div style={{
-                      alignSelf: 'stretch',
-                      color: '#242424',
-                      fontFamily: 'Urbanist',
-                      fontSize: '15.785px',
-                      fontStyle: 'normal',
-                      fontWeight: 500,
-                      lineHeight: '25.932px',
-                      position: 'relative'
-                    }}>
-                      <span style={{
-                        fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                        fontWeight: 400,
-                        fontSize: '16px',
-                        color: 'rgba(36,36,36,1)'
-                      }}>
+                    <div
+                      style={{
+                        alignSelf: "stretch",
+                        color: "#242424",
+                        fontFamily: "Urbanist",
+                        fontSize: "15.785px",
+                        fontStyle: "normal",
+                        fontWeight: 500,
+                        lineHeight: "25.932px",
+                        position: "relative",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontFamily:
+                            "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                          fontWeight: 400,
+                          fontSize: "16px",
+                          color: "rgba(36,36,36,1)",
+                        }}
+                      >
                         From Last Week
                       </span>
                     </div>
                   </div>
 
                   {/* Message Bubble */}
-                  <div style={{
-                    width: '122px',
-                    height: '59px',
-                    transform: 'rotate(-7.058deg)',
-                    flexShrink: 0,
-                    position: 'absolute',
-                    left: '227px',
-                    top: '111px'
-                  }}>
-                    <div style={{
-                      display: 'flex',
-                      width: '80px',
-                      transform: 'rotate(-9.773deg)',
-                      padding: '8px 5px',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      gap: '10px',
-                      borderRadius: '432px',
-                      background: '#071F36',
-                      position: 'absolute',
-                      left: '30px',
-                      top: '14px',
-                      height: '30px'
-                    }}>
-                      <div style={{
-                        color: '#FFF',
-                        fontFamily: 'Urbanist',
-                        fontSize: '12px',
-                        fontStyle: 'normal',
-                        fontWeight: 500,
-                        lineHeight: 'normal',
-                        position: 'relative'
-                      }}>
-                        <span style={{
-                          fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                          fontWeight: 400,
-                          fontSize: '12px',
-                          color: 'rgba(255,255,255,1)'
-                        }}>
+                  <div
+                    style={{
+                      width: "122px",
+                      height: "59px",
+                      transform: "rotate(-7.058deg)",
+                      flexShrink: 0,
+                      position: "absolute",
+                      left: "227px",
+                      top: "111px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        width: "80px",
+                        transform: "rotate(-9.773deg)",
+                        padding: "8px 5px",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        gap: "10px",
+                        borderRadius: "432px",
+                        background: "#071F36",
+                        position: "absolute",
+                        left: "30px",
+                        top: "14px",
+                        height: "30px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          color: "#FFF",
+                          fontFamily: "Urbanist",
+                          fontSize: "12px",
+                          fontStyle: "normal",
+                          fontWeight: 500,
+                          lineHeight: "normal",
+                          position: "relative",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontFamily:
+                              "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                            fontWeight: 400,
+                            fontSize: "12px",
+                            color: "rgba(255,255,255,1)",
+                          }}
+                        >
                           Nabin BC
                         </span>
                       </div>
                     </div>
                     <svg
                       style={{
-                        width: '24px',
-                        height: '24px',
-                        transform: 'rotate(-139.856deg)',
+                        width: "24px",
+                        height: "24px",
+                        transform: "rotate(-139.856deg)",
                         flexShrink: 0,
-                        aspectRatio: '1/1',
-                        position: 'absolute',
-                        left: '6px',
-                        top: '17px'
+                        aspectRatio: "1/1",
+                        position: "absolute",
+                        left: "6px",
+                        top: "17px",
                       }}
                       width="34"
                       height="34"
@@ -1787,38 +2102,42 @@ const InvestSEO = () => {
             </div>
 
             {/* Traffic Growth Notification */}
-            <div style={{
-              display: 'flex',
-              transform: 'rotate(-1.875deg)',
-              padding: '8px 16px 8px 8px',
-              alignItems: 'center',
-              gap: '12px',
-              borderRadius: '50px',
-              background: 'rgba(233, 233, 233, 0.39)',
-              position: 'absolute',
-              bottom: '20px',
-              left: '25px',
-              right: '25px'
-            }}>
-              <div style={{
-                display: 'flex',
-                width: '40px',
-                height: '40px',
-                padding: '8px',
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: '50%',
-                border: '1px solid #E9E9E9',
-                background: '#FFF',
-                position: 'relative',
-                flexShrink: 0
-              }}>
+            <div
+              style={{
+                display: "flex",
+                transform: "rotate(-1.875deg)",
+                padding: "8px 16px 8px 8px",
+                alignItems: "center",
+                gap: "12px",
+                borderRadius: "50px",
+                background: "rgba(233, 233, 233, 0.39)",
+                position: "absolute",
+                bottom: "20px",
+                left: "25px",
+                right: "25px",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  width: "40px",
+                  height: "40px",
+                  padding: "8px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "50%",
+                  border: "1px solid #E9E9E9",
+                  background: "#FFF",
+                  position: "relative",
+                  flexShrink: 0,
+                }}
+              >
                 <svg
                   style={{
-                    width: '20px',
-                    height: '20px',
+                    width: "20px",
+                    height: "20px",
                     flexShrink: 0,
-                    position: 'relative'
+                    position: "relative",
                   }}
                   width="27"
                   height="27"
@@ -1854,22 +2173,27 @@ const InvestSEO = () => {
                   </defs>
                 </svg>
               </div>
-              <div style={{
-                color: '#132A40',
-                fontFamily: 'Urbanist',
-                fontSize: '16px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                lineHeight: 'normal',
-                position: 'relative',
-                flex: 1
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '16px',
-                  color: 'rgba(19,42,64,1)'
-                }}>
+              <div
+                style={{
+                  color: "#132A40",
+                  fontFamily: "Urbanist",
+                  fontSize: "16px",
+                  fontStyle: "normal",
+                  fontWeight: 500,
+                  lineHeight: "normal",
+                  position: "relative",
+                  flex: 1,
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "16px",
+                    color: "rgba(19,42,64,1)",
+                  }}
+                >
                   Traffic is 30% higher than last week.
                 </span>
               </div>
@@ -1879,25 +2203,27 @@ const InvestSEO = () => {
       </div>
 
       {/* CTA Section */}
-      <div style={{
-        width: '1129px',
-        height: '463px',
-        borderRadius: '21px',
-        background: '#0C0C0F',
-        position: 'relative'
-      }}>
+      <div
+        style={{
+          width: "1129px",
+          height: "463px",
+          borderRadius: "21px",
+          background: "#0C0C0F",
+          position: "relative",
+        }}
+      >
         {/* Background Effects */}
         <svg
           style={{
-            width: '337px',
-            height: '293px',
+            width: "337px",
+            height: "293px",
             flexShrink: 0,
-            borderRadius: '337px',
-            background: 'rgba(47, 152, 255, 0.63)',
-            filter: 'blur(265.7115173339844px)',
-            position: 'absolute',
-            left: '-169px',
-            top: '-46px'
+            borderRadius: "337px",
+            background: "rgba(47, 152, 255, 0.63)",
+            filter: "blur(265.7115173339844px)",
+            position: "absolute",
+            left: "-169px",
+            top: "-46px",
           }}
           width="700"
           height="463"
@@ -1906,7 +2232,13 @@ const InvestSEO = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <g filter="url(#filter0_f_335_13315)">
-            <ellipse cy="100.445" rx="168.5" ry="146.445" fill="#2F98FF" fillOpacity="0.63" />
+            <ellipse
+              cy="100.445"
+              rx="168.5"
+              ry="146.445"
+              fill="#2F98FF"
+              fillOpacity="0.63"
+            />
           </g>
           <defs>
             <filter
@@ -1919,23 +2251,31 @@ const InvestSEO = () => {
               colorInterpolationFilters="sRGB"
             >
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="265.712" result="effect1_foregroundBlur_335_13315" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="265.712"
+                result="effect1_foregroundBlur_335_13315"
+              />
             </filter>
           </defs>
         </svg>
 
         <svg
           style={{
-            width: '337px',
-            height: '293px',
+            width: "337px",
+            height: "293px",
             flexShrink: 0,
-            borderRadius: '337px',
-            background: 'rgba(47, 152, 255, 0.63)',
-            filter: 'blur(265.7115173339844px)',
-            position: 'absolute',
-            left: '840px',
-            top: '209px'
+            borderRadius: "337px",
+            background: "rgba(47, 152, 255, 0.63)",
+            filter: "blur(265.7115173339844px)",
+            position: "absolute",
+            left: "840px",
+            top: "209px",
           }}
           width="821"
           height="463"
@@ -1944,7 +2284,14 @@ const InvestSEO = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <g filter="url(#filter0_f_335_13316)">
-            <ellipse cx="700" cy="355.445" rx="168.5" ry="146.445" fill="#2F98FF" fillOpacity="0.63" />
+            <ellipse
+              cx="700"
+              cy="355.445"
+              rx="168.5"
+              ry="146.445"
+              fill="#2F98FF"
+              fillOpacity="0.63"
+            />
           </g>
           <defs>
             <filter
@@ -1957,22 +2304,30 @@ const InvestSEO = () => {
               colorInterpolationFilters="sRGB"
             >
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="265.712" result="effect1_foregroundBlur_335_13316" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="265.712"
+                result="effect1_foregroundBlur_335_13316"
+              />
             </filter>
           </defs>
         </svg>
 
         <svg
           style={{
-            width: '58px',
-            height: '51px',
+            width: "58px",
+            height: "51px",
             flexShrink: 0,
-            fill: '#FFF',
-            filter: 'blur(59.78672790527344px)',
-            position: 'absolute',
-            left: '536px',
-            top: '232px'
+            fill: "#FFF",
+            filter: "blur(59.78672790527344px)",
+            position: "absolute",
+            left: "536px",
+            top: "232px",
           }}
           width="298"
           height="291"
@@ -1994,123 +2349,153 @@ const InvestSEO = () => {
               colorInterpolationFilters="sRGB"
             >
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="59.7867" result="effect1_foregroundBlur_335_13317" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="59.7867"
+                result="effect1_foregroundBlur_335_13317"
+              />
             </filter>
           </defs>
         </svg>
 
         {/* Content */}
-        <div style={{
-          display: 'flex',
-          width: '798px',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: '24px',
-          position: 'absolute',
-          left: '166px',
-          top: '74px',
-          height: '316px'
-        }}>
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '32px',
-            alignSelf: 'stretch',
-            position: 'relative'
-          }}>
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '16px',
-              alignSelf: 'stretch',
-              position: 'relative'
-            }}>
-              <div style={{
-                width: '798px',
-                color: '#FFF',
-                textAlign: 'center',
-                fontFamily: 'Urbanist',
-                fontSize: '50px',
-                fontStyle: 'normal',
-                fontWeight: 600,
-                lineHeight: '120%',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 700,
-                  fontSize: '50px',
-                  color: 'rgba(255,255,255,1)'
-                }}>
+        <div
+          style={{
+            display: "flex",
+            width: "798px",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "24px",
+            position: "absolute",
+            left: "166px",
+            top: "74px",
+            height: "316px",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "32px",
+              alignSelf: "stretch",
+              position: "relative",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "16px",
+                alignSelf: "stretch",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  width: "798px",
+                  color: "#FFF",
+                  textAlign: "center",
+                  fontFamily: "Urbanist",
+                  fontSize: "50px",
+                  fontStyle: "normal",
+                  fontWeight: 600,
+                  lineHeight: "120%",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 700,
+                    fontSize: "50px",
+                    color: "rgba(255,255,255,1)",
+                  }}
+                >
                   Your Destination Awaits
                 </span>
               </div>
-              <div style={{
-                width: '598px',
-                color: 'rgba(255, 255, 255, 0.70)',
-                textAlign: 'center',
-                fontFamily: 'Urbanist',
-                fontSize: '18px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                lineHeight: '145%',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '18px',
-                  color: 'rgba(255,255,255,0.699999988079071)'
-                }}>
-                  Ready to begin your transformation from search invisibility to digital authority? Your SEO success story starts with a single step.
+              <div
+                style={{
+                  width: "598px",
+                  color: "rgba(255, 255, 255, 0.70)",
+                  textAlign: "center",
+                  fontFamily: "Urbanist",
+                  fontSize: "18px",
+                  fontStyle: "normal",
+                  fontWeight: 500,
+                  lineHeight: "145%",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "18px",
+                    color: "rgba(255,255,255,0.699999988079071)",
+                  }}
+                >
+                  Ready to begin your transformation from search invisibility to
+                  digital authority? Your SEO success story starts with a single
+                  step.
                 </span>
               </div>
             </div>
 
             {/* Avatars */}
-            <div style={{
-              display: 'flex',
-              width: '214.387px',
-              padding: '6px 8px',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '7px',
-              borderRadius: '7px',
-              position: 'relative'
-            }}>
-              <div style={{
-                display: 'flex',
-                alignItems: 'flex-start',
-                gap: '-10.677px',
-                position: 'relative'
-              }}>
+            <div
+              style={{
+                display: "flex",
+                width: "214.387px",
+                padding: "6px 8px",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "7px",
+                borderRadius: "7px",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "-10.677px",
+                  position: "relative",
+                }}
+              >
                 {/* Replace avatar placeholders with Next.js Image */}
                 {[
-                  '/Home-Page/Hero-Section/image1.jpg',
-                  '/Home-Page/Hero-Section/image2.jpg',
-                  '/Home-Page/Hero-Section/image3.jpg',
-                  '/Home-Page/Hero-Section/image4.jpg',
-                  '/Home-Page/Hero-Section/image5.jpg',
-                  '/Home-Page/Hero-Section/image6.jpg'
+                  "/Home-Page/Hero-Section/image1.jpg",
+                  "/Home-Page/Hero-Section/image2.jpg",
+                  "/Home-Page/Hero-Section/image3.jpg",
+                  "/Home-Page/Hero-Section/image4.jpg",
+                  "/Home-Page/Hero-Section/image5.jpg",
+                  "/Home-Page/Hero-Section/image6.jpg",
                 ].map((src, index) => (
                   <div
                     key={index}
                     style={{
-                      display: 'flex',
-                      width: '33.231px',
-                      height: '33.231px',
-                      flexDirection: 'column',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      borderRadius: '10383.654px',
-                      border: index > 0 ? '1.602px solid #FAFAFA' : 'none',
-                      background: '#D9D9D9',
-                      position: 'relative',
-                      overflow: 'hidden'
+                      display: "flex",
+                      width: "33.231px",
+                      height: "33.231px",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      borderRadius: "10383.654px",
+                      border: index > 0 ? "1.602px solid #FAFAFA" : "none",
+                      background: "#D9D9D9",
+                      position: "relative",
+                      overflow: "hidden",
                     }}
                   >
                     <Image
@@ -2118,90 +2503,106 @@ const InvestSEO = () => {
                       alt={`Avatar ${index + 1}`}
                       width={33}
                       height={33}
-                      style={{ borderRadius: '50%' }}
+                      style={{ borderRadius: "50%" }}
                     />
                   </div>
                 ))}
               </div>
-              <div style={{
-                width: '206.885px',
-                height: '21.749px',
-                color: '#DFE2E5',
-                textAlign: 'center',
-                fontFamily: 'Urbanist',
-                fontSize: '14px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                lineHeight: '20px',
-                position: 'relative'
-              }}>
-                <span style={{
-                  fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '14px',
-                  color: 'rgba(223,226,229,1)'
-                }}>
+              <div
+                style={{
+                  width: "206.885px",
+                  height: "21.749px",
+                  color: "#DFE2E5",
+                  textAlign: "center",
+                  fontFamily: "Urbanist",
+                  fontSize: "14px",
+                  fontStyle: "normal",
+                  fontWeight: 500,
+                  lineHeight: "20px",
+                  position: "relative",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily:
+                      "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    color: "rgba(223,226,229,1)",
+                  }}
+                >
                   Trusted By Over 100+k Clients
                 </span>
               </div>
             </div>
 
             {/* Buttons */}
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '24px',
-              position: 'relative'
-            }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "24px",
+                position: "relative",
+              }}
+            >
               {/* Primary Button */}
-              <div style={{
-                display: 'flex',
-                width: '260px',
-                height: '50px',
-                padding: '0 3px',
-                justifyContent: 'flex-end',
-                alignItems: 'center',
-                gap: '10px',
-                borderRadius: '45px',
-                background: '#1D8FFF',
-                boxShadow: '0 4px 14.7px 0 rgba(47, 152, 255, 0.63)',
-                position: 'relative'
-              }}>
-                <div style={{
-                  color: '#FFF',
-                  textAlign: 'center',
-                  fontFamily: 'Urbanist',
-                  fontSize: '16px',
-                  fontStyle: 'normal',
-                  fontWeight: 500,
-                  lineHeight: '23px',
-                  textTransform: 'capitalize',
-                  position: 'relative'
-                }}>
-                  <span style={{
-                    fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                    fontWeight: 400,
-                    fontSize: '16px',
-                    color: 'rgba(255,255,255,1)'
-                  }}>
+              <div
+                style={{
+                  display: "flex",
+                  width: "260px",
+                  height: "50px",
+                  padding: "0 3px",
+                  justifyContent: "flex-end",
+                  alignItems: "center",
+                  gap: "10px",
+                  borderRadius: "45px",
+                  background: "#1D8FFF",
+                  boxShadow: "0 4px 14.7px 0 rgba(47, 152, 255, 0.63)",
+                  position: "relative",
+                }}
+              >
+                <div
+                  style={{
+                    color: "#FFF",
+                    textAlign: "center",
+                    fontFamily: "Urbanist",
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                    fontWeight: 500,
+                    lineHeight: "23px",
+                    textTransform: "capitalize",
+                    position: "relative",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily:
+                        "Urbanist, -apple-system, Roboto, Helvetica, sans-serif",
+                      fontWeight: 400,
+                      fontSize: "16px",
+                      color: "rgba(255,255,255,1)",
+                    }}
+                  >
                     Get My Custom SEO Plan
                   </span>
                 </div>
-                <div style={{
-                  display: 'flex',
-                  padding: '12px',
-                  alignItems: 'center',
-                  gap: '10px',
-                  borderRadius: '34px',
-                  border: '1px solid #A2D1FF',
-                  background: '#E8F4FF',
-                  position: 'relative'
-                }}>
+                <div
+                  style={{
+                    display: "flex",
+                    padding: "12px",
+                    alignItems: "center",
+                    gap: "10px",
+                    borderRadius: "34px",
+                    border: "1px solid #A2D1FF",
+                    background: "#E8F4FF",
+                    position: "relative",
+                  }}
+                >
                   <svg
                     style={{
-                      width: '20px',
-                      height: '20px',
-                      position: 'relative'
+                      width: "20px",
+                      height: "20px",
+                      position: "relative",
                     }}
                     width="20"
                     height="21"
@@ -2227,68 +2628,22 @@ const InvestSEO = () => {
                 </div>
               </div>
 
-              {/* Secondary Button */}
-              <div style={{
-                display: 'flex',
-                width: '220px',
-                height: '50px',
-                padding: '10px 19px',
-                justifyContent: 'center',
-                alignItems: 'center',
-                gap: '7px',
-                borderRadius: '33px',
-                border: '1px solid #D2D2D2',
-                background: '#FAFAFA',
-                position: 'relative'
-              }}>
-                <div style={{
-                  color: '#091E42',
-                  fontFamily: 'Urbanist',
-                  fontSize: '16px',
-                  fontStyle: 'normal',
-                  fontWeight: 500,
-                  lineHeight: '100%',
-                  textTransform: 'capitalize',
-                  position: 'relative'
-                }}>
-                  <span style={{
-                    fontFamily: 'Urbanist, -apple-system, Roboto, Helvetica, sans-serif',
-                    fontWeight: 400,
-                    fontSize: '16px',
-                    color: 'rgba(9,30,66,1)'
-                  }}>
-                    Book an appointment
-                  </span>
-                </div>
-                <svg
-                  style={{
-                    width: '20px',
-                    height: '20px',
-                    flexShrink: 0,
-                    position: 'relative'
-                  }}
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.16797 10.9805H15.8346"
-                    stroke="#091E42"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 5.14746L15.8333 10.9808L10 16.8141"
-                    stroke="#091E42"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
+              <button
+                className="all-[unset] box-border flex w-[270px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
+                type="button"
+                aria-label="Book an appointment to discuss your business growth"
+              >
+                <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
+                  Book An Appointment
+                </span>
+
+                <img
+                  className="relative w-5 h-5"
+                  alt=""
+                  src="https://c.animaapp.com/zvzHaAwZ/img/arrow-right-2.svg"
+                  aria-hidden="true"
+                />
+              </button>
             </div>
           </div>
         </div>

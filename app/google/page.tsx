@@ -59,7 +59,7 @@ export default function Home() {
       {/* <section className="relative w-full h-[733px] px-[156px] ">
         <TestimonialsSection />
       </section> */}
-      <section className="relative w-full h-[1117px] px-[156px] ">
+      <section className="relative w-full h-[821px] px-[156px] ">
         <StatsSection />
       </section>
       <section className="relative w-full px-[156px] ">

@@ -12,6 +12,7 @@ import { ToolsSection } from "@components/SEO-Page/ToolsSection";
 import { IndustryLeaders } from "@components/SEO-Page/IndustryLeaders";
 import { StatsSection } from "@components/SEO-Page/StatsSection";
 import { SEOTestimonial } from "@components/SEO-Page/SEOTestimonial";
+import { FAQSection } from "@components/SEO-Page/FAQSection";
 
 export default function Home() {
   return (
@@ -46,10 +47,13 @@ export default function Home() {
       <section className="relative w-full h-[1117px] bg-white px-[156px]">
         <ServeBusiness />
       </section>
+      <section className="relative w-full h-[1542px] ">
+        <FAQSection />
+      </section>
       <section className="relative w-full h-[506px] px-[156px] ">
         <IndustryLeaders />
       </section>
-      <section className="relative w-full h-[1117px] px-[156px] ">
+      <section className="relative w-full h-[821px] px-[156px] ">
         <StatsSection />
       </section>
       <section className="relative w-full px-[156px] ">

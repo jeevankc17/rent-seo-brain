@@ -131,6 +131,22 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
                 </svg>
               </div>
             </button>
+            <button
+              className="all-[unset] box-border flex w-[280px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
+              type="button"
+              aria-label="Book an appointment to discuss your business growth"
+            >
+              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
+                Book An Appointment
+              </span>
+
+              <img
+                className="relative w-5 h-5"
+                alt=""
+                src="https://c.animaapp.com/zvzHaAwZ/img/arrow-right-2.svg"
+                aria-hidden="true"
+              />
+            </button>
           </div>
         </div>
       </div>

@@ -10,7 +10,9 @@ import ImportanceSection from "@components/CMS/ImportanceSection";
 import CMSImpact from "@components/CMS/CMSImpact";
 import PowerContent from "@components/CMS/PowerContent";
 import CMSConnect from "@components/CMS/CMSConnect";
-
+import Banner from "@components/CMS/Banner";
+import { StatsSection } from "@components/CMS/StatsSection";
+import { CMSTestimonial } from "@components/CMS/CMSTestimonial";
 
 export default function Home() {
   return (
@@ -18,31 +20,41 @@ export default function Home() {
       <section className="relative w-full h-[960px] bg-neutral-900">
         <CMS />
       </section>
+      <section className="relative w-full h-[902px] bg-white px-[156px]">
+        <CMSConnect />
+      </section>
 
-      <section className="relative w-full h-[2400px] pb-[106px] pt-[106px] bg-neutral-900">
-        <CMSROI />
-      </section>
-      <section className="relative w-full h-[962px] bg-white">
-        <CMSResult />
-      </section>
-      <section className="relative w-full h-[1200px] ">
-        <ContentServiceSection />
-      </section>
-      <section className="relative w-full h-[735px] ">
-        <TechnologyStackSection />
-      </section>
-      <section className="relative w-full h-[1200px] bg-white px-[156px]">
-        <ImportanceSection />
+      <section className="relative w-full h-[1465px] bg-neutral-900">
+        <PowerContent />
       </section>
       <section className="relative w-full h-[899px] bg-white ">
         <CMSImpact />
       </section>
-      <section className="relative w-full h-[1465px] bg-neutral-900">
-        <PowerContent />
+
+      <section className="relative w-full h-[2400px] pb-[106px] pt-[106px] bg-neutral-900">
+        <CMSROI />
       </section>
-      <section className="relative w-full h-[902px] bg-white px-[156px]">
-        <CMSConnect />
+      <section className="relative w-full h-[1200px] ">
+        <ContentServiceSection />
       </section>
+      <section className="relative w-full h-[962px] bg-white">
+        <CMSResult />
+      </section>
+      <section className="relative w-full h-[519px] px-[156px]">
+        <Banner />
+      </section>
+      <section className="relative w-full h-[735px] ">
+        <TechnologyStackSection />
+      </section>
+      <section className="relative w-full h-[848px] px-[156px] ">
+        <StatsSection />
+      </section>
+      <section className="relative w-full px-[156px] ">
+        <CMSTestimonial />
+      </section>
+      {/* <section className="relative w-full h-[1200px] bg-white px-[156px]">
+        <ImportanceSection />
+      </section> */}
     </main>
   );
 }
