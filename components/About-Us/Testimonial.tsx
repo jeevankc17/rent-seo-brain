@@ -5,10 +5,10 @@ const defaultTestimonialData = {
   description:
     "Over 100k+ businesses choose RENT SEO BRAIN for results that matter.",
   avatars: [
-    "https://c.animaapp.com/zvzHaAwZ/img/frame-2121457477.svg",
-    "https://c.animaapp.com/zvzHaAwZ/img/frame-2121457476.svg",
-    "https://c.animaapp.com/zvzHaAwZ/img/frame-2121457478.svg",
-    "https://c.animaapp.com/zvzHaAwZ/img/frame-2121457479.svg",
+    "/About/ca/frame-2121457477.svg",
+    "/About/ca/frame-2121457476.svg",
+    "/About/ca/frame-2121457478.svg",
+    "/About/ca/frame-2121457479.svg",
   ],
 };
 
@@ -41,7 +41,7 @@ export const Testimonial: React.FC<TestimonialProps> = ({
             <img
               className="absolute w-[1128px] h-[640px] top-0 left-0"
               alt="Background pattern"
-              src="https://c.animaapp.com/zvzHaAwZ/img/background-pattern-1.svg"
+              src="/About/ca/background-pattern-1.svg"
             />
           </div>
         </div>
@@ -53,7 +53,7 @@ export const Testimonial: React.FC<TestimonialProps> = ({
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="5 star rating"
-                  src="https://c.animaapp.com/zvzHaAwZ/img/frame-2121457515.svg"
+                  src="/About/ca/frame-2121457515.svg"
                 />
 
                 <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[normal] whitespace-nowrap">
@@ -116,7 +116,7 @@ export const Testimonial: React.FC<TestimonialProps> = ({
               <img
                 className="relative w-5 h-5"
                 alt=""
-                src="https://c.animaapp.com/zvzHaAwZ/img/arrow-right-2.svg"
+                src="/About/ca/arrow-right-2.svg"
                 aria-hidden="true"
               />
             </button>

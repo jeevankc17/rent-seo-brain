@@ -3,7 +3,7 @@ export const TechnologyStackSection: React.FC = () => {
     {
       id: 1,
       name: "Tool 1",
-      image: "https://c.animaapp.com/UUifjI9s/img/image-137@2x.png",
+      image: "/cms/ca/image-137@2x.png",
       position: { top: "291px", left: "564px" },
       size: { width: "45px", height: "47px" },
       aspectRatio: "0.96",
@@ -11,7 +11,7 @@ export const TechnologyStackSection: React.FC = () => {
     {
       id: 2,
       name: "Tool 2",
-      image: "https://c.animaapp.com/UUifjI9s/img/image-138@2x.png",
+      image: "/cms/ca/image-138@2x.png",
       position: { top: "162px", left: "155px" },
       size: { width: "45px", height: "45px" },
       aspectRatio: "0.99",
@@ -19,7 +19,7 @@ export const TechnologyStackSection: React.FC = () => {
     {
       id: 3,
       name: "Tool 3",
-      image: "https://c.animaapp.com/UUifjI9s/img/image-139@2x.png",
+      image: "/cms/ca/image-139@2x.png",
       position: { top: "0", left: "390px" },
       size: { width: "45px", height: "58px" },
       aspectRatio: "0.73",
@@ -27,7 +27,7 @@ export const TechnologyStackSection: React.FC = () => {
     {
       id: 4,
       name: "Tool 4",
-      image: "https://c.animaapp.com/UUifjI9s/img/image-140@2x.png",
+      image: "/cms/ca/image-140@2x.png",
       position: { top: "125px", left: "635px" },
       size: { width: "45px", height: "41px" },
       aspectRatio: "1.09",
@@ -35,7 +35,7 @@ export const TechnologyStackSection: React.FC = () => {
     {
       id: 5,
       name: "Tool 5",
-      image: "https://c.animaapp.com/UUifjI9s/img/image-141@2x.png",
+      image: "/cms/ca/image-141@2x.png",
       position: { top: "299px", left: "147px" },
       size: { width: "45px", height: "30px" },
       aspectRatio: "1.53",
@@ -53,7 +53,7 @@ export const TechnologyStackSection: React.FC = () => {
             <img
               className="relative w-[15px] h-[15px]"
               alt=""
-              src="https://c.animaapp.com/UUifjI9s/img/stars-1.svg"
+              src="/cms/ca/stars-1.svg"
               role="presentation"
             />
             <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">

@@ -7,7 +7,7 @@ export const StatisticsSection: React.FC = () => {
             id: 1,
             title: "Home & Local Services",
             description: "Get more calls and service requests",
-            icon: "https://c.animaapp.com/1pza1gM1/img/rss.svg",
+            icon: "/Google/ca/rss.svg",
             bgColor: "bg-secondary-400",
             cardBg: "bg-secondary-200",
             textColor: "text-neutral-10",
@@ -27,7 +27,7 @@ export const StatisticsSection: React.FC = () => {
       id: 3,
       title: "Heathcare",
       description: "Attract patients searching for nearby services",
-      icon: "https://c.animaapp.com/1pza1gM1/img/activity.svg",
+      icon: "/Google/ca/activity.svg",
       bgColor: "bg-[#1d9b5e]",
       cardBg: "bg-neutral-0",
       textColor: "text-neutral-900",
@@ -39,7 +39,7 @@ export const StatisticsSection: React.FC = () => {
       id: 4,
       title: "Real Estate",
       description: "Generate property buyer and seller inquiries",
-      icon: "https://c.animaapp.com/1pza1gM1/img/home.svg",
+      icon: "/Google/ca/home.svg",
       bgColor: "bg-[#1d9b5e]",
       cardBg: "bg-neutral-0",
       textColor: "text-neutral-900",
@@ -52,7 +52,7 @@ export const StatisticsSection: React.FC = () => {
       id: 5,
       title: "Consulting",
       description: "Reach decision-makers ready to take action",
-      icon: "https://c.animaapp.com/1pza1gM1/img/activity-1.svg",
+      icon: "/Google/ca/activity-1.svg",
       bgColor: "bg-[#c04350]",
       cardBg: "bg-neutral-0",
       textColor: "text-neutral-900",
@@ -95,7 +95,7 @@ export const StatisticsSection: React.FC = () => {
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
-              src="https://c.animaapp.com/1pza1gM1/img/stars-3.svg"
+              src="/Google/ca/stars-3.svg"
             />
 
             <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
@@ -183,7 +183,7 @@ export const StatisticsSection: React.FC = () => {
               <img
                 className="relative w-[550.2px] h-[387.2px] mt-[-24.10px] ml-[-28.10px] mr-[-28.10px]"
                 alt="Sales dashboard visualization"
-                src="https://c.animaapp.com/1pza1gM1/img/card-2.svg"
+                src="/Google/ca/card-2.svg"
               />
 
               <div className="flex flex-col items-start gap-[38px] relative self-stretch w-full flex-[0_0_auto]">
@@ -213,7 +213,7 @@ export const StatisticsSection: React.FC = () => {
                     <img
                       className="relative w-5 h-5"
                       alt="Arrow right"
-                      src="https://c.animaapp.com/1pza1gM1/img/arrow-right-2.svg"
+                      src="/Google/ca/arrow-right-2.svg"
                     />
                   </button>
                 </div>

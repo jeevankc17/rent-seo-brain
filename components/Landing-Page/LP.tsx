@@ -5,7 +5,7 @@ const testimonialData = {
   quote:
     "Our Google Ads conversion rate jumped from 2.8% to 7.4% after launching a page designed by Rent SEO Brain.",
   author: "Ramesh D., Co-founder, SaaS Growlytics",
-  avatar: "https://c.animaapp.com/cjDxlUy5/img/avatar-6@2x.png",
+  avatar: "/lp/ca/avatar-6@2x.png",
   rating: 5,
 };
 
@@ -26,17 +26,17 @@ const performanceCards = [
       {
         label: "Click-through Rate",
         value: "12.4%",
-        icon: "https://c.animaapp.com/cjDxlUy5/img/arrow-up.svg",
+        icon: "/lp/ca/arrow-up.svg",
       },
       {
         label: "Bounce Rate",
         value: "23.1%",
-        icon: "https://c.animaapp.com/cjDxlUy5/img/arrow-up-1.svg",
+        icon: "/lp/ca/arrow-up-1.svg",
       },
       {
         label: "Avg. Session Duration",
         value: "4:3",
-        icon: "https://c.animaapp.com/cjDxlUy5/img/arrow-up-2.svg",
+        icon: " /lp/ca/arrow-up-2.svg",
       },
     ],
     chartData: [
@@ -62,17 +62,17 @@ const performanceCards = [
       {
         label: "Core Web Vitals",
         value: "65/100",
-        icon: "https://c.animaapp.com/cjDxlUy5/img/arrow-up-3.svg",
+        icon: "/lp/ca/arrow-up-3.svg",
       },
       {
         label: "Mobile Score",
         value: "56/100",
-        icon: "https://c.animaapp.com/cjDxlUy5/img/arrow-up-4.svg",
+        icon: "/lp/ca/arrow-up-4.svg",
       },
       {
         label: "Seo Imapct",
         value: "+23%",
-        icon: "https://c.animaapp.com/cjDxlUy5/img/arrow-up-5.svg",
+        icon: "/lp/ca/arrow-up-5.svg",
       },
     ],
   },
@@ -99,11 +99,11 @@ const performanceCards = [
 ];
 
 const starIcons = [
-  "https://c.animaapp.com/cjDxlUy5/img/star-filled-5.svg",
-  "https://c.animaapp.com/cjDxlUy5/img/star-filled-6.svg",
-  "https://c.animaapp.com/cjDxlUy5/img/star-filled-7.svg",
-  "https://c.animaapp.com/cjDxlUy5/img/star-filled-8.svg",
-  "https://c.animaapp.com/cjDxlUy5/img/star-filled-9.svg",
+  "/lp/ca/star-filled-5.svg",
+  "/lp/ca/star-filled-6.svg",
+  "/lp/ca/star-filled-7.svg",
+  "/lp/ca/star-filled-8.svg",
+  "/lp/ca/star-filled-9.svg",
 ];
 
 export default function ClientSuccessStoriesSection() {
@@ -119,7 +119,7 @@ export default function ClientSuccessStoriesSection() {
             <img
               className="relative w-[15px] h-[15px]"
               alt="Achievement badge"
-              src="https://c.animaapp.com/cjDxlUy5/img/stars.svg"
+              src="/lp/ca/stars.svg"
             />
             <p className="relative w-[232px] mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-[var(--secondary-300)] text-sm tracking-[0] leading-[23px]">
               Landing Page Results We&#39;ve Delivered
@@ -281,7 +281,7 @@ export default function ClientSuccessStoriesSection() {
                 <img
                   className="relative flex-[0_0_auto] mt-[-1.59px] ml-[-1.59px] rotate-[-6.00deg]"
                   alt="Mobile performance visualization"
-                  src="https://c.animaapp.com/cjDxlUy5/img/frame-2121458127.svg"
+                  src="/lp/ca/frame-2121458127.svg"
                   loading="lazy"
                 />
 
@@ -292,7 +292,7 @@ export default function ClientSuccessStoriesSection() {
                         <img
                           className="relative w-[19.79px] h-[19.78px] mt-[-0.89px] mb-[-0.89px] ml-[-0.89px] rotate-[-6.00deg]"
                           alt="Calendar"
-                          src="https://c.animaapp.com/cjDxlUy5/img/calendar.svg"
+                          src="/lp/ca/calendar.svg"
                         />
                         <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-sm tracking-[0] leading-[14px] whitespace-nowrap">
                           Last 3 Months
@@ -333,7 +333,7 @@ export default function ClientSuccessStoriesSection() {
                   <img
                     className="relative w-[99.51px] h-[20.3px] mb-[-10.15px] ml-[-5.26px] rotate-[-6.00deg]"
                     alt="Performance trend line"
-                    src="https://c.animaapp.com/cjDxlUy5/img/vector-2528.svg"
+                    src="/lp/ca/vector-2528.svg"
                     loading="lazy"
                   />
                 </div>
@@ -364,7 +364,7 @@ export default function ClientSuccessStoriesSection() {
                       <img
                         className="relative w-[15px] h-[15px]"
                         alt="Calendar"
-                        src="https://c.animaapp.com/cjDxlUy5/img/calendar-1.svg"
+                        src="/lp/ca/calendar-1.svg"
                       />
                       <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--primary-500)] text-xs tracking-[0] leading-3 whitespace-nowrap">
                         Last 6 Months
@@ -378,7 +378,7 @@ export default function ClientSuccessStoriesSection() {
                   <img
                     className="relative w-[265px] flex-[0_0_auto] ml-[-5.50px] mr-[-5.50px]"
                     alt="Cost reduction chart"
-                    src="https://c.animaapp.com/cjDxlUy5/img/frame-2121458132.svg"
+                    src="/lp/ca/frame-2121458132.svg"
                     loading="lazy"
                   />
 
@@ -430,7 +430,7 @@ export default function ClientSuccessStoriesSection() {
             <img
               className="relative w-5 h-5"
               alt=""
-              src="https://c.animaapp.com/cjDxlUy5/img/arrow-right.svg"
+              src="/lp/ca/arrow-right.svg"
               loading="lazy"
             />
           </div>
@@ -443,7 +443,7 @@ export default function ClientSuccessStoriesSection() {
           <img
             className="relative w-5 h-5 mr-[-3.50px]"
             alt=""
-            src="https://c.animaapp.com/cjDxlUy5/img/arrow-right-1.svg"
+            src="/lp/ca/arrow-right-1.svg"
             loading="lazy"
           />
         </button>

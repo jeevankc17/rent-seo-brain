@@ -13,21 +13,21 @@ const coreValues: Value[] = [
     title: "Results First",
     description:
       "Every strategy we develop is designed with measurable outcomes.",
-    icon: "https://c.animaapp.com/zvzHaAwZ/img/bar-chart.svg",
+    icon: "/About/ca/bar-chart.svg",
     iconAlt: "Bar chart",
   },
   {
     title: "Real Communication",
     description:
       "No black boxes or hidden tactics. We believe in clear, honest communication",
-    icon: "https://c.animaapp.com/zvzHaAwZ/img/trending-up.svg",
+    icon: "/About/ca/trending-up.svg",
     iconAlt: "Trending up",
   },
   {
     title: "Scalable Growth",
     description:
       "We build strategies that grow with your business. From startup to enterprise.",
-    icon: "https://c.animaapp.com/zvzHaAwZ/img/rss.svg",
+    icon: "/About/ca/rss.svg",
     iconAlt: "Rss",
   },
 ];
@@ -37,19 +37,19 @@ const additionalValues: Value[] = [
     title: "Data-Driven Decisions",
     description:
       "We let the numbers tell the story. Our strategies are built on insights",
-    icon: "https://c.animaapp.com/zvzHaAwZ/img/file-text.svg",
+    icon: "/About/ca/file-text.svg",
     iconAlt: "File text",
   },
   {
     title: "Continuous Innovation",
     description: "We stay ahead of digital trends and emerging technologies.",
-    icon: "https://c.animaapp.com/zvzHaAwZ/img/target.svg",
+    icon: "/About/ca/target.svg",
     iconAlt: "Target",
   },
   {
     title: "Partnership Mentality",
     description: "We're not just a vendor—we're an extension of your team.",
-    icon: "https://c.animaapp.com/zvzHaAwZ/img/users.svg",
+    icon: "/About/ca/users.svg",
     iconAlt: "Users",
   },
 ];
@@ -64,7 +64,7 @@ export const Principles: React.FC = () => {
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
-              src="https://c.animaapp.com/zvzHaAwZ/img/stars-1.svg"
+              src="/About/ca/stars-1.svg"
             />
 
             <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
@@ -117,19 +117,19 @@ export const Principles: React.FC = () => {
           <img
             className="absolute w-[77px] h-[77px] top-[258px] left-[499px]"
             alt="Ellipse"
-            src="https://c.animaapp.com/zvzHaAwZ/img/ellipse-66.svg"
+            src="/About/ca/ellipse-66.svg"
           />
 
           <img
             className="absolute w-[195px] h-[209px] top-[76px] left-[570px]"
             alt="Vector"
-            src="https://c.animaapp.com/zvzHaAwZ/img/vector-2483.svg"
+            src="/About/ca/vector-2483.svg"
           />
 
           <img
             className="absolute w-[195px] h-[212px] top-[326px] left-[576px]"
             alt="Vector"
-            src="https://c.animaapp.com/zvzHaAwZ/img/vector-2497.svg"
+            src="/About/ca/vector-2497.svg"
           />
 
           <div className="absolute w-3.5 h-3.5 top-[85px] left-[626px] bg-[#43a2ff] rounded-[7px] border-[4.2px] border-solid border-white shadow-[0px_8.4px_6.3px_5px_#1d8fff33]" />
@@ -137,25 +137,25 @@ export const Principles: React.FC = () => {
           <img
             className="absolute w-[164px] h-[209px] top-[78px] left-[336px]"
             alt="Vector"
-            src="https://c.animaapp.com/zvzHaAwZ/img/vector-2493.svg"
+            src="/About/ca/vector-2493.svg"
           />
 
           <img
             className="absolute w-[164px] h-[212px] top-[326px] left-[334px]"
             alt="Vector"
-            src="https://c.animaapp.com/zvzHaAwZ/img/vector-2496.svg"
+            src="/About/ca/vector-2496.svg"
           />
 
           <img
             className="absolute w-[164px] h-5 top-[284px] left-[336px]"
             alt="Vector"
-            src="https://c.animaapp.com/zvzHaAwZ/img/vector-2495.svg"
+            src="/About/ca/vector-2495.svg"
           />
 
           <img
             className="absolute w-[164px] h-5 top-[284px] left-[574px]"
             alt="Vector"
-            src="https://c.animaapp.com/zvzHaAwZ/img/vector-2498.svg"
+            src="/About/ca/vector-2498.svg"
           />
 
           <div className="absolute w-3 h-3 top-[79px] left-[431px] bg-[#43a2ff] rounded-md border-[4.2px] border-solid border-white rotate-180 shadow-[0px_8.4px_6.3px_5px_#1d8fff33]" />
@@ -167,13 +167,13 @@ export const Principles: React.FC = () => {
           <img
             className="absolute w-px h-2.5 top-[380px] left-[452px]"
             alt="Vector"
-            src="https://c.animaapp.com/zvzHaAwZ/img/vector-2491.svg"
+            src="/About/ca/vector-2491.svg"
           />
 
           <img
             className="absolute w-1 h-px top-[512px] left-[630px] object-cover"
             alt="Vector"
-            src="https://c.animaapp.com/zvzHaAwZ/img/vector-2492.svg"
+            src="/About/ca/vector-2492.svg"
           />
         </div>
 

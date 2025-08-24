@@ -45,7 +45,7 @@ export const TechnologyStackSection: React.FC = () => {
             <img
               className="relative w-[15px] h-[15px]"
               alt=""
-              src="https://c.animaapp.com/UUifjI9s/img/stars-1.svg"
+              src="/lp/ca/stars-1.svg"
               role="presentation"
             />
             <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">

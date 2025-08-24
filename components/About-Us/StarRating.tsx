@@ -9,7 +9,7 @@ const testimonialData = [
     author: {
       name: "Sarah Johnson",
       title: "Marketing Director, techflow Inc.",
-      avatar: "https://c.animaapp.com/zvzHaAwZ/img/ellipse-1670.svg",
+      avatar: "/About/ca/ellipse-1670.svg",
     },
   },
   {
@@ -20,7 +20,7 @@ const testimonialData = [
     author: {
       name: "Michael Chen",
       title: "Ceo, growthlab",
-      avatar: "https://c.animaapp.com/zvzHaAwZ/img/ellipse-1670-1.svg",
+      avatar: "/About/ca/ellipse-1670-1.svg",
     },
   },
   {
@@ -31,18 +31,18 @@ const testimonialData = [
     author: {
       name: "Emily Rodriguez",
       title: "Founder, sustainable Solutions",
-      avatar: "https://c.animaapp.com/zvzHaAwZ/img/ellipse-1670-2.svg",
+      avatar: "/About/ca/ellipse-1670-2.svg",
     },
   },
 ];
 
 const StarRating = ({ rating }: { rating: number }) => {
   const starImages = [
-    "https://c.animaapp.com/zvzHaAwZ/img/star-filled.svg",
-    "https://c.animaapp.com/zvzHaAwZ/img/star-filled-1.svg",
-    "https://c.animaapp.com/zvzHaAwZ/img/star-filled-2.svg",
-    "https://c.animaapp.com/zvzHaAwZ/img/star-filled-3.svg",
-    "https://c.animaapp.com/zvzHaAwZ/img/star-filled-4.svg",
+    "/About/ca/star-filled.svg",
+    "/About/ca/star-filled-1.svg",
+    "/About/ca/star-filled-2.svg",
+    "/About/ca/star-filled-3.svg",
+    "/About/ca/star-filled-4.svg",
   ];
 
   return (
@@ -102,7 +102,7 @@ export const PrinciplesSection: React.FC = () => {
                     <img
                         className="relative w-[15px] h-[15px]"
                         alt="Stars"
-                        src="https://c.animaapp.com/zvzHaAwZ/img/stars-3.svg"
+                        src="/About/ca/stars-3.svg"
                     />
 
                     <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">

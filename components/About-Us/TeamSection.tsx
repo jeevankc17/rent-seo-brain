@@ -16,21 +16,21 @@ export const TeamSection: React.FC = () => {
       name: "Nabin Chettri",
       position: "Head of Digital Strategy",
       image: "/About/Nabin.png",
-      socialIcon: "https://c.animaapp.com/zvzHaAwZ/img/frame-2121458250.svg",
+      socialIcon: "/About/ca/frame-2121458250.svg",
     },
     {
       id: 2,
       name: "Ganesh Kumar BC",
       position: "Head of Operations",
       image: "/About/Ganesh.png",
-      socialIcon: "https://c.animaapp.com/zvzHaAwZ/img/frame-2121458250-1.svg",
+      socialIcon: "/About/ca/frame-2121458250-1.svg",
     },
     {
       id: 3,
       name: "Sabi Karki",
       position: "Head of Content Marketing",
-      image: "https://c.animaapp.com/zvzHaAwZ/img/photo-2@2x.png",
-      socialIcon: "https://c.animaapp.com/zvzHaAwZ/img/frame-2121458250-2.svg",
+      image: "/About/ca/photo-2@2x.png",
+      socialIcon: "/About/ca/frame-2121458250-2.svg",
     },
   ];
 
@@ -52,7 +52,7 @@ export const TeamSection: React.FC = () => {
           <img
             className="relative w-[15px] h-[15px]"
             alt="Stars"
-            src="https://c.animaapp.com/zvzHaAwZ/img/stars-2.svg"
+            src="/About/ca/stars-2.svg"
           />
 
           <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">

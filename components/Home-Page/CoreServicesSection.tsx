@@ -23,13 +23,13 @@ export const CoreServicesSection: React.FC = () => {
   ];
 
   const chartDays = [
-    { label: "MON", line: "https://c.animaapp.com/OvIeBSPV/img/line-3.svg" },
-    { label: "TUE", line: "https://c.animaapp.com/OvIeBSPV/img/line-3-1.svg" },
-    { label: "WED", line: "https://c.animaapp.com/OvIeBSPV/img/line-3-2.svg" },
-    { label: "THU", line: "https://c.animaapp.com/OvIeBSPV/img/line-3-3.svg" },
-    { label: "FRI", line: "https://c.animaapp.com/OvIeBSPV/img/line-3-4.svg" },
-    { label: "SAT", line: "https://c.animaapp.com/OvIeBSPV/img/line-3-5.svg" },
-    { label: "SUN", line: "https://c.animaapp.com/OvIeBSPV/img/line-3-6.svg" },
+    { label: "MON", line: "/Home-Page/ca/line-3.svg" },
+    { label: "TUE", line: "/Home-Page/ca/line-3-1.svg" },
+    { label: "WED", line: "/Home-Page/ca/line-3-2.svg" },
+    { label: "THU", line: "/Home-Page/ca/line-3-3.svg" },
+    { label: "FRI", line: "/Home-Page/ca/line-3-4.svg" },
+    { label: "SAT", line: "/Home-Page/ca/line-3-5.svg" },
+    { label: "SUN", line: "/Home-Page/ca/line-3-6.svg" },
   ];
 
   return (
@@ -40,7 +40,7 @@ export const CoreServicesSection: React.FC = () => {
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
-              src="https://c.animaapp.com/OvIeBSPV/img/stars.svg"
+              src="/Home-Page/ca/stars.svg"
             />
 
             <div className="relative w-[117px] mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-sm tracking-[0] leading-[23px]">
@@ -71,7 +71,7 @@ export const CoreServicesSection: React.FC = () => {
                   <img
                     className="relative w-6 h-6"
                     alt="Pen tool"
-                    src="https://c.animaapp.com/OvIeBSPV/img/pen-tool.svg"
+                    src="/Home-Page/ca/pen-tool.svg"
                   />
                 </div>
 
@@ -104,7 +104,7 @@ export const CoreServicesSection: React.FC = () => {
                     <img
                       className="relative w-[13px] h-[13px]"
                       alt="Checkmark"
-                      src="https://c.animaapp.com/OvIeBSPV/img/frame-2121457509-11.svg"
+                      src="/Home-Page/ca/frame-2121457509-11.svg"
                     />
 
                     <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-300 text-base tracking-[0] leading-[normal] whitespace-nowrap">
@@ -123,7 +123,7 @@ export const CoreServicesSection: React.FC = () => {
                   <img
                     className="relative w-6 h-6"
                     alt="Search"
-                    src="https://c.animaapp.com/OvIeBSPV/img/search.svg"
+                    src="/Home-Page/ca/search.svg"
                   />
                 </div>
 
@@ -155,7 +155,7 @@ export const CoreServicesSection: React.FC = () => {
                     <img
                       className="relative w-[13px] h-[13px]"
                       alt="Checkmark"
-                      src="https://c.animaapp.com/OvIeBSPV/img/frame-2121457509-7.svg"
+                      src="/Home-Page/ca/frame-2121457509-7.svg"
                     />
 
                     <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-300 text-base tracking-[0] leading-[normal] whitespace-nowrap">
@@ -176,7 +176,7 @@ export const CoreServicesSection: React.FC = () => {
                   <img
                     className="relative w-6 h-6 aspect-[1]"
                     alt="Google Ads"
-                    src="https://c.animaapp.com/OvIeBSPV/img/akar-icons-google-fill.svg"
+                    src="/Home-Page/ca/akar-icons-google-fill.svg"
                   />
                 </div>
 
@@ -200,7 +200,7 @@ export const CoreServicesSection: React.FC = () => {
                   <img
                     className="relative w-6 h-6"
                     alt="Trending up"
-                    src="https://c.animaapp.com/OvIeBSPV/img/trending-up.svg"
+                    src="/Home-Page/ca/trending-up.svg"
                   />
 
                   <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
@@ -212,7 +212,7 @@ export const CoreServicesSection: React.FC = () => {
                   <img
                     className="absolute w-[462px] h-32 top-0 left-0 z-[1]"
                     alt="Performance chart"
-                    src="https://c.animaapp.com/OvIeBSPV/img/mask-group@2x.png"
+                    src="/Home-Page/ca/mask-group@2x.png"
                   />
 
                   <div className="flex w-[434.62px] items-start justify-between relative z-0">
@@ -246,7 +246,7 @@ export const CoreServicesSection: React.FC = () => {
                   <img
                     className="relative w-[13px] h-[13px]"
                     alt="Checkmark"
-                    src="https://c.animaapp.com/OvIeBSPV/img/frame-2121457509-11.svg"
+                    src="/Home-Page/ca/frame-2121457509-11.svg"
                   />
 
                   <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-300 text-base tracking-[0] leading-[normal] whitespace-nowrap">
@@ -269,7 +269,7 @@ export const CoreServicesSection: React.FC = () => {
             <img
               className="relative w-5 h-5"
               alt="Arrow right"
-              src="https://c.animaapp.com/OvIeBSPV/img/arrow-right.svg"
+              src="/Home-Page/ca/arrow-right.svg"
             />
           </div>
         </button>
@@ -282,7 +282,7 @@ export const CoreServicesSection: React.FC = () => {
           <img
             className="relative w-5 h-5"
             alt="Arrow right"
-            src="https://c.animaapp.com/OvIeBSPV/img/arrow-right-3.svg"
+            src="/Home-Page/ca/arrow-right-3.svg"
           />
         </button>
       </div>

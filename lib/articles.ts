@@ -32,7 +32,7 @@ export interface Article {
 export const articlesData: Article[] = [
   {
     id: 1,
-    image: "https://c.animaapp.com/VIaP56iJ/img/frame-2121458395.svg",
+    image: "/read-blog/ca/frame-2121458395.svg",
     tags: [
       {
         label: "Technical SEO",
@@ -54,7 +54,7 @@ export const articlesData: Article[] = [
     author: {
       name: "Alex Thompson",
       role: "Senior SEO Strategist",
-      avatar: "https://c.animaapp.com/VIaP56iJ/img/shape-5@2x.png",
+      avatar: "/read-blog/ca/shape-5@2x.png",
     },
     imageAlt: "Core Web Vitals optimization illustration",
     sections: [
@@ -71,13 +71,13 @@ export const articlesData: Article[] = [
         content: "Minimize FID by reducing JavaScript execution time, breaking up long tasks, and using web workers for heavy computations. Target an FID of less than 100 milliseconds.",
       },
     ],
-    secondaryImage: "https://c.animaapp.com/tbvdk4DW/img/image-1.svg",
+    secondaryImage: "/read-blog/ca/image-1.svg",
     secondaryImageAlt: "Core Web Vitals analytics dashboard",
     extraContent: "Monitoring and maintaining good Core Web Vitals scores is an ongoing process. Use tools like Google PageSpeed Insights, Chrome DevTools, and Real User Monitoring (RUM) to continuously track your performance. Remember that Core Web Vitals are not just about SEO rankings—they directly impact user experience, conversion rates, and business success. Implement these optimization strategies systematically, test thoroughly, and monitor results to ensure your website delivers the fast, responsive experience users expect in 2025.",
   },
   {
     id: 2,
-    image: "https://c.animaapp.com/VIaP56iJ/img/frame-2121458395-1.svg",
+    image: "/read-blog/ca/frame-2121458395-1.svg",
     tags: [
       {
         label: "Trending",
@@ -99,7 +99,7 @@ export const articlesData: Article[] = [
     author: {
       name: "Alex Thompson",
       role: "Senior SEO Strategist",
-      avatar: "https://c.animaapp.com/VIaP56iJ/img/shape-5@2x.png",
+      avatar: "/read-blog/ca/shape-5@2x.png",
     },
     imageAlt: "Local SEO optimization illustration",
     sections: [
@@ -116,13 +116,13 @@ export const articlesData: Article[] = [
         content: "It's essential to maintain consistent NAP information (Name, Address, Phone) everywhere online, including directories and social media.",
       },
     ],
-    secondaryImage: "https://c.animaapp.com/tbvdk4DW/img/image-1.svg",
+    secondaryImage: "/read-blog/ca/image-1.svg",
     secondaryImageAlt: "Local SEO analytics dashboard",
     extraContent: "Content tailored for each area. Encourage your customers to leave reviews and always respond professionally to build trust and credibility. Since most local searches happen on mobile devices, ensure your website is mobile-friendly, fast-loading, and easy to navigate. Increase your visibility by listing your business on popular local directories like Yelp, Bing Places, and Yellow Pages. Adding local business schema markup (structured data) to your website helps search engines better understand your business details, improving your chances of appearing in rich local results. Regularly publish local content such as blogs about community events, news, or customer stories to boost your relevance. Build local backlinks from authoritative websites, local newspapers, or community groups to strengthen your site's authority. Embed a Google Map on your contact page to make it easier for customers and search engines to find your location, and don't forget to geo-tag your images with location data before uploading them to your site or Google Business Profile to reinforce local signals. Track your local SEO performance using tools like Google Analytics and Search Console to monitor rankings, traffic, and user behavior. Stay active on your Google Business Profile by posting updates and engaging with customers, signaling ongoing relevance. Finally, keep up with the latest local SEO trends and algorithm updates by following trusted SEO news sources and regularly auditing your strategy. By consistently applying these 15 steps, you can boost your local search rankings, attract more nearby customers, and grow your business. Start implementing these tips today and watch your local presence thrive!",
   },
   {
     id: 3,
-    image: "https://c.animaapp.com/VIaP56iJ/img/frame-2121458395-2.svg",
+    image: "/read-blog/ca/frame-2121458395-2.svg",
     tags: [
       {
         label: "Technical SEO",
@@ -144,7 +144,7 @@ export const articlesData: Article[] = [
     author: {
       name: "Alex Thompson",
       role: "Senior SEO Strategist",
-      avatar: "https://c.animaapp.com/VIaP56iJ/img/shape-5@2x.png",
+      avatar: "/read-blog/ca/shape-5@2x.png",
     },
     imageAlt: "Schema markup implementation illustration",
     sections: [
@@ -161,13 +161,13 @@ export const articlesData: Article[] = [
         content: "Use Google's Rich Results Test and Schema Markup Validator to ensure your implementation is correct. Regular testing prevents errors that could hurt your search performance.",
       },
     ],
-    secondaryImage: "https://c.animaapp.com/tbvdk4DW/img/image-1.svg",
+    secondaryImage: "/read-blog/ca/image-1.svg",
     secondaryImageAlt: "Schema markup testing tools dashboard",
     extraContent: "Advanced schema implementation can significantly boost your search visibility through rich snippets, knowledge panels, and enhanced search results. Focus on implementing the most impactful schema types for your business first, then expand gradually. Monitor your rich snippet performance through Google Search Console and adjust your markup based on what generates the best click-through rates. Remember that schema markup is not just about SEO—it's about providing search engines with clear, structured information that helps them understand and present your content better to users.",
   },
   {
     id: 4,
-    image: "https://c.animaapp.com/VIaP56iJ/img/frame-2121458395-3.svg",
+    image: "/read-blog/ca/frame-2121458395-3.svg",
     tags: [
       {
         label: "Content SEO",
@@ -189,7 +189,7 @@ export const articlesData: Article[] = [
     author: {
       name: "Alex Thompson",
       role: "Senior SEO Strategist",
-      avatar: "https://c.animaapp.com/VIaP56iJ/img/shape-5@2x.png",
+      avatar: "/read-blog/ca/shape-5@2x.png",
     },
     imageAlt: "Content optimization strategy illustration",
     sections: [
@@ -206,13 +206,13 @@ export const articlesData: Article[] = [
         content: "Create comprehensive content that covers topics thoroughly. Use proper heading hierarchy, internal linking, and ensure your content answers related questions users might have.",
       },
     ],
-    secondaryImage: "https://c.animaapp.com/tbvdk4DW/img/image-1.svg",
+    secondaryImage: "/read-blog/ca/image-1.svg",
     secondaryImageAlt: "Content performance analytics dashboard",
     extraContent: "Effective content optimization is about creating valuable resources that genuinely help your audience while strategically targeting search opportunities. Focus on creating content clusters around main topics, use natural language processing insights to improve semantic relevance, and regularly update your content to maintain freshness. Monitor user engagement metrics like time on page, bounce rate, and social shares to gauge content quality beyond just rankings. Remember that the best SEO content is content that users find genuinely useful and engaging.",
   },
   {
     id: 5,
-    image: "https://c.animaapp.com/VIaP56iJ/img/frame-2121458395-4.svg",
+    image: "/read-blog/ca/frame-2121458395-4.svg",
     tags: [
       {
         label: "Trending",
@@ -234,7 +234,7 @@ export const articlesData: Article[] = [
     author: {
       name: "Alex Thompson",
       role: "Senior SEO Strategist",
-      avatar: "https://c.animaapp.com/VIaP56iJ/img/shape-5@2x.png",
+      avatar: "/read-blog/ca/shape-5@2x.png",
     },
     imageAlt: "E-commerce product page optimization illustration",
     sections: [
@@ -251,13 +251,13 @@ export const articlesData: Article[] = [
         content: "Implement product schema markup, optimize URL structures, manage inventory-based content, and ensure proper pagination for product categories. Handle out-of-stock products appropriately.",
       },
     ],
-    secondaryImage: "https://c.animaapp.com/tbvdk4DW/img/image-1.svg",
+    secondaryImage: "/read-blog/ca/image-1.svg",
     secondaryImageAlt: "E-commerce SEO performance metrics",
     extraContent: "E-commerce SEO requires a balance between optimization for search engines and conversion optimization for users. Focus on creating product pages that load fast, provide comprehensive information, and guide users toward purchase decisions. Implement customer review systems, optimize for mobile shopping experiences, and ensure your site architecture supports easy navigation and internal linking. Monitor both SEO metrics and conversion rates to ensure your optimization efforts contribute to actual business growth, not just improved rankings.",
   },
   {
     id: 6,
-    image: "https://c.animaapp.com/VIaP56iJ/img/frame-2121458395-5.svg",
+    image: "/read-blog/ca/frame-2121458395-5.svg",
     tags: [
       {
         label: "Link Building",
@@ -279,7 +279,7 @@ export const articlesData: Article[] = [
     author: {
       name: "Alex Thompson",
       role: "Senior SEO Strategist",
-      avatar: "https://c.animaapp.com/VIaP56iJ/img/shape-5@2x.png",
+      avatar: "/read-blog/ca/shape-5@2x.png",
     },
     imageAlt: "Link building strategies illustration",
     sections: [
@@ -296,13 +296,13 @@ export const articlesData: Article[] = [
         content: "Use techniques like broken link building, resource page outreach, and unlinked brand mention recovery. These methods provide value to other sites while earning quality backlinks.",
       },
     ],
-    secondaryImage: "https://c.animaapp.com/tbvdk4DW/img/image-1.svg",
+    secondaryImage: "/read-blog/ca/image-1.svg",
     secondaryImageAlt: "Link building campaign results dashboard",
     extraContent: "Sustainable link building is about creating genuine value for other websites and their audiences. Focus on earning links through quality content, helpful resources, and authentic relationships rather than manipulative tactics. Monitor your backlink profile regularly using tools like Ahrefs or Moz, and disavow any low-quality or spammy links that could harm your rankings. Remember that a few high-quality, relevant links are worth more than many low-quality ones. Build your link building strategy around providing value and solving problems for your target audience and industry peers.",
   },
   {
     id: 7,
-    image: "https://c.animaapp.com/VIaP56iJ/img/frame-2121458395-2.svg",
+    image: "/read-blog/ca/frame-2121458395-2.svg",
     tags: [
       {
         label: "Technical SEO",
@@ -324,7 +324,7 @@ export const articlesData: Article[] = [
     author: {
       name: "Alex Thompson",
       role: "Senior SEO Strategist",
-      avatar: "https://c.animaapp.com/VIaP56iJ/img/shape-5@2x.png",
+      avatar: "/read-blog/ca/shape-5@2x.png",
     },
     imageAlt: "Schema markup implementation illustration",
     sections: [
@@ -341,7 +341,7 @@ export const articlesData: Article[] = [
         content: "Use Google's Rich Results Test and Schema Markup Validator to ensure your implementation is correct. Regular testing prevents errors that could hurt your search performance.",
       },
     ],
-    secondaryImage: "https://c.animaapp.com/tbvdk4DW/img/image-1.svg",
+    secondaryImage: "/read-blog/ca/image-1.svg",
     secondaryImageAlt: "Schema markup testing tools dashboard",
     extraContent: "Advanced schema implementation can significantly boost your search visibility through rich snippets, knowledge panels, and enhanced search results. Focus on implementing the most impactful schema types for your business first, then expand gradually. Monitor your rich snippet performance through Google Search Console and adjust your markup based on what generates the best click-through rates. Remember that schema markup is not just about SEO—it's about providing search engines with clear, structured information that helps them understand and present your content better to users.",
   },

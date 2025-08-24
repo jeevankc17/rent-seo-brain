@@ -45,12 +45,12 @@ export const PerformanceDashboardSection: React.FC = () => {
 
   // Data for user avatars
   const userAvatars = [
-    "https://c.animaapp.com/YInPS6Dh/img/avatar@2x.png",
-    "https://c.animaapp.com/YInPS6Dh/img/avatar-1@2x.png",
-    "https://c.animaapp.com/YInPS6Dh/img/avatar-2@2x.png",
-    "https://c.animaapp.com/YInPS6Dh/img/avatar-3@2x.png",
-    "https://c.animaapp.com/YInPS6Dh/img/avatar-4@2x.png",
-    "https://c.animaapp.com/YInPS6Dh/img/avatar-5@2x.png",
+    "/lp/ca/avatar@2x.png",
+    "/lp/ca/avatar-1@2x.png",
+    "/lp/ca/avatar-2@2x.png",
+    "/lp/ca/avatar-3@2x.png",
+    "/lp/ca/avatar-4@2x.png",
+    "/lp/ca/avatar-5@2x.png",
   ];
 
   // Data for chart y-axis labels
@@ -63,7 +63,7 @@ export const PerformanceDashboardSection: React.FC = () => {
           <img
             className="absolute w-[267px] h-[298px] top-[300px] left-[51px] aspect-[0.9]"
             alt="Performance dashboard illustration"
-            src="https://c.animaapp.com/YInPS6Dh/img/image-131@2x.png"
+            src="/lp/ca/image-131@2x.png"
           />
 
           <div className="absolute w-[1128px] h-[454px] top-[143px] left-0 rounded-[23px] bg-[linear-gradient(180deg,rgba(67,162,255,0.71)_0%,rgba(255,255,255,1)_100%)]">
@@ -92,13 +92,13 @@ export const PerformanceDashboardSection: React.FC = () => {
                   <img
                     className="absolute w-[252px] h-[220px] top-3.5 left-0"
                     alt="Analytics chart vector"
-                    src="https://c.animaapp.com/YInPS6Dh/img/vector-2533.svg"
+                    src="/lp/ca/vector-2533.svg"
                   />
 
                   <img
                     className="absolute w-[25px] h-[25px] top-0 left-[246px]"
                     alt="Send icon"
-                    src="https://c.animaapp.com/YInPS6Dh/img/send.svg"
+                    src="/lp/ca/send.svg"
                   />
                 </div>
               </div>
@@ -117,7 +117,7 @@ export const PerformanceDashboardSection: React.FC = () => {
                         key={index}
                         className="relative w-[18px] h-[18px]"
                         alt=""
-                        src="https://c.animaapp.com/YInPS6Dh/img/star-filled-4.svg"
+                        src="/lp/ca/star-filled-4.svg"
                       />
                     ))}
                   </div>
@@ -144,7 +144,7 @@ export const PerformanceDashboardSection: React.FC = () => {
           <img
             className="absolute w-[267px] h-[298px] top-[300px] left-[11px] aspect-[0.9]"
             alt="Performance dashboard illustration"
-            src="https://c.animaapp.com/YInPS6Dh/img/image-131@2x.png"
+            src="/lp/ca/image-131@2x.png"
           />
 
           <div className="inline-flex items-center justify-end gap-10 absolute top-0 left-[412px]">
@@ -155,7 +155,7 @@ export const PerformanceDashboardSection: React.FC = () => {
                 <img
                   className="absolute w-[275px] h-[597px] top-0 left-3.5 aspect-[0.46]"
                   alt="Mobile dashboard interface"
-                  src="https://c.animaapp.com/YInPS6Dh/img/image-109.png"
+                  src="/lp/ca/image-109.png"
                 />
 
                 <div className="inline-flex items-center justify-center gap-[17.7px] px-[9.44px] py-[8.26px] absolute top-[65px] left-[65px] bg-primary-100 rounded-[4.72px] rotate-[1.00deg]">
@@ -173,7 +173,7 @@ export const PerformanceDashboardSection: React.FC = () => {
                     <img
                       className="relative w-[16.81px] h-[16.81px] mt-[-0.14px] mb-[-0.14px] ml-[-0.14px] mr-[-0.14px] rotate-[-1.00deg]"
                       alt="Trending up icon"
-                      src="https://c.animaapp.com/YInPS6Dh/img/trending-up.svg"
+                      src="/lp/ca/trending-up.svg"
                     />
                   </div>
                 </div>
@@ -206,10 +206,10 @@ export const PerformanceDashboardSection: React.FC = () => {
 
                       <div className="inline-flex flex-col items-center relative flex-[0_0_auto]">
                         <div className="inline-flex flex-col items-start justify-center gap-[17.66px] relative flex-[0_0_auto]">
-                          <div className="relative w-[178.32px] h-px mt-[-0.21px] bg-[url(https://c.animaapp.com/YInPS6Dh/img/line-57.svg)] bg-[100%_100%]" />
-                          <div className="bg-[url(https://c.animaapp.com/YInPS6Dh/img/line-57-1.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
-                          <div className="bg-[url(https://c.animaapp.com/YInPS6Dh/img/line-57-2.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
-                          <div className="mb-[-0.37px] bg-[url(https://c.animaapp.com/YInPS6Dh/img/line-57-3.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
+                          <div className="relative w-[178.32px] h-px mt-[-0.21px] bg-[url(/lp/ca/line-57.svg)] bg-[100%_100%]" />
+                          <div className="bg-[url(/lp/ca/line-57-1.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
+                          <div className="bg-[url(/lp/ca/line-57-2.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
+                          <div className="mb-[-0.37px] bg-[url(/lp/ca/line-57-3.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
                         </div>
 
                         <div className="inline-flex items-end gap-[8.41px] absolute top-0 left-1">
@@ -221,7 +221,7 @@ export const PerformanceDashboardSection: React.FC = () => {
                               <img
                                 className={`relative w-[11.36px] h-[${bar.height}]`}
                                 alt=""
-                                src={`https://c.animaapp.com/YInPS6Dh/img/graph-bar${
+                                src={`/lp/ca/graph-bar${
                                   index > 0 ? `-${index}` : ""
                                 }.svg`}
                               />
@@ -325,7 +325,7 @@ export const PerformanceDashboardSection: React.FC = () => {
                     <img
                       className="relative w-[18.35px] h-[18.35px] mt-[-0.16px] mb-[-0.16px] ml-[-0.16px] mr-[-0.16px] rotate-[-1.00deg]"
                       alt="Trending up icon"
-                      src="https://c.animaapp.com/YInPS6Dh/img/trending-up-1.svg"
+                      src="/lp/ca/trending-up-1.svg"
                     />
                   </div>
                 </div>

@@ -3,52 +3,52 @@ import React from "react";
 export const OverviewSection : React.FC = () => {
   const features = [
     {
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/refresh-cw-1.svg",
+      icon: "/lp/ca/refresh-cw-1.svg",
       text: "Built To Convert, Not Just Look Good",
     },
     {
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/mail.svg",
+      icon: "/lp/ca/mail.svg",
       text: "Tailored To Campaigns (google Ads, Social, Email)",
     },
     {
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/target.svg",
+      icon: "/lp/ca/target.svg",
       text: "Fast-loading, Mobile-optimized, And Strategic",
     },
     {
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/send.svg",
+      icon: "/lp/ca/send.svg",
       text: "Clear Messaging, Smart Ctas, And Lead Capture",
     },
   ];
 
   const benefits = [
     {
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/check-circle.svg",
+      icon: "/lp/ca/check-circle.svg",
       text: "Design System",
     },
     {
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/check-circle-1.svg",
+      icon: "/lp/ca/check-circle-1.svg",
       text: "Unlimited Revisions",
     },
   ];
 
   const decorativeFrames = [
     {
-      src: "https://c.animaapp.com/YaTVIQjZ/img/frame-2121458014.svg",
+      src: "/lp/ca/frame-2121458014.svg",
       className: "absolute w-40 h-[60px] -top-0.5 left-[389px]",
       alt: "Frame",
     },
     {
-      src: "https://c.animaapp.com/YaTVIQjZ/img/frame-2121458015.svg",
+      src: "/lp/ca/frame-2121458015.svg",
       className: "absolute w-[200px] h-[51px] top-1 -left-px",
       alt: "Frame",
     },
     {
-      src: "https://c.animaapp.com/YaTVIQjZ/img/frame-2121458016.svg",
+      src: "/lp/ca/frame-2121458016.svg",
       className: "absolute w-[188px] h-[75px] top-[382px] left-[11px]",
       alt: "Frame",
     },
     {
-      src: "https://c.animaapp.com/YaTVIQjZ/img/frame-2121458013.svg",
+      src: "/lp/ca/frame-2121458013.svg",
       className: "absolute w-[168px] h-[62px] top-[374px] left-[383px]",
       alt: "Frame",
     },
@@ -62,7 +62,7 @@ export const OverviewSection : React.FC = () => {
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
-              src="https://c.animaapp.com/YaTVIQjZ/img/stars.svg"
+              src="/lp/ca/stars.svg"
             />
 
             <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
@@ -114,7 +114,7 @@ export const OverviewSection : React.FC = () => {
                 <img
                   className="relative w-5 h-5"
                   alt=""
-                  src="https://c.animaapp.com/YaTVIQjZ/img/arrow-right-1.svg"
+                  src="/lp/ca/arrow-right-1.svg"
                 />
               </div>
             </button>
@@ -155,7 +155,7 @@ export const OverviewSection : React.FC = () => {
             <img
               className="absolute w-[317px] h-[317px] top-0 left-[49px]"
               alt=""
-              src="https://c.animaapp.com/YaTVIQjZ/img/ellipse-1675.svg"
+              src="/lp/ca/ellipse-1675.svg"
             />
 
             <div className="absolute w-[225px] h-[71px] top-[210px] left-[229px]">
@@ -164,7 +164,7 @@ export const OverviewSection : React.FC = () => {
                   <img
                     className="absolute w-[17px] h-[17px] top-[13px] left-[19px] rotate-[0.57deg]"
                     alt=""
-                    src="https://c.animaapp.com/YaTVIQjZ/img/smartphone.svg"
+                    src="/lp/ca/smartphone.svg"
                   />
 
                   <div className="absolute top-3 left-[46px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-[13.9px] tracking-[0] leading-[16.6px] whitespace-nowrap">
@@ -176,7 +176,7 @@ export const OverviewSection : React.FC = () => {
               <img
                 className="absolute w-[33px] h-[33px] top-[38px] left-48"
                 alt=""
-                src="https://c.animaapp.com/YaTVIQjZ/img/send-1.svg"
+                src="/lp/ca/send-1.svg"
               />
             </div>
 
@@ -184,7 +184,7 @@ export const OverviewSection : React.FC = () => {
               <img
                 className="relative w-[18.5px] h-[18.5px] mt-[-0.31px] mb-[-0.31px] ml-[-0.31px] rotate-[-2.00deg]"
                 alt=""
-                src="https://c.animaapp.com/YaTVIQjZ/img/trending-up.svg"
+                src="/lp/ca/trending-up.svg"
               />
 
               <div className="relative w-fit mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-[13.9px] tracking-[0] leading-[16.6px] whitespace-nowrap">

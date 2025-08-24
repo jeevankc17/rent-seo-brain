@@ -8,7 +8,7 @@ const testimonialData = [
       "rent Seo Brain Services Transformed Our Digital Presence Completely. Our Organic Traffic Increased By 300% In Just 6 Months, And Our Conversion Rates Have Never Been Better.",
     name: "Sarah Johnson",
     title: "Marketing Director, techflow Inc.",
-    avatar: "https://c.animaapp.com/XixDVTem/img/ellipse-1670.svg",
+    avatar: "/Google/ca/ellipse-1670.svg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const testimonialData = [
       "the Roi On Our Ppc Campaigns Has Been Exceptional. Their Strategic Approach And Attention To Detail Set Them Apart From Other Agencies We've Worked With.",
     name: "Michael Chen",
     title: "Ceo, growthlab",
-    avatar: "https://c.animaapp.com/XixDVTem/img/ellipse-1670-1.svg",
+    avatar: "/Google/ca/ellipse-1670-1.svg",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const testimonialData = [
       "from Content Strategy To Technical Seo, They Handle Everything Seamlessly. Our Brand Visibility Has Skyrocketed, And We're Now Leaders In Our Industry Online.",
     name: "Emily Rodriguez",
     title: "Founder, sustainable Solutions",
-    avatar: "https://c.animaapp.com/XixDVTem/img/ellipse-1670-2.svg",
+    avatar: "/Google/ca/ellipse-1670-2.svg",
   },
 ];
 
@@ -42,7 +42,7 @@ const StarRating = ({ rating }: { rating: number }) => {
           key={index}
           className="relative w-[24.06px] h-[24.06px]"
           alt="Star filled"
-          src="https://c.animaapp.com/XixDVTem/img/star-filled-15.svg"
+          src="/Google/ca/star-filled-15.svg"
         />
       ))}
     </div>
@@ -99,7 +99,7 @@ export const ToolsIntegrationSection: React.FC = () => {
           <img
             className="relative w-[15px] h-[15px]"
             alt="Stars"
-            src="https://c.animaapp.com/XixDVTem/img/stars.svg"
+            src="/Google/ca/stars.svg"
           />
 
           <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">

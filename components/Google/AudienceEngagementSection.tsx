@@ -10,32 +10,32 @@ export const AudienceEngagementSection: React.FC = () => {
 
     const avatars: { url: string; size: string; border: boolean }[] = [
         {
-            url: "https://c.animaapp.com/ugwxqeDI/img/avatar@2x.png",
+            url: "/Google/ca/avatar@2x.png",
             size: "w-[33.23px] h-[33.23px]",
             border: false,
         },
         {
-            url: "https://c.animaapp.com/ugwxqeDI/img/avatar-1@2x.png",
+            url: "/Google/ca/avatar-1@2x.png",
             size: "w-[36.43px] h-[36.43px]",
             border: true,
         },
         {
-            url: "https://c.animaapp.com/ugwxqeDI/img/avatar-2@2x.png",
+            url: "/Google/ca/avatar-2@2x.png",
             size: "w-[36.43px] h-[36.43px]",
             border: true,
         },
         {
-            url: "https://c.animaapp.com/ugwxqeDI/img/avatar-3@2x.png",
+            url: "/Google/ca/avatar-3@2x.png",
             size: "w-[33.23px] h-[33.23px]",
             border: true,
         },
         {
-            url: "https://c.animaapp.com/ugwxqeDI/img/avatar-4@2x.png",
+            url: "/Google/ca/avatar-4@2x.png",
       size: "w-[33.23px] h-[33.23px]",
       border: true,
     },
     {
-      url: "https://c.animaapp.com/ugwxqeDI/img/avatar-5@2x.png",
+      url: "/Google/ca/avatar-5@2x.png",
       size: "w-[33.23px] h-[33.23px]",
       border: true,
     },
@@ -53,7 +53,7 @@ export const AudienceEngagementSection: React.FC = () => {
                     <img
                       className="ml-[-3.50px] relative w-[15px] h-[15px]"
                       alt="Stars"
-                      src="https://c.animaapp.com/ugwxqeDI/img/stars.svg"
+                      src="/Google/ca/stars.svg"
                     />
 
                     <div className="relative w-fit mt-[-1.00px] mr-[-3.50px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
@@ -81,7 +81,7 @@ export const AudienceEngagementSection: React.FC = () => {
                     <img
                       className="relative w-6 h-6 aspect-[1]"
                       alt="Check mark"
-                      src="https://c.animaapp.com/ugwxqeDI/img/mingcute-check-2-line-3.svg"
+                      src="/Google/ca/mingcute-check-2-line-3.svg"
                     />
 
                     <p className="relative mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-800 text-sm tracking-[0] leading-[23px]">
@@ -116,7 +116,7 @@ export const AudienceEngagementSection: React.FC = () => {
             <img
               className="relative w-5 h-5"
               alt="Arrow right"
-              src="https://c.animaapp.com/ugwxqeDI/img/arrow-right.svg"
+              src="/Google/ca/arrow-right.svg"
             />
           </div>
         </button>
@@ -131,14 +131,14 @@ export const AudienceEngagementSection: React.FC = () => {
           <img
             className="absolute w-[576px] h-[479px] top-0 left-[97px]"
             alt="Dashboard frame"
-            src="https://c.animaapp.com/ugwxqeDI/img/frame-2121457614.svg"
+            src="/Google/ca/frame-2121457614.svg"
           />
 
           <div className="flex w-[221px] items-center gap-[11.94px] px-[12.61px] py-[16.66px] absolute top-[197px] left-0 bg-white rounded-[9.95px] border-[0.88px] border-solid border-primary-400 shadow-[0px_3.51px_11.05px_#2e97ffa1]">
             <img
               className="relative w-6 h-6 aspect-[1]"
               alt="Location targeting icon"
-              src="https://c.animaapp.com/ugwxqeDI/img/component-2-variant3.svg"
+              src="/Google/ca/component-2-variant3.svg"
             />
 
             <div className="flex flex-col w-[149.31px] items-start gap-[7.89px] relative">
@@ -156,7 +156,7 @@ export const AudienceEngagementSection: React.FC = () => {
             <img
               className="relative w-[56.12px] h-[49.98px]"
               alt="Users statistics chart"
-              src="https://c.animaapp.com/ugwxqeDI/img/frame-2121457616.svg"
+              src="/Google/ca/frame-2121457616.svg"
             />
 
             <div className="flex flex-col w-[131.54px] items-start gap-[6.14px] relative">
@@ -171,15 +171,15 @@ export const AudienceEngagementSection: React.FC = () => {
           </div>
 
           <div className="flex flex-col w-[179px] items-start gap-[6.51px] px-[9.11px] py-[6.51px] absolute top-[390px] left-[70px] bg-white rounded-[9.11px] border-[0.65px] border-solid border-[#2e97ffa1] shadow-[0px_2.6px_6.25px_#00000040]">
-            <div className="relative self-stretch w-full h-[98.29px] bg-[url(https://c.animaapp.com/ugwxqeDI/img/charts@2x.png)] bg-[100%_100%]">
+            <div className="relative self-stretch w-full h-[98.29px] bg-[url(/Google/ca/charts@2x.png)] bg-[100%_100%]">
               <img
                 className="absolute w-[7px] h-[7px] top-[33px] left-[129px]"
                 alt="Status indicator"
-                src="https://c.animaapp.com/ugwxqeDI/img/ui-status@2x.png"
+                src="/Google/ca/ui-status@2x.png"
               />
 
               <div className="absolute w-5 h-[13px] top-4 left-[124px]">
-                <div className="relative w-[39px] h-[33px] top-[-9px] -left-2.5 bg-[url(https://c.animaapp.com/ugwxqeDI/img/combined-shape.svg)] bg-[100%_100%]">
+                <div className="relative w-[39px] h-[33px] top-[-9px] -left-2.5 bg-[url(/Google/ca/combined-shape.svg)] bg-[100%_100%]">
                   <div className="w-[15px] top-2.5 left-[11px] text-[7.8px] tracking-[0.33px] leading-[13.0px] absolute [font-family:'Roboto',Helvetica] font-medium text-[#414d55] text-center whitespace-nowrap">
                     62
                   </div>

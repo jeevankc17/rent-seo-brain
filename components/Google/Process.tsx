@@ -3,37 +3,37 @@ import React from "react";
 export const ProcessSection: React.FC = () => {
     const statsData = [
         {
-            icon: "https://c.animaapp.com/1pza1gM1/img/openmoji-timer.svg",
+            icon: "/Google/ca/openmoji-timer.svg",
             percentage: "70%",
             description: "Faster Creative Turnaround",
             shadowColor: "shadow-[0px_1px_27.4px_#2e97ff5e]",
         },
         {
-            icon: "https://c.animaapp.com/1pza1gM1/img/streamline-stickies-color-graph-bar.svg",
+            icon: "/Google/ca/streamline-stickies-color-graph-bar.svg",
             percentage: "85%",
             description: "Less Manual Optimization",
             shadowColor: "shadow-[0px_1px_27.4px_#ffffff36]",
         },
         {
-            icon: "https://c.animaapp.com/1pza1gM1/img/streamline-stickies-color-graph-pie-duo.svg",
+            icon: "/Google/ca/streamline-stickies-color-graph-pie-duo.svg",
             percentage: "38%",
             description: "Higher Click-Through Rates",
             shadowColor: "shadow-[0px_1px_27.4px_#bbff004c]",
         },
         {
-            icon: "https://c.animaapp.com/1pza1gM1/img/streamline-stickies-color-pile-of-money-duo.svg",
+            icon: "/Google/ca/streamline-stickies-color-pile-of-money-duo.svg",
             percentage: "3x",
             description: "Better Return on Ad Spend",
             shadowColor: "shadow-[0px_1px_27.4px_#00b45c4c]",
         },
         {
-            icon: "https://c.animaapp.com/1pza1gM1/img/fluent-emoji-flat-puzzle-piece.svg",
+            icon: "/Google/ca/fluent-emoji-flat-puzzle-piece.svg",
             percentage: "8+",
             description: "Platforms We Support",
             shadowColor: "shadow-[0px_1px_27.4px_#ff980038]",
         },
         {
-            icon: "https://c.animaapp.com/1pza1gM1/img/openmoji-direct-hit.svg",
+            icon: "/Google/ca/openmoji-direct-hit.svg",
             percentage: "70%",
             description: "Lower Customer Acquisition",
             shadowColor: "shadow-[0px_1px_27.4px_#2e97ff5e]",
@@ -63,7 +63,7 @@ export const ProcessSection: React.FC = () => {
                             <img
                                 className="relative w-[15px] h-[15px]"
                                 alt=""
-                                src="https://c.animaapp.com/1pza1gM1/img/stars-1.svg"
+                                src="/Google/ca/stars-1.svg"
                                 aria-hidden="true"
                             />
 

@@ -4,25 +4,25 @@ export const FAQSection: React.FC = () => {
   // Data for metrics in the case study card
   const metricsData = [
     {
-      icon: "https://c.animaapp.com/XixDVTem/img/trending-up.svg",
+      icon: "/Google/ca/trending-up.svg",
       value: "8k - 38k",
       label: "Organic Traffic",
       alt: "Trending up",
     },
     {
-      icon: "https://c.animaapp.com/XixDVTem/img/users.svg",
+      icon: "/Google/ca/users.svg",
       value: "2k - 12k",
       label: "Email Susbcribers",
       alt: "Users",
     },
     {
-      icon: "https://c.animaapp.com/XixDVTem/img/check-circle.svg",
+      icon: "/Google/ca/check-circle.svg",
       value: "+320%",
       label: "Social Engagement",
       alt: "Check circle",
     },
     {
-      icon: "https://c.animaapp.com/XixDVTem/img/award.svg",
+      icon: "/Google/ca/award.svg",
       value: "+450%",
       label: "Brand Mentions",
       alt: "Award",
@@ -40,7 +40,7 @@ export const FAQSection: React.FC = () => {
 
   // Data for star ratings
   const starRating = Array(5).fill(
-    "https://c.animaapp.com/XixDVTem/img/star-filled-4.svg"
+    "/Google/ca/star-filled-4.svg"
   );
 
   return (
@@ -68,8 +68,8 @@ export const FAQSection: React.FC = () => {
                 <div className="relative h-[694px] top-[-33px]">
                   <div className="absolute w-[1128px] h-[694px] top-0 left-0">
                     {/* Industry Tags Section */}
-                    <div className="absolute w-[542px] h-[661px] top-[33px] left-[586px] bg-[url(https://c.animaapp.com/XixDVTem/img/frame-2121457564.svg)] bg-[100%_100%]">
-                      <div className="flex flex-col w-[488px] items-start justify-center gap-56 relative top-[159px] left-[27px]">
+                    <div className="absolute w-[552px] h-[694px] left-[-586px] bg-[url(/Google/ca/frame-2121457564.svg)] bg-[100%_100%]">
+                      <div className="flex flex-col w-[488px] items-start justify-center gap-56 relative top-[159px] left-[27px] bg-[url(/Google/ca/frame-2121457564.svg)] bg-cover">
                         <div className="flex flex-col items-start gap-[33px] relative self-stretch w-full flex-[0_0_auto]">
                           <div className="flex w-[255px] items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-neutral-0 rounded-[45px]">
                             <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-black text-lg text-center tracking-[0] leading-[23px] whitespace-nowrap">
@@ -114,7 +114,7 @@ export const FAQSection: React.FC = () => {
                           <img
                             className="relative w-5 h-5"
                             alt="Arrow right"
-                            src="https://c.animaapp.com/XixDVTem/img/arrow-right-1.svg"
+                            src="/Google/ca/arrow-right-1.svg"
                           />
                         </button>
                       </div>
@@ -157,7 +157,7 @@ export const FAQSection: React.FC = () => {
 
                   {/* Background Image Section */}
                   <div className="flex w-[552px] h-[518px] items-center gap-2.5 absolute top-44 left-0">
-                    <div className="relative w-[552px] h-[518px] rounded-[27px] overflow-hidden bg-[url(https://c.animaapp.com/XixDVTem/img/frame-2121457561.svg)] bg-cover bg-[50%_50%]">
+                    <div className="absolute w-[552px] h-[518px] rounded-[27px] overflow-hidden bg-[url(/Google/ca/frame-2121457561.svg)] bg-cover bg-[50%_50%]">
                       <div className="h-[518px] bg-[#000000ba] rounded-[27px] overflow-hidden">
                         <div className="flex flex-col w-[485px] h-[444px] items-start gap-[351px] relative top-[35px] left-[37px]">
                           <div className="flex w-[227px] items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-neutral-0 rounded-[45px]">

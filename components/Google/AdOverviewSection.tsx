@@ -30,7 +30,7 @@ export const AdOverviewSection: React.FC = () => {
   const adTypes: AdType[] = [
     {
       id: "search",
-      icon: "https://c.animaapp.com/ugwxqeDI/img/search.svg",
+      icon: "/Google/ca/search.svg",
       title: "Search Ads",
       badge: "MostPopular",
       description:
@@ -44,7 +44,7 @@ export const AdOverviewSection: React.FC = () => {
     },
     {
       id: "youtube",
-      icon: "https://c.animaapp.com/ugwxqeDI/img/youtube.svg",
+      icon: "/Google/ca/youtube.svg",
       title: "Youtube Ads",
       description:
         "Video ads that play before, during, or after YouTube videos — perfect for storytelling and brand awareness.",
@@ -57,7 +57,7 @@ export const AdOverviewSection: React.FC = () => {
     },
     {
       id: "display",
-      icon: "https://c.animaapp.com/ugwxqeDI/img/monitor.svg",
+      icon: "/Google/ca/monitor.svg",
       title: "Display Ads",
       description:
         "Visually engaging banner ads shown across millions of websites, blogs, and apps in Google's Display Network.",
@@ -70,7 +70,7 @@ export const AdOverviewSection: React.FC = () => {
     },
     {
       id: "shopping",
-      icon: "https://c.animaapp.com/ugwxqeDI/img/shopping-cart.svg",
+      icon: "/Google/ca/shopping-cart.svg",
       title: "Shopping Ads",
       emoji: "🛍",
       description:
@@ -84,7 +84,7 @@ export const AdOverviewSection: React.FC = () => {
     },
     {
       id: "app",
-      icon: "https://c.animaapp.com/ugwxqeDI/img/smartphone.svg",
+      icon: "/Google/ca/smartphone.svg",
       title: "App Campaigns",
       badge: "Promote Mobile Apps",
       description:
@@ -99,9 +99,9 @@ export const AdOverviewSection: React.FC = () => {
   ];
 
   const productImages: string[] = [
-    "https://c.animaapp.com/ugwxqeDI/img/shape@2x.png",
-    "https://c.animaapp.com/ugwxqeDI/img/shape-1@2x.png",
-    "https://c.animaapp.com/ugwxqeDI/img/shape-2@2x.png",
+    "/Google/ca/shape@2x.png",
+    "/Google/ca/shape-1@2x.png",
+    "/Google/ca/shape-2@2x.png",
   ];
 
   const barChartData: BarChart[] = [
@@ -117,7 +117,7 @@ export const AdOverviewSection: React.FC = () => {
           <img
             className="relative w-[15px] h-[15px]"
             alt="Stars"
-            src="https://c.animaapp.com/ugwxqeDI/img/stars-2.svg"
+            src="/Google/ca/stars-2.svg"
           />
           <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
             Smart ads, real results.
@@ -177,10 +177,10 @@ export const AdOverviewSection: React.FC = () => {
                   <img
                     className="absolute w-[321px] h-[52px] top-[35px] -left-px mix-blend-multiply"
                     alt="Search results chart"
-                    src="https://c.animaapp.com/ugwxqeDI/img/path-2.svg"
+                    src="/Google/ca/path-2.svg"
                   />
                   <div className="absolute w-[39px] h-[27px] top-0 left-[241px]">
-                    <div className="relative w-16 h-[55px] -top-3 -left-3.5 bg-[url(https://c.animaapp.com/ugwxqeDI/img/combined-shape-1.svg)] bg-[100%_100%]">
+                    <div className="relative w-16 h-[55px] -top-3 -left-3.5 bg-[url(/Google/ca/combined-shape-1.svg)] bg-[100%_100%]">
                       <div className="w-[30px] top-3.5 left-5 text-[10.3px] tracking-[0.43px] leading-[17.2px] absolute [font-family:'Roboto',Helvetica] font-medium text-[#414d55] text-center whitespace-nowrap">
                         62
                       </div>
@@ -382,7 +382,7 @@ export const AdOverviewSection: React.FC = () => {
             <img
               className="relative w-5 h-5"
               alt="Arrow right"
-              src="https://c.animaapp.com/ugwxqeDI/img/arrow-right-1.svg"
+              src="/Google/ca/arrow-right-1.svg"
             />
           </div>
         </button>
@@ -394,7 +394,7 @@ export const AdOverviewSection: React.FC = () => {
           <img
             className="relative w-5 h-5"
             alt="Arrow right"
-            src="https://c.animaapp.com/ugwxqeDI/img/arrow-right-2.svg"
+            src="/Google/ca/arrow-right-2.svg"
           />
         </button>
       </footer>

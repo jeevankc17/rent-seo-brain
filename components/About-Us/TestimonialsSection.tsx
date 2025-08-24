@@ -8,7 +8,7 @@ const TestimonialsSection: React.FC = () => {
                     <img
                         className="relative w-[15px] h-[15px]"
                         alt="Stars"
-                        src="https://c.animaapp.com/zvzHaAwZ/img/stars-2.svg"
+                        src="/About/ca/stars-2.svg"
                     />
 
                     <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
@@ -49,20 +49,20 @@ const TestimonialsSection: React.FC = () => {
                         <img
                             className="absolute w-[528px] h-[567px] top-1.5 left-3.5"
                             alt="Background pattern"
-                            src="https://c.animaapp.com/zvzHaAwZ/img/background-pattern.svg"
+                            src="/About/ca/background-pattern.svg"
                         />
 
                         <img
                             className="absolute w-[506px] h-[511px] top-0 left-3.5 aspect-[0.99]"
                             alt="Marketing agency team member"
-                            src="https://c.animaapp.com/zvzHaAwZ/img/image-2.png"
+                            src="/About/ca/image-2.png"
                         />
 
                         <div className="flex w-[221px] items-center gap-[11.94px] px-[12.61px] py-[16.66px] absolute top-[27px] left-0 bg-neutral-0 rounded-[9.95px] border-[0.88px] border-solid border-primary-400 shadow-[0px_3.51px_11.05px_#2e97ffa1]">
                             <img
                                 className="relative w-6 h-6 aspect-[1]"
                                 alt="Location icon"
-                                src="https://c.animaapp.com/zvzHaAwZ/img/component-2-variant3.svg"
+                                src="/About/ca/component-2-variant3.svg"
                             />
 
                             <div className="flex flex-col w-[149.31px] items-start gap-[7.89px] relative">
@@ -79,7 +79,7 @@ const TestimonialsSection: React.FC = () => {
                         <img
                             className="absolute w-[252px] h-[66px] top-[418px] left-[137px]"
                             alt="Statistics frame"
-                            src="https://c.animaapp.com/zvzHaAwZ/img/frame-2121457620.svg"
+                            src="/About/ca/frame-2121457620.svg"
                         />
                     </div>
                 </div>

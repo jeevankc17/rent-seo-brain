@@ -149,7 +149,7 @@ export const ArticleCardsSection: React.FC = () => {
 						<img
 							className="relative w-4 h-4"
 							alt="Clock icon"
-							src="https://c.animaapp.com/VIaP56iJ/img/clock-2.svg"
+							src="/Blog/ca/clock-2.svg"
 						/>
 
 						<span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-xs tracking-[0] leading-[23px] whitespace-nowrap">
@@ -185,7 +185,7 @@ export const ArticleCardsSection: React.FC = () => {
 						<img
 							className="relative w-6 h-6 mt-[-1.50px] mb-[-1.50px] ml-[-1.50px] mr-[-1.50px]"
 							alt="Arrow up right"
-							src="https://c.animaapp.com/VIaP56iJ/img/arrow-up-right-5.svg"
+							src="/Blog/ca/arrow-up-right-5.svg"
 						/>
 					</button>
 				</footer>
@@ -229,7 +229,7 @@ export const ArticleCardsSection: React.FC = () => {
 					<img
 						className="relative w-[13px] h-[13px]"
 						alt="Search icon"
-						src="https://c.animaapp.com/VIaP56iJ/img/search.svg"
+						src="/Blog/ca/search.svg"
 					/>
 
 					<input

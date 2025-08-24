@@ -24,7 +24,7 @@ export const BlogSuggestionsSection: React.FC = () => {
   const blogPosts: BlogPost[] = [
     {
       id: 1,
-      image: "https://c.animaapp.com/tbvdk4DW/img/frame-2121458395.svg",
+      image: "/read-blog/ca/frame-2121458395.svg",
       tags: [
         {
           text: "Technical SEO",
@@ -43,16 +43,16 @@ export const BlogSuggestionsSection: React.FC = () => {
       description:
         "Master the latest Google Core Web Vitals requirements and boost your site's performance with our comprehensive optimization strategies that actually work.",
       readTime: "12 min read",
-      clockIcon: "https://c.animaapp.com/tbvdk4DW/img/clock-1.svg",
+      clockIcon: "/read-blog/ca/clock-1.svg",
       author: {
         name: "Alex Thompson",
         title: "Senior SEO Strategist",
-        avatar: "https://c.animaapp.com/tbvdk4DW/img/shape-3@2x.png",
+        avatar: "/read-blog/ca/shape-3@2x.png",
       },
     },
     {
       id: 2,
-      image: "https://c.animaapp.com/tbvdk4DW/img/frame-2121458395-1.svg",
+      image: "/read-blog/ca/frame-2121458395-1.svg",
       tags: [
         {
           text: "Trending",
@@ -71,16 +71,16 @@ export const BlogSuggestionsSection: React.FC = () => {
       description:
         "Complete actionable checklist to improve your local search rankings and attract more customers in your area with proven strategies.",
       readTime: "12 min read",
-      clockIcon: "https://c.animaapp.com/tbvdk4DW/img/clock-2.svg",
+      clockIcon: "/read-blog/ca/clock-2.svg",
       author: {
         name: "Alex Thompson",
         title: "Senior SEO Strategist",
-        avatar: "https://c.animaapp.com/tbvdk4DW/img/shape-3@2x.png",
+        avatar: "/read-blog/ca/shape-3@2x.png",
       },
     },
     {
       id: 3,
-      image: "https://c.animaapp.com/tbvdk4DW/img/frame-2121458395-2.svg",
+      image: "/read-blog/ca/frame-2121458395-2.svg",
       tags: [
         {
           text: "Technical SEO",
@@ -99,11 +99,11 @@ export const BlogSuggestionsSection: React.FC = () => {
       description:
         "Master the latest Google Core Web Vitals requirements and boost your site's performance with our comprehensive optimization strategies that actually work.",
       readTime: "12 min read",
-      clockIcon: "https://c.animaapp.com/tbvdk4DW/img/clock-3.svg",
+      clockIcon: "/read-blog/ca/clock-3.svg",
       author: {
         name: "Alex Thompson",
         title: "Senior SEO Strategist",
-        avatar: "https://c.animaapp.com/tbvdk4DW/img/shape-3@2x.png",
+        avatar: "/read-blog/ca/shape-3@2x.png",
       },
     },
   ];

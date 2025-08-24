@@ -6,13 +6,13 @@ export const IndustryLeadersSection : React.FC = () => {
       id: 1,
       name: "Google Cpc",
       price: "$1.34",
-      icon: "https://c.animaapp.com/XixDVTem/img/ellipse-1667@2x.png",
+      icon: "/Google/ca/ellipse-1667@2x.png",
     },
     {
       id: 2,
       name: "Meta Cpm",
       price: "$9.80",
-      icon: "https://c.animaapp.com/XixDVTem/img/ellipse-1668@2x.png",
+      icon: "/Google/ca/ellipse-1668@2x.png",
     },
   ];
 
@@ -21,7 +21,7 @@ export const IndustryLeadersSection : React.FC = () => {
       id: 1,
       title: "Snapchat",
       value: "679,7k reach",
-      icon: "https://c.animaapp.com/XixDVTem/img/image-71@2x.png",
+      icon: "/Google/ca/image-71@2x.png",
       position: { top: "197px", left: "0" },
       bgColor: "#ffff00",
     },
@@ -29,7 +29,7 @@ export const IndustryLeadersSection : React.FC = () => {
       id: 2,
       title: "Trusted Clients",
       value: "124,89K+",
-      icon: "https://c.animaapp.com/XixDVTem/img/frame-2121457471.svg",
+      icon: "/Google/ca/frame-2121457471.svg",
       position: { top: "200px", left: "934px" },
       bgColor: null,
     },
@@ -45,13 +45,13 @@ export const IndustryLeadersSection : React.FC = () => {
         <img
           className="absolute top-[174px] left-[275px] w-[52px] h-[52px]"
           alt="History icon"
-          src="https://c.animaapp.com/XixDVTem/img/history.svg"
+          src="/Google/ca/history.svg"
         />
 
         <img
           className="absolute top-[174px] left-[834px] w-[52px] h-[52px]"
           alt="History icon"
-          src="https://c.animaapp.com/XixDVTem/img/history-1.svg"
+          src="/Google/ca/history-1.svg"
         />
 
         {statsData.map((stat) => (
@@ -141,7 +141,7 @@ export const IndustryLeadersSection : React.FC = () => {
                           <img
                             className="absolute w-[9px] h-[5px] top-1.5 left-1"
                             alt="Dropdown arrow"
-                            src="https://c.animaapp.com/XixDVTem/img/down-line-1.svg"
+                            src="/Google/ca/down-line-1.svg"
                           />
                         </div>
                       </div>
@@ -157,7 +157,7 @@ export const IndustryLeadersSection : React.FC = () => {
               <img
                 className="absolute w-[42px] h-[42px] top-[58px] left-[180px]"
                 alt="Campaign optimization icon"
-                src="https://c.animaapp.com/XixDVTem/img/frame-2121454247.svg"
+                src="/Google/ca/frame-2121454247.svg"
               />
             </div>
           </header>
@@ -182,7 +182,7 @@ export const IndustryLeadersSection : React.FC = () => {
             <img
               className="relative w-6 h-6"
               alt="Growth indicator"
-              src="https://c.animaapp.com/XixDVTem/img/frame-1.svg"
+              src="/Google/ca/frame-1.svg"
             />
           </div>
         </div>

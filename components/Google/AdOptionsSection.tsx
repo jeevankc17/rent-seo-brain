@@ -39,7 +39,7 @@ export const AdOptionsSection: React.FC = () => {
             subtitle: "right customers at the right time.",
             bgColor: "primary-300",
             textColor: "primary-50",
-            icon: "https://c.animaapp.com/ugwxqeDI/img/crypto-icon.svg",
+            icon: "/Google/ca/crypto-icon.svg",
             position: { top: "130px", left: "134px" },
         },
         {
@@ -51,7 +51,7 @@ export const AdOptionsSection: React.FC = () => {
             bgColor: "primary-50",
             textColor: "primary-font",
             secondaryTextColor: "secondary-font",
-            icon: "https://c.animaapp.com/ugwxqeDI/img/crypto-icon-1.svg",
+            icon: "/Google/ca/crypto-icon-1.svg",
             position: { top: "336px", left: "134px" },
             opacity: "opacity-50",
         },
@@ -64,7 +64,7 @@ export const AdOptionsSection: React.FC = () => {
                     <img
                         className="relative w-[15px] h-[15px]"
                         alt="Stars icon"
-                        src="https://c.animaapp.com/ugwxqeDI/img/stars-2.svg"
+                        src="/Google/ca/stars-2.svg"
                     />
                     <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
                         How Google Ads Help Businesses
@@ -95,7 +95,7 @@ export const AdOptionsSection: React.FC = () => {
                                 <img
                                     className="relative w-[26px] h-[26px]"
                                     alt="Checkmark icon"
-                                    src="https://c.animaapp.com/ugwxqeDI/img/frame-2121457509-3.svg"
+                                    src="/Google/ca/frame-2121457509-3.svg"
                                 />
                                 <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-600 text-lg tracking-[0] leading-[normal]">
                                     {benefit}
@@ -112,7 +112,7 @@ export const AdOptionsSection: React.FC = () => {
                             <img
                                 className="relative w-5 h-5"
                                 alt="Arrow right icon"
-                                src="https://c.animaapp.com/ugwxqeDI/img/arrow-right-3.svg"
+                                src="/Google/ca/arrow-right-3.svg"
                             />
                         </div>
                     </button>
@@ -203,7 +203,7 @@ export const AdOptionsSection: React.FC = () => {
 
                     <div className="flex w-[343px] h-[77px] items-center justify-between px-[15.17px] py-[16.55px] absolute top-[340px] left-[286px] bg-white rounded-[11.03px] border-[0.69px] border-solid border-black shadow-[0px_2.76px_0px_#ff9800]">
                         <div className="inline-flex items-center gap-[13.79px] relative flex-[0_0_auto]">
-                            <div className="bg-[url(https://c.animaapp.com/ugwxqeDI/img/crypto-icon-2.svg)] relative w-[39px] h-[39px] rounded-[18px] bg-cover bg-[50%_50%]" />
+                            <div className="bg-[url(/Google/ca/vector-1-1.svg)] relative w-[14px] h-[24px] bg-cover bg-[50%_50%]" />
                             <div className="inline-flex flex-col items-start gap-[2.76px] relative flex-[0_0_auto]">
                                 <div className="relative w-fit mt-[-0.69px] [font-family:'Urbanist',Helvetica] font-medium text-primary-font text-sm tracking-[0] leading-[16.8px] whitespace-nowrap">
                                     Click. Convert. Repeat.
@@ -226,10 +226,10 @@ export const AdOptionsSection: React.FC = () => {
                     <img
                         className="absolute w-[313px] h-[442px] top-0 left-0 aspect-[0.71]"
                         alt="Professional woman using mobile phone for business"
-                        src="https://c.animaapp.com/ugwxqeDI/img/image-56@2x.png"
+                        src="/Google/ca/image-56@2x.png"
                     />
                 </div>
             </div>
         </section>
     );
-};
+}

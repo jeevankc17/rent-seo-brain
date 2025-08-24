@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export const SuccessStoriesSection: React.FC = () => {
   const starImages = [
-    "https://c.animaapp.com/OvIeBSPV/img/star-filled.svg",
-    "https://c.animaapp.com/OvIeBSPV/img/star-filled-1.svg",
-    "https://c.animaapp.com/OvIeBSPV/img/star-filled-2.svg",
-    "https://c.animaapp.com/OvIeBSPV/img/star-filled-3.svg",
-    "https://c.animaapp.com/OvIeBSPV/img/star-filled-4.svg",
+    "/Home-Page/ca/star-filled.svg",
+    "/Home-Page/ca/star-filled-1.svg",
+    "/Home-Page/ca/star-filled-2.svg",
+    "/Home-Page/ca/star-filled-3.svg",
+    "/Home-Page/ca/star-filled-4.svg",
   ];
 
   const statsData = [
     {
-      icon: "https://c.animaapp.com/OvIeBSPV/img/trending-up-1.svg",
+      icon: "/Home-Page/ca/trending-up-1.svg",
       iconAlt: "Trending up",
       value: "214%",
       title: "Traffic Growth",
@@ -20,7 +20,7 @@ export const SuccessStoriesSection: React.FC = () => {
       position: "top-0 left-[99px]",
     },
     {
-      icon: "https://c.animaapp.com/OvIeBSPV/img/eye.svg",
+      icon: "/Home-Page/ca/eye.svg",
       iconAlt: "Eye",
       value: "4x",
       title: "More Pageviews",
@@ -28,7 +28,7 @@ export const SuccessStoriesSection: React.FC = () => {
       position: "top-48 left-0",
     },
     {
-      icon: "https://c.animaapp.com/OvIeBSPV/img/user-check.svg",
+      icon: "/Home-Page/ca/user-check.svg",
       iconAlt: "User check",
       value: "3x",
       title: "Lead Generation",
@@ -45,7 +45,7 @@ export const SuccessStoriesSection: React.FC = () => {
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
-              src="https://c.animaapp.com/OvIeBSPV/img/stars-1.svg"
+              src="/Home-Page/ca/stars-1.svg"
             />
 
             <div className="relative w-[132px] mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-sm tracking-[0] leading-[23px]">
@@ -156,7 +156,7 @@ export const SuccessStoriesSection: React.FC = () => {
             <img
               className="absolute w-[314px] h-[382px] top-14 left-0"
               alt="Analytics chart visualization"
-              src="https://c.animaapp.com/OvIeBSPV/img/frame-2121458223.svg"
+              src="/Home-Page/ca/frame-2121458223.svg"
             />
           </div>
         </div>

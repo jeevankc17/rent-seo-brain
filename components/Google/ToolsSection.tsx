@@ -4,61 +4,61 @@ export const ToolsSection: React.FC = () => {
     const toolsData = [
         {
             id: 1,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46@2x.png",
+            src: "/Google/ca/image-46@2x.png",
             alt: "Tool 1",
             width: "w-[22.47px]",
         },
         {
             id: 2,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46-4@2x.png",
+            src: "/Google/ca/image-46-4@2x.png",
             alt: "Tool 2",
             width: "w-[89.95px]",
         },
         {
             id: 3,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46-6@2x.png",
+            src: "/Google/ca/image-46-6@2x.png",
             alt: "Tool 3",
             width: "w-[89.95px]",
         },
         {
             id: 4,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46-3@2x.png",
+            src: "/Google/ca/image-46-3@2x.png",
             alt: "Tool 4",
             width: "w-[89.95px]",
         },
         {
             id: 5,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46-4@2x.png",
+            src: "/Google/ca/image-46-4@2x.png",
             alt: "Tool 5",
             width: "w-[89.95px]",
         },
         {
             id: 6,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46-5@2x.png",
+            src: "/Google/ca/image-46-5@2x.png",
             alt: "Tool 6",
             width: "w-[89.95px]",
         },
         {
             id: 7,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46-6@2x.png",
+            src: "/Google/ca/image-46-6@2x.png",
             alt: "Tool 7",
             width: "w-[89.95px]",
         },
         {
             id: 8,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46-8@2x.png",
+            src: "/Google/ca/image-46-8@2x.png",
             alt: "Tool 8",
             width: "w-[89.95px]",
         },
         {
             id: 9,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46-8@2x.png",
+            src: "/Google/ca/image-46-8@2x.png",
             alt: "Tool 9",
             width: "w-[89.95px]",
         },
         {
             id: 10,
-            src: "https://c.animaapp.com/1pza1gM1/img/image-46-9@2x.png",
+            src: "/Google/ca/image-46-9@2x.png",
             alt: "Tool 10",
             width: "w-[67.48px]",
         },
@@ -72,7 +72,7 @@ export const ToolsSection: React.FC = () => {
                         <img
                             className="relative w-[15px] h-[15px]"
                             alt="Stars"
-                            src="https://c.animaapp.com/1pza1gM1/img/stars-2.svg"
+                            src="/Google/ca/stars-2.svg"
                         />
 
                         <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">

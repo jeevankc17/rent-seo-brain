@@ -4,40 +4,40 @@ export const ProcessSection : React.FC = () =>  {
   const processCards = [
     {
       id: 1,
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/activity-2.svg",
+      icon: "/lp/ca/activity-2.svg",
       title: "Hero Section",
       subtitle: "First Impression & Value Prop",
       improvement: "+127% avg. improvement",
       improvementColor: "primary-300",
       improvementBg: "#e8f4ff21",
       improvementBorder: "primary-300",
-      chart: "https://c.animaapp.com/YaTVIQjZ/img/frame-2121458145.svg",
+      chart: "/lp/ca/frame-2121458145.svg",
     },
     {
       id: 2,
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/target-1.svg",
+      icon: "/lp/ca/target-1.svg",
       title: "Features Section",
       subtitle: "Benefits & Solutions",
       improvement: "Benefits & Solutions",
       improvementColor: "#00b45c",
       improvementBg: "#00b45c14",
       improvementBorder: "#00b45c",
-      chart: "https://c.animaapp.com/YaTVIQjZ/img/frame-2121458145-1.svg",
+      chart: "/lp/ca/frame-2121458145-1.svg",
     },
     {
       id: 3,
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/user-check.svg",
+      icon: "/lp/ca/user-check.svg",
       title: "Social Proof",
       subtitle: "Testimonials & Reviews",
       improvement: "+156% avg. improvement",
       improvementColor: "#bca1e8",
       improvementBg: "#a386d359",
       improvementBorder: "#a386d3",
-      chart: "https://c.animaapp.com/YaTVIQjZ/img/frame-2121458145-2.svg",
+      chart: "/lp/ca/frame-2121458145-2.svg",
     },
     {
       id: 4,
-      icon: "https://c.animaapp.com/YaTVIQjZ/img/trending-up-6.svg",
+      icon: "/lp/ca/trending-up-6.svg",
       title: "Call-to-Action",
       subtitle: "Conversion & Sign-up",
       improvement: "+203% avg. improvement",
@@ -62,7 +62,7 @@ export const ProcessSection : React.FC = () =>  {
               <img
                 className="relative w-[15px] h-[15px]"
                 alt="Stars icon"
-                src="https://c.animaapp.com/YaTVIQjZ/img/stars-2.svg"
+                src="/lp/ca/stars-2.svg"
               />
               <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-50 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
                 Landing Page Anatomy
@@ -120,7 +120,7 @@ export const ProcessSection : React.FC = () =>  {
                         <img
                           className="relative w-4 h-4"
                           alt="Trending up icon"
-                          src={`https://c.animaapp.com/YaTVIQjZ/img/trending-up-${card.id === 1 ? "3" : card.id === 2 ? "4" : card.id === 3 ? "5" : "7"}.svg`}
+                          src={`/lp/ca/trending-up-${card.id === 1 ? "3" : card.id === 2 ? "4" : card.id === 3 ? "5" : "7"}.svg`}
                         />
                         <span
                           className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-xs tracking-[0] leading-[23px] whitespace-nowrap"
@@ -158,7 +158,7 @@ export const ProcessSection : React.FC = () =>  {
             <img
               className="absolute w-[870px] h-[203px] top-0 left-[143px]"
               alt="Process flow diagram"
-              src="https://c.animaapp.com/YaTVIQjZ/img/frame-2121458157.svg"
+              src="/lp/ca/frame-2121458157.svg"
             />
           </div>
 
@@ -171,7 +171,7 @@ export const ProcessSection : React.FC = () =>  {
                 <img
                   className="relative w-5 h-5"
                   alt="Arrow right icon"
-                  src="https://c.animaapp.com/YaTVIQjZ/img/arrow-right-3.svg"
+                  src="/lp/ca/arrow-right-3.svg"
                 />
               </div>
             </button>
@@ -183,7 +183,7 @@ export const ProcessSection : React.FC = () =>  {
               <img
                 className="relative w-5 h-5"
                 alt="Arrow right icon"
-                src="https://c.animaapp.com/YaTVIQjZ/img/arrow-right-4.svg"
+                src="/lp/ca/arrow-right-4.svg"
               />
             </button>
           </div>

@@ -4,24 +4,24 @@ const testimonialData = {
   quote:
     "Our Google Ads conversion rate jumped from 2.8% to 7.4% after launching a page designed by Rent SEO Brain.",
   author: "Ramesh D., Co-founder, SaaS Growlytics",
-  avatar: "https://c.animaapp.com/YInPS6Dh/img/avatar-6@2x.png",
+  avatar: "/lp/ca/avatar-6@2x.png",
 };
 
 const performanceMetrics = [
   {
     label: "Click-through Rate",
     value: "12.4%",
-    icon: "https://c.animaapp.com/YInPS6Dh/img/arrow-up.svg",
+    icon: "/lp/ca/arrow-up.svg",
   },
   {
     label: "Bounce Rate",
     value: "23.1%",
-    icon: "https://c.animaapp.com/YInPS6Dh/img/arrow-up-1.svg",
+    icon: "/lp/ca/arrow-up-1.svg",
   },
   {
     label: "Avg. Session Duration",
     value: "4:3",
-    icon: "https://c.animaapp.com/YInPS6Dh/img/arrow-up-2.svg",
+    icon: "/lp/ca/arrow-up-2.svg",
   },
 ];
 
@@ -37,17 +37,17 @@ const mobileMetrics = [
   {
     label: "Core Web Vitals",
     value: "65/100",
-    icon: "https://c.animaapp.com/YInPS6Dh/img/arrow-up-3.svg",
+    icon: "/lp/ca/arrow-up-3.svg",
   },
   {
     label: "Mobile Score",
     value: "56/100",
-    icon: "https://c.animaapp.com/YInPS6Dh/img/arrow-up-4.svg",
+    icon: "/lp/ca/arrow-up-4.svg",
   },
   {
     label: "Seo Imapct",
     value: "+23%",
-    icon: "https://c.animaapp.com/YInPS6Dh/img/arrow-up-5.svg",
+    icon: "/lp/ca/arrow-up-5.svg",
   },
 ];
 
@@ -69,7 +69,7 @@ export const ClientResultsSection: React.FC = () => {
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
-              src="https://c.animaapp.com/YInPS6Dh/img/stars.svg"
+              src="/lp/ca/stars.svg"
             />
             <p className="relative w-[232px] mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-75 text-sm tracking-[0] leading-[23px]">
               Landing Page Results We&#39;ve Delivered

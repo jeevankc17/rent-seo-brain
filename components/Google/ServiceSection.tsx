@@ -27,9 +27,9 @@ export const ServicesSection: React.FC = () => {
 
     // Data for user avatars
     const userAvatars = [
-        "https://c.animaapp.com/1pza1gM1/img/shape@2x.png",
-        "https://c.animaapp.com/1pza1gM1/img/shape-1@2x.png",
-        "https://c.animaapp.com/1pza1gM1/img/shape-2@2x.png",
+        "/Google/ca/shape@2x.png",
+        "/Google/ca/shape-1@2x.png",
+        "/Google/ca/shape-2@2x.png",
     ];
 
     return (
@@ -39,7 +39,7 @@ export const ServicesSection: React.FC = () => {
                     <img
                         className="relative w-[15px] h-[15px]"
                         alt="Stars"
-                        src="https://c.animaapp.com/1pza1gM1/img/stars.svg"
+                        src="/Google/ca/stars.svg"
                     />
 
                     <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
@@ -82,12 +82,12 @@ export const ServicesSection: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="relative w-[528px] h-[567px] mr-[-18.00px] bg-[url(https://c.animaapp.com/1pza1gM1/img/background-pattern.svg)] bg-[100%_100%]">
+                    <div className="relative w-[528px] h-[567px] mr-[-18.00px] bg-[url(/Google/ca/background-pattern.svg)] bg-[100%_100%]">
                         <div className="flex w-[350px] items-center gap-[13.11px] px-[21.85px] py-2.5 absolute top-[26px] left-0 bg-grey-50 rounded-[21.85px] shadow-[0px_3.06px_6.89px_#0083ff36]">
                             <img
                                 className="relative w-[56.81px] h-[56.81px]"
                                 alt="History"
-                                src="https://c.animaapp.com/1pza1gM1/img/history.svg"
+                                src="/Google/ca/history.svg"
                             />
 
                             <div className="flex w-[134.38px] gap-[4.37px] flex-col items-start relative">
@@ -183,7 +183,7 @@ export const ServicesSection: React.FC = () => {
                             <img
                                 className="relative w-5 h-5"
                                 alt="Arrow right"
-                                src="https://c.animaapp.com/1pza1gM1/img/arrow-right.svg"
+                                src="/Google/ca/arrow-right.svg"
                             />
                         </div>
                     </button>
@@ -196,7 +196,7 @@ export const ServicesSection: React.FC = () => {
                         <img
                             className="relative w-5 h-5"
                             alt="Arrow right"
-                            src="https://c.animaapp.com/1pza1gM1/img/arrow-right-1.svg"
+                            src="/Google/ca/arrow-right-1.svg"
                         />
                     </button>
                 </div>
