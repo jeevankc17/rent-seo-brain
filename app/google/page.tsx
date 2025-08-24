@@ -20,9 +20,6 @@ import Wireframe from "@components/Landing-Page/Wireframe";
 export default function Home() {
   return (
     <main className="flex flex-col items-center bg-white gap-[132px] pb-[132px]">
-      {/* <section className="relative w-full h-[960px] bg-neutral-900">
-        <HeroSection />
-      </section> */}
       <section className="relative w-full h-[960px] bg-neutral-900">
         <GoogleLP />
       </section>
@@ -56,9 +53,6 @@ export default function Home() {
       <section className="relative w-full h-[506px] px-[156px] ">
         <ToolsIntegrationSection />
       </section>
-      {/* <section className="relative w-full h-[733px] px-[156px] ">
-        <TestimonialsSection />
-      </section> */}
       <section className="relative w-full h-[821px] px-[156px] ">
         <StatsSection />
       </section>

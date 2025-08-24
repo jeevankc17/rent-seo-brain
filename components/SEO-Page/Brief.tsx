@@ -9,7 +9,7 @@ const Brief = () => {
         <div className="flex flex-col justify-center items-start gap-4 w-full relative">
           {/* Badge */}
           <div className="flex w-fit max-w-full p-[5px_0] justify-center items-center gap-[6px] rounded-[45px] border border-[#F78C01] relative mx-auto lg:mx-0">
-            <div className="flex w-fit px-3 py-1 justify-center items-center gap-[6px] flex-shrink-0 rounded-[45px] border-[0.2px] border-[#F8A02C] bg-[#FEF4E6] relative">
+            <div className="flex w-fit px-3 mx-2 py-1 justify-center items-center gap-[6px] flex-shrink-0 rounded-[45px] border-[0.2px] border-[#F8A02C] bg-[#FEF4E6] relative">
               <svg
                 className="w-[15px] h-[15px] flex-shrink-0 relative"
                 width="15"

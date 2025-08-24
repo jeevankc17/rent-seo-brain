@@ -51,7 +51,7 @@ export const StatsSection: React.FC = () => {
           <img
             className="relative w-[15px] h-[15px]"
             alt="Stars"
-            src="https://c.animaapp.com/XixDVTem/img/stars-2.svg"
+            src="/SEO/ca/stars-2.svg"
           />
 
           <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
@@ -120,8 +120,8 @@ export const StatsSection: React.FC = () => {
                     alt={item.isExpanded ? "Collapse" : "Expand"}
                     src={
                       item.isExpanded
-                        ? "https://c.animaapp.com/XixDVTem/img/line-rounded-chevron-down.svg"
-                        : "https://c.animaapp.com/XixDVTem/img/line-rounded-chevron-right-2.svg"
+                        ? "/SEO/ca/line-rounded-chevron-down.svg"
+                        : "/SEO/ca/line-rounded-chevron-right-2.svg"
                     }
                   />
                 </button>
@@ -152,7 +152,7 @@ export const StatsSection: React.FC = () => {
               <img
                 className="relative w-5 h-5"
                 alt="Arrow right"
-                src="https://c.animaapp.com/XixDVTem/img/arrow-right-2.svg"
+                src="/SEO/ca/arrow-right-2.svg"
               />
             </div>
           </button>

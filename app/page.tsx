@@ -12,6 +12,8 @@ import { KeyMetricsSection } from "@components/Home-Page/KeyMetricsSection";
 import ImageSection from "@components/Home-Page/ImageSection";
 import { CoreServicesSection } from "@components/Home-Page/CoreServicesSection";
 import { FAQSection } from "@components/Home-Page/HPFAQSection";
+// import { FAQSection } from "@components/Google/FAQSection";
+
 import { StatisticsSection } from "@components/Home-Page/StatisticsSection";
 import { Testimonial } from "@components/Home-Page/Testimonial";
 import { ToolsSection } from "@components/Home-Page/ToolsSection";
@@ -24,46 +26,46 @@ export default function Home() {
       <section className="relative w-full h-[922px]">
         <HeroSection />
       </section>
-      <section className="relative bg-grey-100 ">
+      <section className="relative w-full bg-grey-100 ">
         <HomePageFeatures />
       </section>
-      <section className="relative  bg-grey-100 h-[525px]  px-[157px]">
+      <section className="relative  bg-grey-100 h-[525px]  w-full px-[157px]">
         <Proposition />
       </section>
-      <section className="relative bg-grey-100 ">
+      <section className="relative bg-grey-100 w-full">
         <DeepDive />
       </section>
-      <section className="relative bg-grey-100   px-[156px]">
+      <section className="relative bg-grey-100 w-full px-[156px]">
         <CoreServicesSection />
       </section>
-      <section className="relative bg-grey-100 px-[156px]">
+      <section className="relative bg-grey-100 w-full px-[156px]">
         <KeyMetricsSection />
       </section>
-      <section className="relative bg-neutral-900  py-[106px] px-[266.5px]">
+      <section className="relative bg-neutral-900 w-full  py-[106px] px-[266.5px]">
         <IdeasToContent />
       </section>
-      <section className="relative bg-grey-100  px-[156px]">
+      <section className="relative w-full bg-grey-100  px-[156px]">
         <SuccessStoriesSection />
       </section>
       <section className="relative w-full h-[519px] ">
         <ToolsSection />
       </section>
-      <section className="relative bg-grey-100  px-[156px]">
+      <section className="relative w-full bg-grey-100  px-[156px]">
         <StatisticsSection />
       </section>
-      <section className="relative bg-[#eeeeee]  px-[156px]">
+      <section className="relative bg-[#eeeeee] w-full px-[156px]">
         <LatestBlogsSection />
       </section>
-      <section className="relative bg-grey-100  px-[156px]">
+      <section className="relative bg-grey-100 w-full px-[156px]">
         <HaveQuestions />
       </section>
-      <section className="relative bg-neutral-900">
+      <section className="relative w-full bg-neutral-900">
         <FAQSection />
       </section>
-      <section className="relative bg-grey-100  px-[156px]">
+      <section className="relative bg-grey-100 w-full px-[156px]">
         <TestimonialsSection />
       </section>
-      <section className="relative bg-grey-100  px-[156px]">
+      <section className="relative bg-grey-100 w-full px-[156px]">
         <Testimonial />
       </section>
     </main>

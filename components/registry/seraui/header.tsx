@@ -3,7 +3,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import Button from "./button";
-import { ArrowRight, ChevronDown, Menu as MenuIcon, X as XIcon } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronDown,
+  Menu as MenuIcon,
+  X as XIcon,
+} from "lucide-react";
 import { DropdownMenu, DropdownMenuItem } from "./Dropdown";
 
 const Header = () => {
@@ -22,10 +27,9 @@ const Header = () => {
         { href: "/cms", label: "CMS" },
         { href: "/seo", label: "SEO" },
         { href: "/contact", label: "Contact" },
-        { href: "/blog", label: "Blog" },
       ],
     },
-    { href: "/blogs", label: "Blog" },
+    { href: "/blog", label: "Blog" },
   ];
 
   const toggleTheme = () => {
@@ -39,7 +43,7 @@ const Header = () => {
         <div className="flex h-[80px] md:h-[119px] items-center justify-between py-4 md:py-[27px]">
           {/* Logo */}
           <div className="flex shrink-0 items-center">
-            <a href="#" className="flex items-center gap-2">
+            <a href="/" className="flex items-center gap-2">
               <img
                 src="/logo.png"
                 alt="Logo"
@@ -109,7 +113,11 @@ const Header = () => {
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Toggle menu</span>
-              {isMenuOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <XIcon className="h-6 w-6" />
+              ) : (
+                <MenuIcon className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -117,7 +125,9 @@ const Header = () => {
         {/* Mobile Menu Dropdown */}
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+            isMenuOpen
+              ? "max-h-96 opacity-100"
+              : "max-h-0 opacity-0 overflow-hidden"
           }`}
         >
           <div className="space-y-2 px-4 pb-4 pt-2">

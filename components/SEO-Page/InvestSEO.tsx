@@ -2640,7 +2640,7 @@ const InvestSEO = () => {
                 <img
                   className="relative w-5 h-5"
                   alt=""
-                  src="https://c.animaapp.com/zvzHaAwZ/img/arrow-right-2.svg"
+                  src="/SEO/ca/arrow-right-2.svg"
                   aria-hidden="true"
                 />
               </button>
