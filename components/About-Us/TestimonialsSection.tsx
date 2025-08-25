@@ -2,9 +2,9 @@ import React from "react";
 
 const TestimonialsSection: React.FC = () => {
     return (
-        <section className="inline-flex items-start gap-12 relative flex-[0_0_auto]">
-            <div className="flex flex-col w-[552px] items-start gap-4 relative">
-                <div className="flex w-[171px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
+        <section className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12 relative flex-[0_0_auto] w-full px-4 sm:px-6 md:px-8 max-w-[1128px] mx-auto">
+            <div className="flex flex-col w-full lg:w-[552px] items-start gap-4 relative">
+                <div className="flex w-[171px] sm:w-[140px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
                     <img
                         className="relative w-[15px] h-[15px]"
                         alt="Stars"
@@ -17,18 +17,18 @@ const TestimonialsSection: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col items-start gap-[18px] relative self-stretch w-full flex-[0_0_auto]">
-                    <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] tracking-[0] leading-[57px]">
+                    <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[32px] sm:text-[40px] lg:text-[50px] tracking-[0] leading-[38px] sm:leading-[46px] lg:leading-[57px]">
                         More Than a Marketing Agency
                     </h2>
 
-                    <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-base tracking-[0] leading-[30px]">
-                        <p className="mb-[30px]">
+                    <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-base sm:text-lg tracking-[0] leading-[26px] sm:leading-[30px]">
+                        <p className="mb-[20px] sm:mb-[30px]">
                             Founded in 2018 by a team of data scientists and creative minds,
                             our agency was born from the frustration of seeing businesses
                             struggle with generic marketing solutions that promised everything
                             but delivered little.
                         </p>
-                        <p className="mb-[30px]">
+                        <p className="mb-[20px] sm:mb-[30px]">
                             We believe in the power of authentic storytelling combined with
                             data-driven strategies. Our mission is simple: to help brands not
                             just grow, but thrive in an increasingly digital world by focusing
@@ -43,17 +43,18 @@ const TestimonialsSection: React.FC = () => {
                 </div>
             </div>
 
-            <div className="relative w-[528px] h-[505px]">
-                <div className="h-[505px]">
-                    <div className="relative w-[542px] h-[573px] -top-1.5 -left-3.5">
+            {/* Image Section: only visible on lg and above */}
+            <div className="hidden lg:flex w-[528px] relative justify-center items-center">
+                <div className="w-full">
+                    <div className="relative w-full h-auto min-h-[490px]">
                         <img
-                            className="absolute w-[528px] h-[567px] top-1.5 left-3.5"
+                            className="absolute w-full h-auto top-1.5 left-3.5"
                             alt="Background pattern"
                             src="/About/ca/background-pattern.svg"
                         />
 
                         <img
-                            className="absolute w-[506px] h-[511px] top-0 left-3.5 aspect-[0.99]"
+                            className="absolute w-full h-auto top-0 left-3.5 aspect-[0.99]"
                             alt="Marketing agency team member"
                             src="/About/ca/image-2.png"
                         />

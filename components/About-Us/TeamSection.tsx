@@ -46,26 +46,23 @@ export const TeamSection: React.FC = () => {
     .slice(0, teamMembers.length); // no placeholders — will only render real members
 
   return (
-    <section className="flex flex-col w-[1128px] items-center gap-[50px] relative flex-[0_0_auto]">
-      <header className="flex flex-col w-[565px] items-center gap-4 relative flex-[0_0_auto]">
-        <div className="flex w-[155px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
+    <section className="flex flex-col items-center gap-[32px] sm:gap-[40px] lg:gap-[50px] relative flex-[0_0_auto] w-full max-w-[1128px] px-4 sm:px-8 mx-auto">
+      <header className="flex flex-col items-center gap-4 relative flex-[0_0_auto] w-full max-w-[565px]">
+        <div className="flex items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
           <img
             className="relative w-[15px] h-[15px]"
             alt="Stars"
             src="/About/ca/stars-2.svg"
           />
-
           <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
             Our Pillars of RSB
           </div>
         </div>
-
-        <div className="flex flex-col h-44 items-center gap-4 relative self-stretch w-full">
-          <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] text-center tracking-[0] leading-[57px]">
+        <div className="flex flex-col items-center gap-4 relative self-stretch w-full">
+          <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[32px] sm:text-[40px] lg:text-[50px] text-center tracking-[0] leading-[38px] sm:leading-[48px] lg:leading-[57px]">
             The People Behind the Results
           </h2>
-
-          <p className="relative w-[565px] [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-base text-center tracking-[0] leading-[23px]">
+          <p className="relative w-full max-w-[565px] [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-base text-center tracking-[0] leading-[20px] sm:leading-[23px]">
             Meet the experts who bring your digital marketing strategies to life
             with ultimate&nbsp;&nbsp;services : Google Ads , Landing page
             Design&nbsp;&nbsp;&amp; SEO
@@ -73,40 +70,39 @@ export const TeamSection: React.FC = () => {
         </div>
       </header>
 
-      <div className="flex items-center justify-center gap-[107px] relative self-stretch w-full flex-[0_0_auto]">
+      <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-[40px] lg:gap-[107px] w-full">
         {visibleMembers.map((member) => (
-          <article key={member.id} className="relative w-[304px] h-[435px]">
-            <div className="flex flex-col w-[304px] items-center gap-[13px] relative">
-              <div className="relative self-stretch w-full h-[332px]">
-                <div className="relative w-[304px] h-[461px] top-[-129px]">
-                  <div className="relative w-full h-full">
-                    {isLocal(member.image) ? (
-                      <Image
-                        src={member.image}
-                        alt={`${member.name} photo`}
-                        fill
-                        className="object-cover rounded-none"
-                      />
-                    ) : (
-                      <img
-                        src={member.image}
-                        alt={`${member.name} photo`}
-                        className="object-cover w-full h-full"
-                      />
-                    )}
-                  </div>
+          <article
+            key={member.id}
+            className="relative w-full sm:w-[260px] lg:w-[304px] h-[400px] sm:h-[435px] flex flex-col items-center"
+          >
+            <div className="flex flex-col items-center gap-[13px] relative w-full">
+              <div className="relative w-full h-[260px] sm:h-[332px]">
+                <div className="relative w-full h-full">
+                  {isLocal(member.image) ? (
+                    <Image
+                      src={member.image}
+                      alt={`${member.name} photo`}
+                      fill
+                      className="object-cover rounded-none"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 260px, 304px"
+                    />
+                  ) : (
+                    <img
+                      src={member.image}
+                      alt={`${member.name} photo`}
+                      className="object-cover w-full h-full"
+                    />
+                  )}
                 </div>
               </div>
-
-              <div className="flex flex-col w-[187px] items-center justify-center gap-2 relative flex-[0_0_auto]">
-                <h3 className="relative w-[187px] mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-lg text-center tracking-[0] leading-[normal]">
+              <div className="flex flex-col items-center justify-center gap-2 relative w-full max-w-[187px]">
+                <h3 className="relative w-full mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-base sm:text-lg text-center tracking-[0] leading-[normal]">
                   {member.name}
                 </h3>
-
-                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-sm text-center tracking-[0] leading-[normal]">
+                <p className="relative w-full [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-sm text-center tracking-[0] leading-[normal]">
                   {member.position}
                 </p>
-
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Social media links"

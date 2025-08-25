@@ -42,7 +42,7 @@ const GridBackground = () => {
 
 const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
   return (
-    <div className="relative w-full h-[922px] bg-neutral-900 overflow-hidden">
+    <div className="relative w-full bg-neutral-900 overflow-hidden">
       {/* Replace static grid with animated GridBackground */}
       <GridBackground />
 
@@ -55,9 +55,9 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-screen">
+      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-screen max-w-full">
         {/* Header Section */}
-        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-8 lg:gap-11 mb-8 lg:mb-16">
+        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-10 sm:gap-16 lg:gap-11 mb-8 lg:mb-16">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
             {/* Brand Badge */}
             {/* <div className="flex p-[5px] items-center gap-2 lg:gap-[9px] rounded-[45px] border border-primary-75"> */}
@@ -66,7 +66,7 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
              <div key={i} className={`w-[18px] lg:w-[21.395px] h-[18px] lg:h-[21.395px] rounded-full bg-primary-300 ${i > 1 ? 'border border-grey-50 -ml-[5px] lg:-ml-[6.874px]' : ''}`} />
             ))} */}
             {/* </div>  */}
-            <div className="flex items-center justify-start gap-[9px] h-[33px] border border-white  p-[5px] rounded-[45px]">
+            <div className="flex items-center justify-start gap-[6px] sm:gap-[9px] h-[33px] border border-white  p-[5px] rounded-[45px]">
               <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
                 {[
                   "/Home-Page/Hero-Section/image1.jpg",
@@ -102,8 +102,8 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
             </div>
 
             {/* Main Heading and Description */}
-            <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-3 lg:gap-4">
-              <h1 className="w-full text-center text-[32px] sm:text-[42px] lg:text-[50px] font-bold leading-[36px] sm:leading-[46px] lg:leading-[57px] font-sans">
+            <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-4">
+              <h1 className="w-full text-center text-[28px] sm:text-[42px] lg:text-[50px] font-bold leading-[32px] sm:leading-[46px] lg:leading-[57px] font-sans">
                 <span className="text-white">We </span>
                 <span className="text-primary-300">Grow Brands</span>
                 <span className="text-white">
@@ -111,7 +111,7 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
                   By Ranking,Designing, and Promoting
                 </span>
               </h1>
-              <p className="w-full max-w-[640px] text-grey-200 text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] font-sans">
+              <p className="w-full max-w-[640px] text-grey-200 text-center text-sm sm:text-base font-medium leading-[18px] sm:leading-[20px] lg:leading-[23px] font-sans">
                 Our team is on a mission to help startups, agencies, and
                 enterprises thrive online with custom strategies that deliver
                 results.
@@ -120,7 +120,7 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 lg:gap-[13px] w-full max-w-[520px]">
+          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-2 sm:gap-3 lg:gap-[13px] w-full max-w-[520px]">
             <button className="flex w-full sm:w-[240px] lg:w-[273px] h-[45px] lg:h-[50px] px-[3px] py-0 justify-center lg:justify-end items-center gap-2 lg:gap-[10px] rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
               <span className="text-white text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] capitalize font-sans">
                 Meet The Team
@@ -183,15 +183,11 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
           </div>
         </div>
 
-        {/* Image Section */}
-        <div
-          className={
-            "w-[999.1px] max-w-full h-[790px]  text-left text-[22px] text-white font-[Urbanist]"
-          }
-        >
+        {/* Image Section (visible only on lg and above) */}
+        <div className="hidden lg:block w-full max-w-[999.1px] h-[490px] text-left text-[22px] text-white font-[Urbanist]">
           <div className="absolute top-[0px] left-[calc(50%_-_394.55px)] [filter:blur(50.6px)] rounded-[50%] bg-[rgba(0,132,255,0.09)] w-[790px] h-[790px]" />
           <div className="absolute top-[503px] left-[calc(50%_-_499.55px)] flex flex-row items-center justify-start gap-[27px]">
-            <div className="w-[349.1px] relative h-[342px] overflow-hidden  flex items-center justify-center">
+            <div className="w-[349.1px] relative h-[342px] overflow-hidden flex items-center justify-center">
               <Image
                 className="w-full h-full object-cover absolute left-[0px] top-[0px] [transform:scale(1.044)]"
                 width={349.1}
@@ -206,7 +202,7 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
                 Rent SEO Brain
               </div>
             </div>
-            <div className="w-[321px] relative h-[342px] overflow-hidden  flex items-center justify-center">
+            <div className="w-[321px] relative h-[342px] overflow-hidden flex items-center justify-center">
               <Image
                 className="w-full h-full object-cover absolute left-[7px] top-[0px] [transform:scale(1.047)]"
                 width={321}

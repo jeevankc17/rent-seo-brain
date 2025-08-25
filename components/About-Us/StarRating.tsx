@@ -96,8 +96,8 @@ const TestimonialCard = ({
 
 export const PrinciplesSection: React.FC = () => {
     return (
-        <section className="flex flex-col w-[1128px] items-center gap-[50px] relative flex-[0_0_auto]">
-            <header className="flex flex-col w-[633px] h-[168px] items-center gap-4 relative">
+        <section className="flex flex-col w-full max-w-[1128px] items-center gap-[50px] relative flex-[0_0_auto] px-4">
+            <header className="flex flex-col w-full max-w-[633px] h-auto items-center gap-4 relative">
                 <div className="flex w-[185px] items-center justi   fy-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
                     <img
                         className="relative w-[15px] h-[15px]"
@@ -122,13 +122,13 @@ export const PrinciplesSection: React.FC = () => {
                 </div>
             </header>
 
-            <div className="flex items-center justify-center gap-[43px] relative self-stretch w-full flex-[0_0_auto]">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-[43px] relative self-stretch w-full flex-[0_0_auto]">
                 {testimonialData.map((testimonial, index) => (
                     <TestimonialCard
                         key={testimonial.id}
                         testimonial={testimonial}
                         className={
-                            index === 0 ? "ml-[-1.00px]" : index === 2 ? "mr-[-1.00px]" : ""
+                            index === 0 ? "ml-0 md:ml-[-1.00px]" : index === 2 ? "mr-0 md:mr-[-1.00px]" : ""
                         }
                     />
                 ))}

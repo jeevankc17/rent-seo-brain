@@ -57,8 +57,8 @@ const additionalValues: Value[] = [
 // Fix component typing: declare as React.FC
 export const Principles: React.FC = () => {
   return (
-    <section className="flex flex-col w-[1128px] items-center gap-[50px] relative flex-[0_0_auto]">
-      <header className="flex flex-col w-[565px] items-center gap-4 relative flex-[0_0_auto]">
+    <section className="flex flex-col w-full md:w-[1128px] items-center gap-12 md:gap-[50px] flex-[0_0_auto] mx-auto px-4 md:px-0">
+      <header className="flex flex-col w-full md:w-[565px] items-center gap-4 flex-[0_0_auto]">
         <div className="flex w-[197px] items-center justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[45px] border border-solid border-secondary-300">
           <div className="flex w-[161px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[45px]">
             <img
@@ -85,7 +85,8 @@ export const Principles: React.FC = () => {
         </div>
       </header>
 
-      <div className="relative self-stretch w-full h-[602px]">
+      {/* Desktop layout */}
+      <div className="hidden md:block relative w-full h-[602px]">
         <div className="absolute w-[770px] h-[600px] top-0 left-0">
           <div className="flex flex-col w-[336px] items-start gap-[42px] absolute top-0 left-0">
             {coreValues.map((value, index) => (
@@ -205,7 +206,33 @@ export const Principles: React.FC = () => {
         </div>
       </div>
 
-      <div className="inline-flex items-center gap-[23px] relative flex-[0_0_auto]">
+      {/* Mobile layout */}
+      <div className="flex flex-col md:hidden w-full gap-8">
+        {[...coreValues, ...additionalValues].map((value, index) => (
+          <article
+            key={index}
+            className="flex h-auto items-start justify-center gap-4 px-4 py-6 relative self-stretch w-full bg-neutral-0 rounded-[17px] border-b border-grey-100 shadow-[0px_4px_26.4px_#2e97ff3d]"
+          >
+            <div className="flex flex-col items-start gap-2 relative flex-1 grow">
+              <h3 className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-lg tracking-[0] leading-[normal]">
+                {value.title}
+              </h3>
+              <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-base tracking-[0] leading-[normal]">
+                {value.description}
+              </p>
+            </div>
+            <div className="flex w-10 h-10 items-center justify-center gap-2.5 p-2 relative bg-variable-collection-assest rounded-[42px]">
+              <img
+                className="relative w-5 h-5"
+                alt={value.iconAlt}
+                src={value.icon}
+              />
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-[23px] w-full md:w-auto">
         <button className="flex w-[271px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1]">
           <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
             Start Your Growth Journey
