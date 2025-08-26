@@ -4,23 +4,20 @@ import { AdOverviewSection } from "@components/Google/AdOverviewSection";
 import { FAQSection } from "@components/Google/FAQSection";
 
 import GoogleFeatures from "@components/Google/GoogleFeatures";
-import GoogleLP from "@components/Google/GoogleLP";
 import { GoogleTestimonial } from "@components/Google/GoogleTestimonial";
 import HeroSection from "@components/Google/HeroSection";
-import { ProcessSection } from "@components/Google/Process"
+import { ProcessSection } from "@components/Google/Process";
 import { ServicesSection } from "@components/Google/ServiceSection";
 import { StatisticsSection } from "@components/Google/StatisticsSection";
 import { StatsSection } from "@components/Google/StatsSection";
-import TestimonialsSection from "@components/Google/TestimonialsSection";
 import { ToolsIntegrationSection } from "@components/Google/ToolsIntegrationsection";
 import { ToolsSection } from "@components/Google/ToolsSection";
-import Wireframe from "@components/Landing-Page/Wireframe";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center bg-white gap-8 md:gap-16 lg:gap-[132px] pb-8 md:pb-16 lg:pb-[132px]">
       <section className="relative w-full h-auto min-h-[400px] md:min-h-[600px] lg:h-[960px] bg-neutral-900">
-        <GoogleLP />
+        <HeroSection />
       </section>
       <section className="relative w-full h-auto px-4 md:px-8 lg:px-[154px]">
         <AdOverviewSection />
