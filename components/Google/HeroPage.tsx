@@ -247,18 +247,28 @@ const HeroPage: NextPage<HeroPageType> = ({ className = "" }) => {
           {/* Trusted Clients Card */}
           <div className="absolute left-[934px] top-[200px] inline-flex p-5 items-end gap-3 rounded-[20px] bg-[#F8F9F9] w-[234px] h-[85px]">
             <div className="flex items-center gap-[-10px]">
-              <div className="flex w-[44px] h-[44px] justify-center items-center border-[1.25px] border-[#F8F9F9] rounded-full">
-                <div className="w-[44px] h-[44px] rounded-full bg-[#FF9F9F] overflow-hidden relative">
-                  <div className="absolute w-[66px] h-[107px] -left-2 -top-[14px]">
-                    <div className="w-[60px] h-[91px] rounded-full bg-gradient-to-b from-orange-300 to-orange-400" />
-                  </div>
+              <div className="flex w-[44px] h-[44px] justify-center items-center border-[1.25px] border-[#F8F9F9] rounded-full relative overflow-hidden">
+                <img
+                  className="w-full h-full object-cover rounded-full"
+                  alt="Client 1"
+                  src="/Google/ca/client-1.jpg"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-white text-xs font-semibold drop-shadow-lg">
+                    A+
+                  </span>
                 </div>
               </div>
-              <div className="flex w-[44px] h-[44px] justify-center items-center border-[1.25px] border-[#F8F8F9] rounded-full -ml-[10px]">
-                <div className="w-[44px] h-[44px] rounded-full bg-[#FF9F9F] overflow-hidden relative">
-                  <div className="absolute w-[64px] h-[96px] -left-[5px] -top-[5px]">
-                    <div className="w-[47px] h-[55px] ml-[5px] rounded-[643.836px] bg-gradient-to-b from-blue-300 to-blue-400" />
-                  </div>
+              <div className="flex w-[44px] h-[44px] justify-center items-center border-[1.25px] border-[#F8F8F9] rounded-full -ml-[10px] relative overflow-hidden">
+                <img
+                  className="w-full h-full object-cover rounded-full"
+                  alt="Client 2"
+                  src="/Google/ca/client-2.jpg"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-white text-xs font-semibold drop-shadow-lg">
+                    5★
+                  </span>
                 </div>
               </div>
             </div>

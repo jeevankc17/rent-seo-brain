@@ -3,7 +3,7 @@ export const GoogleTechnologyStackSection: React.FC = () => {
       {
         id: 1,
         name: "Tool 1",
-        image: "/LP/Figma.png",
+        image: "/Google/ca/instagram.png",
         position: { top: "291px", left: "564px" },
         size: { width: "45px", height: "47px" },
         aspectRatio: "0.96",
@@ -11,7 +11,7 @@ export const GoogleTechnologyStackSection: React.FC = () => {
       {
         id: 2,
         name: "Tool 2",
-        image: "/LP/w.png",
+        image: "/Google/ca/facebook.png",
         position: { top: "162px", left: "155px" },
         size: { width: "45px", height: "45px" },
         aspectRatio: "0.99",
@@ -19,7 +19,7 @@ export const GoogleTechnologyStackSection: React.FC = () => {
       {
         id: 3,
         name: "Tool 3",
-        image: "/LP/circ.png",
+        image: "/Google/ca/tiktok.png",
         position: { top: "0", left: "390px" },
         size: { width: "45px", height: "58px" },
         aspectRatio: "0.73",
@@ -27,8 +27,16 @@ export const GoogleTechnologyStackSection: React.FC = () => {
       {
         id: 4,
         name: "Tool 4",
-        image: "/LP/f.png",
+        image: "/Google/ca/snapchat.png",
         position: { top: "125px", left: "635px" },
+        size: { width: "45px", height: "41px" },
+        aspectRatio: "1.09",
+      },
+      {
+        id: 5,
+        name: "Tool 4",
+        image: "/Google/ca/linkedin.png",
+        position: { top: "45px", left: "535px" },
         size: { width: "45px", height: "41px" },
         aspectRatio: "1.09",
       },

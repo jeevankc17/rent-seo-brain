@@ -1,18 +1,18 @@
 import React from "react";
 
-export const IndustryLeadersSection : React.FC = () => {
+export const IndustryLeadersSection: React.FC = () => {
   const campaignData = [
     {
       id: 1,
       name: "Google Cpc",
       price: "$1.34",
-      icon: "/Google/ca/ellipse-1667@2x.png",
+      icon: "/Google/ca/ellipse1667.svg",
     },
     {
       id: 2,
       name: "Meta Cpm",
       price: "$9.80",
-      icon: "/Google/ca/ellipse-1668@2x.png",
+      icon: "/Google/ca/ellipse1668.svg",
     },
   ];
 
@@ -21,7 +21,7 @@ export const IndustryLeadersSection : React.FC = () => {
       id: 1,
       title: "Snapchat",
       value: "679,7k reach",
-      icon: "/Google/ca/image-71@2x.png",
+      icon: "/Google/ca/snapchat.png",
       position: { top: "197px", left: "0" },
       bgColor: "#ffff00",
     },
@@ -29,7 +29,10 @@ export const IndustryLeadersSection : React.FC = () => {
       id: 2,
       title: "Trusted Clients",
       value: "124,89K+",
-      icon: "/Google/ca/frame-2121457471.svg",
+      icons: [
+        "/Home-Page/Hero-Section/image1.jpg",
+        "/Home-Page/Hero-Section/image2.jpg",
+      ],
       position: { top: "200px", left: "934px" },
       bgColor: null,
     },
@@ -49,9 +52,9 @@ export const IndustryLeadersSection : React.FC = () => {
         />
 
         <img
-          className="hidden lg:block absolute top-[174px] left-[834px] w-[52px] h-[52px]"
+          className="hidden lg:block absolute top-[174px] left-[834px] w-[52px] h-[52px] bg-secondary-200 rounded-full"
           alt="History icon"
-          src="/Google/ca/history-1.svg"
+          src="/Google/ca/statistics.svg"
         />
 
         <div className="flex flex-col lg:hidden gap-4 mb-8">
@@ -111,15 +114,26 @@ export const IndustryLeadersSection : React.FC = () => {
               <div className="flex items-center justify-center gap-[8.12px] relative bg-[#ffff00] rounded-[81.25px] w-[52px] h-[52px]">
                 <img
                   className="relative w-[42px] h-[42px] aspect-[1]"
-                  alt={`${stat.title} logo`}
                   src={stat.icon}
+                  alt={`${stat.title} logo`}
                 />
+              </div>
+            ) : stat.icons ? (
+              <div className="flex items-center gap-2">
+                {stat.icons.map((iconSrc, idx) => (
+                  <img
+                    key={idx}
+                    className="relative flex-[0_0_auto] mt-[-0.25px] mb-[-1.25px] ml-[-1.25px] h-14 w-14 rounded-full"
+                    src={iconSrc}
+                    alt={`${stat.title} icon ${idx + 1}`}
+                  />
+                ))}
               </div>
             ) : (
               <img
                 className="relative flex-[0_0_auto] mt-[-0.25px] mb-[-1.25px] ml-[-1.25px]"
-                alt={`${stat.title} icon`}
                 src={stat.icon}
+                alt={`${stat.title} icon`}
               />
             )}
 
@@ -188,7 +202,7 @@ export const IndustryLeadersSection : React.FC = () => {
                           <img
                             className="absolute w-[9px] h-[5px] top-1.5 left-1"
                             alt="Dropdown arrow"
-                            src="/Google/ca/down-line-1.svg"
+                            src="/Google/ca/arrow-swap.svg"
                           />
                         </div>
                       </div>
@@ -202,9 +216,9 @@ export const IndustryLeadersSection : React.FC = () => {
               ))}
 
               <img
-                className="hidden lg:block absolute w-[42px] h-[42px] top-[58px] left-[180px]"
+                className="hidden lg:block absolute w-[42px] h-[42px] top-[58px] left-[180px] bg-primary-100 rounded-full"
                 alt="Campaign optimization icon"
-                src="/Google/ca/frame-2121454247.svg"
+                src="/Google/ca/arrow-swap.svg"
               />
             </div>
           </header>
@@ -227,9 +241,9 @@ export const IndustryLeadersSection : React.FC = () => {
             </div>
 
             <img
-              className="relative w-6 h-6"
+              className="relative w-6 h-6 bg-green-800 rounded-full"
               alt="Growth indicator"
-              src="/Google/ca/frame-1.svg"
+              src="/Google/ca/down-arrow.svg"
             />
           </div>
         </div>
