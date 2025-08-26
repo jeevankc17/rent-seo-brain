@@ -32,7 +32,7 @@ export interface Article {
 export const articlesData: Article[] = [
   {
     id: 1,
-    image: "/read-blog/ca/frame-2121458395.svg",
+    image: "/Blog/Hero-Section/Component.png",
     tags: [
       {
         label: "Technical SEO",
@@ -77,7 +77,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 2,
-    image: "/read-blog/ca/frame-2121458395-1.svg",
+    image: "/Blog/Hero-Section/Component.png",
     tags: [
       {
         label: "Trending",
@@ -122,7 +122,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 3,
-    image: "/read-blog/ca/frame-2121458395-2.svg",
+    image: "/Blog/Hero-Section/Component.png",
     tags: [
       {
         label: "Technical SEO",
@@ -167,7 +167,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 4,
-    image: "/read-blog/ca/frame-2121458395-3.svg",
+    image: "/Blog/Hero-Section/Component.png",
     tags: [
       {
         label: "Content SEO",
@@ -212,7 +212,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 5,
-    image: "/read-blog/ca/frame-2121458395-4.svg",
+    image: "/Blog/Hero-Section/Component.png",
     tags: [
       {
         label: "Trending",
@@ -257,7 +257,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 6,
-    image: "/read-blog/ca/frame-2121458395-5.svg",
+    image: "/Blog/Hero-Section/Component.png",
     tags: [
       {
         label: "Link Building",
@@ -302,7 +302,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 7,
-    image: "/read-blog/ca/frame-2121458395-2.svg",
+    image: "/Blog/Hero-Section/Component.png",
     tags: [
       {
         label: "Technical SEO",

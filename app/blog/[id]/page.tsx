@@ -38,18 +38,18 @@ function MainContentSection({ id }: MainContentSectionProps) {
 
   if (!article) {
     return (
-      <article className="flex flex-col w-[1128px] items-center gap-[50px] relative flex-[0_0_auto]">
-        <header className="w-[792px] gap-6 flex flex-col items-center relative flex-[0_0_auto]">
-          <h1 className="text-primary-50 text-center">Article not found</h1>
+      <article className="flex flex-col w-full max-w-4xl items-center gap-6 lg:gap-[50px] px-4 lg:px-0 relative flex-[0_0_auto]">
+        <header className="w-full max-w-3xl gap-4 lg:gap-6 flex flex-col items-center relative flex-[0_0_auto]">
+          <h1 className="text-primary-50 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl">Article not found</h1>
         </header>
       </article>
     );
   }
 
   return (
-    <main className="flex flex-col items-center gap-[132px] pt-[132px] pb-[132px]">
-      <article className="flex flex-col w-[1128px] items-center gap-[50px] relative flex-[0_0_auto]">
-        <header className="w-[792px] gap-6 flex flex-col items-center relative flex-[0_0_auto]">
+    <main className="flex flex-col items-center gap-16 lg:gap-[132px] pt-16 lg:pt-[132px] pb-16 lg:pb-[132px]">
+      <article className="flex flex-col w-full max-w-4xl items-center gap-6 lg:gap-[50px] px-4 lg:px-0 relative flex-[0_0_auto]">
+        <header className="w-full max-w-3xl gap-4 lg:gap-6 flex flex-col items-center relative flex-[0_0_auto]">
           <div
             className="inline-flex items-start gap-[9px] relative flex-[0_0_auto]"
             role="group"
@@ -76,15 +76,15 @@ function MainContentSection({ id }: MainContentSectionProps) {
           </div>
 
           <div className="flex flex-col items-start gap-[19px] relative self-stretch w-full flex-[0_0_auto]">
-            <h1 className="relative w-[768px] mt-[-1.00px] font-headings-h2-bold font-[number:var(--headings-h2-bold-font-weight)] text-primary-50 text-[length:var(--headings-h2-bold-font-size)] text-center tracking-[var(--headings-h2-bold-letter-spacing)] leading-[var(--headings-h2-bold-line-height)] [font-style:var(--headings-h2-bold-font-style)]">
+            <h1 className="relative w-full mt-[-1.00px] font-headings-h2-bold font-[number:var(--headings-h2-bold-font-weight)] text-primary-50 text-lg sm:text-xl md:text-2xl lg:text-[length:var(--headings-h2-bold-font-size)] text-center tracking-[var(--headings-h2-bold-letter-spacing)] leading-[var(--headings-h2-bold-line-height)] [font-style:var(--headings-h2-bold-font-style)]">
               {article.title}
             </h1>
 
-            <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-sm text-center tracking-[0] leading-[23px]">
+            <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-xs sm:text-sm text-center tracking-[0] leading-[20px] sm:leading-[23px]">
               {article.description}
             </p>
 
-            <div className="flex items-center gap-[541px] relative self-stretch w-full flex-[0_0_auto]">
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 lg:gap-[541px] relative self-stretch w-full flex-[0_0_auto]">
               <div className="inline-flex items-center gap-[15px] relative flex-[0_0_auto]">
                 <img
                   className="relative w-[var(--size-icon-large)] h-[var(--size-icon-large)] rounded-[var(--size-radius-full)] object-cover"
@@ -93,11 +93,11 @@ function MainContentSection({ id }: MainContentSectionProps) {
                 />
 
                 <div className="flex flex-col w-[114px] items-start gap-1.5 relative">
-                  <div className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm tracking-[0] leading-[14px]">
+                  <div className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-xs sm:text-sm tracking-[0] leading-[14px]">
                     Alex Thompson
                   </div>
 
-                  <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-xs tracking-[0] leading-[14px]">
+                  <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-[10px] sm:text-xs tracking-[0] leading-[12px] sm:leading-[14px]">
                     Senior SEO Strategist
                   </div>
                 </div>
@@ -110,7 +110,7 @@ function MainContentSection({ id }: MainContentSectionProps) {
                   src="https://c.animaapp.com/tbvdk4DW/img/clock.svg"
                 />
 
-                <time className="w-fit mt-[-1.00px] text-grey-400 leading-[23px] whitespace-nowrap relative [font-family:'Urbanist',Helvetica] font-normal text-xs tracking-[0]">
+                <time className="w-fit mt-[-1.00px] text-grey-400 leading-[20px] sm:leading-[23px] whitespace-nowrap relative [font-family:'Urbanist',Helvetica] font-normal text-[10px] sm:text-xs tracking-[0]">
                   12 min read
                 </time>
               </div>
@@ -118,24 +118,24 @@ function MainContentSection({ id }: MainContentSectionProps) {
           </div>
         </header>
 
-        <main className="flex flex-col items-start gap-[49px] relative self-stretch w-full flex-[0_0_auto]">
+        <main className="flex flex-col items-start gap-6 lg:gap-[49px] relative self-stretch w-full flex-[0_0_auto]">
           {article.image && (
             <img
-              className="h-[462.07px] rounded-[23.78px] relative self-stretch w-full object-cover"
+              className="h-48 sm:h-64 md:h-80 lg:h-[462.07px] rounded-lg lg:rounded-[23.78px] relative self-stretch w-full object-cover"
               alt={article.imageAlt || "Article image"}
               src={article.image}
             />
           )}
 
-          <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-transparent text-2xl tracking-[0] leading-[45px]">
+          <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-transparent text-sm sm:text-base md:text-lg lg:text-2xl tracking-[0] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[45px]">
             {article.sections
               ? article.sections.map((section, index) => (
                   <React.Fragment key={index}>
-                    <h2 className="font-semibold text-primary-100">
+                    <h2 className="font-semibold text-primary-100 text-base sm:text-lg md:text-xl lg:text-2xl">
                       {section.title}
                     </h2>
                     <br />
-                    <p className="font-medium text-grey-500">
+                    <p className="font-medium text-grey-500 text-sm sm:text-base md:text-lg lg:text-xl">
                       {section.content}
                       <br />
                       <br />
@@ -143,26 +143,26 @@ function MainContentSection({ id }: MainContentSectionProps) {
                   </React.Fragment>
                 ))
               : article.content && (
-                  <p className="font-medium text-grey-500">{article.content}</p>
+                  <p className="font-medium text-grey-500 text-sm sm:text-base md:text-lg lg:text-xl">{article.content}</p>
                 )}
           </div>
 
           {article.secondaryImage && (
             <img
-              className="h-[327px] rounded-[20px] relative self-stretch w-full object-cover"
+              className="h-40 sm:h-48 md:h-64 lg:h-[327px] rounded-lg lg:rounded-[20px] relative self-stretch w-full object-cover"
               alt={article.secondaryImageAlt || "Secondary article image"}
               src={article.secondaryImage}
             />
           )}
 
           {article.extraContent && (
-            <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-2xl tracking-[0] leading-[45px]">
+            <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-sm sm:text-base md:text-lg lg:text-2xl tracking-[0] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[45px]">
               {article.extraContent}
             </p>
           )}
         </main>
       </article>
-      <section className="relative w-full h-[560px] px-[155px]">
+      <section className="relative w-full h-auto lg:h-[560px] px-4 lg:px-[155px]">
         <BlogSuggestionsSection />
       </section>
     </main>

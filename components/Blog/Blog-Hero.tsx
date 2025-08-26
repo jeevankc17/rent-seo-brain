@@ -42,21 +42,21 @@ export default function BlogHero() {
       <GridBackground />
 
       {/* Background Blur Effects */}
-      <div className="absolute left-0 top-[722px] lg:top-[722px] md:top-[500px] sm:top-[400px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
+      <div className="absolute left-0 top-[400px] sm:top-[500px] lg:top-[722px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
       {/* <div className="absolute left-[150px] lg:left-[303px] top-[260px] lg:top-[260px] md:top-[200px] sm:top-[150px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" /> */}
       {/* <div className="absolute right-[50px] lg:right-[125px] top-0 w-[150px] lg:w-[244px] h-[130px] lg:h-[226px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" /> */}
 
       {/* Center blur effect */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-[200px] md:top-[260px] w-[100px] md:w-[154px] h-[90px] md:h-[142px] rounded-full bg-primary-300/20 blur-[200px] md:blur-[290px]" />
 
       {/* Main Content Container */}
       <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-screen">
         {/* Header Section */}
-        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-8 lg:gap-11 mb-8 lg:mb-16">
-          <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
+        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-6 md:gap-8 lg:gap-11 mb-6 md:mb-8 lg:mb-16">
+          <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-3 md:gap-4 lg:gap-5">
             {/* className="flex items-center justify-start w-[365px] h-[33px] p-[5px] border  rounded-[45px] absolute left-1/2 transform -translate-x-1/2 gap-[9px]" */}
-            <div className="flex items-center justify-start gap-[9px] h-[33px] border border-white  p-[5px] rounded-[45px]">
-              <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
+            <div className="flex items-center justify-start gap-[6px] md:gap-[9px] h-[28px] md:h-[33px] border border-white p-[4px] md:p-[5px] rounded-[35px] md:rounded-[45px]">
+              <div className="flex items-start gap-[-6px] md:gap-[-8px] lg:gap-[-10.677px]">
                 {[
                   "/Home-Page/Hero-Section/image1.jpg",
                   "/Home-Page/Hero-Section/image2.jpg",
@@ -67,10 +67,10 @@ export default function BlogHero() {
                 ].map((imagePath, index) => (
                   <div
                     key={imagePath}
-                    className={`relative w-[23px]  h-[23px]  rounded-full overflow-hidden
+                    className={`relative w-[18px] md:w-[23px] h-[18px] md:h-[23px] rounded-full overflow-hidden
                ${
                  index > 0
-                   ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"
+                   ? "border-[1px] md:border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[6px] md:-ml-[8px] lg:-ml-[10.677px]"
                    : ""
                }`}
                   >
@@ -79,25 +79,25 @@ export default function BlogHero() {
                       alt={`Review avatar ${index + 1}`}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 28px, 33.231px"
+                      sizes="(max-width: 768px) 18px, 23px"
                       priority={index < 2} // Load first two images immediately
                     />
                   </div>
                 ))}
               </div>
-              <span className="text-white font-urbanist font-medium text-[12px] leading-[23px] tracking-[0.5%] uppercase w-[256px] h-[23px]">
+              <span className="text-white font-urbanist font-medium text-[10px] md:text-[12px] leading-[18px] md:leading-[23px] tracking-[0.5%] uppercase w-[200px] md:w-[256px] h-[18px] md:h-[23px]">
                 The SEO Playbook for Modern Brands.
               </span>
             </div>
 
             {/* Main Heading and Description */}
-            <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-3 lg:gap-4">
-              <h1 className="w-full text-center text-[32px] sm:text-[42px] lg:text-[50px] font-bold leading-[36px] sm:leading-[46px] lg:leading-[57px] font-sans">
+            <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-2 md:gap-3 lg:gap-4">
+              <h1 className="w-full text-center text-xl sm:text-2xl md:text-3xl lg:text-[50px] font-bold leading-[24px] sm:leading-[28px] md:leading-[36px] lg:leading-[57px] font-sans">
                 <span className="text-white">Rank Smarter with </span>
                 <span className="text-primary-300">SEO Tips</span>
                 <span className="text-white"> That Work</span>
               </h1>
-              <p className="w-full max-w-[640px] text-grey-200 text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] font-sans">
+              <p className="w-full max-w-[640px] text-grey-200 text-center text-xs md:text-sm lg:text-base font-medium leading-[16px] md:leading-[20px] lg:leading-[23px] font-sans">
                 From keyword research to link building, get actionable advice
                 and case studies to grow your organic reach.
               </p>
@@ -105,16 +105,16 @@ export default function BlogHero() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 lg:gap-[13px] w-full max-w-[520px]">
-            <button className="flex w-full sm:w-[240px] lg:w-[273px] h-[45px] lg:h-[50px] px-[3px] py-0 justify-center lg:justify-end items-center gap-2 lg:gap-[10px] rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-              <span className="text-white text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] capitalize font-sans">
+          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-2 md:gap-3 lg:gap-[13px] w-full max-w-[520px]">
+            <button className="flex w-full sm:w-[200px] md:w-[240px] lg:w-[273px] h-[40px] md:h-[45px] lg:h-[50px] px-[3px] py-0 justify-center lg:justify-end items-center gap-1 md:gap-2 lg:gap-[10px] rounded-[30px] md:rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
+              <span className="text-white text-center text-xs md:text-sm lg:text-base font-medium leading-[16px] md:leading-[20px] lg:leading-[23px] capitalize font-sans">
                 Boost Your SEO Knowledge
               </span>
-              <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
+              <div className="flex p-1 md:p-2 lg:p-3 items-center gap-[6px] md:gap-[10px] rounded-[20px] md:rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
                 <svg
-                  width="16"
-                  height="16"
-                  className="lg:w-5 lg:h-5"
+                  width="12"
+                  height="12"
+                  className="md:w-4 md:h-4 lg:w-5 lg:h-5"
                   viewBox="0 0 20 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -137,14 +137,14 @@ export default function BlogHero() {
               </div>
             </button>
 
-            <button className="flex w-full sm:w-[180px] lg:w-[220px] h-[45px] lg:h-[50px] px-4 lg:px-[19px] py-[10px] justify-center items-center gap-2 lg:gap-[7px] rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
-              <span className="text-[#091E42] text-sm lg:text-base font-medium leading-[100%] capitalize font-sans">
+            <button className="flex w-full sm:w-[150px] md:w-[180px] lg:w-[220px] h-[40px] md:h-[45px] lg:h-[50px] px-3 md:px-4 lg:px-[19px] py-[8px] md:py-[10px] justify-center items-center gap-1 md:gap-2 lg:gap-[7px] rounded-[20px] md:rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
+              <span className="text-[#091E42] text-xs md:text-sm lg:text-base font-medium leading-[100%] capitalize font-sans">
                 Read the Trending
               </span>
               <svg
-                width="16"
-                height="16"
-                className="lg:w-5 lg:h-5"
+                width="12"
+                height="12"
+                className="md:w-4 md:h-4 lg:w-5 lg:h-5"
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -169,9 +169,9 @@ export default function BlogHero() {
         </div>
 
         {/* Blog Card Section */}
-        <div className="flex w-[1129px] max-w-[1129px] h-auto lg:h-[358px] p-4 lg:p-6 items-start lg:items-center gap-4 lg:gap-6 flex-col lg:flex-row rounded-[11px] bg-white shadow-[0_4px_25.6px_0_rgba(47,152,255,0.37)] mb-8 lg:mb-16">
+        <div className="flex w-full max-w-[1129px] p-3 md:p-4 lg:p-6 items-center gap-3 md:gap-4 lg:gap-6 flex-col lg:flex-row rounded-[8px] md:rounded-[11px] bg-white shadow-[0_4px_25.6px_0_rgba(47,152,255,0.37)] mb-6 md:mb-8 lg:mb-16">
           {/* Blog Image */}
-          <div className="w-full lg:w-[563px] h-[200px] lg:h-[310px] flex-shrink-0 rounded-[7px] bg-cover bg-center bg-no-repeat overflow-hidden">
+          <div className="w-full lg:w-[450px] h-[180px] md:h-[200px] lg:h-[250px] flex-shrink-0 rounded-[5px] md:rounded-[7px] bg-cover bg-center bg-no-repeat overflow-hidden">
             <img
               src="/Blog/Hero-Section/Component.png"
               alt="Local SEO workspace"
@@ -180,31 +180,31 @@ export default function BlogHero() {
           </div>
 
           {/* Blog Content */}
-          <div className="flex w-full lg:w-[514px] h-auto lg:h-[310px] flex-col items-start gap-6 lg:gap-[39px] flex-shrink-0 ">
+          <div className="flex w-full lg:flex-1 flex-col items-start gap-4 md:gap-6 lg:gap-[39px] flex-shrink-0 min-w-0">
             {/* Article Header */}
-            <div className="flex h-auto lg:h-[224px] flex-col items-start gap-2 lg:gap-2 flex-shrink-0 w-full">
-              <div className="flex flex-col items-start gap-2 lg:gap-[9px] w-full">
+            <div className="flex flex-col items-start gap-2 lg:gap-2 flex-shrink-0 w-full min-w-0">
+              <div className="flex flex-col items-start gap-2 lg:gap-[9px] w-full min-w-0">
                 {/* Tags */}
-                <div className="flex items-start gap-2 lg:gap-[9px] flex-wrap ">
-                  <div className="flex py-1 px-3 lg:py-1 lg:px-[10px] justify-center items-center gap-2 rounded-full border border-primary-300 bg-primary-50">
-                    <span className="text-primary-300 text-center text-[8px] lg:text-[10px] font-normal leading-[12px] lg:leading-[14px] font-sans">
+                <div className="flex  items-start gap-1 md:gap-2 lg:gap-[9px] flex-wrap">
+                  <div className="flex py-[2px] px-2 md:py-1 md:px-3 lg:py-1 lg:px-[10px] justify-center items-center gap-1 md:gap-2 rounded-full border border-primary-300 bg-primary-50">
+                    <span className="text-primary-300 text-center text-[7px] md:text-[8px] lg:text-[10px] font-normal leading-[10px] md:leading-[12px] lg:leading-[14px] font-sans">
                       Trending
                     </span>
                   </div>
-                  <div className="flex py-1 px-3 lg:py-1 lg:px-[10px] justify-center items-center gap-2 rounded-full border border-green-500 bg-green-500/17">
-                    <span className="text-green-500 text-center text-[8px] lg:text-[10px] font-normal leading-[12px] lg:leading-[14px] font-sans">
+                  <div className="flex py-[2px] px-2 md:py-1 md:px-3 lg:py-1 lg:px-[10px] justify-center items-center gap-1 md:gap-2 rounded-full border border-green-500 bg-green-500/17">
+                    <span className="text-green-500 text-center text-[7px] md:text-[8px] lg:text-[10px] font-normal leading-[10px] md:leading-[12px] lg:leading-[14px] font-sans">
                       Local SEO
                     </span>
                   </div>
                 </div>
 
                 {/* Article Title */}
-                <h2 className="w-full text-primary-500 text-[16px] lg:text-[18px] font-semibold leading-[22px] lg:leading-[25px] font-sans">
+                <h2 className="w-full whitespace-normal break-words text-primary-500 text-sm md:text-base lg:text-[18px] font-semibold leading-[18px] md:leading-[22px] lg:leading-[25px] font-sans">
                   Local SEO Checklist: 15 Steps to Dominate Local Search
                 </h2>
 
                 {/* Article Description */}
-                <p className="w-full text-grey-400 text-[12px] lg:text-[14px] font-medium leading-[18px] lg:leading-[23px] font-sans">
+                <p className="w-full text-grey-400 text-xs md:text-[12px] lg:text-[14px] font-medium leading-[16px] md:leading-[18px] lg:leading-[23px] font-sans break-words whitespace-normal">
                   To improve your local search rankings and attract more
                   customers in your area, start by optimizing your Google
                   Business Profile (GBP). Claim and verify your listing,
@@ -217,7 +217,7 @@ export default function BlogHero() {
               </div>
 
               {/* Read Time */}
-              <div className="flex items-center gap-[6px] mt-2">
+              <div className="flex items-center gap-[4px] md:gap-[6px] mt-1 md:mt-2">
                 <svg
                   width="16"
                   height="17"
@@ -240,39 +240,39 @@ export default function BlogHero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="text-grey-400 text-[10px] lg:text-[12px] font-normal leading-[18px] lg:leading-[23px] font-sans">
+                <span className="text-grey-400 text-[9px] md:text-[10px] lg:text-[12px] font-normal leading-[14px] md:leading-[18px] lg:leading-[23px] font-sans">
                   12 min read
                 </span>
               </div>
             </div>
 
             {/* Author and CTA */}
-            <div className="flex items-center justify-between w-full">
+            <div className="flex items-center justify-between w-full min-w-0 gap-2">
               {/* Author Info */}
-              <div className="flex items-center gap-3 lg:gap-[15px]">
-                <div className="w-[32px] lg:w-[40px] h-[32px] lg:h-[40px] rounded-full overflow-hidden">
+              <div className="flex items-center gap-2 md:gap-3 lg:gap-[15px] flex-1 min-w-0">
+                <div className="w-[28px] md:w-[32px] lg:w-[40px] h-[28px] md:h-[32px] lg:h-[40px] rounded-full overflow-hidden">
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/058fe75754dc0d2b25c1de36019cfd2a43b57ca3?width=80"
                     alt="Alex Thompson"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="flex flex-col items-start gap-1 lg:gap-[6px]">
-                  <div className="text-neutral-800 text-[12px] lg:text-[14px] font-medium leading-[12px] lg:leading-[14px] font-sans">
+                <div className="flex flex-col items-start gap-[2px] md:gap-1 lg:gap-[6px] min-w-0 flex-1">
+                  <div className="text-neutral-800 text-[10px] md:text-[12px] lg:text-[14px] font-medium leading-[10px] md:leading-[12px] lg:leading-[14px] font-sans truncate w-full">
                     Alex Thompson
                   </div>
-                  <div className="text-grey-500 text-[10px] lg:text-[12px] font-normal leading-[12px] lg:leading-[14px] font-sans">
+                  <div className="text-grey-500 text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[10px] md:leading-[12px] lg:leading-[14px] font-sans truncate w-full">
                     Senior SEO Strategist
                   </div>
                 </div>
               </div>
 
               {/* Read More Button */}
-              <div className="flex w-[32px] lg:w-[41px] h-[32px] lg:h-[41px] p-2 lg:p-[10px] justify-center items-center gap-2 rounded-full border border-grey-75 bg-grey-50">
+              <div className="flex w-[28px] md:w-[32px] lg:w-[41px] h-[28px] md:h-[32px] lg:h-[41px] p-1 md:p-2 lg:p-[10px] justify-center items-center gap-1 md:gap-2 rounded-full border border-grey-75 bg-grey-50 flex-shrink-0">
                 <svg
-                  width="20"
-                  height="20"
-                  className="lg:w-6 lg:h-6"
+                  width="16"
+                  height="16"
+                  className="md:w-5 md:h-5 lg:w-6 lg:h-6"
                   viewBox="0 0 25 25"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
