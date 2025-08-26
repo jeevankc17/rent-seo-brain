@@ -105,9 +105,9 @@ export const OverviewSection : React.FC = () => {
               ))}
             </ul>
 
-            <button className="flex w-full max-w-[214px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:shadow-[0px_6px_20px_#2e97ffa1] transition-shadow duration-200 cursor-pointer">
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
-                Talk To A Designer
+            <button className="flex w-full sm:w-[220px] lg:w-[248px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
+              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
+                Start My Landing Page
               </span>
 
               <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">

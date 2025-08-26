@@ -102,8 +102,8 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
 
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button className="flex w-full max-w-[248px] h-[50px] p-[0_3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:opacity-90 transition-opacity cursor-pointer">
-              <span className="text-white text-center font-urbanist text-sm lg:text-base font-medium leading-[23px] capitalize">
+            <button className="flex w-full sm:w-[220px] lg:w-[248px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-[10px] px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
+              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
                 Start My Landing Page
               </span>
               <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-solid border-[#A2D1FF] bg-[#E8F4FF]">
@@ -132,12 +132,12 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
               </div>
             </button>
             <button
-              className="all-[unset] box-border flex w-full max-w-[270px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
+              className="all-[unset] box-border flex w-full sm:w-[200px] lg:w-[270px] h-[45px] lg:h-[50px] items-center justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] lg:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
               type="button"
               aria-label="Book an appointment to discuss your business growth"
             >
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
-                Book An Appointment{" "}
+              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-[16px] lg:leading-4 whitespace-nowrap">
+                Book a Free Consultation
               </span>
 
               <img

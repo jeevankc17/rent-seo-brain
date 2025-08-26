@@ -315,8 +315,8 @@ export const PerformanceDashboardSection: React.FC = () => {
                 </div>
 
                 <div className="inline-flex items-center gap-[9.02px] absolute top-[500px] left-[102px]">
-                  <button className="flex w-[148.16px] h-[33.5px] items-center justify-center gap-[12.88px] px-[52.82px] py-[7.73px] relative bg-primary-100 rounded-[6.44px] hover:bg-primary-75 transition-colors">
-                    <span className="relative w-fit ml-[-9.24px] mr-[-9.24px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-[12.9px] tracking-[0] leading-[11.6px] whitespace-nowrap">
+                  <button className="flex w-full max-w-[148px] h-[30px] lg:h-[33.5px] items-center justify-center gap-2 lg:gap-[12.88px] px-4 lg:px-[52.82px] py-2 lg:py-[7.73px] relative bg-primary-300 rounded-[6px] lg:rounded-[6.44px] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
+                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-xs lg:text-[12.9px] tracking-[0] leading-[10px] lg:leading-[11.6px] whitespace-nowrap">
                       View More
                     </span>
                   </button>
