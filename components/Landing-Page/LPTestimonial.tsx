@@ -104,12 +104,12 @@ export const LPTestimonial: React.FC<TestimonialProps> = ({
             </div>
 
             <button
-              className="all-[unset] box-border flex w-full max-w-[270px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
+              className="all-[unset] box-border flex w-full sm:w-[200px] lg:w-[270px] h-[45px] lg:h-[50px] items-center justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] lg:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
               type="button"
               aria-label="Book an appointment to discuss your business growth"
               onClick={onCtaClick}
             >
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
+              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-[16px] lg:leading-4 whitespace-nowrap">
                 {ctaLabel}
               </span>
 

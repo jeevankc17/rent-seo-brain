@@ -31,12 +31,12 @@ const performanceCards = [
       {
         label: "Bounce Rate",
         value: "23.1%",
-        icon: "/LP/ca/arrow-up-1.svg",
+        icon: "/LP/ca/arrow-down.svg",
       },
       {
         label: "Avg. Session Duration",
         value: "4:3",
-        icon: " /LP/ca/arrow-up-2.svg",
+        icon: "/LP/ca/arrow-up.svg",
       },
     ],
     chartData: [
@@ -62,17 +62,17 @@ const performanceCards = [
       {
         label: "Core Web Vitals",
         value: "65/100",
-        icon: "/LP/ca/arrow-up-3.svg",
+        icon: "/LP/ca/arrow-up.svg",
       },
       {
         label: "Mobile Score",
         value: "56/100",
-        icon: "/LP/ca/arrow-up-4.svg",
+        icon: "/LP/ca/arrow-down.svg",
       },
       {
         label: "Seo Imapct",
         value: "+23%",
-        icon: "/LP/ca/arrow-up-5.svg",
+        icon: "/LP/ca/arrow-up.svg",
       },
     ],
   },
@@ -279,9 +279,9 @@ export default function ClientSuccessStoriesSection() {
 
               <div className="flex flex-col w-full max-w-[285.67px] items-start gap-[15px] relative flex-[0_0_auto]">
                 <img
-                  className="relative flex-[0_0_auto] mt-[-1.59px] ml-[-1.59px] rotate-[-6.00deg]"
+                  className="relative flex-[0_0_auto] mt-[-1.59px] ml-[-1.59px] rotate-[-1.00deg] bg-green-300 rounded-full"
+                  src="/LP/ca/activity.svg"
                   alt="Mobile performance visualization"
-                  src="/LP/ca/frame-2121458127.svg"
                   loading="lazy"
                 />
 
@@ -378,7 +378,7 @@ export default function ClientSuccessStoriesSection() {
                   <img
                     className="relative w-[265px] flex-[0_0_auto] ml-[-5.50px] mr-[-5.50px]"
                     alt="Cost reduction chart"
-                    src="/LP/ca/frame-2121458132.svg"
+                    src="/LP/ca/vectorline.svg"
                     loading="lazy"
                   />
 
@@ -422,8 +422,8 @@ export default function ClientSuccessStoriesSection() {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-6 relative flex-[0_0_auto]">
-        <button className="flex w-full max-w-[236px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-[var(--primary-300)] rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-[var(--primary-400)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-200)] focus:ring-offset-2 transition-colors">
-          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[var(--neutral-0)] text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
+        <button className="flex w-full sm:w-[220px] lg:w-[236px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-2.5 px-[3px] py-0 relative bg-[var(--primary-300)] rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-[var(--primary-400)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-200)] focus:ring-offset-2 transition-colors duration-200">
+          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[var(--neutral-0)] text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
             Get Results Like This
           </span>
           <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-[var(--primary-50)] rounded-[34px] border border-solid border-[var(--primary-75)]">
@@ -436,12 +436,12 @@ export default function ClientSuccessStoriesSection() {
           </div>
         </button>
 
-        <button className="flex w-full max-w-[257px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-[var(--grey-50)] rounded-[33px] border border-solid border-[var(--grey-200)] hover:bg-[var(--grey-75)] focus:outline-none focus:ring-2 focus:ring-[var(--grey-300)] focus:ring-offset-2 transition-colors">
-          <span className="relative w-fit ml-[-3.50px] [font-family:'Urbanist',Helvetica] font-medium text-[var(--neutral-900)] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
+        <button className="all-[unset] box-border flex w-full sm:w-[200px] lg:w-[257px] h-[45px] lg:h-[50px] items-center justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-[var(--grey-50)] rounded-[25px] lg:rounded-[33px] border border-solid border-[var(--grey-200)] hover:bg-[var(--grey-75)] focus:outline-none focus:ring-2 focus:ring-[var(--grey-300)] focus:ring-offset-2 transition-colors duration-200">
+          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[var(--neutral-900)] text-sm lg:text-base tracking-[0] leading-[16px] lg:leading-4 whitespace-nowrap">
             Talk To A Conversion Expert
           </span>
           <img
-            className="relative w-5 h-5 mr-[-3.50px]"
+            className="relative w-5 h-5"
             alt=""
             src="/LP/ca/arrow-right-1.svg"
             loading="lazy"

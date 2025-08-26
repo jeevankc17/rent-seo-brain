@@ -246,7 +246,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
               src="/vector-2541.svg"
             />
           </div>
-          <div className="absolute top-[20px] left-[10px] sm:top-[147px] sm:left-[120px] lg:left-[120px] shadow-[0px_4px_18.1px_rgba(29,_143,_255,_0.2)] rounded-xl bg-white w-[200px] sm:w-[225px] flex flex-col items-start justify-start py-[11px] px-[13px] box-border gap-2">
+          <div className="hidden lg:flex absolute top-[20px] left-[10px] sm:top-[147px] sm:left-[120px] lg:left-[120px] shadow-[0px_4px_18.1px_rgba(29,_143,_255,_0.2)] rounded-xl bg-white w-[200px] sm:w-[225px] flex-col items-start justify-start py-[11px] px-[13px] box-border gap-2">
             <div className="self-stretch relative leading-[23px] font-normal">
               Conversion Rate
             </div>
