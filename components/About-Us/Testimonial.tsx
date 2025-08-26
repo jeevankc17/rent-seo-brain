@@ -28,75 +28,70 @@ export const Testimonial: React.FC<TestimonialProps> = ({
   onCtaClick,
 }) => {
   return (
-    <section className="relative w-[1128px] h-[640px] bg-neutral-900 rounded-[50px] overflow-hidden">
-      <div className="relative w-[1233px] h-[653px] left-[-73px]">
-        <div className="absolute w-[1128px] h-[640px] top-0 left-[73px]">
-          <div className="relative h-[640px]">
-            <div className="absolute w-[263px] h-[196px] top-[444px] left-[49px] bg-neutral-600 rounded-[131.44px/98.14px] blur-[200px] opacity-50" />
+    <section className="relative w-full max-w-[1128px] h-auto sm:h-[500px] md:h-[600px] lg:h-[640px] bg-neutral-900 rounded-3xl sm:rounded-[50px] overflow-hidden mx-auto my-8 lg:my-12">
+      <div className="relative w-full h-full lg:w-[1233px] lg:left-[-73px] lg:h-[653px]">
+        <div className="absolute w-full h-full lg:w-[1128px] lg:left-[73px] lg:h-[640px]">
+          <div className="relative w-full h-full min-h-[500px] sm:min-h-[600px] lg:h-[640px]">
+            <div className="hidden sm:block absolute w-[150px] h-[112px] sm:w-[200px] sm:h-[150px] md:w-[263px] md:h-[196px] top-[60%] sm:top-[444px] left-[10%] sm:left-[49px] bg-neutral-600 rounded-full blur-[100px] sm:blur-[150px] md:blur-[200px] opacity-50" />
 
-            <div className="absolute w-[263px] h-[196px] top-40 left-[280px] bg-neutral-600 rounded-[131.44px/98.14px] blur-[200px] opacity-50" />
+            <div className="hidden sm:block absolute w-[150px] h-[112px] sm:w-[200px] sm:h-[150px] md:w-[263px] md:h-[196px] top-32 sm:top-40 left-[30%] sm:left-[280px] bg-neutral-600 rounded-full blur-[100px] sm:blur-[150px] md:blur-[200px] opacity-50" />
 
-            <div className="absolute w-[186px] h-[139px] top-0 left-[942px] bg-neutral-600 rounded-[93.02px/69.45px] blur-[200px] opacity-50" />
+            <div className="hidden sm:block absolute w-[100px] h-[75px] sm:w-[150px] sm:h-[112px] md:w-[186px] md:h-[139px] top-0 right-[5%] md:right-[10%] lg:left-[942px] bg-neutral-600 rounded-full blur-[80px] sm:blur-[120px] md:blur-[200px] opacity-50" />
 
             <img
-              className="absolute w-[1128px] h-[640px] top-0 left-0"
+              className="absolute w-full h-full object-cover"
               alt="Background pattern"
               src="/About/ca/background-pattern-1.svg"
+              loading="lazy"
             />
           </div>
         </div>
 
-        <div className="flex flex-col w-[798px] items-center justify-center gap-6 absolute top-[94px] left-[238px]">
-          <div className="flex flex-col w-[492px] items-center gap-4 relative flex-[0_0_auto]">
-            <div className="flex flex-col w-[177px] items-center gap-5 relative flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
+        <div className="flex flex-col w-full max-w-[798px] items-center justify-center gap-4 sm:gap-6 absolute top-8 sm:top-16 md:top-[94px] left-1/2 transform -translate-x-1/2 lg:left-[238px] lg:translate-x-0 px-4 sm:px-6 py-8 sm:py-12 lg:py-0">
+          <div className="flex flex-col w-full max-w-[492px] items-center gap-3 sm:gap-4">
+            <div className="flex flex-col w-full max-w-[177px] items-center gap-3 sm:gap-5">
+              <div className="flex items-center gap-2 sm:gap-3">
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="5 star rating"
                   src="/About/ca/frame-2121457515.svg"
                 />
 
-                <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[normal] whitespace-nowrap">
+                <div className="font-sans font-medium text-white text-sm sm:text-base text-center leading-none">
                   {rating}
                 </div>
               </div>
 
-              <div className="flex items-center relative self-stretch w-full flex-[0_0_auto]">
+              <div className="flex items-center justify-center w-full">
                 {avatars.map((avatar, index) => (
                   <img
                     key={index}
-                    className={`relative w-[40.16px] h-[40.16px] mt-[-0.58px] mb-[-0.58px] ${
-                      index === 0 ? "ml-[-1.08px]" : "-ml-1"
-                    } ${
-                      index >= 2
-                        ? "w-[41.22px] h-[41.22px] mt-[-1.11px] mb-[-1.11px]"
-                        : ""
-                    }`}
+                    className={`relative w-8 h-8 sm:w-10 sm:h-10 ${index > 0 ? '-ml-2 sm:-ml-3' : ''} rounded-full border-2 border-white`}
                     alt={`Customer avatar ${index + 1}`}
                     src={avatar}
                   />
                 ))}
 
-                <div className="relative w-[41.22px] h-[41.22px] mt-[-1.11px] mb-[-1.11px] mr-[-2.41px] -ml-2 bg-neutral-0 rounded-full border-[1.11px] border-solid border-[#f8f8f9]">
-                  <div className="absolute top-[13px] left-[7px] [font-family:'Urbanist',Helvetica] font-medium text-[#0a1519] text-[10px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
+                <div className="relative w-10 h-10 sm:w-[41.22px] sm:h-[41.22px] -ml-2 bg-white rounded-full border-2 border-white flex items-center justify-center">
+                  <span className="font-sans font-medium text-neutral-900 text-xs sm:text-[10px] text-center whitespace-nowrap">
                     100K+
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
 
-            <p className="relative w-[404px] [font-family:'Urbanist',Helvetica] font-medium text-[#ffffffb2] text-lg text-center tracking-[0] leading-[26.1px]">
+            <p className="w-full max-w-[404px] font-sans font-medium text-white/70 text-sm sm:text-base md:text-lg text-center leading-relaxed">
               {description}
             </p>
           </div>
 
-          <div className="flex flex-col items-center gap-8 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex flex-col items-center gap-4 relative self-stretch w-full flex-[0_0_auto]">
-              <h1 className="relative w-[798px] mt-[-1.00px] font-semibold text-neutral-0 text-center leading-tight text-4xl sm:text-5xl">
+          <div className="flex flex-col items-center gap-6 sm:gap-8 w-full mt-6 sm:mt-8">
+            <div className="flex flex-col items-center gap-3 sm:gap-4 w-full">
+              <h1 className="w-full font-sans font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center leading-tight">
                 Ready to Grow With Us?
               </h1>
 
-              <p className="relative w-[598px] [font-family:'Urbanist',Helvetica] font-medium text-[#ffffffb2] text-lg text-center tracking-[0] leading-[26.1px]">
+              <p className="w-full max-w-[598px] font-sans font-medium text-white/70 text-sm sm:text-base md:text-lg text-center leading-relaxed">
                 Let&#39;s talk strategy, goals, and what success looks like for
                 your brand. Get a free consultation and discover how we can
                 accelerate your growth.
@@ -104,28 +99,31 @@ export const Testimonial: React.FC<TestimonialProps> = ({
             </div>
 
             <button
-              className="all-[unset] box-border flex w-[270px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
+              className="flex w-full max-w-[270px] h-12 sm:h-[50px] items-center justify-center gap-2 sm:gap-2 px-4 sm:px-6 py-2.5 bg-white hover:bg-gray-100 focus:outline-2 focus:outline-offset-2 focus:outline-white rounded-full border border-gray-200 transition-colors duration-200"
               type="button"
               aria-label="Book an appointment to discuss your business growth"
               onClick={onCtaClick}
             >
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
+              <span className="font-sans font-medium text-neutral-900 text-sm sm:text-base whitespace-nowrap">
                 {ctaLabel}
               </span>
 
-              <img
-                className="relative w-5 h-5"
-                alt=""
-                src="/About/ca/arrow-right-2.svg"
+              <svg 
+                className="w-4 h-4 sm:w-5 sm:h-5 text-neutral-900" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
-              />
+              >
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </button>
           </div>
         </div>
 
-        <div className="absolute w-[266px] h-[231px] top-1 left-0 bg-[#2e97ffa1] rounded-[133px/115.59px] blur-[209.73px]" />
+        <div className="hidden sm:block absolute w-[133px] h-[116px] sm:w-[200px] sm:h-[174px] md:w-[266px] md:h-[231px] top-0 left-0 bg-[#2e97ffa1] rounded-full blur-[100px] sm:blur-[150px] md:blur-[209.73px]" />
 
-        <div className="absolute w-[266px] h-[231px] top-[421px] left-[967px] bg-[#2e97ffa1] rounded-[133px/115.59px] blur-[209.73px]" />
+        <div className="hidden sm:block absolute w-[133px] h-[116px] sm:w-[200px] sm:h-[174px] md:w-[266px] md:h-[231px] bottom-0 right-0 bg-[#2e97ffa1] rounded-full blur-[100px] sm:blur-[150px] md:blur-[209.73px]" />
       </div>
     </section>
   );

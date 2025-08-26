@@ -2,9 +2,9 @@ import React from "react";
 
 const TestimonialsSection: React.FC = () => {
     return (
-        <section className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12 relative flex-[0_0_auto] w-full px-4 sm:px-6 md:px-8 max-w-[1128px] mx-auto">
-            <div className="flex flex-col w-full lg:w-[552px] items-start gap-4 relative">
-                <div className="flex w-[171px] sm:w-[140px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
+        <section className="flex flex-col lg:flex-row items-start gap-6 sm:gap-8 lg:gap-12 w-full px-4 sm:px-6 md:px-8 lg:px-0 max-w-[2000px] mx-auto">
+            <div className="flex flex-col w-full lg:w-[552px] items-start gap-3 sm:gap-4 relative">
+                <div className="flex w-full max-w-[171px] sm:w-[140px] items-center justify-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1 sm:py-[5px] relative bg-primary-50 rounded-[45px] border border-solid border-primary-300">
                     <img
                         className="relative w-[15px] h-[15px]"
                         alt="Stars"
@@ -16,12 +16,12 @@ const TestimonialsSection: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-start gap-[18px] relative self-stretch w-full flex-[0_0_auto]">
-                    <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[32px] sm:text-[40px] lg:text-[50px] tracking-[0] leading-[38px] sm:leading-[46px] lg:leading-[57px]">
+                <div className="flex flex-col items-start gap-3 sm:gap-4 md:gap-[18px] relative w-full">
+                    <h2 className="w-full font-sans font-bold text-primary-500 text-2xl sm:text-3xl md:text-4xl lg:text-[50px] leading-tight sm:leading-[46px] lg:leading-[57px]">
                         More Than a Marketing Agency
                     </h2>
 
-                    <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-base sm:text-lg tracking-[0] leading-[26px] sm:leading-[30px]">
+                    <div className="w-full font-sans font-medium text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[26px] md:leading-[30px]">
                         <p className="mb-[20px] sm:mb-[30px]">
                             Founded in 2018 by a team of data scientists and creative minds,
                             our agency was born from the frustration of seeing businesses
@@ -44,7 +44,7 @@ const TestimonialsSection: React.FC = () => {
             </div>
 
             {/* Image Section: only visible on lg and above */}
-            <div className="hidden lg:flex w-[528px] relative justify-center items-center">
+            <div className="hidden lg:flex w-full max-w-[528px] relative justify-center items-center">
                 <div className="w-full">
                     <div className="relative w-full h-auto min-h-[490px]">
                         <img
@@ -59,7 +59,7 @@ const TestimonialsSection: React.FC = () => {
                             src="/About/ca/image-2.png"
                         />
 
-                        <div className="flex w-[221px] items-center gap-[11.94px] px-[12.61px] py-[16.66px] absolute top-[27px] left-0 bg-neutral-0 rounded-[9.95px] border-[0.88px] border-solid border-primary-400 shadow-[0px_3.51px_11.05px_#2e97ffa1]">
+                        <div className="flex w-[180px] sm:w-[221px] items-center gap-2 sm:gap-3 px-3 sm:px-[12.61px] py-3 sm:py-[16.66px] absolute top-4 sm:top-[27px] left-0 bg-neutral-0 rounded-lg sm:rounded-[9.95px] border border-solid border-primary-400 shadow-md sm:shadow-[0px_3.51px_11.05px_#2e97ffa1]">
                             <img
                                 className="relative w-6 h-6 aspect-[1]"
                                 alt="Location icon"
@@ -67,11 +67,11 @@ const TestimonialsSection: React.FC = () => {
                             />
 
                             <div className="flex flex-col w-[149.31px] items-start gap-[7.89px] relative">
-                                <p className="relative w-[149.09px] mt-[-0.66px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-800 text-[12.3px] tracking-[-0.06px] leading-[13.5px]">
+                                <p className="w-full font-sans font-medium text-neutral-800 text-xs sm:text-[12.3px] leading-tight sm:leading-[13.5px]">
                                     Reach Users Locally Or Globally
                                 </p>
 
-                                <p className="relative w-[149.09px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-70 text-[10.5px] tracking-[-0.05px] leading-[11.6px]">
+                                <p className="w-full font-sans font-medium text-neutral-600 text-[10px] sm:text-[10.5px] leading-tight sm:leading-[11.6px]">
                                     Get A Free Strategy Call Now !
                                 </p>
                             </div>

@@ -57,206 +57,184 @@ const additionalValues: Value[] = [
 // Fix component typing: declare as React.FC
 export const Principles: React.FC = () => {
   return (
-    <section className="flex flex-col w-full md:w-[1128px] items-center gap-12 md:gap-[50px] flex-[0_0_auto] mx-auto px-4 md:px-0">
-      <header className="flex flex-col w-full md:w-[565px] items-center gap-4 flex-[0_0_auto]">
-        <div className="flex w-[197px] items-center justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[45px] border border-solid border-secondary-300">
-          <div className="flex w-[161px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[45px]">
+    <section className="flex flex-col w-full items-center gap-8 sm:gap-10 md:gap-[50px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 max-w-[2000px]">
+      <header className="flex flex-col w-full md:w-[565px] items-center gap-3 sm:gap-4">
+        <div className="flex w-full max-w-[197px] items-center justify-center gap-1.5 px-0 py-1 sm:py-[5px] relative rounded-[45px] border border-solid border-secondary-300">
+          <div className="flex w-full max-w-[161px] items-center justify-center gap-1 sm:gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[45px]">
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
               src="/About/ca/stars-1.svg"
+              loading="lazy"
             />
-
             <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
               Our Core Values
             </span>
           </div>
         </div>
 
-        <div className="flex flex-col h-44 items-center gap-4 relative self-stretch w-full">
-          <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] text-center tracking-[0] leading-[57px]">
+        <div className="flex flex-col items-center gap-3 sm:gap-4 relative w-full mt-2 sm:mt-0">
+          <h1 className="relative self-stretch font-sans font-bold text-primary-500 text-2xl sm:text-3xl md:text-4xl lg:text-[50px] text-center leading-tight sm:leading-[46px] lg:leading-[57px]">
             The Principles Behind Our Performance
           </h1>
-
-          <p className="relative w-[565px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-200 text-base text-center tracking-[0] leading-[23px]">
+          <p className="relative w-full max-w-[565px] font-sans font-medium text-neutral-200 text-sm sm:text-base text-center leading-relaxed sm:leading-[23px]">
             Our values are more than just words on a page — they&apos;re the
             foundation of everything we do.
           </p>
         </div>
       </header>
 
-      {/* Desktop layout */}
-      <div className="hidden md:block relative w-full h-[602px]">
-        <div className="absolute w-[770px] h-[600px] top-0 left-0">
-          <div className="flex flex-col w-[336px] items-start gap-[42px] absolute top-0 left-0">
-            {coreValues.map((value, index) => (
+      {/* Desktop layout - hidden on mobile */}
+      <div className="hidden md:block relative w-full min-h-[400px] h-auto md:h-[602px] mt-6 sm:mt-8 lg:mt-0">
+        <div className="absolute w-full max-w-[1200px] h-auto mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {[...coreValues, ...additionalValues].map((value, index) => (
               <article
                 key={index}
-                className="flex h-[172px] items-start justify-center gap-[17px] px-[25px] py-[35px] relative self-stretch w-full bg-neutral-0 rounded-[17px] border-b [border-bottom-style:solid] border-grey-100 shadow-[0px_4px_26.4px_#2e97ff3d]"
+                className="flex flex-col p-4 sm:p-6 bg-white rounded-lg sm:rounded-xl shadow-sm sm:shadow-md border border-gray-100 h-full"
               >
-                <div className="flex flex-col items-start gap-3 relative flex-1 grow">
-                  <h3 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-xl tracking-[0] leading-[normal]">
-                    {value.title}
-                  </h3>
-
-                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-lg tracking-[0] leading-[normal]">
+                <div className="flex flex-col items-start gap-3 relative flex-1">
+                  <div className="flex items-center gap-4 w-full">
+                    <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-blue-50">
+                      <img
+                        className="w-6 h-6 text-blue-600"
+                        alt={value.iconAlt}
+                        src={value.icon}
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900">
+                      {value.title}
+                    </h3>
+                  </div>
+                  <p className="text-sm sm:text-base text-gray-600 mt-2">
                     {value.description}
                   </p>
-                </div>
-
-                <div className="flex w-12 h-12 items-center justify-center gap-2.5 p-2.5 relative bg-variable-collection-assest rounded-[42px]">
-                  <img
-                    className="relative w-6 h-6"
-                    alt={value.iconAlt}
-                    src={value.icon}
-                  />
                 </div>
               </article>
             ))}
           </div>
 
-          <img
-            className="absolute w-[77px] h-[77px] top-[258px] left-[499px]"
-            alt="Ellipse"
-            src="/About/ca/ellipse-66.svg"
-          />
+          {/* Decorative elements - hidden on mobile and small screens */}
+          <div className="hidden lg:block">
+            <img
+              className="absolute w-[77px] h-[77px] top-[258px] left-[499px]"
+              alt=""
+              src="/About/ca/ellipse-66.svg"
+              loading="lazy"
+            />
 
-          <img
-            className="absolute w-[195px] h-[209px] top-[76px] left-[570px]"
-            alt="Vector"
-            src="/About/ca/vector-2483.svg"
-          />
+            <img
+              className="absolute w-[195px] h-[209px] top-[76px] left-[570px]"
+              alt=""
+              src="/About/ca/vector-2483.svg"
+              loading="lazy"
+            />
 
-          <img
-            className="absolute w-[195px] h-[212px] top-[326px] left-[576px]"
-            alt="Vector"
-            src="/About/ca/vector-2497.svg"
-          />
+            <img
+              className="absolute w-[195px] h-[212px] top-[326px] left-[576px]"
+              alt=""
+              src="/About/ca/vector-2497.svg"
+              loading="lazy"
+            />
 
-          <div className="absolute w-3.5 h-3.5 top-[85px] left-[626px] bg-[#43a2ff] rounded-[7px] border-[4.2px] border-solid border-white shadow-[0px_8.4px_6.3px_5px_#1d8fff33]" />
+            <div className="absolute w-3.5 h-3.5 top-[85px] left-[626px] bg-[#43a2ff] rounded-[7px] border-[4.2px] border-solid border-white shadow-[0px_8.4px_6.3px_5px_#1d8fff33]" />
 
-          <img
-            className="absolute w-[164px] h-[209px] top-[78px] left-[336px]"
-            alt="Vector"
-            src="/About/ca/vector-2493.svg"
-          />
+            <img
+              className="absolute w-[164px] h-[209px] top-[78px] left-[336px]"
+              alt=""
+              src="/About/ca/vector-2493.svg"
+              loading="lazy"
+            />
 
-          <img
-            className="absolute w-[164px] h-[212px] top-[326px] left-[334px]"
-            alt="Vector"
-            src="/About/ca/vector-2496.svg"
-          />
+            <img
+              className="absolute w-[164px] h-[212px] top-[326px] left-[334px]"
+              alt=""
+              src="/About/ca/vector-2496.svg"
+              loading="lazy"
+            />
 
-          <img
-            className="absolute w-[164px] h-5 top-[284px] left-[336px]"
-            alt="Vector"
-            src="/About/ca/vector-2495.svg"
-          />
+            <img
+              className="absolute w-[164px] h-5 top-[284px] left-[336px]"
+              alt=""
+              src="/About/ca/vector-2495.svg"
+              loading="lazy"
+            />
 
-          <img
-            className="absolute w-[164px] h-5 top-[284px] left-[574px]"
-            alt="Vector"
-            src="/About/ca/vector-2498.svg"
-          />
+            <img
+              className="absolute w-[164px] h-5 top-[284px] left-[574px]"
+              alt=""
+              src="/About/ca/vector-2498.svg"
+              loading="lazy"
+            />
 
-          <div className="absolute w-3 h-3 top-[79px] left-[431px] bg-[#43a2ff] rounded-md border-[4.2px] border-solid border-white rotate-180 shadow-[0px_8.4px_6.3px_5px_#1d8fff33]" />
+            <div className="absolute w-3 h-3 top-[79px] left-[431px] bg-[#43a2ff] rounded-md border-[4.2px] border-solid border-white rotate-180 shadow-[0px_8.4px_6.3px_5px_#1d8fff33]" />
 
-          <div className="absolute w-2 h-2 top-[538px] left-[714px] bg-[#43a2ff] rounded border-[2.2px] border-solid border-white shadow-[0px_4.4px_3.3px_2.62px_#1d8fff33]" />
+            <div className="absolute w-2 h-2 top-[538px] left-[714px] bg-[#43a2ff] rounded border-[2.2px] border-solid border-white shadow-[0px_4.4px_3.3px_2.62px_#1d8fff33]" />
 
-          <div className="absolute w-[7px] h-[7px] top-[281px] left-[653px] bg-[#43a2ff] rounded-[3.5px] border-[2.2px] border-solid border-white shadow-[0px_4.4px_3.3px_2.62px_#1d8fff33]" />
+            <div className="absolute w-[7px] h-[7px] top-[281px] left-[653px] bg-[#43a2ff] rounded-[3.5px] border-[2.2px] border-solid border-white shadow-[0px_4.4px_3.3px_2.62px_#1d8fff33]" />
 
-          <img
-            className="absolute w-px h-2.5 top-[380px] left-[452px]"
-            alt="Vector"
-            src="/About/ca/vector-2491.svg"
-          />
+            <img
+              className="absolute w-px h-2.5 top-[380px] left-[452px]"
+              alt=""
+              src="/About/ca/vector-2491.svg"
+              loading="lazy"
+            />
 
-          <img
-            className="absolute w-1 h-px top-[512px] left-[630px] object-cover"
-            alt="Vector"
-            src="/About/ca/vector-2492.svg"
-          />
-        </div>
-
-        <div className="flex flex-col w-[336px] items-start gap-[42px] absolute top-0.5 left-[792px]">
-          {additionalValues.map((value, index) => (
-              <article
-                key={index}
-                className="flex h-[172px] items-start justify-center gap-[42px] px-[25px] py-[35px] relative self-stretch w-full bg-neutral-0 rounded-[17px] border-b [border-bottom-style:solid] border-grey-100 shadow-[0px_4px_26.4px_#2e97ff3d]"
-              >
-              <div className="flex flex-col items-start gap-3 relative flex-1 grow">
-                <h3 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-xl tracking-[0] leading-[normal]">
-                  {value.title}
-                </h3>
-
-                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-lg tracking-[0] leading-[normal]">
-                  {value.description}
-                </p>
-              </div>
-
-              <div className="flex w-12 h-12 items-center justify-center gap-2.5 p-2.5 relative bg-variable-collection-assest rounded-[42px]">
-                <img
-                  className="relative w-6 h-6"
-                  alt={value.iconAlt}
-                  src={value.icon}
-                />
-              </div>
-            </article>
-          ))}
+            <img
+              className="absolute w-1 h-px top-[512px] left-[630px] object-cover"
+              alt=""
+              src="/About/ca/vector-2492.svg"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
 
       {/* Mobile layout */}
-      <div className="flex flex-col md:hidden w-full gap-8">
+      <div className="md:hidden grid grid-cols-1 gap-4 sm:gap-6 w-full mt-6 sm:mt-8 px-4 sm:px-6">
         {[...coreValues, ...additionalValues].map((value, index) => (
           <article
             key={index}
-            className="flex h-auto items-start justify-center gap-4 px-4 py-6 relative self-stretch w-full bg-neutral-0 rounded-[17px] border-b border-grey-100 shadow-[0px_4px_26.4px_#2e97ff3d]"
+            className="flex flex-col p-4 sm:p-6 bg-white rounded-lg sm:rounded-xl shadow-sm sm:shadow-md border border-gray-100"
           >
-            <div className="flex flex-col items-start gap-2 relative flex-1 grow">
-              <h3 className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-lg tracking-[0] leading-[normal]">
+            <div className="flex items-center gap-4 mb-3">
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-blue-50">
+                <img
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600"
+                  alt={value.iconAlt}
+                  src={value.icon}
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                 {value.title}
               </h3>
-              <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-base tracking-[0] leading-[normal]">
-                {value.description}
-              </p>
             </div>
-            <div className="flex w-10 h-10 items-center justify-center gap-2.5 p-2 relative bg-variable-collection-assest rounded-[42px]">
-              <img
-                className="relative w-5 h-5"
-                alt={value.iconAlt}
-                src={value.icon}
-              />
-            </div>
+            <p className="text-sm text-gray-600 pl-0 sm:pl-14">
+              {value.description}
+            </p>
           </article>
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-[23px] w-full md:w-auto">
-        <button className="flex w-[271px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1]">
-          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full mt-8 sm:mt-10 px-4 sm:px-0">
+        <button className="flex items-center justify-center gap-2 w-full sm:w-auto min-w-[220px] h-12 sm:h-[50px] px-6 py-3 bg-primary-300 hover:bg-primary-400 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-300">
+          <span className="text-sm sm:text-base font-medium">
             Start Your Growth Journey
           </span>
-
-          <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
-            <img
-              className="relative w-5 h-5"
-              alt="Arrow right"
-              src="https://c.animaapp.com/zvzHaAwZ/img/arrow-right.svg"
-            />
-          </div>
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
         </button>
 
-        <button className="all-[unset] box-border flex w-[219px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200">
-          <span className="relative w-fit ml-[-0.50px] [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
+        <button className="flex items-center justify-center gap-2 w-full sm:w-auto min-w-[200px] h-12 sm:h-[50px] px-6 py-3 bg-white hover:bg-gray-50 text-gray-900 font-medium rounded-full border border-gray-200 shadow-sm hover:shadow transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-100">
+          <span className="text-sm sm:text-base font-medium">
             Book An Appointment
           </span>
-
-          <img
-            className="relative w-5 h-5 mr-[-0.50px]"
-            alt="Arrow right"
-            src="https://c.animaapp.com/zvzHaAwZ/img/arrow-right-1.svg"
-          />
+          <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
         </button>
       </div>
     </section>

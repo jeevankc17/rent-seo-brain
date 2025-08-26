@@ -38,47 +38,44 @@ const GridBackground = () => {
 export default function CMS() {
   return (
     <div className="relative w-full min-h-screen bg-neutral-900 overflow-hidden">
-      {/* Replace static grid with animated GridBackground */}
+      {/* Grid Background */}
       <GridBackground />
 
       {/* Background Blur Effects */}
-      <div className="absolute left-0 top-[722px] lg:top-[722px] md:top-[500px] sm:top-[400px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
-      {/* <div className="absolute left-[150px] lg:left-[303px] top-[260px] lg:top-[260px] md:top-[200px] sm:top-[150px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" /> */}
-      {/* <div className="absolute right-[50px] lg:right-[125px] top-0 w-[150px] lg:w-[244px] h-[130px] lg:h-[226px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" /> */}
+      <div className="absolute left-0 top-[400px] md:top-[500px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
+      <div className="absolute right-0 top-0 w-[150px] lg:w-[244px] h-[130px] lg:h-[226px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
 
       {/* Center blur effect */}
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-screen">
+      <div className="relative flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-[157px] pt-8 md:pt-12 lg:pt-[78px] min-h-fit max-w-full pb-8 md:pb-16 lg:pb-24">
         {/* Header Section */}
-        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-8 lg:gap-11 mb-8 lg:mb-16">
+        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-6 sm:gap-10 lg:gap-11 mb-6 sm:mb-8 lg:mb-16">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
-            <div className="flex items-center justify-start gap-[9px] h-[33px] border border-white  p-[10px] rounded-[45px]">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 lg:gap-3">
+            {/* Brand Badge */}
+            <div className="flex items-center justify-center gap-[9px] h-[33px] border border-white p-[5px] sm:p-[10px] rounded-[45px]">
+              <div className="flex items-center gap-2">
                 <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
                   {[
                     "/Home-Page/Hero-Section/image1.jpg",
                     "/Home-Page/Hero-Section/image2.jpg",
                     "/Home-Page/Hero-Section/image3.jpg",
-                    "/Home-Page/Hero-Section/image4.jpg",
+                    "/Home-Page/Hero-Section/image4.jpg"
                   ].map((imagePath, index) => (
                     <div
                       key={imagePath}
-                      className={`relative w-[25px]  h-[25px]  rounded-full overflow-hidden
-               ${
-                 index > 0
-                   ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"
-                   : ""
-               }`}
+                      className={`relative w-[25px] h-[25px] rounded-full overflow-hidden ${
+                        index > 0 ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]" : ""
+                      }`}
                     >
                       <Image
                         src={imagePath}
-                        alt={`Review avatar ${index + 1}`}
+                        alt={`Client ${index + 1}`}
                         fill
                         className="object-cover"
                         sizes="(max-width: 768px) 28px, 33.231px"
-                        priority={index < 2} // Load first two images immediately
+                        priority={index < 2}
                       />
                     </div>
                   ))}
@@ -90,15 +87,15 @@ export default function CMS() {
             </div>
 
             {/* Main Heading and Description */}
-            <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-3 lg:gap-4">
-              <h1 className="w-full text-center text-[32px] sm:text-[42px] lg:text-[50px] font-bold leading-[36px] sm:leading-[46px] lg:leading-[57px] font-sans">
+            <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-4">
+              <h1 className="w-full text-center text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight sm:leading-[46px] lg:leading-[57px] font-sans">
                 <span className="text-primary-300">Transform</span>
                 <span className="text-white">
                   {" "}
-                  Your Brand with Strategic Content{" "}
+                  Your Brand with Strategic Content
                 </span>
               </h1>
-              <p className="w-full max-w-[640px] text-grey-200 text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] font-sans">
+              <p className="w-full max-w-[640px] text-grey-200 text-center text-xs sm:text-sm md:text-base font-medium leading-relaxed sm:leading-[20px] lg:leading-[23px] font-sans">
                 Drive explosive growth with data-driven content strategies that
                 convert visitors into customers and build lasting brand
                 authority in your industry.
@@ -107,9 +104,9 @@ export default function CMS() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 lg:gap-[13px] w-full max-w-[630px]">
-            <button className="flex w-full sm:w-[287px] lg:w-[287px] h-[45px] lg:h-[50px] px-[3px] py-0 justify-center lg:justify-end items-center gap-2 lg:gap-[10px] rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-              <span className="text-white text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] capitalize font-sans">
+          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4 md:gap-[13px] w-full max-w-[630px]">
+            <button className="flex w-full sm:w-[200px] md:w-[240px] lg:w-[273px] h-[40px] sm:h-[45px] lg:h-[50px] px-1 sm:px-2 md:px-[3px] py-0 justify-center sm:justify-end items-center gap-1 sm:gap-2 md:gap-[10px] rounded-[30px] sm:rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
+              <span className="text-white text-center text-xs sm:text-sm md:text-base font-medium leading-normal sm:leading-[20px] lg:leading-[23px] capitalize font-sans">
                 Create Content That Converts
               </span>
               <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
@@ -139,8 +136,8 @@ export default function CMS() {
               </div>
             </button>
 
-            <button className="flex w-full sm:w-[280px] lg:w-[280px] h-[45px] lg:h-[50px] px-4 lg:px-[19px] py-[10px] justify-center items-center gap-2 lg:gap-[7px] rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
-              <span className="text-[#091E42] text-sm lg:text-base font-medium leading-[100%] capitalize font-sans">
+            <button className="flex w-full sm:w-[160px] md:w-[180px] lg:w-[220px] h-[40px] sm:h-[45px] lg:h-[50px] px-3 sm:px-4 lg:px-[19px] py-2 sm:py-[10px] justify-center items-center gap-1 sm:gap-2 lg:gap-[7px] rounded-[20px] sm:rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
+              <span className="text-[#091E42] text-xs sm:text-sm md:text-base font-medium leading-[100%] capitalize font-sans">
                 Explore Our Client Wins
               </span>
               <svg
@@ -171,75 +168,59 @@ export default function CMS() {
         </div>
 
         {/* Blog Card Section */}
-        <div className="flex w-[1129px] max-w-[1129px] h-auto lg:h-[358px]  items-start lg:items-center gap-4 lg:gap-6 flex-col lg:flex-row rounded-[11px] bg-white shadow-[0_4px_25.6px_0_rgba(47,152,255,0.37)] mb-8 lg:mb-16">
+        <div className="w-full max-w-[1129px] h-auto lg:h-[358px] flex flex-col lg:flex-row items-start gap-4 lg:gap-6 rounded-[11px] bg-white shadow-[0_4px_25.6px_0_rgba(47,152,255,0.37)] mb-8 lg:mb-16 p-4 lg:p-6">
           {/* Blog Image */}
-          <div className="w-full h-full flex-shrink-0 rounded-[7px] bg-cover bg-center bg-no-repeat overflow-hidden">
-            <img
+          <div className="w-full lg:w-1/2 h-[200px] lg:h-full rounded-[7px] overflow-hidden">
+            <Image
               src="/CMS/Hero-Section/Component45.png"
               alt="Local SEO workspace"
+              width={564}
+              height={358}
               className="w-full h-full object-cover"
+              priority
             />
           </div>
 
           {/* Blog Content */}
-          <div
-            data-property-1="Component 43"
-            className="self-stretch h-96 relative rounded-3xl overflow-hidden"
-          >
-            <div className="w-48 px-3 py-2.5 left-[19px] top-[40px] absolute bg-white rounded-[10px] shadow-[0px_4px_16.399999618530273px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-2.5">
-              <div className="p-1.5 bg-assest rounded-[58.73px] flex justify-start items-center gap-1.5">
-                <div
-                  data-size="48"
-                  className="w-3.5 h-3.5 relative overflow-hidden"
-                >
-                  <div className="w-3 h-3 left-[1.20px] top-[1.20px] absolute  outline-[1.20px] outline-offset-[-0.60px] outline-Icon-Default-Default" />
+          <div className="w-full lg:w-1/2 flex flex-col gap-4 p-4">
+            {/* Stats Card 1 */}
+            <div className="w-full max-w-[192px] p-2.5 bg-white rounded-[10px] shadow-[0px_4px_16.4px_0px_rgba(0,0,0,0.1)] flex items-center gap-2.5">
+              <div className="p-1.5 bg-assest rounded-full flex items-center justify-center">
+                <div className="w-3.5 h-3.5 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-primary-300" />
                 </div>
               </div>
-              <div className="w-32 inline-flex flex-col justify-start items-start gap-1">
-                <div className="self-stretch justify-start text-slate-900 text-sm font-semibold font-['Urbanist'] capitalize leading-3">
-                  2.5k
-                </div>
-                <div className="self-stretch justify-start text-gray-500 text-xs font-medium font-['Urbanist'] capitalize leading-none">
-                  Content Pieces Published this year
-                </div>
+              <div className="flex flex-col">
+                <span className="text-slate-900 text-sm font-semibold font-sans capitalize">2.5k</span>
+                <span className="text-gray-500 text-xs font-medium font-sans capitalize">
+                  Content Pieces Published
+                </span>
               </div>
             </div>
-            <div className="w-48 px-3 py-3.5 left-[917px] top-[54px] absolute bg-blue-500 rounded-[10px] shadow-[0px_4px_46.099998474121094px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-2.5">
-              <div className="p-1.5 bg-indigo-50 rounded-[58.73px] flex justify-start items-center gap-1.5">
-                <div className="w-3.5 h-3.5 relative overflow-hidden">
-                  <div className="w-2.5 h-3 left-[2.33px] top-[1.17px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
-                  <div className="w-1 h-1 left-[8.17px] top-[1.17px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
-                  <div className="w-1 h-0 left-[4.67px] top-[7.58px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
-                  <div className="w-1 h-0 left-[4.67px] top-[9.92px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
-                  <div className="w-px h-0 left-[4.67px] top-[5.25px] absolute  outline-1 outline-offset-[-0.58px] outline-blue-500" />
-                </div>
+
+            {/* Stats Card 2 */}
+            <div className="w-full max-w-[192px] p-2.5 bg-blue-500 rounded-[10px] shadow-lg flex items-center gap-2.5">
+              <div className="p-1.5 bg-blue-400 rounded-full flex items-center justify-center">
+                <svg className="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z" />
+                </svg>
               </div>
-              <div className="w-32 inline-flex flex-col justify-start items-start gap-1">
-                <div className="self-stretch justify-start text-white text-sm font-semibold font-['Urbanist'] capitalize leading-3">
-                  SEO Blog Posts
-                </div>
-                <div className="self-stretch justify-start text-neutral-300 text-xs font-medium font-['Urbanist'] capitalize leading-none">
-                  3.2% avg conversion
-                </div>
+              <div className="flex flex-col">
+                <span className="text-white text-sm font-semibold font-sans capitalize">SEO Blog Posts</span>
+                <span className="text-blue-100 text-xs font-medium font-sans">3.2% avg conversion</span>
               </div>
             </div>
-            <div className="w-48 px-3 py-3.5 left-[878px] top-[313px] absolute bg-white rounded-[10px] shadow-[0px_4px_20.799999237060547px_0px_rgba(0,0,0,1.00)] inline-flex justify-start items-center gap-2.5">
-              <div className="p-1.5 bg-blue-500 rounded-[58.73px] flex justify-start items-center gap-1.5">
-                <div className="w-3.5 h-3.5 relative overflow-hidden">
-                  <div className="w-2.5 h-3 left-[2.33px] top-[1.17px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
-                  <div className="w-1 h-1 left-[8.17px] top-[1.17px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
-                  <div className="w-1 h-0 left-[4.67px] top-[7.58px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
-                  <div className="w-1 h-0 left-[4.67px] top-[9.92px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
-                  <div className="w-px h-0 left-[4.67px] top-[5.25px] absolute  outline-1 outline-offset-[-0.58px] outline-white" />
-                </div>
+
+            {/* Stats Card 3 */}
+            <div className="w-full max-w-[192px] p-2.5 bg-white rounded-[10px] shadow-lg flex items-center gap-2.5">
+              <div className="p-1.5 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg className="w-3.5 h-3.5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z" />
+                </svg>
               </div>
-              <div className="w-32 inline-flex flex-col justify-start items-start gap-1">
-                <div className="self-stretch justify-start text-slate-900 text-sm font-semibold font-['Urbanist'] capitalize leading-3">
-                  Content Strategy
-                </div>
-                <div className="self-stretch justify-start text-neutral-500 text-xs font-medium font-['Urbanist'] capitalize leading-none">
-                  420% avg roi
-                </div>
+              <div className="flex flex-col">
+                <span className="text-slate-900 text-sm font-semibold font-sans capitalize">Content Strategy</span>
+                <span className="text-gray-500 text-xs font-medium font-sans">420% avg ROI</span>
               </div>
             </div>
           </div>

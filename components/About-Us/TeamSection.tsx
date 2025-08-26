@@ -46,9 +46,9 @@ export const TeamSection: React.FC = () => {
     .slice(0, teamMembers.length); // no placeholders — will only render real members
 
   return (
-    <section className="flex flex-col items-center gap-[32px] sm:gap-[40px] lg:gap-[50px] relative flex-[0_0_auto] w-full max-w-[1128px] px-4 sm:px-8 mx-auto">
-      <header className="flex flex-col items-center gap-4 relative flex-[0_0_auto] w-full max-w-[565px]">
-        <div className="flex items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
+    <section className="flex flex-col items-center gap-6 sm:gap-8 lg:gap-[50px] w-full px-4 sm:px-6 md:px-8 lg:px-0 max-w-[2000px] mx-auto">
+      <header className="flex flex-col items-center gap-3 sm:gap-4 w-full max-w-[565px] px-2">
+        <div className="flex items-center justify-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1 sm:py-[5px] relative bg-primary-50 rounded-[45px] border border-solid border-primary-300">
           <img
             className="relative w-[15px] h-[15px]"
             alt="Stars"
@@ -58,11 +58,11 @@ export const TeamSection: React.FC = () => {
             Our Pillars of RSB
           </div>
         </div>
-        <div className="flex flex-col items-center gap-4 relative self-stretch w-full">
-          <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[32px] sm:text-[40px] lg:text-[50px] text-center tracking-[0] leading-[38px] sm:leading-[48px] lg:leading-[57px]">
+        <div className="flex flex-col items-center gap-3 sm:gap-4 w-full mt-2 sm:mt-0">
+          <h2 className="w-full font-sans font-bold text-primary-500 text-2xl sm:text-3xl md:text-4xl lg:text-[50px] text-center leading-tight sm:leading-[48px] lg:leading-[57px]">
             The People Behind the Results
           </h2>
-          <p className="relative w-full max-w-[565px] [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-base text-center tracking-[0] leading-[20px] sm:leading-[23px]">
+          <p className="w-full max-w-[565px] font-sans font-normal text-neutral-200 text-sm sm:text-base text-center leading-relaxed sm:leading-[23px]">
             Meet the experts who bring your digital marketing strategies to life
             with ultimate&nbsp;&nbsp;services : Google Ads , Landing page
             Design&nbsp;&nbsp;&amp; SEO
@@ -70,14 +70,14 @@ export const TeamSection: React.FC = () => {
         </div>
       </header>
 
-      <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-[40px] lg:gap-[107px] w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-6 sm:gap-8 lg:gap-[107px] w-full max-w-[1200px] mx-auto px-2 sm:px-4">
         {visibleMembers.map((member) => (
           <article
             key={member.id}
-            className="relative w-full sm:w-[260px] lg:w-[304px] h-[400px] sm:h-[435px] flex flex-col items-center"
+            className="relative w-full h-[300px] sm:h-[400px] md:h-[435px] flex flex-col items-center"
           >
             <div className="flex flex-col items-center gap-[13px] relative w-full">
-              <div className="relative w-full h-[260px] sm:h-[332px]">
+              <div className="relative w-full h-[200px] sm:h-[260px] md:h-[332px] rounded-lg overflow-hidden">
                 <div className="relative w-full h-full">
                   {isLocal(member.image) ? (
                     <Image
@@ -97,10 +97,10 @@ export const TeamSection: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center gap-2 relative w-full max-w-[187px]">
-                <h3 className="relative w-full mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-base sm:text-lg text-center tracking-[0] leading-[normal]">
+                <h3 className="w-full font-sans font-semibold text-primary-500 text-base sm:text-lg text-center leading-tight">
                   {member.name}
                 </h3>
-                <p className="relative w-full [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-sm text-center tracking-[0] leading-[normal]">
+                <p className="w-full font-sans font-normal text-grey-500 text-sm text-center leading-relaxed">
                   {member.position}
                 </p>
                 <img

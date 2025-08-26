@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 import React from "react";
 import Image from "next/image";
 
@@ -85,77 +85,73 @@ const ChevronDownIcon: React.FC<{ className?: string }> = ({
 // Main Hero Section Component
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative w-full h-[1041px] bg-neutral-900 overflow-hidden">
+    <div className="relative w-full min-h-screen bg-neutral-900 overflow-hidden">
       {/* Grid Background */}
       <GridBackground />
 
       {/* Background Blur Effects */}
-      {/* <div className="absolute left-0 top-[722px] w-80 h-80 opacity-50 bg-blue-400 rounded-full blur-[200px]" />
-      <div className="absolute left-[299px] top-[260px] w-80 h-80 opacity-50 bg-blue-400 rounded-full blur-[200px]" /> 
-      <div className="absolute left-[1156px] top-0 w-60 h-56 opacity-50 bg-blue-400 rounded-full blur-[200px]" /> */}
+      <div className="absolute left-0 top-[400px] md:top-[500px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
+      <div className="absolute right-0 top-0 w-[150px] lg:w-[244px] h-[130px] lg:h-[226px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
 
-      {/* Radial Gradient Overlay */}
-      {/* <div className="absolute left-[18px] top-[153px] w-[1422px] h-[888px] opacity-50 overflow-hidden">
-        <div className="absolute left-[-9px] top-0 w-[1440px] h-[1440px]">
-          <div 
-            className="absolute left-0 top-0 w-[1440px] h-[1197px]"
-            style={{
-              background: 'radial-gradient(ellipse 100% 52.19% at 50% 0%, black 0%, rgba(0, 0, 0, 0) 95%)'
-            }}
-          />
-        </div>
-      </div> */}
+      {/* Center blur effect */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
 
-      {/* Hero Content */}
-      <main className="absolute left-1/2 top-[51px] -translate-x-1/2 w-[661px] flex flex-col items-center gap-11 z-10">
-        {/* Text Content */}
-        <div className="w-[630px] flex flex-col items-center gap-5">
-          <div className="w-[630px] flex flex-col items-center gap-4">
-            <h1 className="text-center text-white text-5xl font-bold font-urbanist leading-[57px]">
-              Let's Talk SEO That Works & Grow
-            </h1>
-            <p className="text-center text-neutral-300 text-base font-medium font-urbanist leading-snug">
-              Reach out to the Rent SEO Brain team for product support,
-              partnerships, or custom SEO tool access. We typically reply within
-              24 hours.
-            </p>
+      {/* Main Content Container */}
+      <div className="relative flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-[157px] pt-8 md:pt-12 lg:pt-[78px] min-h-fit max-w-full pb-8 md:pb-16 lg:pb-24">
+        {/* Header Section */}
+        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-6 sm:gap-10 lg:gap-11 mb-6 sm:mb-8 lg:mb-16">
+          <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
+            {/* Brand Badge */}
+            <div className="flex items-center justify-center gap-[9px] h-[33px] border border-white p-[5px] sm:p-[10px] rounded-[45px]">
+              <span className="text-white text-[10px] lg:text-[12px] font-medium leading-[20px] lg:leading-[23px] tracking-[0.06px] uppercase font-sans">
+                The SEO Playbook for Modern Brands
+              </span>
+            </div>
+
+            {/* Main Heading and Description */}
+            <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-4">
+              <h1 className="w-full text-center text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight sm:leading-[46px] lg:leading-[57px] font-sans">
+                <span className="text-white">Let's Talk </span>
+                <span className="text-primary-300">SEO That Works</span>
+              </h1>
+              <p className="w-full max-w-[640px] text-grey-200 text-center text-xs sm:text-sm md:text-base font-medium leading-relaxed sm:leading-[20px] lg:leading-[23px] font-sans">
+                Reach out to the Rent SEO Brain team for product support,
+                partnerships, or custom SEO tool access. We typically reply within
+                24 hours.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4 md:gap-[13px] w-full max-w-[520px]">
+            <button className="flex w-full sm:w-[200px] md:w-[240px] lg:w-[273px] h-[40px] sm:h-[45px] lg:h-[50px] px-1 sm:px-2 md:px-[3px] py-0 justify-center sm:justify-end items-center gap-1 sm:gap-2 md:gap-[10px] rounded-[30px] sm:rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
+              <span className="text-white text-center text-xs sm:text-sm md:text-base font-medium leading-normal sm:leading-[20px] lg:leading-[23px] capitalize font-sans">
+                Send a Message
+              </span>
+              <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
+                <ArrowIcon className="w-4 h-4 lg:w-5 lg:h-5 text-blue-500" />
+              </div>
+            </button>
+
+            <button className="flex w-full sm:w-[160px] md:w-[180px] lg:w-[220px] h-[40px] sm:h-[45px] lg:h-[50px] px-3 sm:px-4 lg:px-[19px] py-2 sm:py-[10px] justify-center items-center gap-1 sm:gap-2 lg:gap-[7px] rounded-[20px] sm:rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
+              <span className="text-[#091E42] text-xs sm:text-sm md:text-base font-medium leading-[100%] capitalize font-sans">
+                Schedule a Call
+              </span>
+              <ArrowIcon className="w-4 h-4 lg:w-5 lg:h-5 text-[#091E42]" />
+            </button>
           </div>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex items-center gap-3">
-          {/* Primary CTA */}
-          <button className="flex items-center gap-2.5 w-52 h-12 px-[3px] bg-primary-300 hover:bg-blue-600 rounded-[45px] shadow-[0px_4px_14.7px_rgba(47,152,255,0.63)] transition-colors">
-            <span className="text-center text-white text-base font-medium font-urbanist capitalize leading-snug flex-1">
-              Send a Message
-            </span>
-            <div className="p-3 bg-indigo-50 border border-blue-300 rounded-[34px] flex items-center justify-center">
-              <ArrowIcon className="w-5 h-5 text-blue-500" />
-            </div>
-          </button>
-
-          {/* Secondary CTA */}
-          <button className="flex items-center gap-1.5 w-56 h-12 px-5 py-2.5 bg-white hover:bg-neutral-100 border border-neutral-300 rounded-[33px] transition-colors">
-            <span className="text-sky-950 text-base font-medium font-urbanist capitalize">
-              Schedule a Call
-            </span>
-            <ArrowIcon className="w-5 h-5 text-sky-950" />
-          </button>
+        {/* Contact Form/Image Placeholder */}
+        <div className="relative w-full max-w-[1128px] h-auto lg:h-[407px] mt-8 lg:mt-16">
+          <Image
+            src="/Blog/Hero-Section/Component.png"
+            alt="Contact Form"
+            width={1128}
+            height={407}
+            className="w-full h-full object-cover rounded-3xl"
+          />
         </div>
-      </main>
-
-      {/* Background decorative circle */}
-      <div className="absolute left-[325px] top-[617px] w-[790px] h-[790px] bg-sky-500/10 rounded-full blur-xl" />
-
-      {/* Contact Form/Image Placeholder */}
-      <div className="absolute left-[156px] top-[461px] w-[1128px] h-96 z-10">
-        <Image
-          src="/Blog/Hero-Section/Component.png" // Replace with your contact form image
-          alt="Contact Form"
-          width={1128}
-          height={407}
-          className="w-full h-full object-cover rounded-3xl"
-        />
       </div>
     </div>
   );

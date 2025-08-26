@@ -55,9 +55,9 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-screen max-w-full">
+      <div className="relative flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-[157px] pt-8 md:pt-12 lg:pt-[78px] min-h-fit max-w-full pb-8 md:pb-16 lg:pb-24">
         {/* Header Section */}
-        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-10 sm:gap-16 lg:gap-11 mb-8 lg:mb-16">
+        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-6 sm:gap-10 lg:gap-11 mb-6 sm:mb-8 lg:mb-16">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
             {/* Brand Badge */}
             {/* <div className="flex p-[5px] items-center gap-2 lg:gap-[9px] rounded-[45px] border border-primary-75"> */}
@@ -103,7 +103,7 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
 
             {/* Main Heading and Description */}
             <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-4">
-              <h1 className="w-full text-center text-[28px] sm:text-[42px] lg:text-[50px] font-bold leading-[32px] sm:leading-[46px] lg:leading-[57px] font-sans">
+              <h1 className="w-full text-center text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight sm:leading-[46px] lg:leading-[57px] font-sans">
                 <span className="text-white">We </span>
                 <span className="text-primary-300">Grow Brands</span>
                 <span className="text-white">
@@ -111,7 +111,7 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
                   By Ranking,Designing, and Promoting
                 </span>
               </h1>
-              <p className="w-full max-w-[640px] text-grey-200 text-center text-sm sm:text-base font-medium leading-[18px] sm:leading-[20px] lg:leading-[23px] font-sans">
+              <p className="w-full max-w-[640px] text-grey-200 text-center text-xs sm:text-sm md:text-base font-medium leading-relaxed sm:leading-[20px] lg:leading-[23px] font-sans">
                 Our team is on a mission to help startups, agencies, and
                 enterprises thrive online with custom strategies that deliver
                 results.
@@ -120,9 +120,9 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-2 sm:gap-3 lg:gap-[13px] w-full max-w-[520px]">
-            <button className="flex w-full sm:w-[240px] lg:w-[273px] h-[45px] lg:h-[50px] px-[3px] py-0 justify-center lg:justify-end items-center gap-2 lg:gap-[10px] rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-              <span className="text-white text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] capitalize font-sans">
+          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4 md:gap-[13px] w-full max-w-[520px]">
+            <button className="flex w-full sm:w-[200px] md:w-[240px] lg:w-[273px] h-[40px] sm:h-[45px] lg:h-[50px] px-1 sm:px-2 md:px-[3px] py-0 justify-center sm:justify-end items-center gap-1 sm:gap-2 md:gap-[10px] rounded-[30px] sm:rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
+              <span className="text-white text-center text-xs sm:text-sm md:text-base font-medium leading-normal sm:leading-[20px] lg:leading-[23px] capitalize font-sans">
                 Meet The Team
               </span>
               <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
@@ -152,8 +152,8 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
               </div>
             </button>
 
-            <button className="flex w-full sm:w-[180px] lg:w-[220px] h-[45px] lg:h-[50px] px-4 lg:px-[19px] py-[10px] justify-center items-center gap-2 lg:gap-[7px] rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
-              <span className="text-[#091E42] text-sm lg:text-base font-medium leading-[100%] capitalize font-sans">
+            <button className="flex w-full sm:w-[160px] md:w-[180px] lg:w-[220px] h-[40px] sm:h-[45px] lg:h-[50px] px-3 sm:px-4 lg:px-[19px] py-2 sm:py-[10px] justify-center items-center gap-1 sm:gap-2 lg:gap-[7px] rounded-[20px] sm:rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
+              <span className="text-[#091E42] text-xs sm:text-sm md:text-base font-medium leading-[100%] capitalize font-sans">
                 Our Success Stories
               </span>
               <svg
@@ -183,14 +183,17 @@ const HeroSection: NextPage<Frame2121458408Type> = ({ className = "" }) => {
           </div>
         </div>
 
-        {/* Image Section (visible only on lg and above) */}
-        <div className="hidden lg:block w-full max-w-[999.1px] h-[490px] text-left text-[22px] text-white font-[Urbanist]">
-          <div className="absolute top-[0px] left-[calc(50%_-_394.55px)] [filter:blur(50.6px)] rounded-[50%] bg-[rgba(0,132,255,0.09)] w-[790px] h-[790px]" />
-          <div className="absolute top-[503px] left-[calc(50%_-_499.55px)] flex flex-row items-center justify-start gap-[27px]">
+        {/* Image Section (visible only on md and above) - Fixed positioning */}
+        <div className="hidden md:block relative w-full max-w-[999.1px] h-[300px] md:h-[400px] lg:h-[490px] text-left text-lg md:text-xl lg:text-[22px] text-white font-[Urbanist]">
+          {/* Background blur - positioned relative to this container */}
+          <div className="absolute top-[-200px] left-1/2 transform -translate-x-1/2 [filter:blur(50.6px)] rounded-[50%] bg-[rgba(0,132,255,0.09)] w-[790px] h-[790px]" />
+          
+          {/* Content positioned relative to container instead of absolute to viewport */}
+          <div className="relative top-0 left-1/2 transform -translate-x-1/2 flex flex-row items-center justify-center gap-[27px] w-full max-w-[999px]">
             <div className="w-[349.1px] relative h-[342px] overflow-hidden flex items-center justify-center">
               <Image
                 className="w-full h-full object-cover absolute left-[0px] top-[0px] [transform:scale(1.044)]"
-                width={349.1}
+                width={349}
                 height={342}
                 sizes="100vw"
                 alt=""

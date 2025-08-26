@@ -50,71 +50,61 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
     "/Home-Page/Hero-Section/image6.jpg",
   ];
   return (
-    <div
-      className={`relative w-full bg-[#0d0e12] max-w-full h-[960px] overflow-hidden text-left text-[22px] text-[#0a1519] font-[Urbanist] ${className}`}
-    >
-      <div>
-        {/* Replace static grid with animated GridBackground */}
-        <GridBackground />
-      </div>
+    <div className={`relative w-full bg-neutral-900 min-h-screen overflow-hidden ${className}`}>
+      {/* Grid Background */}
+      <GridBackground />
 
       {/* Background Blur Effects */}
-      <div className="absolute left-0 top-[722px] lg:top-[722px] md:top-[500px] sm:top-[400px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
-      {/* <div className="absolute left-[150px] lg:left-[303px] top-[260px] lg:top-[260px] md:top-[200px] sm:top-[150px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" /> */}
-      {/* <div className="absolute right-[50px] lg:right-[125px] top-0 w-[150px] lg:w-[244px] h-[130px] lg:h-[226px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" /> */}
+      <div className="absolute left-0 top-[400px] md:top-[500px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
+      <div className="absolute right-0 top-0 w-[150px] lg:w-[244px] h-[130px] lg:h-[226px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
 
       {/* Center blur effect */}
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-screen">
+      <div className="relative flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-[157px] pt-8 md:pt-12 lg:pt-[78px] min-h-fit max-w-full pb-8 md:pb-16 lg:pb-24">
         {/* Header Section */}
-        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-8 lg:gap-11 mb-8 lg:mb-16">
+        <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-6 sm:gap-10 lg:gap-11 mb-6 sm:mb-8 lg:mb-16">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
-            {/* className="flex items-center justify-start w-[365px] h-[33px] p-[5px] border  rounded-[45px] absolute left-1/2 transform -translate-x-1/2 gap-[9px]" */}
-            <div className="flex items-center justify-start gap-[9px] h-[33px] border border-white  p-[5px] rounded-[45px]">
+            {/* Brand Badge */}
+            <div className="flex items-center justify-center gap-[9px] h-[33px] border border-white p-[5px] sm:p-[10px] rounded-[45px]">
               <div className="flex items-start gap-[-8px] lg:gap-[-10.677px]">
                 {[
                   "/Home-Page/Hero-Section/image1.jpg",
                   "/Home-Page/Hero-Section/image2.jpg",
                   "/Home-Page/Hero-Section/image3.jpg",
-                  "/Home-Page/Hero-Section/image4.jpg",
-                  "/Home-Page/Hero-Section/image5.jpg",
-                  "/Home-Page/Hero-Section/image6.jpg",
+                  "/Home-Page/Hero-Section/image4.jpg"
                 ].map((imagePath, index) => (
                   <div
                     key={imagePath}
-                    className={`relative w-[25px]  h-[25px]  rounded-full overflow-hidden
-                      ${
-                        index > 0
-                          ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]"
-                          : ""
-                      }`}
+                    className={`relative w-[25px] h-[25px] rounded-full overflow-hidden ${
+                      index > 0 ? "border-[1.2px] lg:border-[1.602px] border-grey-50 -ml-[8px] lg:-ml-[10.677px]" : ""
+                    }`}
                   >
                     <Image
                       src={imagePath}
-                      alt={`Review avatar ${index + 1}`}
+                      alt={`Client ${index + 1}`}
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 28px, 33.231px"
-                      priority={index < 2} // Load first two images immediately
+                      priority={index < 2}
                     />
                   </div>
                 ))}
               </div>
-              <span className="text-white font-urbanist font-medium text-[12px] leading-[23px] tracking-[0.5%] uppercase w-[256px] h-[23px]">
-                The SEO Playbook for Modern Brands.
+              <span className="text-white text-[10px] lg:text-[12px] font-medium leading-[20px] lg:leading-[23px] tracking-[0.06px] uppercase font-sans">
+                The SEO Playbook for Modern Brands
               </span>
             </div>
 
             {/* Main Heading and Description */}
-            <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-3 lg:gap-4">
-              <h1 className="w-full text-center text-[32px] sm:text-[42px] lg:text-[50px] font-bold leading-[36px] sm:leading-[46px] lg:leading-[57px] font-sans">
+            <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-4">
+              <h1 className="w-full text-center text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight sm:leading-[46px] lg:leading-[57px] font-sans">
                 <span className="text-white">Rank Smarter with </span>
                 <span className="text-primary-300">SEO Tips</span>
                 <span className="text-white"> That Work</span>
               </h1>
-              <p className="w-full max-w-[640px] text-grey-200 text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] font-sans">
+              <p className="w-full max-w-[640px] text-grey-200 text-center text-xs sm:text-sm md:text-base font-medium leading-relaxed sm:leading-[20px] lg:leading-[23px] font-sans">
                 From keyword research to link building, get actionable advice
                 and case studies to grow your organic reach.
               </p>
@@ -122,9 +112,9 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 lg:gap-[13px] w-full max-w-[520px]">
-            <button className="flex w-full sm:w-[240px] lg:w-[273px] h-[45px] lg:h-[50px] px-[3px] py-0 justify-center lg:justify-end items-center gap-2 lg:gap-[10px] rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-              <span className="text-white text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] capitalize font-sans">
+          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4 md:gap-[13px] w-full max-w-[520px]">
+            <button className="flex w-full sm:w-[200px] md:w-[240px] lg:w-[273px] h-[40px] sm:h-[45px] lg:h-[50px] px-1 sm:px-2 md:px-[3px] py-0 justify-center sm:justify-end items-center gap-1 sm:gap-2 md:gap-[10px] rounded-[30px] sm:rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
+              <span className="text-white text-center text-xs sm:text-sm md:text-base font-medium leading-normal sm:leading-[20px] lg:leading-[23px] capitalize font-sans">
                 Boost Your SEO Knowledge
               </span>
               <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
@@ -154,8 +144,8 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
               </div>
             </button>
 
-            <button className="flex w-full sm:w-[180px] lg:w-[220px] h-[45px] lg:h-[50px] px-4 lg:px-[19px] py-[10px] justify-center items-center gap-2 lg:gap-[7px] rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
-              <span className="text-[#091E42] text-sm lg:text-base font-medium leading-[100%] capitalize font-sans">
+            <button className="flex w-full sm:w-[160px] md:w-[180px] lg:w-[220px] h-[40px] sm:h-[45px] lg:h-[50px] px-3 sm:px-4 lg:px-[19px] py-2 sm:py-[10px] justify-center items-center gap-1 sm:gap-2 lg:gap-[7px] rounded-[20px] sm:rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
+              <span className="text-[#091E42] text-xs sm:text-sm md:text-base font-medium leading-[100%] capitalize font-sans">
                 Read the Trending
               </span>
               <svg
@@ -186,29 +176,31 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
         </div>
       </div>
 
-      <section>
-        <div className="absolute top-[0px] left-[0px] w-[1419.5px] h-[1041px] overflow-hidden flex items-center justify-center">
+      {/* Hero Image Section */}
+      <div className="relative w-full max-w-[1419.5px] mx-auto mt-8 lg:mt-16">
+        <div className="relative w-full aspect-[1363/919] overflow-hidden rounded-2xl lg:rounded-3xl">
           <Image
-            className="w-full h-full object-cover absolute left-[10px] top-[122px] [transform:scale(1.014)]"
-            width={1419.5}
-            height={1041}
-            sizes="100vw"
-            alt=""
             src="/Home-Page/Hero-Section/public/bg1@2x.png"
+            alt="SEO Strategy Visualization"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 1024px) 100vw, 1419.5px"
           />
         </div>
-        <div className="absolute top-[260px] left-[643px] w-[154px] h-[142px]" />
-        <div className="absolute top-[699px] left-[112px] w-[1248px] h-[525.7px]" />
-        <div className="absolute top-[84px] left-[calc(50%_-_624px)] w-[1248px] h-[922px]">
-          <div className="absolute top-[502px] left-[0px] w-[1248px] h-[525.7px]">
-            <div className="absolute top-[0px] left-[0px] w-[443.5px] h-[275px] overflow-hidden flex items-center justify-center">
+      </div>
+
+      {/* Additional decorative elements - Hidden on mobile */}
+      <div className="hidden lg:block absolute top-[699px] left-[112px] w-full max-w-[1248px] h-[525.7px]">
+        <div className="absolute top-[84px] left-1/2 transform -translate-x-1/2 w-full max-w-[1248px] h-[922px]">
+          <div className="absolute top-[502px] left-0 w-full h-[525.7px]">
+            <div className="absolute top-0 left-0 w-full max-w-[443.5px] h-[275px] overflow-hidden">
               <Image
-                className="w-full h-full object-cover absolute left-[0px] top-[7px] [transform:scale(1.027)]"
-                width={443.5}
-                height={275}
-                sizes="100vw"
-                alt=""
                 src="/Home-Page/Hero-Section/public/left-part@2x.png"
+                alt="SEO Visualization"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 443.5px"
               />
             </div>
             <div className="absolute top-[37px] left-[826px] w-[422px] h-60">
@@ -345,7 +337,7 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
