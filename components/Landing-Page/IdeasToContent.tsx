@@ -2,12 +2,12 @@ import React from "react";
 
 const IdeasToContent = () => {
   return (
-    <div className="flex w-[907px] h-[1766px] flex-col items-start gap-[50px] relative">
+    <div className="flex w-full max-w-[907px] h-auto lg:h-[1766px] flex-col items-start gap-8 lg:gap-[50px] relative px-4 lg:px-0 mx-auto">
       {/* Title Section */}
-      <div className="flex w-[601px] flex-col justify-center items-start gap-4 relative">
+      <div className="flex w-full max-w-[601px] flex-col justify-center items-start gap-4 relative">
         {/* Badge */}
         <div
-          className="flex w-[270px] border border-grey-300 py-[5px]  px-[2px] justify-center items-center gap-[6px] rounded-[45px] relative bg-Secondary-300"
+          className="flex w-full max-w-[270px] border border-grey-300 py-[5px] px-[2px] justify-center items-center gap-[6px] rounded-[45px] relative bg-Secondary-300"
         >
           <svg
             width="15"
@@ -22,17 +22,17 @@ const IdeasToContent = () => {
               fill="yellow"
             />
           </svg>
-          <div className="font-urbanist text-[14px]  w-[270px] bg-white text-secondary-300 font-medium leading-[23px] relative">
+          <div className="font-urbanist text-xs lg:text-[14px] w-full max-w-[270px] bg-white text-secondary-300 font-medium leading-[20px] lg:leading-[23px] relative">
             Not just design ,design that performs.
           </div>
         </div>
 
         {/* Title and Description */}
-        <div className="flex h-[176px] flex-col justify-center items-start gap-4 self-stretch relative">
-          <div className="w-[593px] text-center text-primary-500 font-urbanist text-[48px] font-bold leading-[57px] relative">
-            From Wireframe to Wow , Here’s How We Build It
+        <div className="flex h-auto lg:h-[176px] flex-col justify-center items-start gap-4 self-stretch relative">
+          <div className="w-full max-w-[593px] text-center text-primary-500 font-urbanist text-xl md:text-3xl lg:text-[48px] font-bold leading-[24px] md:leading-[36px] lg:leading-[57px] relative">
+            From Wireframe to Wow , Here's How We Build It
           </div>
-          <div className="text-center font-urbanist text-[16px] text-neutral-900 font-normal leading-[23px] self-stretch relative">
+          <div className="text-center font-urbanist text-sm md:text-base lg:text-[16px] text-neutral-900 font-normal leading-[20px] md:leading-[23px] self-stretch relative">
             Our landing page design process focuses on results. From strategy to
             final handoff, every step is crafted to meet your goals and drive
             conversions.
@@ -41,10 +41,10 @@ const IdeasToContent = () => {
       </div>
 
       {/* Process Flow */}
-      <div className="h-[1491px] flex-shrink-0 self-stretch relative">
+      <div className="h-auto lg:h-[1491px] flex-shrink-0 self-stretch relative">
         {/* Vertical Line */}
         <svg
-          className="w-0 h-[7px] flex-shrink-0 stroke-[0.669px] stroke-white absolute left-[484px] top-[643px]"
+          className="hidden lg:block w-0 h-[7px] flex-shrink-0 stroke-[0.669px] stroke-white absolute left-[484px] top-[643px]"
           width="2"
           height="9"
           viewBox="0 0 2 9"
@@ -73,28 +73,28 @@ const IdeasToContent = () => {
         </svg>
 
         {/* Process Card 01 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[562px] top-0 h-[292px] bg-white border border-gray-200">
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] text-grey-300 capitalize relative">
+        <div className="flex w-full max-w-[345px] py-6 lg:py-[33px] px-4 lg:px-[22px] flex-col items-start gap-2 lg:gap-[-15px] rounded-[25px] relative lg:absolute lg:left-[562px] lg:top-0 h-auto lg:h-[292px] bg-white border border-gray-200 mb-6 lg:mb-0">
+          <div className="w-full max-w-[307px] font-urbanist text-4xl lg:text-[85px] font-bold leading-[40px] lg:leading-[55px] text-grey-300 capitalize relative">
             01
           </div>
-          <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[105px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
+          <div className="flex w-full max-w-[307px] flex-col items-start gap-4 lg:gap-6 relative">
+            <div className="flex w-full max-w-[105px] py-[6px] px-4 lg:px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
               <div
-                className="font-urbanist text-[14px] font-medium leading-[20px] text-primary-300 capitalize relative"
+                className="font-urbanist text-xs lg:text-[14px] font-medium leading-[18px] lg:leading-[20px] text-primary-300 capitalize relative"
                 style={{ color: "#071F36" }}
               >
                 Step 1
               </div>
             </div>
-            <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
+            <div className="flex w-full max-w-[307px] flex-col items-start gap-3 lg:gap-[14px] relative">
               <div
-                className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative"
+                className="font-urbanist text-base lg:text-[18px] font-medium leading-[18px] lg:leading-[20px] capitalize self-stretch relative"
                 style={{ color: "#FFF" }}
               >
                 Discovery
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] text-gray-400 font-medium leading-[24px] capitalize relative">
-                We begin by understanding your campaign’s goals, audience, and
+              <div className="w-full max-w-[307px] font-urbanist text-xs lg:text-[14px] text-gray-400 font-medium leading-[20px] lg:leading-[24px] capitalize relative">
+                We begin by understanding your campaign's goals, audience, and
                 desired actions. This helps us shape the strategy, tone, and
                 layout that fits your brand and objectives.{" "}
               </div>
@@ -103,28 +103,28 @@ const IdeasToContent = () => {
         </div>
 
         {/* Process Card 02 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[-15px] top-[300px] h-[292px] bg-white border border-gray-200">
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] text-grey-300 capitalize relative">
+        <div className="flex w-full max-w-[345px] py-6 lg:py-[33px] px-4 lg:px-[22px] flex-col items-start gap-2 lg:gap-[-15px] rounded-[25px] relative lg:absolute lg:left-[-15px] lg:top-[300px] h-auto lg:h-[292px] bg-white border border-gray-200 mb-6 lg:mb-0">
+          <div className="w-full max-w-[307px] font-urbanist text-4xl lg:text-[85px] font-bold leading-[40px] lg:leading-[55px] text-grey-300 capitalize relative">
             02
           </div>
-          <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[105px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
+          <div className="flex w-full max-w-[307px] flex-col items-start gap-4 lg:gap-6 relative">
+            <div className="flex w-full max-w-[105px] py-[6px] px-4 lg:px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
               <div
-                className="font-urbanist text-[14px] font-medium leading-[20px] text-primary-300 capitalize relative"
+                className="font-urbanist text-xs lg:text-[14px] font-medium leading-[18px] lg:leading-[20px] text-primary-300 capitalize relative"
                 style={{ color: "#071F36" }}
               >
                 Step 2
               </div>
             </div>
-            <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
+            <div className="flex w-full max-w-[307px] flex-col items-start gap-3 lg:gap-[14px] relative">
               <div
-                className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative"
+                className="font-urbanist text-base lg:text-[18px] font-medium leading-[18px] lg:leading-[20px] capitalize self-stretch relative"
                 style={{ color: "#FFF" }}
               >
                 Content Planning
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] text-gray-400 font-medium leading-[24px] capitalize relative">
-                We begin by understanding your campaign’s goals, audience, and
+              <div className="w-full max-w-[307px] font-urbanist text-xs lg:text-[14px] text-gray-400 font-medium leading-[20px] lg:leading-[24px] capitalize relative">
+                We begin by understanding your campaign's goals, audience, and
                 desired actions. This helps us shape the strategy, tone, and
                 layout that fits your brand and objectives.{" "}
               </div>
@@ -133,28 +133,28 @@ const IdeasToContent = () => {
         </div>
 
         {/* Process Card 03 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[562px] top-[583px] h-[268px] bg-white border border-gray-200">
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] text-grey-300 capitalize relative">
+        <div className="flex w-full max-w-[345px] py-6 lg:py-[33px] px-4 lg:px-[22px] flex-col items-start gap-2 lg:gap-[-15px] rounded-[25px] relative lg:absolute lg:left-[562px] lg:top-[583px] h-auto lg:h-[268px] bg-white border border-gray-200 mb-6 lg:mb-0">
+          <div className="w-full max-w-[307px] font-urbanist text-4xl lg:text-[85px] font-bold leading-[40px] lg:leading-[55px] text-grey-300 capitalize relative">
             03
           </div>
-          <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[105px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
+          <div className="flex w-full max-w-[307px] flex-col items-start gap-4 lg:gap-6 relative">
+            <div className="flex w-full max-w-[105px] py-[6px] px-4 lg:px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
               <div
-                className="font-urbanist text-[14px] font-medium leading-[20px] text-primary-300 capitalize relative"
+                className="font-urbanist text-xs lg:text-[14px] font-medium leading-[18px] lg:leading-[20px] text-primary-300 capitalize relative"
                 style={{ color: "#071F36" }}
               >
                 Step 3
               </div>
             </div>
-            <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
+            <div className="flex w-full max-w-[307px] flex-col items-start gap-3 lg:gap-[14px] relative">
               <div
-                className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative"
+                className="font-urbanist text-base lg:text-[18px] font-medium leading-[18px] lg:leading-[20px] capitalize self-stretch relative"
                 style={{ color: "#FFF" }}
               >
                 Wireframing
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] text-gray-400 font-medium leading-[24px] capitalize relative">
-                We begin by understanding your campaign’s goals, audience, and
+              <div className="w-full max-w-[307px] font-urbanist text-xs lg:text-[14px] text-gray-400 font-medium leading-[20px] lg:leading-[24px] capitalize relative">
+                We begin by understanding your campaign's goals, audience, and
                 desired actions. This helps us shape the strategy, tone, and
                 layout that fits your brand and objectives.{" "}
               </div>
@@ -163,28 +163,28 @@ const IdeasToContent = () => {
         </div>
 
         {/* Process Card 04 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[-15px] top-[878px] h-[292px] bg-white border border-gray-200">
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] text-grey-300 capitalize relative">
+        <div className="flex w-full max-w-[345px] py-6 lg:py-[33px] px-4 lg:px-[22px] flex-col items-start gap-2 lg:gap-[-15px] rounded-[25px] relative lg:absolute lg:left-[-15px] lg:top-[878px] h-auto lg:h-[292px] bg-white border border-gray-200 mb-6 lg:mb-0">
+          <div className="w-full max-w-[307px] font-urbanist text-4xl lg:text-[85px] font-bold leading-[40px] lg:leading-[55px] text-grey-300 capitalize relative">
             04
           </div>
-          <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[105px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
+          <div className="flex w-full max-w-[307px] flex-col items-start gap-4 lg:gap-6 relative">
+            <div className="flex w-full max-w-[105px] py-[6px] px-4 lg:px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
               <div
-                className="font-urbanist text-[14px] font-medium leading-[20px] text-primary-300 capitalize relative"
+                className="font-urbanist text-xs lg:text-[14px] font-medium leading-[18px] lg:leading-[20px] text-primary-300 capitalize relative"
                 style={{ color: "#071F36" }}
               >
                 Step 4
               </div>
             </div>
-            <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
+            <div className="flex w-full max-w-[307px] flex-col items-start gap-3 lg:gap-[14px] relative">
               <div
-                className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative"
+                className="font-urbanist text-base lg:text-[18px] font-medium leading-[18px] lg:leading-[20px] capitalize self-stretch relative"
                 style={{ color: "#FFF" }}
               >
                 UI/UX Design
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] text-gray-400 font-medium leading-[24px] capitalize relative">
-                We begin by understanding your campaign’s goals, audience, and
+              <div className="w-full max-w-[307px] font-urbanist text-xs lg:text-[14px] text-gray-400 font-medium leading-[20px] lg:leading-[24px] capitalize relative">
+                We begin by understanding your campaign's goals, audience, and
                 desired actions. This helps us shape the strategy, tone, and
                 layout that fits your brand and objectives.{" "}
               </div>
@@ -193,28 +193,28 @@ const IdeasToContent = () => {
         </div>
 
         {/* Process Card 05 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[561px] top-[1199px] h-[292px] bg-white border border-gray-200">
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] text-grey-300 capitalize relative">
+        <div className="flex w-full max-w-[345px] py-6 lg:py-[33px] px-4 lg:px-[22px] flex-col items-start gap-2 lg:gap-[-15px] rounded-[25px] relative lg:absolute lg:left-[561px] lg:top-[1199px] h-auto lg:h-[292px] bg-white border border-gray-200 mb-6 lg:mb-0">
+          <div className="w-full max-w-[307px] font-urbanist text-4xl lg:text-[85px] font-bold leading-[40px] lg:leading-[55px] text-grey-300 capitalize relative">
             05
           </div>
-          <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[105px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
+          <div className="flex w-full max-w-[307px] flex-col items-start gap-4 lg:gap-6 relative">
+            <div className="flex w-full max-w-[105px] py-[6px] px-4 lg:px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative bg-primary-50 border border-primary-200">
               <div
-                className="font-urbanist text-[14px] font-medium leading-[20px] text-primary-300 capitalize relative"
+                className="font-urbanist text-xs lg:text-[14px] font-medium leading-[18px] lg:leading-[20px] text-primary-300 capitalize relative"
                 style={{ color: "#071F36" }}
               >
                 Step 5
               </div>
             </div>
-            <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
+            <div className="flex w-full max-w-[307px] flex-col items-start gap-3 lg:gap-[14px] relative">
               <div
-                className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative"
+                className="font-urbanist text-base lg:text-[18px] font-medium leading-[18px] lg:leading-[20px] capitalize self-stretch relative"
                 style={{ color: "#FFF" }}
               >
                 Testing & Handoff
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] text-gray-400 font-medium leading-[24px] capitalize relative">
-                We begin by understanding your campaign’s goals, audience, and
+              <div className="w-full max-w-[307px] font-urbanist text-xs lg:text-[14px] text-gray-400 font-medium leading-[20px] lg:leading-[24px] capitalize relative">
+                We begin by understanding your campaign's goals, audience, and
                 desired actions. This helps us shape the strategy, tone, and
                 layout that fits your brand and objectives.{" "}
               </div>
@@ -226,7 +226,7 @@ const IdeasToContent = () => {
 
         {/* First connecting line */}
         <svg
-          className="w-[397px] h-[173px] flex-shrink-0 stroke-2 stroke-[rgba(47,152,255,0.63)] absolute left-[164px] top-[127px]"
+          className="hidden lg:block w-[397px] h-[173px] flex-shrink-0 stroke-2 stroke-[rgba(47,152,255,0.63)] absolute left-[164px] top-[127px]"
           width="399"
           height="175"
           viewBox="0 0 399 175"
@@ -257,7 +257,7 @@ const IdeasToContent = () => {
 
         {/* First dot */}
         <svg
-          className="w-3 h-3 flex-shrink-0 fill-[#43A2FF] stroke-2 stroke-white filter-[drop-shadow(0_4.8px_3.6px_rgba(29,143,255,0.20))] absolute left-[449px] top-[121px]"
+          className="hidden lg:block w-3 h-3 flex-shrink-0 fill-[#43A2FF] stroke-2 stroke-white filter-[drop-shadow(0_4.8px_3.6px_rgba(29,143,255,0.20))] absolute left-[449px] top-[121px]"
           width="26"
           height="26"
           viewBox="0 0 26 26"
@@ -315,7 +315,7 @@ const IdeasToContent = () => {
 
         {/* Second dot */}
         <svg
-          className="w-[10px] h-[10px] flex-shrink-0 fill-[#43A2FF] stroke-2 stroke-white filter-[drop-shadow(0_4px_3px_rgba(29,143,255,0.20))] absolute left-[158px] top-[177px]"
+          className="hidden lg:block w-[10px] h-[10px] flex-shrink-0 fill-[#43A2FF] stroke-2 stroke-white filter-[drop-shadow(0_4px_3px_rgba(29,143,255,0.20))] absolute left-[158px] top-[177px]"
           width="22"
           height="22"
           viewBox="0 0 22 22"
@@ -373,7 +373,7 @@ const IdeasToContent = () => {
 
         {/* Second connecting line */}
         <svg
-          className="w-[393px] h-[163px] flex-shrink-0 absolute left-[168px] top-[622px]"
+          className="hidden lg:block w-[393px] h-[163px] flex-shrink-0 absolute left-[168px] top-[622px]"
           width="395"
           height="173"
           viewBox="0 0 395 173"
@@ -461,7 +461,7 @@ const IdeasToContent = () => {
 
         {/* Third dot */}
         <svg
-          className="w-[9px] h-[9px] flex-shrink-0 fill-[#43A2FF] stroke-[1.86px] stroke-white filter-[drop-shadow(0_3.721px_2.79px_rgba(29,143,255,0.20))] absolute left-[654px] top-[1024px]"
+          className="hidden lg:block w-[9px] h-[9px] flex-shrink-0 fill-[#43A2FF] stroke-[1.86px] stroke-white filter-[drop-shadow(0_3.721px_2.79px_rgba(29,143,255,0.20))] absolute left-[654px] top-[1024px]"
           width="20"
           height="21"
           viewBox="0 0 20 21"
@@ -525,7 +525,7 @@ const IdeasToContent = () => {
 
         {/* Third connecting line */}
         <svg
-          className="w-[409px] h-[210px] flex-shrink-0 absolute left-[148px] top-[1166px]"
+          className="hidden lg:block w-[409px] h-[210px] flex-shrink-0 absolute left-[148px] top-[1166px]"
           width="411"
           height="212"
           viewBox="0 0 411 212"
@@ -562,7 +562,7 @@ const IdeasToContent = () => {
 
         {/* Fourth dot */}
         <svg
-          className="w-[9px] h-[9px] flex-shrink-0 fill-[#43A2FF] stroke-[1.86px] stroke-white filter-[drop-shadow(0_3.721px_2.79px_rgba(29,143,255,0.20))] absolute left-[290px] top-[1371px]"
+          className="hidden lg:block w-[9px] h-[9px] flex-shrink-0 fill-[#43A2FF] stroke-[1.86px] stroke-white filter-[drop-shadow(0_3.721px_2.79px_rgba(29,143,255,0.20))] absolute left-[290px] top-[1371px]"
           width="20"
           height="21"
           viewBox="0 0 20 21"
@@ -626,7 +626,7 @@ const IdeasToContent = () => {
 
         {/* Fifth dot */}
         <svg
-          className="w-[10px] h-[10px] flex-shrink-0 fill-[#43A2FF] stroke-[1.9px] stroke-white filter-[drop-shadow(0_3.8px_2.85px_rgba(29,143,255,0.20))] absolute left-[450px] top-[1371px]"
+          className="hidden lg:block w-[10px] h-[10px] flex-shrink-0 fill-[#43A2FF] stroke-[1.9px] stroke-white filter-[drop-shadow(0_3.8px_2.85px_rgba(29,143,255,0.20))] absolute left-[450px] top-[1371px]"
           width="21"
           height="21"
           viewBox="0 0 21 21"
@@ -690,7 +690,7 @@ const IdeasToContent = () => {
 
         {/* Fourth connecting line */}
         <svg
-          className="w-[394px] h-[144px] flex-shrink-0 stroke-2 stroke-[rgba(47,152,255,0.63)] absolute left-[347px] top-[885px]"
+          className="hidden lg:block w-[394px] h-[144px] flex-shrink-0 stroke-2 stroke-[rgba(47,152,255,0.63)] absolute left-[347px] top-[885px]"
           width="396"
           height="146"
           viewBox="0 0 396 146"

@@ -45,30 +45,30 @@ export const PerformanceDashboardSection: React.FC = () => {
 
   // Data for user avatars
   const userAvatars = [
-    "/lp/ca/avatar@2x.png",
-    "/lp/ca/avatar-1@2x.png",
-    "/lp/ca/avatar-2@2x.png",
-    "/lp/ca/avatar-3@2x.png",
-    "/lp/ca/avatar-4@2x.png",
-    "/lp/ca/avatar-5@2x.png",
+    "/LP/ca/avatar@2x.png",
+    "/LP/ca/avatar-1@2x.png",
+    "/LP/ca/avatar-2@2x.png",
+    "/LP/ca/avatar-3@2x.png",
+    "/LP/ca/avatar-4@2x.png",
+    "/LP/ca/avatar-5@2x.png",
   ];
 
   // Data for chart y-axis labels
   const chartLabels = ["$1000", "$500", "$200", "$0"];
 
   return (
-    <section className="flex flex-col w-[1128px] items-end gap-[50px] relative flex-[0_0_auto] ml-[-1.00px] mr-[-1.00px]">
-      <div className="relative self-stretch w-full h-[597px]">
-        <div className="relative w-[1128px] h-[598px]">
+    <section className="flex flex-col w-full max-w-[1128px] items-center lg:items-end gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0 mx-auto">
+      <div className="relative self-stretch w-full h-auto lg:h-[597px]">
+        <div className="relative w-full max-w-[1128px] h-auto lg:h-[598px] mx-auto">
           <img
-            className="absolute w-[267px] h-[298px] top-[300px] left-[51px] aspect-[0.9]"
+            className="absolute w-[200px] lg:w-[267px] h-[223px] lg:h-[298px] top-[250px] lg:top-[300px] left-[20px] lg:left-[51px] aspect-[0.9]"
             alt="Performance dashboard illustration"
-            src="/lp/ca/image-131@2x.png"
+            src="LP/ca/image-131@2x.png"
           />
 
-          <div className="absolute w-[1128px] h-[454px] top-[143px] left-0 rounded-[23px] bg-[linear-gradient(180deg,rgba(67,162,255,0.71)_0%,rgba(255,255,255,1)_100%)]">
-            <div className="absolute w-[436px] h-[334px] top-[15px] left-7">
-              <div className="flex flex-col w-[313px] items-start gap-3.5 px-5 py-4 absolute top-0 left-0 rounded-xl">
+          <div className="relative lg:absolute w-full lg:w-[1128px] h-auto lg:h-[454px] lg:top-[143px] lg:left-0 rounded-[23px] bg-[linear-gradient(180deg,rgba(67,162,255,0.71)_0%,rgba(255,255,255,1)_100%)] mb-8 lg:mb-0">
+            <div className="relative lg:absolute w-full lg:w-[436px] h-auto lg:h-[334px] lg:top-[15px] lg:left-7 p-4 lg:p-0">
+              <div className="flex flex-col w-full max-w-[313px] items-start gap-3.5 px-5 py-4 relative lg:absolute lg:top-0 lg:left-0 rounded-xl">
                 <div className="inline-flex items-center justify-center gap-2.5 px-[13px] py-[3px] relative flex-[0_0_auto] bg-[#d8fd5f] rounded-[674px]">
                   <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-50 text-xs tracking-[0] leading-[23px] whitespace-nowrap">
                     Client Success Story
@@ -76,35 +76,35 @@ export const PerformanceDashboardSection: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col items-center gap-1.5 relative self-stretch w-full flex-[0_0_auto]">
-                  <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-50 text-lg tracking-[0] leading-[23px]">
+                  <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-50 text-base lg:text-lg tracking-[0] leading-[20px] lg:leading-[23px]">
                     Real Results For Real Businesses
                   </h2>
 
-                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-sm tracking-[0] leading-[23px]">
+                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[23px]">
                     Every Design Decision Backed By Conversion Research And User
                     Behavior Analytics
                   </p>
                 </div>
               </div>
 
-              <div className="absolute w-[332px] h-[230px] top-[104px] left-[104px]">
+              <div className="hidden lg:block absolute w-[332px] h-[230px] top-[104px] left-[104px]">
                 <div className="relative w-[271px] h-[234px] top-[-3px] -left-px">
                   <img
                     className="absolute w-[252px] h-[220px] top-3.5 left-0"
                     alt="Analytics chart vector"
-                    src="/lp/ca/vector-2533.svg"
+                    src="/LP/ca/vector-2533.svg"
                   />
 
                   <img
                     className="absolute w-[25px] h-[25px] top-0 left-[246px]"
                     alt="Send icon"
-                    src="/lp/ca/send.svg"
+                    src="/LP/ca/send.svg"
                   />
                 </div>
               </div>
             </div>
 
-            <div className="flex flex-col w-[340px] items-start justify-center gap-3.5 p-[22px] absolute top-[227px] left-[763px] rounded-xl bg-neutral-900">
+            <div className="flex flex-col w-full max-w-[340px] items-start justify-center gap-3.5 p-4 lg:p-[22px] relative lg:absolute lg:top-[227px] lg:left-[763px] rounded-xl bg-neutral-900 mt-4 lg:mt-0">
               <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex items-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
                   <div
@@ -117,7 +117,7 @@ export const PerformanceDashboardSection: React.FC = () => {
                         key={index}
                         className="relative w-[18px] h-[18px]"
                         alt=""
-                        src="/lp/ca/star-filled-4.svg"
+                        src="/LP/ca/star-filled-4.svg"
                       />
                     ))}
                   </div>
@@ -129,12 +129,12 @@ export const PerformanceDashboardSection: React.FC = () => {
                   </div>
                 </div>
 
-                <blockquote className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-base tracking-[0] leading-[23px]">
+                <blockquote className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-sm lg:text-base tracking-[0] leading-[20px] lg:leading-[23px]">
                   "rent Seo Brain Transformed Our Landing Page Into A Conversion
                   Machine. Our Revenue Increased By 247% In Just 3 Months!"
                 </blockquote>
 
-                <cite className="relative self-stretch font-medium text-neutral-0 text-sm leading-3 [font-family:'Urbanist',Helvetica] tracking-[0] not-italic">
+                <cite className="relative self-stretch font-medium text-neutral-0 text-xs lg:text-sm leading-3 [font-family:'Urbanist',Helvetica] tracking-[0] not-italic">
                   Sarah Chen, Ceo At Techflow
                 </cite>
               </div>
@@ -142,20 +142,20 @@ export const PerformanceDashboardSection: React.FC = () => {
           </div>
 
           <img
-            className="absolute w-[267px] h-[298px] top-[300px] left-[11px] aspect-[0.9]"
+            className="hidden lg:block absolute w-[267px] h-[298px] top-[300px] left-[11px] aspect-[0.9]"
             alt="Performance dashboard illustration"
-            src="/lp/ca/image-131@2x.png"
+            src="/LP/ca/image-131@2x.png"
           />
 
-          <div className="inline-flex items-center justify-end gap-10 absolute top-0 left-[412px]">
-            <div className="relative w-[304px] h-[597px]">
-              <div className="relative h-[597px]">
-                <div className="absolute w-[304px] h-[41px] top-[556px] left-0 bg-[#1d8fff54] rounded-[152px/20.5px] blur-[5px]" />
+          <div className="flex flex-col lg:inline-flex lg:flex-row items-center justify-center lg:justify-end gap-6 lg:gap-10 relative lg:absolute lg:top-0 lg:left-[412px] mt-8 lg:mt-0">
+            <div className="relative w-full max-w-[304px] h-auto lg:h-[597px]">
+              <div className="relative h-auto lg:h-[597px]">
+                <div className="hidden lg:block absolute w-[304px] h-[41px] top-[556px] left-0 bg-[#1d8fff54] rounded-[152px/20.5px] blur-[5px]" />
 
                 <img
-                  className="absolute w-[275px] h-[597px] top-0 left-3.5 aspect-[0.46]"
+                  className="relative lg:absolute w-full max-w-[275px] h-auto lg:h-[597px] lg:top-0 lg:left-3.5 aspect-[0.46] mx-auto"
                   alt="Mobile dashboard interface"
-                  src="/lp/ca/image-109.png"
+                  src="/LP/ca/image-109.png"
                 />
 
                 <div className="inline-flex items-center justify-center gap-[17.7px] px-[9.44px] py-[8.26px] absolute top-[65px] left-[65px] bg-primary-100 rounded-[4.72px] rotate-[1.00deg]">
@@ -173,7 +173,7 @@ export const PerformanceDashboardSection: React.FC = () => {
                     <img
                       className="relative w-[16.81px] h-[16.81px] mt-[-0.14px] mb-[-0.14px] ml-[-0.14px] mr-[-0.14px] rotate-[-1.00deg]"
                       alt="Trending up icon"
-                      src="/lp/ca/trending-up.svg"
+                      src="/LP/ca/trending-up.svg"
                     />
                   </div>
                 </div>
@@ -206,10 +206,10 @@ export const PerformanceDashboardSection: React.FC = () => {
 
                       <div className="inline-flex flex-col items-center relative flex-[0_0_auto]">
                         <div className="inline-flex flex-col items-start justify-center gap-[17.66px] relative flex-[0_0_auto]">
-                          <div className="relative w-[178.32px] h-px mt-[-0.21px] bg-[url(/lp/ca/line-57.svg)] bg-[100%_100%]" />
-                          <div className="bg-[url(/lp/ca/line-57-1.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
-                          <div className="bg-[url(/lp/ca/line-57-2.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
-                          <div className="mb-[-0.37px] bg-[url(/lp/ca/line-57-3.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
+                          <div className="relative w-[178.32px] h-px mt-[-0.21px] bg-[url(/LP/ca/line-57.svg)] bg-[100%_100%]" />
+                          <div className="bg-[url(/LP/ca/line-57-1.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
+                          <div className="bg-[url(/LP/ca/line-57-2.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
+                          <div className="mb-[-0.37px] bg-[url(/LP/ca/line-57-3.svg)] relative w-[178.32px] h-px bg-[100%_100%]" />
                         </div>
 
                         <div className="inline-flex items-end gap-[8.41px] absolute top-0 left-1">
@@ -221,7 +221,7 @@ export const PerformanceDashboardSection: React.FC = () => {
                               <img
                                 className={`relative w-[11.36px] h-[${bar.height}]`}
                                 alt=""
-                                src={`/lp/ca/graph-bar${
+                                src={`/LP/ca/graph-bar${
                                   index > 0 ? `-${index}` : ""
                                 }.svg`}
                               />
@@ -325,7 +325,7 @@ export const PerformanceDashboardSection: React.FC = () => {
                     <img
                       className="relative w-[18.35px] h-[18.35px] mt-[-0.16px] mb-[-0.16px] ml-[-0.16px] mr-[-0.16px] rotate-[-1.00deg]"
                       alt="Trending up icon"
-                      src="/lp/ca/trending-up-1.svg"
+                      src="/LP/ca/trending-up-1.svg"
                     />
                   </div>
                 </div>
@@ -335,16 +335,16 @@ export const PerformanceDashboardSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-[37px] relative self-stretch w-full flex-[0_0_auto]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-[37px] relative self-stretch w-full flex-[0_0_auto]">
         {statisticsData.map((stat, index) => (
           <div
             key={index}
-            className="flex flex-col w-[253px] items-center justify-center gap-[21px] px-[34px] py-[22px] relative bg-grey-100 rounded-[13px] border  border-grey-200"
+            className="flex flex-col w-full max-w-[253px] items-center justify-center gap-4 lg:gap-[21px] px-6 lg:px-[34px] py-4 lg:py-[22px] relative bg-grey-100 rounded-[13px] border border-grey-200 mx-auto"
           >
-            <div className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-100 text-2xl text-center tracking-[0] leading-[26px]">
+            <div className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-100 text-xl lg:text-2xl text-center tracking-[0] leading-[24px] lg:leading-[26px]">
               {stat.value}
             </div>
-            <div className="relative w-[125px] [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-lg text-center tracking-[0] leading-[26px]">
+            <div className="relative w-full max-w-[125px] [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-base lg:text-lg text-center tracking-[0] leading-[22px] lg:leading-[26px]">
               {stat.label}
             </div>
           </div>

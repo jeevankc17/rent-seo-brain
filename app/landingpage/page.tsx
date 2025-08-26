@@ -19,51 +19,51 @@ import { TechnologyStackSection } from "@components/Landing-Page/TechnologyStack
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center pb-[132px] bg-white gap-[132px]">
+    <main className="flex flex-col items-center pb-8 lg:pb-[132px] bg-white gap-8 lg:gap-[132px]">
       {/* <section className="relative w-full h-[960px] bg-neutral-900">
         <LandingPage />
       </section> */}
-      <section className="relative w-full h-[960px] bg-neutral-900">
+      <section className="relative w-full h-auto lg:h-[960px] bg-neutral-900">
         <HomePage />
       </section>
-      <section className="relative w-full h-[601px] px-[157px]  bg-white">
+      <section className="relative w-full h-auto lg:h-[601px] px-4 lg:px-[157px] bg-white">
         <OverviewSection />
       </section>
 
       {/* <section className="relative w-full h-[1870px]">
         <GoogleFeatures />
       </section> */}
-      <section className="relative w-full h-[1161px] bg-white px-[157px]">
+      <section className="relative w-full h-auto lg:h-[1161px] bg-white px-4 lg:px-[157px]">
         <LPServices />
       </section>
-      <section className="relative w-full h-[1046px]  bg-neutral-900 px-[156px]">
+      <section className="relative w-full h-auto lg:h-[1046px] bg-neutral-900 px-4 lg:px-[156px]">
         <BenefitsSection />
       </section>
-      <section className="relative w-full  py-[106px] px-[266.5px]">
+      <section className="relative w-full py-8 lg:py-[106px] px-4 lg:px-[266.5px]">
         <IdeasToContent />
       </section>
-      <section className="relative w-full h-[1130px]  bg-neutral-900">
+      <section className="relative w-full h-auto lg:h-[1130px] bg-neutral-900">
         <ProcessSection />
       </section>
-      <section className="relative w-full h-[790px] bg-white px-[156px]">
+      <section className="relative w-full h-auto lg:h-[790px] bg-white px-4 lg:px-[156px]">
         <PerformanceDashboardSection />
       </section>
-      <section className="relative w-full h-[735px] ">
+      <section className="relative w-full h-auto lg:h-[735px]">
         <TechnologyStackSection />
       </section>
-      <section className="relative w-full h-[463px] bg-white px-[156px]">
+      <section className="relative w-full h-auto lg:h-[463px] bg-white px-4 lg:px-[156px]">
         <Banner />
       </section>
-      <section className="relative w-full h-[1130px]  px-[156px] py-[109px]">
+      <section className="relative w-full h-auto lg:h-[1130px] px-4 lg:px-[156px] py-8 lg:py-[109px]">
         <ClientSuccessStoriesSection />
       </section>
-      <section className="relative w-full h-[848px] px-[156px] ">
+      <section className="relative w-full h-auto lg:h-[848px] px-4 lg:px-[156px]">
         <StatsSection />
       </section>
-      <section className="relative w-full h-[506px] px-[156px] ">
+      <section className="relative w-full h-auto lg:h-[506px] px-4 lg:px-[156px]">
         <ToolsIntegrationSection />
       </section>
-      <section className="relative w-full px-[156px] ">
+      <section className="relative w-full px-4 lg:px-[156px]">
         <LPTestimonial />
       </section>
     </main>

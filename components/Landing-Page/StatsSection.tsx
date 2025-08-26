@@ -45,32 +45,32 @@ export const StatsSection: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col w-[1128px] items-center gap-[50px] relative flex-[0_0_auto]">
-      <header className="flex flex-col w-[636px] items-center justify-center gap-4 relative flex-[0_0_auto]">
-        <div className="flex w-[264px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
+    <section className="flex flex-col w-full max-w-[1128px] items-center gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0 mx-auto">
+      <header className="flex flex-col w-full max-w-[636px] items-center justify-center gap-4 relative flex-[0_0_auto]">
+        <div className="flex w-auto items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
           <img
             className="relative w-[15px] h-[15px]"
             alt="Stars"
-            src="/lp/ca/stars-2.svg"
+            src="/LP/ca/stars-2.svg"
           />
 
-          <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
+          <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[23px] text-center">
             Got Questions? We&apos;ve Got Answers.
           </p>
         </div>
 
-        <h2 className="relative self-stretch [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] text-center tracking-[0] leading-[57px]">
+        <h2 className="relative self-stretch [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-3xl lg:text-[50px] text-center tracking-[0] leading-[40px] lg:leading-[57px]">
           We&apos;ve Got You Covered
         </h2>
 
-        <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-base text-center tracking-[0] leading-[23px]">
+        <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px]">
           We know you might have a few doubts — here are the most common
           questions our clients ask before getting started with Google Ads.
           Clear, honest, and to the point.
         </p>
       </header>
 
-      <div className="flex flex-col items-center gap-[65px] relative self-stretch w-full flex-[0_0_auto]">
+      <div className="flex flex-col items-center gap-8 lg:gap-[65px] relative self-stretch w-full flex-[0_0_auto]">
         <div
           className="flex-col flex-[0_0_auto] flex items-start gap-4 relative self-stretch w-full"
           role="list"
@@ -79,8 +79,8 @@ export const StatsSection: React.FC = () => {
             <div
               key={item.id}
               className={`flex-col ${
-                item.isExpanded ? "pt-[26px] pb-10" : "py-[26px]"
-              } px-8 flex-[0_0_auto] ${
+                item.isExpanded ? "pt-4 lg:pt-[26px] pb-6 lg:pb-10" : "py-4 lg:py-[26px]"
+              } px-4 lg:px-8 flex-[0_0_auto] ${
                 item.isExpanded
                   ? "z-[3] bg-primary-50"
                   : `z-[${
@@ -91,11 +91,11 @@ export const StatsSection: React.FC = () => {
             >
               <div
                 className={`${
-                  item.isExpanded ? "gap-[444px]" : "justify-between"
+                  item.isExpanded ? "gap-4 lg:gap-[444px]" : "justify-between"
                 } self-stretch w-full flex-[0_0_auto] flex items-center relative`}
               >
                 <button
-                  className="relative flex-1 [font-family:'Urbanist',Helvetica] font-semibold text-neutral-900 text-xl tracking-[0] leading-[27.0px] text-left"
+                  className="relative flex-1 [font-family:'Urbanist',Helvetica] font-semibold text-neutral-900 text-base lg:text-xl tracking-[0] leading-[22px] lg:leading-[27.0px] text-left"
                   onClick={() => toggleFAQ(item.id)}
                   aria-expanded={item.isExpanded}
                   aria-controls={`faq-answer-${item.id}`}
@@ -120,8 +120,8 @@ export const StatsSection: React.FC = () => {
                     alt={item.isExpanded ? "Collapse" : "Expand"}
                     src={
                       item.isExpanded
-                        ? "/lp/ca/line-rounded-chevron-down.svg"
-                        : "/lp/ca/line-rounded-chevron-right-2.svg"
+                        ? "/LP/ca/line-rounded-chevron-down.svg"
+                        : "/LP/ca/line-rounded-chevron-right-2.svg"
                     }
                   />
                 </button>
@@ -133,7 +133,7 @@ export const StatsSection: React.FC = () => {
                   role="region"
                   aria-labelledby={`faq-question-${item.id}`}
                 >
-                  <p className="relative [font-family:'Urbanist',Helvetica] font-medium text-neutral-500 text-base tracking-[0] leading-[26.6px]">
+                  <p className="relative [font-family:'Urbanist',Helvetica] font-medium text-neutral-500 text-sm lg:text-base tracking-[0] leading-[22px] lg:leading-[26.6px]">
                     {item.answer}
                   </p>
                 </div>
@@ -142,9 +142,9 @@ export const StatsSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="inline-flex items-center justify-center gap-[21px] relative flex-[0_0_auto]">
-          <button className="flex w-[300px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1]">
-            <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-[21px] relative flex-[0_0_auto]">
+          <button className="flex w-full max-w-[300px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1]">
+            <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
               Book a Design Strategy Call
             </span>
 
@@ -152,13 +152,13 @@ export const StatsSection: React.FC = () => {
               <img
                 className="relative w-5 h-5"
                 alt="Arrow right"
-                src="/lp/ca/arrow-right-2.svg"
+                src="/LP/ca/arrow-right-2.svg"
               />
             </div>
           </button>
 
-          <button className="all-[unset] box-border w-[220px] flex h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200">
-            <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
+          <button className="all-[unset] box-border w-full max-w-[220px] flex h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200">
+            <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
               Why Landing Pages Matter
             </span>
           </button>

@@ -2,20 +2,20 @@ import React from 'react';
 
 const LPServices = () => {
   return (
-    <div className="flex flex-col items-center gap-[43px] w-full relative">
+    <div className="flex flex-col items-center gap-6 lg:gap-[43px] w-full relative px-4 lg:px-0">
       {/* Title Section */}
-      <div className="flex w-[565px] flex-col items-center gap-4 relative">
-        <div className="flex w-[151px] px-[10px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF] relative">
+      <div className="flex w-full max-w-[565px] flex-col items-center gap-4 relative">
+        <div className="flex w-full max-w-[151px] px-[10px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF] relative">
           <svg className="w-[15px] h-[15px] flex-shrink-0 relative" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 11.25L8 9.34375L10.5 11.25L9.5625 8.15625L12.0625 6.375H9L8 3.125L7 6.375H3.9375L6.4375 8.15625L5.5 11.25ZM8 13.75C7.13542 13.75 6.32292 13.5859 5.5625 13.2578C4.80208 12.9297 4.14062 12.4844 3.57812 11.9219C3.01562 11.3594 2.57031 10.6979 2.24219 9.9375C1.91406 9.17708 1.75 8.36458 1.75 7.5C1.75 6.63542 1.91406 5.82292 2.24219 5.0625C2.57031 4.30208 3.01562 3.64062 3.57812 3.07812C4.14062 2.51562 4.80208 2.07031 5.5625 1.74219C6.32292 1.41406 7.13542 1.25 8 1.25C8.86458 1.25 9.67708 1.41406 10.4375 1.74219C11.1979 2.07031 11.8594 2.51562 12.4219 3.07812C12.9844 3.64062 13.4297 4.30208 13.7578 5.0625C14.0859 5.82292 14.25 6.63542 14.25 7.5C14.25 8.36458 14.0859 9.17708 13.7578 9.9375C13.4297 10.6979 12.9844 11.3594 12.4219 11.9219C11.8594 12.4844 11.1979 12.9297 10.4375 13.2578C9.67708 13.5859 8.86458 13.75 8 13.75Z" fill="#1D8FFF"/>
           </svg>
           <span className="text-[#1D8FFF] font-urbanist text-[14px] font-medium leading-[23px] capitalize">Our Core Services</span>
         </div>
         <div className="flex h-[176px] flex-col items-center gap-4 w-full relative">
-          <h2 className="w-full text-[#12579C] text-center font-urbanist text-[50px] font-bold leading-[57px]">
+          <h2 className="w-full text-[#12579C] text-center font-urbanist text-xl md:text-3xl lg:text-[50px] font-bold leading-[24px] md:leading-[36px] lg:leading-[57px]">
             Landing Page Services That Deliver Results
           </h2>
-          <p className="w-[565px] text-[#6A7986] text-center font-urbanist text-[16px] font-normal leading-[23px]">
+          <p className="w-full max-w-[565px] text-[#6A7986] text-center font-urbanist text-sm md:text-[16px] font-normal leading-[18px] md:leading-[23px]">
             We design landing pages with one goal: conversion. Whether you're running ads, launching a product, or collecting leads, our landing pages are built to perform.
           </p>
         </div>
@@ -24,21 +24,21 @@ const LPServices = () => {
       {/* Services Cards */}
       <div className="flex flex-col justify-center items-center gap-[34px] w-full relative">
         {/* First Row */}
-        <div className="flex items-center gap-[25px] w-full relative">
+        <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-[25px] w-full relative">
           {/* Card 1 - Mobile-Optimized Designs */}
-          <div className="w-[672px] h-[383px] rounded-[18px] bg-[rgba(232,244,255,0.54)] relative">
-            <div className="flex w-[329px] flex-col items-start gap-[14px] absolute left-[37px] top-[243px] h-[109px]">
-              <span className="w-full text-[#BBFF00] font-urbanist text-[16px] font-bold leading-normal">01</span>
-              <h3 className="text-[#132A40] font-urbanist text-[20px] font-bold leading-normal">Mobile-Optimized Designs</h3>
+          <div className="w-full max-w-[672px] h-auto lg:h-[383px] rounded-[18px] bg-[rgba(232,244,255,0.54)] relative p-4 lg:p-0">
+            <div className="flex w-full max-w-[329px] flex-col items-start gap-[14px] relative lg:absolute lg:left-[37px] lg:top-[243px] h-auto lg:h-[109px] order-2 lg:order-1">
+              <span className="w-full text-[#BBFF00] font-urbanist text-sm md:text-[16px] font-bold leading-normal">01</span>
+              <h3 className="text-[#132A40] font-urbanist text-lg md:text-[20px] font-bold leading-normal">Mobile-Optimized Designs</h3>
               <p className="w-full text-[#4F6070] font-urbanist text-[16px] font-normal leading-normal">
                 Fast, responsive pages that look great on every screen.
               </p>
             </div>
             
             {/* Mobile mockup visualization */}
-            <div className="flex w-[299px] h-[315px] flex-col justify-center items-center flex-shrink-0 absolute left-[336px] top-[68px]">
-              <div className="w-[299px] h-[315px] flex-shrink-0 relative">
-                <img className="w-[193px] h-[315px] flex-shrink-0 absolute left-[70px] top-0" src="https://api.builder.io/api/v1/image/assets/TEMP/8fb4d74ba8dc95fcfb15ed76754b4435e6fd4cc3?width=385" alt="" />
+            <div className="flex w-full max-w-[299px] h-[200px] lg:h-[315px] flex-col justify-center items-center flex-shrink-0 relative lg:absolute lg:left-[336px] lg:top-[68px] order-1 lg:order-2 mb-4 lg:mb-0">
+              <div className="w-full max-w-[299px] h-[200px] lg:h-[315px] flex-shrink-0 relative">
+                <img className="w-[120px] lg:w-[193px] h-[200px] lg:h-[315px] flex-shrink-0 absolute left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-[70px] top-0" src="https://api.builder.io/api/v1/image/assets/TEMP/8fb4d74ba8dc95fcfb15ed76754b4435e6fd4cc3?width=385" alt="" />
                 
                 {/* Gradient blur effect */}
                 <div className="w-[88px] h-[43px] absolute left-[117px] top-[255px] rounded-full bg-gradient-to-r from-[rgba(187,255,0,0.46)] via-[rgba(0,180,92,0.46)] to-[rgba(247,181,13,0.46)] blur-[50px]"></div>
@@ -147,9 +147,9 @@ const LPServices = () => {
           </div>
           
           {/* Card 2 - Lead Capture Pages */}
-          <div className="flex w-[431px] h-[383px] px-[31px] py-[16px] flex-col justify-center items-center gap-[10px] rounded-[18px] bg-[rgba(232,244,255,0.54)] relative">
-            <div className="flex w-[368px] flex-col items-start gap-[14px] relative">
-              <div className="flex w-[368px] px-[20px] py-[17px] flex-col items-center gap-[23px] rounded-[14px] bg-[rgba(255,255,255,0.11)] shadow-[0_4px_49.3px_rgba(67,162,255,0.15)] relative">
+          <div className="flex w-full max-w-[431px] h-auto lg:h-[383px] px-4 lg:px-[31px] py-4 lg:py-[16px] flex-col justify-center items-center gap-[10px] rounded-[18px] bg-[rgba(232,244,255,0.54)] relative">
+            <div className="flex w-full max-w-[368px] flex-col items-start gap-[14px] relative">
+              <div className="flex w-full max-w-[368px] px-4 lg:px-[20px] py-4 lg:py-[17px] flex-col items-center gap-4 lg:gap-[23px] rounded-[14px] bg-[rgba(255,255,255,0.11)] shadow-[0_4px_49.3px_rgba(67,162,255,0.15)] relative">
                 <div className="flex flex-col items-center gap-[18px] w-full relative">
                   <div className="flex w-[231px] flex-col items-start gap-[8px] relative">
                     <div className="w-full text-[#132A40] text-center font-urbanist text-[14px] font-medium leading-normal">
@@ -189,9 +189,9 @@ const LPServices = () => {
                 </div>
               </div>
               <div className="flex flex-col items-start gap-[14px] w-full relative">
-                <span className="w-full text-[#BBFF00] font-urbanist text-[16px] font-bold leading-normal">02</span>
-                <h3 className="text-[#132A40] font-urbanist text-[20px] font-bold leading-normal">Lead Capture Pages</h3>
-                <p className="w-[359px] text-[#4F6070] font-urbanist text-[16px] font-normal leading-normal">
+                <span className="w-full text-[#BBFF00] font-urbanist text-sm md:text-[16px] font-bold leading-normal">02</span>
+                <h3 className="text-[#132A40] font-urbanist text-lg md:text-[20px] font-bold leading-normal">Lead Capture Pages</h3>
+                <p className="w-full max-w-[359px] text-[#4F6070] font-urbanist text-sm md:text-[16px] font-normal leading-normal">
                   Simple, form-based pages that help grow your email or contact list.
                 </p>
               </div>
@@ -200,11 +200,11 @@ const LPServices = () => {
         </div>
 
         {/* Second Row */}
-        <div className="flex justify-center items-center gap-[25px] w-full relative">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-[25px] w-full relative">
           {/* Card 3 - High-Converting Sales Pages */}
           <div className="flex h-[383px] px-[15px] py-[12px] items-center gap-[10px] rounded-[18px] bg-[rgba(232,244,255,0.54)] relative">
-            <div className="flex w-[329px] flex-col items-start gap-[24px] relative">
-              <div className="flex w-[329px] px-[17px] py-[13px] flex-col items-start gap-[34px] rounded-[12px] relative">
+            <div className="flex w-full max-w-[329px] flex-col items-start gap-4 lg:gap-[24px] relative">
+              <div className="flex w-full max-w-[329px] px-4 lg:px-[17px] py-4 lg:py-[13px] flex-col items-start gap-6 lg:gap-[34px] rounded-[12px] relative">
                 <div className="flex justify-between items-center w-full relative">
                   <div className="flex px-[13px] py-[5px] justify-center items-center gap-[10px] rounded-[30px] bg-[#D8FD5F] relative">
                     <span className="text-[#071F36] font-urbanist text-[10px] font-bold leading-normal">-30% OFF</span>
@@ -252,8 +252,8 @@ const LPServices = () => {
                 </div>
               </div>
               <div className="flex flex-col items-start gap-[14px] w-full relative">
-                <span className="w-full text-[#BBFF00] font-urbanist text-[16px] font-bold leading-normal">03</span>
-                <h3 className="text-[#132A40] font-urbanist text-[20px] font-bold leading-normal">High-Converting Sales Pages</h3>
+                <span className="w-full text-[#BBFF00] font-urbanist text-sm md:text-[16px] font-bold leading-normal">03</span>
+                <h3 className="text-[#132A40] font-urbanist text-lg md:text-[20px] font-bold leading-normal">High-Converting Sales Pages</h3>
                 <p className="w-full text-[#4F6070] font-urbanist text-[16px] font-medium leading-normal">
                   Persuasive pages designed to boost product sales or lead sign-ups.
                 </p>
@@ -262,9 +262,9 @@ const LPServices = () => {
           </div>
 
           {/* Card 4 - Launch Pages */}
-          <div className="flex w-[359px] h-[383px] px-[15px] py-[12px] justify-center items-center gap-[10px] rounded-[18px] bg-[rgba(232,244,255,0.54)] relative">
-            <div className="flex w-[310px] flex-col items-start gap-[32px] flex-shrink-0 relative">
-              <div className="flex w-[310px] px-[19px] py-[13px] flex-col items-center gap-[22px] rounded-[12px] bg-white shadow-[0_1px_20.5px_rgba(248,160,44,0.12)] relative">
+          <div className="flex w-full max-w-[359px] h-auto lg:h-[383px] px-4 lg:px-[15px] py-4 lg:py-[12px] justify-center items-center gap-[10px] rounded-[18px] bg-[rgba(232,244,255,0.54)] relative">
+            <div className="flex w-full max-w-[310px] flex-col items-start gap-6 lg:gap-[32px] flex-shrink-0 relative">
+              <div className="flex w-full max-w-[310px] px-4 lg:px-[19px] py-4 lg:py-[13px] flex-col items-center gap-4 lg:gap-[22px] rounded-[12px] bg-white shadow-[0_1px_20.5px_rgba(248,160,44,0.12)] relative">
                 <div className="flex w-[150px] flex-col justify-center items-center gap-[8px] relative">
                   <div className="flex px-[19px] py-[7px] items-center gap-[4px] rounded-[44px] border-[0.4px] border-[#E0E0E0] bg-[#FAFAFA] relative">
                     <svg className="w-[12px] h-[12px]" viewBox="0 0 12 12" fill="none">
@@ -302,8 +302,8 @@ const LPServices = () => {
                 </div>
               </div>
               <div className="flex flex-col items-start gap-[14px] w-full relative">
-                <span className="w-full text-[#BBFF00] font-urbanist text-[16px] font-bold leading-normal">04</span>
-                <h3 className="text-[#132A40] font-urbanist text-[20px] font-bold leading-normal">Launch Pages</h3>
+                <span className="w-full text-[#BBFF00] font-urbanist text-sm md:text-[16px] font-bold leading-normal">04</span>
+                <h3 className="text-[#132A40] font-urbanist text-lg md:text-[20px] font-bold leading-normal">Launch Pages</h3>
                 <p className="w-full text-[#4F6070] font-urbanist text-[16px] font-normal leading-normal">
                   Promote your product or event with bold visuals and countdowns.
                 </p>
@@ -313,8 +313,8 @@ const LPServices = () => {
 
           {/* Card 5 - Ad-Specific Pages */}
           <div className="flex h-[383px] px-[15px] py-[12px] items-center gap-[10px] rounded-[18px] bg-[rgba(232,244,255,0.54)] relative">
-            <div className="flex w-[329px] flex-col items-center gap-[55px] relative">
-              <div className="flex w-[329px] flex-col items-center gap-[24px] relative">
+            <div className="flex w-full max-w-[329px] flex-col items-center gap-8 lg:gap-[55px] relative">
+              <div className="flex w-full max-w-[329px] flex-col items-center gap-4 lg:gap-[24px] relative">
                 <div className="flex items-center gap-[15px] w-full relative">
                   <div className="flex w-[156px] h-[144px] px-[13px] py-[23px] flex-col items-start gap-[12px] rounded-[14px] border border-[#A2D1FF] bg-white relative">
                     <div className="flex w-[71px] justify-between items-center relative">
@@ -354,8 +354,8 @@ const LPServices = () => {
                 </div>
               </div>
               <div className="flex flex-col items-start gap-[14px] w-full relative">
-                <span className="w-full text-[#BBFF00] font-urbanist text-[16px] font-bold leading-normal">05</span>
-                <h3 className="text-[#132A40] font-urbanist text-[20px] font-bold leading-normal">Ad-Specific Pages</h3>
+                <span className="w-full text-[#BBFF00] font-urbanist text-sm md:text-[16px] font-bold leading-normal">05</span>
+                <h3 className="text-[#132A40] font-urbanist text-lg md:text-[20px] font-bold leading-normal">Ad-Specific Pages</h3>
                 <p className="w-full text-[#4F6070] font-urbanist text-[16px] font-medium leading-normal">
                   Custom pages that match your ads for better clicks and conversions.
                 </p>
@@ -366,8 +366,8 @@ const LPServices = () => {
       </div>
 
       {/* CTAs */}
-      <div className="flex justify-center items-start gap-[21px] relative">
-        <div className="flex w-[287px] h-[50px] pr-[3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_rgba(47,152,255,0.63)] relative">
+      <div className="flex flex-col sm:flex-row justify-center items-start gap-4 lg:gap-[21px] relative">
+        <div className="flex w-full max-w-[287px] h-[50px] pr-[3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_rgba(47,152,255,0.63)] relative">
           <span className="text-white text-center font-urbanist text-[16px] font-medium leading-[23px] capitalize">Get Custom Service Package</span>
           <div className="flex p-[12px] items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF] relative">
             <svg className="w-[20px] h-[20px]" viewBox="0 0 20 20" fill="none">
@@ -376,7 +376,7 @@ const LPServices = () => {
             </svg>
           </div>
         </div>
-        <div className="flex w-[220px] h-[50px] px-[19px] py-[10px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA] relative">
+        <div className="flex w-full max-w-[220px] h-[50px] px-[19px] py-[10px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA] relative">
           <span className="text-[#091E42] font-urbanist text-[16px] font-medium leading-[100%] capitalize">Watch It Work</span>
           <svg className="w-[20px] h-[20px] flex-shrink-0" viewBox="0 0 20 20" fill="none">
             <path d="M4.16797 10H15.8346" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>

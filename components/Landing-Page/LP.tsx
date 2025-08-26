@@ -5,7 +5,7 @@ const testimonialData = {
   quote:
     "Our Google Ads conversion rate jumped from 2.8% to 7.4% after launching a page designed by Rent SEO Brain.",
   author: "Ramesh D., Co-founder, SaaS Growlytics",
-  avatar: "/lp/ca/avatar-6@2x.png",
+  avatar: "/LP/ca/avatar-6@2x.png",
   rating: 5,
 };
 
@@ -26,17 +26,17 @@ const performanceCards = [
       {
         label: "Click-through Rate",
         value: "12.4%",
-        icon: "/lp/ca/arrow-up.svg",
+        icon: "/LP/ca/arrow-up.svg",
       },
       {
         label: "Bounce Rate",
         value: "23.1%",
-        icon: "/lp/ca/arrow-up-1.svg",
+        icon: "/LP/ca/arrow-up-1.svg",
       },
       {
         label: "Avg. Session Duration",
         value: "4:3",
-        icon: " /lp/ca/arrow-up-2.svg",
+        icon: " /LP/ca/arrow-up-2.svg",
       },
     ],
     chartData: [
@@ -62,17 +62,17 @@ const performanceCards = [
       {
         label: "Core Web Vitals",
         value: "65/100",
-        icon: "/lp/ca/arrow-up-3.svg",
+        icon: "/LP/ca/arrow-up-3.svg",
       },
       {
         label: "Mobile Score",
         value: "56/100",
-        icon: "/lp/ca/arrow-up-4.svg",
+        icon: "/LP/ca/arrow-up-4.svg",
       },
       {
         label: "Seo Imapct",
         value: "+23%",
-        icon: "/lp/ca/arrow-up-5.svg",
+        icon: "/LP/ca/arrow-up-5.svg",
       },
     ],
   },
@@ -99,29 +99,29 @@ const performanceCards = [
 ];
 
 const starIcons = [
-  "/lp/ca/star-filled-5.svg",
-  "/lp/ca/star-filled-6.svg",
-  "/lp/ca/star-filled-7.svg",
-  "/lp/ca/star-filled-8.svg",
-  "/lp/ca/star-filled-9.svg",
+  "/LP/ca/star-filled-5.svg",
+  "/LP/ca/star-filled-6.svg",
+  "/LP/ca/star-filled-7.svg",
+  "/LP/ca/star-filled-8.svg",
+  "/LP/ca/star-filled-9.svg",
 ];
 
 export default function ClientSuccessStoriesSection() {
   return (
     <section
-      className="flex flex-col w-[1125.39px] items-center gap-[50px] relative flex-[0_0_auto]"
+      className="flex flex-col w-full max-w-[1125.39px] items-center gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0 mx-auto"
       role="region"
       aria-labelledby="success-stories-heading"
     >
-      <header className="flex flex-col w-[552px] items-center justify-center gap-6 relative flex-[0_0_auto]">
-        <div className="flex w-[305px] items-center justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[45px] border border-solid border-[var(--secondary-300)]">
-          <div className="flex w-[286px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-[var(--secondary-50)] rounded-[45px] border-[0.2px] border-solid border-[var(--secondary-200)]">
+      <header className="flex flex-col w-full max-w-[552px] items-center justify-center gap-6 relative flex-[0_0_auto]">
+        <div className="flex w-auto items-center justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[45px] border border-solid border-[var(--secondary-300)]">
+          <div className="flex w-auto items-center justify-center gap-1.5 px-2 py-0.5 relative bg-[var(--secondary-50)] rounded-[45px] border-[0.2px] border-solid border-[var(--secondary-200)]">
             <img
               className="relative w-[15px] h-[15px]"
               alt="Achievement badge"
-              src="/lp/ca/stars.svg"
+              src="/LP/ca/stars.svg"
             />
-            <p className="relative w-[232px] mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-[var(--secondary-300)] text-sm tracking-[0] leading-[23px]">
+            <p className="relative w-auto mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-[var(--secondary-300)] text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[23px] text-center">
               Landing Page Results We&#39;ve Delivered
             </p>
           </div>
@@ -130,24 +130,24 @@ export default function ClientSuccessStoriesSection() {
         <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
           <h1
             id="success-stories-heading"
-            className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-[var(--primary-500)] text-[50px] text-center tracking-[0] leading-[57px]"
+            className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-[var(--primary-500)] text-3xl lg:text-[50px] text-center tracking-[0] leading-[40px] lg:leading-[57px]"
           >
             Real Pages, Real Performance.
           </h1>
 
           <div className="flex flex-col items-center justify-center gap-1.5 relative self-stretch w-full flex-[0_0_auto]">
-            <blockquote className="relative self-stretch  text-white h-[45px] mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-normal  text-base text-center tracking-[0] leading-[23px]">
+            <blockquote className="relative self-stretch text-white h-auto mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-normal text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px]">
               &quot;{testimonialData.quote}&quot;
             </blockquote>
 
-            <div className="flex w-[470px] items-center justify-center gap-3 relative flex-[0_0_auto]">
-              <cite className="relative w-[300px] text-white [font-family:'Urbanist',Helvetica] font-semibold text-base tracking-[0] leading-[23px] not-italic">
+            <div className="flex w-full max-w-[470px] items-center justify-center gap-3 relative flex-[0_0_auto] flex-wrap">
+              <cite className="relative w-auto text-white [font-family:'Urbanist',Helvetica] font-semibold text-sm lg:text-base tracking-[0] leading-[20px] lg:leading-[23px] not-italic text-center">
                 -{testimonialData.author}
               </cite>
 
               <div className="inline-flex items-center justify-center gap-[7px] relative flex-[0_0_auto]">
                 <img
-                  className="w-[33.23px] h-[33.23px] rounded-[10383.65px] bg-[url(https://c.animaapp.com/cjDxlUy5/img/avatar-6@2x.png)] relative bg-cover bg-[50%_50%]"
+                  className="w-8 lg:w-[33.23px] h-8 lg:h-[33.23px] rounded-full relative bg-cover bg-[50%_50%]"
                   alt={`${testimonialData.author} profile picture`}
                   src={testimonialData.avatar}
                   loading="lazy"
@@ -161,7 +161,7 @@ export default function ClientSuccessStoriesSection() {
                   {starIcons.map((starIcon, index) => (
                     <img
                       key={index}
-                      className={`relative w-[24.06px] h-[24.06px] ${
+                      className={`relative w-4 lg:w-[24.06px] h-4 lg:h-[24.06px] ${
                         index > 0 ? "ml-[-3px]" : ""
                       }`}
                       alt=""
@@ -175,26 +175,26 @@ export default function ClientSuccessStoriesSection() {
         </div>
       </header>
 
-      <div className="relative self-stretch w-full h-[532.03px]">
-        <div className="relative w-[1126px] h-[525px] top-[-3px]">
+      <div className="relative self-stretch w-full h-auto lg:h-[532.03px]">
+        <div className="relative w-full lg:w-[1126px] h-auto lg:h-[525px] lg:top-[-3px]">
           {/* First Card - Conversion Increase */}
-          <article className="flex w-[365px] h-[470px] items-center gap-2.5 px-[50px] py-[49px] absolute top-[29px] left-[35px] rounded-[40.6px] overflow-hidden border-[none] rotate-[-9.13deg] bg-[linear-gradient(168deg,rgba(255,255,255,1)_0%,rgba(249,189,36,0.1)_100%)] before:content-[''] before:absolute before:inset-0 before:p-4 before:rounded-[40.6px] before:[background:linear-gradient(180deg,rgba(224,224,224,0.31)_0%,rgba(247,181,13,0.23)_100%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none">
-            <div className="flex flex-col w-[265.58px] items-center gap-[42px] relative mt-[-0.59px] mb-[-0.59px] mr-[-0.58px]">
+          <article className="flex w-full max-w-[365px] h-auto lg:h-[470px] items-center gap-2.5 px-6 lg:px-[50px] py-8 lg:py-[49px] relative lg:absolute lg:top-[29px] lg:left-[35px] rounded-[20px] lg:rounded-[40.6px] overflow-hidden border-[none] lg:rotate-[-9.13deg] bg-[linear-gradient(168deg,rgba(255,255,255,1)_0%,rgba(249,189,36,0.1)_100%)] before:content-[''] before:absolute before:inset-0 before:p-4 before:rounded-[20px] lg:before:rounded-[40.6px] before:[background:linear-gradient(180deg,rgba(224,224,224,0.31)_0%,rgba(247,181,13,0.23)_100%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none mb-6 lg:mb-0 mx-auto">
+            <div className="flex flex-col w-full max-w-[265.58px] items-center gap-6 lg:gap-[42px] relative mt-[-0.59px] mb-[-0.59px] mr-[-0.58px]">
               <header className="flex flex-col items-start gap-[13.17px] relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex items-center gap-2 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="relative w-3.5 h-3.5 bg-[var(--secondary-300)] rounded-[7px]" />
-                  <h3 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-lg tracking-[0] leading-[18px] whitespace-nowrap">
+                  <h3 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-base lg:text-lg tracking-[0] leading-[18px] whitespace-nowrap">
                     +165% Increase In Conversions
                   </h3>
                 </div>
-                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-[var(--neutral-400)] text-sm tracking-[0] leading-[22px]">
+                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-[var(--neutral-400)] text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[22px]">
                   Strategic Layout, Clear Ctas, And Optimized Ux Turned Visitors
                   Into Loyal Customers.
                 </p>
               </header>
 
-              <div className="flex w-[265.58px] items-center justify-center gap-2.5 px-6 py-2.5 relative flex-[0_0_auto] bg-[var(--neutral-0)] rounded-[17px] overflow-hidden">
-                <div className="flex flex-col w-[210px] items-center gap-[13px] relative">
+              <div className="flex w-full max-w-[265.58px] items-center justify-center gap-2.5 px-4 lg:px-6 py-2.5 relative flex-[0_0_auto] bg-[var(--neutral-0)] rounded-[17px] overflow-hidden">
+                <div className="flex flex-col w-full max-w-[210px] items-center gap-[13px] relative">
                   <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
                     {(performanceCards[0]?.metrics ?? []).map(
                       (metric, index) => (
@@ -262,26 +262,26 @@ export default function ClientSuccessStoriesSection() {
           </article>
 
           {/* Second Card - Mobile Performance */}
-          <article className="flex w-[365px] h-[470px] items-center justify-center gap-2.5 px-[35px] py-[49px] absolute top-[21px] left-[737px] rounded-[40.6px] overflow-hidden border-[16.46px] border-solid border-[var(--primary-50)] rotate-[6.00deg] bg-[linear-gradient(180deg,rgba(255,255,255,1)_45%,rgba(255,255,255,1)_100%)]">
-            <div className="flex flex-col w-[285.67px] items-start gap-[37px] relative">
+          <article className="flex w-full max-w-[365px] h-auto lg:h-[470px] items-center justify-center gap-2.5 px-6 lg:px-[35px] py-8 lg:py-[49px] relative lg:absolute lg:top-[21px] lg:left-[737px] rounded-[20px] lg:rounded-[40.6px] overflow-hidden border-8 lg:border-[16.46px] border-solid border-[var(--primary-50)] lg:rotate-[6.00deg] bg-[linear-gradient(180deg,rgba(255,255,255,1)_45%,rgba(255,255,255,1)_100%)] mb-6 lg:mb-0 mx-auto">
+            <div className="flex flex-col w-full max-w-[285.67px] items-start gap-6 lg:gap-[37px] relative">
               <header className="flex flex-col items-start gap-[13.17px] relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex items-center gap-2 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="bg-[#00b45c] relative w-3.5 h-3.5 rounded-[7px]" />
-                  <h3 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-lg tracking-[0] leading-[18px] whitespace-nowrap">
+                  <h3 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-base lg:text-lg tracking-[0] leading-[18px] whitespace-nowrap">
                     3x Faster Load Time On Mobile
                   </h3>
                 </div>
-                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-[var(--neutral-700)] text-sm tracking-[0] leading-[22px]">
+                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-[var(--neutral-700)] text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[22px]">
                   Our Mobile-first Approach Ensures Your Page Loads In Seconds,
                   Not Stalls.
                 </p>
               </header>
 
-              <div className="flex flex-col w-[285.67px] items-start gap-[15px] relative flex-[0_0_auto]">
+              <div className="flex flex-col w-full max-w-[285.67px] items-start gap-[15px] relative flex-[0_0_auto]">
                 <img
                   className="relative flex-[0_0_auto] mt-[-1.59px] ml-[-1.59px] rotate-[-6.00deg]"
                   alt="Mobile performance visualization"
-                  src="/lp/ca/frame-2121458127.svg"
+                  src="/LP/ca/frame-2121458127.svg"
                   loading="lazy"
                 />
 
@@ -292,7 +292,7 @@ export default function ClientSuccessStoriesSection() {
                         <img
                           className="relative w-[19.79px] h-[19.78px] mt-[-0.89px] mb-[-0.89px] ml-[-0.89px] rotate-[-6.00deg]"
                           alt="Calendar"
-                          src="/lp/ca/calendar.svg"
+                          src="/LP/ca/calendar.svg"
                         />
                         <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-sm tracking-[0] leading-[14px] whitespace-nowrap">
                           Last 3 Months
@@ -333,7 +333,7 @@ export default function ClientSuccessStoriesSection() {
                   <img
                     className="relative w-[99.51px] h-[20.3px] mb-[-10.15px] ml-[-5.26px] rotate-[-6.00deg]"
                     alt="Performance trend line"
-                    src="/lp/ca/vector-2528.svg"
+                    src="/LP/ca/vector-2528.svg"
                     loading="lazy"
                   />
                 </div>
@@ -342,29 +342,29 @@ export default function ClientSuccessStoriesSection() {
           </article>
 
           {/* Third Card - Cost Per Lead */}
-          <article className="flex w-[365px] h-[470px] items-center gap-2.5 px-[41px] py-[52px] absolute top-0 left-[380px] bg-[var(--neutral-0)] rounded-[40.6px] overflow-hidden border-[16.46px] border-solid border-[var(--grey-100)] shadow-[0px_4.39px_9.33px_5.49px_transparent]">
-            <div className="flex flex-col w-[284px] items-start gap-[52px] relative mt-[-3.08px] mb-[-3.08px] mr-[-1.00px]">
+          <article className="flex w-full max-w-[365px] h-auto lg:h-[470px] items-center gap-2.5 px-6 lg:px-[41px] py-8 lg:py-[52px] relative lg:absolute lg:top-0 lg:left-[380px] bg-[var(--neutral-0)] rounded-[20px] lg:rounded-[40.6px] overflow-hidden border-8 lg:border-[16.46px] border-solid border-[var(--grey-100)] shadow-[0px_4.39px_9.33px_5.49px_transparent] mb-6 lg:mb-0 mx-auto">
+            <div className="flex flex-col w-full max-w-[284px] items-start gap-8 lg:gap-[52px] relative mt-[-3.08px] mb-[-3.08px] mr-[-1.00px]">
               <header className="flex flex-col items-start gap-[13.17px] relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex items-center gap-2 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="bg-[var(--primary-300)] relative w-3.5 h-3.5 rounded-[7px]" />
-                  <h3 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-lg tracking-[0] leading-[18px] whitespace-nowrap">
+                  <h3 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-[var(--neutral-800)] text-base lg:text-lg tracking-[0] leading-[18px] whitespace-nowrap">
                     2.5x Lower Cost Per Lead
                   </h3>
                 </div>
-                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-sm tracking-[0] leading-[22px]">
+                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-[var(--grey-500)] text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[22px]">
                   Better Design Meant Better Quality Scores — Leading To
                   Cheaper, More Efficient Ad Spend.
                 </p>
               </header>
 
-              <div className="flex flex-col w-[284px] items-center justify-center gap-2.5 px-[15px] py-[11px] relative flex-[0_0_auto] rounded-[17px] overflow-hidden">
+              <div className="flex flex-col w-full max-w-[284px] items-center justify-center gap-2.5 px-3 lg:px-[15px] py-[11px] relative flex-[0_0_auto] rounded-[17px] overflow-hidden">
                 <div className="flex flex-col items-start justify-center gap-[23px] relative self-stretch w-full flex-[0_0_auto]">
                   <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                     <div className="inline-flex items-center gap-1.5 relative flex-[0_0_auto]">
                       <img
                         className="relative w-[15px] h-[15px]"
                         alt="Calendar"
-                        src="/lp/ca/calendar-1.svg"
+                        src="/LP/ca/calendar-1.svg"
                       />
                       <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-[var(--primary-500)] text-xs tracking-[0] leading-3 whitespace-nowrap">
                         Last 6 Months
@@ -378,7 +378,7 @@ export default function ClientSuccessStoriesSection() {
                   <img
                     className="relative w-[265px] flex-[0_0_auto] ml-[-5.50px] mr-[-5.50px]"
                     alt="Cost reduction chart"
-                    src="/lp/ca/frame-2121458132.svg"
+                    src="/LP/ca/frame-2121458132.svg"
                     loading="lazy"
                   />
 
@@ -421,29 +421,29 @@ export default function ClientSuccessStoriesSection() {
         </div>
       </div>
 
-      <div className="inline-flex items-center justify-center gap-6 relative flex-[0_0_auto]">
-        <button className="flex w-[236px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-[var(--primary-300)] rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-[var(--primary-400)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-200)] focus:ring-offset-2 transition-colors">
-          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[var(--neutral-0)] text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-6 relative flex-[0_0_auto]">
+        <button className="flex w-full max-w-[236px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-[var(--primary-300)] rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-[var(--primary-400)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-200)] focus:ring-offset-2 transition-colors">
+          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[var(--neutral-0)] text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
             Get Results Like This
           </span>
           <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-[var(--primary-50)] rounded-[34px] border border-solid border-[var(--primary-75)]">
             <img
               className="relative w-5 h-5"
               alt=""
-              src="/lp/ca/arrow-right.svg"
+              src="/LP/ca/arrow-right.svg"
               loading="lazy"
             />
           </div>
         </button>
 
-        <button className="flex w-[257px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-[var(--grey-50)] rounded-[33px] border border-solid border-[var(--grey-200)] hover:bg-[var(--grey-75)] focus:outline-none focus:ring-2 focus:ring-[var(--grey-300)] focus:ring-offset-2 transition-colors">
-          <span className="relative w-fit ml-[-3.50px] [font-family:'Urbanist',Helvetica] font-medium text-[var(--neutral-900)] text-base tracking-[0] leading-4 whitespace-nowrap">
+        <button className="flex w-full max-w-[257px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-[var(--grey-50)] rounded-[33px] border border-solid border-[var(--grey-200)] hover:bg-[var(--grey-75)] focus:outline-none focus:ring-2 focus:ring-[var(--grey-300)] focus:ring-offset-2 transition-colors">
+          <span className="relative w-fit ml-[-3.50px] [font-family:'Urbanist',Helvetica] font-medium text-[var(--neutral-900)] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
             Talk To A Conversion Expert
           </span>
           <img
             className="relative w-5 h-5 mr-[-3.50px]"
             alt=""
-            src="/lp/ca/arrow-right-1.svg"
+            src="/LP/ca/arrow-right-1.svg"
             loading="lazy"
           />
         </button>

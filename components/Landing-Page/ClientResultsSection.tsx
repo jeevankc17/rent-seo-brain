@@ -4,24 +4,24 @@ const testimonialData = {
   quote:
     "Our Google Ads conversion rate jumped from 2.8% to 7.4% after launching a page designed by Rent SEO Brain.",
   author: "Ramesh D., Co-founder, SaaS Growlytics",
-  avatar: "/lp/ca/avatar-6@2x.png",
+  avatar: "/LP/ca/avatar-6@2x.png",
 };
 
 const performanceMetrics = [
   {
     label: "Click-through Rate",
     value: "12.4%",
-    icon: "/lp/ca/arrow-up.svg",
+    icon: "/LP/ca/arrow-up.svg",
   },
   {
     label: "Bounce Rate",
     value: "23.1%",
-    icon: "/lp/ca/arrow-up-1.svg",
+    icon: "/LP/ca/arrow-up-1.svg",
   },
   {
     label: "Avg. Session Duration",
     value: "4:3",
-    icon: "/lp/ca/arrow-up-2.svg",
+    icon: "/LP/ca/arrow-up-2.svg",
   },
 ];
 
@@ -37,17 +37,17 @@ const mobileMetrics = [
   {
     label: "Core Web Vitals",
     value: "65/100",
-    icon: "/lp/ca/arrow-up-3.svg",
+    icon: "/LP/ca/arrow-up-3.svg",
   },
   {
     label: "Mobile Score",
     value: "56/100",
-    icon: "/lp/ca/arrow-up-4.svg",
+    icon: "/LP/ca/arrow-up-4.svg",
   },
   {
     label: "Seo Imapct",
     value: "+23%",
-    icon: "/lp/ca/arrow-up-5.svg",
+    icon: "/LP/ca/arrow-up-5.svg",
   },
 ];
 
@@ -69,7 +69,7 @@ export const ClientResultsSection: React.FC = () => {
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
-              src="/lp/ca/stars.svg"
+              src="/LP/ca/stars.svg"
             />
             <p className="relative w-[232px] mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-75 text-sm tracking-[0] leading-[23px]">
               Landing Page Results We&#39;ve Delivered
@@ -112,7 +112,7 @@ export const ClientResultsSection: React.FC = () => {
                         star > 1 ? "ml-[-3px]" : ""
                       }`}
                       alt="Star filled"
-                      src={`https://c.animaapp.com/YInPS6Dh/img/star-filled-${
+                      src={`/LP/ca/star-filled-${
                         star + 4
                       }.svg`}
                     />
@@ -221,7 +221,7 @@ export const ClientResultsSection: React.FC = () => {
                 <img
                   className="relative flex-[0_0_auto] mt-[-1.59px] ml-[-1.59px] rotate-[-6.00deg]"
                   alt="Frame"
-                  src="https://c.animaapp.com/YInPS6Dh/img/frame-2121458127.svg"
+                  src="/LP/ca/frame-2121458127.svg"
                 />
 
                 <div className="flex flex-col items-start gap-[22px] relative self-stretch w-full flex-[0_0_auto]">
@@ -231,7 +231,7 @@ export const ClientResultsSection: React.FC = () => {
                         <img
                           className="relative w-[19.79px] h-[19.78px] mt-[-0.89px] mb-[-0.89px] ml-[-0.89px] rotate-[-6.00deg]"
                           alt="Calendar"
-                          src="https://c.animaapp.com/YInPS6Dh/img/calendar.svg"
+                          src="/LP/ca/calendar.svg"
                         />
                         <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-sm tracking-[0] leading-[14px] whitespace-nowrap">
                           Last 3 Months
@@ -269,7 +269,7 @@ export const ClientResultsSection: React.FC = () => {
                   <img
                     className="relative w-[99.51px] h-[20.3px] mb-[-10.15px] ml-[-5.26px] rotate-[-6.00deg]"
                     alt="Vector"
-                    src="https://c.animaapp.com/YInPS6Dh/img/vector-2528.svg"
+                    src="/LP/ca/vector-2528.svg"
                   />
                 </div>
               </div>
@@ -298,7 +298,7 @@ export const ClientResultsSection: React.FC = () => {
                       <img
                         className="relative w-[15px] h-[15px]"
                         alt="Calendar"
-                        src="https://c.animaapp.com/YInPS6Dh/img/calendar-1.svg"
+                        src="/LP/ca/calendar-1.svg"
                       />
                       <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-normal text-primary-50 text-xs tracking-[0] leading-3 whitespace-nowrap">
                         Last 6 Months
@@ -312,7 +312,7 @@ export const ClientResultsSection: React.FC = () => {
                   <img
                     className="relative w-[265px] flex-[0_0_auto] ml-[-5.50px] mr-[-5.50px]"
                     alt="Frame"
-                    src="https://c.animaapp.com/YInPS6Dh/img/frame-2121458132.svg"
+                    src="/LP/ca/frame-2121458132.svg"
                   />
 
                   <div className="flex flex-col h-[118px] items-start gap-2 relative self-stretch w-full">
@@ -359,7 +359,7 @@ export const ClientResultsSection: React.FC = () => {
             <img
               className="relative w-5 h-5"
               alt="Arrow right"
-              src="https://c.animaapp.com/YInPS6Dh/img/arrow-right.svg"
+              src="/LP/ca/arrow-right.svg"
             />
           </div>
         </button>
@@ -371,7 +371,7 @@ export const ClientResultsSection: React.FC = () => {
           <img
             className="relative w-5 h-5 mr-[-3.50px]"
             alt="Arrow right"
-            src="https://c.animaapp.com/YInPS6Dh/img/arrow-right-1.svg"
+            src="/LP/ca/arrow-right-1.svg"
           />
         </button>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomePageFeatures() {
   return (
-    <section className="hidden w-full sm-flex justify-center py-8 lg:py-[50px]">
+    <section className=" w-full sm-flex justify-center py-8 lg:py-[50px]">
       <div className="w-full max-w-[1128px] px-4 lg:px-0 flex flex-col items-center gap-8 lg:gap-[50px]">
         {/* Title Section */}
         <div className="w-full max-w-[519px] h-auto flex flex-col items-center gap-4">

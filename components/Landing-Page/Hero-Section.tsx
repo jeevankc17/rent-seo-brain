@@ -8,10 +8,10 @@ export type HomePageType = {
 const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
   return (
     <div
-      className={`relative w-full max-w-[1440px] mx-auto bg-neutral-900 h-[960px] overflow-hidden text-center text-base text-gray-200 font-urbanist ${className}`}
+      className={`relative w-full max-w-[1440px] mx-auto bg-neutral-900 h-auto min-h-screen lg:h-[960px] overflow-hidden text-center text-xs md:text-base text-gray-200 font-urbanist ${className}`}
     >
       <Image
-        className="absolute top-[3519px] left-[-630px] w-[969.2px] h-[965.3px] object-contain"
+        className="hidden lg:block absolute top-[3519px] left-[-630px] w-[969.2px] h-[965.3px] object-contain"
         width={969.2}
         height={965.3}
         sizes="100vw"
@@ -19,7 +19,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
         src="/ellipse-41.svg"
       />
       <Image
-        className="absolute top-[1980px] left-[-595px] w-[877.8px] h-[677.6px] object-contain"
+        className="hidden lg:block absolute top-[1980px] left-[-595px] w-[877.8px] h-[677.6px] object-contain"
         width={877.8}
         height={677.6}
         sizes="100vw"
@@ -27,7 +27,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
         src="/ellipse-46.svg"
       />
       <Image
-        className="absolute top-[2312px] left-[991px] w-[841.8px] h-[963px] object-contain"
+        className="hidden lg:block absolute top-[2312px] left-[991px] w-[841.8px] h-[963px] object-contain"
         width={841.8}
         height={963}
         sizes="100vw"
@@ -90,7 +90,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
         alt=""
         src="/ellipse-50.svg"
       />
-      <div className="absolute top-[514.1px] left-[-187.3px] w-[602.1px] h-[809.5px] overflow-hidden flex items-center justify-center">
+      <div className="hidden lg:flex absolute top-[514.1px] left-[-187.3px] w-[602.1px] h-[809.5px] overflow-hidden items-center justify-center">
         <Image
           className="w-full h-full object-cover absolute left-[153px] top-[0px] [transform:scale(1)]"
           width={602.1}
@@ -126,7 +126,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
         alt=""
         src="/image-128@2x.png"
       />
-      <div className="absolute top-[0px] left-1/2 transform -translate-x-1/2 bg-Foundation-Neutral-Scale-N1000 w-full max-w-[1440px] h-[1041px] overflow-hidden">
+      <div className="absolute top-[0px] left-1/2 transform -translate-x-1/2 bg-Foundation-Neutral-Scale-N1000 w-full max-w-[1440px] h-auto min-h-screen lg:h-[1041px] overflow-hidden">
         <div className="absolute top-[0px] left-[0px] w-[1419.5px] h-[1041px] overflow-hidden flex items-center justify-center">
           <Image
             className="w-full h-full object-cover absolute left-[10px] top-[0px] [transform:scale(1)]"
@@ -137,7 +137,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             src="/bg2@2x.png"
           />
         </div>
-        <div className="absolute top-[260px] left-[643px] w-[154px] h-[142px] overflow-hidden flex items-center justify-center">
+        <div className="absolute top-[120px] left-1/2 transform -translate-x-1/2 lg:top-[260px] lg:left-[643px] w-[80px] lg:w-[154px] h-[80px] lg:h-[142px] overflow-hidden flex items-center justify-center">
           <Image
             className="w-full h-full object-cover absolute left-[0px] top-[160px] [transform:scale(6.911)]"
             width={154}
@@ -147,19 +147,19 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             src="/frame-2121458209.svg"
           />
         </div>
-        <div className="absolute top-[172px] left-1/2 transform -translate-x-1/2 w-[630px] flex flex-col items-center justify-start gap-11 text-[50px]">
+        <div className="absolute top-[200px] left-1/2 transform -translate-x-1/2 w-full max-w-[320px] sm:max-w-[480px] md:max-w-[630px] lg:w-[630px] flex flex-col items-center justify-start gap-6 lg:gap-11 text-xl md:text-3xl lg:text-[50px] px-4 lg:px-0">
           <div className="self-stretch flex flex-col items-center justify-center gap-4">
-            <b className="w-[618px] relative leading-[57px] inline-block text-white">
+            <b className="w-full max-w-[618px] relative leading-[24px] md:leading-[36px] lg:leading-[57px] inline-block text-white text-center">
               High-Converting Landing Pages That Sell
             </b>
-            <div className="w-[640px] relative text-base text-grey-200 leading-[23px] font-normal inline-block">
+            <div className="w-full max-w-[640px] relative text-sm md:text-base text-grey-200 leading-[18px] md:leading-[23px] font-normal inline-block text-center px-2 lg:px-0">
               Our SEO-focused design team creates landing pages that convert
               visitors into customers. Proven designs that drive results for
               your business.
             </div>
           </div>
-          <div className="flex flex-row items-center justify-center gap-[13px] text-base text-Foundation-Neutral-Scale-N0">
-            <div className="w-[248px] shadow-[0px_4px_14.7px_rgba(47,_152,_255,_0.63)] rounded-[45px] bg-primary-300 h-[50px] flex flex-row items-center justify-end py-0 px-[3px] box-border gap-2.5">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-[13px] text-sm md:text-base text-Foundation-Neutral-Scale-N0">
+            <div className="w-full max-w-[248px] shadow-[0px_4px_14.7px_rgba(47,_152,_255,_0.63)] rounded-[45px] bg-primary-300 h-[50px] flex flex-row items-center justify-end py-0 px-[3px] box-border gap-2.5">
               <div className="relative leading-[23px] capitalize font-normal text-white">
                 Start my landing page
               </div>
@@ -172,7 +172,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
                 src="/frame-1261155419.svg"
               />
             </div>
-            <div className="w-[220px] rounded-[33px] bg-white  border-Foundation-Grey-Scale-G200 border-solid border-[1px] box-border h-[50px] flex flex-row items-center justify-center py-2.5 px-[19px] gap-[7px] text-left text-gray-100">
+            <div className="w-full max-w-[220px] rounded-[33px] bg-white border-Foundation-Grey-Scale-G200 border-solid border-[1px] box-border h-[50px] flex flex-row items-center justify-center py-2.5 px-[19px] gap-[7px] text-left text-gray-100">
               <div className="relative leading-[100%] capitalize font-normal text-black">
                 see how it works
               </div>
@@ -187,9 +187,9 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <div className="absolute top-[119px] left-1/2 transform -translate-x-1/2 w-full max-w-[1437px] h-[922px] text-left text-black">
+        <div className="absolute top-[400px] sm:top-[500px] lg:top-[119px] left-1/2 transform -translate-x-1/2 w-full max-w-[1437px] h-auto lg:h-[922px] text-left text-black px-4 lg:px-0">
           <Image
-            className="absolute top-[535px] left-[calc(50%_-_184.5px)] rounded-[10.7px] w-[408px] h-[261px]"
+            className="hidden lg:block absolute top-[535px] left-[calc(50%_-_184.5px)] rounded-[10.7px] w-[408px] h-[261px]"
             width={408}
             height={261}
             sizes="100vw"
@@ -205,7 +205,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             src="/vector-2538.svg"
           />
           <Image
-            className="absolute top-[0px] left-[1197px] rounded-[46.7px] w-60 h-[466px]"
+            className="hidden lg:block absolute top-[0px] left-[1197px] rounded-[46.7px] w-60 h-[466px]"
             width={240}
             height={466}
             sizes="100vw"
@@ -213,7 +213,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             src="/vector-2536.svg"
           />
           <Image
-            className="absolute top-[406px] left-[1053px] rounded-[46.7px] w-96 h-[153px]"
+            className="hidden lg:block absolute top-[406px] left-[1053px] rounded-[46.7px] w-96 h-[153px]"
             width={384}
             height={153}
             sizes="100vw"
@@ -221,7 +221,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             src="/vector-2537.svg"
           />
           <Image
-            className="absolute top-[406px] left-[0px] rounded-[46.7px] w-96 h-[516px]"
+            className="hidden lg:block absolute top-[406px] left-[0px] rounded-[46.7px] w-96 h-[516px]"
             width={384}
             height={516}
             sizes="100vw"
@@ -229,7 +229,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             src="/vector-2535.svg"
           />
           <Image
-            className="absolute top-[0px] left-[0px] rounded-[60px] w-60 h-[466px]"
+            className="hidden lg:block absolute top-[0px] left-[0px] rounded-[60px] w-60 h-[466px]"
             width={240}
             height={466}
             sizes="100vw"
@@ -246,7 +246,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
               src="/vector-2541.svg"
             />
           </div>
-          <div className="absolute top-[147px] left-[120px] shadow-[0px_4px_18.1px_rgba(29,_143,_255,_0.2)] rounded-xl bg-white w-[225px] flex flex-col items-start justify-start py-[11px] px-[13px] box-border gap-2">
+          <div className="absolute top-[20px] left-[10px] sm:top-[147px] sm:left-[120px] lg:left-[120px] shadow-[0px_4px_18.1px_rgba(29,_143,_255,_0.2)] rounded-xl bg-white w-[200px] sm:w-[225px] flex flex-col items-start justify-start py-[11px] px-[13px] box-border gap-2">
             <div className="self-stretch relative leading-[23px] font-normal">
               Conversion Rate
             </div>
@@ -293,7 +293,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
               </div>
             </div>
           </div>
-          <div className="absolute top-[162px] left-[1085px] shadow-[0px_4px_31.9px_rgba(29,_143,_255,_0.2)] rounded-xl bg-white w-[247px] flex flex-col items-start justify-center py-2.5 px-3.5 box-border gap-[11px] text-sm">
+          <div className="absolute top-[250px] right-[10px] sm:top-[162px] sm:right-auto sm:left-[1085px] lg:left-[1085px] shadow-[0px_4px_31.9px_rgba(29,_143,_255,_0.2)] rounded-xl bg-white w-[200px] sm:w-[247px] flex flex-col items-start justify-center py-2.5 px-3.5 box-border gap-[11px] text-xs sm:text-sm">
             <div className="self-stretch flex flex-row items-center justify-start gap-[13px]">
               <Image
                 className="w-9 rounded-[654px] h-9"
@@ -355,7 +355,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
               </div>
             </div>
           </div>
-          <div className="absolute top-[564px] left-[241px] shadow-[0px_4px_48.2px_rgba(247,_140,_1,_0.12)] rounded-xl bg-Foundation-Neutral-Scale-N0 flex flex-col items-start justify-start py-[18px] px-[19px] gap-3 text-black bg-white">
+          <div className="absolute top-[480px] left-[10px] sm:top-[564px] sm:left-[241px] lg:left-[241px] shadow-[0px_4px_48.2px_rgba(247,_140,_1,_0.12)] rounded-xl bg-Foundation-Neutral-Scale-N0 flex flex-col items-start justify-start py-[18px] px-[19px] gap-3 text-black bg-white w-[200px] sm:w-auto">
             <div className="self-stretch relative leading-[23px] font-semibold">
               Target Users
             </div>
@@ -464,7 +464,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
               Your Project Team
             </div>
           </div>
-          <div className="absolute top-[562px] left-[1000px] shadow-[0px_4px_34.2px_rgba(29,_143,_255,_0.2)] rounded-xl bg-white w-[260px] flex flex-col items-center justify-start py-4 px-5 box-border text-center text-xs text-Foundation-Neutral-Scale-N900">
+          <div className="absolute top-[720px] right-[10px] sm:top-[562px] sm:right-auto sm:left-[1000px] lg:left-[1000px] shadow-[0px_4px_34.2px_rgba(29,_143,_255,_0.2)] rounded-xl bg-white w-[200px] sm:w-[260px] flex flex-col items-center justify-start py-4 px-5 box-border text-center text-xs text-Foundation-Neutral-Scale-N900">
             <div className="w-56 flex flex-row items-center justify-center flex-wrap content-center gap-x-[13px] gap-y-[21px] text-black">
               <div className="w-[66px] flex flex-col items-center justify-center gap-3">
                 <Image
