@@ -58,25 +58,25 @@ export const AdOptionsSection: React.FC = () => {
     ];
 
     return (
-        <section className="inline-flex items-start justify-center gap-[25px] relative flex-[0_0_auto]">
-            <div className="w-[552px] items-start justify-center gap-6 flex flex-col relative">
-                <div className="flex w-[251px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
+        <section className="flex flex-col lg:flex-row items-start justify-center gap-6 lg:gap-[25px] relative flex-[0_0_auto] w-full max-w-none">
+            <div className="w-full lg:w-[552px] items-start justify-center gap-6 flex flex-col relative">
+                <div className="flex w-full max-w-[251px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
                     <img
                         className="relative w-[15px] h-[15px]"
                         alt="Stars icon"
                         src="/Google/ca/stars-2.svg"
                     />
-                    <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
+                    <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-xs lg:text-sm tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
                         How Google Ads Help Businesses
                     </p>
                 </div>
 
                 <div className="flex flex-col items-start gap-[52px] relative self-stretch w-full flex-[0_0_auto]">
                     <header className="flex flex-col h-44 items-start gap-4 relative self-stretch w-full">
-                        <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] tracking-[0] leading-[57px]">
+                        <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-xl sm:text-2xl md:text-3xl lg:text-[50px] tracking-[0] leading-[24px] sm:leading-[28px] md:leading-[36px] lg:leading-[57px]">
                             Reach your audience and drive real business
                         </h1>
-                        <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-base tracking-[0] leading-[23px]">
+                        <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-sm lg:text-base tracking-[0] leading-[20px] lg:leading-[23px]">
                             Google Ads connects you with people actively searching for your
                             products or services. Whether your goal is more leads, more sales,
                             or more visibility.
@@ -97,20 +97,20 @@ export const AdOptionsSection: React.FC = () => {
                                     alt="Checkmark icon"
                                     src="/Google/ca/frame-2121457509-3.svg"
                                 />
-                                <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-600 text-lg tracking-[0] leading-[normal]">
+                                <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-600 text-base lg:text-lg tracking-[0] leading-[normal]">
                                     {benefit}
                                 </span>
                             </li>
                         ))}
                     </ul>
 
-                    <button className="w-[258px] flex h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:shadow-[0px_6px_20px_#2e97ffa1] transition-shadow duration-300 cursor-pointer">
-                        <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+                    <button className="w-full max-w-[258px] flex h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:shadow-[0px_6px_20px_#2e97ffa1] transition-shadow duration-300 cursor-pointer">
+                        <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
                             Get Your Strategy Session
                         </span>
-                        <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
+                        <div className="inline-flex items-center gap-2.5 p-2 lg:p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[24px] lg:rounded-[34px] border border-solid border-primary-75">
                             <img
-                                className="relative w-5 h-5"
+                                className="relative w-4 h-4 lg:w-5 lg:h-5"
                                 alt="Arrow right icon"
                                 src="/Google/ca/arrow-right-3.svg"
                             />
@@ -120,12 +120,12 @@ export const AdOptionsSection: React.FC = () => {
             </div>
 
             <div
-                className="relative w-[636px] h-[552px]"
+                className="relative w-full lg:w-[636px] h-auto lg:h-[552px] mt-8 lg:mt-0"
                 role="img"
                 aria-label="Google Ads dashboard visualization"
             >
-                <div className="relative w-[629px] h-[540px] top-[-5px] -left-4">
-                    <div className="absolute w-[402px] h-[434px] top-[106px] left-[186px] bg-white rounded-[23.18px] overflow-hidden shadow-[0px_2.9px_11.88px_5px_#0083ff63]">
+                <div className="relative w-full max-w-[629px] h-auto lg:h-[540px] lg:top-[-5px] lg:-left-4 mx-auto lg:mx-0">
+                    <div className="hidden lg:block absolute w-[402px] h-[434px] top-[106px] left-[186px] bg-white rounded-[23.18px] overflow-hidden shadow-[0px_2.9px_11.88px_5px_#0083ff63]">
                         {dashboardCards.map((card) => (
                             <div
                                 key={card.id}
@@ -201,7 +201,7 @@ export const AdOptionsSection: React.FC = () => {
                         ))}
                     </div>
 
-                    <div className="flex w-[343px] h-[77px] items-center justify-between px-[15.17px] py-[16.55px] absolute top-[340px] left-[286px] bg-white rounded-[11.03px] border-[0.69px] border-solid border-black shadow-[0px_2.76px_0px_#ff9800]">
+                    <div className="hidden lg:flex w-[343px] h-[77px] items-center justify-between px-[15.17px] py-[16.55px] absolute top-[340px] left-[286px] bg-white rounded-[11.03px] border-[0.69px] border-solid border-black shadow-[0px_2.76px_0px_#ff9800]">
                         <div className="inline-flex items-center gap-[13.79px] relative flex-[0_0_auto]">
                             <div className="bg-[url(/Google/ca/vector-1-1.svg)] relative w-[14px] h-[24px] bg-cover bg-[50%_50%]" />
                             <div className="inline-flex flex-col items-start gap-[2.76px] relative flex-[0_0_auto]">
@@ -224,7 +224,7 @@ export const AdOptionsSection: React.FC = () => {
                     </div>
 
                     <img
-                        className="absolute w-[313px] h-[442px] top-0 left-0 aspect-[0.71]"
+                        className="w-full max-w-[313px] h-auto lg:h-[442px] lg:absolute lg:top-0 lg:left-0 aspect-[0.71] mx-auto lg:mx-0"
                         alt="Professional woman using mobile phone for business"
                         src="/Google/ca/image-56@2x.png"
                     />

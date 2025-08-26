@@ -54,8 +54,8 @@ export const Proposition: React.FC = () => {
   ];
 
   return (
-    <section className="flex w-[1126px] h-[525px] items-start gap-0.5 relative">
-      <div className="flex flex-col w-[432px] items-start gap-[37px] relative mb-[-0.23px]">
+    <section className="flex flex-col lg:flex-row w-full max-w-[1126px] h-auto lg:h-[525px] items-start gap-6 lg:gap-0.5 relative px-4 lg:px-0">
+      <div className="flex flex-col w-full lg:w-[432px] items-start gap-6 lg:gap-[37px] relative mb-[-0.23px]">
         <div className="flex flex-col items-start gap-[17px] relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
             <div className="flex flex-col items-start gap-[18px] relative self-stretch w-full flex-[0_0_auto]">
@@ -68,17 +68,17 @@ export const Proposition: React.FC = () => {
                       src="/Home-Page/ca/stars.svg"
                     />
 
-                    <div className="relative w-fit mt-[-1.00px] mr-[-3.50px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
+                    <div className="relative w-fit mt-[-1.00px] mr-[-3.50px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
                       Our Value Proposition
                     </div>
                   </div>
 
-                  <h1 className="relative self-stretch [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] tracking-[0] leading-[57px]">
+                  <h1 className="relative self-stretch [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-xl sm:text-3xl md:text-4xl lg:text-[50px] tracking-[0] leading-[24px] sm:leading-[36px] md:leading-[46px] lg:leading-[57px]">
                     Your Ultimate Digital Marketing Solutions{" "}
                   </h1>
                 </div>
 
-                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-base tracking-[0] leading-[23px]">
+                <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-sm md:text-base lg:text-base tracking-[0] leading-[18px] md:leading-[20px] lg:leading-[23px]">
                   Google Ads is a powerful online advertising platform by Google
                   that puts your business in front of ready-to-buy customers.
                 </p>
@@ -96,7 +96,7 @@ export const Proposition: React.FC = () => {
                       src="/Home-Page/Hero-Section/right.svg"
                     />
 
-                    <p className="relative mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-800 text-sm tracking-[0] leading-[23px]">
+                    <p className="relative mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-800 text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[23px]">
                       {feature}
                     </p>
                   </li>
@@ -135,14 +135,14 @@ export const Proposition: React.FC = () => {
           </div>
         </div>
 
-        <button className="flex w-[277px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
-          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+        <button className="flex w-full sm:w-[250px] lg:w-[277px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
+          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
             Let's Analyze Your Site
           </span>
 
-          <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
+          <div className="inline-flex items-center gap-2 lg:gap-2.5 p-2 lg:p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[24px] lg:rounded-[34px] border border-solid border-primary-75">
             <img
-              className="relative w-5 h-5"
+              className="relative w-4 h-4 lg:w-5 lg:h-5"
               alt="Arrow right"
               src="/Home-Page/ca/arrow-right.svg"
             />
@@ -151,7 +151,7 @@ export const Proposition: React.FC = () => {
       </div>
 
       <div
-        className="relative w-[692px] h-[515px]"
+        className="relative w-full lg:w-[692px] h-auto lg:h-[515px] hidden lg:block"
         role="img"
         aria-label="Google Ads dashboard visualization"
       >

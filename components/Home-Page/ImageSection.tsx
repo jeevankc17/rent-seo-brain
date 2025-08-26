@@ -3,30 +3,30 @@ import React from "react";
 
 export default function ImageSection() {
   return (
-    <div className="relative w-[1118px] h-[639px] flex-shrink-0">
+    <div className="relative w-full max-w-[1118px] h-auto lg:h-[639px] flex-shrink-0">
       {/* Left Section - Phone with gradient background */}
-      <div className="absolute left-0 top-0 flex w-[552px] h-[639px] pt-[1px] flex-col justify-center items-center flex-shrink-0">
-        <div className="absolute left-0 top-[1px] w-[552px] h-[638px] flex-shrink-0">
+      <div className="relative lg:absolute left-0 top-0 flex w-full lg:w-[552px] h-auto lg:h-[639px] pt-[1px] flex-col justify-center items-center flex-shrink-0">
+        <div className="relative lg:absolute left-0 top-[1px] w-full lg:w-[552px] h-auto lg:h-[638px] flex-shrink-0">
           {/* Gradient Background */}
           <div 
-            className="absolute left-0 top-[242px] w-[552px] h-[396px] flex-shrink-0 rounded-[15px]"
+            className="absolute left-0 top-[120px] lg:top-[242px] w-full lg:w-[552px] h-[200px] lg:h-[396px] flex-shrink-0 rounded-[15px]"
             style={{
               background: "linear-gradient(180deg, #43A2FF 0%, #FFF 100%)"
             }}
           />
           
           {/* Logo/Icon Container */}
-          <div className="absolute left-[131px] top-[101px] inline-flex h-[63px] px-[0.477px] py-[8.68px_0px_7.629px_26.18px] justify-end items-center flex-shrink-0 w-[88px]">
+          <div className="absolute left-[50px] lg:left-[131px] top-[20px] lg:top-[101px] inline-flex h-[32px] lg:h-[63px] px-[0.477px] py-[4px_0px_4px_13px] lg:py-[8.68px_0px_7.629px_26.18px] justify-end items-center flex-shrink-0 w-[44px] lg:w-[88px]">
             <img 
               src="https://api.builder.io/api/v1/image/assets/TEMP/7aee602eb3fd10d5da1cd68ddcea7f720aabf2fe?width=123" 
-              className="absolute left-[26px] top-[9px] w-[62px] h-[46px]"
+              className="absolute left-[13px] lg:left-[26px] top-[5px] lg:top-[9px] w-[31px] lg:w-[62px] h-[23px] lg:h-[46px]"
               alt="Frame 2121457905" 
             />
           </div>
           
           {/* Phone Image */}
           <img 
-            className="absolute left-[71px] top-[110px] w-[410px] h-[528px] flex-shrink-0"
+            className="absolute left-[35px] lg:left-[71px] top-[55px] lg:top-[110px] w-[205px] lg:w-[410px] h-[264px] lg:h-[528px] flex-shrink-0"
             style={{ aspectRatio: "73/94" }}
             src="https://api.builder.io/api/v1/image/assets/TEMP/17a8536c5ae38906ad273d69191b437c18c3a7ce?width=820" 
             alt="" 
@@ -36,7 +36,7 @@ export default function ImageSection() {
 
       {/* Curved SVG Connector */}
       <svg 
-        className="absolute left-[322px] top-[293px] w-[330px] h-[198px] flex-shrink-0"
+        className="hidden lg:block absolute left-[322px] top-[293px] w-[330px] h-[198px] flex-shrink-0"
         style={{ strokeWidth: "3px", stroke: "#1D8FFF" }}
         width="333" 
         height="201" 
@@ -53,10 +53,10 @@ export default function ImageSection() {
       </svg>
 
       {/* Right Section - Live Demo Interface */}
-      <div className="absolute left-[602px] top-[57px] w-[516px] h-[546px] flex-shrink-0">
+      <div className="relative lg:absolute left-0 lg:left-[602px] top-0 lg:top-[57px] w-full lg:w-[516px] h-auto lg:h-[546px] flex-shrink-0 mt-4 lg:mt-0">
         {/* Background Image */}
         <img 
-          className="absolute left-0 top-0 w-[516px] h-[582px] flex-shrink-0"
+          className="absolute left-0 top-0 w-full lg:w-[516px] h-[291px] lg:h-[582px] flex-shrink-0"
           style={{ aspectRatio: "102/115" }}
           src="https://api.builder.io/api/v1/image/assets/TEMP/e715b55fe32746b22aa0d0bd26a665fe353cad9e?width=1033" 
           alt="" 
@@ -64,14 +64,14 @@ export default function ImageSection() {
         
         {/* Demo Interface Container */}
         <div 
-          className="absolute left-[41px] top-[87px] flex w-[423px] h-[484px] px-[17.85px] py-[7.65px] flex-col items-center gap-[31.874px] flex-shrink-0 bg-white"
+          className="absolute left-[20px] lg:left-[41px] top-[44px] lg:top-[87px] flex w-[calc(100%-40px)] lg:w-[423px] h-[242px] lg:h-[484px] px-[9px] lg:px-[17.85px] py-[4px] lg:py-[7.65px] flex-col items-center gap-[16px] lg:gap-[31.874px] flex-shrink-0 bg-white"
           style={{
             borderRadius: "26.774px 26.774px 0 0",
             boxShadow: "0 -8.925px 19.125px 0 #FFF"
           }}
         >
           {/* Header */}
-          <div className="flex h-[21.675px] justify-between items-center flex-shrink-0 self-stretch">
+          <div className="flex h-[11px] lg:h-[21.675px] justify-between items-center flex-shrink-0 self-stretch">
             <div className="flex items-center gap-[10.2px]">
               <svg 
                 className="w-[15.3px] h-[15.3px] fill-[#00B45C]"
@@ -84,7 +84,7 @@ export default function ImageSection() {
                 <circle cx="7.7553" cy="8.18498" r="7.64983" fill="#00B45C"/>
               </svg>
               <div 
-                className="text-center font-urbanist text-[17.85px] font-semibold"
+                className="text-center font-urbanist text-[9px] lg:text-[17.85px] font-semibold"
                 style={{ color: "#4F6070" }}
               >
                 Live SEO Demo
@@ -99,19 +99,19 @@ export default function ImageSection() {
           </div>
 
           {/* Main Content */}
-          <div className="flex flex-col items-center gap-[36.974px] self-stretch">
+          <div className="flex flex-col items-center gap-[18px] lg:gap-[36.974px] self-stretch">
             {/* Counter Section */}
-            <div className="flex flex-col justify-center items-center gap-[5.1px] self-stretch">
-              <div className="flex w-[387.591px] h-[28.049px] pb-[0.049px] justify-center items-center">
+            <div className="flex flex-col justify-center items-center gap-[3px] lg:gap-[5.1px] self-stretch">
+              <div className="flex w-full lg:w-[387.591px] h-[14px] lg:h-[28.049px] pb-[0.049px] justify-center items-center">
                 <div 
-                  className="flex-1 text-center font-urbanist text-[22.949px] font-semibold w-[388px] h-[28px]"
+                  className="flex-1 text-center font-urbanist text-[11px] lg:text-[22.949px] font-semibold w-full lg:w-[388px] h-[14px] lg:h-[28px]"
                   style={{ color: "#1D8FFF" }}
                 >
                   11,345
                 </div>
               </div>
               <div 
-                className="self-stretch text-center font-urbanist text-[15.3px] font-medium"
+                className="self-stretch text-center font-urbanist text-[8px] lg:text-[15.3px] font-medium"
                 style={{ color: "#7B7B7B" }}
               >
                 Searches Happening Now
@@ -119,10 +119,10 @@ export default function ImageSection() {
             </div>
 
             {/* Progress Steps */}
-            <div className="flex flex-col items-start gap-[15.3px] self-stretch">
+            <div className="flex flex-col items-start gap-[8px] lg:gap-[15.3px] self-stretch">
               {/* Crawling Step */}
               <div 
-                className="flex px-[16.575px] py-[15.3px] flex-col justify-center items-start gap-[10.2px] self-stretch rounded-[7.65px] bg-white"
+                className="flex px-[8px] lg:px-[16.575px] py-[8px] lg:py-[15.3px] flex-col justify-center items-start gap-[5px] lg:gap-[10.2px] self-stretch rounded-[4px] lg:rounded-[7.65px] bg-white"
                 style={{ boxShadow: "0 5.1px 15.937px 0 rgba(0, 0, 0, 0.15)" }}
               >
                 <div className="flex flex-col justify-center items-start gap-[5.1px] self-stretch">
@@ -176,7 +176,7 @@ export default function ImageSection() {
 
               {/* Indexing Step */}
               <div 
-                className="flex px-[16.575px] py-[15.3px] flex-col justify-center items-start gap-[10.2px] self-stretch rounded-[7.65px] bg-white"
+                className="flex px-[8px] lg:px-[16.575px] py-[8px] lg:py-[15.3px] flex-col justify-center items-start gap-[5px] lg:gap-[10.2px] self-stretch rounded-[4px] lg:rounded-[7.65px] bg-white"
                 style={{ boxShadow: "0 5.1px 15.937px 0 rgba(0, 0, 0, 0.15)" }}
               >
                 <div className="flex flex-col justify-center items-start gap-[5.1px] self-stretch">
@@ -225,7 +225,7 @@ export default function ImageSection() {
 
               {/* Ranking Step */}
               <div 
-                className="flex px-[16.575px] py-[15.3px] flex-col justify-center items-start gap-[10.2px] self-stretch rounded-[7.65px] bg-white"
+                className="flex px-[8px] lg:px-[16.575px] py-[8px] lg:py-[15.3px] flex-col justify-center items-start gap-[5px] lg:gap-[10.2px] self-stretch rounded-[4px] lg:rounded-[7.65px] bg-white"
                 style={{ boxShadow: "0 5.1px 15.937px 0 rgba(0, 0, 0, 0.15)" }}
               >
                 <div className="flex flex-col justify-center items-start gap-[5.1px] self-stretch">

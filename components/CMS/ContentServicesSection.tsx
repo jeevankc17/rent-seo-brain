@@ -68,32 +68,32 @@ export const ContentServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-neutral-0 overflow-hidden relative w-full ">
-      <div className="relative w-full max-w-7xl mx-auto px-4">
+    <section className="min-h-screen bg-neutral-0 overflow-hidden relative w-full">
+      <div className="relative w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-4">
         {/* Background blur elements */}
-        <div className="absolute w-[464px] h-[403px] top-[191px] right-0 bg-primary-100 opacity-60 rounded-full blur-[365px]" />
-        <div className="absolute w-[464px] h-[403px] top-[168px] left-0 bg-primary-100 opacity-60 rounded-full blur-[365px]" />
-        <div className="absolute w-[168px] h-[156px] top-[252px] left-1/2 transform -translate-x-1/2 bg-neutral-900 rounded-full blur-[141px]" />
+        <div className="hidden lg:block absolute w-[464px] h-[403px] top-[191px] right-0 bg-primary-100 opacity-60 rounded-full blur-[365px]" />
+        <div className="hidden lg:block absolute w-[464px] h-[403px] top-[168px] left-0 bg-primary-100 opacity-60 rounded-full blur-[365px]" />
+        <div className="hidden lg:block absolute w-[168px] h-[156px] top-[252px] left-1/2 transform -translate-x-1/2 bg-neutral-900 rounded-full blur-[141px]" />
 
-        <div className="flex flex-col items-center gap-24 relative z-10">
+        <div className="flex flex-col items-center gap-12 md:gap-16 lg:gap-24 relative z-10 py-8 md:py-12 lg:py-16">
           {/* Header section */}
-          <header className="w-full max-w-[550px] flex flex-col items-center gap-6">
+          <header className="w-full max-w-sm md:max-w-lg lg:max-w-[550px] flex flex-col items-center gap-4 md:gap-6">
             <div className="flex items-center justify-center gap-1.5 px-2.5 py-[5px] bg-primary-100 rounded-[45px] shadow-[0px_3px_1.1px_rgba(29,143,255,0.3)]">
               <img
-                className="w-[15px] h-[15px]"
+                className="w-3 h-3 md:w-[15px] md:h-[15px]"
                 alt="Stars"
                 src="/cms/ca/stars.svg"
               />
-              <div className="font-medium text-neutral-900 text-sm tracking-[0] leading-[23px] whitespace-nowrap [font-family:'Urbanist',Helvetica]">
+              <div className="font-medium text-neutral-900 text-xs md:text-sm tracking-[0] leading-[23px] text-center [font-family:'Urbanist',Helvetica]">
                 Our Content Marketing Services
               </div>
             </div>
 
             <div className="flex flex-col items-center justify-center gap-4 w-full">
-              <h1 className="text-neutral-900 text-[50px] text-center tracking-[0] leading-[57px] font-bold [font-family:'Urbanist',Helvetica]">
+              <h1 className="text-neutral-900 text-xl md:text-3xl lg:text-[50px] text-center tracking-[0] leading-tight md:leading-[40px] lg:leading-[57px] font-bold [font-family:'Urbanist',Helvetica]">
                 Everything You Need to Power Your Content.
               </h1>
-              <p className="text-neutral-400 text-base text-center tracking-[0] leading-[23px] font-normal [font-family:'Urbanist',Helvetica]">
+              <p className="text-neutral-400 text-sm md:text-base text-center tracking-[0] leading-relaxed md:leading-[23px] font-normal [font-family:'Urbanist',Helvetica]">
                 From strategy to execution, we handle every aspect of your
                 content marketing to drive measurable results for your business.
               </p>
@@ -101,11 +101,11 @@ export const ContentServicesSection: React.FC = () => {
           </header>
 
           {/* Services grid */}
-          <main className="flex flex-col items-center gap-11 w-full max-w-[1125px]">
+          <main className="flex flex-col items-center gap-8 md:gap-10 lg:gap-11 w-full max-w-[1125px]">
             {/* First row - SEO Blog Writing and Content Strategy */}
-            <div className="flex items-start justify-between gap-6 w-full">
+            <div className="flex flex-col lg:flex-row items-start justify-between gap-6 w-full">
               {/* SEO Blog Writing Card */}
-              <article className="flex w-[431px] gap-2.5 px-8 py-[18px] bg-white rounded-[18px] border border-grey-500 flex-col items-start">
+              <article className="flex w-full lg:w-[431px] gap-2.5 px-4 md:px-6 lg:px-8 py-4 md:py-5 lg:py-[18px] bg-white rounded-[18px] border border-grey-500 flex-col items-start">
                 <div className="flex flex-col items-start gap-[15px] w-full">
                   <div className="flex gap-2.5 p-3.5 w-full bg-neutral-100 rounded-[14px] shadow-[0px_4px_49.3px_rgba(67,162,255,0.15)] flex-col items-start">
                     <div className="flex flex-col items-start gap-[17px] w-full">
@@ -154,7 +154,7 @@ export const ContentServicesSection: React.FC = () => {
               </article>
 
               {/* Content Strategy Card */}
-              <article className="flex w-[672px] h-[383px] gap-2.5 px-[29px] py-6 bg-white rounded-[18px] flex-col items-start">
+              <article className="flex w-full lg:w-[672px] h-auto lg:h-[383px] gap-2.5 px-4 md:px-6 lg:px-[29px] py-4 md:py-5 lg:py-6 bg-white rounded-[18px] flex-col items-start">
                 <div className="flex flex-col items-start gap-[39px] w-full">
                   <div className="flex flex-col items-center gap-[21px] w-full">
                     <div className="flex flex-col items-start gap-2.5 pl-[126px] pr-[9px] py-[5px] w-full bg-neutral-600 bg-opacity-15 rounded-[349px] border border-neutral-600 border-opacity-10">
@@ -214,9 +214,9 @@ export const ContentServicesSection: React.FC = () => {
             </div>
 
             {/* Second row - Email Marketing, Video Content, Content Analytics */}
-            <div className="flex items-center gap-[22px] w-full justify-center">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-[22px] w-full justify-center">
               {/* Email Marketing Card */}
-              <article className="flex h-[383px] w-[359px] justify-center gap-[70px] px-[15px] py-[26px] bg-white rounded-[18px] border border-grey-500 flex-col items-start">
+              <article className="flex h-auto md:h-[383px] w-full md:w-[359px] justify-center gap-8 md:gap-[70px] px-4 md:px-[15px] py-6 md:py-[26px] bg-white rounded-[18px] border border-grey-500 flex-col items-start">
                 <div className="flex flex-col w-full items-center gap-[17px]">
                   <div className="flex items-start gap-[195px] px-3 py-[7px] w-full rounded-[5px] border-l-[3px] border-[#bbff00]">
                     <div className="flex flex-col w-[83px] items-start justify-end gap-[7px]">
@@ -268,14 +268,14 @@ export const ContentServicesSection: React.FC = () => {
               </article>
 
               {/* Video Content Card */}
-              <article className="flex h-[383px] w-[359px] justify-center gap-[70px] px-[15px] py-[26px] bg-white rounded-[18px] border border-grey-500 flex-col items-start">
-                <div className="w-full h-[152px] rounded-[13px] bg-[url(/cms/ca/frame-2121457924.svg)] bg-cover bg-center" />
+              <article className="flex h-auto md:h-[383px] w-full md:w-[359px] justify-center gap-8 md:gap-[70px] px-4 md:px-[15px] py-6 md:py-[26px] bg-white rounded-[18px] border border-grey-500 flex-col items-start">
+                <div className="w-full h-32 md:h-[152px] rounded-[13px] bg-[url(/cms/ca/frame-2121457924.svg)] bg-cover bg-center" />
 
                 <div className="flex flex-col items-start gap-3.5 w-full">
                   <div className="font-semibold text-[#bbff00] text-base [font-family:'Urbanist',Helvetica] tracking-[0] leading-[normal]">
                     {services[3].id}
                   </div>
-                  <h2 className="font-semibold text-neutral-900 text-xl [font-family:'Urbanist',Helvetica] tracking-[0] leading-[normal] whitespace-nowrap">
+                  <h2 className="font-semibold text-neutral-900 text-xl [font-family:'Urbanist',Helvetica] tracking-[0] leading-[normal]">
                     {services[3].title}
                   </h2>
                   <p className="text-neutral-400 text-base [font-family:'Urbanist',Helvetica] font-normal tracking-[0] leading-[normal]">
@@ -285,7 +285,7 @@ export const ContentServicesSection: React.FC = () => {
               </article>
 
               {/* Content Analytics Card */}
-              <article className="flex h-[383px] w-[359px] justify-center gap-[70px] px-[15px] py-[26px] bg-white rounded-[18px] border border-grey-500 flex-col items-start">
+              <article className="flex h-auto md:h-[383px] w-full md:w-[359px] justify-center gap-8 md:gap-[70px] px-4 md:px-[15px] py-6 md:py-[26px] bg-white rounded-[18px] border border-grey-500 flex-col items-start">
                 <div className="flex flex-col w-full items-start gap-[27px]">
                   <div className="flex items-center justify-between w-full">
                     <div className="font-medium text-neutral-900 text-sm [font-family:'Urbanist',Helvetica] tracking-[0] leading-[normal]">
@@ -334,26 +334,26 @@ export const ContentServicesSection: React.FC = () => {
           </main>
 
           {/* Call to action buttons */}
-          <div className="inline-flex items-center justify-center gap-[13px]">
-            <button className="flex w-64 h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_rgba(46,151,255,0.6)] hover:bg-primary-200 transition-colors">
-              <div className="font-medium text-neutral-0 text-base text-center [font-family:'Urbanist',Helvetica] tracking-[0] leading-[23px] whitespace-nowrap">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-[13px] w-full">
+            <button className="flex w-full max-w-sm sm:max-w-none sm:w-auto lg:w-64 h-12 md:h-[50px] items-center justify-center lg:justify-end gap-2 md:gap-2.5 px-3 lg:px-[3px] py-0 bg-primary-300 rounded-[25px] md:rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_rgba(46,151,255,0.6)] hover:bg-primary-200 transition-colors">
+              <div className="font-medium text-neutral-0 text-sm md:text-base text-center [font-family:'Urbanist',Helvetica] tracking-[0] leading-[23px]">
                 Launch My Content Plan
               </div>
-              <div className="inline-flex items-center gap-2.5 p-3 bg-primary-500 rounded-[34px] border border-primary-400">
+              <div className="inline-flex items-center gap-2.5 p-2 md:p-3 bg-primary-500 rounded-[20px] md:rounded-[25px] lg:rounded-[34px] border border-primary-400">
                 <img
-                  className="w-5 h-5"
+                  className="w-4 h-4 md:w-5 md:h-5"
                   alt="Arrow right"
                   src="/cms/ca/arrow-right.svg"
                 />
               </div>
             </button>
 
-            <button className="flex w-[249px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 bg-grey-50 rounded-[33px] border border-grey-200 hover:bg-grey-75 transition-colors">
-              <p className="font-medium text-neutral-0 text-base [font-family:'Urbanist',Helvetica] tracking-[0] leading-4 whitespace-nowrap">
+            <button className="flex w-full max-w-xs sm:max-w-none sm:w-auto lg:w-[249px] h-12 md:h-[50px] items-center justify-center gap-2 md:gap-[7px] px-4 md:px-5 lg:px-[19px] py-2.5 bg-grey-50 rounded-[25px] md:rounded-[30px] lg:rounded-[33px] border border-grey-200 hover:bg-grey-75 transition-colors">
+              <p className="font-medium text-neutral-0 text-sm md:text-base [font-family:'Urbanist',Helvetica] tracking-[0] leading-4">
                 Talk To A Content Expert
               </p>
               <img
-                className="w-5 h-5"
+                className="w-4 h-4 md:w-5 md:h-5"
                 alt="Arrow right"
                 src="/cms/ca/arrow-right-1.svg"
               />

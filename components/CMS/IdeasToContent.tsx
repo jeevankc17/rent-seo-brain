@@ -2,34 +2,34 @@ import React from 'react';
 
 const IdeasToContent = () => {
   return (
-    <div className="flex w-[907px] h-[1766px] flex-col items-center gap-[50px] relative">
+    <div className="hidden sm:flex w-full max-w-[907px] h-auto lg:h-[1766px] flex-col items-center gap-[25px] lg:gap-[50px] relative px-4 lg:px-0">
       {/* Title Section */}
-      <div className="flex w-[601px] flex-col justify-center items-center gap-4 relative">
+      <div className="flex w-full max-w-[601px] flex-col justify-center items-center gap-4 relative">
         {/* Badge */}
-        <div className="flex w-[203px] py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] relative" style={{ backgroundColor: '#12579C' }}>
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[15px] h-[15px] flex-shrink-0 relative">
+        <div className="flex w-[150px] lg:w-[203px] py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] bg-[#12579C] relative">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[12px] lg:w-[15px] h-[12px] lg:h-[15px] flex-shrink-0 relative">
             <path d="M5 11.25L7.5 9.34375L10 11.25L9.0625 8.15625L11.5625 6.375H8.5L7.5 3.125L6.5 6.375H3.4375L5.9375 8.15625L5 11.25ZM7.5 13.75C6.63542 13.75 5.82292 13.5859 5.0625 13.2578C4.30208 12.9297 3.64062 12.4844 3.07812 11.9219C2.51562 11.3594 2.07031 10.6979 1.74219 9.9375C1.41406 9.17708 1.25 8.36458 1.25 7.5C1.25 6.63542 1.41406 5.82292 1.74219 5.0625C2.07031 4.30208 2.51562 3.64062 3.07812 3.07812C3.64062 2.51562 4.30208 2.07031 5.0625 1.74219C5.82292 1.41406 6.63542 1.25 7.5 1.25C8.36458 1.25 9.17708 1.41406 9.9375 1.74219C10.6979 2.07031 11.3594 2.51562 11.9219 3.07812C12.4844 3.64062 12.9297 4.30208 13.2578 5.0625C13.5859 5.82292 13.75 6.63542 13.75 7.5C13.75 8.36458 13.5859 9.17708 13.2578 9.9375C12.9297 10.6979 12.4844 11.3594 11.9219 11.9219C11.3594 12.4844 10.6979 12.9297 9.9375 13.2578C9.17708 13.5859 8.36458 13.75 7.5 13.75Z" fill="#E8F4FF"/>
           </svg>
-          <div className="font-urbanist text-[14px] font-medium leading-[23px] relative" style={{ color: '#E8F4FF' }}>
+          <div className="text-[#E8F4FF] font-urbanist text-[12px] lg:text-[14px] font-medium leading-[18px] lg:leading-[23px] relative">
             Our Proven Process
           </div>
         </div>
 
         {/* Title and Description */}
-        <div className="flex h-[176px] flex-col justify-center items-center gap-4 self-stretch relative">
-          <div className="w-[593px] text-center font-urbanist text-[50px] font-bold leading-[57px] relative" style={{ color: '#E8F4FF' }}>
+        <div className="flex h-auto lg:h-[176px] flex-col justify-center items-center gap-4 self-stretch relative">
+          <div className="w-full max-w-[593px] text-[#E8F4FF] text-center font-urbanist text-[24px] md:text-[36px] lg:text-[50px] font-bold leading-[28px] md:leading-[42px] lg:leading-[57px] relative">
             How We Turn Ideas Into ROI-Driven Content
           </div>
-          <div className="text-center font-urbanist text-[16px] font-normal leading-[23px] self-stretch relative" style={{ color: '#EBEDEF' }}>
+          <div className="text-[#EBEDEF] text-center font-urbanist text-[14px] lg:text-[16px] font-normal leading-[20px] lg:leading-[23px] self-stretch relative">
             From discovery to reporting, our systematic approach ensures your content marketing delivers measurable results.
           </div>
         </div>
       </div>
 
       {/* Process Flow */}
-      <div className="h-[1491px] flex-shrink-0 self-stretch relative">
+      <div className="h-auto lg:h-[1491px] flex-shrink-0 self-stretch relative">
         {/* Vertical Line */}
-        <svg className="w-0 h-[7px] flex-shrink-0 stroke-[0.669px] stroke-white absolute left-[484px] top-[643px]" width="2" height="9" viewBox="0 0 2 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-0 h-[7px] flex-shrink-0 stroke-[0.669px] stroke-white absolute left-[484px] top-[643px]" width="2" height="9" viewBox="0 0 2 9" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 8V1" stroke="url(#paint0_linear_1376_83835)" strokeWidth="0.669086" strokeLinecap="round"/>
           <defs>
             <linearGradient id="paint0_linear_1376_83835" x1="1.5" y1="2.10526" x2="1.5" y2="8" gradientUnits="userSpaceOnUse">
@@ -40,21 +40,21 @@ const IdeasToContent = () => {
         </svg>
 
         {/* Process Card 01 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[562px] top-0 h-[292px]" style={{ backgroundColor: 'rgba(36, 50, 64, 0.46)' }}>
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] capitalize relative" style={{ color: '#22384C' }}>
+        <div className="flex w-full lg:w-[345px] py-[20px] lg:py-[33px] px-[16px] lg:px-[22px] flex-col items-start gap-[-8px] lg:gap-[-15px] rounded-[15px] lg:rounded-[25px] bg-[rgba(36,50,64,0.46)] relative lg:absolute left-0 lg:left-[562px] top-0 h-auto lg:h-[292px] mb-4 lg:mb-0">
+          <div className="w-[307px] text-[#22384C] font-urbanist text-[85px] font-bold leading-[55px] capitalize relative">
             01
           </div>
           <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[97px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative" style={{ backgroundColor: 'rgba(216, 253, 95, 1)' }}>
-              <div className="font-urbanist text-[14px] font-medium leading-[20px] capitalize relative" style={{ color: '#071F36' }}>
+            <div className="flex w-[97px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] bg-[rgba(216,253,95,1)] relative">
+              <div className="text-[#071F36] font-urbanist text-[14px] font-medium leading-[20px] capitalize relative">
                 WEEK 1
               </div>
             </div>
             <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
-              <div className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative" style={{ color: '#FFF' }}>
+              <div className="text-white font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative">
                 Website Audit
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] font-medium leading-[24px] capitalize relative" style={{ color: '#D2D2D2' }}>
+              <div className="w-[307px] text-[#D2D2D2] font-urbanist text-[14px] font-medium leading-[24px] capitalize relative">
                 We conduct a comprehensive audit of your website's technical health, structure, and content to identify critical issues that may be hindering your search visibility.
               </div>
             </div>
@@ -62,21 +62,21 @@ const IdeasToContent = () => {
         </div>
 
         {/* Process Card 02 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[-15px] top-[300px] h-[292px]" style={{ backgroundColor: 'rgba(36, 50, 64, 0.46)' }}>
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] capitalize relative" style={{ color: '#22384C' }}>
+        <div className="flex w-full lg:w-[345px] py-[20px] lg:py-[33px] px-[16px] lg:px-[22px] flex-col items-start gap-[-8px] lg:gap-[-15px] rounded-[15px] lg:rounded-[25px] bg-[rgba(36,50,64,0.46)] relative lg:absolute left-0 lg:left-[-15px] top-0 lg:top-[300px] h-auto lg:h-[292px] mb-4 lg:mb-0">
+          <div className="w-full lg:w-[307px] text-[#22384C] font-urbanist text-[42px] lg:text-[85px] font-bold leading-[28px] lg:leading-[55px] capitalize relative">
             02
           </div>
-          <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[97px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative" style={{ backgroundColor: 'rgba(216, 253, 95, 1)' }}>
-              <div className="font-urbanist text-[14px] font-medium leading-[20px] capitalize relative" style={{ color: '#071F36' }}>
+          <div className="flex w-full lg:w-[307px] flex-col items-start gap-4 lg:gap-6 relative">
+            <div className="flex w-[80px] lg:w-[97px] py-[4px] lg:py-[6px] px-[20px] lg:px-[29px] justify-center items-center gap-[8px] lg:gap-[10px] rounded-[435px] bg-[rgba(216,253,95,1)] relative">
+              <div className="text-[#071F36] font-urbanist text-[12px] lg:text-[14px] font-medium leading-[16px] lg:leading-[20px] capitalize relative">
                 WEEK 1-2
               </div>
             </div>
-            <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
-              <div className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative" style={{ color: '#FFF' }}>
+            <div className="flex w-full lg:w-[307px] flex-col items-start gap-[10px] lg:gap-[14px] relative">
+              <div className="text-white font-urbanist text-[16px] lg:text-[18px] font-medium leading-[18px] lg:leading-[20px] capitalize self-stretch relative">
                 Keyword Research
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] font-medium leading-[24px] capitalize relative" style={{ color: '#D2D2D2' }}>
+              <div className="w-full lg:w-[307px] text-[#D2D2D2] font-urbanist text-[12px] lg:text-[14px] font-medium leading-[18px] lg:leading-[24px] capitalize relative">
                 ur process begins with a deep dive into your website to evaluate its performance, uncover on-page and technical SEO errors, and highlight areas for immediate improvement.
               </div>
             </div>
@@ -84,21 +84,21 @@ const IdeasToContent = () => {
         </div>
 
         {/* Process Card 03 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[562px] top-[583px] h-[268px]" style={{ backgroundColor: 'rgba(36, 50, 64, 0.46)' }}>
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] capitalize relative" style={{ color: '#22384C' }}>
+        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] bg-[rgba(36,50,64,0.46)] absolute left-[562px] top-[583px] h-[268px]">
+          <div className="w-[307px] text-[#22384C] font-urbanist text-[85px] font-bold leading-[55px] capitalize relative">
             03
           </div>
           <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[97px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative" style={{ backgroundColor: 'rgba(216, 253, 95, 1)' }}>
-              <div className="font-urbanist text-[14px] font-medium leading-[20px] capitalize relative" style={{ color: '#071F36' }}>
+            <div className="flex w-[97px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] bg-[rgba(216,253,95,1)] relative">
+              <div className="text-[#071F36] font-urbanist text-[14px] font-medium leading-[20px] capitalize relative">
                 WEEK 2-4
               </div>
             </div>
             <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
-              <div className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative" style={{ color: '#FFF' }}>
+              <div className="text-white font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative">
                 On-Site Optimization
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] font-medium leading-[24px] capitalize relative" style={{ color: '#D2D2D2' }}>
+              <div className="w-[307px] text-[#D2D2D2] font-urbanist text-[14px] font-medium leading-[24px] capitalize relative">
                 We analyze every aspect of your website — from site speed and mobile responsiveness to meta data and content quality
               </div>
             </div>
@@ -106,21 +106,21 @@ const IdeasToContent = () => {
         </div>
 
         {/* Process Card 04 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[-15px] top-[878px] h-[292px]" style={{ backgroundColor: 'rgba(36, 50, 64, 0.46)' }}>
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] capitalize relative" style={{ color: '#22384C' }}>
+        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] bg-[rgba(36,50,64,0.46)] absolute left-[-15px] top-[878px] h-[292px]">
+          <div className="w-[307px] text-[#22384C] font-urbanist text-[85px] font-bold leading-[55px] capitalize relative">
             04
           </div>
           <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[97px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative" style={{ backgroundColor: 'rgba(216, 253, 95, 1)' }}>
-              <div className="font-urbanist text-[14px] font-medium leading-[20px] capitalize relative" style={{ color: '#071F36' }}>
+            <div className="flex w-[97px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] bg-[rgba(216,253,95,1)] relative">
+              <div className="text-[#071F36] font-urbanist text-[14px] font-medium leading-[20px] capitalize relative">
                 WEEK 3-8
               </div>
             </div>
             <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
-              <div className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative" style={{ color: '#FFF' }}>
+              <div className="text-white font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative">
                 Link Building
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] font-medium leading-[24px] capitalize relative" style={{ color: '#D2D2D2' }}>
+              <div className="w-[307px] text-[#D2D2D2] font-urbanist text-[14px] font-medium leading-[24px] capitalize relative">
                 We perform a detailed site audit to detect structural flaws, content gaps, and technical issues that negatively impact your search engine rankings and user experience.
               </div>
             </div>
@@ -128,21 +128,21 @@ const IdeasToContent = () => {
         </div>
 
         {/* Process Card 05 */}
-        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] absolute left-[561px] top-[1199px] h-[292px]" style={{ backgroundColor: 'rgba(36, 50, 64, 0.46)' }}>
-          <div className="w-[307px] font-urbanist text-[85px] font-bold leading-[55px] capitalize relative" style={{ color: '#22384C' }}>
+        <div className="flex w-[345px] py-[33px] px-[22px] flex-col items-start gap-[-15px] rounded-[25px] bg-[rgba(36,50,64,0.46)] absolute left-[561px] top-[1199px] h-[292px]">
+          <div className="w-[307px] text-[#22384C] font-urbanist text-[85px] font-bold leading-[55px] capitalize relative">
             05
           </div>
           <div className="flex w-[307px] flex-col items-start gap-6 relative">
-            <div className="flex w-[97px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] relative" style={{ backgroundColor: 'rgba(216, 253, 95, 1)' }}>
-              <div className="font-urbanist text-[14px] font-medium leading-[20px] capitalize relative" style={{ color: '#071F36' }}>
+            <div className="flex w-[97px] py-[6px] px-[29px] justify-center items-center gap-[10px] rounded-[435px] bg-[rgba(216,253,95,1)] relative">
+              <div className="text-[#071F36] font-urbanist text-[14px] font-medium leading-[20px] capitalize relative">
                 ONGOING
               </div>
             </div>
             <div className="flex w-[307px] flex-col items-start gap-[14px] relative">
-              <div className="font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative" style={{ color: '#FFF' }}>
+              <div className="text-white font-urbanist text-[18px] font-medium leading-[20px] capitalize self-stretch relative">
                 Analytics & Reporting
               </div>
-              <div className="w-[307px] font-urbanist text-[14px] font-medium leading-[24px] capitalize relative" style={{ color: '#D2D2D2' }}>
+              <div className="w-[307px] text-[#D2D2D2] font-urbanist text-[14px] font-medium leading-[24px] capitalize relative">
                 Our team reviews your website's architecture, content relevance, and back-end setup to identify barriers to organic growth and create a clear plan of action.
               </div>
             </div>

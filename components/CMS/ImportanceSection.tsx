@@ -10,53 +10,53 @@ const ImportanceSection: React.FC<ImportanceSectionType> = ({
   className = "",
 }) => {
   return (
-    <div className={`flex flex-col items-center gap-14 w-full ${className}`}>
+    <div className={`flex flex-col items-center gap-8 md:gap-12 lg:gap-14 w-full max-w-[1128px] mx-auto px-4 md:px-6 lg:px-0 ${className}`}>
       {/* Header Section */}
-      <div className="flex w-[565px] flex-col items-center gap-4 relative">
+      <div className="flex w-full max-w-sm md:max-w-lg lg:max-w-[565px] flex-col items-center gap-4 relative">
         {/* Tag */}
-        <div className="flex w-[384px] py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF] relative">
+        <div className="flex w-auto py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF] relative">
           <svg
-            width="15"
-            height="15"
+            width="12"
+            height="12"
             viewBox="0 0 16 15"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="flex-shrink-0"
+            className="flex-shrink-0 md:w-[15px] md:h-[15px]"
           >
             <path
               d="M5.5 11.25L8 9.34375L10.5 11.25L9.5625 8.15625L12.0625 6.375H9L8 3.125L7 6.375H3.9375L6.4375 8.15625L5.5 11.25ZM8 13.75C7.13542 13.75 6.32292 13.5859 5.5625 13.2578C4.80208 12.9297 4.14062 12.4844 3.57812 11.9219C3.01562 11.3594 2.57031 10.6979 2.24219 9.9375C1.91406 9.17708 1.75 8.36458 1.75 7.5C1.75 6.63542 1.91406 5.82292 2.24219 5.0625C2.57031 4.30208 3.01562 3.64062 3.57812 3.07812C4.14062 2.51562 4.80208 2.07031 5.5625 1.74219C6.32292 1.41406 7.13542 1.25 8 1.25C8.86458 1.25 9.67708 1.41406 10.4375 1.74219C11.1979 2.07031 11.8594 2.51562 12.4219 3.07812C12.9844 3.64062 13.4297 4.30208 13.7578 5.0625C14.0859 5.82292 14.25 6.63542 14.25 7.5C14.25 8.36458 14.0859 9.17708 13.7578 9.9375C13.4297 10.6979 12.9844 11.3594 12.4219 11.9219C11.8594 12.4844 11.1979 12.9297 10.4375 13.2578C9.67708 13.5859 8.86458 13.75 8 13.75Z"
               fill="#1D8FFF"
             />
           </svg>
-          <span className="text-[#1D8FFF] font-urbanist text-[14px] font-medium leading-[23px] capitalize">
+          <span className="text-[#1D8FFF] font-urbanist text-xs md:text-sm lg:text-[14px] font-medium leading-[23px] text-center">
             Why Choose Rent SEO Brain for Content Marketing?
           </span>
         </div>
 
         {/* Title and Description */}
-        <div className="flex h-[176px] flex-col items-center gap-4 self-stretch relative">
-          <h2 className="self-stretch text-[#12579C] text-center font-urbanist text-[50px] font-bold leading-[57px]">
+        <div className="flex flex-col items-center gap-4 w-full relative">
+          <h2 className="w-full text-[#12579C] text-center font-urbanist text-xl md:text-3xl lg:text-[50px] font-bold leading-tight md:leading-[40px] lg:leading-[57px]">
             Not Just Words ,We Create Impact
           </h2>
-          <p className="w-[565px] text-[#6A7986] text-center font-urbanist text-[16px] font-normal leading-[23px]">
+          <p className="w-full text-[#6A7986] text-center font-urbanist text-sm md:text-base lg:text-[16px] font-normal leading-relaxed md:leading-[23px]">
             At Rent SEO Brain, we don't believe in churning out generic blog
             posts or keyword-stuffed articles. We believe in strategic content .
           </p>
         </div>
       </div>
       {/* Main Content Section */}
-      <div className="flex p-12 items-center gap-14 w-full rounded-[25px]">
-        <div className="flex justify-center items-center gap-[52px]">
+      <div className="flex flex-col lg:flex-row p-4 md:p-8 lg:p-12 items-center gap-8 md:gap-12 lg:gap-14 w-full rounded-[15px] md:rounded-[20px] lg:rounded-[25px]">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-12 lg:gap-[52px] w-full">
           {/* Left Side - Features List */}
-          <div className="flex w-[480px] flex-col items-start gap-[57px]">
+          <div className="flex w-full lg:w-[480px] flex-col items-start gap-8 md:gap-12 lg:gap-[57px]">
             {/* Feature 1 */}
             <div className="flex flex-col items-start gap-2 w-full">
-              <div className="flex py-[11px] px-5 pl-5 pr-2.5 items-center gap-2.5 w-full border-l-[5px] border-[#F78C01]">
-                <div className="w-[429px] text-[#071F36] font-urbanist text-2xl font-bold leading-[23px]">
+              <div className="flex py-2 md:py-3 lg:py-[11px] px-3 md:px-4 lg:px-5 items-center gap-2.5 w-full border-l-[3px] md:border-l-[4px] lg:border-l-[5px] border-[#F78C01]">
+                <div className="w-full text-[#071F36] font-urbanist text-lg md:text-xl lg:text-2xl font-bold leading-tight md:leading-[23px]">
                   A Full In-House Team of Experts
                 </div>
               </div>
-              <div className="w-full text-[#7B7B7B] font-urbanist text-base font-normal leading-[23px]">
+              <div className="w-full text-[#7B7B7B] font-urbanist text-sm md:text-base font-normal leading-relaxed md:leading-[23px]">
                 From SEO-trained writers and keyword strategists to creative
                 leads and editors, everything is handled by our in-house team.
               </div>
@@ -64,12 +64,12 @@ const ImportanceSection: React.FC<ImportanceSectionType> = ({
 
             {/* Feature 2 */}
             <div className="flex flex-col items-start gap-2 w-full">
-              <div className="flex py-[11px] px-5 items-center gap-2.5 w-full border-l-[5px] border-[#F78C01]">
-                <div className="w-[470px] text-[#071F36] font-urbanist text-2xl font-bold leading-[23px]">
+              <div className="flex py-2 md:py-3 lg:py-[11px] px-3 md:px-4 lg:px-5 items-center gap-2.5 w-full border-l-[3px] md:border-l-[4px] lg:border-l-[5px] border-[#F78C01]">
+                <div className="w-full text-[#071F36] font-urbanist text-lg md:text-xl lg:text-2xl font-bold leading-tight md:leading-[23px]">
                   Tailored, Industry-Specific Content
                 </div>
               </div>
-              <div className="w-full text-[#7B7B7B] font-urbanist text-base font-normal leading-[23px]">
+              <div className="w-full text-[#7B7B7B] font-urbanist text-sm md:text-base font-normal leading-relaxed md:leading-[23px]">
                 We understand the nuances of your field. Whether you're in B2B,
                 tech, SaaS, real estate, health, or finance.
               </div>
@@ -77,12 +77,12 @@ const ImportanceSection: React.FC<ImportanceSectionType> = ({
 
             {/* Feature 3 */}
             <div className="flex flex-col items-start gap-2 w-full">
-              <div className="flex py-[11px] px-5 items-center gap-2.5 w-full border-l-[5px] border-[#F78C01]">
-                <div className="w-[313px] text-[#071F36] font-urbanist text-2xl font-bold leading-[23px]">
+              <div className="flex py-2 md:py-3 lg:py-[11px] px-3 md:px-4 lg:px-5 items-center gap-2.5 w-full border-l-[3px] md:border-l-[4px] lg:border-l-[5px] border-[#F78C01]">
+                <div className="w-full text-[#071F36] font-urbanist text-lg md:text-xl lg:text-2xl font-bold leading-tight md:leading-[23px]">
                   SEO + UX-Driven Approach
                 </div>
               </div>
-              <div className="w-full text-[#7B7B7B] font-urbanist text-base font-normal leading-[23px]">
+              <div className="w-full text-[#7B7B7B] font-urbanist text-sm md:text-base font-normal leading-relaxed md:leading-[23px]">
                 Every piece we create is designed to rank and resonate. Our
                 content is optimized for Google, while being easy to read.
               </div>
@@ -90,12 +90,12 @@ const ImportanceSection: React.FC<ImportanceSectionType> = ({
 
             {/* Feature 4 */}
             <div className="flex flex-col items-start gap-2 w-full">
-              <div className="flex py-[11px] px-5 items-center gap-2.5 w-full border-l-[5px] border-[#F78C01]">
-                <div className="w-[460px] text-[#071F36] font-urbanist text-2xl font-bold leading-[23px]">
+              <div className="flex py-2 md:py-3 lg:py-[11px] px-3 md:px-4 lg:px-5 items-center gap-2.5 w-full border-l-[3px] md:border-l-[4px] lg:border-l-[5px] border-[#F78C01]">
+                <div className="w-full text-[#071F36] font-urbanist text-lg md:text-xl lg:text-2xl font-bold leading-tight md:leading-[23px]">
                   Brand-First Storytelling
                 </div>
               </div>
-              <div className="w-full text-[#7B7B7B] font-urbanist text-base font-normal leading-[23px]">
+              <div className="w-full text-[#7B7B7B] font-urbanist text-sm md:text-base font-normal leading-relaxed md:leading-[23px]">
                 We stay true to your brand voice, tone, and values. Our content
                 follows clear guidelines to maintain consistency across all
                 platforms.
@@ -104,12 +104,12 @@ const ImportanceSection: React.FC<ImportanceSectionType> = ({
 
             {/* Feature 5 */}
             <div className="flex flex-col items-start gap-2 w-full">
-              <div className="flex py-[11px] px-5 items-center gap-2.5 w-full border-l-[5px] border-[#F78C01]">
-                <div className="w-[460px] text-[#071F36] font-urbanist text-2xl font-bold leading-[23px]">
+              <div className="flex py-2 md:py-3 lg:py-[11px] px-3 md:px-4 lg:px-5 items-center gap-2.5 w-full border-l-[3px] md:border-l-[4px] lg:border-l-[5px] border-[#F78C01]">
+                <div className="w-full text-[#071F36] font-urbanist text-lg md:text-xl lg:text-2xl font-bold leading-tight md:leading-[23px]">
                   Clarity, Calendars, and Transparency
                 </div>
               </div>
-              <div className="w-full text-[#7B7B7B] font-urbanist text-base font-normal leading-[23px]">
+              <div className="w-full text-[#7B7B7B] font-urbanist text-sm md:text-base font-normal leading-relaxed md:leading-[23px]">
                 You'll always know what's coming. We deliver organized monthly
                 content calendars and provide transparent reporting .
               </div>
@@ -117,7 +117,7 @@ const ImportanceSection: React.FC<ImportanceSectionType> = ({
           </div>
 
           {/* Right Side - Content Analyzer Card */}
-          <div className="flex h-[723px] py-[18px] px-8 justify-center items-center gap-2.5 rounded-[11px] bg-white shadow-[0_4px_57.7px_0_rgba(29,143,255,0.37)]">
+          <div className="hidden lg:flex h-[723px] py-[18px] px-8 justify-center items-center gap-2.5 rounded-[11px] bg-white shadow-[0_4px_57.7px_0_rgba(29,143,255,0.37)]">
             <div className="flex w-[463px] flex-col justify-center items-start gap-[30px]">
               {/* Header */}
               <div className="flex justify-between items-center w-full">
@@ -214,21 +214,21 @@ const ImportanceSection: React.FC<ImportanceSectionType> = ({
       </div>
 
       {/* Bottom CTA Buttons */}
-      <div className="flex justify-center items-center gap-[22px]">
-        <div className="flex w-[299px] h-[50px] px-[3px] py-0 justify-end items-center gap-2.5 rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-          <div className="text-white text-center font-urbanist text-base font-medium leading-[23px] capitalize">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 lg:gap-[22px] w-full">
+        <button className="flex w-full max-w-sm sm:max-w-none sm:w-auto lg:w-[299px] h-12 md:h-[50px] px-3 md:px-4 lg:px-[3px] py-0 justify-center lg:justify-end items-center gap-2 md:gap-2.5 rounded-[25px] md:rounded-[35px] lg:rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:bg-[#1a7ae6] transition-colors">
+          <div className="text-white text-center font-urbanist text-sm md:text-base font-medium leading-[23px]">
             Work With Our Content Experts
           </div>
-          <div className="flex p-3 items-center gap-2.5 rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
-            <ArrowRight className="w-5 h-5 text-[#1D8FFF]" strokeWidth={2} />
+          <div className="flex p-2 md:p-3 items-center gap-2.5 rounded-[20px] md:rounded-[25px] lg:rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
+            <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-[#1D8FFF]" strokeWidth={2} />
           </div>
-        </div>
-        <div className="flex w-[172px] h-[50px] py-2.5 px-[19px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA]">
-          <div className="text-[#091E42] font-urbanist text-base font-medium leading-[100%] capitalize">
+        </button>
+        <button className="flex w-full max-w-xs sm:max-w-none sm:w-auto lg:w-[172px] h-12 md:h-[50px] py-2 md:py-2.5 px-4 md:px-5 lg:px-[19px] justify-center items-center gap-2 md:gap-[7px] rounded-[25px] md:rounded-[30px] lg:rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA] hover:bg-[#f0f0f0] transition-colors">
+          <div className="text-[#091E42] font-urbanist text-sm md:text-base font-medium leading-[100%]">
             Learn More
           </div>
-          <ArrowRight className="w-5 h-5 text-[#091E42]" strokeWidth={1.75} />
-        </div>
+          <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-[#091E42]" strokeWidth={1.75} />
+        </button>
       </div>
     </div>
   );

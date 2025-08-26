@@ -8,12 +8,19 @@ export type GoogleLPType = {
 const GoogleLP: NextPage<GoogleLPType> = ({ className = "" }) => {
   return (
     <div
-      className={`w-full h-[960px] bg-foundation-neutral-scale-n1000 relative overflow-hidden ${className}`}
+      className={`w-full h-auto min-h-[400px] md:min-h-[600px] lg:h-[960px] bg-foundation-neutral-scale-n1000 relative overflow-hidden ${className}`}
     >
       {/* First Blur Effect - Left Side */}
       <svg
-        className="absolute"
+        className="absolute hidden md:block"
         style={{
+          width: "400px",
+          height: "300px",
+          left: "-100px",
+          top: "200px",
+          filter: "blur(30px)"
+        }}
+        data-lg-style={{
           width: "803px",
           height: "593px",
           left: "-187px",
@@ -63,8 +70,15 @@ const GoogleLP: NextPage<GoogleLPType> = ({ className = "" }) => {
 
       {/* Second Blur Effect - Right Side */}
       <svg
-        className="absolute"
+        className="absolute hidden md:block"
         style={{
+          width: "400px",
+          height: "300px",
+          left: "calc(100% - 300px)",
+          top: "300px",
+          filter: "blur(30px)"
+        }}
+        data-lg-style={{
           width: "803px",
           height: "593px",
           left: "1139px",
@@ -116,17 +130,23 @@ const GoogleLP: NextPage<GoogleLPType> = ({ className = "" }) => {
       <img
         src="https://api.builder.io/api/v1/image/assets/TEMP/f14a8f5bf65ace143d8cdd3ffd24736ec71fb9fc?width=2880"
         alt="Hero Section"
-        className="absolute left-0 top-0 w-[1440px] h-[960px] object-cover"
+        className="absolute left-0 top-0 w-full h-full object-cover"
       />
 
       {/* Small overlay image */}
       <img
         src="https://api.builder.io/api/v1/image/assets/TEMP/77a846a4b3fb3a10d256be30e6db4b3dbd012c94?width=102"
         alt=""
-        className="absolute w-[51px] h-[51px] aspect-square"
+        className="absolute w-6 h-6 md:w-8 md:h-8 lg:w-[51px] lg:h-[51px] aspect-square"
         style={{
+          left: "50%",
+          top: "90%",
+          transform: "translateX(-50%)"
+        }}
+        data-lg-style={{
           left: "797px",
-          top: "8935px"
+          top: "8935px",
+          transform: "none"
         }}
       />
     </div>

@@ -8,13 +8,13 @@ export type TestiType = {
 const TestimonialsSection: NextPage<TestiType> = ({ className = "" }) => {
   return (
     <div 
-      className={`flex w-[1128px] max-w-full py-0 px-[183px] justify-center items-center relative ${className}`}
+      className={`flex w-full max-w-[1128px] py-0 px-4 lg:px-[183px] justify-center items-center relative ${className}`}
     >
-      <div className="flex w-[762px] max-w-full flex-col items-center gap-[50px] absolute left-[183px] top-0 h-[733px]">
+      <div className="flex w-full max-w-[762px] flex-col items-center gap-8 lg:gap-[50px] relative lg:absolute lg:left-[183px] lg:top-0 h-auto lg:h-[733px]">
         {/* Title Section */}
-        <div className="flex w-[565px] max-w-full flex-col items-center gap-4 relative">
+        <div className="flex w-full max-w-[565px] flex-col items-center gap-4 relative">
           {/* Seamless Integrations Badge */}
-          <div className="flex w-[185px] py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF] relative">
+          <div className="flex w-full max-w-[185px] py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF] relative">
             <svg 
               width="15" 
               height="15" 
@@ -28,28 +28,28 @@ const TestimonialsSection: NextPage<TestiType> = ({ className = "" }) => {
                 fill="#1D8FFF"
               />
             </svg>
-            <div className="text-[#1D8FFF] font-urbanist text-[14px] font-medium leading-[23px] relative">
+            <div className="text-[#1D8FFF] font-urbanist text-xs lg:text-[14px] font-medium leading-[20px] lg:leading-[23px] relative">
               Seamless Integrations
             </div>
           </div>
 
           {/* Main Content */}
-          <div className="flex h-[176px] flex-col items-center gap-4 self-stretch relative">
+          <div className="flex h-auto lg:h-[176px] flex-col items-center gap-4 self-stretch relative">
             {/* Main Heading */}
-            <div className="w-[641px] max-w-full text-[#12579C] text-center font-urbanist text-[50px] font-bold leading-[57px] relative">
+            <div className="w-full max-w-[641px] text-[#12579C] text-center font-urbanist text-xl sm:text-2xl md:text-3xl lg:text-[50px] font-bold leading-[24px] sm:leading-[28px] md:leading-[36px] lg:leading-[57px] relative">
               Connect Google Ads with the tools you already use.
             </div>
             
             {/* Description */}
-            <div className="w-[565px] max-w-full text-[#6A7986] text-center font-urbanist text-base font-normal leading-[23px] relative">
+            <div className="w-full max-w-[565px] text-[#6A7986] text-center font-urbanist text-sm lg:text-base font-normal leading-[20px] lg:leading-[23px] relative">
               We streamline your workflow by syncing Google Ads with industry-standard platforms to improve tracking, reporting, and automation.
             </div>
           </div>
         </div>
 
         {/* Circular Integration Diagram */}
-        <div className="flex w-[762px] max-w-full h-[458px] justify-center items-center relative">
-          <div className="w-[762px] flex-shrink-0 self-stretch absolute left-0 top-0 h-[790px]">
+        <div className="flex w-full max-w-[762px] h-auto lg:h-[458px] justify-center items-center relative">
+          <div className="w-full max-w-[762px] flex-shrink-0 self-stretch relative lg:absolute lg:left-0 lg:top-0 h-auto lg:h-[790px] hidden lg:block">
             {/* Outer Circle */}
             <svg 
               width="762" 
@@ -57,7 +57,7 @@ const TestimonialsSection: NextPage<TestiType> = ({ className = "" }) => {
               viewBox="0 0 762 437" 
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[762px] h-[762px] rounded-full border border-[#7CBEFF] shadow-[0_4px_9.6px_0_#132A40] absolute left-0 top-[28px]"
+              className="w-full max-w-[762px] h-auto lg:h-[762px] rounded-full border border-[#7CBEFF] shadow-[0_4px_9.6px_0_#132A40] relative lg:absolute lg:left-0 lg:top-[28px]"
             >
               <g filter="url(#filter0_d_1478_9826)">
                 <circle cx="381" cy="387.062" r="380.5" stroke="#7CBEFF" shapeRendering="crispEdges"/>
@@ -83,7 +83,7 @@ const TestimonialsSection: NextPage<TestiType> = ({ className = "" }) => {
               viewBox="0 0 630 361" 
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[610px] h-[610px] rounded-full border-[0.801px] border-[#7CBEFF] shadow-[0_4.129px_9.909px_0_#132A40] absolute left-[77px] top-[104px]"
+              className="w-full max-w-[610px] h-auto lg:h-[610px] rounded-full border-[0.801px] border-[#7CBEFF] shadow-[0_4.129px_9.909px_0_#132A40] relative lg:absolute lg:left-[77px] lg:top-[104px]"
             >
               <g filter="url(#filter0_d_1478_9827)">
                 <circle cx="315" cy="311.062" r="304.6" stroke="#7CBEFF" strokeWidth="0.800525" shapeRendering="crispEdges"/>
@@ -109,7 +109,7 @@ const TestimonialsSection: NextPage<TestiType> = ({ className = "" }) => {
               viewBox="0 0 485 271" 
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[469px] h-[469px] rounded-full border-[0.615px] border-[#7CBEFF] shadow-[0_3.174px_7.618px_0_#132A40] absolute left-[147px] top-[193px]"
+              className="w-full max-w-[469px] h-auto lg:h-[469px] rounded-full border-[0.615px] border-[#7CBEFF] shadow-[0_3.174px_7.618px_0_#132A40] relative lg:absolute lg:left-[147px] lg:top-[193px]"
             >
               <g filter="url(#filter0_d_1478_9828)">
                 <circle cx="242.5" cy="239.562" r="234.192" stroke="#7CBEFF" strokeWidth="0.615486" shapeRendering="crispEdges"/>
@@ -133,35 +133,35 @@ const TestimonialsSection: NextPage<TestiType> = ({ className = "" }) => {
             <img 
               src="https://api.builder.io/api/v1/image/assets/TEMP/7135bbdad4ac0761a8ec0e4038a2f2da271f178e?width=228" 
               alt="Snapchat" 
-              className="w-[114px] h-[114px] aspect-square absolute left-[177px] top-0"
+              className="w-[80px] h-[80px] lg:w-[114px] lg:h-[114px] aspect-square relative lg:absolute lg:left-[177px] lg:top-0"
             />
             
             {/* LinkedIn - Right */}
             <img 
               src="https://api.builder.io/api/v1/image/assets/TEMP/08f653c88a45aa8cca65041783cfc271514c70c0?width=106" 
               alt="LinkedIn" 
-              className="w-[53px] h-[53px] aspect-[53.10/52.96] absolute left-[532px] top-[127px]"
+              className="w-[40px] h-[40px] lg:w-[53px] lg:h-[53px] aspect-[53.10/52.96] relative lg:absolute lg:left-[532px] lg:top-[127px]"
             />
             
             {/* Instagram - Left */}
             <img 
               src="https://api.builder.io/api/v1/image/assets/TEMP/d6b3594e46fe1459f80f063838d4b2f378f3aa62?width=127" 
               alt="Instagram" 
-              className="w-[63px] h-[63px] aspect-square absolute left-[70px] top-[261px]"
+              className="w-[45px] h-[45px] lg:w-[63px] lg:h-[63px] aspect-square relative lg:absolute lg:left-[70px] lg:top-[261px]"
             />
             
             {/* Facebook - Bottom Right */}
             <img 
               src="https://api.builder.io/api/v1/image/assets/TEMP/c35d57c4e552a4618fd894e8792b894076bf20d6?width=109" 
               alt="Facebook" 
-              className="w-[55px] h-[55px] aspect-square absolute left-[561px] top-[283px]"
+              className="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px] aspect-square relative lg:absolute lg:left-[561px] lg:top-[283px]"
             />
             
             {/* TikTok - Center */}
             <img 
               src="https://api.builder.io/api/v1/image/assets/TEMP/8be968a8bdf866b3e80a0431e04b17542c21fdc1?width=142" 
               alt="TikTok" 
-              className="w-[71px] h-[71px] aspect-square absolute left-[263px] top-[174px]"
+              className="w-[50px] h-[50px] lg:w-[71px] lg:h-[71px] aspect-square relative lg:absolute lg:left-[263px] lg:top-[174px]"
             />
           </div>
         </div>

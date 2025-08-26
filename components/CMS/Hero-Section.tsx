@@ -88,14 +88,14 @@ export default function CMS() {
 
             {/* Main Heading and Description */}
             <div className="flex w-full max-w-[630px] flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-4">
-              <h1 className="w-full text-center text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight sm:leading-[46px] lg:leading-[57px] font-sans">
+              <h1 className="w-full text-center text-xl sm:text-2xl md:text-3xl lg:text-[50px] font-bold leading-tight sm:leading-[46px] lg:leading-[57px] font-sans">
                 <span className="text-primary-300">Transform</span>
                 <span className="text-white">
                   {" "}
                   Your Brand with Strategic Content
                 </span>
               </h1>
-              <p className="w-full max-w-[640px] text-grey-200 text-center text-xs sm:text-sm md:text-base font-medium leading-relaxed sm:leading-[20px] lg:leading-[23px] font-sans">
+              <p className="w-full max-w-[640px] text-grey-200 text-center text-sm sm:text-base md:text-lg lg:text-base font-medium leading-relaxed sm:leading-[20px] lg:leading-[23px] font-sans">
                 Drive explosive growth with data-driven content strategies that
                 convert visitors into customers and build lasting brand
                 authority in your industry.
@@ -106,7 +106,7 @@ export default function CMS() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4 md:gap-[13px] w-full max-w-[630px]">
             <button className="flex w-full sm:w-[200px] md:w-[240px] lg:w-[273px] h-[40px] sm:h-[45px] lg:h-[50px] px-1 sm:px-2 md:px-[3px] py-0 justify-center sm:justify-end items-center gap-1 sm:gap-2 md:gap-[10px] rounded-[30px] sm:rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-              <span className="text-white text-center text-xs sm:text-sm md:text-base font-medium leading-normal sm:leading-[20px] lg:leading-[23px] capitalize font-sans">
+              <span className="text-white text-center text-sm sm:text-base md:text-lg lg:text-base font-medium leading-normal sm:leading-[20px] lg:leading-[23px] capitalize font-sans">
                 Create Content That Converts
               </span>
               <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
@@ -137,7 +137,7 @@ export default function CMS() {
             </button>
 
             <button className="flex w-full sm:w-[160px] md:w-[180px] lg:w-[220px] h-[40px] sm:h-[45px] lg:h-[50px] px-3 sm:px-4 lg:px-[19px] py-2 sm:py-[10px] justify-center items-center gap-1 sm:gap-2 lg:gap-[7px] rounded-[20px] sm:rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
-              <span className="text-[#091E42] text-xs sm:text-sm md:text-base font-medium leading-[100%] capitalize font-sans">
+              <span className="text-[#091E42] text-sm sm:text-base md:text-lg lg:text-base font-medium leading-[100%] capitalize font-sans">
                 Explore Our Client Wins
               </span>
               <svg

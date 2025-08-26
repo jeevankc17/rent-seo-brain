@@ -42,24 +42,24 @@ export const ProcessSection: React.FC = () => {
 
     return (
         <section
-            className="relative w-full h-[840px] bg-neutral-900 overflow-hidden"
+            className="relative w-full h-auto lg:h-[840px] bg-neutral-900 overflow-hidden"
             role="region"
             aria-labelledby="process-section-heading"
         >
-            <div className="relative w-[1780px] h-[670px] top-[85px] left-[-172px]">
+            <div className="relative w-full max-w-[1780px] h-auto lg:h-[670px] lg:top-[85px] lg:left-[-172px] mx-auto lg:mx-0">
                 <div
-                    className="top-44 left-[1316px] absolute w-[464px] h-[403px] bg-[#2e97ffa1] rounded-[232px/201.63px] blur-[365.85px]"
+                    className="hidden lg:block top-44 left-[1316px] absolute w-[464px] h-[403px] bg-[#2e97ffa1] rounded-[232px/201.63px] blur-[365.85px]"
                     aria-hidden="true"
                 />
 
                 <div
-                    className="top-[153px] left-0 absolute w-[464px] h-[403px] bg-[#2e97ffa1] rounded-[232px/201.63px] blur-[365.85px]"
+                    className="hidden lg:block top-[153px] left-0 absolute w-[464px] h-[403px] bg-[#2e97ffa1] rounded-[232px/201.63px] blur-[365.85px]"
                     aria-hidden="true"
                 />
 
-                <div className="flex flex-col w-[1120px] items-center gap-[50px] absolute top-0 left-[332px]">
-                    <header className="flex flex-col w-[552px] items-center justify-center gap-4 relative flex-[0_0_auto]">
-                        <div className="w-[203px] px-2.5 py-[5px] bg-primary-500 flex items-center justify-center gap-1.5 relative flex-[0_0_auto] rounded-[45px]">
+                <div className="flex flex-col w-full max-w-[1120px] items-center gap-8 lg:gap-[50px] relative lg:absolute lg:top-0 lg:left-[332px] px-4 lg:px-0 py-8 lg:py-0">
+                    <header className="flex flex-col w-full max-w-[552px] items-center justify-center gap-4 relative flex-[0_0_auto]">
+                        <div className="w-full max-w-[203px] px-2.5 py-[5px] bg-primary-500 flex items-center justify-center gap-1.5 relative flex-[0_0_auto] rounded-[45px]">
                             <img
                                 className="relative w-[15px] h-[15px]"
                                 alt=""
@@ -67,7 +67,7 @@ export const ProcessSection: React.FC = () => {
                                 aria-hidden="true"
                             />
 
-                            <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-50 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
+                            <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-50 text-xs lg:text-sm tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
                                 Implementation Process
                             </span>
                         </div>
@@ -75,12 +75,12 @@ export const ProcessSection: React.FC = () => {
                         <div className="flex flex-col h-[119px] items-center gap-4 relative self-stretch w-full">
                             <h2
                                 id="process-section-heading"
-                                className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-50 text-[50px] text-center tracking-[0] leading-[57px]"
+                                className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-50 text-xl sm:text-2xl md:text-3xl lg:text-[50px] text-center tracking-[0] leading-[24px] sm:leading-[28px] md:leading-[36px] lg:leading-[57px]"
                             >
                                 By the Numbers
                             </h2>
 
-                            <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-30 text-base text-center tracking-[0] leading-[23px]">
+                            <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-30 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px]">
                                 Here&apos;s how RENT SEO BRAIN delivers real results through
                                 data-driven Google Ads strategies.
                             </p>
@@ -88,28 +88,28 @@ export const ProcessSection: React.FC = () => {
                     </header>
 
                     <div
-                        className="flex flex-wrap items-start gap-[69px_164px] relative self-stretch w-full flex-[0_0_auto]"
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start gap-6 lg:gap-[69px_164px] relative self-stretch w-full flex-[0_0_auto]"
                         role="list"
                     >
                         {statsData.map((stat, index) => (
                             <article
                                 key={index}
-                                className={`flex flex-col w-[264px] items-center gap-3.5 px-[9px] py-[25px] relative rounded-xl border border-solid border-neutral-800 ${stat.shadowColor}`}
+                                className={`flex flex-col w-full max-w-[264px] items-center gap-3.5 px-2 lg:px-[9px] py-4 lg:py-[25px] relative rounded-xl border border-solid border-neutral-800 ${stat.shadowColor} mx-auto`}
                                 role="listitem"
                             >
                                 <img
-                                    className="relative w-[55.52px] h-[55.52px] aspect-[1]"
+                                    className="relative w-[45px] h-[45px] lg:w-[55.52px] lg:h-[55.52px] aspect-[1]"
                                     alt=""
                                     src={stat.icon}
                                     aria-hidden="true"
                                 />
 
                                 <div className="flex flex-col items-center gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-neutral-0 text-[28px] text-center tracking-[0] leading-[34px]">
+                                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-neutral-0 text-xl lg:text-[28px] text-center tracking-[0] leading-[24px] lg:leading-[34px]">
                                         {stat.percentage}
                                     </div>
 
-                                    <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-0 text-lg text-center tracking-[0] leading-[34px]">
+                                    <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-neutral-0 text-base lg:text-lg text-center tracking-[0] leading-[20px] lg:leading-[34px]">
                                         {stat.description}
                                     </div>
                                 </div>

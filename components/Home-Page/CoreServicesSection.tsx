@@ -33,28 +33,28 @@ export const CoreServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col w-[1128px] items-center gap-[50px] relative flex-[0_0_auto]">
-      <header className="w-[552px] justify-center gap-6 flex-[0_0_auto] flex flex-col items-center relative">
-        <div className="flex w-[193px] items-center justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[45px] border border-solid border-secondary-300">
-          <div className="flex w-[173px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[45px] border-[0.2px] border-solid border-secondary-200">
+    <section className="flex flex-col w-full max-w-[1128px] items-center gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0">
+      <header className="w-full max-w-[552px] justify-center gap-4 lg:gap-6 flex-[0_0_auto] flex flex-col items-center relative">
+        <div className="flex w-full max-w-[193px] items-center justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[35px] lg:rounded-[45px] border border-solid border-secondary-300">
+          <div className="flex w-full max-w-[173px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[35px] lg:rounded-[45px] border-[0.2px] border-solid border-secondary-200">
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
               src="/Home-Page/ca/stars.svg"
             />
 
-            <div className="relative w-[117px] mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-sm tracking-[0] leading-[23px]">
+            <div className="relative w-fit mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[23px]">
               Our Core Services
             </div>
           </div>
         </div>
 
         <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-          <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] text-center tracking-[0] leading-[57px]">
+          <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-xl sm:text-3xl md:text-4xl lg:text-[50px] text-center tracking-[0] leading-[24px] sm:leading-[36px] md:leading-[46px] lg:leading-[57px]">
             Landing Pages, SEO &amp; Ads, Built to Convert
           </h1>
 
-          <p className="relative self-stretch h-[45px] [font-family:'Urbanist',Helvetica] font-normal text-neutral-900 text-base text-center tracking-[0] leading-[23px]">
+          <p className="relative self-stretch h-auto [font-family:'Urbanist',Helvetica] font-normal text-neutral-900 text-sm md:text-base lg:text-base text-center tracking-[0] leading-[18px] md:leading-[20px] lg:leading-[23px]">
             We create performance-driven digital experiences — from
             high-converting landing pages to powerful SEO and strategic Google
             Ads.
@@ -62,10 +62,10 @@ export const CoreServicesSection: React.FC = () => {
         </div>
       </header>
 
-      <div className="flex items-center gap-6 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col w-[552px] items-start gap-6 relative">
-          <article className="flex-col w-[552px] h-[300px] items-start justify-center px-[21px] py-[23px] bg-neutral-0 rounded-[18px] border-grey-200 flex gap-2.5 relative border border-solid">
-            <div className="flex flex-col h-[258px] items-start gap-[30px] relative self-stretch w-full mt-[-2.00px] mb-[-2.00px]">
+      <div className="flex flex-col lg:flex-row items-center gap-6 relative self-stretch w-full flex-[0_0_auto]">
+        <div className="flex flex-col w-full lg:w-[552px] items-start gap-6 relative">
+          <article className="flex-col w-full lg:w-[552px] h-auto lg:h-[300px] items-start justify-center px-4 lg:px-[21px] py-5 lg:py-[23px] bg-neutral-0 rounded-[12px] lg:rounded-[18px] border-grey-200 flex gap-2.5 relative border border-solid">
+            <div className="flex flex-col h-auto lg:h-[258px] items-start gap-6 lg:gap-[30px] relative self-stretch w-full mt-[-2.00px] mb-[-2.00px]">
               <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-primary-300 rounded-[50px]">
                   <img
@@ -77,25 +77,25 @@ export const CoreServicesSection: React.FC = () => {
 
                 <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap">
                       Landing Page Design
                     </h2>
 
                     <div className="inline-flex items-center justify-center gap-2.5 px-2.5 py-[3px] relative flex-[0_0_auto] bg-secondary-100 rounded-[50px]">
-                      <div className="relative w-fit mt-[-0.30px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
+                      <div className="relative w-fit mt-[-0.30px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-[9px] lg:text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
                         High Converting Pages
                       </div>
                     </div>
                   </div>
 
-                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-sm tracking-[0] leading-[normal]">
+                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-xs lg:text-sm tracking-[0] leading-[normal]">
                     Custom-built pages optimized for conversions and user
                     experience.
                   </p>
                 </div>
               </div>
 
-              <ul className="flex flex-col w-[510px] h-[121px] items-start gap-[13px] relative">
+              <ul className="flex flex-col w-full lg:w-[510px] h-auto lg:h-[121px] items-start gap-3 lg:gap-[13px] relative">
                 {landingPageFeatures.map((feature, index) => (
                   <li
                     key={index}
@@ -107,7 +107,7 @@ export const CoreServicesSection: React.FC = () => {
                       src="/Home-Page/ca/frame-2121457509-11.svg"
                     />
 
-                    <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-300 text-base tracking-[0] leading-[normal] whitespace-nowrap">
+                    <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-300 text-sm lg:text-base tracking-[0] leading-[normal]">
                       {feature}
                     </div>
                   </li>
@@ -116,8 +116,8 @@ export const CoreServicesSection: React.FC = () => {
             </div>
           </article>
 
-          <article className="flex-col w-[552px] h-[300px] items-start justify-center px-[21px] py-[23px] bg-neutral-0 rounded-[18px] border-grey-200 flex gap-2.5 relative border border-solid">
-            <div className="h-[258px] gap-[27px] mt-[-2.00px] mb-[-2.00px] flex flex-col items-start relative self-stretch w-full">
+          <article className="flex-col w-full lg:w-[552px] h-auto lg:h-[300px] items-start justify-center px-4 lg:px-[21px] py-5 lg:py-[23px] bg-neutral-0 rounded-[12px] lg:rounded-[18px] border-grey-200 flex gap-2.5 relative border border-solid">
+            <div className="h-auto lg:h-[258px] gap-6 lg:gap-[27px] mt-[-2.00px] mb-[-2.00px] flex flex-col items-start relative self-stretch w-full">
               <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-primary-300 rounded-[50px]">
                   <img
@@ -129,24 +129,24 @@ export const CoreServicesSection: React.FC = () => {
 
                 <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap">
                       SEO
                     </h2>
 
                     <div className="inline-flex items-center justify-center gap-2.5 px-2.5 py-[3px] relative flex-[0_0_auto] bg-secondary-100 rounded-[50px]">
-                      <div className="relative w-fit mt-[-0.30px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
+                      <div className="relative w-fit mt-[-0.30px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-[9px] lg:text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
                         Most Popular
                       </div>
                     </div>
                   </div>
 
-                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-sm tracking-[0] leading-[normal]">
+                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-xs lg:text-sm tracking-[0] leading-[normal]">
                     Get found on Google with strategies that actually work.
                   </p>
                 </div>
               </div>
 
-              <ul className="flex flex-col w-[510px] h-[124px] items-start gap-[13px] relative">
+              <ul className="flex flex-col w-full lg:w-[510px] h-auto lg:h-[124px] items-start gap-3 lg:gap-[13px] relative">
                 {seoFeatures.map((feature, index) => (
                   <li
                     key={index}
@@ -158,7 +158,7 @@ export const CoreServicesSection: React.FC = () => {
                       src="/Home-Page/ca/frame-2121457509-7.svg"
                     />
 
-                    <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-300 text-base tracking-[0] leading-[normal] whitespace-nowrap">
+                    <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-300 text-sm lg:text-base tracking-[0] leading-[normal]">
                       {feature}
                     </div>
                   </li>
@@ -168,9 +168,9 @@ export const CoreServicesSection: React.FC = () => {
           </article>
         </div>
 
-        <article className="flex-col w-[552px] h-[624px] items-start px-[21px] py-[23px] bg-grey-50 rounded-[18px] border-grey-200 flex gap-2.5 relative border border-solid">
-          <div className="h-[578px] gap-[33px] flex flex-col items-start relative self-stretch w-full">
-            <div className="flex flex-col items-start gap-[19px] relative self-stretch w-full flex-[0_0_auto]">
+        <article className="flex-col w-full lg:w-[552px] h-auto lg:h-[624px] items-start px-4 lg:px-[21px] py-5 lg:py-[23px] bg-grey-50 rounded-[12px] lg:rounded-[18px] border-grey-200 flex gap-2.5 relative border border-solid">
+          <div className="h-auto lg:h-[578px] gap-6 lg:gap-[33px] flex flex-col items-start relative self-stretch w-full">
+            <div className="flex flex-col items-start gap-4 lg:gap-[19px] relative self-stretch w-full flex-[0_0_auto]">
               <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-primary-300 rounded-[50px]">
                   <img
@@ -182,19 +182,19 @@ export const CoreServicesSection: React.FC = () => {
 
                 <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap">
                       Google Ads
                     </h2>
                   </div>
 
-                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-sm tracking-[0] leading-[normal]">
+                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-400 text-xs lg:text-sm tracking-[0] leading-[normal]">
                     Instant visibility with ROI-focused paid campaigns.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="relative w-[510px] h-[287px]">
+            <div className="relative w-full lg:w-[510px] h-auto lg:h-[287px] hidden lg:block">
               <div className="relative h-[287px] bg-white rounded-[5px]">
                 <div className="inline-flex items-center gap-3 absolute top-[11px] left-[25px]">
                   <img
@@ -237,7 +237,7 @@ export const CoreServicesSection: React.FC = () => {
               </div>
             </div>
 
-            <ul className="flex flex-col h-[118px] items-start gap-[13px] relative self-stretch w-full">
+            <ul className="flex flex-col h-auto lg:h-[118px] items-start gap-3 lg:gap-[13px] relative self-stretch w-full">
               {googleAdsFeatures.map((feature, index) => (
                 <li
                   key={index}
@@ -249,7 +249,7 @@ export const CoreServicesSection: React.FC = () => {
                     src="/Home-Page/ca/frame-2121457509-11.svg"
                   />
 
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-300 text-base tracking-[0] leading-[normal] whitespace-nowrap">
+                  <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-300 text-sm lg:text-base tracking-[0] leading-[normal]">
                     {feature}
                   </div>
                 </li>
@@ -259,28 +259,28 @@ export const CoreServicesSection: React.FC = () => {
         </article>
       </div>
 
-      <div className="inline-flex items-center justify-center gap-6 relative flex-[0_0_auto]">
-        <button className="flex w-[248px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1]">
-          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-6 relative flex-[0_0_auto]">
+        <button className="flex w-full sm:w-[220px] lg:w-[248px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1]">
+          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
             Run A&nbsp;&nbsp;Seo &amp; Ads Audit
           </span>
 
-          <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
+          <div className="inline-flex items-center gap-2 lg:gap-2.5 p-2 lg:p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[24px] lg:rounded-[34px] border border-solid border-primary-75">
             <img
-              className="relative w-5 h-5"
+              className="relative w-4 h-4 lg:w-5 lg:h-5"
               alt="Arrow right"
               src="/Home-Page/ca/arrow-right.svg"
             />
           </div>
         </button>
 
-        <button className="all-[unset] box-border flex w-[220px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200">
-          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-base tracking-[0] leading-4 whitespace-nowrap">
+        <button className="all-[unset] box-border flex w-full sm:w-[200px] lg:w-[220px] h-[45px] lg:h-[50px] items-center justify-center gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] lg:rounded-[33px] border border-solid border-grey-200">
+          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
             Book An Appointment
           </span>
 
           <img
-            className="relative w-5 h-5"
+            className="relative w-4 h-4 lg:w-5 lg:h-5"
             alt="Arrow right"
             src="/Home-Page/ca/arrow-right-3.svg"
           />

@@ -28,102 +28,103 @@ export const CMSTestimonial: React.FC<TestimonialProps> = ({
   onCtaClick,
 }) => {
   return (
-    <section className="relative w-[1128px] h-[640px] bg-neutral-900 rounded-[50px] overflow-hidden">
-      <div className="relative w-[1233px] h-[653px] left-[-73px]">
-        <div className="absolute w-[1128px] h-[640px] top-0 left-[73px]">
-          <div className="relative h-[640px]">
-            <div className="absolute w-[263px] h-[196px] top-[444px] left-[49px] bg-neutral-600 rounded-[131.44px/98.14px] blur-[200px] opacity-50" />
+    <section className="relative w-full max-w-sm md:max-w-2xl lg:w-[1128px] mx-auto h-auto min-h-[400px] md:min-h-[500px] lg:h-[640px] bg-neutral-900 rounded-[25px] md:rounded-[35px] lg:rounded-[50px] overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        {/* Blur backgrounds - hidden on mobile for performance */}
+        <div className="hidden md:block absolute w-32 h-24 md:w-48 md:h-36 lg:w-[263px] lg:h-[196px] bottom-8 left-4 md:bottom-16 md:left-8 lg:top-[444px] lg:left-[49px] bg-neutral-600 rounded-full blur-[100px] md:blur-[150px] lg:blur-[200px] opacity-50" />
+        <div className="hidden md:block absolute w-32 h-24 md:w-48 md:h-36 lg:w-[263px] lg:h-[196px] top-8 left-1/2 transform -translate-x-1/2 md:top-16 lg:top-40 lg:left-[280px] lg:transform-none bg-neutral-600 rounded-full blur-[100px] md:blur-[150px] lg:blur-[200px] opacity-50" />
+        <div className="hidden lg:block absolute w-[186px] h-[139px] top-0 right-0 bg-neutral-600 rounded-full blur-[200px] opacity-50" />
+        
+        {/* Background pattern - hidden on mobile */}
+        <img
+          className="hidden md:block absolute inset-0 w-full h-full object-cover opacity-30 md:opacity-50 lg:opacity-100"
+          alt="Background pattern"
+          src="/cms/ca/background-pattern-1.svg"
+        />
+        
+        {/* Additional blur elements */}
+        <div className="hidden lg:block absolute w-[266px] h-[231px] top-1 left-0 bg-[#2e97ffa1] rounded-full blur-[209.73px]" />
+        <div className="hidden lg:block absolute w-[266px] h-[231px] bottom-1 right-0 bg-[#2e97ffa1] rounded-full blur-[209.73px]" />
+      </div>
 
-            <div className="absolute w-[263px] h-[196px] top-40 left-[280px] bg-neutral-600 rounded-[131.44px/98.14px] blur-[200px] opacity-50" />
-
-            <div className="absolute w-[186px] h-[139px] top-0 left-[942px] bg-neutral-600 rounded-[93.02px/69.45px] blur-[200px] opacity-50" />
-
-            <img
-              className="absolute w-[1128px] h-[640px] top-0 left-0"
-              alt="Background pattern"
-              src="/cms/ca/background-pattern-1.svg"
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col w-[798px] items-center justify-center gap-6 absolute top-[94px] left-[238px]">
-          <div className="flex flex-col w-[492px] items-center gap-4 relative flex-[0_0_auto]">
-            <div className="flex flex-col w-[177px] items-center gap-5 relative flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
-                <img
-                  className="relative flex-[0_0_auto]"
-                  alt="5 star rating"
-                  src="/cms/ca/frame-2121457515.svg"
-                />
-
-                <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[normal] whitespace-nowrap">
-                  {rating}
-                </div>
-              </div>
-
-              <div className="flex items-center relative self-stretch w-full flex-[0_0_auto]">
-                {avatars.map((avatar, index) => (
-                  <img
-                    key={index}
-                    className={`relative w-[40.16px] h-[40.16px] mt-[-0.58px] mb-[-0.58px] ${
-                      index === 0 ? "ml-[-1.08px]" : "-ml-1"
-                    } ${
-                      index >= 2
-                        ? "w-[41.22px] h-[41.22px] mt-[-1.11px] mb-[-1.11px]"
-                        : ""
-                    } rounded-full object-cover`}
-                    alt={`Customer avatar ${index + 1}`}
-                    src={avatar}
-                  />
-                ))}
-
-                <div className="relative w-[41.22px] h-[41.22px] mt-[-1.11px] mb-[-1.11px] mr-[-2.41px] -ml-2 bg-neutral-0 rounded-full border-[1.11px] border-solid border-[#f8f8f9] flex items-center justify-center overflow-hidden">
-                  <div className="[font-family:'Urbanist',Helvetica] font-medium text-[#0a1519] text-[10px] text-center leading-[normal]">
-                    100K+
-                  </div>
-                </div>
+      {/* Main Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center gap-4 md:gap-6 p-6 md:p-8 lg:p-12 h-full min-h-[400px] md:min-h-[500px] lg:min-h-[640px]">
+        {/* Rating and Avatars Section */}
+        <div className="flex flex-col w-full max-w-xs md:max-w-md lg:w-[492px] items-center gap-3 md:gap-4">
+          <div className="flex flex-col w-full max-w-[140px] md:max-w-[160px] lg:w-[177px] items-center gap-3 md:gap-4 lg:gap-5">
+            {/* Rating */}
+            <div className="inline-flex items-center gap-2 md:gap-3">
+              <img
+                className="w-16 h-3 md:w-20 md:h-4 lg:w-auto lg:h-auto"
+                alt="5 star rating"
+                src="/cms/ca/frame-2121457515.svg"
+              />
+              <div className="font-urbanist font-medium text-neutral-0 text-sm md:text-base text-center whitespace-nowrap">
+                {rating}
               </div>
             </div>
 
-            <p className="relative w-[404px] [font-family:'Urbanist',Helvetica] font-medium text-[#ffffffb2] text-lg text-center tracking-[0] leading-[26.1px]">
-              {description}
+            {/* Avatars */}
+            <div className="flex items-center justify-center w-full">
+              {avatars.map((avatar, index) => (
+                <img
+                  key={index}
+                  className={`relative w-8 h-8 md:w-9 md:h-9 lg:w-[40.16px] lg:h-[40.16px] ${
+                    index === 0 ? "" : "-ml-1 md:-ml-1 lg:-ml-1"
+                  } ${
+                    index >= 2 ? "lg:w-[41.22px] lg:h-[41.22px]" : ""
+                  } rounded-full object-cover border-2 border-neutral-900`}
+                  alt={`Customer avatar ${index + 1}`}
+                  src={avatar}
+                />
+              ))}
+              <div className="relative w-8 h-8 md:w-9 md:h-9 lg:w-[41.22px] lg:h-[41.22px] -ml-1 bg-neutral-0 rounded-full border-2 border-neutral-900 flex items-center justify-center">
+                <div className="font-urbanist font-medium text-[#0a1519] text-[8px] md:text-[9px] lg:text-[10px] text-center">
+                  100K+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Description */}
+          <p className="w-full max-w-xs md:max-w-sm lg:w-[404px] font-urbanist font-medium text-[#ffffffb2] text-sm md:text-base lg:text-lg text-center leading-relaxed">
+            {description}
+          </p>
+        </div>
+
+        {/* Main Content Section */}
+        <div className="flex flex-col items-center gap-6 md:gap-8 w-full max-w-md md:max-w-2xl lg:w-[798px]">
+          <div className="flex flex-col items-center gap-3 md:gap-4 w-full">
+            {/* Main Heading */}
+            <h1 className="w-full font-urbanist font-semibold text-neutral-0 text-center leading-tight text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+              Let's Create Content That Works 
+            </h1>
+
+            {/* Subheading */}
+            <p className="w-full max-w-sm md:max-w-lg lg:w-[598px] font-urbanist font-medium text-[#ffffffb2] text-sm md:text-base lg:text-lg text-center leading-relaxed">
+              Ready to transform your content marketing? Get a personalized strategy that drives real results for your business.
             </p>
           </div>
 
-          <div className="flex flex-col items-center gap-8 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex flex-col items-center gap-4 relative self-stretch w-full flex-[0_0_auto]">
-              <h1 className="relative w-[798px] mt-[-1.00px] font-semibold text-neutral-0 text-center leading-tight text-4xl sm:text-5xl">
-              Let's Create Content That Works 
-              </h1>
-
-              <p className="relative w-[598px] [font-family:'Urbanist',Helvetica] font-medium text-[#ffffffb2] text-lg text-center tracking-[0] leading-[26.1px]">
-              Ready to transform your content marketing? Get a personalized strategy that drives real results for your business.
-              </p>
-            </div>
-
-            <button
-              className="all-[unset] box-border flex w-[270px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
-              type="button"
-              aria-label="Book an appointment to discuss your business growth"
-              onClick={onCtaClick}
-            >
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
-                See Content Examples
-              </span>
-
-              <img
-                className="relative w-5 h-5"
-                alt=""
-                src="/cms/ca/arrow-right-2.svg"
-                aria-hidden="true"
-              />
-            </button>
-          </div>
+          {/* CTA Button */}
+          <button
+            className="flex w-full max-w-[240px] md:max-w-[260px] lg:w-[270px] h-12 md:h-[50px] items-center justify-center gap-2 md:gap-[7px] px-4 md:px-[19px] py-2.5 bg-grey-50 rounded-[25px] md:rounded-[30px] lg:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
+            type="button"
+            aria-label="Book an appointment to discuss your business growth"
+            onClick={onCtaClick}
+          >
+            <span className="font-urbanist font-medium text-[#091e42] text-sm md:text-base whitespace-nowrap">
+              See Content Examples
+            </span>
+            <img
+              className="w-4 h-4 md:w-5 md:h-5"
+              alt=""
+              src="/cms/ca/arrow-right-2.svg"
+              aria-hidden="true"
+            />
+          </button>
         </div>
-
-        <div className="absolute w-[266px] h-[231px] top-1 left-0 bg-[#2e97ffa1] rounded-[133px/115.59px] blur-[209.73px]" />
-
-        <div className="absolute w-[266px] h-[231px] top-[421px] left-[967px] bg-[#2e97ffa1] rounded-[133px/115.59px] blur-[209.73px]" />
       </div>
     </section>
   );

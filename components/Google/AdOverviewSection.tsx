@@ -111,24 +111,24 @@ export const AdOverviewSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col w-[1132px] items-center gap-[50px] relative flex-[0_0_auto]">
-      <header className="w-[565px] items-center gap-4 flex-[0_0_auto] flex flex-col relative">
-        <div className="flex w-[185px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
+    <section className="flex flex-col w-full max-w-[1132px] items-center gap-8 md:gap-12 lg:gap-[50px] relative flex-[0_0_auto] mx-auto px-4 md:px-8 lg:px-0">
+      <header className="w-full max-w-[565px] items-center gap-4 flex-[0_0_auto] flex flex-col relative">
+        <div className="flex w-full max-w-[185px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px] border border-solid border-primary-300">
           <img
             className="relative w-[15px] h-[15px]"
             alt="Stars"
             src="/Google/ca/stars-2.svg"
           />
-          <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
+          <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-xs sm:text-sm tracking-[0] leading-[20px] sm:leading-[23px] whitespace-nowrap">
             Smart ads, real results.
           </div>
         </div>
 
         <div className="flex flex-col h-44 items-center gap-4 relative self-stretch w-full">
-          <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] text-center tracking-[0] leading-[57px]">
+          <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-xl sm:text-2xl md:text-3xl lg:text-[50px] text-center tracking-[0] leading-[24px] sm:leading-[28px] md:leading-[36px] lg:leading-[57px]">
             Choose the Right Google Ads for Your Business
           </h1>
-          <p className="relative w-[565px] [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-base text-center tracking-[0] leading-[23px]">
+          <p className="relative w-full max-w-[565px] [font-family:'Urbanist',Helvetica] font-normal text-neutral-200 text-sm md:text-base text-center tracking-[0] leading-[20px] md:leading-[23px]">
             Reach your audience where they spend time. Google Ads offers
             multiple formats tailored to different goals — from awareness to
             direct conversions.
@@ -136,13 +136,13 @@ export const AdOverviewSection: React.FC = () => {
         </div>
       </header>
 
-      <main className="flex flex-col items-center justify-center gap-[85px] relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex w-[1132px] items-center justify-center gap-[26px] relative flex-[0_0_auto]">
+      <main className="flex flex-col items-center justify-center gap-8 md:gap-12 lg:gap-[85px] relative self-stretch w-full flex-[0_0_auto]">
+        <div className="flex flex-col lg:flex-row w-full max-w-[1132px] items-center justify-center gap-6 lg:gap-[26px] relative flex-[0_0_auto]">
           <div className="flex flex-col w-[360px] items-start gap-3 relative">
             <article
-              className={`flex flex-col ${adTypes[0].height} items-start gap-2.5 px-[21px] py-[23px] relative self-stretch w-full ${adTypes[0].bgColor} rounded-[18px] border border-solid ${adTypes[0].borderColor}`}
+              className={`flex flex-col h-auto lg:${adTypes[0].height} items-start gap-2.5 px-4 lg:px-[21px] py-4 lg:py-[23px] relative self-stretch w-full ${adTypes[0].bgColor} rounded-[18px] border border-solid ${adTypes[0].borderColor}`}
             >
-              <div className="flex flex-col w-[318px] h-[258px] items-start relative mt-[-2.00px] mb-[-2.00px]">
+              <div className="flex flex-col w-full max-w-[318px] h-auto lg:h-[258px] items-start relative mt-0 lg:mt-[-2.00px] mb-0 lg:mb-[-2.00px]">
                 <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
                   <div
                     className={`inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] ${adTypes[0].iconBg} rounded-[50px]`}
@@ -157,12 +157,12 @@ export const AdOverviewSection: React.FC = () => {
                   <div className="flex flex-col self-stretch w-full items-start gap-2 relative flex-[0_0_auto]">
                     <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
                       <h3
-                        className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[0].titleColor} text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
+                        className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[0].titleColor} text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
                       >
                         {adTypes[0].title}
                       </h3>
                       <div className="inline-flex items-center justify-center gap-2.5 px-2.5 py-[3px] relative flex-[0_0_auto] bg-secondary-50 rounded-[50px] border-[0.3px] border-solid border-secondary-300">
-                        <div className="relative w-fit mt-[-0.30px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
+                        <div className="relative w-fit mt-[-0.30px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-[8px] lg:text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
                           {adTypes[0].badge}
                         </div>
                       </div>
@@ -173,7 +173,7 @@ export const AdOverviewSection: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="relative w-[318px] h-[116px]">
+                <div className="relative w-full max-w-[318px] h-auto lg:h-[116px] hidden lg:block">
                   <img
                     className="absolute w-[321px] h-[52px] top-[35px] -left-px mix-blend-multiply"
                     alt="Search results chart"
@@ -191,9 +191,9 @@ export const AdOverviewSection: React.FC = () => {
             </article>
 
             <article
-              className={`flex flex-col ${adTypes[1].height} items-start gap-2.5 px-[21px] py-[23px] relative self-stretch w-full ${adTypes[1].bgColor} rounded-[18px] border border-solid ${adTypes[1].borderColor}`}
+              className={`flex flex-col h-auto lg:${adTypes[1].height} items-start gap-2.5 px-4 lg:px-[21px] py-4 lg:py-[23px] relative self-stretch w-full ${adTypes[1].bgColor} rounded-[18px] border border-solid ${adTypes[1].borderColor}`}
             >
-              <div className="h-[293px] gap-14 flex flex-col w-[318px] items-start relative">
+              <div className="h-auto lg:h-[293px] gap-6 lg:gap-14 flex flex-col w-full max-w-[318px] items-start relative">
                 <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
                   <div
                     className={`inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] ${adTypes[1].iconBg} rounded-[50px]`}
@@ -208,7 +208,7 @@ export const AdOverviewSection: React.FC = () => {
                   <div className="flex flex-col self-stretch w-full items-start gap-2 relative flex-[0_0_auto]">
                     <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
                       <h3
-                        className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[1].titleColor} text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
+                        className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[1].titleColor} text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
                       >
                         {adTypes[1].title}
                       </h3>
@@ -219,7 +219,7 @@ export const AdOverviewSection: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex w-[318px] items-center justify-center gap-[7px] relative flex-[0_0_auto]">
+                <div className="hidden lg:flex w-full max-w-[318px] items-center justify-center gap-[7px] relative flex-[0_0_auto]">
                   <div className="flex flex-col w-[317px] items-start gap-2 px-6 py-5 relative bg-white rounded-3xl border border-solid border-black shadow-[0px_4px_0px_#0083ff73]">
                     <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
                       <div className="w-fit mt-[-1.00px] font-medium text-[#0a151957] text-base tracking-[0] leading-[normal] whitespace-nowrap relative [font-family:'Urbanist',Helvetica]">
@@ -243,9 +243,9 @@ export const AdOverviewSection: React.FC = () => {
           </div>
 
           <article
-            className={`flex flex-col w-[360px] ${adTypes[2].height} items-start gap-2.5 px-[21px] py-[23px] relative ${adTypes[2].bgColor} rounded-[18px] border border-solid ${adTypes[2].borderColor}`}
+            className={`flex flex-col w-full max-w-[360px] h-auto lg:${adTypes[2].height} items-start gap-2.5 px-4 lg:px-[21px] py-4 lg:py-[23px] relative ${adTypes[2].bgColor} rounded-[18px] border border-solid ${adTypes[2].borderColor}`}
           >
-            <div className="h-[603px] gap-[68px] flex flex-col w-[318px] items-start relative">
+            <div className="h-auto lg:h-[603px] gap-6 lg:gap-[68px] flex flex-col w-full max-w-[318px] items-start relative">
               <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
                 <div
                   className={`inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] ${adTypes[2].iconBg} rounded-[50px]`}
@@ -260,7 +260,7 @@ export const AdOverviewSection: React.FC = () => {
                 <div className="flex flex-col self-stretch w-full items-start gap-2 relative flex-[0_0_auto]">
                   <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
                     <h3
-                      className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[2].titleColor} text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
+                      className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[2].titleColor} text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
                     >
                       {adTypes[2].title}
                     </h3>
@@ -271,7 +271,7 @@ export const AdOverviewSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex w-[318px] h-[394px] items-end justify-center gap-2 relative">
+              <div className="hidden lg:flex w-full max-w-[318px] h-[200px] lg:h-[394px] items-end justify-center gap-2 relative">
                 {barChartData.map((bar: BarChart, index: number) => (
                   <div
                     key={index}
@@ -284,9 +284,9 @@ export const AdOverviewSection: React.FC = () => {
 
           <div className="flex flex-col w-[360px] items-start gap-3 relative">
             <article
-              className={`flex flex-col ${adTypes[3].height} items-start gap-2.5 px-[21px] py-[23px] relative self-stretch w-full ${adTypes[3].bgColor} rounded-[18px]`}
+              className={`flex flex-col h-auto lg:${adTypes[3].height} items-start gap-2.5 px-4 lg:px-[21px] py-4 lg:py-[23px] relative self-stretch w-full ${adTypes[3].bgColor} rounded-[18px]`}
             >
-              <div className="h-[235px] gap-[34px] flex flex-col w-[318px] items-start relative">
+              <div className="h-auto lg:h-[235px] gap-6 lg:gap-[34px] flex flex-col w-full max-w-[318px] items-start relative">
                 <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
                   <div
                     className={`inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] ${adTypes[3].iconBg} rounded-[50px]`}
@@ -301,7 +301,7 @@ export const AdOverviewSection: React.FC = () => {
                   <div className="flex flex-col self-stretch w-full items-start gap-2 relative flex-[0_0_auto]">
                     <div className="gap-1.5 inline-flex items-center relative flex-[0_0_auto]">
                       <h3
-                        className={`relative w-fit [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[3].titleColor} text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
+                        className={`relative w-fit [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[3].titleColor} text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
                       >
                         {adTypes[3].title}
                       </h3>
@@ -319,7 +319,7 @@ export const AdOverviewSection: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex w-[215px] items-center gap-[var(--size-space-200)] relative flex-[0_0_auto] mb-[-0.51px]">
+                <div className="hidden lg:flex w-full max-w-[215px] items-center gap-[var(--size-space-200)] relative flex-[0_0_auto] mb-0 lg:mb-[-0.51px]">
                   <div className="inline-flex items-center relative flex-[0_0_auto] gap-[var(--size-space-negative-200)]">
                     {productImages.map((image: string, index: number) => (
                       <div
@@ -333,9 +333,9 @@ export const AdOverviewSection: React.FC = () => {
             </article>
 
             <article
-              className={`flex flex-col ${adTypes[4].height} items-start gap-[22px] px-[21px] py-[23px] relative self-stretch w-full ${adTypes[4].bgColor} rounded-[18px] border border-solid ${adTypes[4].borderColor}`}
+              className={`flex flex-col h-auto lg:${adTypes[4].height} items-start gap-4 lg:gap-[22px] px-4 lg:px-[21px] py-4 lg:py-[23px] relative self-stretch w-full ${adTypes[4].bgColor} rounded-[18px] border border-solid ${adTypes[4].borderColor}`}
             >
-              <div className="gap-[55px] flex-[0_0_auto] flex flex-col w-[318px] items-start relative">
+              <div className="gap-6 lg:gap-[55px] flex-[0_0_auto] flex flex-col w-full max-w-[318px] items-start relative">
                 <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">
                   <div
                     className={`inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] ${adTypes[4].iconBg} rounded-[50px]`}
@@ -350,12 +350,12 @@ export const AdOverviewSection: React.FC = () => {
                   <div className="flex flex-col self-stretch w-full items-start gap-2 relative flex-[0_0_auto]">
                     <div className="gap-[7px] inline-flex items-center relative flex-[0_0_auto]">
                       <h3
-                        className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[4].titleColor} text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
+                        className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold ${adTypes[4].titleColor} text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
                       >
                         {adTypes[4].title}
                       </h3>
                       <div className="flex w-[123px] items-center justify-center gap-2.5 px-2 py-[5px] relative bg-secondary-50 rounded-[55px]">
-                        <div className="relative w-fit mt-[-0.50px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
+                        <div className="relative w-fit mt-[-0.50px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-[8px] lg:text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
                           {adTypes[4].badge}
                         </div>
                       </div>
@@ -366,33 +366,33 @@ export const AdOverviewSection: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="relative w-[318px] h-[131px] bg-[url(https://c.animaapp.com/ugwxqeDI/img/image-38@2x.png)] bg-[100%_100%]" />
+                <div className="relative w-full max-w-[318px] h-[80px] lg:h-[131px] bg-[url(https://c.animaapp.com/ugwxqeDI/img/image-38@2x.png)] bg-[100%_100%] hidden lg:block" />
               </div>
             </article>
           </div>
         </div>
       </main>
 
-      <footer className="inline-flex items-center gap-8 relative flex-[0_0_auto]">
-        <button className="w-[294px] flex h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] cursor-pointer">
-          <p className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+      <footer className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 relative flex-[0_0_auto] w-full max-w-md sm:max-w-none">
+        <button className="w-full sm:w-[294px] flex h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] cursor-pointer">
+          <p className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
             Start With The Right Strategy
           </p>
-          <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
+          <div className="inline-flex items-center gap-2.5 p-2 lg:p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[24px] lg:rounded-[34px] border border-solid border-primary-75">
             <img
-              className="relative w-5 h-5"
+              className="relative w-4 h-4 lg:w-5 lg:h-5"
               alt="Arrow right"
               src="/Google/ca/arrow-right-1.svg"
             />
           </div>
         </button>
 
-        <button className="all-[unset] box-border flex w-[212px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 cursor-pointer">
-          <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
+        <button className="all-[unset] box-border flex w-full sm:w-[212px] h-[45px] lg:h-[50px] items-center justify-center gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] lg:rounded-[33px] border border-solid border-grey-200 cursor-pointer">
+          <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
             Explore Our Process
           </div>
           <img
-            className="relative w-5 h-5"
+            className="relative w-4 h-4 lg:w-5 lg:h-5"
             alt="Arrow right"
             src="/Google/ca/arrow-right-2.svg"
           />

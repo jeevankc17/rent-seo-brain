@@ -25,11 +25,11 @@ export const ContentServiceSection: React.FC = () => {
   ];
 
   return (
-    <section className="w-full flex justify-center items-center ">
-      <div className="flex w-full max-w-[1128px] flex-col justify-center items-center gap-[50px]">
+    <section className="w-full flex justify-center items-center px-4 md:px-8">
+      <div className="flex w-full max-w-sm md:max-w-4xl lg:max-w-[1128px] flex-col justify-center items-center gap-8 md:gap-12 lg:gap-[50px]">
         {/* Title Section */}
-        <div className="flex w-[565px] flex-col items-center gap-4">
-          <div className="flex w-[384px] px-[10px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF]">
+        <div className="flex w-full max-w-md md:max-w-lg lg:w-[565px] flex-col items-center gap-4">
+          <div className="flex w-full max-w-sm md:max-w-md lg:w-[384px] px-[10px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF]">
             <svg 
               width="16" 
               height="15" 
@@ -43,35 +43,35 @@ export const ContentServiceSection: React.FC = () => {
                 fill="#1D8FFF"
               />
             </svg>
-            <div className="color-[#1D8FFF] font-urbanist text-[14px] font-medium leading-[23px] text-[#1D8FFF]">
+            <div className="color-[#1D8FFF] font-urbanist text-xs sm:text-sm lg:text-[14px] font-medium leading-[23px] text-[#1D8FFF] text-center">
               Why Choose Rent SEO Brain for Content Marketing?
             </div>
           </div>
           
-          <div className="flex h-[176px] flex-col items-center gap-4 self-stretch">
-            <h1 className="self-stretch color-[#12579C] text-center font-urbanist text-[50px] font-bold leading-[57px] text-[#12579C]">
+          <div className="flex flex-col items-center gap-4 w-full">
+            <h1 className="w-full color-[#12579C] text-center font-urbanist text-lg sm:text-2xl md:text-3xl lg:text-[50px] font-bold leading-tight lg:leading-[57px] text-[#12579C]">
               Not Just Words ,We Create Impact
             </h1>
-            <p className="w-[565px] color-[#6A7986] text-center font-urbanist text-base font-normal leading-[23px] text-[#6A7986]">
+            <p className="w-full max-w-md md:max-w-lg lg:w-[565px] color-[#6A7986] text-center font-urbanist text-sm md:text-base font-normal leading-relaxed lg:leading-[23px] text-[#6A7986]">
               At Rent SEO Brain, we don't believe in churning out generic blog posts or keyword-stuffed articles. We believe in strategic content .
             </p>
           </div>
         </div>
 
         {/* Content Section */}
-        <div className="flex flex-col items-center gap-14 self-stretch">
-          <div className="flex px-[41px] py-12 items-center gap-14 self-stretch rounded-[25px]">
-            <div className="flex justify-center items-center gap-[52px]">
+        <div className="flex flex-col items-center gap-8 md:gap-12 lg:gap-14 w-full">
+          <div className="flex flex-col lg:flex-row px-4 md:px-8 lg:px-[41px] py-6 md:py-8 lg:py-12 items-center gap-8 md:gap-12 lg:gap-14 w-full rounded-[15px] md:rounded-[20px] lg:rounded-[25px]">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-12 lg:gap-[52px] w-full">
               {/* Features List */}
-              <div className="flex w-[480px] flex-col items-start gap-[57px]">
+              <div className="flex w-full lg:w-[480px] flex-col items-start gap-6 md:gap-8 lg:gap-[57px] order-2 lg:order-1">
                 {features.map((feature, index) => (
-                  <div key={index} className="flex flex-col items-start gap-2 self-stretch">
-                    <div className="flex px-5 py-[11px] items-center gap-[10px] self-stretch border-l-[5px] border-[#F78C01]">
-                      <h3 className="w-[429px] color-[#071F36] font-urbanist text-2xl font-bold leading-[23px] text-[#071F36]">
+                  <div key={index} className="flex flex-col items-start gap-2 w-full">
+                    <div className="flex px-3 md:px-4 lg:px-5 py-2 md:py-3 lg:py-[11px] items-center gap-[10px] w-full border-l-[3px] md:border-l-[4px] lg:border-l-[5px] border-[#F78C01]">
+                      <h3 className="w-full color-[#071F36] font-urbanist text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-tight lg:leading-[23px] text-[#071F36]">
                         {feature.title}
                       </h3>
                     </div>
-                    <p className="self-stretch color-[#7B7B7B] font-urbanist text-base font-normal leading-[23px] text-[#7B7B7B]">
+                    <p className="w-full color-[#7B7B7B] font-urbanist text-sm md:text-base font-normal leading-relaxed lg:leading-[23px] text-[#7B7B7B]">
                       {feature.description}
                     </p>
                   </div>
@@ -79,18 +79,18 @@ export const ContentServiceSection: React.FC = () => {
               </div>
 
               {/* Content Analyzer Card */}
-              <div className="flex h-[723px] px-8 py-[18px] justify-center items-center gap-[10px] rounded-[11px] bg-white shadow-[0_4px_57.7px_0_rgba(29,143,255,0.37)]">
-                <div className="flex w-[463px] flex-col justify-center items-start gap-[30px]">
+              <div className="flex h-auto min-h-[400px] md:min-h-[500px] lg:h-[723px] px-4 md:px-6 lg:px-8 py-4 md:py-5 lg:py-[18px] justify-center items-center gap-[10px] rounded-[11px] bg-white shadow-[0_4px_57.7px_0_rgba(29,143,255,0.37)] w-full lg:w-auto order-1 lg:order-2">
+                <div className="flex w-full max-w-md md:max-w-lg lg:w-[463px] flex-col justify-center items-start gap-4 md:gap-6 lg:gap-[30px]">
                   {/* Header */}
-                  <div className="flex justify-between items-center self-stretch">
-                    <div className="flex w-[174px] justify-between items-center">
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full gap-2 sm:gap-0">
+                    <div className="flex items-center gap-2 md:gap-3">
                       <svg 
-                        width="24" 
-                        height="24" 
+                        width="20" 
+                        height="20" 
                         viewBox="0 0 24 24" 
                         fill="none" 
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6 flex-shrink-0"
+                        className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0"
                       >
                         <path 
                           d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" 
@@ -128,29 +128,29 @@ export const ContentServiceSection: React.FC = () => {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <div className="color-[#12579C] font-urbanist text-lg font-medium leading-[23px] text-[#12579C]">
+                      <div className="color-[#12579C] font-urbanist text-base md:text-lg font-medium leading-[23px] text-[#12579C]">
                         Content Analyzer
                       </div>
                     </div>
-                    <div className="flex px-[17px] py-1 justify-center items-center gap-[10px] rounded-[45px] border border-[#00B45C] bg-[rgba(0,180,92,0.11)]">
-                      <div className="color-[#00B45C] font-urbanist text-[14px] font-medium leading-[23px] text-[#00B45C]">
+                    <div className="flex px-3 md:px-[17px] py-1 justify-center items-center gap-[10px] rounded-[45px] border border-[#00B45C] bg-[rgba(0,180,92,0.11)]">
+                      <div className="color-[#00B45C] font-urbanist text-xs md:text-[14px] font-medium leading-[23px] text-[#00B45C]">
                         Live Tool
                       </div>
                     </div>
                   </div>
 
                   {/* Dropdown */}
-                  <div className="flex px-[27px] py-5 justify-between items-center self-stretch rounded-[11px] bg-[#F1F1F1]">
-                    <div className="color-[#00034A] font-urbanist text-lg font-medium leading-[23px] text-[#00034A]">
+                  <div className="flex px-4 md:px-6 lg:px-[27px] py-3 md:py-4 lg:py-5 justify-between items-center w-full rounded-[11px] bg-[#F1F1F1]">
+                    <div className="color-[#00034A] font-urbanist text-base md:text-lg font-medium leading-[23px] text-[#00034A]">
                       Professional
                     </div>
                     <svg 
-                      width="24" 
-                      height="25" 
+                      width="20" 
+                      height="20" 
                       viewBox="0 0 24 25" 
                       fill="none" 
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6"
+                      className="w-5 h-5 md:w-6 md:h-6"
                     >
                       <path 
                         d="M12 15.5L7 10.5H17L12 15.5Z" 
@@ -160,47 +160,47 @@ export const ContentServiceSection: React.FC = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="w-[450px] color-[#7B7B7B] font-urbanist text-lg font-medium leading-8 text-[#7B7B7B]">
+                  <p className="w-full color-[#7B7B7B] font-urbanist text-sm md:text-base lg:text-lg font-medium leading-relaxed lg:leading-8 text-[#7B7B7B]">
                     Content marketing drives 3x more leads than traditional advertising. When done strategically, it builds trust and establishes your brand as an industry authority.
                   </p>
 
                   {/* Metrics Cards */}
-                  <div className="flex items-center gap-[21px]">
-                    <div className="flex w-[132px] px-[15px] py-3 flex-col justify-center items-center gap-[6px] rounded-[10px] bg-white shadow-[0_4px_30.5px_0_rgba(29,143,255,0.45)]">
-                      <div className="self-stretch color-black text-center font-urbanist text-xl font-medium leading-8 text-black">
+                  <div className="flex flex-wrap justify-center lg:justify-start items-center gap-3 md:gap-4 lg:gap-[21px] w-full">
+                    <div className="flex w-24 md:w-28 lg:w-[132px] px-2 md:px-3 lg:px-[15px] py-2 md:py-3 flex-col justify-center items-center gap-1 md:gap-[6px] rounded-[10px] bg-white shadow-[0_4px_30.5px_0_rgba(29,143,255,0.45)]">
+                      <div className="w-full color-black text-center font-urbanist text-lg md:text-xl font-medium leading-6 md:leading-8 text-black">
                         75%
                       </div>
-                      <div className="self-stretch color-[#7B7B7B] text-center font-urbanist text-base font-normal leading-8 text-[#7B7B7B]">
+                      <div className="w-full color-[#7B7B7B] text-center font-urbanist text-xs md:text-sm lg:text-base font-normal leading-4 md:leading-6 lg:leading-8 text-[#7B7B7B]">
                         Readability
                       </div>
                     </div>
-                    <div className="flex w-[132px] px-[15px] py-3 flex-col justify-center items-center gap-[6px] rounded-[10px] bg-white shadow-[0_4px_30.5px_0_rgba(29,143,255,0.45)]">
-                      <div className="self-stretch color-black text-center font-urbanist text-xl font-medium leading-8 text-black">
+                    <div className="flex w-24 md:w-28 lg:w-[132px] px-2 md:px-3 lg:px-[15px] py-2 md:py-3 flex-col justify-center items-center gap-1 md:gap-[6px] rounded-[10px] bg-white shadow-[0_4px_30.5px_0_rgba(29,143,255,0.45)]">
+                      <div className="w-full color-black text-center font-urbanist text-lg md:text-xl font-medium leading-6 md:leading-8 text-black">
                         90%
                       </div>
-                      <div className="self-stretch color-[#7B7B7B] text-center font-urbanist text-base font-normal leading-8 text-[#7B7B7B]">
+                      <div className="w-full color-[#7B7B7B] text-center font-urbanist text-xs md:text-sm lg:text-base font-normal leading-4 md:leading-6 lg:leading-8 text-[#7B7B7B]">
                         SEO Score
                       </div>
                     </div>
-                    <div className="flex w-[132px] px-[15px] py-3 flex-col justify-center items-center gap-[6px] rounded-[10px] bg-white shadow-[0_4px_30.5px_0_rgba(29,143,255,0.45)]">
-                      <div className="self-stretch color-black text-center font-urbanist text-xl font-medium leading-8 text-black">
+                    <div className="flex w-24 md:w-28 lg:w-[132px] px-2 md:px-3 lg:px-[15px] py-2 md:py-3 flex-col justify-center items-center gap-1 md:gap-[6px] rounded-[10px] bg-white shadow-[0_4px_30.5px_0_rgba(29,143,255,0.45)]">
+                      <div className="w-full color-black text-center font-urbanist text-lg md:text-xl font-medium leading-6 md:leading-8 text-black">
                         70%
                       </div>
-                      <div className="self-stretch color-[#7B7B7B] text-center font-urbanist text-base font-normal leading-8 text-[#7B7B7B]">
+                      <div className="w-full color-[#7B7B7B] text-center font-urbanist text-xs md:text-sm lg:text-base font-normal leading-4 md:leading-6 lg:leading-8 text-[#7B7B7B]">
                         Engagement
                       </div>
                     </div>
                   </div>
 
                   {/* Progress Bars */}
-                  <div className="flex w-[430px] flex-col items-start gap-[18px]">
+                  <div className="flex w-full flex-col items-start gap-3 md:gap-4 lg:gap-[18px]">
                     <svg 
-                      width="442" 
+                      width="100%" 
                       height="31" 
                       viewBox="0 0 442 31" 
                       fill="none" 
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-[430px]"
+                      className="w-full max-w-md lg:max-w-[430px]"
                     >
                       <path 
                         d="M6 6.5H436" 
@@ -218,21 +218,21 @@ export const ContentServiceSection: React.FC = () => {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex flex-col items-start gap-[19px] self-stretch">
-                    <button className="flex px-[10px] py-[10px] justify-center items-center gap-[10px] self-stretch rounded-[5px] bg-[#1D8FFF]">
-                      <div className="color-white text-center font-urbanist text-base font-medium leading-8 text-white">
+                  <div className="flex flex-col items-start gap-3 md:gap-4 lg:gap-[19px] w-full">
+                    <button className="flex px-3 md:px-4 lg:px-[10px] py-2 md:py-3 lg:py-[10px] justify-center items-center gap-[10px] w-full rounded-[5px] bg-[#1D8FFF] hover:bg-[#1a7ae6] transition-colors">
+                      <div className="color-white text-center font-urbanist text-sm md:text-base font-medium leading-6 md:leading-8 text-white">
                         Analyze Content
                       </div>
                     </button>
-                    <button className="flex px-[10px] py-[10px] justify-center items-center gap-[10px] self-stretch rounded-[5px] border border-[#D2D2D2] bg-[#E9E9E9]">
-                      <div className="color-[#071F36] text-center font-urbanist text-base font-medium leading-8 text-[#071F36]">
+                    <button className="flex px-3 md:px-4 lg:px-[10px] py-2 md:py-3 lg:py-[10px] justify-center items-center gap-[10px] w-full rounded-[5px] border border-[#D2D2D2] bg-[#E9E9E9] hover:bg-[#ddd] transition-colors">
+                      <div className="color-[#071F36] text-center font-urbanist text-sm md:text-base font-medium leading-6 md:leading-8 text-[#071F36]">
                         Get Professional Content like this
                       </div>
                     </button>
                   </div>
 
                   {/* Footer Text */}
-                  <div className="self-stretch color-[#7B7B7B] text-right font-urbanist text-xs font-normal leading-8 text-[#7B7B7B]">
+                  <div className="w-full color-[#7B7B7B] text-right font-urbanist text-xs font-normal leading-6 md:leading-8 text-[#7B7B7B]">
                     23 words . 1 min read
                   </div>
                 </div>
@@ -241,19 +241,19 @@ export const ContentServiceSection: React.FC = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex justify-center items-center gap-[22px]">
-            <button className="flex w-[299px] h-[50px] px-[3px] py-0 justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-              <div className="color-white text-center font-urbanist text-base font-medium leading-[23px] text-white">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 lg:gap-[22px] w-full">
+            <button className="flex w-full max-w-sm sm:max-w-none sm:w-auto lg:w-[299px] h-12 md:h-[50px] px-3 md:px-4 lg:px-[3px] py-0 justify-center lg:justify-end items-center gap-2 md:gap-3 lg:gap-[10px] rounded-[25px] md:rounded-[35px] lg:rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:bg-[#1a7ae6] transition-colors">
+              <div className="color-white text-center font-urbanist text-sm md:text-base font-medium leading-[23px] text-white">
                 Work With Our Content Experts
               </div>
-              <div className="flex px-3 py-3 items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
+              <div className="flex px-2 md:px-3 py-2 md:py-3 items-center gap-[10px] rounded-[20px] md:rounded-[25px] lg:rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
                 <svg 
-                  width="21" 
-                  height="20" 
+                  width="16" 
+                  height="16" 
                   viewBox="0 0 21 20" 
                   fill="none" 
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
+                  className="w-4 h-4 md:w-5 md:h-5"
                 >
                   <path 
                     d="M4.66406 10H16.3307" 
@@ -273,17 +273,17 @@ export const ContentServiceSection: React.FC = () => {
               </div>
             </button>
             
-            <button className="flex w-[172px] h-[50px] px-[19px] py-[10px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA]">
-              <div className="color-[#091E42] font-urbanist text-base font-medium leading-4 text-[#091E42]">
+            <button className="flex w-full max-w-xs sm:max-w-none sm:w-auto lg:w-[172px] h-12 md:h-[50px] px-4 md:px-5 lg:px-[19px] py-2 md:py-[10px] justify-center items-center gap-2 md:gap-[7px] rounded-[25px] md:rounded-[30px] lg:rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA] hover:bg-[#f0f0f0] transition-colors">
+              <div className="color-[#091E42] font-urbanist text-sm md:text-base font-medium leading-4 text-[#091E42]">
                 Learn More
               </div>
               <svg 
-                width="21" 
-                height="20" 
+                width="16" 
+                height="16" 
                 viewBox="0 0 21 20" 
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 flex-shrink-0"
+                className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
               >
                 <path 
                   d="M4.66406 10H16.3307" 

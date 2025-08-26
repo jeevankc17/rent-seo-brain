@@ -65,43 +65,43 @@ export const ToolsSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative self-stretch w-full h-[519px] bg-[#a2d1ff66] overflow-hidden">
-      <div className="flex-col w-[565px] gap-4 absolute top-[66px] left-[418px] flex items-center">
-        <div className="w-[238px] justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[45px] border border-solid border-secondary-300 flex items-center">
-          <div className="flex w-[222px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[45px]">
+    <section className="relative self-stretch w-full h-auto lg:h-[519px] bg-[#a2d1ff66] overflow-hidden py-8 lg:py-0">
+      <div className="flex-col w-full max-w-[565px] gap-4 relative lg:absolute lg:top-[66px] lg:left-[418px] flex items-center px-4 lg:px-0">
+        <div className="w-full max-w-[238px] justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[35px] lg:rounded-[45px] border border-solid border-secondary-300 flex items-center">
+          <div className="flex w-full max-w-[222px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[35px] lg:rounded-[45px]">
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
               src="/Home-Page/ca/stars-2.svg"
             />
 
-            <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
+            <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
               We Don&apos;t Guess, We Use Data.
             </p>
           </div>
         </div>
 
-        <header className="flex flex-col h-44 items-center gap-4 relative self-stretch w-full">
-          <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] text-center tracking-[0] leading-[57px]">
+        <header className="flex flex-col h-auto lg:h-44 items-center gap-4 relative self-stretch w-full">
+          <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-xl sm:text-3xl md:text-4xl lg:text-[50px] text-center tracking-[0] leading-[24px] sm:leading-[36px] md:leading-[46px] lg:leading-[57px]">
             Professional SEO Tools We Use{" "}
           </h2>
 
-          <p className="relative w-[565px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-200 text-base text-center tracking-[0] leading-[23px]">
+          <p className="relative w-full max-w-[565px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-200 text-sm md:text-base lg:text-base text-center tracking-[0] leading-[18px] md:leading-[20px] lg:leading-[23px]">
             We use industry-leading tools to plan smarter, optimize faster, and
             deliver real results.
           </p>
         </header>
       </div>
 
-      <div className="flex w-[1590px] items-start gap-2.5 absolute top-[349px] left-[-75px] overflow-hidden">
-        <div className="flex flex-wrap w-[1635px] items-center gap-[74px_55px] relative">
+      <div className="flex w-full items-start gap-2.5 relative lg:absolute lg:top-[349px] lg:left-[-75px] overflow-hidden mt-8 lg:mt-0">
+        <div className="flex flex-wrap w-full items-center justify-center gap-6 lg:gap-[74px_55px] relative px-4 lg:px-0">
           {toolsData.map((tool) => (
             <div
               key={tool.id}
-              className="flex w-[105px] h-[105px] items-center justify-center gap-[7px] p-[7px] relative bg-primary-75 rounded-[481.6px]"
+              className="flex w-16 h-16 lg:w-[105px] lg:h-[105px] items-center justify-center gap-[7px] p-1 lg:p-[7px] relative bg-primary-75 rounded-full"
             >
               <img
-                className={`${tool.width} relative h-[104.15px] mt-[-6.58px] mb-[-6.58px] aspect-[0.86]`}
+                className="relative w-12 h-12 lg:w-16 lg:h-16 object-contain"
                 alt={tool.alt}
                 src={tool.src}
               />

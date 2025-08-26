@@ -88,46 +88,46 @@ export const StatisticsSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col w-[1128px] items-center justify-center gap-[50px] relative flex-[0_0_auto]">
-      <header className="flex flex-col w-[565px] items-center gap-4 relative flex-[0_0_auto]">
-        <div className="w-[212px] px-0 py-[5px] border border-solid border-primary-300 flex items-center justify-center gap-1.5 relative flex-[0_0_auto] rounded-[45px]">
-          <div className="flex w-[197px] items-center gap-1.5 px-2 py-0.5 relative bg-primary-300 rounded-[45px]">
+    <section className="flex flex-col w-full max-w-[1128px] items-center justify-center gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0">
+      <header className="flex flex-col w-full max-w-[565px] items-center gap-4 relative flex-[0_0_auto]">
+        <div className="w-full max-w-[212px] px-0 py-[5px] border border-solid border-primary-300 flex items-center justify-center gap-1.5 relative flex-[0_0_auto] rounded-[45px]">
+          <div className="flex w-full max-w-[197px] items-center gap-1.5 px-2 py-0.5 relative bg-primary-300 rounded-[45px]">
             <img
               className="relative w-[15px] h-[15px]"
               alt="Stars"
               src="/Google/ca/stars-3.svg"
             />
 
-            <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm tracking-[0] leading-[23px] whitespace-nowrap">
+            <div className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-xs lg:text-sm tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
               We&apos;ve Got The Strategy.
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col h-44 items-center gap-4 relative self-stretch w-full">
-          <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-[50px] text-center tracking-[0] leading-[57px]">
+        <div className="flex flex-col h-auto lg:h-44 items-center gap-4 relative self-stretch w-full">
+          <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-xl sm:text-2xl md:text-3xl lg:text-[50px] text-center tracking-[0] leading-[24px] sm:leading-[28px] md:leading-[36px] lg:leading-[57px]">
             We Serve Businesses Across Industries
           </h1>
 
-          <p className="relative w-[565px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-200 text-base text-center tracking-[0] leading-[23px]">
+          <p className="relative w-full max-w-[565px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-200 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px]">
             From local startups to global brands — our Google Ads strategies
             work across all sectors.
           </p>
         </div>
       </header>
 
-      <main className="flex flex-col items-start gap-[78px] relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex items-center justify-center gap-5 relative self-stretch w-full flex-[0_0_auto]">
+      <main className="flex flex-col items-start gap-8 lg:gap-[78px] relative self-stretch w-full flex-[0_0_auto]">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 relative self-stretch w-full flex-[0_0_auto]">
           <article className="inline-flex items-center justify-center gap-2.5 px-[29px] py-8 bg-neutral-0 rounded-[14px] overflow-hidden shadow-[0px_4px_8.6px_8px_#0083ff17] relative flex-[0_0_auto]">
             <div className="flex flex-col w-[494px] items-center justify-center gap-[45px] relative">
-              <div className="relative w-[494px] h-[331px] bg-neutral-0 rounded-[20px] shadow-[0px_4px_21.2px_#0083ff29]">
-                <div className="h-[331px] bg-neutral-0 rounded-[10px] overflow-hidden">
-                  <div className="relative w-[524px] h-[298px] top-1.5 left-1.5">
-                    <div className="absolute w-96 h-[244px] top-[33px] left-[47px] bg-neutral-0 rounded-[13px] overflow-hidden shadow-[0px_4px_8.9px_12px_#0083ff29]">
+              <div className="relative w-full max-w-[494px] h-auto lg:h-[331px] bg-neutral-0 rounded-[20px] shadow-[0px_4px_21.2px_#0083ff29] hidden lg:block">
+                <div className="h-auto lg:h-[331px] bg-neutral-0 rounded-[10px] overflow-hidden">
+                  <div className="relative w-full max-w-[524px] h-auto lg:h-[298px] lg:top-1.5 lg:left-1.5">
+                    <div className="relative lg:absolute w-full lg:w-96 h-auto lg:h-[244px] lg:top-[33px] lg:left-[47px] bg-neutral-0 rounded-[13px] overflow-hidden shadow-[0px_4px_8.9px_12px_#0083ff29]">
                       {industryCards.map((card) => (
                         <div
                           key={card.id}
-                          className={`inline-flex items-center ${card.padding || "gap-[9.08px] px-[18.15px] py-[9.08px]"} absolute ${card.position} ${card.cardBg} ${card.rounded || "rounded-[25.41px]"} ${card.shadow || "shadow-[0px_7.26px_22.51px_#0083ff59]"} ${card.border || ""}`}
+                          className={`inline-flex items-center ${card.padding || "gap-[9.08px] px-[18.15px] py-[9.08px]"} relative lg:absolute ${card.position} ${card.cardBg} ${card.rounded || "rounded-[25.41px]"} ${card.shadow || "shadow-[0px_7.26px_22.51px_#0083ff59]"} ${card.border || ""} mb-2 lg:mb-0`}
                         >
                           <div
                             className={`${card.bgColor} flex flex-col w-[45.38px] h-[45.38px] items-center justify-center gap-[22.69px] p-[22.69px] relative rounded-[1234.25px]`}
@@ -141,12 +141,12 @@ export const StatisticsSection: React.FC = () => {
 
                           <div className="flex flex-col w-[174.25px] items-start relative">
                             <h3
-                              className={`${card.textColor} relative self-stretch mt-[-1.82px] [font-family:'Urbanist',Helvetica] font-semibold text-[16.6px] tracking-[0] leading-[27.2px]`}
+                              className={`${card.textColor} relative self-stretch mt-[-1.82px] [font-family:'Urbanist',Helvetica] font-semibold text-sm lg:text-[16.6px] tracking-[0] leading-[20px] lg:leading-[27.2px]`}
                             >
                               {card.title}
                             </h3>
 
-                            <p className="relative w-[183.32px] mr-[-9.08px] [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-[14.5px] tracking-[0] leading-[18.2px]">
+                            <p className="relative w-full max-w-[183.32px] lg:mr-[-9.08px] [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-xs lg:text-[14.5px] tracking-[0] leading-[16px] lg:leading-[18.2px]">
                               {card.description}
                             </p>
                           </div>
@@ -159,18 +159,18 @@ export const StatisticsSection: React.FC = () => {
 
               <div className="flex flex-col items-start gap-[38px] relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-                  <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-neutral-900 text-[28px] tracking-[0] leading-[23px]">
+                  <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-neutral-900 text-xl lg:text-[28px] tracking-[0] leading-[24px] lg:leading-[23px]">
                     Lead Based
                   </h2>
 
-                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-100 text-lg tracking-[0] leading-[25px]">
+                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-100 text-base lg:text-lg tracking-[0] leading-[20px] lg:leading-[25px]">
                     We specialize in generating high-quality leads for
                     service-based industries.
                   </p>
                 </div>
 
-                <button className="w-[275px] flex h-[50px] items-center justify-center gap-2.5 px-8 py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_5px_14.7px_#2f98ffa1] hover:opacity-90 transition-opacity">
-                  <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+                <button className="w-full lg:w-[275px] flex h-[50px] items-center justify-center gap-2.5 px-8 py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_5px_14.7px_#2f98ffa1] hover:opacity-90 transition-opacity">
+                  <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
                     Start Getting Qualified Lead
                   </span>
                 </button>
@@ -181,32 +181,32 @@ export const StatisticsSection: React.FC = () => {
           <article className="inline-flex items-center justify-center gap-2.5 px-[29px] py-8 bg-neutral-0 rounded-[14px] overflow-hidden shadow-[0px_4px_8.6px_8px_#0083ff17] relative flex-[0_0_auto]">
             <div className="flex flex-col w-[494px] items-center justify-center gap-[45px] relative">
               <img
-                className="relative w-[550.2px] h-[387.2px] mt-[-24.10px] ml-[-28.10px] mr-[-28.10px]"
+                className="relative w-full max-w-[550.2px] h-auto lg:h-[387.2px] lg:mt-[-24.10px] lg:ml-[-28.10px] lg:mr-[-28.10px] hidden lg:block"
                 alt="Sales dashboard visualization"
                 src="/Google/ca/card-2.svg"
               />
 
               <div className="flex flex-col items-start gap-[38px] relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-                  <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-neutral-900 text-[28px] tracking-[0] leading-[23px]">
+                  <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-neutral-900 text-xl lg:text-[28px] tracking-[0] leading-[24px] lg:leading-[23px]">
                     Sales Based
                   </h2>
 
-                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-100 text-lg tracking-[0] leading-[25px]">
+                  <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-medium text-neutral-100 text-base lg:text-lg tracking-[0] leading-[20px] lg:leading-[25px]">
                     For product-driven businesses, we focus on driving sales
                     through conversion-optimized campaigns.
                   </p>
                 </div>
 
-                <div className="inline-flex items-start gap-3 relative flex-[0_0_auto]">
-                  <button className="w-[217px] flex h-[50px] items-center justify-center gap-2.5 px-8 py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_5px_14.7px_#2f98ffa1] hover:opacity-90 transition-opacity">
-                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
+                <div className="flex flex-col sm:flex-row items-start gap-3 relative flex-[0_0_auto] w-full">
+                  <button className="w-full sm:w-[217px] flex h-[50px] items-center justify-center gap-2.5 px-8 py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_5px_14.7px_#2f98ffa1] hover:opacity-90 transition-opacity">
+                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
                       Boost My Sales Now
                     </span>
                   </button>
 
-                  <button className="all-[unset] box-border flex w-[220px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 transition-colors">
-                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-base tracking-[0] leading-4 whitespace-nowrap">
+                  <button className="all-[unset] box-border flex w-full sm:w-[220px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 transition-colors">
+                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
                       Know More
                     </span>
 
@@ -222,17 +222,17 @@ export const StatisticsSection: React.FC = () => {
           </article>
         </div>
 
-        <div className="flex items-center justify-center gap-[38px] relative self-stretch w-full flex-[0_0_auto]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-6 lg:gap-[38px] relative self-stretch w-full flex-[0_0_auto]">
           {statisticsData.map((stat) => (
             <div
               key={stat.id}
-              className="flex flex-col w-[253px] items-center justify-center gap-[21px] px-[34px] py-[22px] relative bg-[#e8f4ff2e] rounded-[13px] border border-solid border-primary-50"
+              className="flex flex-col w-full max-w-[253px] items-center justify-center gap-[21px] px-4 lg:px-[34px] py-4 lg:py-[22px] relative bg-[#e8f4ff2e] rounded-[13px] border border-solid border-primary-50 mx-auto"
             >
-              <div className="font-semibold text-primary-300 text-2xl text-center leading-[26px] relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] tracking-[0]">
+              <div className="font-semibold text-primary-300 text-xl lg:text-2xl text-center leading-[24px] lg:leading-[26px] relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] tracking-[0]">
                 {stat.number}
               </div>
 
-              <div className="relative w-[125px] [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-lg text-center tracking-[0] leading-[26px]">
+              <div className="relative w-full max-w-[125px] [font-family:'Urbanist',Helvetica] font-medium text-grey-500 text-base lg:text-lg text-center tracking-[0] leading-[20px] lg:leading-[26px]">
                 {stat.label}
               </div>
             </div>

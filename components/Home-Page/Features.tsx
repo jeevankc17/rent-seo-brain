@@ -2,29 +2,29 @@ import React from "react";
 
 export default function Features() {
   return (
-    <section className="w-full flex justify-center py-8 bg-gradient-to-br from-blue-50/30 to-purple-50/30">
-      <div className="w-[1128px] flex flex-col justify-start items-center gap-12">
+    <section className="w-full flex justify-center py-8 lg:py-8 bg-gradient-to-br from-blue-50/30 to-purple-50/30">
+      <div className="w-full max-w-[1128px] flex flex-col justify-start items-center gap-8 lg:gap-12 px-4 lg:px-0">
         {/* Header Section */}
-        <div className="w-[519px] flex flex-col justify-start items-center gap-4 ">
+        <div className="w-full max-w-[519px] flex flex-col justify-start items-center gap-4">
           <div className="px-4 py-2 rounded-full border border-blue-500 bg-blue-500 text-white text-sm font-medium">
             Why rent SEO Brain
           </div>
           <div className="flex flex-col justify-start items-center gap-4">
-            <h2 className="text-center text-sky-700 text-5xl font-bold font-['Urbanist'] leading-[57px]">
+            <h2 className="text-center text-sky-700 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-['Urbanist'] leading-[24px] sm:leading-[36px] md:leading-[46px] lg:leading-[57px]">
               SEO That Works for You
             </h2>
-            <p className="text-center text-slate-500 text-base font-medium font-['Urbanist'] leading-snug">
+            <p className="text-center text-slate-500 text-sm md:text-base lg:text-base font-medium font-['Urbanist'] leading-[18px] md:leading-[20px] lg:leading-snug">
               Flexible, data-driven SEO solutions tailored to your goals—whether you're a solo creator or scaling agency.
             </p>
           </div>
         </div>
 
         {/* Grid Section */}
-        <div className="flex justify-start items-start gap-6">
+        <div className="flex flex-col lg:flex-row justify-start items-start gap-6">
           {/* Left Column */}
-          <div className="w-[552px] flex flex-col justify-start items-start gap-6">
+          <div className="w-full lg:w-[552px] flex flex-col justify-start items-start gap-6">
             {/* Card 1: On-Demand Tools */}
-            <div className="w-full h-96 bg-white rounded-xl shadow-[0px_4px_24px_rgba(0,0,0,0.08)] p-6 relative overflow-hidden">
+            <div className="w-full h-auto lg:h-96 bg-white rounded-xl shadow-[0px_4px_24px_rgba(0,0,0,0.08)] p-4 lg:p-6 relative overflow-hidden">
               {/* Decorative dots */}
               <div className="absolute -left-6 -top-2 w-44 flex flex-wrap gap-1">
                 {Array(44).fill(0).map((_, i) => (
@@ -84,8 +84,8 @@ export default function Features() {
                 <div className="flex flex-col gap-3">
                   <div className="text-amber-500 text-base font-semibold">01</div>
                   <div>
-                    <h3 className="text-slate-800 text-xl font-semibold mb-2">On-Demand Tools</h3>
-                    <p className="text-slate-600 text-base">
+                    <h3 className="text-slate-800 text-lg lg:text-xl font-semibold mb-2">On-Demand Tools</h3>
+                    <p className="text-slate-600 text-sm lg:text-base">
                       Access 20+ powerful SEO tools instantly—no installation, no contracts. Everything runs in-browser.
                     </p>
                   </div>
@@ -94,7 +94,7 @@ export default function Features() {
             </div>
 
             {/* Card 3: Affordable & Scalable */}
-            <div className="w-full h-80 bg-white rounded-xl shadow-[0px_4px_24px_rgba(0,0,0,0.08)] p-6 relative overflow-hidden">
+            <div className="w-full h-auto lg:h-80 bg-white rounded-xl shadow-[0px_4px_24px_rgba(0,0,0,0.08)] p-4 lg:p-6 relative overflow-hidden">
               {/* Decorative dots */}
               <div className="absolute left-48 top-16 w-44 flex flex-wrap gap-1">
                 {Array(72).fill(0).map((_, i) => (
@@ -135,8 +135,8 @@ export default function Features() {
                 <div className="flex flex-col gap-3">
                   <div className="text-amber-500 text-base font-semibold">03</div>
                   <div>
-                    <h3 className="text-slate-800 text-xl font-semibold mb-2">Affordable & Scalable</h3>
-                    <p className="text-slate-600 text-base">
+                    <h3 className="text-slate-800 text-lg lg:text-xl font-semibold mb-2">Affordable & Scalable</h3>
+                    <p className="text-slate-600 text-sm lg:text-base">
                       Start free, pay as you grow—no hidden fees, no long-term contracts.
                     </p>
                   </div>
@@ -146,9 +146,9 @@ export default function Features() {
           </div>
 
           {/* Right Column */}
-          <div className="w-[552px] flex flex-col justify-start items-start gap-6">
+          <div className="w-full lg:w-[552px] flex flex-col justify-start items-start gap-6">
             {/* Card 2: Actionable Insights */}
-            <div className="w-full h-64 bg-white rounded-xl shadow-[0px_4px_24px_rgba(0,0,0,0.08)] p-6 relative overflow-hidden">
+            <div className="w-full h-auto lg:h-64 bg-white rounded-xl shadow-[0px_4px_24px_rgba(0,0,0,0.08)] p-4 lg:p-6 relative overflow-hidden">
               {/* Decorative dots */}
               <div className="absolute right-0 top-20 w-44 flex flex-wrap gap-1">
                 {Array(72).fill(0).map((_, i) => (
@@ -166,8 +166,8 @@ export default function Features() {
                 <div className="flex flex-col gap-3">
                   <div className="text-amber-500 text-base font-semibold">02</div>
                   <div>
-                    <h3 className="text-slate-800 text-xl font-semibold mb-2">Actionable Insights</h3>
-                    <p className="text-slate-600 text-base">
+                    <h3 className="text-slate-800 text-lg lg:text-xl font-semibold mb-2">Actionable Insights</h3>
+                    <p className="text-slate-600 text-sm lg:text-base">
                       Get clear reports with action items, priority scores, and implementation steps—ready for your team.
                     </p>
                   </div>
@@ -176,7 +176,7 @@ export default function Features() {
             </div>
 
             {/* Card 4: Boost SEO Performance */}
-            <div className="w-full h-[459px] bg-white rounded-xl shadow-[0px_4px_24px_rgba(0,0,0,0.08)] p-6 relative overflow-hidden">
+            <div className="w-full h-auto lg:h-[459px] bg-white rounded-xl shadow-[0px_4px_24px_rgba(0,0,0,0.08)] p-4 lg:p-6 relative overflow-hidden">
               {/* Decorative dots */}
               <div className="absolute right-0 -top-28 w-44 flex flex-wrap gap-1 rotate-90">
                 {Array(60).fill(0).map((_, i) => (
@@ -228,8 +228,8 @@ export default function Features() {
                 <div className="flex flex-col gap-3">
                   <div className="text-amber-500 text-base font-semibold">04</div>
                   <div>
-                    <h3 className="text-slate-800 text-xl font-semibold mb-2">Boost SEO Performance</h3>
-                    <p className="text-slate-600 text-base">
+                    <h3 className="text-slate-800 text-lg lg:text-xl font-semibold mb-2">Boost SEO Performance</h3>
+                    <p className="text-slate-600 text-sm lg:text-base">
                       Track progress with real-time monitoring, automated reports, and AI-powered strategy adjustments.
                     </p>
                   </div>
@@ -240,9 +240,9 @@ export default function Features() {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex justify-center items-center gap-5">
-          <button className="px-6 py-3 bg-blue-500 text-white rounded-full shadow-[0px_4px_15px_rgba(47,152,255,0.63)] flex items-center gap-3">
-            <span className="text-base font-medium">Get Your SEO Audit Now</span>
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-5">
+          <button className="w-full lg:w-auto px-6 py-3 bg-blue-500 text-white rounded-full shadow-[0px_4px_15px_rgba(47,152,255,0.63)] flex items-center justify-center gap-3">
+            <span className="text-sm lg:text-base font-medium">Get Your SEO Audit Now</span>
             <div className="p-2 bg-indigo-50 rounded-full border border-blue-300">
               <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -250,8 +250,8 @@ export default function Features() {
             </div>
           </button>
           
-          <button className="px-5 py-3 bg-neutral-50 border border-neutral-300 rounded-full flex items-center gap-2">
-            <span className="text-sky-950 text-base font-medium">See Real Client Results</span>
+          <button className="w-full lg:w-auto px-5 py-3 bg-neutral-50 border border-neutral-300 rounded-full flex items-center justify-center gap-2">
+            <span className="text-sky-950 text-sm lg:text-base font-medium">See Real Client Results</span>
             <svg className="w-5 h-5 text-sky-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
