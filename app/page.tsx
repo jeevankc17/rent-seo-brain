@@ -47,8 +47,8 @@ export default function Home() {
           <KeyMetricsSection />
         </div>
       </section>
-      <section className="relative w-full bg-grey-100 hidden sm:block">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+      <section className="relative w-full bg-neutral-900 hidden sm:block p-[10px] lg:p-[30px]">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full flex justify-center ">
           <IdeasToContent />
         </div>
       </section>
