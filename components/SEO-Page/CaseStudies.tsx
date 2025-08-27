@@ -4,25 +4,25 @@ export const CaseStudies: React.FC = () => {
   // Data for metrics in the case study card
   const metricsData = [
     {
-      icon: "/SEO/ca/trending-up.svg",
+      icon: "/Home-Page/ca/trending-up.svg",
       value: "8k - 38k",
       label: "Organic Traffic",
       alt: "Trending up",
     },
     {
-      icon: "/SEO/ca/users.svg",
+      icon: "/Home-Page/ca/users.svg",
       value: "2k - 12k",
       label: "Email Susbcribers",
       alt: "Users",
     },
     {
-      icon: "/SEO/ca/check-circle.svg",
+      icon: "/Home-Page/ca/check-circle.svg",
       value: "+320%",
       label: "Social Engagement",
       alt: "Check circle",
     },
     {
-      icon: "/SEO/ca/award.svg",
+      icon: "/Home-Page/ca/award.svg",
       value: "+450%",
       label: "Brand Mentions",
       alt: "Award",
@@ -40,50 +40,52 @@ export const CaseStudies: React.FC = () => {
 
   // Data for star ratings
   const starRating = Array(5).fill(
-    "/SEO/ca/star-filled-4.svg"
+    "/Home-Page/ca/star-filled-4.svg"
   );
 
   return (
     <section
-      className="hidden lg:blockrelative w-full h-auto min-h-[800px] px-4 py-8 lg:h-[1542px] lg:px-0 lg:py-0"
+      className="relative w-full h-auto lg:h-[1542px]"
       role="main"
       aria-label="Case Studies Section"
     >
-      <div className="h-auto min-h-[800px] bg-[#0c0c0f] overflow-hidden lg:h-[1542px]">
-        <div className="relative w-full max-w-[1128px] h-auto mx-auto py-8 lg:w-[1780px] lg:h-[1368px] lg:top-[93px] lg:left-[-172px] lg:py-0">
+      <div className="h-auto lg:h-[1542px] bg-[#0c0c0f] overflow-hidden py-8 lg:py-[93px]">
+        <div className="relative w-full h-auto lg:h-[1368px]">
           {/* Background blur elements */}
           <div
-            className="absolute w-[200px] h-[150px] top-[100px] right-[-50px] bg-[#2e97ffa1] rounded-full blur-[200px] lg:w-[464px] lg:h-[403px] lg:top-[168px] lg:left-[1316px] lg:rounded-[232px/201.63px] lg:blur-[365.85px]"
+            className="absolute w-[464px] h-[403px] top-[168px] right-0 bg-[#2e97ffa1] rounded-[232px/201.63px] blur-[365.85px] hidden lg:block"
             aria-hidden="true"
           />
           <div
-            className="absolute w-[200px] h-[150px] top-[80px] left-[-50px] bg-[#2e97ffa1] rounded-full blur-[200px] lg:w-[464px] lg:h-[403px] lg:top-[145px] lg:left-0 lg:rounded-[232px/201.63px] lg:blur-[365.85px]"
+            className="absolute w-[464px] h-[403px] top-[145px] left-0 bg-[#2e97ffa1] rounded-[232px/201.63px] blur-[365.85px] hidden lg:block"
             aria-hidden="true"
           />
 
-          <div className="flex flex-col w-full items-start gap-6 relative lg:w-[1128px] lg:gap-[23px] lg:absolute lg:top-0 lg:left-[328px]">
+          <div className="flex flex-col w-full max-w-[1128px] mx-auto px-4 lg:px-0 items-start gap-6 lg:gap-[23px] relative">
             {/* Bottom Section with Testimonial and Industry Tags */}
             <div className="relative self-stretch w-full h-auto lg:h-[694px]">
-              <div className="flex flex-col gap-8 w-full lg:absolute lg:w-[1128px] lg:h-[661px] lg:top-[33px] lg:left-0">
-                <div className="flex flex-col gap-8 w-full lg:relative lg:h-[694px] lg:top-[-33px]">
-                  <div className="flex flex-col gap-8 w-full lg:absolute lg:w-[1128px] lg:h-[694px] lg:top-0 lg:left-0">
+              <div className="relative lg:absolute w-full lg:w-[1128px] h-auto lg:h-[661px] top-0 lg:top-[33px] left-0">
+                <div className="relative h-auto lg:h-[694px] top-0 lg:top-[-33px]">
+                  <div className="relative lg:absolute w-full lg:w-[1128px] h-auto lg:h-[694px] top-0 left-0 flex flex-col lg:block gap-6 lg:gap-0">
                     {/* Industry Tags Section */}
-                    <div className="w-full h-auto p-6 bg-white rounded-[20px] lg:absolute lg:w-[542px] lg:h-[661px] lg:top-[33px] lg:left-[586px] lg:bg-[url(/SEO/ca/frame-2121457564.svg)] lg:bg-[100%_100%] lg:p-0 lg:rounded-0">
-                      <div className="flex flex-col w-full items-start justify-center gap-8 lg:w-[488px] lg:gap-56 lg:relative lg:top-[159px] lg:left-[27px]">
+                    <div className="relative lg:absolute w-full lg:w-[542px] h-auto lg:h-[661px] top-0 lg:top-[33px] left-0 lg:left-[586px] bg-[url('/Home-Page/ca/frame-2121457564.svg')] bg-[100%_100%] order-2 lg:order-none">
+                      <div className="flex flex-col w-full lg:w-[488px] items-start justify-center gap-8 lg:gap-56 relative top-0 lg:top-[159px] left-0 lg:left-[27px] p-4 lg:p-0">
                         <div className="flex flex-col items-start gap-[33px] relative self-stretch w-full flex-[0_0_auto]">
-                          <div className="flex w-auto items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-neutral-0 rounded-[45px] lg:w-[255px]">
-                            <h2 className="relative w-fit mt-[-1.00px] font-urbanist font-semibold text-black text-base text-center tracking-[0] leading-[23px] whitespace-nowrap lg:text-lg">
+                          <div className="flex w-full max-w-[255px] items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-neutral-0 rounded-[35px] lg:rounded-[45px]">
+                            <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-black text-lg text-center tracking-[0] leading-[23px] whitespace-nowrap">
                               Case Studies by Industry
                             </h2>
                           </div>
 
-                          <div className="flex flex-wrap items-end gap-3 relative self-stretch w-full flex-[0_0_auto] lg:gap-[19px_14px]">
+                          <div className="flex flex-wrap items-end gap-3 lg:gap-[19px_14px] relative self-stretch w-full flex-[0_0_auto]">
                             {industryTags.map((tag, index) => (
                               <button
                                 key={index}
-                                className="flex w-auto items-center justify-center gap-2.5 px-4 py-3 relative rounded-[45px] border border-solid border-neutral-0 hover:bg-neutral-0 hover:text-black transition-colors focus:outline-2 focus:outline-neutral-0 lg:px-[23px] lg:py-[13px]"
+                                className={`flex items-center justify-center gap-2.5 px-4 lg:px-[23px] py-2 lg:py-[13px] relative rounded-[35px] lg:rounded-[45px] border border-solid border-neutral-0 hover:bg-neutral-0 hover:text-black transition-colors focus:outline-2 focus:outline-neutral-0`}
                               >
-                                <span className="relative w-fit mt-[-1.00px] font-urbanist font-semibold text-neutral-0 text-sm text-center tracking-[0] leading-[23px] whitespace-nowrap lg:text-base">
+                                <span
+                                  className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-neutral-0 text-xs lg:text-base text-center tracking-[0] leading-[16px] lg:leading-[23px] whitespace-nowrap`}
+                                >
                                   {tag}
                                 </span>
                               </button>
@@ -91,23 +93,23 @@ export const CaseStudies: React.FC = () => {
                           </div>
                         </div>
 
-                        <button className="w-full flex h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-primary-300 transition-colors lg:w-[284px]">
-                          <span className="relative w-fit font-urbanist font-medium text-[#091e42] text-sm tracking-[0] leading-4 whitespace-nowrap lg:text-base">
+                        <button className="all-[unset] box-border w-full lg:w-[284px] flex h-12 lg:h-[50px] items-center justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[28px] lg:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-primary-300 transition-colors">
+                          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
                             View All Case Studies
                           </span>
                           <img
                             className="relative w-5 h-5"
                             alt="Arrow right"
-                            src="/SEO/ca/arrow-right-1.svg"
+                            src="/Home-Page/ca/arrow-right-1.svg"
                           />
                         </button>
                       </div>
                     </div>
 
                     {/* Testimonial */}
-                    <blockquote className="flex flex-col w-full items-start justify-center gap-2.5 px-6 py-4 bg-neutral-0 rounded-[20px] lg:w-[891px] lg:px-[37px] lg:py-[23px] lg:absolute lg:top-0 lg:left-0 lg:rounded-[27px]">
+                    <blockquote className="flex flex-col w-full lg:w-[891px] items-start justify-center gap-2.5 px-6 lg:px-[37px] py-4 lg:py-[23px] relative lg:absolute top-0 left-0 bg-neutral-0 rounded-[20px] lg:rounded-[27px] order-1 lg:order-none">
                       <div className="inline-flex items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-                        <p className="relative w-full mt-[-1.00px] font-urbanist font-normal text-transparent text-sm tracking-[0] leading-[22px] lg:w-[803px] lg:text-base lg:leading-[26px]">
+                        <p className="relative w-full lg:w-[803px] mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-normal text-transparent text-sm lg:text-base tracking-[0] leading-[20px] lg:leading-[26px]">
                           <span className="font-medium text-black">
                             "The team truly understood our audience. For the
                             first time, Google Ads actually started driving
@@ -130,7 +132,7 @@ export const CaseStudies: React.FC = () => {
                         {starRating.map((star, index) => (
                           <img
                             key={index}
-                            className="relative w-5 h-5 lg:w-6 lg:h-6"
+                            className="relative w-6 h-6"
                             alt="Star filled"
                             src={star}
                           />
@@ -140,12 +142,12 @@ export const CaseStudies: React.FC = () => {
                   </div>
 
                   {/* Background Image Section */}
-                  <div className="flex w-full h-[300px] items-center gap-2.5 lg:w-[552px] lg:h-[518px] lg:absolute lg:top-44 lg:left-0">
-                    <div className="relative w-full h-[300px] rounded-[20px] overflow-hidden bg-[url(/SEO/ca/frame-2121457561.svg)] bg-cover bg-[50%_50%] lg:w-[552px] lg:h-[518px] lg:rounded-[27px]">
-                      <div className="h-[300px] bg-[#000000ba] rounded-[20px] overflow-hidden lg:h-[518px] lg:rounded-[27px]">
-                        <div className="flex flex-col w-full h-full items-start justify-start p-6 lg:w-[485px] lg:h-[444px] lg:gap-[351px] lg:relative lg:top-[35px] lg:left-[37px] lg:p-0">
-                          <div className="flex w-auto items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-neutral-0 rounded-[45px] lg:w-[227px]">
-                            <h2 className="relative w-fit mt-[-1.00px] font-urbanist font-semibold text-black text-base text-center tracking-[0] leading-[23px] whitespace-nowrap lg:text-lg">
+                  <div className="flex w-full lg:w-[552px] h-auto lg:h-[518px] items-center gap-2.5 relative lg:absolute top-0 lg:top-44 left-0 order-3 lg:order-none">
+                    <div className="relative w-full lg:w-[552px] h-64 lg:h-[518px] rounded-[20px] lg:rounded-[27px] overflow-hidden bg-[url('/Home-Page/ca/frame-2121457561.svg')] bg-cover bg-[50%_50%]">
+                      <div className="h-full lg:h-[518px] bg-[#000000ba] rounded-[20px] lg:rounded-[27px] overflow-hidden">
+                        <div className="flex flex-col w-full lg:w-[485px] h-full lg:h-[444px] items-start gap-8 lg:gap-[351px] relative top-4 lg:top-[35px] left-4 lg:left-[37px] p-4 lg:p-0">
+                          <div className="flex w-full max-w-[227px] items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-neutral-0 rounded-[35px] lg:rounded-[45px]">
+                            <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-black text-lg text-center tracking-[0] leading-[23px] whitespace-nowrap">
                               Real Results, Real Clients
                             </h2>
                           </div>
@@ -157,40 +159,40 @@ export const CaseStudies: React.FC = () => {
               </div>
 
               <div
-                className="absolute w-[215px] h-[23px] top-0 left-[913px] bg-primary-300 rounded-[27px]"
+                className="absolute w-[215px] h-[23px] top-0 left-[913px] bg-primary-300 rounded-[27px] hidden lg:block"
                 aria-hidden="true"
               />
             </div>
 
             {/* Case Study Card */}
-            <article className="flex flex-col items-center gap-6 px-6 py-6 relative self-stretch w-full flex-[0_0_auto] bg-neutral-0 rounded-[20px] lg:flex-row lg:gap-[41px] lg:px-[38px] lg:py-[34px] lg:rounded-[27px]">
+            <article className="flex flex-col lg:flex-row items-center gap-6 lg:gap-[41px] px-6 lg:px-[38px] py-6 lg:py-[34px] relative self-stretch w-full flex-[0_0_auto] bg-neutral-0 rounded-[20px] lg:rounded-[27px]">
               {/* Performance Dashboard */}
-              <div className="relative w-full h-[300px] bg-primary-50 rounded-[12px] overflow-hidden border border-solid border-primary-75 lg:w-[539px] lg:h-[571px] lg:rounded-[12.42px] lg:border-[0.96px]">
-                <div className="flex flex-col w-[242px] items-center gap-[22.94px] relative top-[212px] left-[149px]">
-                  <div className="flex flex-col w-[147.17px] items-center justify-center gap-[19.11px] relative flex-[0_0_auto]">
-                    <div className="self-stretch mt-[-0.96px] font-semibold text-primary-300 text-[43px] text-center leading-[28.7px] relative [font-family:'Urbanist',Helvetica] tracking-[0]">
+              <div className="relative w-full lg:w-[539px] h-64 lg:h-[571px] bg-primary-50 rounded-[10px] lg:rounded-[12.42px] overflow-hidden border-[0.96px] border-solid border-primary-75">
+                <div className="flex flex-col w-full lg:w-[242px] items-center gap-4 lg:gap-[22.94px] relative top-4 lg:top-[212px] left-0 lg:left-[149px] p-4 lg:p-0">
+                  <div className="flex flex-col w-full lg:w-[147.17px] items-center justify-center gap-3 lg:gap-[19.11px] relative flex-[0_0_auto]">
+                    <div className="self-stretch mt-[-0.96px] font-semibold text-primary-300 text-2xl lg:text-[43px] text-center leading-[28px] lg:leading-[28.7px] relative [font-family:'Urbanist',Helvetica] tracking-[0]">
                       +380%
                     </div>
-                    <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-[19.1px] text-center tracking-[0] leading-[24.8px]">
+                    <div className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-sm lg:text-[19.1px] text-center tracking-[0] leading-[18px] lg:leading-[24.8px]">
                       Traffic Growth
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-center gap-[37.27px] relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="flex flex-col w-[87.92px] items-center justify-center gap-[5.73px] relative">
-                      <div className="self-stretch mt-[-0.96px] font-semibold text-neutral-600 text-[19.1px] text-center leading-[24.8px] relative [font-family:'Urbanist',Helvetica] tracking-[0]">
+                  <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-[37.27px] relative self-stretch w-full flex-[0_0_auto]">
+                    <div className="flex flex-col w-full lg:w-[87.92px] items-center justify-center gap-1 lg:gap-[5.73px] relative">
+                      <div className="self-stretch mt-[-0.96px] font-semibold text-neutral-600 text-sm lg:text-[19.1px] text-center leading-[18px] lg:leading-[24.8px] relative [font-family:'Urbanist',Helvetica] tracking-[0]">
                         +190%
                       </div>
-                      <div className="self-stretch font-normal text-[13.4px] leading-[22.0px] relative [font-family:'Urbanist',Helvetica] text-grey-500 text-center tracking-[0]">
+                      <div className="self-stretch font-normal text-xs lg:text-[13.4px] leading-[16px] lg:leading-[22.0px] relative [font-family:'Urbanist',Helvetica] text-grey-500 text-center tracking-[0]">
                         Lead Increase
                       </div>
                     </div>
 
-                    <div className="flex flex-col w-[116.59px] items-center justify-center gap-[5.73px] relative">
-                      <div className="relative self-stretch mt-[-0.96px] [font-family:'Urbanist',Helvetica] font-semibold text-neutral-600 text-[19.1px] text-center tracking-[0] leading-[24.8px]">
+                    <div className="flex flex-col w-full lg:w-[116.59px] items-center justify-center gap-1 lg:gap-[5.73px] relative">
+                      <div className="relative self-stretch mt-[-0.96px] [font-family:'Urbanist',Helvetica] font-semibold text-neutral-600 text-sm lg:text-[19.1px] text-center tracking-[0] leading-[18px] lg:leading-[24.8px]">
                         $1.8M
                       </div>
-                      <div className="relative w-[141.43px] ml-[-12.42px] mr-[-12.42px] [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-[13.4px] text-center tracking-[0] leading-[22.0px]">
+                      <div className="relative w-full lg:w-[141.43px] lg:ml-[-12.42px] lg:mr-[-12.42px] [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-xs lg:text-[13.4px] text-center tracking-[0] leading-[16px] lg:leading-[22.0px]">
                         Revenue Generated
                       </div>
                     </div>
@@ -199,24 +201,24 @@ export const CaseStudies: React.FC = () => {
               </div>
 
               {/* Case Study Details */}
-              <div className="flex flex-col w-[491px] items-start justify-center gap-[17px] relative mr-[-19.00px]">
-                <div className="flex flex-col items-start justify-center gap-[26px] relative self-stretch w-full flex-[0_0_auto]">
+              <div className="flex flex-col w-full lg:w-[491px] items-start justify-center gap-4 lg:gap-[17px] relative lg:mr-[-19.00px]">
+                <div className="flex flex-col items-start justify-center gap-6 lg:gap-[26px] relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex items-center gap-[9px] relative flex-[0_0_auto]">
                     <span className="inline-flex items-center justify-center gap-2.5 px-2.5 py-1 relative flex-[0_0_auto] bg-grey-50 rounded-[67px] border border-solid border-grey-300">
-                      <span className="w-fit mt-[-1.00px] font-medium text-sm leading-[23px] whitespace-nowrap relative [font-family:'Urbanist',Helvetica] text-grey-500 text-center tracking-[0]">
+                      <span className="w-fit mt-[-1.00px] font-medium text-xs lg:text-sm leading-[18px] lg:leading-[23px] whitespace-nowrap relative [font-family:'Urbanist',Helvetica] text-grey-500 text-center tracking-[0]">
                         Lead Based
                       </span>
                     </span>
 
                     <span className="inline-flex items-center justify-center gap-2.5 px-2.5 py-1 relative flex-[0_0_auto] bg-primary-300 rounded-[67px]">
-                      <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm text-center tracking-[0] leading-[23px] whitespace-nowrap">
+                      <span className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-xs lg:text-sm text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
                         6 months
                       </span>
                     </span>
                   </div>
 
                   <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
-                    <h3 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-lg tracking-[0] leading-[23px]">
+                    <h3 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-base lg:text-lg tracking-[0] leading-[20px] lg:leading-[23px]">
                       GrowthLab Inc.
                     </h3>
 
@@ -225,7 +227,7 @@ export const CaseStudies: React.FC = () => {
                         <h4 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-800 text-base tracking-[0] leading-[23px]">
                           Challenege
                         </h4>
-                        <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-sm tracking-[0] leading-[23px]">
+                        <p className="relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-xs lg:text-sm tracking-[0] leading-[16px] lg:leading-[23px]">
                           Struggling to compete with larger brands
                         </p>
                       </div>
@@ -234,7 +236,7 @@ export const CaseStudies: React.FC = () => {
                         <h4 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-800 text-base tracking-[0] leading-[23px]">
                           Solution
                         </h4>
-                        <p className="relative w-[491px] [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-sm tracking-[0] leading-[23px]">
+                        <p className="relative w-full lg:w-[491px] [font-family:'Urbanist',Helvetica] font-normal text-grey-400 text-xs lg:text-sm tracking-[0] leading-[16px] lg:leading-[23px]">
                           Targeted content campaigns focusing on long-tail
                           keywords and customer success stories
                         </p>
@@ -244,11 +246,11 @@ export const CaseStudies: React.FC = () => {
                 </div>
 
                 {/* Metrics Grid */}
-                <div className="flex flex-wrap items-center justify-center gap-[24px_89px] px-[68px] py-4 relative self-stretch w-full flex-[0_0_auto] rounded-[13px] border border-solid border-grey-50">
+                <div className="grid grid-cols-2 lg:flex lg:flex-wrap items-center justify-center gap-4 lg:gap-[24px_89px] px-4 lg:px-[68px] py-4 relative self-stretch w-full flex-[0_0_auto] rounded-[10px] lg:rounded-[13px] border border-solid border-grey-50">
                   {metricsData.map((metric, index) => (
                     <div
                       key={index}
-                      className="flex flex-col w-[125px] items-center gap-3.5 relative"
+                      className="flex flex-col w-full lg:w-[125px] items-center gap-2 lg:gap-3.5 relative"
                     >
                       <div
                         className={`inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] ${
@@ -263,17 +265,11 @@ export const CaseStudies: React.FC = () => {
                       </div>
 
                       <div className="flex flex-col items-center gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="self-stretch mt-[-0.96px] font-medium text-neutral-800 text-sm text-center leading-5 relative [font-family:'Urbanist',Helvetica] tracking-[0]">
+                        <div className="self-stretch mt-[-0.96px] font-medium text-neutral-800 text-xs lg:text-sm text-center leading-4 lg:leading-5 relative [font-family:'Urbanist',Helvetica] tracking-[0]">
                           {metric.value}
                         </div>
                         <div
-                          className={`relative ${
-                            index === 1
-                              ? "w-[132px] ml-[-3.50px] mr-[-3.50px]"
-                              : index === 2
-                              ? "w-[130px] ml-[-2.50px] mr-[-2.50px]"
-                              : "self-stretch"
-                          } [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-xs text-center tracking-[0] leading-[18px]`}
+                          className={`relative self-stretch [font-family:'Urbanist',Helvetica] font-normal text-grey-500 text-[10px] lg:text-xs text-center tracking-[0] leading-[14px] lg:leading-[18px]`}
                         >
                           {metric.label}
                         </div>
@@ -282,14 +278,14 @@ export const CaseStudies: React.FC = () => {
                   ))}
                 </div>
 
-                <button className="all-[unset] box-border flex w-[227px] h-[50px] justify-center gap-[7px] px-[19px] py-2.5 bg-grey-50 rounded-[33px] border border-solid border-grey-200 items-center relative hover:bg-grey-75 focus:outline-2 focus:outline-primary-300 transition-colors">
+                <button className="all-[unset] box-border flex w-full lg:w-[227px] h-12 lg:h-[50px] justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 bg-grey-50 rounded-[28px] lg:rounded-[33px] border border-solid border-grey-200 items-center relative hover:bg-grey-75 focus:outline-2 focus:outline-primary-300 transition-colors">
                   <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
                     Read Full Case Study
                   </span>
                   <img
                     className="relative w-5 h-5"
                     alt="Arrow right"
-                    src="/SEO/ca/arrow-right.svg"
+                    src="/Home-Page/ca/arrow-right.svg"
                   />
                 </button>
               </div>

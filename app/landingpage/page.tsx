@@ -15,17 +15,17 @@ import { FAQSection } from "@components/Landing-Page/FAQSection";
 export default function Home() {
   return (
     <main className="flex flex-col items-center pb-8 lg:pb-[132px] bg-white gap-8 lg:gap-[132px]">
-      <section className="relative w-full h-auto lg:h-[960px] bg-neutral-900">
+      <section className="relative w-full h-auto bg-neutral-900 ">
         <HeroSection />
       </section>
-      <section className="relative w-full h-auto lg:h-[601px] px-4 lg:px-[157px] bg-white">
+      <section className="relative max-w-[1128px] mx-auto w-full h-auto lg:h-[601px] px-4  bg-white">
         <OverviewSection />
       </section>
 
       {/* <section className="relative w-full h-[1870px]">
         <GoogleFeatures />
       </section> */}
-      <section className="relative w-full h-auto lg:h-[1161px] bg-white px-4 lg:px-[157px]">
+      <section className="relative max-w-[1440px] mx-auto w-full h-auto lg:h-[1161px] bg-white px-4 lg:px-[157px]">
         <LPServices />
       </section>
       <section className="relative w-full h-auto lg:h-[1046px] bg-neutral-900 px-4 lg:px-[156px]">

@@ -42,11 +42,11 @@ export const ProcessSection: React.FC = () => {
 
     return (
         <section
-            className="relative w-full h-auto lg:h-[840px] bg-neutral-900 overflow-hidden"
+            className="relative w-full bg-neutral-900 overflow-hidden"
             role="region"
             aria-labelledby="process-section-heading"
         >
-            <div className="relative w-full max-w-[1780px] h-auto lg:h-[670px] lg:top-[85px] lg:left-[-172px] mx-auto lg:mx-0">
+            <div className="relative w-full mx-auto px-4 md:px-8 lg:px-0">
                 <div
                     className="hidden lg:block top-44 left-[1316px] absolute w-[464px] h-[403px] bg-[#2e97ffa1] rounded-[232px/201.63px] blur-[365.85px]"
                     aria-hidden="true"
@@ -57,8 +57,8 @@ export const ProcessSection: React.FC = () => {
                     aria-hidden="true"
                 />
 
-                <div className="flex flex-col w-full max-w-[1120px] items-center gap-8 lg:gap-[50px] relative lg:absolute lg:top-0 lg:left-[332px] px-4 lg:px-0 py-8 lg:py-0">
-                    <header className="flex flex-col w-full max-w-[552px] items-center justify-center gap-4 relative flex-[0_0_auto]">
+                <div className="flex flex-col items-center gap-8 lg:gap-[50px] w-full py-8 lg:py-12">
+                    <header className="flex flex-col items-center justify-center gap-4 w-full max-w-[552px]">
                         <div className="w-full max-w-[203px] px-2.5 py-[5px] bg-primary-500 flex items-center justify-center gap-1.5 relative flex-[0_0_auto] rounded-[45px]">
                             <img
                                 className="relative w-[15px] h-[15px]"
@@ -88,7 +88,7 @@ export const ProcessSection: React.FC = () => {
                     </header>
 
                     <div
-                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start gap-6 lg:gap-[69px_164px] relative self-stretch w-full flex-[0_0_auto]"
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full max-w-[1120px] px-4 lg:px-0"
                         role="list"
                     >
                         {statsData.map((stat, index) => (
@@ -121,4 +121,3 @@ export const ProcessSection: React.FC = () => {
         </section>
     );
 };
-

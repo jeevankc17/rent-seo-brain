@@ -65,36 +65,36 @@ export const ToolsSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#a2d1ff66] overflow-hidden py-8 lg:py-16">
-      <div className="flex flex-col items-center gap-3 max-w-2xl mx-auto px-4 lg:gap-4 lg:px-0">
-        <div className="w-full max-w-[238px] justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[45px] border border-solid border-secondary-300 flex items-center">
-          <div className="flex w-full max-w-[222px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[45px]">
-            <img
-              className="relative w-3 h-3 lg:w-[15px] lg:h-[15px]"
-              alt="Stars"
-              src="/SEO/ca/stars-2.svg"
-            />
+    <section className="relative w-full bg-white">
+      <div className="max-w-[1128px] mx-auto px-4 lg:px-0">
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-full max-w-[238px] justify-center gap-1.5 px-0 py-[5px] rounded-[45px] border border-solid border-secondary-300 flex items-center">
+            <div className="flex w-full max-w-[222px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[45px]">
+              <img
+                className="relative w-3 h-3 lg:w-[15px] lg:h-[15px]"
+                alt="Stars"
+                src="/SEO/ca/stars-2.svg"
+              />
 
-            <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-xs tracking-[0] leading-[20px] whitespace-nowrap lg:text-sm lg:leading-[23px]">
-              We Don&apos;t Guess, We Use Data.
-            </p>
+              <p className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-xs tracking-[0] leading-[20px] whitespace-nowrap lg:text-sm lg:leading-[23px]">
+                We Don&apos;t Guess, We Use Data.
+              </p>
+            </div>
           </div>
+
+          <header className="flex flex-col items-center gap-4 w-full">
+            <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-xl text-center tracking-[0] leading-[24px] md:text-3xl md:leading-[36px] lg:text-[50px] lg:leading-[57px]">
+              Tools Behind Our Performance
+            </h2>
+
+            <p className="relative w-full max-w-[565px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-200 text-sm text-center tracking-[0] leading-[20px] lg:text-base lg:leading-[23px]">
+              We use industry-leading tools to plan smarter, optimize faster, and
+              deliver real results.
+            </p>
+          </header>
         </div>
 
-        <header className="flex flex-col h-auto items-center gap-3 relative self-stretch w-full lg:h-44 lg:gap-4">
-          <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-xl text-center tracking-[0] leading-[24px] md:text-3xl md:leading-[36px] lg:text-[50px] lg:leading-[57px]">
-            Tools Behind Our Performance
-          </h2>
-
-          <p className="relative w-full max-w-[565px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-200 text-sm text-center tracking-[0] leading-[20px] lg:text-base lg:leading-[23px]">
-            We use industry-leading tools to plan smarter, optimize faster, and
-            deliver real results.
-          </p>
-        </header>
-      </div>
-
-      <div className="w-full flex justify-center mt-8 lg:mt-16">
-        <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 w-full max-w-7xl px-4 lg:gap-x-14 lg:gap-y-8">
+        <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-[74px_55px] w-full mt-8 lg:mt-12">
           {toolsData.map((tool) => (
             <div
               key={tool.id}

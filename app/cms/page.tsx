@@ -32,8 +32,10 @@ export default function Home() {
         <CMSImpact />
       </section>
 
-      <section className="relative bg-neutral-900 w-full py-8 px-4 lg:py-[106px] lg:px-[266.5px] hidden sm:block">
-        <IdeasToContent />
+      <section className="relative bg-neutral-900 w-full py-8 px-4 lg:py-[106px] lg:px-[266.5px] sm:block">
+        <div className="flex justify-center">
+          <IdeasToContent />
+        </div>
       </section>
       <section className="relative w-full h-auto min-h-[500px] md:min-h-[800px] lg:h-[1200px]">
         <ContentServiceSection />

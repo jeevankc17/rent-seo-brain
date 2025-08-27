@@ -11,11 +11,15 @@ export default function Home() {
       <section className="relative w-full bg-neutral-900">
         <HeroSection />
       </section>
-      <section className="relative w-full px-4 md:px-8 lg:px-[156px] max-w-[2000px] bg-white">
-        <TestimonialsSection />
+      <section className="relative w-full bg-white">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0">
+          <TestimonialsSection />
+        </div>
       </section>
-      <section className="relative w-full px-4 md:px-8 lg:px-[156px] max-w-[2000px] bg-white">
-        <Principles />
+      <section className="relative w-full bg-white">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0">
+          <Principles />
+        </div>
       </section>
       <section className="relative w-full px-4 md:px-8 lg:px-[156px] max-w-[2000px] bg-white">
         <TeamSection />

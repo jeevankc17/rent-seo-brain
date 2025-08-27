@@ -18,51 +18,79 @@ import HaveQuestions from "@components/Home-Page/HaveQuestions";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col items-center gap-8 pb-8 lg:gap-[132px] lg:pb-[132px] bg-[#eeeeee]">
+    <main className="flex flex-col items-center bg-[#eeeeee] gap-8 md:gap-16 lg:gap-[132px] pb-8 md:pb-16 lg:pb-[132px] w-full mx-auto">
       <section className="relative w-full h-auto lg:h-[922px]">
         <HeroSection />
       </section>
-      <section className="relative w-full bg-grey-100 lg:px-[156px]">
-        <HomePageFeatures />
+      <section className="relative w-full bg-grey-100">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <HomePageFeatures />
+        </div>
       </section>
-      <section className="relative bg-grey-100 h-auto w-full px-4 lg:h-[525px] lg:px-[157px]">
-        <Proposition />
+      <section className="relative w-full bg-grey-100">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <Proposition />
+        </div>
       </section>
-      <section className="relative bg-grey-100 w-full ">
-        <DeepDive />
+      <section className="relative w-full bg-grey-100">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <DeepDive />
+        </div>
       </section>
-      <section className="relative bg-grey-100 w-full px-4 lg:px-[156px]">
-        <CoreServicesSection />
+      <section className="relative w-full bg-grey-100">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <CoreServicesSection />
+        </div>
       </section>
-      <section className="relative bg-grey-100 w-full px-4 lg:px-[156px]">
-        <KeyMetricsSection />
+      <section className="relative w-full bg-grey-100">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <KeyMetricsSection />
+        </div>
       </section>
-      <section className="relative bg-neutral-900 w-full py-8 px-4 lg:py-[106px] lg:px-[266.5px] hidden sm:block">
-        <IdeasToContent />
+      <section className="relative w-full bg-grey-100 hidden sm:block">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <IdeasToContent />
+        </div>
       </section>
-      <section className="relative w-full bg-grey-100 px-4 lg:px-[156px]">
-        <SuccessStoriesSection />
+      <section className="relative w-full bg-grey-100">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <SuccessStoriesSection />
+        </div>
       </section>
-      <section className="relative w-full h-auto lg:h-[519px]">
-        <ToolsSection />
+      <section className="relative w-full bg-[#a2d1ff66]">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <ToolsSection />
+        </div>
       </section>
-      <section className="relative w-full bg-grey-100 px-4 lg:px-[156px]">
-        <StatisticsSection />
+      <section className="relative w-full bg-grey-100">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <StatisticsSection />
+        </div>
       </section>
-      <section className="relative bg-[#eeeeee] w-full px-4 lg:px-[156px]">
-        <LatestBlogsSection />
+      <section className="relative w-full bg-[#eeeeee]">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <LatestBlogsSection />
+        </div>
       </section>
-      <section className="relative bg-grey-100 w-full px-4 lg:px-[156px]">
-        <HaveQuestions />
+      <section className="relative w-full bg-grey-100">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <HaveQuestions />
+        </div>
       </section>
-      <section className="relative w-full bg-neutral-900 ">
-        <CaseStudies />
+      <section className="relative w-full bg-neutral-900">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <CaseStudies />
+        </div>
       </section>
-      <section className="relative bg-grey-100 w-full px-4 lg:px-[156px]">
-        <TestimonialsSection />
+      <section className="relative w-full bg-grey-100">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <TestimonialsSection />
+        </div>
       </section>
-      <section className="relative bg-grey-100 w-full px-4 lg:px-[156px]">
-        <Testimonial />
+      <section className="relative w-full bg-grey-100 hidden lg:block">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <Testimonial />
+        </div>
       </section>
     </main>
   );

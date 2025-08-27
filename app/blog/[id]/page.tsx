@@ -166,8 +166,10 @@ function MainContentSection({ id }: MainContentSectionProps) {
           )}
         </main>
       </article>
-      <section className="relative w-full h-auto lg:h-[560px] px-4 lg:px-[155px]">
-        <BlogSuggestionsSection />
+      <section className="relative w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+          <BlogSuggestionsSection />
+        </div>
       </section>
     </main>
   );

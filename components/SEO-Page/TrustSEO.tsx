@@ -33,7 +33,7 @@ export default function TrustSEO() {
       />
 
       {/* Main content container */}
-      <div className="flex w-full max-w-[1128px] flex-col items-center gap-8 relative mx-auto px-4 lg:gap-[65px] lg:absolute lg:left-[156px] lg:top-[72px] lg:h-[858px] lg:px-0">
+      <div className="flex w-full max-w-[1128px] flex-col items-center gap-8 relative mx-auto px-4 lg:gap-[65px] lg:top-[72px] lg:h-[858px] lg:px-0">
         
         {/* Header section */}
         <div className="flex w-full max-w-[622px] flex-col justify-center items-center gap-3 lg:gap-4">
