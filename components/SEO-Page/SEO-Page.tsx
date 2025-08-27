@@ -11,7 +11,7 @@ import GlobeIcon from "@/public/SEO/SEOPage/Globe.svg";
 const GridBackground = () => {
   return (
     <div
-      className="absolute inset-0 w-full h-full overflow-hidden transition-transform duration-300 ease-out opacity-50"
+      className=" hidden lg:block absolute inset-0 w-full h-full overflow-hidden transition-transform duration-300 ease-out opacity-50"
       style={{
         backgroundImage: `
           linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
@@ -55,10 +55,10 @@ export default function SEOPage() {
       {/* <div className="absolute right-[20px] lg:right-[135px] top-[100px] lg:top-[131px] w-[400px] lg:w-[790px] h-[400px] lg:h-[790px] rounded-full bg-blue-500/[0.02] blur-[15px] lg:blur-[25px]" /> */}
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-3 px-4 sm:px-8 lg:px-[157px]  lg:pt-[128px] lg:pb-[167px]  min-h-screen">
-        <div className="flex w-full lg:w-[552px] flex-col items-start lg:items-end gap-12 lg:gap-20 shrink-0">
+      <div className="relative flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-3 px-4 sm:px-8 lg:px-[157px] pt-8 pb-8 lg:pt-[128px] lg:pb-[167px] min-h-screen">
+        <div className="flex w-full lg:w-[552px] flex-col items-start lg:items-end gap-6 lg:gap-20 shrink-0">
           {/* Header Section */}
-          <div className="flex flex-col justify-center items-start gap-6 lg:gap-10 w-full">
+          <div className="flex flex-col justify-center items-start gap-4 lg:gap-10 w-full">
             <div className="flex flex-col justify-center items-start gap-4 lg:gap-5 w-full">
               {/* Attention Badge */}
               <div className="flex p-[5px] items-center gap-2 lg:gap-[9px] rounded-[45px] border border-primary-75 w-full sm:w-auto">
@@ -75,7 +75,7 @@ export default function SEOPage() {
 
               {/* Main Heading and Description */}
               <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 w-full">
-                <h1 className="w-full text-[28px] sm:text-[36px] lg:text-[50px] font-bold leading-[32px] sm:leading-[40px] lg:leading-[57px] font-sans">
+                <h1 className="w-full text-xl sm:text-2xl md:text-3xl lg:text-[50px] font-bold leading-tight sm:leading-[40px] lg:leading-[57px] font-sans">
                   <span className="text-white">Smarter SEO for </span>
                   <span className="text-primary-300">
                     Real Business Growth.
@@ -237,10 +237,10 @@ export default function SEOPage() {
         </div>
 
         {/* Right Side - Phone Mockup with Floating Elements */}
-        <div className="w-full lg:w-[456px] h-[400px] lg:h-[665px]  shrink-0 relative hidden sm:block">
+        <div className="w-full lg:w-[456px] h-[300px] sm:h-[400px] lg:h-[665px] shrink-0 relative hidden sm:block">
           {/* Main Phone SVG */}
           <svg
-            className="absolute left-[50px] lg:left-[108px] lg:top-[20px] w-[250px] lg:w-[456px] h-[350px] lg:h-[665px]"
+            className="absolute left-[20px] sm:left-[50px] lg:left-[108px] top-0 lg:top-[20px] w-[200px] sm:w-[250px] lg:w-[456px] h-[280px] sm:h-[350px] lg:h-[665px]"
             viewBox="0 0 458 667"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -270,55 +270,55 @@ export default function SEOPage() {
           </svg>
 
           {/* Search Icon - Bottom Left */}
-          <div className="absolute left-[30px] lg:left-[77px] top-[282px] lg:top-[467px] w-[45px] lg:w-[73px] h-[45px] lg:h-[73px] rotate-[-8.637deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
+          <div className="absolute left-[10px] sm:left-[30px] lg:left-[77px] top-[220px] sm:top-[282px] lg:top-[467px] w-[35px] sm:w-[45px] lg:w-[73px] h-[35px] sm:h-[45px] lg:h-[73px] rotate-[-8.637deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
             <Image
               src={SearchIcon}
               alt="Search icon"
-              width={28}
-              height={28}
-              className="lg:w-[43px] lg:h-[43px]"
+              width={20}
+              height={20}
+              className="sm:w-[28px] sm:h-[28px] lg:w-[43px] lg:h-[43px]"
             />
           </div>
 
           {/* Globe Icon - Top Right */}
-          <div className="absolute right-[10px] lg:right-[4px] top-[142px] lg:top-[203px] w-[45px] lg:w-[72px] h-[45px] lg:h-[72px] rotate-[21.087deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
+          <div className="absolute right-[5px] sm:right-[10px] lg:right-[4px] top-[110px] sm:top-[142px] lg:top-[203px] w-[35px] sm:w-[45px] lg:w-[72px] h-[35px] sm:h-[45px] lg:h-[72px] rotate-[21.087deg] rounded-[12px] lg:rounded-[17.033px] bg-gradient-to-b from-primary-300 to-secondary-500 shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
             <Image
               src={GlobeIcon}
               alt="Globe icon"
-              width={28}
-              height={28}
-              className="lg:w-[42px] lg:h-[42px]"
+              width={20}
+              height={20}
+              className="sm:w-[28px] sm:h-[28px] lg:w-[42px] lg:h-[42px]"
             />
           </div>
 
           {/* Top Blue Bubble with Icons */}
-          <div className="absolute left-[120px] lg:left-[251px] top-[82px] lg:top-[82px] w-[120px] lg:w-[181px] h-[60px] lg:h-[92px] rounded-full border border-black bg-primary-200 flex items-center justify-between px-[5px] lg:px-[7px]">
+          <div className="absolute left-[80px] sm:left-[120px] lg:left-[251px] top-[60px] sm:top-[82px] lg:top-[82px] w-[100px] sm:w-[120px] lg:w-[181px] h-[50px] sm:h-[60px] lg:h-[92px] rounded-full border border-black bg-primary-200 flex items-center justify-between px-[5px] lg:px-[7px]">
             {/* Send Icon */}
-            <div className="ml-[8px] lg:ml-[18px]">
+            <div className="ml-[6px] sm:ml-[8px] lg:ml-[18px]">
               <Image
                 src={SendIcon}
                 alt="Send icon"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={24}
+                height={24}
+                className="w-6 h-6 sm:w-8 sm:h-8"
               />
             </div>
 
             {/* Dollar Sign Circle */}
-            <div className="w-[50px] lg:w-[78px] h-[50px] lg:h-[78px] rounded-full bg-white shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
+            <div className="w-[40px] sm:w-[50px] lg:w-[78px] h-[40px] sm:h-[50px] lg:h-[78px] rounded-full bg-white shadow-[0_2px_8px_0_rgba(247,181,13,0.58)] lg:shadow-[0_3.586px_12.371px_0_rgba(247,181,13,0.58)] flex items-center justify-center">
               <Image
                 src={DollarIcon}
                 alt="Dollar sign"
-                width={32}
-                height={32}
-                className="lg:w-[48px] lg:h-[48px]"
+                width={24}
+                height={24}
+                className="sm:w-[32px] sm:h-[32px] lg:w-[48px] lg:h-[48px]"
               />
             </div>
           </div>
 
           {/* Dashed Line */}
           <svg
-            className="absolute left-0 top-[117px] lg:top-[137px] w-[180px] lg:w-[284px] h-[50px] lg:h-[79px]"
+            className="absolute left-0 top-[90px] sm:top-[117px] lg:top-[137px] w-[140px] sm:w-[180px] lg:w-[284px] h-[40px] sm:h-[50px] lg:h-[79px]"
             width="286"
             height="81"
             viewBox="0 0 286 81"

@@ -3,9 +3,9 @@ import React from "react";
 
 export default function SEOService() {
   return (
-    <div className="flex w-full max-w-[1440px] flex-col items-center gap-12 px-4 py-16 mx-auto">
+    <div className="hidden  lg:flex w-full max-w-[1440px] flex-col items-center gap-8 px-4 py-8 mx-auto lg:gap-12 lg:py-16">
       {/* Header Section */}
-      <div className="flex w-full max-w-[565px] flex-col items-center gap-4">
+      <div className="flex w-full max-w-[565px] flex-col items-center gap-3 lg:gap-4">
         {/* Badge */}
         <div className="flex w-fit px-[10px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF]">
           <svg
@@ -20,29 +20,29 @@ export default function SEOService() {
               fill="#1D8FFF"
             />
           </svg>
-          <span className="text-[#1D8FFF] font-urbanist text-[14px] font-medium leading-[23px] capitalize">
+          <span className="text-[#1D8FFF] font-urbanist text-xs font-medium leading-[18px] capitalize sm:text-sm lg:text-[14px] lg:leading-[23px]">
             End-to-end SEO that grows with you.
           </span>
         </div>
 
         {/* Title and Description */}
-        <div className="flex h-[176px] flex-col items-center gap-4 self-stretch">
-          <h2 className="self-stretch text-[#12579C] text-center font-urbanist text-[50px] font-bold leading-[57px]">
+        <div className="flex h-auto flex-col items-center gap-3 self-stretch lg:h-[176px] lg:gap-4">
+          <h2 className="self-stretch text-[#12579C] text-center font-urbanist text-xl font-bold leading-[24px] sm:text-2xl md:text-3xl lg:text-[50px] lg:leading-[57px]">
             SEO Services That Cover Every Angle
           </h2>
-          <p className="w-[565px] text-[#6A7986] text-center font-urbanist text-[16px] font-normal leading-[23px]">
+          <p className="w-full text-[#6A7986] text-center font-urbanist text-sm font-normal leading-[20px] lg:w-[565px] lg:text-[16px] lg:leading-[23px]">
             We offer end-to-end SEO services to boost your visibility and traffic — all tailored to your unique business needs.
           </p>
         </div>
       </div>
 
       {/* Services Grid */}
-      <div className="flex w-full max-w-[1128px] items-start align-content-flex-start gap-6 flex-wrap">
+      <div className="flex w-full max-w-[1128px] items-start align-content-flex-start gap-4 flex-wrap lg:gap-6">
         {/* Local SEO Card */}
-        <div className="flex w-[454px] h-[466px] p-[23px_21px] flex-col items-start gap-[10px] flex-shrink-0 rounded-[18px] border border-[#D2D2D2] bg-white">
-          <div className="flex h-[420px] flex-col items-start gap-[35px] flex-shrink-0 self-stretch">
+        <div className="flex w-full h-auto p-4 flex-col items-start gap-[10px] flex-shrink-0 rounded-[18px] border border-[#D2D2D2] bg-white lg:w-[454px] lg:h-[466px] lg:p-[23px_21px]">
+          <div className="flex h-auto flex-col items-start gap-6 flex-shrink-0 self-stretch lg:h-[420px] lg:gap-[35px]">
             {/* Header */}
-            <div className="flex flex-col items-start gap-[14px] self-stretch">
+            <div className="flex flex-col items-start gap-3 self-stretch lg:gap-[14px]">
               <div className="flex p-[10px] justify-center items-center gap-[10px] rounded-[50px] bg-[#1D8FFF]">
                 <svg
                   width="24"
@@ -68,35 +68,35 @@ export default function SEOService() {
                 </svg>
               </div>
               <div className="flex flex-col items-start gap-2 self-stretch">
-                <h3 className="text-[#12579C] font-urbanist text-[20px] font-bold leading-normal">
+                <h3 className="text-[#12579C] font-urbanist text-lg font-bold leading-normal lg:text-[20px]">
                   Local SEO
                 </h3>
-                <p className="self-stretch text-[#4F6070] font-urbanist text-[14px] font-normal leading-normal">
+                <p className="self-stretch text-[#4F6070] font-urbanist text-sm font-normal leading-normal lg:text-[14px]">
                   Dominate local search results and attract nearby customers to your business.
                 </p>
               </div>
             </div>
 
             {/* Chart Section */}
-            <div className="flex h-[259.75px] p-[16px_15px] flex-col items-start gap-[10px] flex-shrink-0 rounded-[11px] bg-[#FEF4E6]">
-              <div className="flex w-[382px] flex-col justify-center items-center gap-[14px]">
+            <div className="flex h-auto p-4 flex-col items-start gap-[10px] flex-shrink-0 rounded-[11px] bg-[#FEF4E6] lg:h-[259.75px] lg:p-[16px_15px]">
+              <div className="flex w-full flex-col justify-center items-center gap-3 lg:w-[382px] lg:gap-[14px]">
                 <div className="flex flex-col items-center gap-2 self-stretch">
                   <div className="flex justify-between items-center self-stretch">
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-3 rounded-full bg-[#F8A02C]"></div>
-                      <span className="text-[#6A7986] text-center font-urbanist text-[14px] font-normal leading-normal">
+                      <span className="text-[#6A7986] text-center font-urbanist text-xs font-normal leading-normal lg:text-[14px]">
                         Local Rankings
                       </span>
                     </div>
-                    <span className="text-[#6A7986] text-center font-urbanist text-[14px] font-normal leading-normal">
+                    <span className="text-[#6A7986] text-center font-urbanist text-xs font-normal leading-normal lg:text-[14px]">
                       2:23:24
                     </span>
                   </div>
-                  <div className="flex w-[164px] flex-col justify-center items-center gap-[6px]">
-                    <span className="self-stretch text-[#F78C01] text-center font-urbanist text-[16px] font-bold leading-normal">
+                  <div className="flex w-full flex-col justify-center items-center gap-[6px] lg:w-[164px]">
+                    <span className="self-stretch text-[#F78C01] text-center font-urbanist text-sm font-bold leading-normal lg:text-[16px]">
                       3,478
                     </span>
-                    <span className="self-stretch text-black text-center font-urbanist text-[14px] font-normal leading-normal">
+                    <span className="self-stretch text-black text-center font-urbanist text-xs font-normal leading-normal lg:text-[14px]">
                       GMB Views This Month
                     </span>
                   </div>
@@ -203,10 +203,10 @@ export default function SEOService() {
         </div>
 
         {/* Technical SEO Card */}
-        <div className="flex w-[649px] h-[466px] p-[23px_21px] flex-col items-start gap-[10px] flex-shrink-0 rounded-[18px] border border-[#D2D2D2] bg-white">
-          <div className="flex h-[420px] flex-col items-start gap-[35px] flex-shrink-0 self-stretch">
+        <div className="flex w-full h-auto p-4 flex-col items-start gap-[10px] flex-shrink-0 rounded-[18px] border border-[#D2D2D2] bg-white lg:w-[649px] lg:h-[466px] lg:p-[23px_21px]">
+          <div className="flex h-auto flex-col items-start gap-6 flex-shrink-0 self-stretch lg:h-[420px] lg:gap-[35px]">
             {/* Header */}
-            <div className="flex flex-col items-start gap-[14px] self-stretch">
+            <div className="flex flex-col items-start gap-3 self-stretch lg:gap-[14px]">
               <div className="flex p-[10px] justify-center items-center gap-[10px] rounded-[50px] bg-[#1D8FFF]">
                 <svg
                   width="24"
@@ -232,64 +232,64 @@ export default function SEOService() {
                 </svg>
               </div>
               <div className="flex flex-col items-start gap-2 self-stretch">
-                <h3 className="text-[#12579C] font-urbanist text-[20px] font-bold leading-normal">
+                <h3 className="text-[#12579C] font-urbanist text-lg font-bold leading-normal lg:text-[20px]">
                   Technical SEO
                 </h3>
-                <p className="self-stretch text-[#4F6070] font-urbanist text-[14px] font-normal leading-normal">
+                <p className="self-stretch text-[#4F6070] font-urbanist text-sm font-normal leading-normal lg:text-[14px]">
                   Improve site speed, structure, indexing, and crawlability
                 </p>
               </div>
             </div>
 
             {/* Technical SEO Chart */}
-            <div className="w-[607px] h-[278px] flex-shrink-0 rounded-[11px] bg-white shadow-[0_4px_25px_0_rgba(67,162,255,0.15)] relative">
+            <div className="w-full h-auto flex-shrink-0 rounded-[11px] bg-white shadow-[0_4px_25px_0_rgba(67,162,255,0.15)] relative lg:w-[607px] lg:h-[278px]">
               {/* Header */}
-              <div className="absolute left-8 -top-[2px] flex w-[543px] h-[37px] p-[10px_23px] justify-between items-center flex-shrink-0 rounded-[45px] border border-[#C9C9C9] bg-[#FAFAFA]">
+              <div className="absolute left-4 -top-[2px] flex w-[calc(100%-2rem)] h-[37px] p-[10px_15px] justify-between items-center flex-shrink-0 rounded-[45px] border border-[#C9C9C9] bg-[#FAFAFA] lg:left-8 lg:w-[543px] lg:p-[10px_23px]">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-[#F8A02C]"></div>
-                  <span className="text-[#6A7986] text-center font-urbanist text-[14px] font-normal leading-normal">
+                  <span className="text-[#6A7986] text-center font-urbanist text-xs font-normal leading-normal lg:text-[14px]">
                     Local Rankings
                   </span>
                 </div>
-                <span className="text-[#6A7986] text-center font-urbanist text-[14px] font-normal leading-normal">
+                <span className="text-[#6A7986] text-center font-urbanist text-xs font-normal leading-normal lg:text-[14px]">
                   2:23:24
                 </span>
               </div>
 
               {/* Metrics Section */}
-              <div className="absolute left-8 top-12 flex w-[543px] flex-col items-start gap-2 h-[116px]">
+              <div className="absolute left-4 top-12 flex w-[calc(100%-2rem)] flex-col items-start gap-2 h-auto lg:left-8 lg:w-[543px] lg:h-[116px]">
                 <div className="flex justify-between items-center self-stretch">
-                  <span className="text-[#22384C] text-center font-urbanist text-[16px] font-bold leading-normal">
+                  <span className="text-[#22384C] text-center font-urbanist text-sm font-bold leading-normal lg:text-[16px]">
                     PageSpeed Score
                   </span>
                   <div className="flex w-[38px] p-[10px] flex-col justify-center items-center gap-[10px] rounded-full bg-[rgba(29,143,255,0.22)]">
-                    <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-[16px] font-normal leading-normal">
+                    <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-sm font-normal leading-normal lg:text-[16px]">
                       97
                     </span>
                   </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-[6px] self-stretch mt-2">
                   <div className="flex justify-between items-center self-stretch">
-                    <span className="text-[#4F6070] text-center font-urbanist text-[16px] font-bold leading-normal">
+                    <span className="text-[#4F6070] text-center font-urbanist text-sm font-bold leading-normal lg:text-[16px]">
                       LCP
                     </span>
-                    <span className="text-[#4F6070] text-center font-urbanist text-[16px] font-bold leading-normal">
+                    <span className="text-[#4F6070] text-center font-urbanist text-sm font-bold leading-normal lg:text-[16px]">
                       0.8s
                     </span>
                   </div>
                   <div className="flex justify-between items-center self-stretch">
-                    <span className="text-[#4F6070] text-center font-urbanist text-[16px] font-bold leading-normal">
+                    <span className="text-[#4F6070] text-center font-urbanist text-sm font-bold leading-normal lg:text-[16px]">
                       FID
                     </span>
-                    <span className="text-[#4F6070] text-center font-urbanist text-[16px] font-bold leading-normal">
+                    <span className="text-[#4F6070] text-center font-urbanist text-sm font-bold leading-normal lg:text-[16px]">
                       81ms
                     </span>
                   </div>
                   <div className="flex justify-between items-center self-stretch">
-                    <span className="text-[#4F6070] text-center font-urbanist text-[16px] font-bold leading-normal">
+                    <span className="text-[#4F6070] text-center font-urbanist text-sm font-bold leading-normal lg:text-[16px]">
                       CLS
                     </span>
-                    <span className="text-[#4F6070] text-center font-urbanist text-[16px] font-bold leading-normal">
+                    <span className="text-[#4F6070] text-center font-urbanist text-sm font-bold leading-normal lg:text-[16px]">
                       0.05
                     </span>
                   </div>
@@ -297,11 +297,11 @@ export default function SEOService() {
               </div>
 
               {/* Technical Health Button */}
-              <div className="absolute left-8 bottom-3 flex w-[543px] p-[14px_119px] flex-col items-center gap-1 rounded-[12px] bg-[#43A2FF] shadow-[0_4px_17.7px_0_rgba(67,162,255,0.15)] h-[71px]">
-                <span className="self-stretch text-white text-center font-urbanist text-[18px] font-bold leading-normal">
+              <div className="absolute left-4 bottom-3 flex w-[calc(100%-2rem)] p-[14px_20px] flex-col items-center gap-1 rounded-[12px] bg-[#43A2FF] shadow-[0_4px_17.7px_0_rgba(67,162,255,0.15)] h-auto lg:left-8 lg:w-[543px] lg:p-[14px_119px] lg:h-[71px]">
+                <span className="self-stretch text-white text-center font-urbanist text-base font-bold leading-normal lg:text-[18px]">
                   81%
                 </span>
-                <span className="self-stretch text-[#E9E9E9] text-center font-urbanist text-[14px] font-normal leading-normal">
+                <span className="self-stretch text-[#E9E9E9] text-center font-urbanist text-sm font-normal leading-normal lg:text-[14px]">
                   Technical Health
                 </span>
               </div>
@@ -310,10 +310,10 @@ export default function SEOService() {
         </div>
 
         {/* On-page SEO Card */}
-        <div className="flex w-[552px] h-[466px] p-[23px_21px] flex-col items-start gap-[10px] flex-shrink-0 rounded-[18px] border border-[#D2D2D2] bg-white">
-          <div className="flex h-[420px] flex-col items-start gap-[34px] flex-shrink-0 self-stretch">
+        <div className="flex w-full h-auto p-4 flex-col items-start gap-[10px] flex-shrink-0 rounded-[18px] border border-[#D2D2D2] bg-white lg:w-[552px] lg:h-[466px] lg:p-[23px_21px]">
+          <div className="flex h-auto flex-col items-start gap-6 flex-shrink-0 self-stretch lg:h-[420px] lg:gap-[34px]">
             {/* Header */}
-            <div className="flex flex-col items-start gap-[14px] self-stretch">
+            <div className="flex flex-col items-start gap-3 self-stretch lg:gap-[14px]">
               <div className="flex p-[10px] justify-center items-center gap-[10px] rounded-[50px] bg-[#1D8FFF]">
                 <svg
                   width="24"
@@ -339,35 +339,35 @@ export default function SEOService() {
                 </svg>
               </div>
               <div className="flex flex-col items-start gap-2 self-stretch">
-                <h3 className="text-[#12579C] font-urbanist text-[20px] font-bold leading-normal">
+                <h3 className="text-[#12579C] font-urbanist text-lg font-bold leading-normal lg:text-[20px]">
                   On-page SEO
                 </h3>
-                <p className="self-stretch text-[#4F6070] font-urbanist text-[14px] font-normal leading-normal">
+                <p className="self-stretch text-[#4F6070] font-urbanist text-sm font-normal leading-normal lg:text-[14px]">
                   Optimize content, keywords, and internal linking
                 </p>
               </div>
             </div>
 
             {/* Content Optimization */}
-            <div className="flex w-[510px] h-[276px] p-[24px_15px] flex-col items-center gap-5 flex-shrink-0 rounded-[11px] bg-[rgba(244,244,244,0.50)]">
-              <div className="flex w-[455px] h-[17px] justify-between items-center flex-shrink-0">
+            <div className="flex w-full h-auto p-4 flex-col items-center gap-4 flex-shrink-0 rounded-[11px] bg-[rgba(244,244,244,0.50)] lg:w-[510px] lg:h-[276px] lg:p-[24px_15px] lg:gap-5">
+              <div className="flex w-full h-[17px] justify-between items-center flex-shrink-0 lg:w-[455px]">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-[#1D8FFF]"></div>
-                  <span className="text-[#6A7986] text-center font-urbanist text-[14px] font-normal leading-normal">
+                  <span className="text-[#6A7986] text-center font-urbanist text-xs font-normal leading-normal lg:text-[14px]">
                     Content Optimization
                   </span>
                 </div>
-                <span className="text-[#6A7986] text-center font-urbanist text-[14px] font-normal leading-normal">
+                <span className="text-[#6A7986] text-center font-urbanist text-xs font-normal leading-normal lg:text-[14px]">
                   2:23:24AM
                 </span>
               </div>
 
               {/* Content Quality Score */}
-              <div className="flex p-[14px_119px] flex-col items-center gap-1 self-stretch rounded-[12px] border border-[#1D8FFF] bg-[#E8F4FF]">
-                <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-[18px] font-bold leading-normal">
+              <div className="flex p-[14px_20px] flex-col items-center gap-1 self-stretch rounded-[12px] border border-[#1D8FFF] bg-[#E8F4FF] lg:p-[14px_119px]">
+                <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-base font-bold leading-normal lg:text-[18px]">
                   100%
                 </span>
-                <span className="self-stretch text-[#7B7B7B] text-center font-urbanist text-[14px] font-normal leading-normal">
+                <span className="self-stretch text-[#7B7B7B] text-center font-urbanist text-sm font-normal leading-normal lg:text-[14px]">
                   Content Quality Score
                 </span>
               </div>
@@ -392,18 +392,18 @@ export default function SEOService() {
               {/* Stats */}
               <div className="flex justify-between items-center self-stretch">
                 <div className="flex w-[94px] flex-col justify-center items-center gap-2">
-                  <span className="self-stretch text-[#405364] text-center font-urbanist text-[18px] font-normal leading-[16px]">
+                  <span className="self-stretch text-[#405364] text-center font-urbanist text-base font-normal leading-[16px] lg:text-[18px]">
                     5.2%
                   </span>
-                  <span className="self-stretch text-[#405364] text-center font-urbanist text-[14px] font-normal leading-[16px]">
+                  <span className="self-stretch text-[#405364] text-center font-urbanist text-sm font-normal leading-[16px] lg:text-[14px]">
                     Conversion
                   </span>
                 </div>
                 <div className="flex w-[84px] flex-col justify-center items-center gap-2">
-                  <span className="self-stretch text-[#405364] text-center font-urbanist text-[18px] font-normal leading-[16px]">
+                  <span className="self-stretch text-[#405364] text-center font-urbanist text-base font-normal leading-[16px] lg:text-[18px]">
                     137
                   </span>
-                  <span className="w-[115px] text-[#405364] text-center font-urbanist text-[14px] font-normal leading-[16px]">
+                  <span className="w-full text-[#405364] text-center font-urbanist text-sm font-normal leading-[16px] lg:w-[115px] lg:text-[14px]">
                     Sales Today
                   </span>
                 </div>
@@ -413,10 +413,10 @@ export default function SEOService() {
         </div>
 
         {/* Off-page SEO Card */}
-        <div className="flex w-[552px] h-[466px] p-[23px_21px] flex-col items-start gap-[10px] flex-shrink-0 rounded-[18px] border border-[#D2D2D2] bg-[#E8F4FF]">
-          <div className="flex h-[420px] flex-col items-start gap-[34px] flex-shrink-0 self-stretch">
+        <div className="flex w-full h-auto p-4 flex-col items-start gap-[10px] flex-shrink-0 rounded-[18px] border border-[#D2D2D2] bg-[#E8F4FF] lg:w-[552px] lg:h-[466px] lg:p-[23px_21px]">
+          <div className="flex h-auto flex-col items-start gap-6 flex-shrink-0 self-stretch lg:h-[420px] lg:gap-[34px]">
             {/* Header */}
-            <div className="flex flex-col items-start gap-[14px] self-stretch">
+            <div className="flex flex-col items-start gap-3 self-stretch lg:gap-[14px]">
               <div className="flex p-[10px] justify-center items-center gap-[10px] rounded-[50px] bg-[#1D8FFF]">
                 <svg
                   width="24"
@@ -437,24 +437,24 @@ export default function SEOService() {
                 </svg>
               </div>
               <div className="flex flex-col items-start gap-2 self-stretch">
-                <h3 className="text-[#12579C] font-urbanist text-[20px] font-bold leading-normal">
+                <h3 className="text-[#12579C] font-urbanist text-lg font-bold leading-normal lg:text-[20px]">
                   Off-page SEO
                 </h3>
-                <p className="self-stretch text-[#4F6070] font-urbanist text-[14px] font-normal leading-normal">
+                <p className="self-stretch text-[#4F6070] font-urbanist text-sm font-normal leading-normal lg:text-[14px]">
                   Build high-quality backlinks and online authority tagline
                 </p>
               </div>
             </div>
 
             {/* Domain Authority Card */}
-            <div className="flex w-[510px] p-[14px_27px] flex-col items-start gap-[10px] rounded-[11px] border border-[#E9E9E9] bg-white">
+            <div className="flex w-full p-4 flex-col items-start gap-[10px] rounded-[11px] border border-[#E9E9E9] bg-white lg:w-[510px] lg:p-[14px_27px]">
               <div className="flex flex-col items-center gap-[5px] self-stretch">
                 <div className="flex flex-col justify-center items-center gap-[14px] self-stretch">
                   <div className="flex p-[0_8px] flex-col items-start gap-[9px] self-stretch">
-                    <span className="self-stretch text-[#22384C] font-urbanist text-[14px] font-normal leading-normal">
+                    <span className="self-stretch text-[#22384C] font-urbanist text-sm font-normal leading-normal lg:text-[14px]">
                       DA 60
                     </span>
-                    <span className="self-stretch text-[#22384C] font-urbanist text-[14px] font-normal leading-normal">
+                    <span className="self-stretch text-[#22384C] font-urbanist text-sm font-normal leading-normal lg:text-[14px]">
                       Domain Authority
                     </span>
                   </div>
@@ -559,18 +559,18 @@ export default function SEOService() {
                 {/* Stats */}
                 <div className="flex p-[0_15px] justify-between items-center self-stretch rounded-[12px]">
                   <div className="flex w-[94px] flex-col justify-center items-center gap-2">
-                    <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-[18px] font-normal leading-[16px]">
+                    <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-base font-normal leading-[16px] lg:text-[18px]">
                       5.2%
                     </span>
-                    <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-[14px] font-normal leading-[16px]">
+                    <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-sm font-normal leading-[16px] lg:text-[14px]">
                       Conversion
                     </span>
                   </div>
                   <div className="flex w-[84px] flex-col justify-center items-center gap-2">
-                    <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-[18px] font-normal leading-[16px]">
+                    <span className="self-stretch text-[#1D8FFF] text-center font-urbanist text-base font-normal leading-[16px] lg:text-[18px]">
                       137
                     </span>
-                    <span className="w-[115px] text-[#1D8FFF] text-center font-urbanist text-[14px] font-normal leading-[16px]">
+                    <span className="w-full text-[#1D8FFF] text-center font-urbanist text-sm font-normal leading-[16px] lg:w-[115px] lg:text-[14px]">
                       Sales Today
                     </span>
                   </div>
@@ -582,13 +582,14 @@ export default function SEOService() {
       </div>
 
       {/* CTA Section */}
-      <div className="flex justify-center items-center gap-[9px] self-stretch">
+      <div className="flex flex-col justify-center items-center gap-4 self-stretch lg:flex-row lg:gap-[9px]">
         <svg
-          width="459"
+          width="200"
           height="2"
           viewBox="0 0 459 2"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="hidden lg:block lg:w-[459px]"
         >
           <path
             d="M0 1H459"
@@ -596,10 +597,10 @@ export default function SEOService() {
             strokeDasharray="9 9"
           />
         </svg>
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex flex-col justify-center items-center gap-4 lg:flex-row lg:gap-6">
           {/* Primary CTA Button */}
-          <button className="flex w-[246px] h-[50px] p-[0_3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-            <span className="text-white text-center font-urbanist text-[16px] font-normal leading-[23px] capitalize">
+          <button className="flex w-full h-[50px] p-[0_3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] lg:w-[246px]">
+            <span className="text-white text-center font-urbanist text-sm font-normal leading-[20px] capitalize lg:text-[16px] lg:leading-[23px]">
               Start Your SEO Journey
             </span>
             <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
@@ -629,8 +630,8 @@ export default function SEOService() {
           </button>
 
           {/* Secondary CTA Button */}
-          <button className="flex w-[204px] h-[50px] p-[10px_19px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA]">
-            <span className="text-[#091E42] font-urbanist text-[16px] font-normal leading-[100%] capitalize">
+          <button className="flex w-full h-[50px] p-[10px_19px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA] lg:w-[204px]">
+            <span className="text-[#091E42] font-urbanist text-sm font-normal leading-[100%] capitalize lg:text-[16px]">
               See How SEO Works
             </span>
             <svg
@@ -658,11 +659,12 @@ export default function SEOService() {
           </button>
         </div>
         <svg
-          width="459"
+          width="200"
           height="2"
           viewBox="0 0 459 2"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="hidden lg:block lg:w-[459px]"
         >
           <path
             d="M0 1H459"

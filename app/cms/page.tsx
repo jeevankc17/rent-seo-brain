@@ -10,9 +10,9 @@ import ImportanceSection from "@components/CMS/ImportanceSection";
 import CMSImpact from "@components/CMS/CMSImpact";
 import CMSConnect from "@components/CMS/CMSConnect";
 import Banner from "@components/CMS/Banner";
-import { StatsSection } from "@components/CMS/StatsSection";
 import { CMSTestimonial } from "@components/CMS/CMSTestimonial";
 import PowerContent from "@components/CMS/PowerContent";
+import { FAQSection } from "@components/CMS/FAQSection";
 
 export default function Home() {
   return (
@@ -48,7 +48,7 @@ export default function Home() {
         <TechnologyStackSection />
       </section>
       <section className="relative w-full h-auto min-h-[400px] md:min-h-[600px] lg:h-[848px] px-4 md:px-8 lg:px-[156px]">
-        <StatsSection />
+        <FAQSection />
       </section>
       <section className="relative w-full px-4 md:px-8 lg:px-[156px]">
         <CMSTestimonial />

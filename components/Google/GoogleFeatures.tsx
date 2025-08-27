@@ -28,7 +28,7 @@ const GoogleFeatures = () => {
         </div>
 
         {/* Main Title and Subtitle */}
-        <div className="flex h-[176px] flex-col justify-center items-center gap-4 self-stretch relative">
+        <div className="flex h-auto lg:h-[176px] flex-col justify-center items-center gap-4 self-stretch relative">
           <h2 className="w-full max-w-[593px] text-[#E8F4FF] text-center font-urbanist text-xl sm:text-2xl md:text-3xl lg:text-[50px] font-bold leading-[24px] sm:leading-[28px] md:leading-[36px] lg:leading-[57px]">
             Our Proven Path to High-Performing Ads
           </h2>
@@ -40,7 +40,7 @@ const GoogleFeatures = () => {
 
       {/* Process Flow Section */}
       <div className="h-auto lg:h-[846px] self-stretch relative">
-        {/* Connecting Lines */}
+        {/* Connecting Lines - Desktop Only */}
         <svg 
           className="hidden lg:block w-[850px] h-[161px] absolute left-[139px] top-[483px]" 
           width="852" 
@@ -151,7 +151,7 @@ const GoogleFeatures = () => {
           </defs>
         </svg>
 
-        {/* Background Numbers */}
+        {/* Background Numbers - Desktop Only */}
         <div className="hidden lg:block absolute left-[107px] top-[17px] w-[74px] h-[23px] text-[rgba(67,162,255,0.15)] font-urbanist text-[200px] font-black leading-[23px]">1</div>
         <div className="hidden lg:block absolute left-[903px] top-[174px] w-[118px] h-[88px] text-[rgba(67,162,255,0.15)] font-urbanist text-[200px] font-black leading-[23px]">2</div>
         <div className="hidden lg:block absolute left-[109px] top-[335px] w-[105px] h-[23px] text-[rgba(67,162,255,0.15)] font-urbanist text-[200px] font-black leading-[23px]">3</div>
@@ -159,8 +159,90 @@ const GoogleFeatures = () => {
         <div className="hidden lg:block absolute left-[122px] top-[657px] w-[118px] h-[23px] text-[rgba(67,162,255,0.15)] font-urbanist text-[200px] font-black leading-[23px]">5</div>
         <div className="hidden lg:block absolute left-[938px] top-[763px] w-[111px] h-[23px] text-[rgba(67,162,255,0.15)] font-urbanist text-[200px] font-black leading-[23px]">6</div>
 
+        {/* Mobile Steps Layout - Centered Vertically */}
+        <div className="flex flex-col lg:hidden items-center gap-8 w-full">
+          {/* Step 1 - Discovery */}
+          <div className="flex w-full max-w-[320px] flex-col items-center gap-4">
+            <div className="flex pr-4 justify-center items-center gap-3 rounded-[35px] border border-[#1D8FFF] bg-[#22384C] w-full">
+              <div className="flex w-10 h-10 flex-col justify-center items-center rounded-full bg-white">
+                <span className="text-[#1D8FFF] text-center font-urbanist text-lg font-normal">1</span>
+              </div>
+              <span className="text-white font-urbanist text-lg font-normal py-2">Discovery</span>
+            </div>
+            <p className="text-[#C1C7CD] text-center font-urbanist text-sm font-normal leading-5">
+              Understand your goals, audience, and competitors to plan the right strategy.
+            </p>
+          </div>
+
+          {/* Step 2 - Keyword Research */}
+          <div className="flex w-full max-w-[320px] flex-col items-center gap-4">
+            <div className="flex pr-4 justify-center items-center gap-3 rounded-[35px] border border-[#1D8FFF] bg-[#22384C] w-full">
+              <div className="flex w-10 h-10 flex-col justify-center items-center rounded-full bg-[#1D8FFF]">
+                <span className="text-white text-center font-urbanist text-lg font-normal">2</span>
+              </div>
+              <span className="text-white font-urbanist text-lg font-normal py-2">Keyword Research</span>
+            </div>
+            <p className="text-[#C1C7CD] text-center font-urbanist text-sm font-normal leading-5">
+              Find high-intent keywords that drive quality traffic and conversions.
+            </p>
+          </div>
+
+          {/* Step 3 - Campaign Setup */}
+          <div className="flex w-full max-w-[320px] flex-col items-center gap-4">
+            <div className="flex pr-4 justify-center items-center gap-3 rounded-[35px] border border-[#1D8FFF] bg-[#22384C] w-full">
+              <div className="flex w-10 h-10 flex-col justify-center items-center rounded-full bg-white">
+                <span className="text-[#1D8FFF] text-center font-urbanist text-lg font-normal">3</span>
+              </div>
+              <span className="text-white font-urbanist text-lg font-normal py-2">Campaign Setup</span>
+            </div>
+            <p className="text-[#C1C7CD] text-center font-urbanist text-sm font-normal leading-5">
+              Create ad groups, write copy, and design creatives for peak performance.
+            </p>
+          </div>
+
+          {/* Step 4 - Launch & Monitor */}
+          <div className="flex w-full max-w-[320px] flex-col items-center gap-4">
+            <div className="flex pr-4 justify-center items-center gap-3 rounded-[35px] border border-[#4F6070] bg-[#22384C] w-full">
+              <div className="flex w-10 h-10 flex-col justify-center items-center rounded-full bg-white">
+                <span className="text-[#1D8FFF] text-center font-urbanist text-lg font-normal">4</span>
+              </div>
+              <span className="text-white font-urbanist text-lg font-normal py-2">Launch & Monitor</span>
+            </div>
+            <p className="text-[#C1C7CD] text-center font-urbanist text-sm font-normal leading-5">
+              Go live and monitor KPIs in real-time for smooth execution.
+            </p>
+          </div>
+
+          {/* Step 5 - Optimization */}
+          <div className="flex w-full max-w-[320px] flex-col items-center gap-4">
+            <div className="flex pr-4 justify-center items-center gap-3 rounded-[35px] border border-[#1D8FFF] bg-[#22384C] w-full">
+              <div className="flex w-10 h-10 flex-col justify-center items-center rounded-full bg-[#1D8FFF]">
+                <span className="text-white text-center font-urbanist text-lg font-normal">5</span>
+              </div>
+              <span className="text-white font-urbanist text-lg font-normal py-2">Optimization</span>
+            </div>
+            <p className="text-[#C1C7CD] text-center font-urbanist text-sm font-normal leading-5">
+              Continuously improve ads with A/B testing and bid adjustments.
+            </p>
+          </div>
+
+          {/* Step 6 - Reporting */}
+          <div className="flex w-full max-w-[320px] flex-col items-center gap-4">
+            <div className="flex pr-4 justify-center items-center gap-3 rounded-[35px] border border-[#1D8FFF] bg-[#22384C] w-full">
+              <div className="flex w-10 h-10 flex-col justify-center items-center rounded-full bg-[#1D8FFF]">
+                <span className="text-white text-center font-urbanist text-lg font-normal">6</span>
+              </div>
+              <span className="text-white font-urbanist text-lg font-normal py-2">Reporting</span>
+            </div>
+            <p className="text-[#C1C7CD] text-center font-urbanist text-sm font-normal leading-5">
+              Get clear, actionable reports to track growth and ROI.
+            </p>
+          </div>
+        </div>
+
+        {/* Desktop Steps Layout - Unchanged */}
         {/* Step 1 - Discovery */}
-        <div className="flex w-full max-w-[205px] flex-col items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-0 lg:top-0 h-auto lg:h-[128px] mb-6 lg:mb-0">
+        <div className="hidden lg:flex w-full max-w-[205px] flex-col items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-0 lg:top-0 h-auto lg:h-[128px] mb-0 lg:mb-0">
           <div className="flex pr-[19px] justify-center items-center gap-[12px] rounded-[35px] border border-[#1D8FFF] bg-[#22384C]">
             <div className="flex w-[41px] h-[41px] p-[11.31px_24.034px] flex-col justify-center items-center gap-[14.138px] rounded-[610.759px] bg-white">
               <span className="w-[9.897px] text-[#1D8FFF] text-center font-urbanist text-[20px] font-normal leading-[32.517px]">1</span>
@@ -173,7 +255,7 @@ const GoogleFeatures = () => {
         </div>
 
         {/* Step 2 - Keyword Research */}
-        <div className="flex w-full max-w-[234px] flex-col items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-[894px] lg:top-[169px] h-auto lg:h-[105px] mb-6 lg:mb-0">
+        <div className="hidden lg:flex w-full max-w-[234px] flex-col items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-[894px] lg:top-[169px] h-auto lg:h-[105px] mb-0 lg:mb-0">
           <div className="flex pr-[19px] justify-center items-center gap-[12px] self-stretch rounded-[35px] border border-[#1D8FFF] bg-[#22384C]">
             <div className="flex w-[41px] h-[41px] p-[11.31px_24.034px] flex-col justify-center items-center gap-[14.138px] rounded-[610.759px] bg-[#1D8FFF]">
               <span className="w-[9.897px] text-white text-center font-urbanist text-[20px] font-normal leading-[32.517px]">2</span>
@@ -186,7 +268,7 @@ const GoogleFeatures = () => {
         </div>
 
         {/* Step 3 - Campaign Setup */}
-        <div className="flex w-full max-w-[222px] flex-col justify-center items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-0 lg:top-[322px] h-auto lg:h-[128px] mb-6 lg:mb-0">
+        <div className="hidden lg:flex w-full max-w-[222px] flex-col justify-center items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-0 lg:top-[322px] h-auto lg:h-[128px] mb-0 lg:mb-0">
           <div className="flex pr-[19px] justify-center items-center gap-[12px] self-stretch rounded-[35px] border border-[#1D8FFF] bg-[#22384C]">
             <div className="flex w-[41px] h-[41px] p-[11.31px_24.034px] flex-col justify-center items-center gap-[14.138px] rounded-[610.759px] bg-white">
               <span className="w-[9.897px] text-[#1D8FFF] text-center font-urbanist text-[20px] font-normal leading-[32.517px]">3</span>
@@ -199,7 +281,7 @@ const GoogleFeatures = () => {
         </div>
 
         {/* Step 4 - Launch & Monitor */}
-        <div className="flex w-full max-w-[226px] flex-col items-center lg:items-end gap-4 lg:gap-[18px] relative lg:absolute lg:left-[903px] lg:top-[472px] h-auto lg:h-[105px] mb-6 lg:mb-0">
+        <div className="hidden lg:flex w-full max-w-[226px] flex-col items-center lg:items-end gap-4 lg:gap-[18px] relative lg:absolute lg:left-[903px] lg:top-[472px] h-auto lg:h-[105px] mb-0 lg:mb-0">
           <div className="flex pr-[19px] justify-center items-center gap-[12px] self-stretch rounded-[35px] border border-[#4F6070] bg-[#22384C]">
             <div className="flex w-[41px] h-[41px] p-[11.31px_24.034px] flex-col justify-center items-center gap-[14.138px] rounded-[610.759px] bg-white">
               <span className="w-[9.897px] text-[#1D8FFF] text-center font-urbanist text-[20px] font-normal leading-[32.517px]">4</span>
@@ -212,7 +294,7 @@ const GoogleFeatures = () => {
         </div>
 
         {/* Step 5 - Optimization */}
-        <div className="flex w-full max-w-[192px] flex-col items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-0 lg:top-[626px] h-auto lg:h-[128px] mb-6 lg:mb-0">
+        <div className="hidden lg:flex w-full max-w-[192px] flex-col items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-0 lg:top-[626px] h-auto lg:h-[128px] mb-0 lg:mb-0">
           <div className="flex pr-[19px] justify-center items-center gap-[12px] rounded-[35px] border border-[#1D8FFF] bg-[#22384C]">
             <div className="flex w-[41px] h-[41px] p-[11.31px_24.034px] flex-col justify-center items-center gap-[14.138px] rounded-[610.759px] bg-[#1D8FFF]">
               <span className="w-[9.897px] text-white text-center font-urbanist text-[20px] font-normal leading-[32.517px]">5</span>
@@ -225,7 +307,7 @@ const GoogleFeatures = () => {
         </div>
 
         {/* Step 6 - Reporting */}
-        <div className="flex w-full max-w-[183px] flex-col items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-[946px] lg:top-[741px] h-auto lg:h-[105px] mb-0">
+        <div className="hidden lg:flex w-full max-w-[183px] flex-col items-center gap-4 lg:gap-[18px] relative lg:absolute lg:left-[946px] lg:top-[741px] h-auto lg:h-[105px] mb-0">
           <div className="flex pr-[19px] justify-center items-center gap-[12px] rounded-[35px] border border-[#1D8FFF] bg-[#22384C]">
             <div className="flex w-[41px] h-[41px] p-[11.31px_24.034px] flex-col justify-center items-center gap-[14.138px] rounded-[610.759px] bg-[#1D8FFF]">
               <span className="w-[9.897px] text-white text-center font-urbanist text-[20px] font-normal leading-[32.517px]">6</span>

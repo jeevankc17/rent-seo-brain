@@ -2,9 +2,9 @@ import React from "react";
 
 const Brief = () => {
   return (
-    <div className="flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-6 px-4 lg:px-0 relative mx-[156px] ">
+    <div className="flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-6 px-4 lg:px-0 relative mx-4 lg:mx-[156px]">
       {/* Left Column */}
-      <div className="flex w-full lg:w-[552px] flex-col items-start gap-[40px] lg:gap-[60px] relative">
+      <div className="flex w-full lg:w-[552px] flex-col items-start gap-6 lg:gap-[60px] relative">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-start gap-4 w-full relative">
           {/* Badge */}
@@ -23,7 +23,7 @@ const Brief = () => {
                   fill="#F78C01"
                 />
               </svg>
-              <div className="text-[#F78C01] font-urbanist text-[12px] sm:text-[14px] font-medium leading-[20px] sm:leading-[23px] capitalize relative whitespace-nowrap">
+              <div className="text-[#F78C01] font-urbanist text-xs sm:text-sm font-medium leading-[20px] sm:leading-[23px] capitalize relative whitespace-nowrap">
                 Your growth starts with a search.
               </div>
             </div>
@@ -31,10 +31,10 @@ const Brief = () => {
 
           {/* Main Content */}
           <div className="flex min-h-[120px] lg:h-[176px] flex-col justify-center items-start gap-4 w-full relative">
-            <div className="w-full text-[#12579C] font-urbanist text-[28px] sm:text-[36px] lg:text-[50px] font-bold leading-[32px] sm:leading-[42px] lg:leading-[57px] relative">
+            <div className="w-full text-[#12579C] font-urbanist text-xl sm:text-2xl md:text-3xl lg:text-[50px] font-bold leading-tight sm:leading-[42px] lg:leading-[57px] relative">
               What SEO Is and Why Your Business Needs It
             </div>
-            <div className="w-full max-w-[565px] text-[#071F36] font-urbanist text-[14px] sm:text-[16px] font-normal leading-[20px] sm:leading-[23px] relative">
+            <div className="w-full max-w-[565px] text-[#071F36] font-urbanist text-sm sm:text-base font-normal leading-[20px] sm:leading-[23px] relative">
               Search Engine Optimization (SEO) is how your business shows up
               when it matters most — right when people are searching for what
               you offer.
@@ -65,7 +65,7 @@ const Brief = () => {
                   />
                 </svg>
               </div>
-              <div className="text-[#071F36] font-urbanist text-[16px] lg:text-[18px] font-medium leading-normal relative">
+              <div className="text-[#071F36] font-urbanist text-sm lg:text-lg font-medium leading-normal relative">
                 Appear at the top when it counts
               </div>
             </div>
@@ -89,7 +89,7 @@ const Brief = () => {
                   />
                 </svg>
               </div>
-              <div className="text-[#071F36] font-urbanist text-[16px] lg:text-[18px] font-medium leading-normal relative">
+              <div className="text-[#071F36] font-urbanist text-sm lg:text-lg font-medium leading-normal relative">
                 Attract high-intent, ready-to-convert visitors
               </div>
             </div>
@@ -113,7 +113,7 @@ const Brief = () => {
                   />
                 </svg>
               </div>
-              <div className="text-[#071F36] font-urbanist text-[16px] lg:text-[18px] font-medium leading-normal relative">
+              <div className="text-[#071F36] font-urbanist text-sm lg:text-lg font-medium leading-normal relative">
                 Build long-term authority and trust online
               </div>
             </div>
@@ -137,7 +137,7 @@ const Brief = () => {
                   />
                 </svg>
               </div>
-              <div className="text-[#071F36] font-urbanist text-[16px] lg:text-[18px] font-medium leading-normal relative">
+              <div className="text-[#071F36] font-urbanist text-sm lg:text-lg font-medium leading-normal relative">
                 Enhance website structure and user experience
               </div>
             </div>
@@ -145,7 +145,7 @@ const Brief = () => {
 
           {/* CTA Button */}
           <div className="flex w-full max-w-[280px] sm:max-w-[243px] h-[50px] p-[0_3px] justify-center sm:justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] relative">
-            <div className="text-white text-center font-urbanist text-[14px] sm:text-[16px] font-medium leading-[20px] sm:leading-[23px] capitalize relative">
+            <div className="text-white text-center font-urbanist text-sm sm:text-base font-medium leading-[20px] sm:leading-[23px] capitalize relative">
               See How SEO Can Help
             </div>
             <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF] relative">
@@ -495,11 +495,11 @@ const Brief = () => {
         {/* Stats Card - Long-term ROI */}
         <div className="absolute left-[50%] lg:left-[360px] top-[20px] lg:top-[-5px] transform -translate-x-1/2 lg:translate-x-0 inline-flex p-[9px_13px] flex-col items-start gap-2 rounded-[5px] bg-white shadow-[0_4px_33px_0_rgba(0,0,0,0.25)] w-auto min-w-[150px] max-w-[180px] h-auto min-h-[79px]">
           <div className="flex flex-col items-start gap-2 relative w-full">
-            <div className="text-[rgba(10,21,25,0.70)] font-urbanist text-[12px] lg:text-[14px] font-medium leading-normal relative whitespace-nowrap">
+            <div className="text-[rgba(10,21,25,0.70)] font-urbanist text-xs lg:text-sm font-medium leading-normal relative whitespace-nowrap">
               Long-term ROI
             </div>
             <div className="flex items-center gap-1 lg:gap-2 relative w-full">
-              <div className="text-[#0A1519] font-urbanist text-[16px] lg:text-[20px] font-semibold leading-normal relative flex-shrink-0">
+              <div className="text-[#0A1519] font-urbanist text-sm lg:text-xl font-semibold leading-normal relative flex-shrink-0">
                 12:1 Return
               </div>
               <div className="flex w-8 lg:w-9 h-8 lg:h-auto p-[4px_6px] lg:p-[6px_8px] justify-center items-center gap-2 rounded-full bg-[#21AA5B] relative flex-shrink-0">
@@ -566,10 +566,10 @@ const Brief = () => {
             </svg>
           </div>
           <div className="flex flex-1 flex-col items-start gap-1 relative">
-            <div className="w-full text-[rgba(10,21,25,0.70)] font-urbanist text-[14px] lg:text-[16px] font-normal leading-[120%] relative">
+            <div className="w-full text-[rgba(10,21,25,0.70)] font-urbanist text-sm lg:text-base font-normal leading-[120%] relative">
               Brand Awareness
             </div>
-            <div className="w-full text-[#0A1519] font-urbanist text-[18px] lg:text-[21px] font-semibold leading-[120%] relative">
+            <div className="w-full text-[#0A1519] font-urbanist text-base lg:text-xl font-semibold leading-[120%] relative">
               +156%
             </div>
           </div>
@@ -577,15 +577,15 @@ const Brief = () => {
       </div>
 
       {/* Mobile Stats Cards - Shown only on mobile */}
-      <div className="flex lg:hidden flex-col sm:flex-row gap-4 w-full justify-center mt-8">
+      <div className="hidden lg:flex flex-col sm:flex-row gap-4 w-full justify-center mt-8">
         {/* Mobile Stats Card - Long-term ROI */}
         <div className="inline-flex p-[9px_13px] flex-col items-start gap-2 rounded-[5px] bg-white shadow-[0_4px_33px_0_rgba(0,0,0,0.25)] w-[161px] h-[79px]">
           <div className="flex flex-col items-start gap-2 relative">
-            <div className="text-[rgba(10,21,25,0.70)] font-urbanist text-[14px] font-medium leading-normal relative">
+            <div className="text-[rgba(10,21,25,0.70)] font-urbanist text-sm font-medium leading-normal relative">
               Long-term ROI
             </div>
             <div className="flex items-center gap-2 relative">
-              <div className="text-[#0A1519] font-urbanist text-[20px] font-semibold leading-normal relative">
+              <div className="text-[#0A1519] font-urbanist text-xl font-semibold leading-normal relative">
                 12:1 Return
               </div>
               <div className="flex w-9 p-[6px_8px] justify-center items-center gap-2 rounded-full bg-[#21AA5B] relative">
@@ -652,10 +652,10 @@ const Brief = () => {
             </svg>
           </div>
           <div className="flex flex-1 flex-col items-start gap-1 relative">
-            <div className="w-full text-[rgba(10,21,25,0.70)] font-urbanist text-[14px] font-normal leading-[120%] relative">
+            <div className="w-full text-[rgba(10,21,25,0.70)] font-urbanist text-sm font-normal leading-[120%] relative">
               Brand Awareness
             </div>
-            <div className="w-full text-[#0A1519] font-urbanist text-[18px] font-semibold leading-[120%] relative">
+            <div className="w-full text-[#0A1519] font-urbanist text-base font-semibold leading-[120%] relative">
               +156%
             </div>
           </div>

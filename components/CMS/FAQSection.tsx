@@ -8,7 +8,7 @@ interface FAQItem {
   isExpanded: boolean;
 }
 
-export const StatsSection: React.FC = () => {
+export const FAQSection: React.FC = () => {
   const [faqItems, setFaqItems] = useState<FAQItem[]>([
     {
       id: 1,

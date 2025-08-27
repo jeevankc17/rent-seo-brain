@@ -68,7 +68,7 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
       <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-[500px] lg:min-h-screen mb-0 lg:mb-[-196px]">
+      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px]  lg:min-h-screen mb-0 lg:mb-[-196px]">
         {/* Header Section */}
         <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-6 lg:gap-11">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-3 lg:gap-5">

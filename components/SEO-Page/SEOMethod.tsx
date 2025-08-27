@@ -3,21 +3,19 @@ import React from "react";
 
 export default function SEOMethod() {
   return (
-    <div className="relative w-full h-[2076px] bg-[#0C0C0F] overflow-hidden">
+    <div className="relative w-full min-h-screen bg-[#0C0C0F] overflow-hidden px-4 py-8 lg:px-0 lg:py-0 lg:h-[2076px]">
       {/* Background blur effect */}
       <div 
-        className="absolute w-[464px] h-[403px] rounded-full blur-[365.84px] opacity-63"
+        className="absolute w-[300px] h-[260px] rounded-full blur-[200px] opacity-63 right-4 top-32 lg:w-[464px] lg:h-[403px] lg:blur-[365.84px] lg:right-[156px] lg:top-[277px]"
         style={{
-          background: 'rgba(47, 152, 255, 0.63)',
-          left: '1144px',
-          top: '277px'
+          background: 'rgba(47, 152, 255, 0.63)'
         }}
       />
 
       {/* Header Section */}
-      <div className="absolute left-[156px] top-[72px] w-[552px] h-[225px] flex flex-col justify-center items-start gap-4">
+      <div className="relative w-full max-w-[552px] mx-auto flex flex-col justify-center items-start gap-4 mb-16 lg:absolute lg:left-[156px] lg:top-[72px] lg:w-[552px] lg:h-[225px] lg:mb-0">
         {/* Badge */}
-        <div className="flex w-[274px] py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] bg-[#12579C]">
+        <div className="flex w-auto py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] bg-[#12579C] lg:w-[274px]">
           <svg 
             width="16" 
             height="15" 
@@ -31,59 +29,59 @@ export default function SEOMethod() {
               fill="#E8F4FF"
             />
           </svg>
-          <div className="text-[#E8F4FF] font-urbanist text-[14px] font-medium leading-[23px]">
+          <div className="text-[#E8F4FF] font-urbanist text-[12px] font-medium leading-[20px] lg:text-[14px] lg:leading-[23px]">
             Smarter steps for stronger rankings.
           </div>
         </div>
 
         {/* Main heading and description */}
-        <div className="flex h-[176px] flex-col justify-center items-start gap-4 w-full">
-          <h1 className="w-[593px] text-[#E8F4FF] font-urbanist text-[50px] font-bold leading-[57px]">
+        <div className="flex h-auto flex-col justify-center items-start gap-4 w-full lg:h-[176px]">
+          <h1 className="w-full text-[#E8F4FF] font-urbanist text-xl font-bold leading-[24px] sm:text-2xl md:text-3xl lg:text-[50px] lg:leading-[57px] lg:w-[593px]">
             The SEO Method That Sets Us Apart
           </h1>
-          <p className="w-full text-[#EBEDEF] font-urbanist text-[16px] font-normal leading-[23px]">
+          <p className="w-full text-[#EBEDEF] font-urbanist text-sm font-normal leading-[20px] lg:text-[16px] lg:leading-[23px]">
             Our approach is transparent, strategic, and results-driven — built to help you climb rankings and stay there.
           </p>
         </div>
       </div>
 
       {/* Step 1 - Initial Consultation */}
-      <div className="absolute left-[777px] top-[361px] w-[507px] h-[235px] flex flex-col items-center gap-[33px]">
-        <div className="h-[157px] w-full relative">
-          <div className="absolute left-[31px] top-[40px] w-[476px] h-[117px] flex flex-col items-start gap-[25px]">
-            <div className="flex flex-col items-start gap-[13px] w-full">
-              <h3 className="w-full text-white font-urbanist text-[24px] font-semibold leading-[23px]">
+      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[777px] lg:top-[361px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
+        <div className="h-auto w-full relative lg:h-[157px]">
+          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[476px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
+            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
+              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
                 Initial Consultation
               </h3>
-              <p className="w-full text-white font-urbanist text-[18px] font-normal leading-[23px]">
+              <p className="w-full text-white font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
                 Understand your goals, challenges, and target audience
               </p>
             </div>
-            <div className="flex items-center gap-[13px] w-full">
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Market Analysis
                 </div>
               </div>
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Vision Allignment
                 </div>
               </div>
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Goal Setting 
                 </div>
               </div>
             </div>
           </div>
           {/* Step number */}
-          <div className="absolute left-0 top-0 w-[74px] h-[23px] text-[200px] font-normal leading-[23px] font-urbanist" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
+          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[74px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
             1
           </div>
           {/* Connecting line */}
           <svg 
-            className="absolute left-[-565px] top-[43px] w-[569px] h-[143px]"
+            className="hidden lg:block absolute left-[-565px] top-[43px] w-[569px] h-[143px]"
             width="571" 
             height="146" 
             viewBox="0 0 571 146" 
@@ -139,7 +137,7 @@ export default function SEOMethod() {
                 </linearGradient>
               </defs>
             </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-[16px] font-medium leading-[100%]">
+            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
               20%
             </div>
           </div>
@@ -147,48 +145,48 @@ export default function SEOMethod() {
       </div>
 
       {/* Step 2 - Comprehensive SEO Audit */}
-      <div className="absolute left-[156px] top-[726px] w-[507px] h-[235px] flex flex-col items-center gap-[33px]">
-        <div className="h-[157px] w-full relative">
-          <div className="absolute left-[31px] top-[40px] w-[487px] h-[117px] flex flex-col items-start gap-[25px]">
-            <div className="flex flex-col items-start gap-[13px] w-full">
-              <h3 className="w-full text-white font-urbanist text-[24px] font-semibold leading-[23px]">
+      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[156px] lg:top-[726px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
+        <div className="h-auto w-full relative lg:h-[157px]">
+          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[487px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
+            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
+              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
                 Comprehensive SEO Audit
               </h3>
-              <p className="w-full text-[#C9C9C9] font-urbanist text-[18px] font-normal leading-[23px]">
+              <p className="w-full text-[#C9C9C9] font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
                 Analyze your website's SEO health and gaps
               </p>
             </div>
-            <div className="flex w-[487px] items-center gap-[13px]">
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px] lg:w-[487px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Technical Audit
                 </div>
               </div>
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Content Analysis
                 </div>
               </div>
-              <div className="flex w-[161px] py-[5px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[161px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Competitor Intelligence
                 </div>
               </div>
             </div>
           </div>
           {/* Step number */}
-          <div className="absolute left-0 top-0 w-[118px] h-[23px] text-[200px] font-normal leading-[23px] font-urbanist" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
+          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[118px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
             2
           </div>
         </div>
         {/* Progress section */}
-        <div className="flex w-[447px] flex-col items-start gap-[13px]">
-          <div className="w-full text-[#8D8D8D] font-urbanist text-[16px] font-medium leading-[100%]">
+        <div className="flex w-full max-w-[447px] flex-col items-start gap-3 lg:w-[447px] lg:gap-[13px]">
+          <div className="w-full text-[#8D8D8D] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
             Journey Process
           </div>
-          <div className="flex items-center gap-[32px] w-full">
+          <div className="flex items-center gap-6 w-full lg:gap-[32px]">
             <svg 
-              className="flex w-[383px] h-[0.473px] flex-col justify-center items-start"
+              className="flex w-[300px] h-[0.473px] flex-col justify-center items-start lg:w-[383px]"
               width="397" 
               height="16" 
               viewBox="0 0 397 16" 
@@ -216,7 +214,7 @@ export default function SEOMethod() {
                 </linearGradient>
               </defs>
             </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-[16px] font-medium leading-[100%]">
+            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
               40%
             </div>
           </div>
@@ -225,7 +223,7 @@ export default function SEOMethod() {
 
       {/* Connecting line for step 2 */}
       <svg 
-        className="absolute left-[215px] top-[916px] w-[533px] h-[157px]"
+        className="hidden lg:block absolute left-[215px] top-[916px] w-[533px] h-[157px]"
         width="536" 
         height="159" 
         viewBox="0 0 536 159" 
@@ -248,48 +246,48 @@ export default function SEOMethod() {
       </svg>
 
       {/* Step 3 - Bespoke Action Plan */}
-      <div className="absolute left-[777px] top-[1019px] w-[507px] h-[235px] flex flex-col items-center gap-[33px]">
-        <div className="h-[157px] w-full relative">
-          <div className="absolute left-[31px] top-[40px] w-[476px] h-[117px] flex flex-col items-start gap-[25px]">
-            <div className="flex flex-col items-start gap-[13px] w-full">
-              <h3 className="w-full text-white font-urbanist text-[24px] font-semibold leading-[23px]">
+      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[777px] lg:top-[1019px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
+        <div className="h-auto w-full relative lg:h-[157px]">
+          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[476px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
+            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
+              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
                 Bespoke Action Plan
               </h3>
-              <p className="w-full text-[#C9C9C9] font-urbanist text-[18px] font-normal leading-[23px]">
+              <p className="w-full text-[#C9C9C9] font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
                 Create a tailored roadmap with clear priorities
               </p>
             </div>
-            <div className="flex items-center gap-[13px] w-full">
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Custom Strategy
                 </div>
               </div>
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Priority Matrix
                 </div>
               </div>
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Timeline Planning
                 </div>
               </div>
             </div>
           </div>
           {/* Step number */}
-          <div className="absolute left-0 top-0 w-[105px] h-[23px] text-[200px] font-normal leading-[23px] font-urbanist" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
+          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[105px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
             3
           </div>
         </div>
         {/* Progress section */}
-        <div className="flex w-[447px] flex-col items-start gap-[13px]">
-          <div className="w-full text-[#8D8D8D] font-urbanist text-[16px] font-medium leading-[100%]">
+        <div className="flex w-full max-w-[447px] flex-col items-start gap-3 lg:w-[447px] lg:gap-[13px]">
+          <div className="w-full text-[#8D8D8D] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
             Journey Process
           </div>
-          <div className="flex items-center gap-[32px] w-full">
+          <div className="flex items-center gap-6 w-full lg:gap-[32px]">
             <svg 
-              className="flex w-[383px] h-[0.473px] flex-col justify-center items-start"
+              className="flex w-[300px] h-[0.473px] flex-col justify-center items-start lg:w-[383px]"
               width="397" 
               height="16" 
               viewBox="0 0 397 16" 
@@ -317,7 +315,7 @@ export default function SEOMethod() {
                 </linearGradient>
               </defs>
             </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-[16px] font-medium leading-[100%]">
+            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
               60%
             </div>
           </div>
@@ -326,7 +324,7 @@ export default function SEOMethod() {
 
       {/* Connecting line for step 3 */}
       <svg 
-        className="absolute left-[291px] top-[1222px] w-[560px] h-[85px]"
+        className="hidden lg:block absolute left-[291px] top-[1222px] w-[560px] h-[85px]"
         width="562" 
         height="87" 
         viewBox="0 0 562 87" 
@@ -349,48 +347,48 @@ export default function SEOMethod() {
       </svg>
 
       {/* Step 4 - Monthly Reporting */}
-      <div className="absolute left-[156px] top-[1372px] w-[507px] h-[235px] flex flex-col items-center gap-[33px]">
-        <div className="h-[157px] w-full relative">
-          <div className="absolute left-[31px] top-[40px] w-[476px] h-[117px] flex flex-col items-start gap-[25px]">
-            <div className="flex flex-col items-start gap-[13px] w-full">
-              <h3 className="w-full text-white font-urbanist text-[24px] font-semibold leading-[23px]">
+      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[156px] lg:top-[1372px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
+        <div className="h-auto w-full relative lg:h-[157px]">
+          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[476px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
+            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
+              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
                 Monthly Reporting
               </h3>
-              <p className="w-full text-[#C9C9C9] font-urbanist text-[18px] font-normal leading-[23px]">
+              <p className="w-full text-[#C9C9C9] font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
                 Track your rankings, traffic, and conversions
               </p>
             </div>
-            <div className="flex items-center gap-[13px] w-full">
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Performance Metrics
                 </div>
               </div>
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Growth Insights
                 </div>
               </div>
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Next Steps
                 </div>
               </div>
             </div>
           </div>
           {/* Step number */}
-          <div className="absolute left-0 top-0 w-[120px] h-[23px] text-[200px] font-normal leading-[23px] font-urbanist" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
+          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[120px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
             4
           </div>
         </div>
         {/* Progress section */}
-        <div className="flex w-[447px] flex-col items-start gap-[13px]">
-          <div className="w-full text-[#8D8D8D] font-urbanist text-[16px] font-medium leading-[100%]">
+        <div className="flex w-full max-w-[447px] flex-col items-start gap-3 lg:w-[447px] lg:gap-[13px]">
+          <div className="w-full text-[#8D8D8D] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
             Journey Process
           </div>
-          <div className="flex items-center gap-[32px] w-full">
+          <div className="flex items-center gap-6 w-full lg:gap-[32px]">
             <svg 
-              className="flex w-[383px] h-[0.473px] flex-col justify-center items-start"
+              className="flex w-[300px] h-[0.473px] flex-col justify-center items-start lg:w-[383px]"
               width="397" 
               height="17" 
               viewBox="0 0 397 17" 
@@ -418,7 +416,7 @@ export default function SEOMethod() {
                 </linearGradient>
               </defs>
             </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-[16px] font-medium leading-[100%]">
+            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
               80%
             </div>
           </div>
@@ -427,7 +425,7 @@ export default function SEOMethod() {
 
       {/* Connecting line for step 4 */}
       <svg 
-        className="absolute left-[228px] top-[1558px] w-[490px] h-[243px]"
+        className="hidden lg:block absolute left-[228px] top-[1558px] w-[490px] h-[243px]"
         width="492" 
         height="246" 
         viewBox="0 0 492 246" 
@@ -450,48 +448,48 @@ export default function SEOMethod() {
       </svg>
 
       {/* Step 5 - Adjust Strategy */}
-      <div className="absolute left-[777px] top-[1749px] w-[507px] h-[235px] flex flex-col items-center gap-[33px]">
-        <div className="h-[157px] w-full relative">
-          <div className="absolute left-[31px] top-[40px] w-[476px] h-[117px] flex flex-col items-start gap-[25px]">
-            <div className="flex flex-col items-start gap-[13px] w-full">
-              <h3 className="w-full text-white font-urbanist text-[24px] font-semibold leading-[23px]">
+      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[777px] lg:top-[1749px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
+        <div className="h-auto w-full relative lg:h-[157px]">
+          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[476px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
+            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
+              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
                 Adjust Strategy
               </h3>
-              <p className="w-full text-[#C9C9C9] font-urbanist text-[18px] font-normal leading-[23px]">
+              <p className="w-full text-[#C9C9C9] font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
                 Refine based on performance and algorithm updates
               </p>
             </div>
-            <div className="flex items-center gap-[13px] w-full">
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Strategy Refinement
                 </div>
               </div>
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Opportunity Capture
                 </div>
               </div>
-              <div className="flex w-[150px] py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)]">
-                <div className="text-white text-center font-urbanist text-[14px] font-normal leading-[23px]">
+              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
                   Future Planning
                 </div>
               </div>
             </div>
           </div>
           {/* Step number */}
-          <div className="absolute left-0 top-0 w-[118px] h-[23px] text-[200px] font-normal leading-[23px] font-urbanist" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
+          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[118px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
             5
           </div>
         </div>
         {/* Progress section */}
-        <div className="flex w-[447px] flex-col items-start gap-[13px]">
-          <div className="w-full text-[#8D8D8D] font-urbanist text-[16px] font-medium leading-[100%]">
+        <div className="flex w-full max-w-[447px] flex-col items-start gap-3 lg:w-[447px] lg:gap-[13px]">
+          <div className="w-full text-[#8D8D8D] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
             Journey Process
           </div>
-          <div className="flex items-center gap-[32px] w-full">
+          <div className="flex items-center gap-6 w-full lg:gap-[32px]">
             <svg 
-              className="flex w-[383px] h-[0.473px] flex-col justify-center items-start"
+              className="flex w-[300px] h-[0.473px] flex-col justify-center items-start lg:w-[383px]"
               width="397" 
               height="17" 
               viewBox="0 0 397 17" 
@@ -519,7 +517,7 @@ export default function SEOMethod() {
                 </linearGradient>
               </defs>
             </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-[16px] font-medium leading-[100%]">
+            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
               100%
             </div>
           </div>

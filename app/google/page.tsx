@@ -1,7 +1,6 @@
 import CMS from "@components/CMS/Hero-Section";
 import { AdOptionsSection } from "@components/Google/AdOptionsSection";
 import { AdOverviewSection } from "@components/Google/AdOverviewSection";
-import { FAQSection } from "@components/Google/FAQSection";
 
 import GoogleFeatures from "@components/Google/GoogleFeatures";
 import { GoogleTestimonial } from "@components/Google/GoogleTestimonial";
@@ -9,9 +8,10 @@ import HeroSection from "@components/Google/HeroSection";
 import { ProcessSection } from "@components/Google/Process";
 import { ServicesSection } from "@components/Google/ServiceSection";
 import { StatisticsSection } from "@components/Google/StatisticsSection";
-import { StatsSection } from "@components/Google/StatsSection";
+import { FAQSection } from "@components/Google/FAQSection";
 import { ToolsIntegrationSection } from "@components/Google/ToolsIntegrationsection";
 import { ToolsSection } from "@components/Google/ToolsSection";
+import { CaseStudies } from "@components/Google/CaseStudies";
 
 export default function Home() {
   return (
@@ -41,13 +41,13 @@ export default function Home() {
         <StatisticsSection />
       </section>
       <section className="relative w-full h-auto">
-        <FAQSection />
+        <CaseStudies />
       </section>
       <section className="relative w-full h-auto px-4 md:px-8 lg:px-[156px]">
         <ToolsIntegrationSection />
       </section>
       <section className="relative w-full h-auto px-4 md:px-8 lg:px-[156px]">
-        <StatsSection />
+        <FAQSection />
       </section>
       <section className="relative w-full px-4 md:px-8 lg:px-[156px]">
         <GoogleTestimonial />

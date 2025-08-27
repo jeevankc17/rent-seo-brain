@@ -12,10 +12,10 @@ import { ProcessSection } from "@components/Landing-Page/ProcessSection";
 import LPServices from "@components/Landing-Page/LPServices";
 import IdeasToContent from "@components/Landing-Page/IdeasToContent";
 import { ToolsIntegrationSection } from "@components/Landing-Page/ToolsIntegrationSection";
-import { StatsSection } from "@components/Landing-Page/StatsSection";
 import { LPTestimonial } from "@components/Landing-Page/LPTestimonial";
 import Banner from "@components/Landing-Page/Banner";
 import { TechnologyStackSection } from "@components/Landing-Page/TechnologyStackSection";
+import { FAQSection } from "@components/Landing-Page/FAQSection";
 
 export default function Home() {
   return (
@@ -58,7 +58,7 @@ export default function Home() {
         <ClientSuccessStoriesSection />
       </section>
       <section className="relative w-full h-auto lg:h-[848px] px-4 lg:px-[156px]">
-        <StatsSection />
+        <FAQSection />
       </section>
       <section className="relative w-full h-auto lg:h-[506px] px-4 lg:px-[156px]">
         <ToolsIntegrationSection />

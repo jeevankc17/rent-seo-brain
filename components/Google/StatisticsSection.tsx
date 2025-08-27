@@ -88,7 +88,7 @@ export const StatisticsSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col w-full max-w-[1128px] items-center justify-center gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0">
+    <section className="hidden lg:flex flex-col w-full max-w-[1128px] items-center justify-center gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0">
       <header className="flex flex-col w-full max-w-[565px] items-center gap-4 relative flex-[0_0_auto]">
         <div className="w-full max-w-[212px] px-0 py-[5px] border border-solid border-primary-300 flex items-center justify-center gap-1.5 relative flex-[0_0_auto] rounded-[45px]">
           <div className="flex w-full max-w-[197px] items-center gap-1.5 px-2 py-0.5 relative bg-primary-300 rounded-[45px]">
@@ -242,5 +242,3 @@ export const StatisticsSection: React.FC = () => {
     </section>
   );
 };
-
-

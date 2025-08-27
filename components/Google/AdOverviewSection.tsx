@@ -124,7 +124,7 @@ export const AdOverviewSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col h-44 items-center gap-4 relative self-stretch w-full">
+        <div className="flex flex-col h-auto items-center gap-4 relative self-stretch w-full">
           <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-primary-500 text-xl sm:text-2xl md:text-3xl lg:text-[50px] text-center tracking-[0] leading-[24px] sm:leading-[28px] md:leading-[36px] lg:leading-[57px]">
             Choose the Right Google Ads for Your Business
           </h1>
@@ -137,7 +137,57 @@ export const AdOverviewSection: React.FC = () => {
       </header>
 
       <main className="flex flex-col items-center justify-center gap-8 md:gap-12 lg:gap-[85px] relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col lg:flex-row w-full max-w-[1132px] items-center justify-center gap-6 lg:gap-[26px] relative flex-[0_0_auto]">
+        {/* Mobile layout - single column with consistent card sizing */}
+        <div className="flex flex-col w-full max-w-[360px] sm:hidden items-center gap-6">
+          {adTypes.map((ad) => (
+            <article
+              key={ad.id}
+              className={`flex flex-col w-full h-auto items-start gap-2.5 px-4 py-4 relative ${ad.bgColor} rounded-[18px] ${ad.borderColor ? `border border-solid ${ad.borderColor}` : ''}`}
+            >
+              <div className="flex flex-col w-full items-start gap-3.5">
+                <div
+                  className={`inline-flex items-center justify-center gap-2.5 p-2.5 relative ${ad.iconBg} rounded-[50px]`}
+                >
+                  <img
+                    className="relative w-6 h-6"
+                    alt={ad.title}
+                    src={ad.icon}
+                  />
+                </div>
+
+                <div className="flex flex-col w-full items-start gap-2">
+                  <div className="inline-flex items-center gap-1 flex-wrap">
+                    <h3
+                      className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold ${ad.titleColor} text-lg tracking-[0] leading-[normal] whitespace-nowrap`}
+                    >
+                      {ad.title}
+                    </h3>
+                    {ad.badge && (
+                      <div className="inline-flex items-center justify-center gap-2.5 px-2.5 py-[3px] relative bg-secondary-50 rounded-[50px] border-[0.3px] border-solid border-secondary-300">
+                        <div className="relative w-fit mt-[-0.30px] [font-family:'Urbanist',Helvetica] font-medium text-secondary-300 text-[8px] tracking-[0] leading-[normal] whitespace-nowrap">
+                          {ad.badge}
+                        </div>
+                      </div>
+                    )}
+                    {ad.emoji && (
+                      <div className="inline-flex h-[34px] items-center justify-center gap-2.5 p-[7px] relative bg-[#e2feaa] rounded-[55px]">
+                        <div className="w-5 h-5 font-semibold text-grey-50 text-xl text-center leading-[19px] whitespace-nowrap relative mt-[-1.00px] [font-family:'Urbanist',Helvetica] tracking-[0]">
+                          {ad.emoji}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  <p className={`relative w-full [font-family:'Urbanist',Helvetica] font-medium ${ad.textColor || 'text-neutral-400'} text-sm tracking-[0] leading-[normal]`}>
+                    {ad.description}
+                  </p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {/* Original desktop layout - hidden on mobile */}
+        <div className="hidden sm:flex flex-col lg:flex-row w-full max-w-[1132px] items-center justify-center gap-6 lg:gap-[26px] relative flex-[0_0_auto]">
           <div className="flex flex-col w-[360px] items-start gap-3 relative">
             <article
               className={`flex flex-col h-auto lg:${adTypes[0].height} items-start gap-2.5 px-4 lg:px-[21px] py-4 lg:py-[23px] relative self-stretch w-full ${adTypes[0].bgColor} rounded-[18px] border border-solid ${adTypes[0].borderColor}`}

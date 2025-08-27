@@ -3,24 +3,24 @@ import React from 'react';
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="relative w-full h-[1537px] bg-white">
+    <div className="relative w-full h-auto lg:h-[1537px] bg-white">
       {/* Map Background */}
-      <div className="absolute left-0 top-[828px] w-full h-[709px] bg-white flex justify-end items-center">
+      <div className="absolute left-0 top-auto lg:top-[828px] w-full h-auto lg:h-[709px] bg-white flex justify-end items-center">
         <img 
           src="https://api.builder.io/api/v1/image/assets/TEMP/01582135ed732094c3a2b9e909e1680de47654f1?width=3050" 
           alt="Map background" 
-          className="absolute left-[-14px] top-[-88px] w-[1525px] h-[885px] object-cover"
+          className="absolute left-[-14px] top-[-88px] w-full lg:w-[1525px] h-auto lg:h-[885px] object-cover"
           style={{ aspectRatio: '112/65' }}
         />
       </div>
 
       {/* Main Content */}
-      <div className="absolute left-[156px] top-0 w-[1128px] h-[962px] flex flex-col items-center gap-[50px]">
+      <div className="relative px-4 md:px-8 lg:absolute lg:left-[156px] lg:top-0 w-full lg:w-[1128px] h-auto lg:h-[962px] flex flex-col items-center gap-8 lg:gap-[50px] py-8 lg:py-0">
         {/* Title Section */}
-        <div className="flex w-[565px] flex-col items-center gap-4">
+        <div className="flex w-full max-w-[565px] flex-col items-center gap-4">
           {/* Contact Us Badge */}
-          <div className="flex w-[149px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#F78C01]">
-            <div className="flex w-[130px] py-[2px] px-2 justify-center items-center gap-[6px] flex-shrink-0 rounded-[45px] bg-[#FEF4E6]">
+          <div className="flex w-auto py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#F78C01]">
+            <div className="flex w-auto py-[2px] px-2 justify-center items-center gap-[6px] flex-shrink-0 rounded-[45px] bg-[#FEF4E6]">
               <svg 
                 className="w-[15px] h-[15px] flex-shrink-0" 
                 width="15" 
@@ -41,23 +41,22 @@ const ContactUs: React.FC = () => {
           </div>
 
           {/* Main Heading and Description */}
-          <div className="flex h-44 flex-col items-center gap-4 self-stretch">
-            <h1 className="self-stretch text-[#12579C] text-center font-urbanist text-[50px] font-bold leading-[57px]">
+          <div className="flex h-auto flex-col items-center gap-4 self-stretch">
+            <h1 className="self-stretch text-[#12579C] text-center font-urbanist text-xl md:text-3xl lg:text-[50px] font-bold leading-tight md:leading-[46px] lg:leading-[57px]">
               Have be any question?
               feel free to Contact
             </h1>
-            <p className="w-[565px] text-[#6A7986] text-center font-urbanist text-base font-medium leading-[23px]">
+            <p className="w-full max-w-[565px] text-[#6A7986] text-center font-urbanist text-sm md:text-base font-medium leading-[20px] lg:leading-[23px]">
               Whether you have questions, need support, or want to get started — we're here to help.
             </p>
           </div>
         </div>
 
         {/* Form Section */}
-        <div className="flex px-[92px] py-[60px] justify-center items-center content-center gap-[33px] self-stretch flex-wrap rounded-[29px] border border-[#E9E9E9] bg-white shadow-[0_4px_35.3px_0_rgba(67,162,255,0.07)]">
-          {/* Left Column */}
-          <div className="flex w-[456px] flex-col items-start gap-[33px]">
-            {/* First Name Input */}
-            <div className="flex py-[19px] px-5 items-center gap-[10px] self-stretch rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
+        <div className="w-full px-4 md:px-8 lg:px-[92px] py-8 lg:py-[60px] rounded-[29px] border border-[#E9E9E9] bg-white shadow-[0_4px_35.3px_0_rgba(67,162,255,0.07)]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-[33px]">
+            {/* First Row: First Name */}
+            <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
               <svg 
                 className="w-6 h-6" 
                 width="25" 
@@ -95,61 +94,11 @@ const ContactUs: React.FC = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g clipPath="url(#clip0_1562_5675)">
-                  <path d="M15.5475 5C16.5242 5.19057 17.4219 5.66826 18.1256 6.37194C18.8292 7.07561 19.3069 7.97326 19.4975 8.95M15.5475 1C17.5768 1.22544 19.4691 2.13417 20.9137 3.57701C22.3584 5.01984 23.2695 6.91101 23.4975 8.94M22.4975 16.92V19.92C22.4986 20.1985 22.4416 20.4742 22.33 20.7293C22.2184 20.9845 22.0548 21.2136 21.8496 21.4019C21.6443 21.5901 21.4021 21.7335 21.1382 21.8227C20.8744 21.9119 20.5949 21.9451 20.3175 21.92C17.2403 21.5856 14.2845 20.5341 11.6875 18.85C9.27132 17.3147 7.22283 15.2662 5.68749 12.85C3.99747 10.2412 2.94573 7.27099 2.61749 4.18C2.5925 3.90347 2.62537 3.62476 2.71399 3.36162C2.80262 3.09849 2.94506 2.85669 3.13226 2.65162C3.31945 2.44655 3.5473 2.28271 3.80128 2.17052C4.05527 2.05833 4.32983 2.00026 4.60749 2H7.60749C8.0928 1.99522 8.56328 2.16708 8.93125 2.48353C9.29922 2.79999 9.53957 3.23945 9.60749 3.72C9.73411 4.68007 9.96894 5.62273 10.3075 6.53C10.442 6.88792 10.4712 7.27691 10.3914 7.65088C10.3116 8.02485 10.1264 8.36811 9.85749 8.64L8.58749 9.91C10.011 12.4135 12.0839 14.4864 14.5875 15.91L15.8575 14.64C16.1294 14.3711 16.4726 14.1858 16.8466 14.1061C17.2206 14.0263 17.6096 14.0555 17.9675 14.19C18.8748 14.5286 19.8174 14.7634 20.7775 14.89C21.2633 14.9585 21.7069 15.2032 22.024 15.5775C22.3412 15.9518 22.5097 16.4296 22.4975 16.92Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1562_5675">
-                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <input 
-                type="tel" 
-                placeholder="Phone" 
-                className="text-[#5B6B7A] font-urbanist text-sm font-normal leading-[23px] capitalize bg-transparent border-none outline-none w-full"
-              />
-            </div>
-
-            {/* Subject Input */}
-            <div className="flex py-[19px] px-5 items-center gap-[10px] self-stretch rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
-              <svg 
-                className="w-6 h-6" 
-                width="25" 
-                height="24" 
-                viewBox="0 0 25 24" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M4.5 19.5C4.5 18.837 4.76339 18.2011 5.23223 17.7322C5.70107 17.2634 6.33696 17 7 17H20.5" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M7 2H20.5V22H7C6.33696 22 5.70107 21.7366 5.23223 21.2678C4.76339 20.7989 4.5 20.163 4.5 19.5V4.5C4.5 3.83696 4.76339 3.20107 5.23223 2.73223C5.70107 2.26339 6.33696 2 7 2Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <input 
-                type="text" 
-                placeholder="Subject" 
-                className="text-[#5B6B7A] font-urbanist text-sm font-normal leading-[23px] capitalize bg-transparent border-none outline-none w-full"
-              />
-            </div>
-          </div>
-
-          {/* Right Column */}
-          <div className="flex w-[456px] flex-col items-start gap-[33px]">
-            {/* Last Name Input */}
-            <div className="flex py-[19px] px-5 items-center gap-[10px] self-stretch rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
-              <svg 
-                className="w-6 h-6" 
-                width="25" 
-                height="24" 
-                viewBox="0 0 25 24" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_1562_2685)">
                   <path d="M16.5 21V19C16.5 17.9391 16.0786 16.9217 15.3284 16.1716C14.5783 15.4214 13.5609 15 12.5 15H5.5C4.43913 15 3.42172 15.4214 2.67157 16.1716C1.92143 16.9217 1.5 17.9391 1.5 19V21" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M17.5 11L19.5 13L23.5 9" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M8.5 11C10.7091 11 12.5 9.20914 12.5 7C12.5 4.79086 10.7091 3 8.5 3C6.29086 3 4.5 4.79086 4.5 7C4.5 9.20914 6.29086 11 8.5 11Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </g>
                 <defs>
-                  <clipPath id="clip0_1562_2685">
+                  <clipPath id="clip0_1562_7939">
                     <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
                   </clipPath>
                 </defs>
@@ -157,12 +106,12 @@ const ContactUs: React.FC = () => {
               <input 
                 type="text" 
                 placeholder="Last name" 
-                className="text-[#5B6B7A] font-urbanist text-sm font-normal leading-[23px] capitalize bg-transparent border-none outline-none w-full"
+                className="w-full text-[#6A7986] font-urbanist text-sm md:text-base font-medium leading-normal bg-transparent border-none outline-none"
               />
             </div>
 
-            {/* Email Input */}
-            <div className="flex py-[19px] px-5 items-center gap-[10px] self-stretch rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
+            {/* Phone Input - Second Row, First Column */}
+            <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
               <svg 
                 className="w-6 h-6" 
                 width="25" 
@@ -171,18 +120,56 @@ const ContactUs: React.FC = () => {
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M4.5 4H20.5C21.6 4 22.5 4.9 22.5 6V18C22.5 19.1 21.6 20 20.5 20H4.5C3.4 20 2.5 19.1 2.5 18V6C2.5 4.9 3.4 4 4.5 4Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M22.5 16.92V19.92C22.5009 20.1982 22.4156 20.4703 22.2556 20.6999C22.0955 20.9295 21.868 21.1058 21.604 20.205C21.269 21.004 20.728 21.6917 20.0443 22.1843C19.3606 22.6769 18.5634 22.9546 17.745 22.985C15.1247 23.105 12.5309 22.5114 10.25 21.265C7.233 19.584 4.778 16.943 3.5 13.75C2.222 10.557 2.125 6.967 3.5 3.73503C3.715 3.14703 4.5 2.73503 5 3.23503L7.5 5.73503C8.065 6.30003 8.271 7.13603 7.9 7.83503C7.572 8.45403 7.3 9.10203 7.09 9.77003C6.923 10.315 7.03 10.903 7.5 11.265L9.5 13.265C10.837 12.399 12.15 11.5 13.5 10.735C14.098 10.4 14.715 10.428 15.22 10.735L17.5 12.235C18.074 12.566 18.64 12.5 19.11 12.235C19.777 11.86 20.425 11.445 21.045 11.075C21.744 10.659 22.58 10.866 23.145 11.43L24.5 12.735C25.145 13.38 24.71 14.32 24.71 14.32C24.71 14.32 23.5 15.23 22.5 16.92Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <input 
+                type="tel" 
+                placeholder="Phone Number" 
+                className="w-full text-[#6A7986] font-urbanist text-sm md:text-base font-medium leading-normal bg-transparent border-none outline-none"
+              />
+            </div>
+
+            {/* Email Input - Second Row, Second Column */}
+            <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
+              <svg 
+                className="w-6 h-6" 
+                width="25" 
+                height="24" 
+                viewBox="0 0 25 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M4.5 4H20.5C21.6046 4 22.5 4.89543 22.5 6V18C22.5 19.1046 21.6046 20 20.5 20H4.5C3.39543 20 2.5 19.1046 2.5 18V6C2.5 4.89543 3.39543 4 4.5 4Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M22.5 6L12.5 13L2.5 6" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <input 
                 type="email" 
-                placeholder="Email Address" 
-                className="text-[#5B6B7A] font-urbanist text-sm font-normal leading-[23px] capitalize bg-transparent border-none outline-none w-full"
+                placeholder="Email" 
+                className="w-full text-[#6A7986] font-urbanist text-sm md:text-base font-medium leading-normal bg-transparent border-none outline-none"
               />
             </div>
 
-            {/* Website Input */}
-            <div className="flex py-[19px] px-5 items-center gap-[10px] self-stretch rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
+            {/* Subject Input - Third Row, First Column */}
+            <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
+              <svg 
+                className="w-6 h-6" 
+                width="25" 
+                height="24" 
+                viewBox="0 0 25 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M21.5 11.5C21.5 13.76 20.5 15.75 19 17.25M11.5 21C15.9183 21 19.5 17.4183 19.5 13C19.5 8.58172 15.9183 5 11.5 5C7.08172 5 3.5 8.58172 3.5 13C3.5 14.5429 3.93245 15.9923 4.67737 17.2222C4.72704 17.3014 4.75188 17.341 4.76296 17.3928C4.77273 17.4389 4.7701 17.485 4.75519 17.5299C4.73795 17.5817 4.70613 17.6227 4.64249 17.7047L2.5 20.5L4.5 19.5L6.5 21L8.5 19L10.5 17.5M15.5 10H15.51M11.5 10H11.51M7.5 10H7.51M16 10C16 10.2761 15.7761 10.5 15.5 10.5C15.2239 10.5 15 10.2761 15 10C15 9.72386 15.2239 9.5 15.5 9.5C15.7761 9.5 16 9.72386 16 10ZM12 10C12 10.2761 11.7761 10.5 11.5 10.5C11.2239 10.5 11 10.2761 11 10C11 9.72386 11.2239 9.5 11.5 9.5C11.7761 9.5 12 9.72386 12 10ZM8 10C8 10.2761 7.77614 10.5 7.5 10.5C7.22386 10.5 7 10.2761 7 10C7 9.72386 7.22386 9.5 7.5 9.5C7.77614 9.5 8 9.72386 8 10Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <input 
+                type="text" 
+                placeholder="Subject" 
+                className="w-full text-[#6A7986] font-urbanist text-sm md:text-base font-medium leading-normal bg-transparent border-none outline-none"
+              />
+            </div>
+
+            {/* Website Input - Third Row, Second Column */}
+            <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
               <svg 
                 className="w-6 h-6" 
                 width="25" 
@@ -198,48 +185,51 @@ const ContactUs: React.FC = () => {
               <input 
                 type="url" 
                 placeholder="Website" 
-                className="text-[#5B6B7A] font-urbanist text-sm font-normal leading-[23px] capitalize bg-transparent border-none outline-none w-full"
+                className="w-full text-[#6A7986] font-urbanist text-sm md:text-base font-medium leading-normal bg-transparent border-none outline-none"
               />
             </div>
-          </div>
 
-          {/* Comments Textarea */}
-          <div className="flex w-[943px] h-[195px] py-[19px] px-5 items-start gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
-            <svg 
-              className="w-6 h-6 flex-shrink-0" 
-              width="25" 
-              height="24" 
-              viewBox="0 0 25 24" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M17.5 2.99981C17.7626 2.73717 18.0744 2.52883 18.4176 2.38669C18.7608 2.24455 19.1286 2.17139 19.5 2.17139C19.8714 2.17139 20.2392 2.24455 20.5824 2.38669C20.9256 2.52883 21.2374 2.73717 21.5 2.99981C21.7626 3.26246 21.971 3.57426 22.1131 3.91742C22.2553 4.26058 22.3284 4.62838 22.3284 4.99981C22.3284 5.37125 22.2553 5.73905 22.1131 6.08221C21.971 6.42537 21.7626 6.73717 21.5 6.99981L8 20.4998L2.5 21.9998L4 16.4998L17.5 2.99981Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            <textarea 
-              placeholder="any comments.." 
-              className="text-[#5B6B7A] font-urbanist text-sm font-normal leading-[23px] capitalize bg-transparent border-none outline-none w-full h-full resize-none"
-            />
-          </div>
-
-          {/* Submit Button */}
-          <button className="flex w-48 h-[50px] px-[3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:bg-[#1570D1] transition-colors">
-            <span className="text-white text-center font-urbanist text-base font-medium leading-[23px] capitalize">
-              Send Message
-            </span>
-            <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
-              <svg 
-                className="w-5 h-5" 
-                width="20" 
-                height="20" 
-                viewBox="0 0 20 20" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M4.16406 10H15.8307" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M10 4.16699L15.8333 10.0003L10 15.8337" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+            {/* Comments Textarea */}
+            <div className="col-span-2 flex flex-col w-full h-32 lg:h-[195px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)] p-5">
+              <div className="flex items-center gap-[10px] mb-2">
+                <svg 
+                  className="w-6 h-6" 
+                  width="25" 
+                  height="24" 
+                  viewBox="0 0 25 24" 
+                  fill="none" 
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M17.5 2.99981C17.7626 2.73717 18.0744 2.52883 18.4176 2.38669C18.7608 2.24455 19.1286 2.17139 19.5 2.17139C19.8714 2.17139 20.2392 2.24455 20.5824 2.38669C20.9256 2.52883 21.2374 2.73717 21.5 2.99981C21.7626 3.26246 21.971 3.57426 22.1131 3.91742C22.2553 4.26058 22.3284 4.62838 22.3284 4.99981C22.3284 5.37125 22.2553 5.73905 22.1131 6.08221C21.971 6.42537 21.7626 6.73717 21.5 6.99981L8 20.4998L2.5 21.9998L4 16.4998L17.5 2.99981Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span className="text-[#6A7986] font-urbanist text-sm font-medium">Comments</span>
+              </div>
+              <textarea 
+                placeholder="Type your message here..." 
+                className="text-[#5B6B7A] font-urbanist text-sm font-normal leading-[23px] bg-transparent border-none outline-none w-full h-full resize-none"
+              />
             </div>
-          </button>
+            
+            {/* Submit Button */}
+            <div className="col-span-2 flex justify-center mt-4">
+              <button 
+                type="submit" 
+                className="px-8 py-4 bg-[#1D8FFF] text-white font-urbanist text-base font-semibold rounded-lg hover:bg-blue-600 transition-colors duration-200"
+              >
+                Send Message
+                <div className="flex p-1.5 items-center justify-center rounded-full bg-white/20">
+                  <svg 
+                    className="w-4 h-4" 
+                    viewBox="0 0 20 20" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4.1665 10.8334H15.8332M15.8332 10.8334L9.99984 5.00008M15.8332 10.8334L9.99984 16.6667" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -2,12 +2,12 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
-    <div className="flex w-[1128px] flex-col items-center gap-[50px] h-[962px]">
+    <div className="flex w-full max-w-[1128px] flex-col items-center gap-8 lg:gap-[50px] h-auto lg:h-[962px] px-4 lg:px-0">
       {/* Title Section */}
-      <div className="flex w-[565px] flex-col items-center gap-4">
+      <div className="flex w-full max-w-[565px] flex-col items-center gap-4">
         {/* Contact Us Badge */}
-        <div className="flex w-[149px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#F78C01]">
-          <div className="flex w-[130px] py-[2px] px-2 justify-center items-center gap-[6px] flex-shrink-0 rounded-[45px] bg-[#FEF4E6]">
+        <div className="flex w-auto py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#F78C01]">
+          <div className="flex w-auto py-[2px] px-2 justify-center items-center gap-[6px] flex-shrink-0 rounded-[45px] bg-[#FEF4E6]">
             <svg 
               className="w-[15px] h-[15px] flex-shrink-0" 
               width="15" 
@@ -28,21 +28,21 @@ const ContactForm = () => {
         </div>
 
         {/* Main Heading and Description */}
-        <div className="flex h-44 flex-col items-center gap-4 self-stretch">
-          <h1 className="self-stretch text-[#12579C] text-center font-urbanist text-[50px] font-bold leading-[57px]">
+        <div className="flex h-auto flex-col items-center gap-4 self-stretch">
+          <h1 className="self-stretch text-[#12579C] text-center font-urbanist text-xl md:text-3xl lg:text-[50px] font-bold leading-tight md:leading-[46px] lg:leading-[57px]">
             Have be any question?
             feel free to Contact
           </h1>
-          <p className="w-[565px] text-[#6A7986] text-center font-urbanist text-base font-medium leading-[23px]">
+          <p className="w-full max-w-[565px] text-[#6A7986] text-center font-urbanist text-sm md:text-base font-medium leading-[20px] lg:leading-[23px]">
             Whether you have questions, need support, or want to get started — we're here to help.
           </p>
         </div>
       </div>
 
       {/* Form Section */}
-      <div className="flex px-[92px] py-[60px] justify-center items-center content-center gap-[33px] self-stretch flex-wrap rounded-[29px] border border-[#E9E9E9] bg-white shadow-[0_4px_35.3px_0_rgba(67,162,255,0.07)]">
+      <div className="flex px-4 md:px-8 lg:px-[92px] py-8 lg:py-[60px] justify-center items-center content-center gap-6 lg:gap-[33px] self-stretch flex-wrap rounded-[29px] border border-[#E9E9E9] bg-white shadow-[0_4px_35.3px_0_rgba(67,162,255,0.07)]">
         {/* Left Column */}
-        <div className="flex w-[456px] flex-col items-start gap-[33px]">
+        <div className="flex w-full lg:w-[456px] flex-col items-start gap-6 lg:gap-[33px]">
           {/* First Name Input */}
           <div className="flex py-[19px] px-5 items-center gap-[10px] self-stretch rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
             <svg 
@@ -119,7 +119,7 @@ const ContactForm = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex w-[456px] flex-col items-start gap-[33px]">
+        <div className="flex w-full lg:w-[456px] flex-col items-start gap-6 lg:gap-[33px]">
           {/* Last Name Input */}
           <div className="flex py-[19px] px-5 items-center gap-[10px] self-stretch rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
             <svg 
@@ -191,7 +191,7 @@ const ContactForm = () => {
         </div>
 
         {/* Comments Textarea */}
-        <div className="flex w-[943px] h-[195px] py-[19px] px-5 items-start gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
+        <div className="flex w-full lg:w-[943px] h-32 lg:h-[195px] py-[19px] px-5 items-start gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
           <svg 
             className="w-6 h-6 flex-shrink-0" 
             width="25" 
@@ -209,7 +209,7 @@ const ContactForm = () => {
         </div>
 
         {/* Submit Button */}
-        <button className="flex w-48 h-[50px] px-[3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
+        <button className="flex w-full md:w-48 h-[50px] px-[3px] justify-center md:justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:bg-[#1570D1] transition-colors">
           <span className="text-white text-center font-urbanist text-base font-medium leading-[23px] capitalize">
             Send Message
           </span>

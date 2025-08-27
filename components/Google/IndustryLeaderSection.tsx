@@ -57,7 +57,7 @@ export const IndustryLeadersSection: React.FC = () => {
           src="/Google/ca/statistics.svg"
         />
 
-        <div className="flex flex-col lg:hidden gap-4 mb-8">
+        <div className="hidden sm:flex flex-col lg:hidden gap-4 mb-8">
           {statsData.map((stat) => (
             <div
               key={stat.id}
