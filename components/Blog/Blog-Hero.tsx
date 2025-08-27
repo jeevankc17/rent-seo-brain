@@ -252,7 +252,7 @@ export default function BlogHero() {
               <div className="flex items-center gap-2 md:gap-3 lg:gap-[15px] flex-1 min-w-0">
                 <div className="w-[28px] md:w-[32px] lg:w-[40px] h-[28px] md:h-[32px] lg:h-[40px] rounded-full overflow-hidden">
                   <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/058fe75754dc0d2b25c1de36019cfd2a43b57ca3?width=80"
+                    src="/Blog/ca/alex.png"
                     alt="Alex Thompson"
                     className="w-full h-full object-cover"
                   />

@@ -142,7 +142,7 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
               <img
                 className="relative w-5 h-5"
                 alt=""
-                src="/cms/ca/arrow-right-2.svg"
+                src="/CMS/ca/arrow-right-2.svg"
                 aria-hidden="true"
               />
             </button>

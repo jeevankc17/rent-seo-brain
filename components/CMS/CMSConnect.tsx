@@ -225,8 +225,11 @@ const CMSConnect = () => {
         <div className="w-full max-w-[400px] md:max-w-[464px] h-auto md:h-[623px] flex-shrink-0 relative md:absolute left-0 md:left-[664px] top-0 md:top-0 mx-auto md:mx-0">
           <img
             className="w-full max-w-[400px] md:max-w-[464px] h-auto md:h-[623px] flex-shrink-0 aspect-[143/192] relative md:absolute left-0 top-0"
-            src="https://api.builder.io/api/v1/image/assets/TEMP/2cffe963ec0b5a8f8a4ad5865619a6a3405e439b?width=928"
+            // src="https://api.builder.io/api/v1/image/assets/TEMP/2cffe963ec0b5a8f8a4ad5865619a6a3405e439b?width=928"
             alt="Dashboard Preview"
+            onError={(e) => {
+              e.currentTarget.src = "/CMS/ca/connect.png"; // your alternative source
+            }}
           />
           
           {/* Gradient Blur Effect */}

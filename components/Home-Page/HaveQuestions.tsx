@@ -63,8 +63,10 @@ export default function HaveQuestions() {
                   </div>
                   <div className="p-3 bg-indigo-50 rounded-[34px]  outline-1 outline-offset-[-1px] outline-blue-300-lex justify-start items-center gap-2.5">
                     <div className="w-5 h-5 relative overflow-hidden">
-                      <div className="w-3 h-0 left-[4.17px] top-[10px] absolute  outline-2 outline-offset-[-1px] outline-blue-500" />
-                      <div className="w-1.5 h-3 left-[10px] top-[4.17px] absolute  outline-2 outline-offset-[-1px] outline-blue-500" />
+                      <img
+                        src={"/CMS/ca/arrow-right-2.svg"}
+                        className="w-5 h-5 text-primary-300"
+                      />
                     </div>
                   </div>
                 </div>
@@ -77,8 +79,7 @@ export default function HaveQuestions() {
                   Email our Team
                 </div>
                 <div className="w-5 h-5 relative overflow-hidden">
-                  <div className="w-3 h-0 left-[4.17px] top-[10px] absolute  outline-2 outline-offset-[-0.88px] outline-sky-950" />
-                  <div className="w-1.5 h-3 left-[10px] top-[4.17px] absolute  outline-2 outline-offset-[-0.88px] outline-sky-950" />
+                  <img src={"/CMS/ca/arrow-right-2.svg"} className="w-5 h-5" />
                 </div>
               </div>
             </div>

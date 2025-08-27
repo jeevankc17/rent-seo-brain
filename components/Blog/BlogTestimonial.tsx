@@ -116,7 +116,7 @@ export const BlogTestimonial: React.FC<TestimonialProps> = ({
               <img
                 className="relative w-4 md:w-5 h-4 md:h-5"
                 alt=""
-                src="https://c.animaapp.com/zvzHaAwZ/img/arrow-right-2.svg"
+                src="/Blog/ca/arrow-right-2.svg"
                 aria-hidden="true"
               />
             </button>

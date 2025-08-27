@@ -416,7 +416,7 @@ export const AdOverviewSection: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="relative w-full max-w-[318px] h-[80px] lg:h-[131px] bg-[url(https://c.animaapp.com/ugwxqeDI/img/image-38@2x.png)] bg-[100%_100%] hidden lg:block" />
+                <div className="relative w-full max-w-[318px] h-[80px] lg:h-[131px] bg-[url(/Google/ca/image-38@2x.png)] bg-[100%_100%] hidden lg:block" />
               </div>
             </article>
           </div>

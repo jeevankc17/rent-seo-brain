@@ -51,7 +51,7 @@ export const FAQSection: React.FC = () => {
           <img
             className="relative w-3 h-3 md:w-[15px] md:h-[15px]"
             alt="Stars"
-            src="/cms/ca/stars-2.svg"
+            src="/CMS/ca/stars-2.svg"
           />
 
           <p className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-xs md:text-sm tracking-[0] leading-[23px] whitespace-nowrap">
@@ -118,8 +118,8 @@ export const FAQSection: React.FC = () => {
                     alt={item.isExpanded ? "Collapse" : "Expand"}
                     src={
                       item.isExpanded
-                        ? "/cms/ca/line-rounded-chevron-down.svg"
-                        : "/cms/ca/line-rounded-chevron-right-2.svg"
+                        ? "/CMS/ca/line-rounded-chevron-down.svg"
+                        : "/CMS/ca/line-rounded-chevron-right-2.svg"
                     }
                   />
                 </button>
@@ -150,7 +150,7 @@ export const FAQSection: React.FC = () => {
               <img
                 className="relative w-4 h-4 md:w-5 md:h-5"
                 alt="Arrow right"
-                src="/cms/ca/arrow-right-2.svg"
+                src="/CMS/ca/arrow-right-2.svg"
               />
             </div>
           </button>

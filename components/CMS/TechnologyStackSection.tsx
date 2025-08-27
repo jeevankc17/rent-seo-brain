@@ -3,27 +3,27 @@ export const TechnologyStackSection: React.FC = () => {
     {
       id: 1,
       name: "Tool 1",
-      image: "/cms/ca/image-137@2x.png",
+      image: "/CMS/ca/image-137@2x.png",
     },
     {
       id: 2,
       name: "Tool 2",
-      image: "/cms/ca/image-138@2x.png",
+      image: "/CMS/ca/image-138@2x.png",
     },
     {
       id: 3,
       name: "Tool 3",
-      image: "/cms/ca/image-139@2x.png",
+      image: "/CMS/ca/image-139@2x.png",
     },
     {
       id: 4,
       name: "Tool 4",
-      image: "/cms/ca/image-140@2x.png",
+      image: "/CMS/ca/image-140@2x.png",
     },
     {
       id: 5,
       name: "Tool 5",
-      image: "/cms/ca/image-141@2x.png",
+      image: "/CMS/ca/image-141@2x.png",
     },
   ];
 
@@ -40,7 +40,7 @@ export const TechnologyStackSection: React.FC = () => {
             <img
               className="relative w-3 h-3 md:w-[15px] md:h-[15px]"
               alt=""
-              src="/cms/ca/stars-1.svg"
+              src="/CMS/ca/stars-1.svg"
               role="presentation"
             />
             <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-primary-300 text-xs md:text-sm tracking-[0] leading-[23px] whitespace-nowrap">
@@ -99,31 +99,31 @@ export const TechnologyStackSection: React.FC = () => {
                 className="absolute w-[45px] h-[47px]"
                 style={{ top: "291px", left: "564px" }}
                 alt="Tool 1"
-                src="/cms/ca/image-137@2x.png"
+                src="/CMS/ca/image-137@2x.png"
               />
               <img
                 className="absolute w-[45px] h-[45px]"
                 style={{ top: "162px", left: "155px" }}
                 alt="Tool 2"
-                src="/cms/ca/image-138@2x.png"
+                src="/CMS/ca/image-138@2x.png"
               />
               <img
                 className="absolute w-[45px] h-[58px]"
                 style={{ top: "0", left: "390px" }}
                 alt="Tool 3"
-                src="/cms/ca/image-139@2x.png"
+                src="/CMS/ca/image-139@2x.png"
               />
               <img
                 className="absolute w-[45px] h-[41px] object-cover"
                 style={{ top: "125px", left: "635px" }}
                 alt="Tool 4"
-                src="/cms/ca/image-140@2x.png"
+                src="/CMS/ca/image-140@2x.png"
               />
               <img
                 className="absolute w-[45px] h-[30px]"
                 style={{ top: "299px", left: "147px" }}
                 alt="Tool 5"
-                src="/cms/ca/image-141@2x.png"
+                src="/CMS/ca/image-141@2x.png"
               />
             </div>
           </div>

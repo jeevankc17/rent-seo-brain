@@ -47,7 +47,7 @@ export const BlogSuggestionsSection: React.FC = () => {
       author: {
         name: "Alex Thompson",
         title: "Senior SEO Strategist",
-        avatar: "/read-blog/ca/shape-3@2x.png",
+        avatar: "/read-blog/ca/arrow-up-right.svg",
       },
     },
     {
@@ -206,7 +206,7 @@ export const BlogSuggestionsSection: React.FC = () => {
                   <img
                     className="relative w-4 h-4 sm:w-6 sm:h-6 mt-[-1.50px] mb-[-1.50px] ml-[-1.50px] mr-[-1.50px]"
                     alt=""
-                    src="https://c.animaapp.com/tbvdk4DW/img/arrow-up-right-2.svg"
+                    src="/read-blog/ca/arrow-up-right.svg"
                     aria-hidden="true"
                   />
                 </button>

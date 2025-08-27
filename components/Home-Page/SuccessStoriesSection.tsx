@@ -126,7 +126,7 @@ export const SuccessStoriesSection: React.FC = () => {
                   key={index}
                   className={`${stat.position} flex w-[280px] lg:w-[329px] items-center gap-3 lg:gap-[18px] px-6 lg:px-[37px] py-3 lg:py-3.5 absolute bg-white rounded-[10px] lg:rounded-[13px] shadow-[0px_4px_27.7px_#f7b50d1f]`}
                 >
-                  <div className="flex w-10 h-10 lg:w-12 lg:h-12 items-center justify-center gap-2.5 p-2 lg:p-2.5 relative bg-secondary-100 rounded-[35px] lg:rounded-[43px] shadow-[0px_4px_19.5px_#f7b50d54]">
+                  <div className="flex w-10 h-10 lg:w-12 lg:h-12 items-center justify-center gap-2.5 p-2 lg:p-2.5 relative bg-[#D8FD5F] rounded-[35px] lg:rounded-[43px] shadow-[0px_4px_19.5px_#f7b50d54]">
                     <img
                       className="relative w-5 h-5 lg:w-6 lg:h-6"
                       alt={stat.iconAlt}

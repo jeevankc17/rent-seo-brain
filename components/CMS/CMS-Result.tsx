@@ -79,7 +79,7 @@ const CMSResult = () => {
             <div className="flex items-center gap-3 md:gap-4 lg:gap-[15px]">
               <div className="flex w-[40px] h-[40px] justify-center items-center rounded-full overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/6cfa502ca739a7bf4090859a42c239ef572c2ef7?width=80"
+                  src="/Blog/ca/alex.png"
                   alt="Sarah Johnson"
                   className="w-[40px] h-[40px] object-cover"
                 />

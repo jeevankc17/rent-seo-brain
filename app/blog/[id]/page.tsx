@@ -40,7 +40,9 @@ function MainContentSection({ id }: MainContentSectionProps) {
     return (
       <article className="flex flex-col w-full max-w-4xl items-center gap-6 lg:gap-[50px] px-4 lg:px-0 relative flex-[0_0_auto]">
         <header className="w-full max-w-3xl gap-4 lg:gap-6 flex flex-col items-center relative flex-[0_0_auto]">
-          <h1 className="text-primary-50 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl">Article not found</h1>
+          <h1 className="text-primary-50 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl">
+            Article not found
+          </h1>
         </header>
       </article>
     );
@@ -87,9 +89,9 @@ function MainContentSection({ id }: MainContentSectionProps) {
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 lg:gap-[541px] relative self-stretch w-full flex-[0_0_auto]">
               <div className="inline-flex items-center gap-[15px] relative flex-[0_0_auto]">
                 <img
-                  className="relative w-[var(--size-icon-large)] h-[var(--size-icon-large)] rounded-[var(--size-radius-full)] object-cover"
+                  className="relative w-[var(--size-icon-large)] h-[var(--size-icon-large)]  object-cover rounded-full"
                   alt="Alex Thompson profile picture"
-                  src="https://c.animaapp.com/tbvdk4DW/img/shape@2x.png"
+                  src="/read-blog/ca/shape-3@2x.png"
                 />
 
                 <div className="flex flex-col w-[114px] items-start gap-1.5 relative">
@@ -107,7 +109,7 @@ function MainContentSection({ id }: MainContentSectionProps) {
                 <img
                   className="relative w-4 h-4"
                   alt="Reading time"
-                  src="https://c.animaapp.com/tbvdk4DW/img/clock.svg"
+                  src="/read-blog/ca/clock.svg"
                 />
 
                 <time className="w-fit mt-[-1.00px] text-grey-400 leading-[20px] sm:leading-[23px] whitespace-nowrap relative [font-family:'Urbanist',Helvetica] font-normal text-[10px] sm:text-xs tracking-[0]">
@@ -143,7 +145,9 @@ function MainContentSection({ id }: MainContentSectionProps) {
                   </React.Fragment>
                 ))
               : article.content && (
-                  <p className="font-medium text-grey-500 text-sm sm:text-base md:text-lg lg:text-xl">{article.content}</p>
+                  <p className="font-medium text-grey-500 text-sm sm:text-base md:text-lg lg:text-xl">
+                    {article.content}
+                  </p>
                 )}
           </div>
 

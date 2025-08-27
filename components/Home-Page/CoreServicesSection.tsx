@@ -212,7 +212,7 @@ export const CoreServicesSection: React.FC = () => {
                   <img
                     className="absolute w-[462px] h-32 top-0 left-0 z-[1]"
                     alt="Performance chart"
-                    src="/Home-Page/ca/mask-group@2x.png"
+                    src="/Home-Page/ca/chart.svg"
                   />
 
                   <div className="flex w-[434.62px] items-start justify-between relative z-0">

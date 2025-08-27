@@ -82,7 +82,7 @@ export const ContentServicesSection: React.FC = () => {
               <img
                 className="w-3 h-3 md:w-[15px] md:h-[15px]"
                 alt="Stars"
-                src="/cms/ca/stars.svg"
+                src="/CMS/ca/stars.svg"
               />
               <div className="font-medium text-neutral-900 text-xs md:text-sm tracking-[0] leading-[23px] text-center [font-family:'Urbanist',Helvetica]">
                 Our Content Marketing Services
@@ -112,7 +112,7 @@ export const ContentServicesSection: React.FC = () => {
                       <img
                         className="w-full h-auto"
                         alt="Content writing interface"
-                        src="/cms/ca/frame-2121458251.svg"
+                        src="/CMS/ca/frame-2121458251.svg"
                       />
 
                       <div className="flex items-center justify-center gap-[35px] w-full bg-neutral-200 rounded-[7px] py-2">
@@ -190,7 +190,7 @@ export const ContentServicesSection: React.FC = () => {
                       <img
                         className="w-[15px] h-[15px]"
                         alt="Check circle"
-                        src="/cms/ca/check-circle.svg"
+                        src="/CMS/ca/check-circle.svg"
                       />
                       <p className="font-normal text-primary-200 text-xs text-center [font-family:'Urbanist',Helvetica] tracking-[0] leading-[normal] whitespace-nowrap">
                         3 task completed this week
@@ -234,7 +234,7 @@ export const ContentServicesSection: React.FC = () => {
                       <img
                         className="w-[17px] h-[17px]"
                         alt="User check"
-                        src="/cms/ca/user-check.svg"
+                        src="/CMS/ca/user-check.svg"
                       />
                     </div>
                   </div>
@@ -242,7 +242,7 @@ export const ContentServicesSection: React.FC = () => {
                   <img
                     className="h-[26px] w-full"
                     alt="Email analytics chart"
-                    src="/cms/ca/frame-2121458271.svg"
+                    src="/CMS/ca/frame-2121458271.svg"
                   />
 
                   <button className="flex items-center justify-center gap-2.5 p-2.5 w-full bg-primary-100 rounded-[7px] hover:bg-primary-200 transition-colors">
@@ -269,7 +269,7 @@ export const ContentServicesSection: React.FC = () => {
 
               {/* Video Content Card */}
               <article className="flex h-auto md:h-[383px] w-full md:w-[359px] justify-center gap-8 md:gap-[70px] px-4 md:px-[15px] py-6 md:py-[26px] bg-white rounded-[18px] border border-grey-500 flex-col items-start">
-                <div className="w-full h-32 md:h-[152px] rounded-[13px] bg-[url(/cms/ca/frame-2121457924.svg)] bg-cover bg-center" />
+                <div className="w-full h-32 md:h-[152px] rounded-[13px] bg-[url(/CMS/ca/frame-2121457924.svg)] bg-cover bg-center" />
 
                 <div className="flex flex-col items-start gap-3.5 w-full">
                   <div className="font-semibold text-[#bbff00] text-base [font-family:'Urbanist',Helvetica] tracking-[0] leading-[normal]">
@@ -295,7 +295,7 @@ export const ContentServicesSection: React.FC = () => {
                       <img
                         className="w-[17.45px] h-[17.45px]"
                         alt="Trending up"
-                        src="/cms/ca/trending-up.svg"
+                        src="/CMS/ca/trending-up.svg"
                       />
                     </div>
                   </div>
@@ -343,7 +343,7 @@ export const ContentServicesSection: React.FC = () => {
                 <img
                   className="w-4 h-4 md:w-5 md:h-5"
                   alt="Arrow right"
-                  src="/cms/ca/arrow-right.svg"
+                  src="/CMS/ca/arrow-right.svg"
                 />
               </div>
             </button>
@@ -355,7 +355,7 @@ export const ContentServicesSection: React.FC = () => {
               <img
                 className="w-4 h-4 md:w-5 md:h-5"
                 alt="Arrow right"
-                src="/cms/ca/arrow-right-1.svg"
+                src="/CMS/ca/arrow-right-1.svg"
               />
             </button>
           </div>
