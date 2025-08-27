@@ -3,19 +3,19 @@ import React from 'react';
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="relative w-full h-auto lg:h-[1537px] bg-white">
+    <div className="relative w-full h-auto lg:h-[1537px] bg-white pb-20 lg:pb-0">
       {/* Map Background */}
-      <div className="absolute left-0 top-auto lg:top-[828px] w-full h-auto lg:h-[709px] bg-white flex justify-end items-center">
+      <div className="absolute left-0 top-[1000px] lg:top-[828px] w-full h-auto lg:h-[709px] bg-white flex justify-end items-center z-0">
         <img 
           src="https://api.builder.io/api/v1/image/assets/TEMP/01582135ed732094c3a2b9e909e1680de47654f1?width=3050" 
           alt="Map background" 
-          className="absolute left-[-14px] top-[-88px] w-full lg:w-[1525px] h-auto lg:h-[885px] object-cover"
+          className="absolute left-[-14px] top-[-88px] w-full lg:w-[1525px] h-auto lg:h-[885px] object-cover z-0"
           style={{ aspectRatio: '112/65' }}
         />
       </div>
 
       {/* Main Content */}
-      <div className="relative px-4 md:px-8 lg:absolute lg:left-[156px] lg:top-0 w-full lg:w-[1128px] h-auto lg:h-[962px] flex flex-col items-center gap-8 lg:gap-[50px] py-8 lg:py-0">
+      <div className="relative px-4 md:px-8 lg:absolute lg:left-[156px] lg:top-0 w-full lg:w-[1128px] h-auto lg:h-[962px] flex flex-col items-center gap-8 lg:gap-[50px] py-8 lg:py-0 z-10 mb-20 lg:mb-0">
         {/* Title Section */}
         <div className="flex w-full max-w-[565px] flex-col items-center gap-4">
           {/* Contact Us Badge */}
@@ -54,8 +54,8 @@ const ContactUs: React.FC = () => {
 
         {/* Form Section */}
         <div className="w-full px-4 md:px-8 lg:px-[92px] py-8 lg:py-[60px] rounded-[29px] border border-[#E9E9E9] bg-white shadow-[0_4px_35.3px_0_rgba(67,162,255,0.07)]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-[33px]">
-            {/* First Row: First Name */}
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-[33px]">
+            {/* First Name */}
             <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
               <svg 
                 className="w-6 h-6" 
@@ -83,7 +83,7 @@ const ContactUs: React.FC = () => {
               />
             </div>
 
-            {/* Phone Input */}
+            {/* Last Name */}
             <div className="flex py-[19px] px-5 items-center gap-[10px] self-stretch rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
               <svg 
                 className="w-6 h-6" 
@@ -110,7 +110,7 @@ const ContactUs: React.FC = () => {
               />
             </div>
 
-            {/* Phone Input - Second Row, First Column */}
+            {/* Phone */}
             <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
               <svg 
                 className="w-6 h-6" 
@@ -129,7 +129,7 @@ const ContactUs: React.FC = () => {
               />
             </div>
 
-            {/* Email Input - Second Row, Second Column */}
+            {/* Email */}
             <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
               <svg 
                 className="w-6 h-6" 
@@ -149,7 +149,7 @@ const ContactUs: React.FC = () => {
               />
             </div>
 
-            {/* Subject Input - Third Row, First Column */}
+            {/* Subject */}
             <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
               <svg 
                 className="w-6 h-6" 
@@ -159,7 +159,8 @@ const ContactUs: React.FC = () => {
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M21.5 11.5C21.5 13.76 20.5 15.75 19 17.25M11.5 21C15.9183 21 19.5 17.4183 19.5 13C19.5 8.58172 15.9183 5 11.5 5C7.08172 5 3.5 8.58172 3.5 13C3.5 14.5429 3.93245 15.9923 4.67737 17.2222C4.72704 17.3014 4.75188 17.341 4.76296 17.3928C4.77273 17.4389 4.7701 17.485 4.75519 17.5299C4.73795 17.5817 4.70613 17.6227 4.64249 17.7047L2.5 20.5L4.5 19.5L6.5 21L8.5 19L10.5 17.5M15.5 10H15.51M11.5 10H11.51M7.5 10H7.51M16 10C16 10.2761 15.7761 10.5 15.5 10.5C15.2239 10.5 15 10.2761 15 10C15 9.72386 15.2239 9.5 15.5 9.5C15.7761 9.5 16 9.72386 16 10ZM12 10C12 10.2761 11.7761 10.5 11.5 10.5C11.2239 10.5 11 10.2761 11 10C11 9.72386 11.2239 9.5 11.5 9.5C11.7761 9.5 12 9.72386 12 10ZM8 10C8 10.2761 7.77614 10.5 7.5 10.5C7.22386 10.5 7 10.2761 7 10C7 9.72386 7.22386 9.5 7.5 9.5C7.77614 9.5 8 9.72386 8 10Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M21.5 11.5C21.5 13.76 20.5 15.75 19 17.25M11.5 21C15.9183 21 19.5 17.4183 19.5 13C19.5 8.58172 15.9183 5 11.5 5C7.08172 5 3.5 8.58172 3.5 13C3.5 17.5228 7.08172 21 11.5 21Z" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M17.5 11L19.5 13L23.5 9" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <input 
                 type="text" 
@@ -168,7 +169,7 @@ const ContactUs: React.FC = () => {
               />
             </div>
 
-            {/* Website Input - Third Row, Second Column */}
+            {/* Website */}
             <div className="flex py-[19px] px-5 items-center gap-[10px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)]">
               <svg 
                 className="w-6 h-6" 
@@ -189,8 +190,8 @@ const ContactUs: React.FC = () => {
               />
             </div>
 
-            {/* Comments Textarea */}
-            <div className="col-span-2 flex flex-col w-full h-32 lg:h-[195px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)] p-5">
+            {/* Comments */}
+            <div className="col-span-1 lg:col-span-2 flex flex-col w-full h-32 lg:h-[195px] rounded-[5px] border border-[#D2D2D2] bg-[#FAFAFA] shadow-[0_1px_44.2px_0_rgba(0,129,255,0.20)] p-5">
               <div className="flex items-center gap-[10px] mb-2">
                 <svg 
                   className="w-6 h-6" 
@@ -209,12 +210,12 @@ const ContactUs: React.FC = () => {
                 className="text-[#5B6B7A] font-urbanist text-sm font-normal leading-[23px] bg-transparent border-none outline-none w-full h-full resize-none"
               />
             </div>
-            
+
             {/* Submit Button */}
-            <div className="col-span-2 flex justify-center mt-4">
+            <div className="col-span-1 lg:col-span-2 flex justify-center mt-4">
               <button 
                 type="submit" 
-                className="px-8 py-4 bg-[#1D8FFF] text-white font-urbanist text-base font-semibold rounded-lg hover:bg-blue-600 transition-colors duration-200"
+                className="px-8 py-4 bg-[#1D8FFF] text-white font-urbanist text-base font-semibold rounded-lg hover:bg-blue-600 transition-colors duration-200 flex flex-row items-center gap-2"
               >
                 Send Message
                 <div className="flex p-1.5 items-center justify-center rounded-full bg-white/20">
