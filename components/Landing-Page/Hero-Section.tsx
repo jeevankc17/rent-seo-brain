@@ -5,10 +5,10 @@ export type HomePageType = {
   className?: string;
 };
 
-const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
+const HeroSection: NextPage<HomePageType> = ({ className = "" }) => {
   return (
     <div
-      className={`relative w-full max-w-[1440px] mx-auto bg-neutral-900 h-auto min-h-screen lg:h-[960px] overflow-hidden text-center text-xs md:text-base text-gray-200 font-urbanist ${className}`}
+      className={`relative w-full max-w-[1440px] mx-auto bg-neutral-900 h-auto min-h-[70vh] lg:min-h-screen lg:h-[960px] overflow-hidden text-center text-xs md:text-base text-gray-200 font-urbanist ${className}`}
     >
       <Image
         className="hidden lg:block absolute top-[3519px] left-[-630px] w-[969.2px] h-[965.3px] object-contain"
@@ -147,10 +147,11 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             src="/frame-2121458209.svg"
           />
         </div>
-        <div className="absolute top-[200px] left-1/2 transform -translate-x-1/2 w-full max-w-[320px] sm:max-w-[480px] md:max-w-[630px] lg:w-[630px] flex flex-col items-center justify-start gap-6 lg:gap-11 text-xl md:text-3xl lg:text-[50px] px-4 lg:px-0">
+        <div className="absolute top-[100px] lg:top-[200px] left-1/2 transform -translate-x-1/2 w-full max-w-[320px] sm:max-w-[480px] md:max-w-[630px] lg:w-[630px] flex flex-col items-center justify-start gap-4 lg:gap-11 text-xl md:text-3xl lg:text-[50px] px-4 lg:px-0">
           <div className="self-stretch flex flex-col items-center justify-center gap-4">
-            <b className="w-full max-w-[618px] relative leading-[24px] md:leading-[36px] lg:leading-[57px] inline-block text-white text-center">
-              High-Converting Landing Pages That Sell
+            <b className="w-full max-w-[618px] relative leading-[24px] md:leading-[36px] lg:leading-[57px] inline-block text-center">
+              <span className="text-primary-300">High-Converting</span>
+              <span className="text-white"> Landing Pages That Sell</span>
             </b>
             <div className="w-full max-w-[640px] relative text-sm md:text-base text-grey-200 leading-[18px] md:leading-[23px] font-normal inline-block text-center px-2 lg:px-0">
               Our SEO-focused design team creates landing pages that convert
@@ -187,7 +188,7 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <div className="absolute top-[400px] sm:top-[500px] lg:top-[119px] left-1/2 transform -translate-x-1/2 w-full max-w-[1437px] h-auto lg:h-[922px] text-left text-black px-4 lg:px-0">
+        <div className="hidden lg:block absolute top-[119px] left-1/2 transform -translate-x-1/2 w-full max-w-[1437px] h-[922px] text-left text-black">
           <Image
             className="hidden lg:block absolute top-[535px] left-[calc(50%_-_184.5px)] rounded-[10.7px] w-[408px] h-[261px]"
             width={408}
@@ -654,4 +655,4 @@ const HomePage: NextPage<HomePageType> = ({ className = "" }) => {
   );
 };
 
-export default HomePage;
+export default HeroSection;

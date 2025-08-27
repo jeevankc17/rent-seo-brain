@@ -3,7 +3,7 @@ import CMS from "@components/CMS/Hero-Section";
 import GoogleFeatures from "@components/Google/GoogleFeatures";
 import { BenefitsSection } from "@components/Landing-Page/BenefitsSection";
 import { ClientResultsSection } from "@components/Landing-Page/ClientResultsSection";
-import HomePage from "@components/Landing-Page/Hero-Section";
+import HeroSection from "@components/Landing-Page/Hero-Section";
 import LandingPage from "@components/Landing-Page/LandingPage";
 import ClientSuccessStoriesSection from "@components/Landing-Page/LP";
 import { OverviewSection } from "@components/Landing-Page/OverviewSection";
@@ -24,7 +24,7 @@ export default function Home() {
         <LandingPage />
       </section> */}
       <section className="relative w-full h-auto lg:h-[960px] bg-neutral-900">
-        <HomePage />
+        <HeroSection />
       </section>
       <section className="relative w-full h-auto lg:h-[601px] px-4 lg:px-[157px] bg-white">
         <OverviewSection />

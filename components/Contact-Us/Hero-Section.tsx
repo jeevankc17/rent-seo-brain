@@ -85,7 +85,7 @@ const ChevronDownIcon: React.FC<{ className?: string }> = ({
 // Main Hero Section Component
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative w-full min-h-screen bg-neutral-900 overflow-hidden">
+    <div className="relative w-full bg-neutral-900 overflow-hidden">
       {/* Grid Background */}
       <GridBackground />
 
@@ -97,7 +97,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col items-center px-4 md:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-fit max-w-full pb-8 lg:pb-16">
+      <div className="relative flex flex-col items-center px-4 md:px-8 lg:px-[157px] pt-6 lg:pt-12 min-h-fit max-w-full pb-6 lg:pb-12">
         {/* Header Section */}
         <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-6 lg:gap-8 mb-6 lg:mb-12">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-4 lg:gap-5">
@@ -143,7 +143,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Contact Form/Image Placeholder */}
-        <div className="relative w-full max-w-[1128px] h-auto lg:h-[407px] mt-6 lg:mt-8">
+        <div className=" relative w-full max-w-[1128px] h-auto lg:h-[407px] mt-6 lg:mt-8">
           <Image
             src="/Blog/Hero-Section/Component.png"
             alt="Contact Form"

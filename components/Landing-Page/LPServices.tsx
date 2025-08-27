@@ -2,7 +2,7 @@ import React from 'react';
 
 const LPServices = () => {
   return (
-    <div className="flex flex-col items-center gap-6 lg:gap-[43px] w-full relative px-4 lg:px-0">
+    <div className="hidden lg:flex flex-col items-center gap-6 lg:gap-[43px] w-full relative px-4 lg:px-0">
       {/* Title Section */}
       <div className="flex w-full max-w-[565px] flex-col items-center gap-4 relative">
         <div className="flex w-full max-w-[151px] px-[10px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF] relative">

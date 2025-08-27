@@ -3,7 +3,7 @@ import React from "react";
 
 const CMSConnect = () => {
   return (
-    <div className="flex w-full max-w-[1128px] flex-col items-center gap-[50px] relative mx-auto px-4">
+    <div className="flex w-full max-w-[1128px] flex-col items-center gap-[50px] relative mx-auto px-4 pb-8 md:pb-0">
       {/* Title Section */}
       <div className="flex w-full max-w-[552px] flex-col justify-center items-center gap-16 relative">
         {/* Badge */}
@@ -40,7 +40,7 @@ const CMSConnect = () => {
       </div>
 
       {/* Content Section */}
-      <div className="h-auto min-h-[400px] md:min-h-[500px] lg:h-[623px] self-stretch relative">
+      <div className="h-auto self-stretch relative">
         {/* Decorative SVG Line */}
         <svg
           width="514"
@@ -75,7 +75,7 @@ const CMSConnect = () => {
         </svg>
 
         {/* Left Content */}
-        <div className="flex w-full md:w-[515px] flex-col items-start gap-6 md:gap-[36px] relative md:absolute left-0 top-0 h-auto md:h-[334px] px-4 md:px-0">
+        <div className="flex w-full md:w-[515px] flex-col items-start gap-6 md:gap-[36px] relative md:absolute left-0 top-0 h-auto px-4 md:px-0 mb-8 md:mb-0">
           {/* Benefits List */}
           <div className="flex flex-col items-start gap-4 md:gap-8 self-stretch relative">
             <div className="flex items-center gap-[19px] relative">
@@ -222,7 +222,7 @@ const CMSConnect = () => {
         </div>
 
         {/* Right Content - Dashboard Image with Overlays */}
-        <div className="w-full max-w-[400px] md:max-w-[464px] h-auto md:h-[623px] flex-shrink-0 relative md:absolute left-0 md:left-[664px] top-0 mt-8 md:mt-0 mx-auto md:mx-0">
+        <div className="w-full max-w-[400px] md:max-w-[464px] h-auto md:h-[623px] flex-shrink-0 relative md:absolute left-0 md:left-[664px] top-0 md:top-0 mx-auto md:mx-0">
           <img
             className="w-full max-w-[400px] md:max-w-[464px] h-auto md:h-[623px] flex-shrink-0 aspect-[143/192] relative md:absolute left-0 top-0"
             src="https://api.builder.io/api/v1/image/assets/TEMP/2cffe963ec0b5a8f8a4ad5865619a6a3405e439b?width=928"

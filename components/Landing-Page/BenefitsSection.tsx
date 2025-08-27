@@ -2,7 +2,7 @@ import React from "react";
 
 export const BenefitsSection: React.FC = () => {
   return (
-    <div className="relative w-full max-w-[1440px] h-auto min-h-[600px] lg:h-[1046px] bg-[#0C0C0F] mx-auto">
+    <div className="hidden lg:block relative w-full max-w-[1440px] h-auto min-h-[600px] lg:h-[1046px] bg-[#0C0C0F] mx-auto">
       {/* Background blur elements */}
       <div 
         className="hidden lg:block absolute w-[464px] h-[403px] bg-[#2F98FF] opacity-63 rounded-full blur-[365px] pointer-events-none right-0 top-[277px]"

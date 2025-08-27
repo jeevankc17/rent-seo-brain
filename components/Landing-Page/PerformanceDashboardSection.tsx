@@ -57,7 +57,7 @@ export const PerformanceDashboardSection: React.FC = () => {
   const chartLabels = ["$1000", "$500", "$200", "$0"];
 
   return (
-    <section className="flex flex-col w-full max-w-[1128px] items-center lg:items-end gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0 mx-auto">
+    <section className="hidden lg:flex flex-col w-full max-w-[1128px] items-center lg:items-end gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0 mx-auto">
       <div className="relative self-stretch w-full h-auto lg:h-[597px]">
         <div className="relative w-full max-w-[1128px] h-auto lg:h-[598px] mx-auto">
           <img

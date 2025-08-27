@@ -55,7 +55,7 @@ export const OverviewSection : React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8 relative self-stretch w-full flex-[0_0_auto] py-8 lg:py-0">
+    <section className=" hidden lg:flex flex-col lg:flex-row items-center gap-4 lg:gap-8 relative self-stretch w-full flex-[0_0_auto] py-8 lg:py-0">
       <div className="flex flex-col w-full lg:w-[539px] items-start gap-6 lg:gap-[47px] relative px-4 lg:px-0">
         <header className="flex flex-col items-start justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex w-full max-w-[233px] items-center justify-center gap-1.5 px-2.5 py-[5px] relative flex-[0_0_auto] bg-primary-50 rounded-[45px]">
