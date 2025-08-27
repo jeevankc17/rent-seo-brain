@@ -51,7 +51,7 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
   ];
   return (
     <div
-      className={`relative w-full bg-[#0d0e12] max-w-full h-auto lg:min-h-screen  overflow-hidden text-left text-xs lg:text-[22px] text-[#0a1519] font-[Urbanist] ${className}`}
+      className={`relative w-full bg-[#0d0e12] max-w-full h-auto lg:min-h-screen lg:h-[960px] overflow-hidden text-left text-xs lg:text-[22px] text-[#0a1519] font-[Urbanist] ${className}`}
     >
       <div>
         {/* Replace static grid with animated GridBackground */}
