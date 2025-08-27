@@ -1,5 +1,3 @@
-import { Grid } from "lucide-react";
-import Header from "../components/registry/seraui/header";
 import HeroSection from "@components/Home-Page/Hero-Section";
 import { Proposition } from "@components/Home-Page/Proposition";
 import DeepDive from "@components/Home-Page/DeepDive";
@@ -9,10 +7,8 @@ import IdeasToContent from "@components/Home-Page/IdeasToContent";
 import { SuccessStoriesSection } from "@components/Home-Page/SuccessStoriesSection";
 import { LatestBlogsSection } from "@components/Home-Page/FAQSection";
 import { KeyMetricsSection } from "@components/Home-Page/KeyMetricsSection";
-import ImageSection from "@components/Home-Page/ImageSection";
 import { CoreServicesSection } from "@components/Home-Page/CoreServicesSection";
 import { CaseStudies } from "@components/Home-Page/CaseStudies";
-// import { FAQSection } from "@components/Google/FAQSection";
 
 import { StatisticsSection } from "@components/Home-Page/StatisticsSection";
 import { Testimonial } from "@components/Home-Page/Testimonial";

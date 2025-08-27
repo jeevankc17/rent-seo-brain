@@ -163,7 +163,7 @@ const PowerContent = () => {
 
               {/* Card 4 - Video Content */}
               <article className="flex h-auto md:h-[383px] w-full md:w-[359px] justify-center gap-8 md:gap-[70px] px-4 md:px-[15px] py-6 md:py-[26px] bg-[rgba(123,123,123,0.18)] rounded-[18px] border border-[#7B7B7B] flex-col items-start">
-                <img className="w-full h-32 md:h-[152px] rounded-[13px] object-cover" src="https://api.builder.io/api/v1/image/assets/TEMP/bc2622683cfea266a2f728265e00fc9786998ea1?width=658" alt="Video Content Preview" />
+                <img className="w-full h-32 md:h-[152px] rounded-[13px] object-cover" src="/CMS/ca/videoimage.jpg" alt="Video Content Preview" />
                 <div className="flex flex-col items-start gap-3.5 w-full">
                   <div className="text-[#BF0] font-['Urbanist'] text-base font-semibold">04</div>
                   <div className="text-white font-['Urbanist'] text-xl font-semibold">Video Content</div>

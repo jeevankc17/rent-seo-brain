@@ -21,6 +21,9 @@ export default function ImageSection() {
               src="https://api.builder.io/api/v1/image/assets/TEMP/7aee602eb3fd10d5da1cd68ddcea7f720aabf2fe?width=123"
               className="absolute left-[15px] sm:left-[20px] lg:left-[26px] top-[5px] sm:top-[7px] lg:top-[9px] w-[40px] sm:w-[50px] lg:w-[62px] h-[30px] sm:h-[38px] lg:h-[46px]"
               alt="Frame 2121457905"
+              onError={(e) => {
+                e.currentTarget.src = "/CMS/ca/threeline.svg"; // your alternative source
+              }}
             />
           </div>
 
@@ -30,6 +33,9 @@ export default function ImageSection() {
             style={{ aspectRatio: "73/94" }}
             src="https://api.builder.io/api/v1/image/assets/TEMP/17a8536c5ae38906ad273d69191b437c18c3a7ce?width=820"
             alt=""
+            onError={(e) => {
+              e.currentTarget.src = "/CMS/ca/girl.png"; // your alternative source
+            }}
           />
         </div>
       </div>
@@ -60,6 +66,9 @@ export default function ImageSection() {
           style={{ aspectRatio: "102/115" }}
           src="https://api.builder.io/api/v1/image/assets/TEMP/e715b55fe32746b22aa0d0bd26a665fe353cad9e?width=1033"
           alt=""
+          onError={(e) => {
+            e.currentTarget.src = "/CMS/ca/phone.png"; // your alternative source
+          }}
         />
 
         {/* Demo Interface Container */}

@@ -141,6 +141,11 @@ export default function TrustSEO() {
                 src="https://api.builder.io/api/v1/image/assets/TEMP/8349f39baf005afe759a6ccdd8cae96c680b707c?width=1050"
                 alt="SEO Expert"
                 className="w-full h-[250px] object-cover rounded-lg lg:w-[477px] lg:h-[450px] lg:rounded-none"
+                onError={
+                  (e) => {
+                    e.currentTarget.src = "/SEO/ca/bottommobile.png"; // your alternative source
+                  }
+                }
               />
               
               {/* Bottom line accent */}
