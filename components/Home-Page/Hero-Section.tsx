@@ -51,7 +51,7 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
   ];
   return (
     <div
-      className={`relative w-full bg-[#0d0e12] max-w-full h-auto min-h-screen lg:h-[960px] overflow-hidden text-left text-xs lg:text-[22px] text-[#0a1519] font-[Urbanist] ${className}`}
+      className={`relative w-full bg-[#0d0e12] max-w-full h-auto lg:min-h-screen lg:h-[960px] overflow-hidden text-left text-xs lg:text-[22px] text-[#0a1519] font-[Urbanist] ${className}`}
     >
       <div>
         {/* Replace static grid with animated GridBackground */}
@@ -59,15 +59,15 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
       </div>
 
       {/* Background Blur Effects */}
-      <div className="absolute left-0 top-[400px] sm:top-[500px] lg:top-[722px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" />
+      <div className=" absolute left-0 top-[722px] w-[345px] h-[319px] rounded-full bg-primary-200 opacity-50 blur-[200px]" />
       {/* <div className="absolute left-[150px] lg:left-[303px] top-[260px] lg:top-[260px] md:top-[200px] sm:top-[150px] w-[200px] lg:w-[345px] h-[180px] lg:h-[319px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" /> */}
       {/* <div className="absolute right-[50px] lg:right-[125px] top-0 w-[150px] lg:w-[244px] h-[130px] lg:h-[226px] rounded-full bg-primary-200 opacity-50 blur-[100px] lg:blur-[200px]" /> */}
 
       {/* Center blur effect */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
+      <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 top-[260px] w-[154px] h-[142px] rounded-full bg-primary-300/20 blur-[290px]" />
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] min-h-screen z-10">
+      <div className="relative flex flex-col items-center px-4 sm:px-8 lg:px-[157px] pt-8 lg:pt-[78px] pb-8 lg:pb-0 z-10">
         {/* Header Section */}
         <div className="flex w-full max-w-[766px] flex-col justify-center items-center gap-6 lg:gap-11 mb-8 lg:mb-16">
           <div className="flex w-full max-w-[702px] flex-col justify-center items-center gap-3 lg:gap-5">
@@ -184,9 +184,8 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
             </button>
           </div>
         </div>
-      </div>
-
-      <section className="hidden  lg:block">
+        {/* Image Section (visible only on md and above) - Fixed positioning */}
+      <div className="hidden  lg:block">
         <div className="absolute top-[0px] left-[0px] w-[1419.5px] h-[1041px] overflow-hidden flex items-center justify-center">
           <Image
             className="w-full h-full object-cover absolute left-[10px] top-[122px] [transform:scale(1.014)]"
@@ -345,7 +344,9 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      </div>
+      
     </div>
   );
 };

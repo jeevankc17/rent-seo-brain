@@ -11,7 +11,7 @@ import { LatestBlogsSection } from "@components/Home-Page/FAQSection";
 import { KeyMetricsSection } from "@components/Home-Page/KeyMetricsSection";
 import ImageSection from "@components/Home-Page/ImageSection";
 import { CoreServicesSection } from "@components/Home-Page/CoreServicesSection";
-import { FAQSection } from "@components/Home-Page/HPFAQSection";
+import { CaseStudies } from "@components/Home-Page/CaseStudies";
 // import { FAQSection } from "@components/Google/FAQSection";
 
 import { StatisticsSection } from "@components/Home-Page/StatisticsSection";
@@ -26,13 +26,13 @@ export default function Home() {
       <section className="relative w-full h-auto lg:h-[922px]">
         <HeroSection />
       </section>
-      <section className="relative w-full bg-grey-100">
+      <section className="relative w-full bg-grey-100 lg:px-[156px]">
         <HomePageFeatures />
       </section>
       <section className="relative bg-grey-100 h-auto w-full px-4 lg:h-[525px] lg:px-[157px]">
         <Proposition />
       </section>
-      <section className="relative bg-grey-100 w-full">
+      <section className="relative bg-grey-100 w-full ">
         <DeepDive />
       </section>
       <section className="relative bg-grey-100 w-full px-4 lg:px-[156px]">
@@ -59,8 +59,8 @@ export default function Home() {
       <section className="relative bg-grey-100 w-full px-4 lg:px-[156px]">
         <HaveQuestions />
       </section>
-      <section className="relative w-full bg-neutral-900">
-        <FAQSection />
+      <section className="relative w-full bg-neutral-900 ">
+        <CaseStudies />
       </section>
       <section className="relative bg-grey-100 w-full px-4 lg:px-[156px]">
         <TestimonialsSection />

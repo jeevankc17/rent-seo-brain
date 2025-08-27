@@ -76,12 +76,12 @@ export const CoreServicesSection: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-1 relative flex-[0_0_auto]">
+                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-lg lg:text-xl tracking-[0] leading-[normal]">
                       Landing Page Design
                     </h2>
 
-                    <div className="inline-flex items-center justify-center gap-2.5 px-2.5 py-[3px] relative flex-[0_0_auto] bg-secondary-100 rounded-[50px]">
+                    <div className="inline-flex items-center justify-center gap-2.5 px-2.5 py-[3px] relative flex-[0_0_auto] bg-secondary-100 rounded-[50px] w-fit">
                       <div className="relative w-fit mt-[-0.30px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-[9px] lg:text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
                         High Converting Pages
                       </div>
@@ -128,12 +128,12 @@ export const CoreServicesSection: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-lg lg:text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-1 relative flex-[0_0_auto]">
+                    <h2 className="relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-primary-500 text-lg lg:text-xl tracking-[0] leading-[normal]">
                       SEO
                     </h2>
 
-                    <div className="inline-flex items-center justify-center gap-2.5 px-2.5 py-[3px] relative flex-[0_0_auto] bg-secondary-100 rounded-[50px]">
+                    <div className="inline-flex items-center justify-center gap-2.5 px-2.5 py-[3px] relative flex-[0_0_auto] bg-secondary-100 rounded-[50px] w-fit">
                       <div className="relative w-fit mt-[-0.30px] [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-[9px] lg:text-[10px] tracking-[0] leading-[normal] whitespace-nowrap">
                         Most Popular
                       </div>
