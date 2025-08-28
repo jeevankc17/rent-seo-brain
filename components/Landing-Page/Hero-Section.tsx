@@ -9,7 +9,7 @@ export type HomePageType = {
 const HeroSection: NextPage<HomePageType> = ({ className = "" }) => {
   return (
     <div
-      className={`relative w-full max-w-[1440px] mx-auto bg-neutral-900 h-auto min-h-[70vh] lg:min-h-screen lg:h-[960px] overflow-hidden text-center text-xs md:text-base text-gray-200 font-urbanist ${className}`}
+      className={`relative w-full max-w-[1440px] mx-auto bg-neutral-900 h-auto min-h-[135vh] overflow-hidden text-center text-xs md:text-base text-gray-200 font-urbanist ${className}`}
     >
       <Image
         className="hidden lg:block absolute top-[3519px] left-[-630px] w-[969.2px] h-[965.3px] object-contain"
@@ -174,7 +174,7 @@ const HeroSection: NextPage<HomePageType> = ({ className = "" }) => {
             />
           </div>
         </div>
-        <div className="hidden lg:block absolute top-[119px] left-1/2 transform -translate-x-1/2 w-full max-w-[1437px] h-[922px] text-left text-black">
+        <div className="hidden lg:block absolute top-[119px] left-1/2 transform -translate-x-1/2 w-full max-w-[1437px] text-left text-black">
           <Image
             className="hidden lg:block absolute top-[535px] left-[calc(50%_-_184.5px)] rounded-[10.7px] w-[408px] h-[261px]"
             width={408}

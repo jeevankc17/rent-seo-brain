@@ -50,11 +50,11 @@ export const CaseStudies: React.FC = () => {
       role="main"
       aria-label="Case Studies Section"
     >
-      <div className="h-auto lg:h-[1542px] bg-[#0c0c0f] overflow-hidden py-8 lg:py-0">
-        <div className="relative w-full lg:w-[1780px] h-auto lg:h-[1368px] top-0 lg:top-[93px] left-0 lg:left-[-172px]">
+      <div className="h-auto lg:h-[1542px] bg-[#0c0c0f] overflow-hidden py-8 lg:py-[93px]">
+        <div className="relative w-full h-auto lg:h-[1368px]">
           {/* Background blur elements */}
           <div
-            className="absolute w-[464px] h-[403px] top-[168px] left-[1316px] bg-[#2e97ffa1] rounded-[232px/201.63px] blur-[365.85px] hidden lg:block"
+            className="absolute w-[464px] h-[403px] top-[168px] right-0 bg-[#2e97ffa1] rounded-[232px/201.63px] blur-[365.85px] hidden lg:block"
             aria-hidden="true"
           />
           <div
@@ -62,7 +62,7 @@ export const CaseStudies: React.FC = () => {
             aria-hidden="true"
           />
 
-          <div className="flex flex-col w-full max-w-[1128px] items-start gap-6 lg:gap-[23px] relative lg:absolute top-0 left-0 lg:left-[328px]">
+          <div className="flex flex-col w-full max-w-[1128px] mx-auto px-4 lg:px-0 items-start gap-6 lg:gap-[23px] relative">
             {/* Bottom Section with Testimonial and Industry Tags */}
             <div className="relative self-stretch w-full h-auto lg:h-[694px]">
               <div className="relative lg:absolute w-full lg:w-[1128px] h-auto lg:h-[661px] top-0 lg:top-[33px] left-0">

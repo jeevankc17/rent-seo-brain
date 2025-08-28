@@ -56,7 +56,7 @@ export default function SEOPage() {
       {/* <div className="absolute right-[20px] lg:right-[135px] top-[100px] lg:top-[131px] w-[400px] lg:w-[790px] h-[400px] lg:h-[790px] rounded-full bg-blue-500/[0.02] blur-[15px] lg:blur-[25px]" /> */}
 
       {/* Main Content Container */}
-      <div className="relative flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-3 px-4 sm:px-8 lg:px-[157px] pt-8 pb-8 lg:pt-[128px] lg:pb-[167px] min-h-screen">
+      <div className="relative flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-3 px-4 sm:px-8 lg:px-[157px] pt-8 pb-8 lg:pt-[128px] lg:pb-[167px] min-h-screen justify-center">
         <div className="flex w-full lg:w-[552px] flex-col items-start lg:items-end gap-6 lg:gap-20 shrink-0">
           {/* Header Section */}
           <div className="flex flex-col justify-center items-start gap-4 lg:gap-10 w-full">

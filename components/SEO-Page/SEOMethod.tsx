@@ -13,7 +13,7 @@ export default function SEOMethod() {
       />
 
       {/* Header Section */}
-      <div className="relative w-full max-w-[552px] mx-auto flex flex-col justify-center items-start gap-4 mb-16 lg:absolute lg:left-[156px] lg:top-[72px] lg:w-[552px] lg:h-[225px] lg:mb-0">
+      <div className="relative w-full max-w-[552px] mx-auto flex flex-col justify-center items-start gap-4 mb-16 lg:top-[72px] lg:w-[552px] lg:h-[225px] lg:mb-0">
         {/* Badge */}
         <div className="flex w-auto py-[5px] px-[10px] justify-center items-center gap-[6px] rounded-[45px] bg-[#12579C] lg:w-[274px]">
           <svg 
