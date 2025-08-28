@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export default function Features() {
   return (
@@ -241,21 +242,17 @@ export default function Features() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-5">
-          <button className="w-full lg:w-auto px-6 py-3 bg-blue-500 text-white rounded-full shadow-[0px_4px_15px_rgba(47,152,255,0.63)] flex items-center justify-center gap-3">
-            <span className="text-sm lg:text-base font-medium">Get Your SEO Audit Now</span>
-            <div className="p-2 bg-indigo-50 rounded-full border border-blue-300">
-              <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          </button>
+          <AppButton
+            variant="blue"
+            size="lg"
+            text="Get Your SEO Audit Now"
+          />
           
-          <button className="w-full lg:w-auto px-5 py-3 bg-neutral-50 border border-neutral-300 rounded-full flex items-center justify-center gap-2">
-            <span className="text-sky-950 text-sm lg:text-base font-medium">See Real Client Results</span>
-            <svg className="w-5 h-5 text-sky-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+          <AppButton
+            variant="white"
+            size="lg"
+            text="See Real Client Results"
+          />
         </div>
       </div>
     </section>

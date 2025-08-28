@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export default function DeepDive() {
   return (
@@ -53,11 +54,12 @@ export default function DeepDive() {
               </div>
               
               {/* Button */}
-              <div className="flex w-full lg:w-[207px] h-[50px] lg:h-[60px] py-0 px-6 lg:px-8 justify-center items-center gap-[10px] rounded-[35px] lg:rounded-[45px] bg-[#1D8FFF] shadow-[0px_5px_14.7px_0px_rgba(47,152,255,0.63)]">
-                <div className="text-white text-center font-urbanist text-sm lg:text-base font-medium leading-[18px] lg:leading-[23px] capitalize">
-                  Free Audit
-                </div>
-              </div>
+              <AppButton
+                text="Free Audit"
+                variant="blue"
+                size="lg"
+                // className="w-full lg:w-[207px] h-[50px] lg:h-[60px] shadow-[0px_5px_14.7px_0px_rgba(47,152,255,0.63)]"
+              />
             </div>
           </div>
         </div>

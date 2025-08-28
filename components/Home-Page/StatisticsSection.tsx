@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const StatisticsSection: React.FC = () => {
     // Data for industry cards
@@ -199,23 +200,17 @@ export const StatisticsSection: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-start gap-3 relative flex-[0_0_auto] w-full">
-                  <button className="w-full sm:w-[200px] lg:w-[217px] flex h-[45px] lg:h-[50px] items-center justify-center gap-2.5 px-6 lg:px-8 py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_5px_14.7px_#2f98ffa1] hover:opacity-90 transition-opacity">
-                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
-                      Boost My Sales Now
-                    </span>
-                  </button>
+                  <AppButton
+                    variant="blue"
+                    size="lg"
+                    text="Boost My Sales Now"
+                  />
 
-                  <button className="all-[unset] box-border flex w-full sm:w-[200px] lg:w-[220px] h-[45px] lg:h-[50px] items-center justify-center gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] lg:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 transition-colors">
-                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
-                      Know More
-                    </span>
-
-                    <img
-                      className="relative w-4 h-4 lg:w-5 lg:h-5"
-                      alt="Arrow right"
-                      src="/Home-Page/ca/arrow-right-2.svg"
-                    />
-                  </button>
+                  <AppButton
+                    variant="white"
+                    size="lg"
+                    text="Know More"
+                  />
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const CoreServicesSection: React.FC = () => {
   const landingPageFeatures = [
@@ -260,31 +261,17 @@ export const CoreServicesSection: React.FC = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-6 relative flex-[0_0_auto]">
-        <button className="flex w-full sm:w-[220px] lg:w-[248px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1]">
-          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
-            Run A&nbsp;&nbsp;Seo &amp; Ads Audit
-          </span>
+        <AppButton
+          variant="blue"
+          size="lg"
+          text="Run A SEO & Ads Audit"
+        />
 
-          <div className="inline-flex items-center gap-2 lg:gap-2.5 p-2 lg:p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[24px] lg:rounded-[34px] border border-solid border-primary-75">
-            <img
-              className="relative w-4 h-4 lg:w-5 lg:h-5"
-              alt="Arrow right"
-              src="/Home-Page/ca/arrow-right.svg"
-            />
-          </div>
-        </button>
-
-        <button className="all-[unset] box-border flex w-full sm:w-[200px] lg:w-[220px] h-[45px] lg:h-[50px] items-center justify-center gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] lg:rounded-[33px] border border-solid border-grey-200">
-          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
-            Book An Appointment
-          </span>
-
-          <img
-            className="relative w-4 h-4 lg:w-5 lg:h-5"
-            alt="Arrow right"
-            src="/Home-Page/ca/arrow-right-3.svg"
-          />
-        </button>
+        <AppButton
+          variant="white"
+          size="lg"
+          text="Book An Appointment"
+        />
       </div>
     </section>
   );

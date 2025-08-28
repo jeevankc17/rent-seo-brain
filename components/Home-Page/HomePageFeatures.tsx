@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export default function HomePageFeatures() {
   return (
@@ -292,26 +293,18 @@ export default function HomePageFeatures() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 lg:gap-[22px] px-4">
-          <div className="flex w-full sm:w-[220px] lg:w-[265px] h-[45px] lg:h-[50px] py-0 px-[3px] justify-center lg:justify-end items-center gap-2 lg:gap-[10px] rounded-[35px] lg:rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-            <span className="text-white text-center font-urbanist text-xs md:text-sm lg:text-[16px] font-medium leading-[18px] md:leading-[20px] lg:leading-[23px] capitalize">
-              Get Your SEO Audit Now
-            </span>
-            <div className="flex py-2 lg:py-3 px-2 lg:px-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
-              <svg width="16" height="16" className="lg:w-5 lg:h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.16797 10H15.8346" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M10 4.16699L15.8333 10.0003L10 15.8337" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
-          </div>
-          <div className="flex w-full sm:w-[200px] lg:w-[229px] h-[45px] lg:h-[50px] py-[8px] lg:py-[10px] px-4 lg:px-[19px] justify-center items-center gap-2 lg:gap-[7px] rounded-[25px] lg:rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA]">
-            <span className="text-[#091E42] font-urbanist text-xs md:text-sm lg:text-[16px] font-medium leading-[100%] capitalize">
-              See Real Client Results
-            </span>
-            <svg width="18" height="16" className="lg:w-[21px] lg:h-5" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.66797 10H16.3346" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M10.5 4.16699L16.3333 10.0003L10.5 15.8337" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
+          <AppButton
+            text="Get Your SEO Audit Now"
+            variant="blue"
+            size="lg"
+            // className="w-full sm:w-[220px] lg:w-[265px] h-[45px] lg:h-[50px] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]"
+          />
+          <AppButton
+            text="See Real Client Results"
+            variant="white"
+            size="lg"
+            // className="w-full sm:w-[200px] lg:w-[229px] h-[45px] lg:h-[50px]"
+          />
         </div>
       </div>
     </section>

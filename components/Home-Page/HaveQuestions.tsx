@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export default function HaveQuestions() {
   return (
@@ -53,35 +54,17 @@ export default function HaveQuestions() {
               </div>
             </div>
             <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-3">
-              <div className="flex justify-start items-center gap-4">
-                <div
-                  data-property-1="Frame 1261155418"
-                  className="w-full lg:w-60 h-12 px-[3px] bg-blue-500 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.699999809265137px_0px_rgba(47,152,255,0.63)] flex justify-center lg:justify-end items-center gap-2.5"
-                >
-                  <div className="text-center justify-start text-white text-sm lg:text-base font-medium font-['Urbanist'] capitalize leading-snug">
-                    Schedule A consultaion
-                  </div>
-                  <div className="p-3 bg-indigo-50 rounded-[34px]  outline-1 outline-offset-[-1px] outline-blue-300-lex justify-start items-center gap-2.5">
-                    <div className="w-5 h-5 relative overflow-hidden">
-                      <img
-                        src={"/CMS/ca/arrow-right-2.svg"}
-                        className="w-5 h-5 text-primary-300"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                data-property-1="default"
-                className="w-full lg:w-56 h-12 px-5 py-2.5 bg-neutral-50 rounded-[28px] lg:rounded-[33px] outline-1 outline-offset-[-1px] outline-neutral-300 flex justify-center items-center gap-1.5"
-              >
-                <div className="justify-start text-sky-950 text-sm lg:text-base font-medium font-['Urbanist'] capitalize leading-none">
-                  Email our Team
-                </div>
-                <div className="w-5 h-5 relative overflow-hidden">
-                  <img src={"/CMS/ca/arrow-right-2.svg"} className="w-5 h-5" />
-                </div>
-              </div>
+              <AppButton
+                variant="blue"
+                size="lg"
+                text="Schedule A Consultation"
+              />
+              
+              <AppButton
+                variant="white"
+                size="lg"
+                text="Email our Team"
+              />
             </div>
           </div>
         </div>
