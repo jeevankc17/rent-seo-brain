@@ -7,6 +7,7 @@ import SendIcon from "@/public/SEO/SEOPage/Send.svg"; // Adjust the path as nece
 import DollarIcon from "@/public/SEO/SEOPage/Dollar.svg"; // Adjust the path as necessary/Dollar sign.svg";
 import SearchIcon from "@/public/SEO/SEOPage/Search.svg";
 import GlobeIcon from "@/public/SEO/SEOPage/Globe.svg";
+import AppButton from "@utils/AppButton";
 
 const GridBackground = () => {
   return (
@@ -91,65 +92,22 @@ export default function SEOPage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row justify-start lg:justify-center items-stretch sm:items-center gap-3 lg:gap-[13px] w-full">
-              <button className="flex w-full sm:w-[200px] lg:w-[243px] h-[45px] lg:h-[50px] px-[3px] py-0 justify-center lg:justify-end items-center gap-2 lg:gap-[10px] rounded-[35px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-                <span className="text-white text-center text-sm lg:text-base font-medium leading-[20px] lg:leading-[23px] capitalize font-sans">
-                  Talk to an SEO Expert
-                </span>
-                <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
-                  <svg
-                    width="16"
-                    height="16"
-                    className="lg:w-5 lg:h-5"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.16797 10H15.8346"
-                      stroke="#1D8FFF"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M10 4.1665L15.8333 9.99984L10 15.8332"
-                      stroke="#1D8FFF"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </button>
+          
+              <AppButton 
+                variant="blue"
+                size="lg"
+                text="Talk to an SEO Expert"
+                
+                />
 
-              <button className="flex w-full sm:w-[180px] lg:w-[220px] h-[45px] lg:h-[50px] px-4 lg:px-[19px] py-[10px] justify-center items-center gap-2 lg:gap-[7px] rounded-[25px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
-                <span className="text-[#091E42] text-sm lg:text-base font-medium leading-[100%] capitalize font-sans">
-                  Book an appointment
-                </span>
-                <svg
-                  width="16"
-                  height="16"
-                  className="lg:w-5 lg:h-5"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.16797 10H15.8346"
-                    stroke="#091E42"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 4.1665L15.8333 9.99984L10 15.8332"
-                    stroke="#091E42"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
+
+              
+              <AppButton 
+                variant="white"
+                size="lg"
+                text="Book an appointment"
+                
+                />
             </div>
 
             {/* Review Section */}

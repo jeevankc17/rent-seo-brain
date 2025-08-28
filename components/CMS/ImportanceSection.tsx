@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { FileText, ChevronDown, ArrowRight } from "lucide-react";
+import { FileText, ChevronDown } from "lucide-react";
+import AppButton from "@/utils/AppButton";
 
 export type ImportanceSectionType = {
   className?: string;
@@ -215,20 +216,16 @@ const ImportanceSection: React.FC<ImportanceSectionType> = ({
 
       {/* Bottom CTA Buttons */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 lg:gap-[22px] w-full">
-        <button className="flex w-full max-w-sm sm:max-w-none sm:w-auto lg:w-[299px] h-12 md:h-[50px] px-3 md:px-4 lg:px-[3px] py-0 justify-center lg:justify-end items-center gap-2 md:gap-2.5 rounded-[25px] md:rounded-[35px] lg:rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:bg-[#1a7ae6] transition-colors">
-          <div className="text-white text-center font-urbanist text-sm md:text-base font-medium leading-[23px]">
-            Work With Our Content Experts
-          </div>
-          <div className="flex p-2 md:p-3 items-center gap-2.5 rounded-[20px] md:rounded-[25px] lg:rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
-            <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-[#1D8FFF]" strokeWidth={2} />
-          </div>
-        </button>
-        <button className="flex w-full max-w-xs sm:max-w-none sm:w-auto lg:w-[172px] h-12 md:h-[50px] py-2 md:py-2.5 px-4 md:px-5 lg:px-[19px] justify-center items-center gap-2 md:gap-[7px] rounded-[25px] md:rounded-[30px] lg:rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA] hover:bg-[#f0f0f0] transition-colors">
-          <div className="text-[#091E42] font-urbanist text-sm md:text-base font-medium leading-[100%]">
-            Learn More
-          </div>
-          <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-[#091E42]" strokeWidth={1.75} />
-        </button>
+        <AppButton
+          text="Work With Our Content Experts"
+          variant="blue"
+          size="lg"
+        />
+        <AppButton
+          text="Learn More"
+          variant="white"
+          size="lg"
+        />
       </div>
     </div>
   );

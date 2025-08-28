@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 const defaultTestimonialData = {
   rating: "4.9/5",
@@ -109,22 +110,12 @@ export const CMSTestimonial: React.FC<TestimonialProps> = ({
           </div>
 
           {/* CTA Button */}
-          <button
-            className="flex w-full max-w-[240px] md:max-w-[260px] lg:w-[270px] h-12 md:h-[50px] items-center justify-center gap-2 md:gap-[7px] px-4 md:px-[19px] py-2.5 bg-grey-50 rounded-[25px] md:rounded-[30px] lg:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
-            type="button"
-            aria-label="Book an appointment to discuss your business growth"
+          <AppButton
+            text="See Content Examples"
+            variant="white"
+            size="lg"
             onClick={onCtaClick}
-          >
-            <span className="font-urbanist font-medium text-[#091e42] text-sm md:text-base whitespace-nowrap">
-              See Content Examples
-            </span>
-            <img
-              className="w-4 h-4 md:w-5 md:h-5"
-              alt=""
-              src="/CMS/ca/arrow-right-2.svg"
-              aria-hidden="true"
-            />
-          </button>
+          />
         </div>
       </div>
     </section>

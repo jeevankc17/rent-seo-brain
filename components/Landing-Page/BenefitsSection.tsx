@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const BenefitsSection: React.FC = () => {
   return (
@@ -276,26 +277,16 @@ export const BenefitsSection: React.FC = () => {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                <div className="flex items-center justify-end gap-2.5 w-full max-w-[262px] h-[50px] px-[3px] bg-[#1D8FFF] rounded-[45px] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-                  <span className="text-white text-center font-urbanist text-sm md:text-base font-medium leading-[23px] capitalize">
-                    Optimize My Landing Page
-                  </span>
-                  <div className="flex items-center gap-2.5 p-3 bg-[#E8F4FF] border border-[#A2D1FF] rounded-[34px]">
-                    <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4.16797 10H15.8346" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M10 4.16699L15.8333 10.0003L10 15.8337" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex items-center justify-center gap-[7px] w-full max-w-[220px] h-[50px] px-[19px] py-2.5 bg-[#FAFAFA] border border-[#D2D2D2] rounded-[33px]">
-                  <span className="text-[#091E42] font-urbanist text-sm md:text-base font-medium leading-4 capitalize">
-                    talk to a designer
-                  </span>
-                  <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.16797 10H15.8346" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M10 4.16699L15.8333 10.0003L10 15.8337" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
+                <AppButton
+                  text="Optimize My Landing Page"
+                  variant="blue"
+                  size="lg"
+                />
+                <AppButton
+                  text="Talk to a Designer"
+                  variant="white"
+                  size="lg"
+                />
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const ContentServiceSection: React.FC = () => {
   const features = [
@@ -219,16 +220,18 @@ export const ContentServiceSection: React.FC = () => {
 
                   {/* Action Buttons */}
                   <div className="flex flex-col items-start gap-3 md:gap-4 lg:gap-[19px] w-full">
-                    <button className="flex px-3 md:px-4 lg:px-[10px] py-2 md:py-3 lg:py-[10px] justify-center items-center gap-[10px] w-full rounded-[5px] bg-[#1D8FFF] hover:bg-[#1a7ae6] transition-colors">
-                      <div className="color-white text-center font-urbanist text-sm md:text-base font-medium leading-6 md:leading-8 text-white">
-                        Analyze Content
-                      </div>
-                    </button>
-                    <button className="flex px-3 md:px-4 lg:px-[10px] py-2 md:py-3 lg:py-[10px] justify-center items-center gap-[10px] w-full rounded-[5px] border border-[#D2D2D2] bg-[#E9E9E9] hover:bg-[#ddd] transition-colors">
-                      <div className="color-[#071F36] text-center font-urbanist text-sm md:text-base font-medium leading-6 md:leading-8 text-[#071F36]">
-                        Get Professional Content like this
-                      </div>
-                    </button>
+                    <AppButton
+                      text="Analyze Content"
+                      variant="blue"
+                      size="md"
+                      className="w-full"
+                    />
+                    <AppButton
+                      text="Get Professional Content like this"
+                      variant="white"
+                      size="md"
+                      className="w-full"
+                    />
                   </div>
 
                   {/* Footer Text */}
@@ -242,65 +245,30 @@ export const ContentServiceSection: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 lg:gap-[22px] w-full">
-            <button className="flex w-full max-w-sm sm:max-w-none sm:w-auto lg:w-[299px] h-12 md:h-[50px] px-3 md:px-4 lg:px-[3px] py-0 justify-center lg:justify-end items-center gap-2 md:gap-3 lg:gap-[10px] rounded-[25px] md:rounded-[35px] lg:rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:bg-[#1a7ae6] transition-colors">
-              <div className="color-white text-center font-urbanist text-sm md:text-base font-medium leading-[23px] text-white">
-                Work With Our Content Experts
-              </div>
-              <div className="flex px-2 md:px-3 py-2 md:py-3 items-center gap-[10px] rounded-[20px] md:rounded-[25px] lg:rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
-                <svg 
-                  width="16" 
-                  height="16" 
-                  viewBox="0 0 21 20" 
-                  fill="none" 
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4 md:w-5 md:h-5"
-                >
-                  <path 
-                    d="M4.66406 10H16.3307" 
-                    stroke="#1D8FFF" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
-                  />
-                  <path 
-                    d="M10.5 4.16699L16.3333 10.0003L10.5 15.8337" 
-                    stroke="#1D8FFF" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
-                  />
+            <AppButton
+              text="Work With Our Content Experts"
+              variant="blue"
+              size="lg"
+              className="w-full max-w-sm sm:max-w-none sm:w-auto lg:w-[309px]"
+              icon={
+                <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 md:w-5 md:h-5">
+                  <path d="M4.66406 10H16.3307" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M10.5 4.16699L16.3333 10.0003L10.5 15.8337" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </div>
-            </button>
-            
-            <button className="flex w-full max-w-xs sm:max-w-none sm:w-auto lg:w-[172px] h-12 md:h-[50px] px-4 md:px-5 lg:px-[19px] py-2 md:py-[10px] justify-center items-center gap-2 md:gap-[7px] rounded-[25px] md:rounded-[30px] lg:rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA] hover:bg-[#f0f0f0] transition-colors">
-              <div className="color-[#091E42] font-urbanist text-sm md:text-base font-medium leading-4 text-[#091E42]">
-                Learn More
-              </div>
-              <svg 
-                width="16" 
-                height="16" 
-                viewBox="0 0 21 20" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
-              >
-                <path 
-                  d="M4.66406 10H16.3307" 
-                  stroke="#091E42" 
-                  strokeWidth="1.75" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                />
-                <path 
-                  d="M10.5 4.16699L16.3333 10.0003L10.5 15.8337" 
-                  stroke="#091E42" 
-                  strokeWidth="1.75" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
+              }
+            />
+            <AppButton
+              text="Learn More"
+              variant="white"
+              size="lg"
+              className="w-full max-w-xs sm:max-w-none sm:w-auto lg:w-[172px]"
+              icon={
+                <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 md:w-5 md:h-5">
+                  <path d="M4.66406 10H16.3307" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M10.5 4.16699L16.3333 10.0003L10.5 15.8337" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              }
+            />
           </div>
         </div>
       </div>

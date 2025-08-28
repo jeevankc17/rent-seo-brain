@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const CaseStudies: React.FC = () => {
   // Data for metrics in the case study card
@@ -39,9 +40,7 @@ export const CaseStudies: React.FC = () => {
   ];
 
   // Data for star ratings
-  const starRating = Array(5).fill(
-    "/SEO/ca/star-filled-4.svg"
-  );
+  const starRating = Array(5).fill("/SEO/ca/star-filled-4.svg");
 
   return (
     <section
@@ -79,28 +78,32 @@ export const CaseStudies: React.FC = () => {
 
                           <div className="flex flex-wrap items-end gap-3 relative self-stretch w-full flex-[0_0_auto] lg:gap-[19px_14px]">
                             {industryTags.map((tag, index) => (
-                              <button
+                              <AppButton
                                 key={index}
-                                className="flex w-auto items-center justify-center gap-2.5 px-4 py-3 relative rounded-[45px] border border-solid border-neutral-0 hover:bg-neutral-0 hover:text-black transition-colors focus:outline-2 focus:outline-neutral-0 lg:px-[23px] lg:py-[13px]"
-                              >
-                                <span className="relative w-fit mt-[-1.00px] font-urbanist font-semibold text-neutral-0 text-sm text-center tracking-[0] leading-[23px] whitespace-nowrap lg:text-base">
-                                  {tag}
-                                </span>
-                              </button>
+                                variant="white"
+                                size="sm"
+                                text={tag}
+                                className="border border-solid border-neutral-0 hover:bg-neutral-0 hover:text-black focus:outline-2 focus:outline-neutral-0 lg:px-[23px] lg:py-[13px]"
+                              />
                             ))}
                           </div>
                         </div>
 
-                        <button className="w-full flex h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-primary-300 transition-colors lg:w-[284px]">
-                          <span className="relative w-fit font-urbanist font-medium text-[#091e42] text-sm tracking-[0] leading-4 whitespace-nowrap lg:text-base">
-                            View All Case Studies
-                          </span>
-                          <img
-                            className="relative w-5 h-5"
-                            alt="Arrow right"
-                            src="/SEO/ca/arrow-right-1.svg"
-                          />
-                        </button>
+                        <AppButton
+                          variant="white"
+                          size="lg"
+                          className="w-full lg:w-[284px] bg-grey-50 border border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-primary-300"
+                          icon={
+                            <img
+                              className="relative w-5 h-5"
+                              alt="Arrow right"
+                              src="/SEO/ca/arrow-right-1.svg"
+                            />
+                          }
+                          iconPosition="right"
+                        >
+                          View All Case Studies
+                        </AppButton>
                       </div>
                     </div>
 

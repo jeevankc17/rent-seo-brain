@@ -22,7 +22,7 @@ export interface AppButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEle
 }
 
 const buttonVariants = {
-  blue: "bg-[#4F7EFF] text-white shadow-[0_4px_14.7px_0_rgba(79,126,255,0.4)] hover:bg-[#3D6EFF] focus:ring-2 focus:ring-[#4F7EFF] focus:ring-offset-2",
+  blue: "bg-primary-300 text-white shadow-[0_4px_14.7px_0_rgba(79,126,255,0.4)] hover:bg-[#3D6EFF] focus:ring-2 focus:ring-[#4F7EFF] focus:ring-offset-2",
   white: "bg-white text-[#091E42] border border-[#E4E7EA] hover:bg-gray-50 focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
 };
 

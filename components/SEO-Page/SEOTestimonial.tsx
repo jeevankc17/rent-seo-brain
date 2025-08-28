@@ -1,3 +1,4 @@
+import AppButton from "@utils/AppButton";
 import React from "react";
 
 const defaultTestimonialData = {
@@ -75,7 +76,6 @@ export const SEOTestimonial: React.FC<TestimonialProps> = ({
                   </div>
                 </div>
               </div>
-
             </div>
 
             <p className="relative w-full max-w-[404px] font-urbanist font-medium text-[#ffffffb2] text-sm text-center leading-[22px] lg:text-lg lg:leading-[26.1px]">
@@ -96,23 +96,12 @@ export const SEOTestimonial: React.FC<TestimonialProps> = ({
               </p>
             </div>
 
-            <button
-              className="flex w-full max-w-[270px] h-[50px] items-center justify-center gap-2 px-4 py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200 lg:gap-[7px] lg:px-[19px]"
-              type="button"
-              aria-label="Book an appointment to discuss your business growth"
+            <AppButton
+              variant="white"
+              size="lg"
               onClick={onCtaClick}
-            >
-              <span className="relative w-fit font-urbanist font-medium text-[#091e42] text-sm leading-4 whitespace-nowrap lg:text-base">
-                {ctaLabel}
-              </span>
-
-              <img
-                className="relative w-4 h-4 lg:w-5 lg:h-5"
-                alt=""
-                src="/SEO/ca/arrow-right-2.svg"
-                aria-hidden="true"
-              />
-            </button>
+              text={ctaLabel}
+            />
           </div>
         </div>
 

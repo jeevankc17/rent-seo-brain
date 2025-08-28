@@ -10,7 +10,7 @@ import Banner from "@components/SEO-Page/Banner";
 import { ToolsSection } from "@components/SEO-Page/ToolsSection";
 import { IndustryLeaders } from "@components/SEO-Page/IndustryLeaders";
 import { SEOTestimonial } from "@components/SEO-Page/SEOTestimonial";
-import { CaseStudies} from "@components/SEO-Page/CaseStudies";
+import { CaseStudies } from "@components/SEO-Page/CaseStudies";
 import { FAQSection } from "@components/SEO-Page/FAQSection";
 
 export default function Home() {
@@ -31,9 +31,7 @@ export default function Home() {
       <section className="relative w-full h-auto bg-white lg:h-[1002px]">
         <TrustSEO />
       </section>
-      {/* <section className="relative w-full h-auto px-4 lg:px-[156px] lg:h-[519px]">
-        <Banner />
-      </section> */}
+
       <section className="relative w-full h-auto lg:h-[519px]">
         <ToolsSection />
       </section>
@@ -43,7 +41,8 @@ export default function Home() {
       <section className="relative w-full h-auto bg-white px-4 lg:px-[156px] lg:h-[1117px]">
         <ServeBusiness />
       </section>
-      <section className="relative w-full h-auto lg:h-[1542px]">
+
+      <section className="relative w-full bg-neutral-900 ">
         <CaseStudies />
       </section>
       <section className="relative w-full h-auto px-4 lg:px-[156px] lg:h-[506px]">

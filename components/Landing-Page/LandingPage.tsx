@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import AppButton from "@/utils/AppButton";
 
 const LandingPage = () => {
   return (
@@ -71,27 +72,17 @@ const LandingPage = () => {
 
         {/* CTA Buttons */}
         <div className="flex justify-center items-center gap-[13px]">
-          <button className="flex w-[248px] h-[50px] px-[3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-            <span className="text-white text-center text-base font-medium leading-[23px] capitalize font-[Urbanist]">
-              Start my landing page
-            </span>
-            <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
-              <svg width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.66797 10H16.3346" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M10.5 4.1665L16.3333 9.99984L10.5 15.8332" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
-          </button>
+          <AppButton
+            text="Start my landing page"
+            variant="blue"
+            size="lg"
+          />
 
-          <button className="flex w-[220px] h-[50px] px-[19px] py-[10px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA]">
-            <span className="text-[#091E42] text-base font-medium leading-[100%] capitalize font-[Urbanist]">
-              see how it works
-            </span>
-            <svg width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.66797 10H16.3346" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M10.5 4.1665L16.3333 9.99984L10.5 15.8332" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </button>
+          <AppButton
+            text="see how it works"
+            variant="white"
+            size="lg"
+          />
         </div>
       </div>
 

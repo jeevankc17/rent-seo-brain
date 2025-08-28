@@ -2,6 +2,7 @@
 
 import type { NextPage } from "next";
 import { ArrowRight, Star } from "lucide-react";
+import AppButton from "@/utils/AppButton";
 
 export type WireframeType = {
   className?: string;
@@ -302,22 +303,18 @@ const Wireframe: NextPage<WireframeType> = ({ className = "" }) => {
         {/* Buttons */}
         <div className="flex justify-center items-center gap-6">
           {/* Primary Button */}
-          <button className="flex w-[248px] h-[50px] p-[0_3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-            <div className="text-white text-center font-urbanist text-base font-medium leading-[23px] capitalize">
-              Build My Landing Page
-            </div>
-            <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
-              <ArrowRight className="w-5 h-5 text-[#1D8FFF]" strokeWidth="2" />
-            </div>
-          </button>
+          <AppButton
+            text="Build My Landing Page"
+            variant="blue"
+            size="lg"
+          />
 
           {/* Secondary Button */}
-          <button className="flex w-[220px] h-[50px] p-[10px_19px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA]">
-            <div className="text-[#091E42] font-urbanist text-base font-medium leading-[100%] capitalize">
-              Book an appointment
-            </div>
-            <ArrowRight className="w-5 h-5 text-[#091E42]" strokeWidth="1.75" />
-          </button>
+          <AppButton
+            text="Book an appointment"
+            variant="white"
+            size="lg"
+          />
         </div>
       </div>
     </div>

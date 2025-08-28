@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import AppButton from "@/utils/AppButton";
 
 export type HomePageType = {
   className?: string;
@@ -160,32 +161,17 @@ const HeroSection: NextPage<HomePageType> = ({ className = "" }) => {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-[13px] text-sm md:text-base text-Foundation-Neutral-Scale-N0">
-            <div className="w-full max-w-[248px] shadow-[0px_4px_14.7px_rgba(47,_152,_255,_0.63)] rounded-[45px] bg-primary-300 h-[50px] flex flex-row items-center justify-end py-0 px-[3px] box-border gap-2.5">
-              <div className="relative leading-[23px] capitalize font-normal text-white">
-                Start my landing page
-              </div>
-              <Image
-                className="w-11 rounded-[34px] h-11"
-                width={44}
-                height={44}
-                sizes="100vw"
-                alt=""
-                src="/frame-1261155419.svg"
-              />
-            </div>
-            <div className="w-full max-w-[220px] rounded-[33px] bg-white border-Foundation-Grey-Scale-G200 border-solid border-[1px] box-border h-[50px] flex flex-row items-center justify-center py-2.5 px-[19px] gap-[7px] text-left text-gray-100">
-              <div className="relative leading-[100%] capitalize font-normal text-black">
-                see how it works
-              </div>
-              <Image
-                className="w-5 relative h-5 overflow-hidden shrink-0"
-                width={20}
-                height={20}
-                sizes="100vw"
-                alt=""
-                src="/arrowright.svg"
-              />
-            </div>
+            <AppButton
+              text="Start my landing page"
+              variant="blue"
+              size="lg"
+            />
+            
+            <AppButton
+              text="See how it works"
+              variant="white"
+              size="lg"
+            />
           </div>
         </div>
         <div className="hidden lg:block absolute top-[119px] left-1/2 transform -translate-x-1/2 w-full max-w-[1437px] h-[922px] text-left text-black">

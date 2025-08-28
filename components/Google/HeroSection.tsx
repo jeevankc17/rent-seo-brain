@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Check, Star, ArrowRight } from "lucide-react";
 import Button from "@components/registry/seraui/button";
 import { IndustryLeadersSection } from "./IndustryLeaderSection";
+import AppButton from "@/utils/AppButton";
 
 const GridBackground = () => {
   return (
@@ -124,65 +125,17 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 lg:gap-[13px] w-full max-w-[520px] px-4 sm:px-0">
-            <button className="flex w-full sm:w-[240px] lg:w-[273px] h-[40px] lg:h-[50px] px-[3px] py-0 justify-center lg:justify-end items-center gap-2 lg:gap-[10px] rounded-[30px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-              <span className="text-white text-center text-xs lg:text-base font-medium leading-[18px] lg:leading-[23px] capitalize font-sans">
-                Boost Your SEO Knowledge
-              </span>
-              <div className="flex p-1.5 lg:p-3 items-center gap-[10px] rounded-[20px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
-                <svg
-                  width="14"
-                  height="14"
-                  className="lg:w-5 lg:h-5"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.16797 10H15.8346"
-                    stroke="#1D8FFF"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 4.1665L15.8333 9.99984L10 15.8332"
-                    stroke="#1D8FFF"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
+            <AppButton
+              text="Boost Your SEO Knowledge"
+              variant="blue"
+              size="lg"
+            />
 
-            <button className="flex w-full sm:w-[180px] lg:w-[220px] h-[40px] lg:h-[50px] px-3 lg:px-[19px] py-[8px] lg:py-[10px] justify-center items-center gap-2 lg:gap-[7px] rounded-[20px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
-              <span className="text-[#091E42] text-xs lg:text-base font-medium leading-[100%] capitalize font-sans">
-                Read the Trending
-              </span>
-              <svg
-                width="14"
-                height="14"
-                className="lg:w-5 lg:h-5"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.16797 10H15.8346"
-                  stroke="#091E42"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M10 4.1665L15.8333 9.99984L10 15.8332"
-                  stroke="#091E42"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
+            <AppButton
+              text="Read the Trending"
+              variant="white"
+              size="lg"
+            />
           </div>
         </div>
       </div>

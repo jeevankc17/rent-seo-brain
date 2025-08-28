@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const PerformanceDashboardSection: React.FC = () => {
   // Data for statistics cards
@@ -315,11 +316,11 @@ export const PerformanceDashboardSection: React.FC = () => {
                 </div>
 
                 <div className="inline-flex items-center gap-[9.02px] absolute top-[500px] left-[102px]">
-                  <button className="flex w-full max-w-[148px] h-[30px] lg:h-[33.5px] items-center justify-center gap-2 lg:gap-[12.88px] px-4 lg:px-[52.82px] py-2 lg:py-[7.73px] relative bg-primary-300 rounded-[6px] lg:rounded-[6.44px] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
-                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-xs lg:text-[12.9px] tracking-[0] leading-[10px] lg:leading-[11.6px] whitespace-nowrap">
-                      View More
-                    </span>
-                  </button>
+                  <AppButton
+                    text="View More"
+                    variant="blue"
+                    size="lg"
+                  />
 
                   <div className="inline-flex items-center justify-center gap-[12.88px] p-[7.73px] relative flex-[0_0_auto] bg-primary-500 rounded-[10.31px] rotate-[1.00deg]">
                     <img

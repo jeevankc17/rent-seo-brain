@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 // Add TypeScript interfaces and update component signature
 interface AdType {
@@ -424,29 +425,17 @@ export const AdOverviewSection: React.FC = () => {
       </main>
 
       <footer className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 relative flex-[0_0_auto] w-full max-w-md sm:max-w-none">
-        <button className="w-full sm:w-[294px] flex h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] cursor-pointer">
-          <p className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
-            Start With The Right Strategy
-          </p>
-          <div className="inline-flex items-center gap-2.5 p-2 lg:p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[24px] lg:rounded-[34px] border border-solid border-primary-75">
-            <img
-              className="relative w-4 h-4 lg:w-5 lg:h-5"
-              alt="Arrow right"
-              src="/Google/ca/arrow-right-1.svg"
-            />
-          </div>
-        </button>
+        <AppButton
+          text="Start With The Right Strategy"
+          variant="blue"
+          size="lg"
+        />
 
-        <button className="all-[unset] box-border flex w-full sm:w-[212px] h-[45px] lg:h-[50px] items-center justify-center gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] lg:rounded-[33px] border border-solid border-grey-200 cursor-pointer">
-          <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
-            Explore Our Process
-          </div>
-          <img
-            className="relative w-4 h-4 lg:w-5 lg:h-5"
-            alt="Arrow right"
-            src="/Google/ca/arrow-right-2.svg"
-          />
-        </button>
+        <AppButton
+          text="Explore Our Process"
+          variant="white"
+          size="lg"
+        />
       </footer>
     </section>
   );

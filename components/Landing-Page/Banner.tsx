@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import AppButton from "@/utils/AppButton";
 
 export type BannerProps = {
   className?: string;
@@ -102,7 +103,7 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
 
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button className="flex w-full sm:w-[220px] lg:w-[248px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-[10px] px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
+            {/* <button className="flex w-full sm:w-[220px] lg:w-[248px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-[10px] px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
               <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
                 Start My Landing Page
               </span>
@@ -130,23 +131,17 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
                   />
                 </svg>
               </div>
-            </button>
-            <button
-              className="all-[unset] box-border flex w-full sm:w-[200px] lg:w-[270px] h-[45px] lg:h-[50px] items-center justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] lg:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
-              type="button"
-              aria-label="Book an appointment to discuss your business growth"
-            >
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-[16px] lg:leading-4 whitespace-nowrap">
-                Book a Free Consultation
-              </span>
-
-              <img
-                className="relative w-5 h-5"
-                alt=""
-                src="/LP/ca/arrow-right-2.svg"
-                aria-hidden="true"
-              />
-            </button>
+            </button> */}
+            <AppButton
+              text="Start My Landing Page"
+              variant="blue"
+              size="lg"
+            />
+            <AppButton
+              text="Book a Free Consultation"
+              variant="white"
+              size="lg"
+            />
           </div>
         </div>
       </div>

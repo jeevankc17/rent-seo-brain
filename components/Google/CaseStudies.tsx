@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const CaseStudies: React.FC = () => {
   // Data for metrics in the case study card
@@ -93,16 +94,11 @@ export const CaseStudies: React.FC = () => {
                           </div>
                         </div>
 
-                        <button className="all-[unset] box-border w-full lg:w-[284px] flex h-12 lg:h-[50px] items-center justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[28px] lg:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-primary-300 transition-colors">
-                          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
-                            View All Case Studies
-                          </span>
-                          <img
-                            className="relative w-5 h-5"
-                            alt="Arrow right"
-                            src="/Home-Page/ca/arrow-right-1.svg"
-                          />
-                        </button>
+                        <AppButton
+                          text="View All Case Studies"
+                          variant="white"
+                          size="lg"
+                        />
                       </div>
                     </div>
 
@@ -278,16 +274,11 @@ export const CaseStudies: React.FC = () => {
                   ))}
                 </div>
 
-                <button className="all-[unset] box-border flex w-full lg:w-[227px] h-12 lg:h-[50px] justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 bg-grey-50 rounded-[28px] lg:rounded-[33px] border border-solid border-grey-200 items-center relative hover:bg-grey-75 focus:outline-2 focus:outline-primary-300 transition-colors">
-                  <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
-                    Read Full Case Study
-                  </span>
-                  <img
-                    className="relative w-5 h-5"
-                    alt="Arrow right"
-                    src="/Home-Page/ca/arrow-right.svg"
-                  />
-                </button>
+                <AppButton
+                  text="Read Full Case Study"
+                  variant="white"
+                  size="lg"
+                />
               </div>
             </article>
           </div>

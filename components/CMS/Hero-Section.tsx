@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import AppButton from "@/utils/AppButton";
 
 // Grid Background Component (from Hero Section)
 const GridBackground = () => {
@@ -78,66 +79,19 @@ export default function CMS() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col md:flex-row justify-center items-stretch md:items-center gap-3 md:gap-[13px] w-full max-w-[520px]">
-            <button className="flex w-full md:w-[240px] lg:w-[273px] h-[40px] lg:h-[50px] px-1 md:px-[3px] py-0 justify-center md:justify-end items-center gap-1 md:gap-[10px] rounded-[30px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-              <span className="text-white text-center text-sm md:text-base font-medium leading-normal md:leading-[20px] lg:leading-[23px] capitalize font-sans">
-                Create Content That Converts
-              </span>
-              <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
-                <svg
-                  width="16"
-                  height="16"
-                  className="lg:w-5 lg:h-5"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.16797 10H15.8346"
-                    stroke="#1D8FFF"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 4.1665L15.8333 9.99984L10 15.8332"
-                    stroke="#1D8FFF"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-
-            <button className="flex w-full md:w-[180px] lg:w-[220px] h-[40px] lg:h-[50px] px-3 lg:px-[19px] py-2 lg:py-[10px] justify-center items-center gap-1 lg:gap-[7px] rounded-[20px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
-              <span className="text-[#091E42] text-sm md:text-base font-medium leading-[100%] capitalize font-sans">
-                Explore Our Client Wins
-              </span>
-              <svg
-                width="16"
-                height="16"
-                className="lg:w-5 lg:h-5"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.16797 10H15.8346"
-                  stroke="#091E42"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M10 4.1665L15.8333 9.99984L10 15.8332"
-                  stroke="#091E42"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4 w-full max-w-[820px]">
+            <AppButton
+              text="Create Content That Converts"
+              variant="blue"
+              size="lg"
+              className="w-full md:w-[300px]"
+            />
+            <AppButton
+              text="Explore Our Client Wins"
+              variant="white"
+              size="lg"
+              className="w-full md:w-[250px]"
+            />
           </div>
         </div>
 

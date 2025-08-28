@@ -1,3 +1,4 @@
+import AppButton from "@utils/AppButton";
 import React from "react";
 
 const defaultTestimonialData = {
@@ -99,27 +100,16 @@ export const BlogTestimonial: React.FC<TestimonialProps> = ({
               <p className="relative w-full max-w-[598px] [font-family:'Urbanist',Helvetica] font-medium text-[#ffffffb2] text-sm md:text-base lg:text-lg text-center tracking-[0] leading-[20px] md:leading-[24px] lg:leading-[26.1px]">
                 Our experts can audit, optimize, and grow your site traffic —
                 fast. Get a comprehensive SEO strategy tailored to your
-                business.
+                business.``
               </p>
             </div>
 
-            <button
-              className="all-[unset] box-border flex w-full max-w-[270px] h-[45px] md:h-[50px] items-center justify-center gap-[5px] md:gap-[7px] px-4 md:px-[19px] py-2 md:py-2.5 relative bg-grey-50 rounded-[28px] md:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
-              type="button"
-              aria-label="Book an appointment to discuss your business growth"
+            <AppButton
+              variant="white"
+              size="lg"
               onClick={onCtaClick}
-            >
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm md:text-base tracking-[0] leading-4 whitespace-nowrap">
-                {ctaLabel}
-              </span>
-
-              <img
-                className="relative w-4 md:w-5 h-4 md:h-5"
-                alt=""
-                src="/Blog/ca/arrow-right-2.svg"
-                aria-hidden="true"
-              />
-            </button>
+              text={ctaLabel}
+            />
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const ContentServicesSection: React.FC = () => {
   // Data for calendar days
@@ -335,29 +336,16 @@ export const ContentServicesSection: React.FC = () => {
 
           {/* Call to action buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-[13px] w-full">
-            <button className="flex w-full max-w-sm sm:max-w-none sm:w-auto lg:w-64 h-12 md:h-[50px] items-center justify-center lg:justify-end gap-2 md:gap-2.5 px-3 lg:px-[3px] py-0 bg-primary-300 rounded-[25px] md:rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_rgba(46,151,255,0.6)] hover:bg-primary-200 transition-colors">
-              <div className="font-medium text-neutral-0 text-sm md:text-base text-center [font-family:'Urbanist',Helvetica] tracking-[0] leading-[23px]">
-                Launch My Content Plan
-              </div>
-              <div className="inline-flex items-center gap-2.5 p-2 md:p-3 bg-primary-500 rounded-[20px] md:rounded-[25px] lg:rounded-[34px] border border-primary-400">
-                <img
-                  className="w-4 h-4 md:w-5 md:h-5"
-                  alt="Arrow right"
-                  src="/CMS/ca/arrow-right.svg"
-                />
-              </div>
-            </button>
-
-            <button className="flex w-full max-w-xs sm:max-w-none sm:w-auto lg:w-[249px] h-12 md:h-[50px] items-center justify-center gap-2 md:gap-[7px] px-4 md:px-5 lg:px-[19px] py-2.5 bg-grey-50 rounded-[25px] md:rounded-[30px] lg:rounded-[33px] border border-grey-200 hover:bg-grey-75 transition-colors">
-              <p className="font-medium text-neutral-0 text-sm md:text-base [font-family:'Urbanist',Helvetica] tracking-[0] leading-4">
-                Talk To A Content Expert
-              </p>
-              <img
-                className="w-4 h-4 md:w-5 md:h-5"
-                alt="Arrow right"
-                src="/CMS/ca/arrow-right-1.svg"
-              />
-            </button>
+            <AppButton
+              text="Launch My Content Plan"
+              variant="blue"
+              size="lg"
+            />
+            <AppButton
+              text="Talk To A Content Expert"
+              variant="white"
+              size="lg"
+            />
           </div>
         </div>
       </div>

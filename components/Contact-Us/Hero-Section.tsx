@@ -1,6 +1,7 @@
- "use client";
+"use client";
 import React from "react";
 import Image from "next/image";
+import AppButton from "@utils/AppButton";
 
 // Grid Background Component
 const GridBackground = () => {
@@ -116,29 +117,17 @@ const HeroSection: React.FC = () => {
               </h1>
               <p className="w-full max-w-[640px] text-grey-200 text-center text-sm md:text-base font-medium leading-relaxed md:leading-[20px] lg:leading-[23px] font-sans">
                 Reach out to the Rent SEO Brain team for product support,
-                partnerships, or custom SEO tool access. We typically reply within
-                24 hours.
+                partnerships, or custom SEO tool access. We typically reply
+                within 24 hours.
               </p>
             </div>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col md:flex-row justify-center items-stretch md:items-center gap-3 md:gap-[13px] w-full max-w-[520px]">
-            <button className="flex w-full md:w-[240px] lg:w-[273px] h-[40px] lg:h-[50px] px-1 md:px-[3px] py-0 justify-center md:justify-end items-center gap-1 md:gap-[10px] rounded-[30px] lg:rounded-[45px] bg-primary-300 shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)]">
-              <span className="text-white text-center text-sm md:text-base font-medium leading-normal md:leading-[20px] lg:leading-[23px] capitalize font-sans">
-                Send a Message
-              </span>
-              <div className="flex p-2 lg:p-3 items-center gap-[10px] rounded-[24px] lg:rounded-[34px] border border-primary-75 bg-primary-50">
-                <ArrowIcon className="w-4 h-4 lg:w-5 lg:h-5 text-blue-500" />
-              </div>
-            </button>
+            <AppButton variant="blue" size="lg" text="Send a Message" />
 
-            <button className="flex w-full md:w-[180px] lg:w-[220px] h-[40px] lg:h-[50px] px-3 lg:px-[19px] py-2 lg:py-[10px] justify-center items-center gap-1 lg:gap-[7px] rounded-[20px] lg:rounded-[33px] border border-grey-200 bg-grey-50">
-              <span className="text-[#091E42] text-sm md:text-base font-medium leading-[100%] capitalize font-sans">
-                Schedule a Call
-              </span>
-              <ArrowIcon className="w-4 h-4 lg:w-5 lg:h-5 text-[#091E42]" />
-            </button>
+            <AppButton variant="white" size="lg" text="Schedule a Call" />
           </div>
         </div>
 

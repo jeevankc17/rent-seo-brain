@@ -1,4 +1,5 @@
 import React from 'react';
+import AppButton from "@/utils/AppButton";
 
 const PowerContent = () => {
   return (
@@ -64,9 +65,12 @@ const PowerContent = () => {
                           <div className="text-white text-center font-['Urbanist'] text-sm font-normal">SEO Score</div>
                         </div>
                       </div>
-                      <div className="flex justify-center items-center gap-2.5 p-3.5 w-full rounded-[7px] bg-[#1D8FFF]">
-                        <div className="text-white text-center font-['Urbanist'] text-sm font-medium">Start Writing</div>
-                      </div>
+                      <AppButton 
+                        text="Start Writing" 
+                        variant="blue" 
+                        size="sm"
+                        className="w-full"
+                      />
                     </div>
                   </div>
                   <div className="flex flex-col items-start gap-3.5 w-full">
@@ -148,9 +152,12 @@ const PowerContent = () => {
                     <path d="M26.5 4V22" stroke="#7CBEFF" strokeWidth="4" strokeLinecap="round"/>
                     <path d="M34.5 8.5V17.5" stroke="#A2D1FF" strokeWidth="4" strokeLinecap="round"/>
                   </svg>
-                  <div className="flex justify-center items-center gap-2.5 p-2.5 w-full rounded-[7px] bg-[#1D8FFF]">
-                    <div className="text-white text-center font-['Urbanist'] text-sm font-medium">Launch Campaign</div>
-                  </div>
+                  <AppButton 
+                    text="Launch Campaign" 
+                    variant="blue" 
+                    size="sm"
+                    className="w-full"
+                  />
                 </div>
                 <div className="flex flex-col items-start gap-3.5 w-full">
                   <div className="text-[#BF0] font-['Urbanist'] text-base font-semibold">03</div>
@@ -210,23 +217,30 @@ const PowerContent = () => {
 
           {/* Call to action buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-[13px] w-full">
-            <button className="flex w-full max-w-sm sm:max-w-none sm:w-auto lg:w-64 h-12 md:h-[50px] items-center justify-center lg:justify-end gap-2 md:gap-2.5 px-3 lg:px-[3px] py-0 bg-[#1D8FFF] rounded-[25px] md:rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_rgba(47,152,255,0.63)] hover:bg-blue-600 transition-colors">
-              <div className="text-white text-center font-['Urbanist'] text-sm md:text-base font-medium">Launch My Content Plan</div>
-              <div className="inline-flex items-center gap-2.5 p-2 md:p-3 bg-[#E8F4FF] rounded-[20px] md:rounded-[25px] lg:rounded-[34px] border border-[#A2D1FF]">
-                <svg className="w-4 h-4 md:w-5 md:h-5" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <AppButton
+              text="Launch My Content Plan"
+              variant="blue"
+              size="lg"
+              className="w-full max-w-sm sm:max-w-none sm:w-auto lg:w-64"
+              icon={
+                <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4">
                   <path d="M4.66406 10H16.3307" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M10.5 4.16699L16.3333 10.0003L10.5 15.8337" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </div>
-            </button>
-
-            <button className="flex w-full max-w-xs sm:max-w-none sm:w-auto lg:w-[249px] h-12 md:h-[50px] items-center justify-center gap-2 md:gap-[7px] px-4 md:px-5 lg:px-[19px] py-2.5 bg-[#FAFAFA] rounded-[25px] md:rounded-[30px] lg:rounded-[33px] border border-[#D2D2D2] hover:bg-gray-100 transition-colors">
-              <p className="text-[#091E42] font-['Urbanist'] text-sm md:text-base font-medium">Talk to a Content Expert</p>
-              <svg className="w-4 h-4 md:w-5 md:h-5" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.66406 10H16.3307" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M10.5 4.16699L16.3333 10.0003L10.5 15.8337" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
+              }
+            />
+            <AppButton
+              text="Talk to a Content Expert"
+              variant="white"
+              size="lg"
+              className="w-full max-w-xs sm:max-w-none sm:w-auto lg:w-[259px]"
+              icon={
+                <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4">
+                  <path d="M4.66406 10H16.3307" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M10.5 4.16699L16.3333 10.0003L10.5 15.8337" stroke="#091E42" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              }
+            />
           </div>
         </div>
       </div>

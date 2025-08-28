@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import AppButton from "@/utils/AppButton";
 
 interface FAQItem {
   id: number;
@@ -143,25 +144,17 @@ export const FAQSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-[21px] relative flex-[0_0_auto]">
-          <button className="flex w-full sm:w-[250px] lg:w-[300px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
-            <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
-              Book a Design Strategy Call
-            </span>
+          <AppButton
+            text="Book a Design Strategy Call"
+            variant="blue"
+            size="lg"
+          />
 
-            <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
-              <img
-                className="relative w-5 h-5"
-                alt="Arrow right"
-                src="/LP/ca/arrow-right-2.svg"
-              />
-            </div>
-          </button>
-
-          <button className="all-[unset] box-border flex w-full sm:w-[200px] lg:w-[220px] h-[45px] lg:h-[50px] items-center justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] lg:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-grey-300 focus:ring-offset-2">
-            <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-[16px] lg:leading-4 whitespace-nowrap">
-              Why Landing Pages Matter
-            </span>
-          </button>
+          <AppButton
+            text="Why Landing Pages Matter"
+            variant="white"
+            size="lg"
+          />
         </div>
       </div>
     </section>

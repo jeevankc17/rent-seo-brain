@@ -1,3 +1,4 @@
+import AppButton from '@utils/AppButton';
 import React from 'react';
 
 const ContactForm = () => {
@@ -209,7 +210,7 @@ const ContactForm = () => {
         </div>
 
         {/* Submit Button */}
-        <button className="flex w-full md:w-48 h-[50px] px-[3px] justify-center md:justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:bg-[#1570D1] transition-colors">
+        {/* <button className="flex w-full md:w-48 h-[50px] px-[3px] justify-center md:justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:bg-[#1570D1] transition-colors">
           <span className="text-white text-center font-urbanist text-base font-medium leading-[23px] capitalize">
             Send Message
           </span>
@@ -226,7 +227,13 @@ const ContactForm = () => {
               <path d="M10 4.16699L15.8333 10.0003L10 15.8337" stroke="#1D8FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-        </button>
+        </button> */}
+        <AppButton 
+          variant="blue"
+          size="md"
+          className="w-full md:w-48 h-[50px] px-[3px] self-end"
+          text="Send Message"
+        />
       </div>
     </div>
   );

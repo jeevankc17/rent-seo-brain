@@ -1,3 +1,4 @@
+import AppButton from "@utils/AppButton";
 import React from "react";
 
 // Add a small interface and type the arrays
@@ -206,31 +207,9 @@ export const Principles: React.FC = () => {
       </div>
 
       <div className="flex flex-col lg:inline-flex lg:flex-row items-center gap-4 lg:gap-[23px] relative flex-[0_0_auto] w-full lg:w-auto">
-        <button className="flex w-full lg:w-[271px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1]">
-          <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[23px] whitespace-nowrap">
-            Start Your Growth Journey
-          </span>
+        <AppButton variant="blue" size="lg" text="Start Your Growth Journey" />
 
-          <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
-            <img
-              className="relative w-5 h-5"
-              alt="Arrow right"
-              src="/About/ca/arrow-right.svg"
-            />
-          </div>
-        </button>
-
-        <button className="all-[unset] box-border flex w-full lg:w-[219px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200">
-          <span className="relative w-fit ml-[-0.50px] [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
-            Book An Appointment
-          </span>
-
-          <img
-            className="relative w-5 h-5 mr-[-0.50px]"
-            alt="Arrow right"
-            src="/About/ca/arrow-right-1.svg"
-          />
-        </button>
+        <AppButton variant="white" size="lg" text="Book An Appointment" />
       </div>
     </section>
   );

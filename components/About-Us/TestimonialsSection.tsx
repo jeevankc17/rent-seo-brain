@@ -4,7 +4,7 @@ const TestimonialsSection: React.FC = () => {
     return (
         <section className="flex flex-col lg:flex-row items-start gap-6 sm:gap-8 lg:gap-12 w-full px-4 sm:px-6 md:px-8 lg:px-0 max-w-[2000px] mx-auto">
             <div className="flex flex-col w-full lg:w-[552px] items-start gap-3 sm:gap-4 relative">
-                <div className="flex w-full max-w-[171px] sm:w-[140px] items-center justify-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1 sm:py-[5px] relative bg-primary-50 rounded-[45px] border border-solid border-primary-300">
+                <div className="flex w-full max-w-[181px] sm:w-[170px] items-center justify-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1 sm:py-[5px] relative bg-primary-50 rounded-[45px] border border-solid border-primary-300">
                     <img
                         className="relative w-[15px] h-[15px]"
                         alt="Stars"

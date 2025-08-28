@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export default function SEOService() {
   return (
@@ -599,64 +600,22 @@ export default function SEOService() {
         </svg>
         <div className="flex flex-col justify-center items-center gap-4 lg:flex-row lg:gap-6">
           {/* Primary CTA Button */}
-          <button className="flex w-full h-[50px] p-[0_3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] lg:w-[246px]">
-            <span className="text-white text-center font-urbanist text-sm font-normal leading-[20px] capitalize lg:text-[16px] lg:leading-[23px]">
-              Start Your SEO Journey
-            </span>
-            <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF]">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.16797 10H15.8346"
-                  stroke="#1D8FFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M10 4.16699L15.8333 10.0003L10 15.8337"
-                  stroke="#1D8FFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-          </button>
+          <AppButton
+            variant="blue"
+            size="lg"
+            
+          >
+            Start Your SEO Journey
+          </AppButton>
 
           {/* Secondary CTA Button */}
-          <button className="flex w-full h-[50px] p-[10px_19px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA] lg:w-[204px]">
-            <span className="text-[#091E42] font-urbanist text-sm font-normal leading-[100%] capitalize lg:text-[16px]">
-              See How SEO Works
-            </span>
-            <svg
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66797 10H16.3346"
-                stroke="#091E42"
-                strokeWidth="1.75"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M10.5 4.16699L16.3333 10.0003L10.5 15.8337"
-                stroke="#091E42"
-                strokeWidth="1.75"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
+          <AppButton
+            variant="white"
+            size="lg"
+          
+          >
+            See How SEO Works
+          </AppButton>
         </div>
         <svg
           width="200"

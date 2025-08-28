@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const OverviewSection : React.FC = () => {
   const features = [
@@ -105,19 +106,11 @@ export const OverviewSection : React.FC = () => {
               ))}
             </ul>
 
-            <button className="flex w-full sm:w-[220px] lg:w-[248px] h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2 lg:gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:bg-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2">
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[18px] lg:leading-[23px] whitespace-nowrap">
-                Start My Landing Page
-              </span>
-
-              <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
-                <img
-                  className="relative w-5 h-5"
-                  alt=""
-                  src="/LP/ca/arrow-right-1.svg"
-                />
-              </div>
-            </button>
+            <AppButton
+              text="Start My Landing Page"
+              variant="blue"
+              size="lg"
+            />
 
             <ul className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-[26px] relative flex-[0_0_auto]">
               {benefits.map((benefit, index) => (

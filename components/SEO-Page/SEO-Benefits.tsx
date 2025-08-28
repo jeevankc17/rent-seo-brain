@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import AppButton from "@/utils/AppButton";
 
 function InputDesign() {
   return (
@@ -100,23 +101,21 @@ function InputDesign() {
                 </div>
               </div>
             </div>
-            <div
-              className="flex gap-2.5 items-center px-1 mt-8 max-w-full bg-blue-500 shadow-sm min-h-[45px] rounded-[45px] w-full lg:min-h-[50px] lg:w-[243px]"
-              data-name="main button"
-            >
-              <div
-                className="self-stretch my-auto text-sm font-medium leading-none text-center text-white capitalize lg:text-base"
-                data-name="Talk to an SEO Expert"
-              >
-                See How SEO Can Help
-              </div>
-              <div className="flex gap-2.5 items-center self-stretch p-2.5 my-auto w-10 h-10 bg-indigo-50 border border-blue-300 border-solid rounded-[34px] lg:p-3 lg:w-11 lg:h-11">
+            <AppButton
+              variant="blue"
+              size="lg"
+              className="mt-8 w-full lg:w-[243px]"
+              text="See How SEO Can Help"
+              icon={
                 <img
                   src="/SEO/ca/arrow-right-blue.svg"
-                  className="object-contain self-stretch my-auto w-4 aspect-square lg:w-5"
+                  className="w-full h-full object-contain"
+                  alt=""
+                  aria-hidden="true"
                 />
-              </div>
-            </div>
+              }
+              iconPosition="right"
+            />
           </div>
         </div>
         <div

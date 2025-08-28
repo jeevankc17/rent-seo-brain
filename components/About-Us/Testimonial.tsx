@@ -1,3 +1,4 @@
+import AppButton from "@utils/AppButton";
 import React from "react";
 
 const defaultTestimonialData = {
@@ -66,7 +67,9 @@ export const Testimonial: React.FC<TestimonialProps> = ({
                 {avatars.map((avatar, index) => (
                   <img
                     key={index}
-                    className={`relative w-8 h-8 sm:w-10 sm:h-10 ${index > 0 ? '-ml-2 sm:-ml-3' : ''} rounded-full border-2 border-white`}
+                    className={`relative w-8 h-8 sm:w-10 sm:h-10 ${
+                      index > 0 ? "-ml-2 sm:-ml-3" : ""
+                    } rounded-full border-2 border-white`}
                     alt={`Customer avatar ${index + 1}`}
                     src={avatar}
                   />
@@ -98,26 +101,12 @@ export const Testimonial: React.FC<TestimonialProps> = ({
               </p>
             </div>
 
-            <button
-              className="flex w-full max-w-[270px] h-12 sm:h-[50px] items-center justify-center gap-2 sm:gap-2 px-4 sm:px-6 py-2.5 bg-white hover:bg-gray-100 focus:outline-2 focus:outline-offset-2 focus:outline-white rounded-full border border-gray-200 transition-colors duration-200"
-              type="button"
-              aria-label="Book an appointment to discuss your business growth"
+            <AppButton
+              variant="white"
+              size="lg"
               onClick={onCtaClick}
-            >
-              <span className="font-sans font-medium text-neutral-900 text-sm sm:text-base whitespace-nowrap">
-                {ctaLabel}
-              </span>
-
-              <svg 
-                className="w-4 h-4 sm:w-5 sm:h-5 text-neutral-900" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
+              text={ctaLabel}
+            />
           </div>
         </div>
 

@@ -1,3 +1,4 @@
+import AppButton from "@utils/AppButton";
 import React from "react";
 
 const Brief = () => {
@@ -144,36 +145,16 @@ const Brief = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="flex w-full max-w-[280px] sm:max-w-[243px] h-[50px] p-[0_3px] justify-center sm:justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] relative">
-            <div className="text-white text-center font-urbanist text-sm sm:text-base font-medium leading-[20px] sm:leading-[23px] capitalize relative">
-              See How SEO Can Help
-            </div>
-            <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF] relative">
-              <svg
-                className="w-5 h-5 relative"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.16797 10H15.8346"
-                  stroke="#1D8FFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M10 4.16699L15.8333 10.0003L10 15.8337"
-                  stroke="#1D8FFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-          </div>
+      
+          <AppButton
+  variant="blue"
+  size="lg"
+  className="w-full max-w-[280px] sm:max-w-[243px]"
+ 
+  iconPosition="right"
+>
+  See How SEO Can Help
+</AppButton>
         </div>
       </div>
 

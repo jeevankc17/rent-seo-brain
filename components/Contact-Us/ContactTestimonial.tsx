@@ -1,3 +1,4 @@
+import AppButton from "@utils/AppButton";
 import React from "react";
 
 const defaultTestimonialData = {
@@ -103,23 +104,12 @@ export const ContactTestimonial: React.FC<TestimonialProps> = ({
               </p>
             </div>
 
-            <button
-              className="all-[unset] box-border flex w-full max-w-[270px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
-              type="button"
-              aria-label="Book an appointment to discuss your business growth"
+            <AppButton
+              variant="white"
+              size="lg"
               onClick={onCtaClick}
-            >
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
-                {ctaLabel}
-              </span>
-
-              <img
-                className="relative w-5 h-5"
-                alt=""
-                src="/Contact/ca/arrow-right-2.svg"
-                aria-hidden="true"
-              />
-            </button>
+              text={ctaLabel}
+            />
           </div>
         </div>
 

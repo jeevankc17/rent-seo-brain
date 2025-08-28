@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from "react";
+import AppButton from "@/utils/AppButton";
 
 interface FAQItem {
   id: number;
@@ -141,25 +142,17 @@ export const FAQSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4 relative flex-[0_0_auto] lg:inline-flex lg:flex-row lg:gap-[21px]">
-          <button className="flex w-full max-w-[300px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] lg:w-[300px]">
-            <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm text-center tracking-[0] leading-[20px] whitespace-nowrap lg:text-base lg:leading-[23px]">
-              Talk To A Google Ads Specialist
-            </span>
+          <AppButton
+            text="Talk To A Google Ads Specialist"
+            variant="blue"
+            size="lg"
+          />
 
-            <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
-              <img
-                className="relative w-5 h-5"
-                alt="Arrow right"
-                src="/Google/ca/arrow-right-2.svg"
-              />
-            </div>
-          </button>
-
-          <button className="all-[unset] box-border w-full max-w-[220px] flex h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 lg:w-[220px]">
-            <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm tracking-[0] leading-4 whitespace-nowrap lg:text-base">
-              Know More About Us
-            </span>
-          </button>
+          <AppButton
+            text="Know More About Us"
+            variant="white"
+            size="lg"
+          />
         </div>
       </div>
     </section>

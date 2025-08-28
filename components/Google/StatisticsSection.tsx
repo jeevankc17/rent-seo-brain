@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const StatisticsSection: React.FC = () => {
     // Data for industry cards
@@ -199,23 +200,17 @@ export const StatisticsSection: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-start gap-3 relative flex-[0_0_auto] w-full">
-                  <button className="w-full sm:w-[217px] flex h-[50px] items-center justify-center gap-2.5 px-8 py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_5px_14.7px_#2f98ffa1] hover:opacity-90 transition-opacity">
-                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
-                      Boost My Sales Now
-                    </span>
-                  </button>
+                  <AppButton
+                    text="Boost My Sales Now"
+                    variant="blue"
+                    size="lg"
+                  />
 
-                  <button className="all-[unset] box-border flex w-full sm:w-[220px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 transition-colors">
-                    <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
-                      Know More
-                    </span>
-
-                    <img
-                      className="relative w-5 h-5"
-                      alt="Arrow right"
-                      src="/Google/ca/arrow-right-2.svg"
-                    />
-                  </button>
+                  <AppButton
+                    text="Know More"
+                    variant="white"
+                    size="lg"
+                  />
                 </div>
               </div>
             </div>

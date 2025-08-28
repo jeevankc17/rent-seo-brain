@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const ServicesSection: React.FC = () => {
     // Data for service features
@@ -174,31 +175,17 @@ export const ServicesSection: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-[22px] relative flex-[0_0_auto] w-full lg:w-auto">
-                    <button className="flex w-full sm:w-[248px] h-[50px] items-center justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] border-0 cursor-pointer">
-                        <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
-                            Let&apos;s Maximize Your Roi
-                        </div>
+                    <AppButton
+                        text="Let's Maximize Your Roi"
+                        variant="blue"
+                        size="lg"
+                    />
 
-                        <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[34px] border border-solid border-primary-75">
-                            <img
-                                className="relative w-5 h-5"
-                                alt="Arrow right"
-                                src="/Google/ca/arrow-right.svg"
-                            />
-                        </div>
-                    </button>
-
-                    <button className="all-[unset] box-border flex w-full sm:w-[172px] h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[33px] border border-solid border-grey-200 cursor-pointer">
-                        <div className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-900 text-sm lg:text-base tracking-[0] leading-4 whitespace-nowrap">
-                            Learn More
-                        </div>
-
-                        <img
-                            className="relative w-5 h-5"
-                            alt="Arrow right"
-                            src="/Google/ca/arrow-right-1.svg"
-                        />
-                    </button>
+                    <AppButton
+                        text="Learn More"
+                        variant="white"
+                        size="lg"
+                    />
                 </div>
             </div>
         </section>

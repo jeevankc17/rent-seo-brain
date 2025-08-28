@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 const LPServices = () => {
   return (
     <div className="hidden lg:flex flex-col items-center gap-6 lg:gap-[43px] w-full relative px-4 lg:px-0">
       {/* Title Section */}
       <div className="flex w-full max-w-[565px] flex-col items-center gap-4 relative">
-        <div className="flex w-full max-w-[151px] px-[10px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF] relative">
+        <div className="flex w-full max-w-[201px] px-[10px] py-[5px] justify-center items-center gap-[6px] rounded-[45px] border border-[#1D8FFF] bg-[#E8F4FF] relative">
           <svg
             className="w-[15px] h-[15px] flex-shrink-0 relative"
             width="16"
@@ -637,54 +638,17 @@ const LPServices = () => {
 
       {/* CTAs */}
       <div className="flex flex-col sm:flex-row justify-center items-start gap-4 lg:gap-[21px] relative">
-        <div className="flex w-full max-w-[287px] h-[50px] pr-[3px] justify-end items-center gap-[10px] rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_rgba(47,152,255,0.63)] relative">
-          <span className="text-white text-center font-urbanist text-[16px] font-medium leading-[23px] capitalize">
-            Get Custom Service Package
-          </span>
-          <div className="flex p-[12px] items-center gap-[10px] rounded-[34px] border border-[#A2D1FF] bg-[#E8F4FF] relative">
-            <svg className="w-[20px] h-[20px]" viewBox="0 0 20 20" fill="none">
-              <path
-                d="M4.16797 10H15.8346"
-                stroke="#1D8FFF"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M10 4.16699L15.8333 10.0003L10 15.8337"
-                stroke="#1D8FFF"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-        </div>
-        <div className="flex w-full max-w-[220px] h-[50px] px-[19px] py-[10px] justify-center items-center gap-[7px] rounded-[33px] border border-[#D2D2D2] bg-[#FAFAFA] relative">
-          <span className="text-[#091E42] font-urbanist text-[16px] font-medium leading-[100%] capitalize">
-            Watch It Work
-          </span>
-          <svg
-            className="w-[20px] h-[20px] flex-shrink-0"
-            viewBox="0 0 20 20"
-            fill="none"
-          >
-            <path
-              d="M4.16797 10H15.8346"
-              stroke="#091E42"
-              strokeWidth="1.75"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M10 4.16699L15.8333 10.0003L10 15.8337"
-              stroke="#091E42"
-              strokeWidth="1.75"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
+        <AppButton
+          text="Get Custom Service Package"
+          variant="blue"
+          size="lg"
+        />
+        
+        <AppButton
+          text="Watch It Work"
+          variant="white"
+          size="lg"
+        />
       </div>
     </div>
   );

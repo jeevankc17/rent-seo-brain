@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "@/utils/AppButton";
 
 export const AdOptionsSection: React.FC = () => {
     const benefits: string[] = [
@@ -104,18 +105,11 @@ export const AdOptionsSection: React.FC = () => {
                         ))}
                     </ul>
 
-                    <button className="w-full max-w-[258px] flex h-[45px] lg:h-[50px] items-center justify-center lg:justify-end gap-2.5 px-[3px] py-0 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] shadow-[0px_4px_14.7px_#2e97ffa1] hover:shadow-[0px_6px_20px_#2e97ffa1] transition-shadow duration-300 cursor-pointer">
-                        <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-neutral-0 text-sm lg:text-base text-center tracking-[0] leading-[20px] lg:leading-[23px] whitespace-nowrap">
-                            Get Your Strategy Session
-                        </span>
-                        <div className="inline-flex items-center gap-2.5 p-2 lg:p-3 relative flex-[0_0_auto] bg-primary-50 rounded-[24px] lg:rounded-[34px] border border-solid border-primary-75">
-                            <img
-                                className="relative w-4 h-4 lg:w-5 lg:h-5"
-                                alt="Arrow right icon"
-                                src="/Google/ca/arrow-right-3.svg"
-                            />
-                        </div>
-                    </button>
+                    <AppButton
+                        text="Get Your Strategy Session"
+                        variant="blue"
+                        size="lg"
+                    />
                 </div>
             </div>
 

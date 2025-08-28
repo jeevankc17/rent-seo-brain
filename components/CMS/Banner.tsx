@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import AppButton from "@/utils/AppButton";
 
 export type BannerProps = {
   className?: string;
@@ -100,52 +101,19 @@ const Banner: React.FC<BannerProps> = ({ className = "" }) => {
           </div>
 
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full">
-            <button className="flex w-full sm:w-[268px] h-[45px] sm:h-[50px] p-[0_3px] justify-center sm:justify-end items-center gap-[10px] rounded-[35px] sm:rounded-[45px] bg-[#1D8FFF] shadow-[0_4px_14.7px_0_rgba(47,152,255,0.63)] hover:opacity-90 transition-opacity cursor-pointer">
-              <span className="text-white text-center font-urbanist text-sm sm:text-base font-medium leading-[23px] capitalize">
-              Get a Custom Content Plan
-              </span>
-              <div className="flex p-3 items-center gap-[10px] rounded-[34px] border border-solid border-[#A2D1FF] bg-[#E8F4FF]">
-                <svg
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.16797 10.9805H15.8346"
-                    stroke="#1D8FFF"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 5.14746L15.8333 10.9808L10 16.8141"
-                    stroke="#1D8FFF"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-            <button
-              className="all-[unset] box-border flex w-full sm:w-[270px] h-[45px] sm:h-[50px] items-center justify-center gap-[7px] px-[19px] py-2.5 relative bg-grey-50 rounded-[25px] sm:rounded-[33px] border border-solid border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-offset-2 focus:outline-neutral-0 transition-colors duration-200"
-              type="button"
-              aria-label="Book an appointment to discuss your business growth"
-            >
-              <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-sm sm:text-base tracking-[0] leading-4 whitespace-nowrap">
-                Book An Appointment
-              </span>
-
-              <img
-                className="relative w-5 h-5"
-                alt=""
-                src="/CMS/ca/arrow-right-2.svg"
-                aria-hidden="true"
-              />
-            </button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full">
+            <AppButton
+              text="Get a Custom Content Plan"
+              variant="blue"
+              size="lg"
+              className="w-full sm:w-[278px]"
+            />
+            <AppButton
+              text="Book An Appointment"
+              variant="white"
+              size="lg"
+              className="w-full sm:w-[270px]"
+            />
           </div>
         </div>
       </div>
