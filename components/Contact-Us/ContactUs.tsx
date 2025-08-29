@@ -213,9 +213,10 @@ const ContactUs: React.FC = () => {
                 />
               </div>
 
-            {/* Submit Button */}
-            <div className="col-span-1 lg:col-span-2 flex justify-center mt-4">
-              <AppButton variant="blue" size="md" text="Send Message" />
+              {/* Submit Button */}
+              <div className="col-span-1 lg:col-span-2 flex justify-center mt-4">
+                <AppButton variant="blue" size="md" text="Send Message" />
+              </div>
             </div>
           </div>
         </div>
