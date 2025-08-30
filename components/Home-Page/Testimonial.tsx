@@ -29,7 +29,7 @@ export const Testimonial: React.FC<TestimonialProps> = ({
   onCtaClick,
 }) => {
   return (
-    <section className="relative w-full max-w-[1128px] h-auto lg:h-[640px] bg-neutral-900 rounded-[30px] lg:rounded-[50px] overflow-hidden py-8 lg:py-0">
+    <section className="relative w-full max-w-[1128px] h-auto lg:h-[640px] bg-neutral-900 rounded-[30px] lg:rounded-[50px] overflow-hidden">
       <div className="relative w-full lg:w-[1233px] h-auto lg:h-[653px] left-0 lg:left-[-73px]">
         <div className="relative lg:absolute w-full lg:w-[1128px] h-auto lg:h-[640px] top-0 left-0 lg:left-[73px]">
           <div className="relative h-auto lg:h-[640px]">

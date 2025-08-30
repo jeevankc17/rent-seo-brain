@@ -55,7 +55,7 @@ export const Proposition: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col lg:flex-row w-full max-w-[1126px] h-auto lg:h-[525px] items-start gap-6 lg:gap-0.5 relative px-4 lg:px-0">
+    <section className="flex flex-col lg:flex-row w-full h-auto lg:h-[525px] items-start gap-6 lg:gap-0.5 relative">
       <div className="flex flex-col w-full lg:w-[432px] items-start gap-6 lg:gap-[37px] relative mb-[-0.23px]">
         <div className="flex flex-col items-start gap-[17px] relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex flex-col items-start gap-3.5 relative self-stretch w-full flex-[0_0_auto]">

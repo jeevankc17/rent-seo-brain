@@ -1,7 +1,3 @@
-import { Grid } from "lucide-react";
-import Header from "../../components/registry/seraui/header";
-import GridBackgroundView from "@components/Home-Page/Hero-Section";
-import CMS from "@components/CMS/Hero-Section";
 import IdeasToContent from "@components/CMS/IdeasToContent";
 import CMSResult from "@components/CMS/CMS-Result";
 import ContentServiceSection from "@components/CMS/ContentServiceSection";
@@ -13,12 +9,13 @@ import Banner from "@components/CMS/Banner";
 import { CMSTestimonial } from "@components/CMS/CMSTestimonial";
 import PowerContent from "@components/CMS/PowerContent";
 import { FAQSection } from "@components/CMS/FAQSection";
+import HeroSection from "@components/CMS/Hero-Section";
 
 export default function Home() {
   return (
     <main className="relative w-full flex flex-col items-center gap-8 md:gap-16 lg:gap-[132px] pb-8 md:pb-16 lg:pb-[132px]">
       <section className="relative w-full h-auto min-h-[400px] md:min-h-[600px] lg:h-[960px] bg-neutral-900">
-        <CMS />
+        <HeroSection />
       </section>
       <section className="relative w-full h-auto min-h-[300px] md:min-h-[500px] lg:h-[902px] bg-white px-4 md:px-8 lg:px-[156px]">
         <CMSConnect />

@@ -97,10 +97,10 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
 
 export default function TestimonialsSection() {
   return (
-    <section className="w-full max-w-[1128px] mx-auto px-4 py-8 lg:py-16 inline-flex flex-col justify-start items-center gap-8 lg:gap-12">
+    <section className="w-full inline-flex flex-col justify-start items-center gap-8 lg:gap-12">
       {/* Header Section */}
       <header className="w-full max-w-[633px] h-auto lg:h-40 flex flex-col justify-start items-center gap-4">
-        <div className="w-full max-w-48 px-2.5 py-[5px] bg-indigo-50 rounded-[35px] lg:rounded-[45px] outline outline-1 outline-offset-[-1px] outline-blue-500 inline-flex justify-center items-center gap-1.5">
+        <div className="w-full max-w-48 px-2.5 py-[5px] bg-indigo-50 rounded-[35px] lg:rounded-[45px] border border-blue-500 inline-flex justify-center items-center gap-1.5">
           <div className="w-3.5 h-3.5 relative">
             <div className="w-3 h-3 left-[1.25px] top-[1.25px] absolute bg-blue-500 rounded-sm" />
           </div>

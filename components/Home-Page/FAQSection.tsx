@@ -109,7 +109,7 @@ export const LatestBlogsSection: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-8 lg:gap-[50px] self-stretch relative bg-[#eeeeee] px-4 lg:px-8 py-12 lg:py-16 w-full">
+    <div className="flex flex-col items-center gap-8 lg:gap-[50px] self-stretch relative bg-[#eeeeee] w-full">
       <div className="flex w-full max-w-6xl flex-col justify-center items-center gap-8 lg:gap-12 relative">
         <div className="flex flex-col items-center gap-4 self-stretch relative">
           <div className="flex w-full max-w-[264px] px-2.5 py-[5px] justify-center items-center gap-1.5 rounded-[35px] lg:rounded-[45px] border border-solid border-[#1D8FFF] bg-[#E8F4FF] relative">

@@ -1,0 +1,35 @@
+Refactor the current code to implement the spacing system described below:
+(only consider for desktop sizes, lg screen only)
+
+* 132px gaps between sections 
+* Use py-[10px] inside each section for consistent internal spacing, donot care for px, put as it is,
+* Zero additional padding for content - it starts immediately after the 10px section
+ padding
+
+
+ I want to eliminate the random spacing I'm experiencing and want to create a predictable, professional layout system across all your pages. 
+ The visual diagram shows exactly how the spacing layers work together to create the 
+ 132px → 10px → content → 10px → 132px rhythm
+
+1. For now I am already using, gap-[132px] on the main container, not individual sections
+   This creates automatic 132px spacing between adjacent sections
+2. Only careUse py-[10px] on the inner container div
+   This creates 10px top padding and 10px bottom padding
+   The padding should be put inside the page.tsx inside app directory so that compoenent inside that has to focused only on content with no further padding
+3. No additional wrapper divs for sections
+
+┌─── Section Background ───────────────────┐
+│  ┌─── 10px top padding ─────────────────┐ │
+│  │                                     │ │
+│  │  ┌─── Content starts here ───────┐  │ │
+│  │  │                               │  │ │
+│  │  │  Component 1                  │  │ │
+│  │  │  Component 2                  │  │ │
+│  │  │  Component 3                  │  │ │
+│  │  │                               │  │ │
+│  │  └───────────────────────────────┘  │ │
+│  │                                     │ │
+│  └─── 10px bottom padding ─────────────┘ │
+└─────────────────────────────────────────┘
+      ↓ 132px gap (from main container)
+┌─── Next Section ─────────────────────────┐

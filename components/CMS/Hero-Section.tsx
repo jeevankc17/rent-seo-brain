@@ -36,7 +36,7 @@ const GridBackground = () => {
   );
 };
 
-export default function CMS() {
+export default function HeroSection() {
   return (
     <div className="relative w-full bg-neutral-900 overflow-hidden">
       {/* Grid Background */}

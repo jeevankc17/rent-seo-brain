@@ -23,72 +23,72 @@ export default function Home() {
         <HeroSection />
       </section>
       <section className="relative w-full bg-grey-100">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <HomePageFeatures />
         </div>
       </section>
       <section className="relative w-full bg-grey-100">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <Proposition />
         </div>
       </section>
       <section className="relative w-full bg-grey-100">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <DeepDive />
         </div>
       </section>
       <section className="relative w-full bg-grey-100">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <CoreServicesSection />
         </div>
       </section>
       <section className="relative w-full bg-grey-100">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <KeyMetricsSection />
         </div>
       </section>
-      <section className="relative w-full bg-neutral-900 hidden sm:block p-[10px] lg:p-[30px]">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full flex justify-center ">
+      <section className="relative w-full bg-neutral-900 hidden sm:block">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full flex justify-center ">
           <IdeasToContent />
         </div>
       </section>
       <section className="relative w-full bg-grey-100">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <SuccessStoriesSection />
         </div>
       </section>
       <section className="relative w-full bg-[#a2d1ff66]">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <ToolsSection />
         </div>
       </section>
       <section className="relative w-full bg-grey-100">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <StatisticsSection />
         </div>
       </section>
       <section className="relative w-full bg-[#eeeeee]">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <LatestBlogsSection />
         </div>
       </section>
       <section className="relative w-full bg-grey-100">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <HaveQuestions />
         </div>
       </section>
       <section className="relative w-full bg-neutral-900">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <CaseStudies />
         </div>
       </section>
       <section className="relative w-full bg-grey-100">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <TestimonialsSection />
         </div>
       </section>
       <section className="relative w-full bg-grey-100 hidden lg:block">
-        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 w-full">
+        <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <Testimonial />
         </div>
       </section>

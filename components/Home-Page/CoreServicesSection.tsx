@@ -34,7 +34,7 @@ export const CoreServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col w-full max-w-[1128px] items-center gap-8 lg:gap-[50px] relative flex-[0_0_auto] px-4 lg:px-0">
+    <section className="flex flex-col w-full items-center gap-8 lg:gap-[50px] relative flex-[0_0_auto]">
       <header className="w-full max-w-[552px] justify-center gap-4 lg:gap-6 flex-[0_0_auto] flex flex-col items-center relative">
         <div className="flex w-full max-w-[193px] items-center justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[35px] lg:rounded-[45px] border border-solid border-secondary-300">
           <div className="flex w-full max-w-[173px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-secondary-50 rounded-[35px] lg:rounded-[45px] border-[0.2px] border-solid border-secondary-200">

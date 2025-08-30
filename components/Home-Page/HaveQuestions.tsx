@@ -3,7 +3,7 @@ import AppButton from "@/utils/AppButton";
 
 export default function HaveQuestions() {
   return (
-    <div className="w-full max-w-[1131px] inline-flex flex-col justify-start items-start gap-8 lg:gap-12 px-4 lg:px-0">
+    <div className="w-full inline-flex flex-col justify-start items-start gap-8 lg:gap-12">
       <div className="self-stretch h-auto lg:h-[463px] relative bg-neutral-950 rounded-2xl lg:rounded-3xl overflow-hidden py-8 lg:py-0">
         <div className="w-80 h-72 left-[-169px] top-[-46px] absolute bg-blue-500/60 rounded-full blur-[265.71px] hidden lg:block" />
         <div className="w-80 h-72 left-[840px] top-[209px] absolute bg-blue-500/60 rounded-full blur-[265.71px] hidden lg:block" />

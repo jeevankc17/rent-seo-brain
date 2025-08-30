@@ -3,8 +3,8 @@ import AppButton from "@/utils/AppButton";
 
 export default function HomePageFeatures() {
   return (
-    <section className=" hidden lg:block w-full sm-flex justify-center py-8 lg:py-[50px]">
-      <div className="w-full max-w-[1128px] px-4 lg:px-0 flex flex-col items-center gap-8 lg:gap-[50px]">
+    <section className=" hidden lg:block w-full sm-flex justify-center">
+      <div className="w-full flex flex-col items-center gap-8 lg:gap-[50px]">
         {/* Title Section */}
         <div className="w-full max-w-[519px] h-auto flex flex-col items-center gap-4">
           {/* Tagline */}

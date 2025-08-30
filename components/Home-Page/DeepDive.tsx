@@ -3,7 +3,7 @@ import AppButton from "@/utils/AppButton";
 
 export default function DeepDive() {
   return (
-    <section className="w-full flex justify-center py-6 lg:py-8">
+    <section className="w-full flex justify-center">
       <div className="w-full max-w-[1128px] h-auto lg:h-[456px] relative bg-gradient-to-b from-[#43A2FF] via-[#43A2FF] to-white rounded-[12px] lg:rounded-[19px] overflow-hidden mx-4 lg:mx-0">
         {/* Background blur elements - hidden on mobile */}
         <div className="hidden lg:block w-[239px] h-[162px] absolute left-[-111px] top-[440px] bg-[#00B45C] rounded-full blur-[150px]" />

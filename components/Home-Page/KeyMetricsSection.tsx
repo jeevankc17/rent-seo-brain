@@ -22,7 +22,7 @@ export const KeyMetricsSection: React.FC = () => {
 
   return (
     <section
-      className="w-full max-w-[1128px] h-auto lg:h-[143px] gap-6 lg:gap-[38px] flex flex-col sm:flex-row items-center justify-center relative px-4 lg:px-0"
+      className="w-full h-auto lg:h-[143px] gap-6 lg:gap-[38px] flex flex-col sm:flex-row items-center justify-center relative"
       role="region"
       aria-label="Key Metrics"
     >
