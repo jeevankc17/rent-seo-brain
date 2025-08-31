@@ -2,6 +2,59 @@
 import React from "react";
 
 export default function SEOMethod() {
+  const seoSteps = [
+    {
+      id: "1",
+      title: "Initial Consultation",
+      description: "Understand your goals, challenges, and target audience",
+      tags: ["Market Analysis", "Vision Allignment", "Goal Setting"],
+      position: { left: "lg:left-[777px]", top: "lg:top-[361px]" },
+      progress: "20%",
+      progressWidth: "130px",
+      stepNumber: { width: "lg:w-[74px]", text: "lg:text-[200px]" }
+    },
+    {
+      id: "2", 
+      title: "Comprehensive SEO Audit",
+      description: "Analyze your website's SEO health and gaps",
+      tags: ["Technical Audit", "Content Analysis", "Competitor Intelligence"],
+      position: { left: "lg:left-[156px]", top: "lg:top-[726px]" },
+      progress: "40%",
+      progressWidth: "164px",
+      stepNumber: { width: "lg:w-[118px]", text: "lg:text-[200px]" }
+    },
+    {
+      id: "3",
+      title: "Bespoke Action Plan", 
+      description: "Create a tailored roadmap with clear priorities",
+      tags: ["Custom Strategy", "Priority Matrix", "Timeline Planning"],
+      position: { left: "lg:left-[777px]", top: "lg:top-[1019px]" },
+      progress: "60%",
+      progressWidth: "267px",
+      stepNumber: { width: "lg:w-[105px]", text: "lg:text-[200px]" }
+    },
+    {
+      id: "4",
+      title: "Monthly Reporting",
+      description: "Track your rankings, traffic, and conversions", 
+      tags: ["Performance Metrics", "Growth Insights", "Next Steps"],
+      position: { left: "lg:left-[156px]", top: "lg:top-[1372px]" },
+      progress: "80%",
+      progressWidth: "336px",
+      stepNumber: { width: "lg:w-[120px]", text: "lg:text-[200px]" }
+    },
+    {
+      id: "5",
+      title: "Adjust Strategy",
+      description: "Refine based on performance and algorithm updates",
+      tags: ["Strategy Refinement", "Opportunity Capture", "Future Planning"],
+      position: { left: "lg:left-[777px]", top: "lg:top-[1749px]" },
+      progress: "100%", 
+      progressWidth: "390px",
+      stepNumber: { width: "lg:w-[118px]", text: "lg:text-[200px]" }
+    }
+  ];
+
   return (
     <div className="relative w-full min-h-screen bg-[#0C0C0F] overflow-hidden px-4 py-8 lg:px-0 lg:py-0 lg:h-[2076px]">
       {/* Background blur effect */}
@@ -45,183 +98,119 @@ export default function SEOMethod() {
         </div>
       </div>
 
-      {/* Step 1 - Initial Consultation */}
-      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[777px] lg:top-[361px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
-        <div className="h-auto w-full relative lg:h-[157px]">
-          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[476px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
-            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
-              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
-                Initial Consultation
-              </h3>
-              <p className="w-full text-white font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
-                Understand your goals, challenges, and target audience
-              </p>
+      {/* SEO Steps */}
+      {seoSteps.map((step, index) => (
+        <div key={step.id} className={`relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute ${step.position.left} ${step.position.top} lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0`}>
+          <div className="h-auto w-full relative lg:h-[157px]">
+            <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[476px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
+              <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
+                <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
+                  {step.title}
+                </h3>
+                <p className={`w-full font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px] ${step.id === '1' ? 'text-white' : 'text-[#C9C9C9]'}`}>
+                  {step.description}
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px]">
+                {step.tags.map((tag, tagIndex) => (
+                  <div key={tagIndex} className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
+                    <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
+                      {tag}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px]">
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Market Analysis
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Vision Allignment
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Goal Setting 
-                </div>
+            {/* Step number */}
+            <div className={`absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist ${step.stepNumber.width} ${step.stepNumber.text}`} style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
+              {step.id}
+            </div>
+            {/* Connecting line for step 1 */}
+            {step.id === '1' && (
+              <svg 
+                className="hidden lg:block absolute left-[-565px] top-[43px] w-[569px] h-[143px]"
+                width="571" 
+                height="146" 
+                viewBox="0 0 571 146" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path 
+                  d="M569.5 1.5H1V144.5" 
+                  stroke="url(#paint0_linear_step1)" 
+                  strokeOpacity="0.24" 
+                  strokeWidth="2" 
+                  strokeLinecap="round"
+                />
+                <defs>
+                  <linearGradient id="paint0_linear_step1" x1="285.25" y1="1.5" x2="285.25" y2="144.5" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#2F98FF"/>
+                    <stop offset="1" stopColor="#0A1519" stopOpacity="0.77"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            )}
+          </div>
+          {/* Progress section */}
+          <div className="flex w-full max-w-[447px] flex-col items-start gap-3 lg:w-[447px] lg:gap-[13px]">
+            <div className="w-full text-[#8D8D8D] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
+              Journey Process
+            </div>
+            <div className="flex items-center gap-6 w-full lg:gap-[32px]">
+              <svg 
+                className="flex w-[300px] h-[0.473px] flex-col justify-center items-start lg:w-[383px]"
+                width="397" 
+                height="16" 
+                viewBox="0 0 397 16" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path 
+                  d="M7 7.76367H390" 
+                  stroke={`url(#paint0_bg_step${step.id})`}
+                  strokeWidth="14" 
+                  strokeLinecap="round"
+                />
+                {step.id !== '1' && (
+                  <path 
+                    d={`M7 7.76367L${step.progressWidth === '164px' ? '163.999 8.3629' : step.progressWidth === '267px' ? '266.998 8.75603' : step.progressWidth === '336px' ? '335.998 9.01939' : '389.997 9.22549'}`}
+                    stroke={`url(#paint1_linear_step${step.id})`}
+                    strokeWidth="14" 
+                    strokeLinecap="round"
+                  />
+                )}
+                {step.id === '1' && (
+                  <path 
+                    d="M7.02672 0.763723C3.16075 0.748967 0.0148065 3.87099 5.09024e-05 7.73695C-0.0147047 11.6029 3.10732 14.7489 6.97328 14.7636L7.02672 0.763723ZM130.973 15.2369C134.839 15.2517 137.985 12.1296 138 8.26367C138.015 4.39771 134.893 1.25176 131.027 1.23701L130.973 15.2369ZM7 7.76367L6.97328 14.7636L130.973 15.2369L131 8.23695L131.027 1.23701L7.02672 0.763723L7 7.76367Z" 
+                    fill="url(#paint1_diamond_step1)"
+                  />
+                )}
+                <defs>
+                  <linearGradient id={`paint0_bg_step${step.id}`} x1="198.5" y1="7.92157" x2="198.5" y2="8.76367" gradientUnits="userSpaceOnUse">
+                    <stop offset="1" stopColor="#43A2FF" stopOpacity="0.17"/>
+                  </linearGradient>
+                  {step.id !== '1' && (
+                    <linearGradient id={`paint1_linear_step${step.id}`} x1={step.id === '2' ? '85.4988' : step.id === '3' ? '136.998' : step.id === '4' ? '171.498' : '198.498'} y1={step.id === '2' ? '8.22118' : step.id === '3' ? '8.41775' : step.id === '4' ? '8.54942' : '8.65248'} x2={step.id === '2' ? '85.4956' : step.id === '3' ? '136.995' : step.id === '4' ? '171.495' : '198.495'} y2={step.id === '2' ? '9.06328' : step.id === '3' ? '9.25984' : step.id === '4' ? '9.39152' : '9.49458'} gradientUnits="userSpaceOnUse">
+                      <stop offset="1" stopColor="#43A2FF"/>
+                    </linearGradient>
+                  )}
+                  {step.id === '1' && (
+                    <linearGradient id="paint1_diamond_step1" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+                      <stop offset="0.485577" stopColor="white"/>
+                      <stop offset="1" stopColor="#7ABDFF"/>
+                    </linearGradient>
+                  )}
+                </defs>
+              </svg>
+              <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
+                {step.progress}
               </div>
             </div>
           </div>
-          {/* Step number */}
-          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[74px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
-            1
-          </div>
-          {/* Connecting line */}
-          <svg 
-            className="hidden lg:block absolute left-[-565px] top-[43px] w-[569px] h-[143px]"
-            width="571" 
-            height="146" 
-            viewBox="0 0 571 146" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path 
-              d="M569.5 1.5H1V144.5" 
-              stroke="url(#paint0_linear_step1)" 
-              strokeOpacity="0.24" 
-              strokeWidth="2" 
-              strokeLinecap="round"
-            />
-            <defs>
-              <linearGradient id="paint0_linear_step1" x1="285.25" y1="1.5" x2="285.25" y2="144.5" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#2F98FF"/>
-                <stop offset="1" stopColor="#0A1519" stopOpacity="0.77"/>
-              </linearGradient>
-            </defs>
-          </svg>
         </div>
-        {/* Progress section */}
-        <div className="flex w-[447px] flex-col items-start gap-[13px]">
-          <div className="w-full text-[#8D8D8D] font-urbanist text-[16px] font-medium leading-[100%]">
-            Journey Process
-          </div>
-          <div className="flex items-center gap-[32px] w-full">
-            <svg 
-              className="flex w-[383px] h-[0.473px] flex-col justify-center items-start"
-              width="397" 
-              height="16" 
-              viewBox="0 0 397 16" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path 
-                d="M7 7.76367H390" 
-                stroke="url(#paint0_bg_step1)" 
-                strokeWidth="14" 
-                strokeLinecap="round"
-              />
-              <path 
-                d="M7.02672 0.763723C3.16075 0.748967 0.0148065 3.87099 5.09024e-05 7.73695C-0.0147047 11.6029 3.10732 14.7489 6.97328 14.7636L7.02672 0.763723ZM130.973 15.2369C134.839 15.2517 137.985 12.1296 138 8.26367C138.015 4.39771 134.893 1.25176 131.027 1.23701L130.973 15.2369ZM7 7.76367L6.97328 14.7636L130.973 15.2369L131 8.23695L131.027 1.23701L7.02672 0.763723L7 7.76367Z" 
-                fill="url(#paint1_diamond_step1)"
-              />
-              <defs>
-                <linearGradient id="paint0_bg_step1" x1="198.5" y1="7.92157" x2="198.5" y2="8.76367" gradientUnits="userSpaceOnUse">
-                  <stop offset="1" stopColor="#43A2FF" stopOpacity="0.17"/>
-                </linearGradient>
-                <linearGradient id="paint1_diamond_step1" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
-                  <stop offset="0.485577" stopColor="white"/>
-                  <stop offset="1" stopColor="#7ABDFF"/>
-                </linearGradient>
-              </defs>
-            </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
-              20%
-            </div>
-          </div>
-        </div>
-      </div>
+      ))}
 
-      {/* Step 2 - Comprehensive SEO Audit */}
-      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[156px] lg:top-[726px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
-        <div className="h-auto w-full relative lg:h-[157px]">
-          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[487px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
-            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
-              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
-                Comprehensive SEO Audit
-              </h3>
-              <p className="w-full text-[#C9C9C9] font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
-                Analyze your website's SEO health and gaps
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px] lg:w-[487px]">
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Technical Audit
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Content Analysis
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[161px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Competitor Intelligence
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Step number */}
-          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[118px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
-            2
-          </div>
-        </div>
-        {/* Progress section */}
-        <div className="flex w-full max-w-[447px] flex-col items-start gap-3 lg:w-[447px] lg:gap-[13px]">
-          <div className="w-full text-[#8D8D8D] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
-            Journey Process
-          </div>
-          <div className="flex items-center gap-6 w-full lg:gap-[32px]">
-            <svg 
-              className="flex w-[300px] h-[0.473px] flex-col justify-center items-start lg:w-[383px]"
-              width="397" 
-              height="16" 
-              viewBox="0 0 397 16" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path 
-                d="M7 7.76367H390" 
-                stroke="url(#paint0_bg_step2)" 
-                strokeWidth="14" 
-                strokeLinecap="round"
-              />
-              <path 
-                d="M7 7.76367L163.999 8.3629" 
-                stroke="url(#paint1_linear_step2)" 
-                strokeWidth="14" 
-                strokeLinecap="round"
-              />
-              <defs>
-                <linearGradient id="paint0_bg_step2" x1="198.5" y1="7.92157" x2="198.5" y2="8.76367" gradientUnits="userSpaceOnUse">
-                  <stop offset="1" stopColor="#43A2FF" stopOpacity="0.17"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear_step2" x1="85.4988" y1="8.22118" x2="85.4956" y2="9.06328" gradientUnits="userSpaceOnUse">
-                  <stop offset="1" stopColor="#43A2FF"/>
-                </linearGradient>
-              </defs>
-            </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
-              40%
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Connecting line for step 2 */}
+      {/* Connecting Lines */}
       <svg 
         className="hidden lg:block absolute left-[215px] top-[916px] w-[533px] h-[157px]"
         width="536" 
@@ -245,84 +234,6 @@ export default function SEOMethod() {
         </defs>
       </svg>
 
-      {/* Step 3 - Bespoke Action Plan */}
-      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[777px] lg:top-[1019px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
-        <div className="h-auto w-full relative lg:h-[157px]">
-          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[476px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
-            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
-              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
-                Bespoke Action Plan
-              </h3>
-              <p className="w-full text-[#C9C9C9] font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
-                Create a tailored roadmap with clear priorities
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px]">
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Custom Strategy
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Priority Matrix
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Timeline Planning
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Step number */}
-          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[105px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
-            3
-          </div>
-        </div>
-        {/* Progress section */}
-        <div className="flex w-full max-w-[447px] flex-col items-start gap-3 lg:w-[447px] lg:gap-[13px]">
-          <div className="w-full text-[#8D8D8D] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
-            Journey Process
-          </div>
-          <div className="flex items-center gap-6 w-full lg:gap-[32px]">
-            <svg 
-              className="flex w-[300px] h-[0.473px] flex-col justify-center items-start lg:w-[383px]"
-              width="397" 
-              height="16" 
-              viewBox="0 0 397 16" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path 
-                d="M7 7.76367H390" 
-                stroke="url(#paint0_bg_step3)" 
-                strokeWidth="14" 
-                strokeLinecap="round"
-              />
-              <path 
-                d="M7 7.76367L266.998 8.75603" 
-                stroke="url(#paint1_linear_step3)" 
-                strokeWidth="14" 
-                strokeLinecap="round"
-              />
-              <defs>
-                <linearGradient id="paint0_bg_step3" x1="198.5" y1="7.92157" x2="198.5" y2="8.76367" gradientUnits="userSpaceOnUse">
-                  <stop offset="1" stopColor="#43A2FF" stopOpacity="0.17"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear_step3" x1="136.998" y1="8.41775" x2="136.995" y2="9.25984" gradientUnits="userSpaceOnUse">
-                  <stop offset="1" stopColor="#43A2FF"/>
-                </linearGradient>
-              </defs>
-            </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
-              60%
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Connecting line for step 3 */}
       <svg 
         className="hidden lg:block absolute left-[291px] top-[1222px] w-[560px] h-[85px]"
         width="562" 
@@ -346,84 +257,6 @@ export default function SEOMethod() {
         </defs>
       </svg>
 
-      {/* Step 4 - Monthly Reporting */}
-      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[156px] lg:top-[1372px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
-        <div className="h-auto w-full relative lg:h-[157px]">
-          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[476px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
-            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
-              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
-                Monthly Reporting
-              </h3>
-              <p className="w-full text-[#C9C9C9] font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
-                Track your rankings, traffic, and conversions
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px]">
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Performance Metrics
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Growth Insights
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Next Steps
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Step number */}
-          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[120px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
-            4
-          </div>
-        </div>
-        {/* Progress section */}
-        <div className="flex w-full max-w-[447px] flex-col items-start gap-3 lg:w-[447px] lg:gap-[13px]">
-          <div className="w-full text-[#8D8D8D] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
-            Journey Process
-          </div>
-          <div className="flex items-center gap-6 w-full lg:gap-[32px]">
-            <svg 
-              className="flex w-[300px] h-[0.473px] flex-col justify-center items-start lg:w-[383px]"
-              width="397" 
-              height="17" 
-              viewBox="0 0 397 17" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path 
-                d="M7 7.76367H390" 
-                stroke="url(#paint0_bg_step4)" 
-                strokeWidth="14" 
-                strokeLinecap="round"
-              />
-              <path 
-                d="M7 7.76367L335.998 9.01939" 
-                stroke="url(#paint1_linear_step4)" 
-                strokeWidth="14" 
-                strokeLinecap="round"
-              />
-              <defs>
-                <linearGradient id="paint0_bg_step4" x1="198.5" y1="7.92157" x2="198.5" y2="8.76367" gradientUnits="userSpaceOnUse">
-                  <stop offset="1" stopColor="#43A2FF" stopOpacity="0.17"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear_step4" x1="171.498" y1="8.54942" x2="171.495" y2="9.39152" gradientUnits="userSpaceOnUse">
-                  <stop offset="1" stopColor="#43A2FF"/>
-                </linearGradient>
-              </defs>
-            </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
-              80%
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Connecting line for step 4 */}
       <svg 
         className="hidden lg:block absolute left-[228px] top-[1558px] w-[490px] h-[243px]"
         width="492" 
@@ -446,83 +279,6 @@ export default function SEOMethod() {
           </linearGradient>
         </defs>
       </svg>
-
-      {/* Step 5 - Adjust Strategy */}
-      <div className="relative w-full max-w-[507px] mx-auto flex flex-col items-center gap-8 mb-16 lg:absolute lg:left-[777px] lg:top-[1749px] lg:w-[507px] lg:h-[235px] lg:gap-[33px] lg:mb-0">
-        <div className="h-auto w-full relative lg:h-[157px]">
-          <div className="relative pl-16 pt-8 w-full h-auto flex flex-col items-start gap-6 lg:absolute lg:left-[31px] lg:top-[40px] lg:w-[476px] lg:h-[117px] lg:gap-[25px] lg:pl-0 lg:pt-0">
-            <div className="flex flex-col items-start gap-3 w-full lg:gap-[13px]">
-              <h3 className="w-full text-white font-urbanist text-lg font-semibold leading-[22px] lg:text-[24px] lg:leading-[23px]">
-                Adjust Strategy
-              </h3>
-              <p className="w-full text-[#C9C9C9] font-urbanist text-base font-normal leading-[22px] lg:text-[18px] lg:leading-[23px]">
-                Refine based on performance and algorithm updates
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 w-full lg:flex-row lg:items-center lg:gap-[13px]">
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Strategy Refinement
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Opportunity Capture
-                </div>
-              </div>
-              <div className="flex w-auto py-[5px] justify-center items-center gap-[10px] rounded-[456px] bg-[rgba(255,255,255,0.10)] lg:w-[150px]">
-                <div className="text-white text-center font-urbanist text-[12px] font-normal leading-[20px] lg:text-[14px] lg:leading-[23px]">
-                  Future Planning
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Step number */}
-          <div className="absolute left-0 top-0 w-[50px] h-[23px] text-[120px] font-normal leading-[23px] font-urbanist lg:w-[118px] lg:text-[200px]" style={{ color: 'rgba(67, 162, 255, 0.15)' }}>
-            5
-          </div>
-        </div>
-        {/* Progress section */}
-        <div className="flex w-full max-w-[447px] flex-col items-start gap-3 lg:w-[447px] lg:gap-[13px]">
-          <div className="w-full text-[#8D8D8D] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
-            Journey Process
-          </div>
-          <div className="flex items-center gap-6 w-full lg:gap-[32px]">
-            <svg 
-              className="flex w-[300px] h-[0.473px] flex-col justify-center items-start lg:w-[383px]"
-              width="397" 
-              height="17" 
-              viewBox="0 0 397 17" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path 
-                d="M7 7.76367H390" 
-                stroke="url(#paint0_bg_step5)" 
-                strokeWidth="14" 
-                strokeLinecap="round"
-              />
-              <path 
-                d="M7 7.76367L389.997 9.22549" 
-                stroke="url(#paint1_linear_step5)" 
-                strokeWidth="14" 
-                strokeLinecap="round"
-              />
-              <defs>
-                <linearGradient id="paint0_bg_step5" x1="198.5" y1="7.92157" x2="198.5" y2="8.76367" gradientUnits="userSpaceOnUse">
-                  <stop offset="1" stopColor="#43A2FF" stopOpacity="0.17"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear_step5" x1="198.498" y1="8.65248" x2="198.495" y2="9.49458" gradientUnits="userSpaceOnUse">
-                  <stop offset="1" stopColor="#43A2FF"/>
-                </linearGradient>
-              </defs>
-            </svg>
-            <div className="text-[#C9C9C9] font-urbanist text-sm font-medium leading-[100%] lg:text-[16px]">
-              100%
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

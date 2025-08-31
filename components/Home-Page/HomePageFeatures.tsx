@@ -8,16 +8,19 @@ export default function HomePageFeatures() {
         {/* Title Section */}
         <div className="w-full max-w-[519px] h-auto flex flex-col items-center gap-4">
           {/* Tagline */}
-          <div className="w-auto py-1 lg:py-[5px] flex justify-center items-center gap-1 lg:gap-[6px] rounded-[25px] lg:rounded-[45px] border border-[#1D8FFF] relative">
-            <div className="flex w-auto py-1 lg:py-[2px] px-2 items-center gap-1 lg:gap-[6px] flex-shrink-0 rounded-[25px] lg:rounded-[45px] bg-[#1D8FFF]">
-              <svg width="12" height="12" className="lg:w-[15px] lg:h-[15px]" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 11.25L7.5 9.34375L10 11.25L9.0625 8.15625L11.5625 6.375H8.5L7.5 3.125L6.5 6.375H3.4375L5.9375 8.15625L5 11.25ZM7.5 13.75C6.63542 13.75 5.82292 13.5859 5.0625 13.2578C4.30208 12.9297 3.64062 12.4844 3.07812 11.9219C2.51562 11.3594 2.07031 10.6979 1.74219 9.9375C1.41406 9.17708 1.25 8.36458 1.25 7.5C1.25 6.63542 1.41406 5.82292 1.74219 5.0625C2.07031 4.30208 2.51562 3.64062 3.07812 3.07812C3.64062 2.51562 4.30208 2.07031 5.0625 1.74219C5.82292 1.41406 6.63542 1.25 7.5 1.25C8.36458 1.25 9.17708 1.41406 9.9375 1.74219C10.6979 2.07031 11.3594 2.51562 11.9219 3.07812C12.4844 3.64062 12.9297 4.30208 13.2578 5.0625C13.5859 5.82292 13.75 6.63542 13.75 7.5C13.75 8.36458 13.5859 9.17708 13.2578 9.9375C12.9297 10.6979 12.4844 11.3594 11.9219 11.9219C11.3594 12.4844 10.6979 12.9297 9.9375 13.2578C9.17708 13.5859 8.36458 13.75 7.5 13.75Z" fill="white"/>
-              </svg>
-              <span className="text-white font-urbanist text-xs lg:text-[14px] font-normal leading-[18px] lg:leading-[23px] capitalize">
-                Why rent SEO Brain
-              </span>
+          <div className="flex w-full max-w-[193px] items-center justify-center gap-1.5 px-0 py-[5px] relative flex-[0_0_auto] rounded-[35px] lg:rounded-[45px] border border-solid border-primary-300">
+          <div className="flex w-full max-w-[173px] items-center justify-center gap-1.5 px-2 py-0.5 relative bg-primary-300 rounded-[35px] lg:rounded-[45px] border-[0.2px] border-solid border-primary-200">
+            <img
+              className="relative w-[15px] h-[15px]"
+              alt="Stars"
+              src="/Home-Page/ca/stars.svg"
+            />
+
+            <div className="relative w-fit mt-[-0.20px] [font-family:'Urbanist',Helvetica] font-medium text-white text-xs lg:text-sm tracking-[0] leading-[18px] lg:leading-[23px]">
+              Why Rent Seo Brain
             </div>
           </div>
+        </div>
 
           {/* Title and description */}
           <div className="h-auto flex flex-col items-center gap-3 lg:gap-4 flex-shrink-0 self-stretch">

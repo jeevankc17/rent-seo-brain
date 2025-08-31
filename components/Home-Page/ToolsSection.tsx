@@ -65,7 +65,7 @@ export const ToolsSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#a2d1ff66]">
+    <section className="relative w-full">
       <div className="w-full">
         <div className="flex flex-col items-center gap-4">
           <div className="w-full max-w-[238px] justify-center gap-1.5 px-0 py-[5px] rounded-[35px] lg:rounded-[45px] border border-solid border-secondary-300 flex items-center">

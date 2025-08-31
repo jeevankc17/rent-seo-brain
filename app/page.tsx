@@ -57,7 +57,7 @@ export default function Home() {
           <SuccessStoriesSection />
         </div>
       </section>
-      <section className="relative w-full bg-[#a2d1ff66]">
+      <section className="relative w-full bg-grey-100">
         <div className="max-w-[1128px] mx-auto px-4 md:px-8 lg:px-0 lg:py-[10px] w-full">
           <ToolsSection />
         </div>

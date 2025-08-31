@@ -80,25 +80,32 @@ export const CaseStudies: React.FC = () => {
 
                           <div className="flex flex-wrap items-end gap-3 lg:gap-[19px_14px] relative self-stretch w-full flex-[0_0_auto]">
                             {industryTags.map((tag, index) => (
-                              <button
+                              <AppButton
                                 key={index}
-                                className={`flex items-center justify-center gap-2.5 px-4 lg:px-[23px] py-2 lg:py-[13px] relative rounded-[35px] lg:rounded-[45px] border border-solid border-neutral-0 hover:bg-neutral-0 hover:text-black transition-colors focus:outline-2 focus:outline-neutral-0`}
-                              >
-                                <span
-                                  className={`relative w-fit mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-semibold text-neutral-0 text-xs lg:text-base text-center tracking-[0] leading-[16px] lg:leading-[23px] whitespace-nowrap`}
-                                >
-                                  {tag}
-                                </span>
-                              </button>
+                                variant="white"
+                                size="sm"
+                                text={tag}
+                                className="border border-solid border-neutral-0 hover:bg-neutral-0 hover:text-black focus:outline-2 focus:outline-neutral-0 lg:px-[23px] lg:py-[13px]"
+                              />
                             ))}
                           </div>
                         </div>
 
                         <AppButton
-                          text="View All Case Studies"
                           variant="white"
                           size="lg"
-                        />
+                          className="w-full lg:w-[284px] bg-grey-50 border border-grey-200 hover:bg-grey-75 focus:outline-2 focus:outline-primary-300"
+                          icon={
+                            <img
+                              className="relative w-5 h-5"
+                              alt="Arrow right"
+                              src="/SEO/ca/arrow-right-1.svg"
+                            />
+                          }
+                          iconPosition="right"
+                        >
+                          View All Case Studies
+                        </AppButton>
                       </div>
                     </div>
 
@@ -274,11 +281,16 @@ export const CaseStudies: React.FC = () => {
                   ))}
                 </div>
 
-                <AppButton
-                  text="Read Full Case Study"
-                  variant="white"
-                  size="lg"
-                />
+                <button className="all-[unset] box-border flex w-full lg:w-[227px] h-12 lg:h-[50px] justify-center gap-2 lg:gap-[7px] px-4 lg:px-[19px] py-2.5 bg-grey-50 rounded-[28px] lg:rounded-[33px] border border-solid border-grey-200 items-center relative hover:bg-grey-75 focus:outline-2 focus:outline-primary-300 transition-colors">
+                  <span className="relative w-fit [font-family:'Urbanist',Helvetica] font-medium text-[#091e42] text-base tracking-[0] leading-4 whitespace-nowrap">
+                    Read Full Case Study
+                  </span>
+                  <img
+                    className="relative w-5 h-5"
+                    alt="Arrow right"
+                    src="/Home-Page/ca/arrow-right.svg"
+                  />
+                </button>
               </div>
             </article>
           </div>

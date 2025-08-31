@@ -6,41 +6,46 @@ const IdeasToContent = () => {
       id: "01",
       week: "WEEK 1",
       title: "Website Audit",
-      description: "We conduct a comprehensive audit of your website's technical health, structure, and content to identify critical issues that may be hindering your search visibility.",
-      position: { left: "lg:left-[562px]", top: "lg:top-0" }
+      description:
+        "We conduct a comprehensive audit of your website's technical health, structure, and content to identify critical issues that may be hindering your search visibility.",
+      position: { left: "lg:left-[450px]", top: "lg:top-0" },
     },
     {
-      id: "02", 
+      id: "02",
       week: "WEEK 1-2",
       title: "Keyword Research",
-      description: "ur process begins with a deep dive into your website to evaluate its performance, uncover on-page and technical SEO errors, and highlight areas for immediate improvement.",
-      position: { left: "lg:left-[-15px]", top: "lg:top-[300px]" }
+      description:
+        "Our process begins with a deep dive into your website to evaluate its performance, uncover on-page and technical SEO errors, and highlight areas for immediate improvement.",
+      position: { left: "lg:left-[-80px]", top: "lg:top-[300px]" },
     },
     {
       id: "03",
-      week: "WEEK 2-4", 
+      week: "WEEK 2-4",
       title: "On-Site Optimization",
-      description: "We analyze every aspect of your website — from site speed and mobile responsiveness to meta data and content quality",
-      position: { left: "lg:left-[562px]", top: "lg:top-[583px]" }
+      description:
+        "We analyze every aspect of your website — from site speed and mobile responsiveness to meta data and content quality.",
+      position: { left: "lg:left-[450px]", top: "lg:top-[583px]" },
     },
     {
       id: "04",
       week: "WEEK 3-8",
-      title: "Link Building", 
-      description: "We perform a detailed site audit to detect structural flaws, content gaps, and technical issues that negatively impact your search engine rankings and user experience.",
-      position: { left: "lg:left-[-15px]", top: "lg:top-[878px]" }
+      title: "Link Building",
+      description:
+        "We perform a detailed site audit to detect structural flaws, content gaps, and technical issues that negatively impact your search engine rankings and user experience.",
+      position: { left: "lg:left-[-80px]", top: "lg:top-[878px]" },
     },
     {
       id: "05",
       week: "ONGOING",
       title: "Analytics & Reporting",
-      description: "Our team reviews your website's architecture, content relevance, and back-end setup to identify barriers to organic growth and create a clear plan of action.",
-      position: { left: "lg:left-[561px]", top: "lg:top-[1199px]" }
-    }
+      description:
+        "Our team reviews your website's architecture, content relevance, and back-end setup to identify barriers to organic growth and create a clear plan of action.",
+      position: { left: "lg:left-[450px]", top: "lg:top-[1199px]" },
+    },
   ];
 
   return (
-    <div className="hidden sm:flex w-full h-auto lg:h-[1766px] flex-col items-center gap-[25px] lg:gap-[50px] relative">
+    <div className="hidden sm:flex w-full h-auto flex-col items-center gap-[25px] lg:gap-[50px] relative">
       {/* Title Section */}
       <div className="flex w-full max-w-[601px] flex-col justify-center items-center gap-4 relative">
         {/* Badge */}
@@ -65,9 +70,10 @@ const IdeasToContent = () => {
       </div>
 
       {/* Process Flow */}
-      <div className="h-auto lg:h-[1491px] flex-shrink-0 self-stretch relative">
+      <div className="w-full flex justify-center">
+        <div className="w-full lg:w-[736px] h-auto lg:min-h-[1550px] flex-shrink-0 relative">
         {/* Vertical Line */}
-        <svg className="hidden lg:block w-0 h-[7px] flex-shrink-0 stroke-[0.669px] stroke-white absolute left-[484px] top-[643px] z-0 pointer-events-none" width="2" height="9" viewBox="0 0 2 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-0 h-[7px] flex-shrink-0 stroke-[0.669px] stroke-white absolute left-[368px] top-[643px] z-0 pointer-events-none" width="2" height="9" viewBox="0 0 2 9" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 8V1" stroke="url(#paint0_linear_1376_83835)" strokeWidth="0.669086" strokeLinecap="round"/>
           <defs>
             <linearGradient id="paint0_linear_1376_83835" x1="1.5" y1="2.10526" x2="1.5" y2="8" gradientUnits="userSpaceOnUse">
@@ -104,7 +110,7 @@ const IdeasToContent = () => {
         {/* Connecting Lines and Dots - All positioned absolutely to not interfere with card layout */}
         
         {/* First connecting line */}
-        <svg className="hidden lg:block w-[397px] h-[173px] flex-shrink-0 stroke-2 stroke-[rgba(47,152,255,0.63)] absolute left-[164px] top-[127px] z-0 pointer-events-none" width="399" height="175" viewBox="0 0 399 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-[397px] h-[173px] flex-shrink-0 stroke-2 stroke-[rgba(47,152,255,0.63)] absolute left-[48px] top-[127px] z-0 pointer-events-none" width="399" height="175" viewBox="0 0 399 175" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M398 1H33C15.3269 1 1 15.3269 1 33V174" stroke="url(#paint0_linear_1376_83876)" strokeWidth="2" strokeLinecap="round"/>
           <defs>
             <linearGradient id="paint0_linear_1376_83876" x1="199.5" y1="1" x2="199.5" y2="174" gradientUnits="userSpaceOnUse">
@@ -116,7 +122,7 @@ const IdeasToContent = () => {
         </svg>
 
         {/* First dot */}
-        <svg className="hidden lg:block w-3 h-3 flex-shrink-0 fill-[#43A2FF] stroke-2 stroke-white filter-[drop-shadow(0_4.8px_3.6px_rgba(29,143,255,0.20))] absolute left-[449px] top-[121px] z-0 pointer-events-none" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-3 h-3 flex-shrink-0 fill-[#43A2FF] stroke-2 stroke-white filter-[drop-shadow(0_4.8px_3.6px_rgba(29,143,255,0.20))] absolute left-[333px] top-[121px] z-0 pointer-events-none" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_1376_83877)">
             <circle cx="13" cy="8" r="6" fill="#43A2FF"/>
             <circle cx="13" cy="8" r="4.8" stroke="white" strokeWidth="2.4"/>
@@ -137,7 +143,7 @@ const IdeasToContent = () => {
         </svg>
 
         {/* Second dot */}
-        <svg className="hidden lg:block w-[10px] h-[10px] flex-shrink-0 fill-[#43A2FF] stroke-2 stroke-white filter-[drop-shadow(0_4px_3px_rgba(29,143,255,0.20))] absolute left-[158px] top-[177px] z-0 pointer-events-none" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-[10px] h-[10px] flex-shrink-0 fill-[#43A2FF] stroke-2 stroke-white filter-[drop-shadow(0_4px_3px_rgba(29,143,255,0.20))] absolute left-[42px] top-[177px] z-0 pointer-events-none" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_1376_83878)">
             <circle cx="11" cy="7" r="5" fill="#43A2FF"/>
             <circle cx="11" cy="7" r="4" stroke="white" strokeWidth="2"/>
@@ -158,7 +164,7 @@ const IdeasToContent = () => {
         </svg>
 
         {/* Second connecting line */}
-        <svg className="hidden lg:block w-[393px] h-[163px] flex-shrink-0 absolute left-[168px] top-[622px] z-0 pointer-events-none" width="395" height="173" viewBox="0 0 395 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-[393px] h-[163px] flex-shrink-0 absolute left-[52px] top-[622px] z-0 pointer-events-none" width="395" height="173" viewBox="0 0 395 173" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1V132.941C1 147.885 13.1148 160 28.0592 160H394" stroke="url(#paint0_linear_1376_83879)" strokeWidth="1.6912" strokeLinecap="round"/>
           <path d="M1 71.1846V108.391" stroke="#2F98FF" strokeWidth="1.6912" strokeLinecap="round"/>
           <g filter="url(#filter0_d_1376_83879)">
@@ -186,7 +192,7 @@ const IdeasToContent = () => {
         </svg>
 
         {/* Third dot */}
-        <svg className="hidden lg:block w-[9px] h-[9px] flex-shrink-0 fill-[#43A2FF] stroke-[1.86px] stroke-white filter-[drop-shadow(0_3.721px_2.79px_rgba(29,143,255,0.20))] absolute left-[654px] top-[1024px] z-0 pointer-events-none" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-[9px] h-[9px] flex-shrink-0 fill-[#43A2FF] stroke-[1.86px] stroke-white filter-[drop-shadow(0_3.721px_2.79px_rgba(29,143,255,0.20))] absolute left-[538px] top-[1024px] z-0 pointer-events-none" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_1376_83883)">
             <circle cx="9.65079" cy="6.65079" r="4.65079" fill="#43A2FF"/>
             <circle cx="9.65079" cy="6.65079" r="3.72063" stroke="white" strokeWidth="1.86032"/>
@@ -207,7 +213,7 @@ const IdeasToContent = () => {
         </svg>
 
         {/* Third connecting line */}
-        <svg className="hidden lg:block w-[409px] h-[210px] flex-shrink-0 absolute left-[148px] top-[1166px] z-0 pointer-events-none" width="411" height="212" viewBox="0 0 411 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-[409px] h-[210px] flex-shrink-0 absolute left-[32px] top-[1166px] z-0 pointer-events-none" width="411" height="212" viewBox="0 0 411 212" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1V183.941C1 198.885 13.1148 211 28.0592 211H410" stroke="url(#paint0_linear_1376_83884)" strokeWidth="1.6912" strokeLinecap="round"/>
           <path d="M1 71.1846V108.391" stroke="#2F98FF" strokeWidth="1.6912" strokeLinecap="round"/>
           <defs>
@@ -220,7 +226,7 @@ const IdeasToContent = () => {
         </svg>
 
         {/* Fourth dot */}
-        <svg className="hidden lg:block w-[9px] h-[9px] flex-shrink-0 fill-[#43A2FF] stroke-[1.86px] stroke-white filter-[drop-shadow(0_3.721px_2.79px_rgba(29,143,255,0.20))] absolute left-[290px] top-[1371px] z-0 pointer-events-none" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-[9px] h-[9px] flex-shrink-0 fill-[#43A2FF] stroke-[1.86px] stroke-white filter-[drop-shadow(0_3.721px_2.79px_rgba(29,143,255,0.20))] absolute left-[174px] top-[1371px] z-0 pointer-events-none" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_1376_83887)">
             <circle cx="9.65079" cy="6.65079" r="4.65079" fill="#43A2FF"/>
             <circle cx="9.65079" cy="6.65079" r="3.72063" stroke="white" strokeWidth="1.86032"/>
@@ -241,7 +247,7 @@ const IdeasToContent = () => {
         </svg>
 
         {/* Fifth dot */}
-        <svg className="hidden lg:block w-[10px] h-[10px] flex-shrink-0 fill-[#43A2FF] stroke-[1.9px] stroke-white filter-[drop-shadow(0_3.8px_2.85px_rgba(29,143,255,0.20))] absolute left-[450px] top-[1371px] z-0 pointer-events-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-[10px] h-[10px] flex-shrink-0 fill-[#43A2FF] stroke-[1.9px] stroke-white filter-[drop-shadow(0_3.8px_2.85px_rgba(29,143,255,0.20))] absolute left-[334px] top-[1371px] z-0 pointer-events-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_1376_83888)">
             <circle cx="10.25" cy="6.65039" r="4.75" fill="#43A2FF"/>
             <circle cx="10.25" cy="6.65039" r="3.8" stroke="white" strokeWidth="1.9"/>
@@ -262,7 +268,7 @@ const IdeasToContent = () => {
         </svg>
 
         {/* Fourth connecting line */}
-        <svg className="hidden lg:block w-[394px] h-[144px] flex-shrink-0 stroke-2 stroke-[rgba(47,152,255,0.63)] absolute left-[347px] top-[885px] z-0 pointer-events-none" width="396" height="146" viewBox="0 0 396 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="hidden lg:block w-[394px] h-[144px] flex-shrink-0 stroke-2 stroke-[rgba(47,152,255,0.63)] absolute left-[231px] top-[885px] z-0 pointer-events-none" width="396" height="146" viewBox="0 0 396 146" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M395 1V113C395 130.673 380.673 145 363 145H1" stroke="url(#paint0_linear_1376_83889)" strokeWidth="2" strokeLinecap="round"/>
           <defs>
             <linearGradient id="paint0_linear_1376_83889" x1="198" y1="1" x2="198" y2="145" gradientUnits="userSpaceOnUse">
@@ -272,6 +278,7 @@ const IdeasToContent = () => {
             </linearGradient>
           </defs>
         </svg>
+        </div>
       </div>
     </div>
   );
